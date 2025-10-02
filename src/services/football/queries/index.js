@@ -3,7 +3,6 @@ export {
   getAllFootballEvents,
   getFootballEventById,
   findFootballEventByExternalId,
-  getFootballEventBySlug,
 } from "./core.js";
 
 // Team-related queries
