@@ -85,77 +85,6 @@ class TeamQueryService {
     }
   }
 
-  // Get team by slug
-  async getTeamBySlug(slug) {
-    try {
-      logWithCheckpoint("info", "Starting to fetch team by slug", "TEAM_013", {
-        slug,
-      });
-
-      const team = await teamRepository.getTeamBySlug(slug);
-
-      if (!team) {
-        logWithCheckpoint("warn", "Team not found by slug", "TEAM_014", {
-          slug,
-        });
-        return null;
-      }
-
-      logWithCheckpoint(
-        "info",
-        "Successfully fetched team by slug",
-        "TEAM_015",
-        {
-          slug,
-        }
-      );
-      return team;
-    } catch (error) {
-      logError(error, { operation: "getTeamBySlug", slug });
-      throw error;
-    }
-  }
-
-  // Get team by slug with localization
-  async getTeamBySlugLocalized(slug, locale = "en") {
-    try {
-      logWithCheckpoint(
-        "info",
-        "Starting to fetch localized team by slug",
-        "TEAM_016",
-        {
-          slug,
-          locale,
-        }
-      );
-
-      const team = await teamRepository.getTeamBySlug(slug);
-
-      if (!team) {
-        logWithCheckpoint("warn", "Team not found by slug", "TEAM_017", {
-          slug,
-        });
-        return null;
-      }
-
-      const localizedTeam = Team.localizeTeam(team, locale);
-
-      logWithCheckpoint(
-        "info",
-        "Successfully fetched localized team by slug",
-        "TEAM_018",
-        {
-          slug,
-          locale,
-        }
-      );
-      return localizedTeam;
-    } catch (error) {
-      logError(error, { operation: "getTeamBySlugLocalized", slug, locale });
-      throw error;
-    }
-  }
-
   // Find team by external ID
   async findTeamByExternalId(provider, externalId) {
     try {
@@ -191,8 +120,8 @@ class TeamQueryService {
     }
   }
 
-  // Get teams by league with caching
-  async getTeamsByLeague(leagueSlug, locale = "he") {
+  // Get teams by league with caching (Hebrew names only)
+  async getTeamsByLeague(leagueSlug) {
     try {
       logWithCheckpoint(
         "info",
@@ -200,16 +129,14 @@ class TeamQueryService {
         "TEAM_019",
         {
           leagueSlug,
-          locale,
         }
       );
 
       // Check cache first
-      const cachedData = CacheService.getTeamsByLeague(leagueSlug, locale);
+      const cachedData = CacheService.getTeamsByLeague(leagueSlug);
       if (cachedData) {
         logWithCheckpoint("info", "Teams found in cache", "TEAM_020", {
           leagueSlug,
-          locale,
           count: cachedData.length,
         });
         return cachedData;
@@ -225,13 +152,11 @@ class TeamQueryService {
         return [];
       }
 
-      // Localize all teams
-      const localizedTeams = teams.map((team) =>
-        Team.localizeTeam(team, locale)
-      );
+      // Convert all teams to Hebrew names only
+      const hebrewTeams = teams.map((team) => Team.toHebrewData(team));
 
       // Cache the result
-      CacheService.setTeamsByLeague(leagueSlug, locale, localizedTeams);
+      CacheService.setTeamsByLeague(leagueSlug, hebrewTeams);
 
       logWithCheckpoint(
         "info",
@@ -239,20 +164,19 @@ class TeamQueryService {
         "TEAM_022",
         {
           leagueSlug,
-          locale,
-          count: localizedTeams.length,
+          count: hebrewTeams.length,
         }
       );
 
-      return localizedTeams;
+      return hebrewTeams;
     } catch (error) {
-      logError(error, { operation: "getTeamsByLeague", leagueSlug, locale });
+      logError(error, { operation: "getTeamsByLeague", leagueSlug });
       throw error;
     }
   }
 
-  // Get teams by league ID with caching
-  async getTeamsByLeagueId(leagueId, locale = "he") {
+  // Get teams by league ID with caching (Hebrew names only)
+  async getTeamsByLeagueId(leagueId) {
     try {
       logWithCheckpoint(
         "info",
@@ -260,16 +184,14 @@ class TeamQueryService {
         "TEAM_023",
         {
           leagueId,
-          locale,
         }
       );
 
       // Check cache first
-      const cachedData = CacheService.getTeamsByLeague(leagueId, locale);
+      const cachedData = CacheService.getTeamsByLeague(leagueId);
       if (cachedData) {
         logWithCheckpoint("info", "Teams found in cache", "TEAM_024", {
           leagueId,
-          locale,
           count: cachedData.length,
         });
         return cachedData;
@@ -285,13 +207,11 @@ class TeamQueryService {
         return [];
       }
 
-      // Localize all teams
-      const localizedTeams = teams.map((team) =>
-        Team.localizeTeam(team, locale)
-      );
+      // Convert all teams to Hebrew names only
+      const hebrewTeams = teams.map((team) => Team.toHebrewData(team));
 
       // Cache the result
-      CacheService.setTeamsByLeague(leagueId, locale, localizedTeams);
+      CacheService.setTeamsByLeague(leagueId, hebrewTeams);
 
       logWithCheckpoint(
         "info",
@@ -299,14 +219,13 @@ class TeamQueryService {
         "TEAM_026",
         {
           leagueId,
-          locale,
-          count: localizedTeams.length,
+          count: hebrewTeams.length,
         }
       );
 
-      return localizedTeams;
+      return hebrewTeams;
     } catch (error) {
-      logError(error, { operation: "getTeamsByLeagueId", leagueId, locale });
+      logError(error, { operation: "getTeamsByLeagueId", leagueId });
       throw error;
     }
   }

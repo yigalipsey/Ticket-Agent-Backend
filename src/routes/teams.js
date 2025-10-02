@@ -79,7 +79,7 @@ router.get("/:id/fixtures", rateLimit(100), async (req, res) => {
     }
 
     // Get fixtures for this team using the team's _id
-    const result = await FootballService.query.getFootballEventsByTeam(
+    const result = await FootballService.query.getFootballEventsByTeamId(
       id,
       req.query
     );

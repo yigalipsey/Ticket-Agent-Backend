@@ -113,75 +113,6 @@ class FootballEventCacheService {
     }
   }
 
-  async getFixturesByTeamSlug(teamSlug, options = {}) {
-    const { limit = 10, upcoming = true, includePast = false } = options;
-    const cacheKey = this.getCacheKey(
-      `team_slug:${teamSlug}:${JSON.stringify(options)}`
-    );
-
-    try {
-      // Try to get from cache first
-      const cachedResult = await this.getFromCache(cacheKey);
-      if (cachedResult) {
-        return cachedResult;
-      }
-
-      // First, find the team by slug to get its ID
-      const Team = (await import("../models/Team.js")).default;
-      const team = await Team.findOne({ slug: teamSlug }).select("_id");
-
-      if (!team) {
-        return {
-          fixtures: [],
-          total: 0,
-          teamSlug,
-          options,
-        };
-      }
-
-      // Build query using team ID
-      const query = {
-        $or: [{ homeTeam: team._id }, { awayTeam: team._id }],
-      };
-
-      // Add date filter
-      if (upcoming && !includePast) {
-        query.date = { $gte: new Date() };
-      } else if (!upcoming && !includePast) {
-        query.date = { $lt: new Date() };
-      }
-
-      // Execute query
-      const fixtures = await FootballEvent.find(query)
-        .populate("homeTeam", "name code logoUrl slug")
-        .populate("awayTeam", "name code logoUrl slug")
-        .populate("venue", "name city capacity")
-        .populate("league", "name slug")
-        .sort({ date: upcoming ? 1 : -1 })
-        .limit(limit)
-        .lean();
-
-      const result = {
-        fixtures,
-        total: fixtures.length,
-        teamSlug,
-        options,
-      };
-
-      // Cache the result
-      await this.setCache(cacheKey, result);
-
-      return result;
-    } catch (error) {
-      errorHandler.handleError(error, {
-        operation: "getFixturesByTeamSlug",
-        category: errorHandler.errorCategories.DATABASE,
-        context: { teamSlug, options },
-      });
-      throw error;
-    }
-  }
-
   async getFixturesByLeague(leagueId, options = {}) {
     const { limit = 20, upcoming = true, includePast = false } = options;
     const cacheKey = this.getCacheKey(
@@ -231,40 +162,6 @@ class FootballEventCacheService {
         operation: "getFixturesByLeague",
         category: errorHandler.errorCategories.DATABASE,
         context: { leagueId, options },
-      });
-      throw error;
-    }
-  }
-
-  async getFixtureBySlug(slug) {
-    const cacheKey = this.getCacheKey(`slug:${slug}`);
-
-    try {
-      // Try to get from cache first
-      const cachedResult = await this.getFromCache(cacheKey);
-      if (cachedResult) {
-        return cachedResult;
-      }
-
-      // Execute query
-      const fixture = await FootballEvent.findOne({ slug })
-        .populate("homeTeam", "name code logoUrl")
-        .populate("awayTeam", "name code logoUrl")
-        .populate("venue", "name city capacity")
-        .populate("league", "name slug")
-        .lean();
-
-      if (fixture) {
-        // Cache the result
-        await this.setCache(cacheKey, fixture);
-      }
-
-      return fixture;
-    } catch (error) {
-      errorHandler.handleError(error, {
-        operation: "getFixtureBySlug",
-        category: errorHandler.errorCategories.DATABASE,
-        context: { slug },
       });
       throw error;
     }

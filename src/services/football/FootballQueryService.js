@@ -2,14 +2,9 @@
 import {
   getAllFootballEvents,
   getFootballEventById,
-  getFootballEventBySlug,
   findFootballEventByExternalId,
-  getFootballEventsByTeam,
-  getFootballEventsByTeamSlug,
-  getFootballEventsByTeamLocalized,
-  getFootballEventsByLeague,
-  getFootballEventsByLeagueSlug,
-  getFootballEventsByLeagueSlugLocalized,
+  getFootballEventsByTeamId,
+  getFootballEventsByLeagueId,
 } from "./queries/index.js";
 
 class FootballQueryService {
@@ -22,36 +17,16 @@ class FootballQueryService {
     return getFootballEventById(id);
   }
 
-  async getFootballEventBySlug(slug) {
-    return getFootballEventBySlug(slug);
-  }
-
   async findFootballEventByExternalId(externalId, provider = "apiFootball") {
     return findFootballEventByExternalId(externalId, provider);
   }
 
-  async getFootballEventsByTeam(teamId, query = {}) {
-    return getFootballEventsByTeam(teamId, query);
+  async getFootballEventsByTeamId(teamId, query = {}) {
+    return getFootballEventsByTeamId(teamId, query);
   }
 
-  async getFootballEventsByTeamSlug(teamSlug, query = {}) {
-    return getFootballEventsByTeamSlug(teamSlug, query);
-  }
-
-  async getFootballEventsByTeamLocalized(teamSlug, query = {}) {
-    return getFootballEventsByTeamLocalized(teamSlug, query);
-  }
-
-  async getFootballEventsByLeague(leagueId, query = {}) {
-    return getFootballEventsByLeague(leagueId, query);
-  }
-
-  async getFootballEventsByLeagueSlug(leagueSlug, query = {}) {
-    return getFootballEventsByLeagueSlug(leagueSlug, query);
-  }
-
-  async getFootballEventsByLeagueSlugLocalized(leagueSlug, query = {}) {
-    return getFootballEventsByLeagueSlugLocalized(leagueSlug, query);
+  async getFootballEventsByLeagueId(leagueId, query = {}) {
+    return getFootballEventsByLeagueId(leagueId, query);
   }
 }
 

@@ -51,6 +51,12 @@ const teamSchema = new mongoose.Schema(
       ref: "Venue",
       required: true,
     },
+    leagueIds: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "League",
+      },
+    ],
     externalIds: {
       apiFootball: {
         type: Number,
@@ -70,16 +76,16 @@ teamSchema.index({ name_en: 1 });
 teamSchema.index({ name_he: 1 });
 teamSchema.index({ code: 1 });
 teamSchema.index({ slug: 1 }, { unique: true });
+teamSchema.index({ leagueIds: 1 });
 teamSchema.index({ country_en: 1 });
 teamSchema.index({ country_he: 1 });
 
-// Helper function to map team data based on locale
-teamSchema.methods.toLocalizedObject = function (locale = "en") {
+// Helper function to return team data with Hebrew names
+teamSchema.methods.toHebrewObject = function () {
   return {
     _id: this._id.toString(),
-    name: locale === "he" ? this.name_he || this.name_en : this.name_en,
-    country:
-      locale === "he" ? this.country_he || this.country_en : this.country_en,
+    name: this.name_he || this.name_en,
+    country: this.country_he || this.country_en,
     code: this.code,
     slug: this.slug,
     logoUrl: this.logoUrl,
@@ -95,13 +101,12 @@ teamSchema.methods.toLocalizedObject = function (locale = "en") {
   };
 };
 
-// Static function to map team data based on locale (for lean objects)
-teamSchema.statics.localizeTeam = function (team, locale = "en") {
+// Static function to return team data with Hebrew names (for lean objects)
+teamSchema.statics.toHebrewData = function (team) {
   return {
     _id: team._id.toString(),
-    name: locale === "he" ? team.name_he || team.name_en : team.name_en,
-    country:
-      locale === "he" ? team.country_he || team.country_en : team.country_en,
+    name: team.name_he || team.name_en,
+    country: team.country_he || team.country_en,
     code: team.code,
     slug: team.slug,
     logoUrl: team.logoUrl,

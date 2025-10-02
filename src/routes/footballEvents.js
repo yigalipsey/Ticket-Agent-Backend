@@ -92,11 +92,14 @@ router.get("/team/:teamId", rateLimit(100), async (req, res) => {
       });
     }
 
-    const result = await FootballService.query.getFootballEventsByTeam(teamId, {
-      limit: parseInt(limit),
-      upcoming: upcoming === "true",
-      includePast: includePast === "true",
-    });
+    const result = await FootballService.query.getFootballEventsByTeamId(
+      teamId,
+      {
+        limit: parseInt(limit),
+        upcoming: upcoming === "true",
+        includePast: includePast === "true",
+      }
+    );
 
     res.json({
       success: true,
@@ -123,12 +126,7 @@ router.get("/team/:teamId", rateLimit(100), async (req, res) => {
 router.get("/league/:leagueId", rateLimit(100), async (req, res) => {
   try {
     const { leagueId } = req.params;
-    const { 
-      page = 1, 
-      limit = 20, 
-      locale = "he",
-      upcoming = "false" 
-    } = req.query;
+    const { page = 1, limit = 20, upcoming = "false" } = req.query;
 
     if (!leagueId.match(/^[0-9a-fA-F]{24}$/)) {
       return res.status(400).json({
@@ -137,12 +135,14 @@ router.get("/league/:leagueId", rateLimit(100), async (req, res) => {
       });
     }
 
-    const result = await FootballService.query.getFootballEventsByLeague(leagueId, {
-      page: parseInt(page),
-      limit: parseInt(limit),
-      locale,
-      upcoming: upcoming === "true",
-    });
+    const result = await FootballService.query.getFootballEventsByLeagueId(
+      leagueId,
+      {
+        page: parseInt(page),
+        limit: parseInt(limit),
+        upcoming: upcoming === "true",
+      }
+    );
 
     res.json({
       success: true,

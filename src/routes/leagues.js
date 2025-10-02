@@ -26,21 +26,53 @@ router.use((req, res, next) => {
   next();
 });
 
-// GET /api/leagues - Get all leagues with pagination and filtering
+// GET /api/leagues - Get all leagues with pagination and filtering OR with teams if requested
 router.get("/", rateLimit(100), async (req, res) => {
   try {
-    const result = await LeagueService.query.getAllLeagues(req.query);
+    // Check if user wants leagues with teams data
+    if (req.query.withTeams === "true") {
+      const result = await LeagueService.query.getAllLeaguesWithTeams();
 
-    res.json({
-      success: true,
-      data: result.leagues,
-      pagination: result.pagination,
-    });
+      res.json({
+        success: true,
+        data: result.leagues,
+        count: result.leagues.length,
+      });
+    } else {
+      // Normal leagues endpoint
+      const result = await LeagueService.query.getAllLeagues(req.query);
+
+      res.json({
+        success: true,
+        data: result.leagues,
+        pagination: result.pagination,
+      });
+    }
   } catch (error) {
     logError(error, { route: "GET /api/leagues", query: req.query });
     res.status(500).json({
       success: false,
       error: "Failed to fetch leagues",
+      message: error.message,
+    });
+  }
+});
+
+// GET /api/leagues/all-with-teams - Get all leagues with their teams (no games)
+router.get("/all-with-teams", rateLimit(50), async (req, res) => {
+  try {
+    const result = await LeagueService.query.getAllLeaguesWithTeams();
+
+    res.json({
+      success: true,
+      data: result.leagues,
+      count: result.leagues.length,
+    });
+  } catch (error) {
+    logError(error, { route: "GET /api/leagues/all-with-teams" });
+    res.status(500).json({
+      success: false,
+      error: "Failed to fetch leagues with teams",
       message: error.message,
     });
   }

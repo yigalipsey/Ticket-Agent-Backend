@@ -1,6 +1,10 @@
 import FootballEvent from "../../../models/FootballEvent.js";
 import { logWithCheckpoint, logError } from "../../../utils/logger.js";
-import { validateObjectId, validateSlug, validateExternalId } from "../validators/validateFootballQuery.js";
+import {
+  validateObjectId,
+  validateSlug,
+  validateExternalId,
+} from "../validators/validateFootballQuery.js";
 import { buildPopulateOptions } from "../utils/buildFootballEventFilter.js";
 
 // Get all football events with pagination and filtering
@@ -29,22 +33,30 @@ export const getAllFootballEvents = async (query = {}) => {
 
     if (league) {
       filter.league = league;
-      logWithCheckpoint("debug", "Added league filter", "FOOTBALL_002", { league });
+      logWithCheckpoint("debug", "Added league filter", "FOOTBALL_002", {
+        league,
+      });
     }
 
     if (season) {
       filter.tags = { $in: [season] };
-      logWithCheckpoint("debug", "Added season filter", "FOOTBALL_003", { season });
+      logWithCheckpoint("debug", "Added season filter", "FOOTBALL_003", {
+        season,
+      });
     }
 
     if (teamId) {
       filter.$or = [{ homeTeam: teamId }, { awayTeam: teamId }];
-      logWithCheckpoint("debug", "Added team filter", "FOOTBALL_004", { teamId });
+      logWithCheckpoint("debug", "Added team filter", "FOOTBALL_004", {
+        teamId,
+      });
     }
 
     if (venue) {
       filter.venue = venue;
-      logWithCheckpoint("debug", "Added venue filter", "FOOTBALL_005", { venue });
+      logWithCheckpoint("debug", "Added venue filter", "FOOTBALL_005", {
+        venue,
+      });
     }
 
     // Build sort object
@@ -94,7 +106,12 @@ export const getAllFootballEvents = async (query = {}) => {
 // Get football event by ID
 export const getFootballEventById = async (id) => {
   try {
-    logWithCheckpoint("info", "Starting to fetch football event by ID", "FOOTBALL_007", { id });
+    logWithCheckpoint(
+      "info",
+      "Starting to fetch football event by ID",
+      "FOOTBALL_007",
+      { id }
+    );
 
     const validId = validateObjectId(id, "Football event ID");
 
@@ -106,11 +123,21 @@ export const getFootballEventById = async (id) => {
       .lean();
 
     if (!footballEvent) {
-      logWithCheckpoint("warn", "Football event not found by ID", "FOOTBALL_008", { id });
+      logWithCheckpoint(
+        "warn",
+        "Football event not found by ID",
+        "FOOTBALL_008",
+        { id }
+      );
       return null;
     }
 
-    logWithCheckpoint("info", "Successfully fetched football event by ID", "FOOTBALL_009", { id });
+    logWithCheckpoint(
+      "info",
+      "Successfully fetched football event by ID",
+      "FOOTBALL_009",
+      { id }
+    );
     return footballEvent;
   } catch (error) {
     logError(error, { operation: "getFootballEventById", id });
@@ -118,35 +145,11 @@ export const getFootballEventById = async (id) => {
   }
 };
 
-// Get football event by slug
-export const getFootballEventBySlug = async (slug) => {
-  try {
-    logWithCheckpoint("info", "Starting to fetch football event by slug", "FOOTBALL_013", { slug });
-
-    const validSlug = validateSlug(slug, "Football event slug");
-
-    const footballEvent = await FootballEvent.findOne({ slug: validSlug })
-      .populate("league", "name country logoUrl slug")
-      .populate("homeTeam", "name code slug logoUrl")
-      .populate("awayTeam", "name code slug logoUrl")
-      .populate("venue", "name city capacity")
-      .lean();
-
-    if (!footballEvent) {
-      logWithCheckpoint("warn", "Football event not found by slug", "FOOTBALL_014", { slug });
-      return null;
-    }
-
-    logWithCheckpoint("info", "Successfully fetched football event by slug", "FOOTBALL_015", { slug });
-    return footballEvent;
-  } catch (error) {
-    logError(error, { operation: "getFootballEventBySlug", slug });
-    throw error;
-  }
-};
-
 // Find football event by external ID
-export const findFootballEventByExternalId = async (externalId, provider = "apiFootball") => {
+export const findFootballEventByExternalId = async (
+  externalId,
+  provider = "apiFootball"
+) => {
   try {
     logWithCheckpoint(
       "info",
@@ -184,7 +187,11 @@ export const findFootballEventByExternalId = async (externalId, provider = "apiF
     );
     return footballEvent;
   } catch (error) {
-    logError(error, { operation: "findFootballEventByExternalId", externalId, provider });
+    logError(error, {
+      operation: "findFootballEventByExternalId",
+      externalId,
+      provider,
+    });
     throw error;
   }
 };

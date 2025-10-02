@@ -74,17 +74,15 @@ venueSchema.index({ city_he: 1 });
 venueSchema.index({ country_en: 1 });
 venueSchema.index({ country_he: 1 });
 
-// Helper function to map venue data based on locale (for Mongoose documents)
-venueSchema.methods.toLocalizedObject = function (locale = "en") {
+// Helper function to return venue data with Hebrew names (for Mongoose documents)
+venueSchema.methods.toHebrewObject = function () {
   return {
     _id: this._id.toString(),
-    name: locale === "he" ? this.name_he || this.name_en : this.name_en,
-    city: locale === "he" ? this.city_he || this.city_en : this.city_en,
+    name: this.name_he || this.name_en,
+    city: this.city_he || this.city_en,
     capacity: this.capacity,
-    country:
-      locale === "he" ? this.country_he || this.country_en : this.country_en,
-    address:
-      locale === "he" ? this.address_he || this.address_en : this.address_en,
+    country: this.country_he || this.country_en,
+    address: this.address_he || this.address_en,
     image: this.image,
     venueId: this.venueId,
     externalIds: this.externalIds,
@@ -93,17 +91,15 @@ venueSchema.methods.toLocalizedObject = function (locale = "en") {
   };
 };
 
-// Static function to map venue data based on locale (for lean objects)
-venueSchema.statics.localizeVenue = function (venue, locale = "en") {
+// Static function to return venue data with Hebrew names (for lean objects)
+venueSchema.statics.toHebrewData = function (venue) {
   return {
     _id: venue._id.toString(),
-    name: locale === "he" ? venue.name_he || venue.name_en : venue.name_en,
-    city: locale === "he" ? venue.city_he || venue.city_en : venue.city_en,
+    name: venue.name_he || venue.name_en,
+    city: venue.city_he || venue.city_en,
     capacity: venue.capacity,
-    country:
-      locale === "he" ? venue.country_he || venue.country_en : venue.country_en,
-    address:
-      locale === "he" ? venue.address_he || venue.address_en : venue.address_en,
+    country: venue.country_he || venue.country_en,
+    address: venue.address_he || venue.address_en,
     image: venue.image,
     venueId: venue.venueId,
     externalIds: venue.externalIds,

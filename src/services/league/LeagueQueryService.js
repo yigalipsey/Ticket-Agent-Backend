@@ -1,4 +1,5 @@
 import League from "../../models/League.js";
+import Team from "../../models/Team.js";
 import { logWithCheckpoint, logError } from "../../utils/logger.js";
 
 class LeagueQueryService {
@@ -187,42 +188,6 @@ class LeagueQueryService {
     }
   }
 
-  // Get league by slug
-  async getLeagueBySlug(slug) {
-    try {
-      logWithCheckpoint(
-        "info",
-        "Starting to fetch league by slug",
-        "LEAGUE_007",
-        {
-          slug,
-        }
-      );
-
-      const league = await League.findOne({ slug }).lean();
-
-      if (!league) {
-        logWithCheckpoint("warn", "League not found by slug", "LEAGUE_008", {
-          slug,
-        });
-        return null;
-      }
-
-      logWithCheckpoint(
-        "info",
-        "Successfully fetched league by slug",
-        "LEAGUE_009",
-        {
-          slug,
-        }
-      );
-      return league;
-    } catch (error) {
-      logError(error, { operation: "getLeagueBySlug", slug });
-      throw error;
-    }
-  }
-
   // Get popular leagues only
   async getPopularLeagues(limit = 10) {
     try {
@@ -256,6 +221,101 @@ class LeagueQueryService {
       };
     } catch (error) {
       logError(error, { operation: "getPopularLeagues" });
+      throw error;
+    }
+  }
+
+  // Get all leagues with their teams (no games)
+  async getAllLeaguesWithTeams() {
+    try {
+      logWithCheckpoint(
+        "info",
+        "Starting to fetch all leagues with teams",
+        "LEAGUE_017",
+        {}
+      );
+
+      // Get all leagues
+      const leagues = await League.find()
+        .select(
+          "_id leagueId name nameHe slug country countryHe logoUrl type isPopular"
+        )
+        .sort({ name: 1 })
+        .lean();
+
+      logWithCheckpoint(
+        "debug",
+        "Fetched leagues, now getting teams for each",
+        "LEAGUE_018",
+        {
+          leagueCount: leagues.length,
+        }
+      );
+
+      // Get teams for each league using leagueIds field
+      const leaguesWithTeams = await Promise.all(
+        leagues.map(async (league) => {
+          try {
+            const teams = await Team.find({ leagueIds: league._id })
+              .select("_id name name_he name_en slug logoUrl country countryHe")
+              .lean();
+
+            // השמות כבר בעברית! פשוט נחזיר אותם כמו שהם
+            const teamsWithHebrew = teams.map((team) => ({
+              _id: team._id,
+              name: team.name,
+              slug: team.slug,
+              country: team.country,
+              logoUrl: team.logoUrl,
+            }));
+
+            logWithCheckpoint(
+              "debug",
+              `Fetched teams for league ${league.nameHe}`,
+              "LEAGUE_019",
+              {
+                leagueId: league._id,
+                teamCount: teamsWithHebrew.length,
+              }
+            );
+
+            return {
+              ...league,
+              teams: teamsWithHebrew,
+            };
+          } catch (error) {
+            logError(error, {
+              operation: "getTeamsForLeague",
+              leagueId: league._id,
+            });
+            // Return league without teams if error
+            return {
+              ...league,
+              teams: [],
+            };
+          }
+        })
+      );
+
+      logWithCheckpoint(
+        "info",
+        "Successfully fetched all leagues with teams",
+        "LEAGUE_020",
+        {
+          totalLeagues: leaguesWithTeams.length,
+          totalTeams: leaguesWithTeams.reduce(
+            (sum, league) => sum + league.teams.length,
+            0
+          ),
+        }
+      );
+
+      return {
+        leagues: leaguesWithTeams,
+        count: leaguesWithTeams.length,
+      };
+    } catch (error) {
+      logError(error, { operation: "getAllLeaguesWithTeams" });
       throw error;
     }
   }

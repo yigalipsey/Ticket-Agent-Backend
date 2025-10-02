@@ -227,38 +227,6 @@ class TeamJsonService {
   }
 
   /**
-   * Get team by slug
-   * @param {string} slug - Team slug
-   * @returns {Promise<object|null>} Team data
-   */
-  async getTeamBySlug(slug) {
-    try {
-      await this.loadTeamsData();
-
-      const team = this.indexData.bySlug[slug] || null;
-
-      if (team) {
-        errorHandler.logSuccess("Team found by slug", "TEAM_JSON_008", {
-          slug,
-        });
-      } else {
-        errorHandler.logWarning("Team not found by slug", "TEAM_JSON_009", {
-          slug,
-        });
-      }
-
-      return team;
-    } catch (error) {
-      errorHandler.handleError(error, {
-        operation: "getTeamBySlug",
-        severity: "error",
-        retryable: true,
-      });
-      throw error;
-    }
-  }
-
-  /**
    * Find team by external ID
    * @param {string} provider - Provider name
    * @param {string|number} externalId - External ID

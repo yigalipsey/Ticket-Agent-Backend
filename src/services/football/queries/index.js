@@ -2,20 +2,12 @@
 export {
   getAllFootballEvents,
   getFootballEventById,
-  getFootballEventBySlug,
   findFootballEventByExternalId,
+  getFootballEventBySlug,
 } from "./core.js";
 
 // Team-related queries
-export {
-  getFootballEventsByTeam,
-  getFootballEventsByTeamSlug,
-  getFootballEventsByTeamLocalized,
-} from "./byTeam.js";
+export { getFootballEventsByTeamId } from "./byTeam.js";
 
 // League-related queries
-export {
-  getFootballEventsByLeague,
-  getFootballEventsByLeagueSlug,
-  getFootballEventsByLeagueSlugLocalized,
-} from "./byLeague.js";
+export { getFootballEventsByLeagueId } from "./byLeague.js";
