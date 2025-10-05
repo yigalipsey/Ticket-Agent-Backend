@@ -422,28 +422,15 @@ class TeamRepository {
   }
 
   async getTeamsByLeagueId(leagueId) {
-    // First get the league to find its country
-    const league = await Team.db
-      .collection("leagues")
-      .findOne({ _id: new Team.base.Types.ObjectId(leagueId) });
-
-    if (!league) {
-      return [];
-    }
-
-    // Find teams that belong to the same country as the league
+    // Find teams that have this league in their leagueIds array
     const teams = await Team.find({
-      $or: [
-        { country_en: league.country },
-        { country_he: league.country },
-        { country: league.country },
-      ],
+      leagueIds: leagueId,
     })
+      .populate("venueId", "name_en name_he city_en capacity")
       .select(
-        "name_en name_he code slug logoUrl country_en country_he founded city"
+        "name_en name_he code slug logoUrl country_en country_he founded city venueId leagueIds teamId externalIds"
       )
       .sort({ name_en: 1 })
-      .limit(20) // Limit to 20 teams for carousel
       .lean();
 
     return teams;

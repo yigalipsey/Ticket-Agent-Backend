@@ -176,7 +176,7 @@ class TeamQueryService {
   }
 
   // Get teams by league ID with caching (Hebrew names only)
-  async getTeamsByLeagueId(leagueId) {
+  async getTeamsByLeagueId(leagueId, locale = "he") {
     try {
       logWithCheckpoint(
         "info",
@@ -184,11 +184,12 @@ class TeamQueryService {
         "TEAM_023",
         {
           leagueId,
+          locale,
         }
       );
 
       // Check cache first
-      const cachedData = CacheService.getTeamsByLeague(leagueId);
+      const cachedData = CacheService.getTeamsByLeague(leagueId, locale);
       if (cachedData) {
         logWithCheckpoint("info", "Teams found in cache", "TEAM_024", {
           leagueId,
@@ -211,7 +212,7 @@ class TeamQueryService {
       const hebrewTeams = teams.map((team) => Team.toHebrewData(team));
 
       // Cache the result
-      CacheService.setTeamsByLeague(leagueId, hebrewTeams);
+      CacheService.setTeamsByLeague(leagueId, locale, hebrewTeams);
 
       logWithCheckpoint(
         "info",
