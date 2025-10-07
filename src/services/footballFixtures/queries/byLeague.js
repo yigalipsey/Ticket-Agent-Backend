@@ -260,6 +260,7 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
     );
 
     return {
+      success: true,
       ...result,
       fromCache: !!cachedData,
       cachedAt: cachedData?.cachedAt || new Date(),

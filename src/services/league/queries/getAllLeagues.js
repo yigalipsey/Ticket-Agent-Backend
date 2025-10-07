@@ -1,6 +1,10 @@
 import League from "../../../models/League.js";
 import Team from "../../../models/Team.js";
 import { logWithCheckpoint, logError } from "../../../utils/logger.js";
+import {
+  immutableArrayCopy,
+  normalizeMongoData,
+} from "../../../utils/immutable.js";
 import leagueCacheService from "../cache/LeagueCacheService.js";
 
 /**
@@ -30,6 +34,7 @@ export const getAllLeagues = async (withTeams = false) => {
       );
       return {
         ...cachedData,
+        leagues: immutableArrayCopy(cachedData.leagues),
         fromCache: true,
       };
     }
@@ -55,7 +60,7 @@ export const getAllLeagues = async (withTeams = false) => {
             "name name_he name_en code slug logoUrl country country_he country_en"
           )
           .lean();
-        league.teams = teams;
+        league.teams = normalizeMongoData(teams);
       }
 
       logWithCheckpoint(
@@ -81,6 +86,9 @@ export const getAllLeagues = async (withTeams = false) => {
         }
       );
     }
+
+    // נרמול ObjectIds לפני שמירה ב-cache
+    leagues = normalizeMongoData(leagues);
 
     const result = {
       leagues,
@@ -108,6 +116,31 @@ export const getAllLeagues = async (withTeams = false) => {
       operation: "getAllLeagues",
       withTeams,
     });
+
+    // Fallback: נסיון להחזיר cache ישן גם אם DB נכשל
+    const staleCache = leagueCacheService.get(withTeams);
+    if (staleCache) {
+      logWithCheckpoint(
+        "warn",
+        "Database failed, returning stale cache as fallback",
+        "LEAGUE_QUERY_FALLBACK",
+        {
+          withTeams,
+          staleLeaguesCount: staleCache.leagues?.length || 0,
+          error: error.message,
+        }
+      );
+
+      return {
+        ...staleCache,
+        leagues: immutableArrayCopy(staleCache.leagues),
+        fromCache: true,
+        stale: true, // מסמן שזה cache ישן
+        error: "Database unavailable, showing cached data",
+      };
+    }
+
+    // אם גם אין cache ישן, זורק שגיאה
     throw error;
   }
 };

@@ -1,5 +1,9 @@
 import { LRUCache } from "lru-cache";
 import FootballEvent from "../../../models/FootballEvent.js";
+import {
+  immutableArrayCopy,
+  normalizeMongoData,
+} from "../../../utils/immutable.js";
 
 /**
  * שירות לשליפת משחקים חמים
@@ -44,7 +48,7 @@ class HotFixturesService {
       console.log("🔥 [HotFixturesService] Cache hit", { cacheKey });
       return {
         success: true,
-        data: cached,
+        data: immutableArrayCopy(cached),
         count: cached.length,
         message: `נמצאו ${cached.length} משחקים חמים (מ-cache)`,
         fromCache: true,
@@ -77,18 +81,21 @@ class HotFixturesService {
       .limit(limit)
       .lean();
 
+    // נרמול ObjectIds לפני שמירה ב-cache
+    const normalizedFixtures = normalizeMongoData(hotFixtures);
+
     // שמירה ב-cache
-    this.cache.set(cacheKey, hotFixtures);
+    this.cache.set(cacheKey, normalizedFixtures);
     console.log("🔥 [HotFixturesService] Data cached", {
       cacheKey,
-      fixturesCount: hotFixtures.length,
+      fixturesCount: normalizedFixtures.length,
     });
 
     return {
       success: true,
-      data: hotFixtures,
-      count: hotFixtures.length,
-      message: `נמצאו ${hotFixtures.length} משחקים חמים`,
+      data: normalizedFixtures,
+      count: normalizedFixtures.length,
+      message: `נמצאו ${normalizedFixtures.length} משחקים חמים`,
       fromCache: false,
     };
   }
@@ -107,7 +114,7 @@ class HotFixturesService {
       console.log("🔥 [HotFixturesService] Upcoming cache hit", { cacheKey });
       return {
         success: true,
-        data: cached,
+        data: immutableArrayCopy(cached),
         count: cached.length,
         message: `נמצאו ${cached.length} משחקים חמים (מ-cache)`,
         fromCache: true,
