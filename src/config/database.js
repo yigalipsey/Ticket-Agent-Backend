@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
 import { logWithCheckpoint, logError } from "../utils/logger.js";
 import errorHandler from "../services/ErrorHandlerService.js";
-import retryService from "../services/RetryService.js";
 import {
   ConnectionError,
   NetworkError,
@@ -28,26 +27,14 @@ class DatabaseConnection {
         uri: uri,
       });
 
-      // Use retry service for connection
-      this.connection = await retryService.executeWithRetry(
-        () =>
-          mongoose.connect(uri, {
-            // Connection options
-            maxPoolSize: 10,
-            serverSelectionTimeoutMS: 5000,
-            socketTimeoutMS: 45000,
-            bufferCommands: false,
-          }),
-        {
-          maxRetries: 3,
-          baseDelay: 2000,
-          maxDelay: 10000,
-        },
-        {
-          operation: "connectToDatabase",
-          uri: uri,
-        }
-      );
+      // Connect to database
+      this.connection = await mongoose.connect(uri, {
+        // Connection options
+        maxPoolSize: 10,
+        serverSelectionTimeoutMS: 5000,
+        socketTimeoutMS: 45000,
+        bufferCommands: false,
+      });
 
       this.isConnected = true;
 
@@ -158,11 +145,7 @@ class DatabaseConnection {
   async disconnect() {
     try {
       if (this.connection) {
-        await retryService.executeWithRetry(
-          () => mongoose.disconnect(),
-          { maxRetries: 2, baseDelay: 1000 },
-          { operation: "disconnectDatabase" }
-        );
+        await mongoose.disconnect();
         errorHandler.logSuccess("Database connection closed", "DB_006");
         this.isConnected = false;
       }

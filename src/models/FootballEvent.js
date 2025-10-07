@@ -54,6 +54,13 @@ const footballEventSchema = new mongoose.Schema(
 
     tags: [String],
 
+    // האם המשחק חם (פופולרי/נדרש)
+    isHot: {
+      type: Boolean,
+      default: false,
+      index: true,
+    },
+
     externalIds: {
       apiFootball: {
         type: Number,
@@ -90,6 +97,7 @@ footballEventSchema.index({ awayTeam: 1 });
 footballEventSchema.index({ venue: 1 });
 footballEventSchema.index({ slug: 1 }, { unique: true });
 footballEventSchema.index({ "minPrice.amount": 1 });
+footballEventSchema.index({ isHot: 1, date: 1 }); // אינדקס משולב למשחקים חמים
 
 // הגדרה בטוחה למניעת OverwriteModelError
 const FootballEvent =

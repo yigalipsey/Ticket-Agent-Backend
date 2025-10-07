@@ -4,8 +4,7 @@ import dotenv from "dotenv";
 import databaseConnection from "./config/database.js";
 
 // Import routes
-import eventsRoutes from "./routes/events.js";
-import footballEventsRoutes from "./routes/footballEvents.js";
+import fixturesRoutes from "./routes/fixtures.js";
 import teamsRoutes from "./routes/teams.js";
 import venuesRoutes from "./routes/venues.js";
 import leaguesRoutes from "./routes/leagues.js";
@@ -13,6 +12,7 @@ import agentsRoutes from "./routes/agents.js";
 import usersRoutes from "./routes/users.js";
 import authRoutes from "./routes/auth.js";
 import offersRoutes from "./routes/offers.js";
+import cacheRoutes from "./routes/cache.js";
 
 // Import utilities
 import logger, {
@@ -79,9 +79,7 @@ app.use((req, res, next) => {
 });
 
 // API routes
-app.use("/api/events", eventsRoutes);
-app.use("/api/football-events", footballEventsRoutes);
-app.use("/api/fixtures", footballEventsRoutes); // Alias for football-events
+app.use("/api/fixtures", fixturesRoutes); // Fixtures routes with cache
 app.use("/api/teams", teamsRoutes);
 app.use("/api/venues", venuesRoutes);
 app.use("/api/leagues", leaguesRoutes);
@@ -89,6 +87,7 @@ app.use("/api/agents", agentsRoutes);
 app.use("/api/users", usersRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/offers", offersRoutes);
+app.use("/api/cache", cacheRoutes); // Cache management routes
 
 // 404 handler
 app.use("*", (req, res) => {

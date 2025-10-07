@@ -91,6 +91,7 @@ export const getFootballEventsByTeamId = async (teamId, query = {}) => {
         .populate("homeTeam", "name_he country_he code slug logoUrl")
         .populate("awayTeam", "name_he country_he code slug logoUrl")
         .populate("venue", "name_he city_he country_he capacity")
+        .select("+minPrice") // Include minPrice field in response
         .lean(),
       FootballEvent.countDocuments(filter),
     ]);
