@@ -31,6 +31,7 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
       month, // אופציונלי - אם לא נשלח, נקבל את כל המשחקים של הליגה
       months, // אופציונלי - array של חודשים (למשל: ["2025-10", "2025-11"])
       city,
+      venueId, // פילטר לפי אצטדיון
       hasOffers,
       upcoming = true,
       sortBy = "date",
@@ -57,10 +58,10 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
     }
 
     // בדיקת cache
-    // Create cache key that includes month or months
+    // Create cache key that includes month or months and venueId
     const cacheKey =
       month || (months && months.length > 0 ? months.join(",") : null);
-    const cachedData = leagueCacheService.get(leagueId, cacheKey);
+    const cachedData = leagueCacheService.get(leagueId, cacheKey, venueId);
 
     let baseData;
     if (cachedData) {
@@ -87,6 +88,19 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
       const filter = {
         league: validLeagueId,
       };
+
+      // Add venue filter if provided
+      if (venueId) {
+        filter.venue = venueId;
+        logWithCheckpoint(
+          "debug",
+          "Added venue filter",
+          "LEAGUE_FIXTURES_003.5",
+          {
+            venueId,
+          }
+        );
+      }
 
       // Add date filter only if month or months are provided
       if (month) {
@@ -172,7 +186,7 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
       };
 
       // שמירה ב-cache
-      leagueCacheService.set(leagueId, cacheKey, baseData);
+      leagueCacheService.set(leagueId, cacheKey, baseData, venueId);
 
       logWithCheckpoint(
         "info",
@@ -271,6 +285,7 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
         filteredCount: filteredFixtures.length,
         filtersApplied: {
           city: !!city,
+          venueId: !!venueId,
           hasOffers: !!hasOffers,
           upcoming: !!upcoming,
         },

@@ -63,6 +63,11 @@ const teamSchema = new mongoose.Schema(
         sparse: true,
       },
     },
+    isPopular: {
+      type: Boolean,
+      default: false,
+      index: true,
+    },
   },
   {
     timestamps: true,

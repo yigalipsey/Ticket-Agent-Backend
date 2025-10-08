@@ -3,7 +3,6 @@ import { logWithCheckpoint, logError } from "../../../utils/logger.js";
 
 class LeagueCacheService {
   constructor() {
-    // LRU Cache לליגות
     this.cache = new LRUCache({
       max: 200, // מקסימום 200 ליגות
       ttl: 1000 * 60 * 60, // שעה TTL
@@ -22,22 +21,30 @@ class LeagueCacheService {
     );
   }
 
-  // יצירת מפתח cache
-  generateCacheKey(leagueId, month) {
-    return `league:${leagueId}:${month || "all"}`;
+  // יצירת מפתח cache גמיש
+  generateCacheKey(leagueId, opts = {}) {
+    const { month = null, venueId = null } = opts;
+
+    if (month) {
+      return `league:${leagueId}:month:${month}`;
+    }
+    if (venueId) {
+      return `league:${leagueId}:venue:${venueId}`;
+    }
+    return `league:${leagueId}:all`;
   }
 
   // קבלת נתונים מה-cache
-  get(leagueId, month) {
+  get(leagueId, opts = {}) {
     try {
-      const cacheKey = this.generateCacheKey(leagueId, month);
+      const cacheKey = this.generateCacheKey(leagueId, opts);
       const cachedData = this.cache.get(cacheKey);
 
       if (cachedData) {
         logWithCheckpoint("info", "League cache hit", "LEAGUE_CACHE_002", {
           cacheKey,
           leagueId,
-          month: month || "all",
+          ...opts,
           fixturesCount: cachedData.fixtures?.length || 0,
         });
         return cachedData;
@@ -46,26 +53,27 @@ class LeagueCacheService {
       logWithCheckpoint("debug", "League cache miss", "LEAGUE_CACHE_003", {
         cacheKey,
         leagueId,
-        month: month || "all",
+        ...opts,
       });
       return null;
     } catch (error) {
-      logError(error, { operation: "get", leagueId, month });
+      logError(error, { operation: "get", leagueId, ...opts });
       return null;
     }
   }
 
   // שמירת נתונים ב-cache
-  set(leagueId, month, data) {
+  set(leagueId, data, opts = {}) {
     try {
-      const cacheKey = this.generateCacheKey(leagueId, month);
+      const cacheKey = this.generateCacheKey(leagueId, opts);
 
       const cacheData = {
         ...data,
         cachedAt: new Date(),
         cacheKey,
         leagueId,
-        month: month || "all",
+        month: opts.month || "all",
+        venueId: opts.venueId || "all",
       };
 
       this.cache.set(cacheKey, cacheData);
@@ -77,7 +85,7 @@ class LeagueCacheService {
         {
           cacheKey,
           leagueId,
-          month: month || "all",
+          ...opts,
           fixturesCount: data.fixtures?.length || 0,
           cacheSize: this.cache.size,
         }
@@ -85,15 +93,15 @@ class LeagueCacheService {
 
       return true;
     } catch (error) {
-      logError(error, { operation: "set", leagueId, month });
+      logError(error, { operation: "set", leagueId, ...opts });
       return false;
     }
   }
 
   // בדיקת קיום נתונים ב-cache
-  has(leagueId, month) {
+  has(leagueId, opts = {}) {
     try {
-      const cacheKey = this.generateCacheKey(leagueId, month);
+      const cacheKey = this.generateCacheKey(leagueId, opts);
       const exists = this.cache.has(cacheKey);
 
       logWithCheckpoint(
@@ -103,20 +111,22 @@ class LeagueCacheService {
         {
           cacheKey,
           exists,
+          leagueId,
+          ...opts,
         }
       );
 
       return exists;
     } catch (error) {
-      logError(error, { operation: "has", leagueId, month });
+      logError(error, { operation: "has", leagueId, ...opts });
       return false;
     }
   }
 
   // מחיקת נתונים של ליגה
-  delete(leagueId, month) {
+  delete(leagueId, opts = {}) {
     try {
-      const cacheKey = this.generateCacheKey(leagueId, month);
+      const cacheKey = this.generateCacheKey(leagueId, opts);
       const deleted = this.cache.delete(cacheKey);
 
       logWithCheckpoint(
@@ -126,12 +136,14 @@ class LeagueCacheService {
         {
           cacheKey,
           deleted,
+          leagueId,
+          ...opts,
         }
       );
 
       return deleted;
     } catch (error) {
-      logError(error, { operation: "delete", leagueId, month });
+      logError(error, { operation: "delete", leagueId, ...opts });
       return false;
     }
   }
@@ -142,14 +154,12 @@ class LeagueCacheService {
       let deletedCount = 0;
       const keysToDelete = [];
 
-      // איתור כל המפתחות של הליגה
       for (const [key] of this.cache.entries()) {
         if (key.startsWith(`league:${leagueId}:`)) {
           keysToDelete.push(key);
         }
       }
 
-      // מחיקת המפתחות
       keysToDelete.forEach((key) => {
         if (this.cache.delete(key)) {
           deletedCount++;
@@ -215,7 +225,5 @@ class LeagueCacheService {
   }
 }
 
-// יצירת instance יחיד (Singleton)
 const leagueCacheService = new LeagueCacheService();
-
 export default leagueCacheService;
