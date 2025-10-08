@@ -3,6 +3,7 @@ import { logRequest, logError } from "../utils/logger.js";
 import { rateLimit } from "../middleware/auth.js";
 import HotFixturesService from "../services/footballFixtures/queries/HotFixturesService.js";
 import { getLeagueFixturesWithCache } from "../services/footballFixtures/queries/byLeague.js";
+import { createErrorResponse } from "../utils/errorCodes.js";
 
 const router = express.Router();
 
@@ -28,19 +29,20 @@ router.get("/hot", rateLimit(200), async (req, res) => {
     );
 
     if (result.success) {
-      res.json(result);
+      return res.status(200).json(result);
     } else {
-      res.status(400).json(result);
+      return res.status(400).json(result);
     }
   } catch (error) {
     logError(error, {
       route: "GET /api/fixtures/hot",
       query: req.query,
     });
-    res.status(500).json({
-      success: false,
-      error: "שגיאה פנימית בשרת",
-    });
+    const errorResponse = createErrorResponse(
+      "INTERNAL_SERVER_ERROR",
+      error.message
+    );
+    return res.status(500).json(errorResponse);
   }
 });
 
@@ -51,35 +53,35 @@ router.get("/by-league", rateLimit(200), async (req, res) => {
 
     // וולידציה
     if (!leagueId) {
-      return res.status(400).json({
-        success: false,
-        error: "leagueId parameter is required",
-      });
+      const errorResponse = createErrorResponse(
+        "VALIDATION_LEAGUE_ID_REQUIRED"
+      );
+      return res.status(400).json(errorResponse);
     }
 
     if (!leagueId.match(/^[0-9a-fA-F]{24}$/)) {
-      return res.status(400).json({
-        success: false,
-        error: "Invalid leagueId format",
-      });
+      const errorResponse = createErrorResponse(
+        "VALIDATION_INVALID_LEAGUE_ID",
+        "Expected MongoDB ObjectId (24 hex characters)"
+      );
+      return res.status(400).json(errorResponse);
     }
 
     const result = await getLeagueFixturesWithCache(leagueId, queryParams);
 
-    if (result.success) {
-      res.json(result);
-    } else {
-      res.status(result.statusCode || 400).json(result);
-    }
+    // החזרת התוצאה עם status code המתאים
+    const statusCode = result.success ? 200 : result.error?.statusCode || 400;
+    return res.status(statusCode).json(result);
   } catch (error) {
     logError(error, {
       route: "GET /api/fixtures/by-league",
       query: req.query,
     });
-    res.status(500).json({
-      success: false,
-      error: "שגיאה פנימית בשרת",
-    });
+    const errorResponse = createErrorResponse(
+      "INTERNAL_SERVER_ERROR",
+      error.message
+    );
+    return res.status(500).json(errorResponse);
   }
 });
 

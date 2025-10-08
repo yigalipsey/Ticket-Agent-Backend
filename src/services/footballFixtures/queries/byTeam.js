@@ -11,6 +11,7 @@ import {
   buildPaginationParams,
   buildPopulateOptions,
 } from "../utils/buildFootballEventFilter.js";
+import { createErrorResponse } from "../../../utils/errorCodes.js";
 
 // Get football events by team ID
 export const getFootballEventsByTeamId = async (teamId, query = {}) => {
@@ -22,7 +23,12 @@ export const getFootballEventsByTeamId = async (teamId, query = {}) => {
       { teamId, query }
     );
 
-    const validTeamId = validateObjectId(teamId, "Team ID");
+    let validTeamId;
+    try {
+      validTeamId = validateObjectId(teamId, "Team ID");
+    } catch (error) {
+      return createErrorResponse("VALIDATION_INVALID_TEAM_ID", error.message);
+    }
 
     const {
       page = 1,
@@ -152,6 +158,6 @@ export const getFootballEventsByTeamId = async (teamId, query = {}) => {
     };
   } catch (error) {
     logError(error, { operation: "getFootballEventsByTeamId", teamId, query });
-    throw error;
+    return createErrorResponse("INTERNAL_SERVER_ERROR", error.message);
   }
 };

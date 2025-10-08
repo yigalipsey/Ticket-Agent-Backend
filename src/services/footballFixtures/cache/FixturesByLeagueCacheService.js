@@ -1,7 +1,7 @@
 import { LRUCache } from "lru-cache";
 import { logWithCheckpoint, logError } from "../../../utils/logger.js";
 
-class LeagueCacheService {
+class FixturesByLeagueCacheService {
   constructor() {
     this.cache = new LRUCache({
       max: 200, // מקסימום 200 ליגות
@@ -12,8 +12,8 @@ class LeagueCacheService {
 
     logWithCheckpoint(
       "info",
-      "LeagueCacheService initialized",
-      "LEAGUE_CACHE_001",
+      "FixturesByLeagueCacheService initialized",
+      "FIXTURES_BY_LEAGUE_CACHE_001",
       {
         maxSize: 200,
         ttl: "1 hour",
@@ -25,12 +25,19 @@ class LeagueCacheService {
   generateCacheKey(leagueId, opts = {}) {
     const { month = null, venueId = null } = opts;
 
+    // שילוב של month + venue
+    if (month && venueId) {
+      return `league:${leagueId}:month:${month}:venue:${venueId}`;
+    }
+    // רק month
     if (month) {
       return `league:${leagueId}:month:${month}`;
     }
+    // רק venue (כל החודשים)
     if (venueId) {
       return `league:${leagueId}:venue:${venueId}`;
     }
+    // ללא פילטרים
     return `league:${leagueId}:all`;
   }
 
@@ -41,20 +48,30 @@ class LeagueCacheService {
       const cachedData = this.cache.get(cacheKey);
 
       if (cachedData) {
-        logWithCheckpoint("info", "League cache hit", "LEAGUE_CACHE_002", {
-          cacheKey,
-          leagueId,
-          ...opts,
-          fixturesCount: cachedData.fixtures?.length || 0,
-        });
+        logWithCheckpoint(
+          "info",
+          "Fixtures by league cache hit",
+          "FIXTURES_BY_LEAGUE_CACHE_002",
+          {
+            cacheKey,
+            leagueId,
+            ...opts,
+            fixturesCount: cachedData.fixtures?.length || 0,
+          }
+        );
         return cachedData;
       }
 
-      logWithCheckpoint("debug", "League cache miss", "LEAGUE_CACHE_003", {
-        cacheKey,
-        leagueId,
-        ...opts,
-      });
+      logWithCheckpoint(
+        "debug",
+        "Fixtures by league cache miss",
+        "FIXTURES_BY_LEAGUE_CACHE_003",
+        {
+          cacheKey,
+          leagueId,
+          ...opts,
+        }
+      );
       return null;
     } catch (error) {
       logError(error, { operation: "get", leagueId, ...opts });
@@ -80,8 +97,8 @@ class LeagueCacheService {
 
       logWithCheckpoint(
         "info",
-        "League data cached successfully",
-        "LEAGUE_CACHE_004",
+        "Fixtures by league cached successfully",
+        "FIXTURES_BY_LEAGUE_CACHE_004",
         {
           cacheKey,
           leagueId,
@@ -106,8 +123,8 @@ class LeagueCacheService {
 
       logWithCheckpoint(
         "debug",
-        "League cache existence check",
-        "LEAGUE_CACHE_005",
+        "Fixtures by league cache existence check",
+        "FIXTURES_BY_LEAGUE_CACHE_005",
         {
           cacheKey,
           exists,
@@ -131,8 +148,8 @@ class LeagueCacheService {
 
       logWithCheckpoint(
         "info",
-        "League cache entry deleted",
-        "LEAGUE_CACHE_006",
+        "Fixtures by league cache entry deleted",
+        "FIXTURES_BY_LEAGUE_CACHE_006",
         {
           cacheKey,
           deleted,
@@ -166,11 +183,16 @@ class LeagueCacheService {
         }
       });
 
-      logWithCheckpoint("info", "League cache cleared", "LEAGUE_CACHE_007", {
-        leagueId,
-        deletedCount,
-        remainingCacheSize: this.cache.size,
-      });
+      logWithCheckpoint(
+        "info",
+        "Fixtures by league cache cleared",
+        "FIXTURES_BY_LEAGUE_CACHE_007",
+        {
+          leagueId,
+          deletedCount,
+          remainingCacheSize: this.cache.size,
+        }
+      );
 
       return deletedCount;
     } catch (error) {
@@ -187,8 +209,8 @@ class LeagueCacheService {
 
       logWithCheckpoint(
         "info",
-        "League cache cleared completely",
-        "LEAGUE_CACHE_008",
+        "Fixtures by league cache cleared completely",
+        "FIXTURES_BY_LEAGUE_CACHE_008",
         {
           clearedEntries: size,
         }
@@ -213,8 +235,8 @@ class LeagueCacheService {
 
       logWithCheckpoint(
         "info",
-        "League cache statistics",
-        "LEAGUE_CACHE_009",
+        "Fixtures by league cache statistics",
+        "FIXTURES_BY_LEAGUE_CACHE_009",
         stats
       );
       return stats;
@@ -225,5 +247,5 @@ class LeagueCacheService {
   }
 }
 
-const leagueCacheService = new LeagueCacheService();
-export default leagueCacheService;
+const fixturesByLeagueCacheService = new FixturesByLeagueCacheService();
+export default fixturesByLeagueCacheService;

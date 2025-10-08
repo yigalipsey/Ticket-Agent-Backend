@@ -1,5 +1,4 @@
 import FootballEvent from "../../../models/FootballEvent.js";
-import League from "../../../models/League.js";
 import { logWithCheckpoint, logError } from "../../../utils/logger.js";
 import { validateObjectId } from "../validators/validateFootballQuery.js";
 import {
@@ -11,7 +10,9 @@ import {
   validateMonthFormat,
   validateFilters,
 } from "../utils/filterUtils.js";
-import leagueCacheService from "../cache/LeagueCacheService.js";
+import fixturesByLeagueCacheService from "../cache/FixturesByLeagueCacheService.js";
+import { createErrorResponse } from "../../../utils/errorCodes.js";
+import { createSuccessResponse } from "../../../utils/successCodes.js";
 
 /**
  * קבלת משחקי ליגה עם cache ופילטרים
@@ -43,25 +44,31 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
     try {
       validLeagueId = validateObjectId(leagueId, "League ID");
     } catch (error) {
-      throw new Error(`Invalid leagueId format: ${error.message}`);
+      return createErrorResponse("VALIDATION_INVALID_LEAGUE_ID", error.message);
     }
 
     // month is now optional - if not provided, fetch all fixtures for the league
 
     if (month && !validateMonthFormat(month)) {
-      throw new Error("Invalid month format. Use YYYY-MM");
+      return createErrorResponse("VALIDATION_INVALID_MONTH_FORMAT");
     }
 
     const validation = validateFilters({ page, limit });
     if (!validation.isValid) {
-      throw new Error(validation.errors.join(", "));
+      return createErrorResponse(
+        "VALIDATION_INVALID_PAGINATION",
+        validation.errors.join(", ")
+      );
     }
 
     // בדיקת cache
     // Create cache key that includes month or months and venueId
     const cacheKey =
       month || (months && months.length > 0 ? months.join(",") : null);
-    const cachedData = leagueCacheService.get(leagueId, cacheKey, venueId);
+    const cachedData = fixturesByLeagueCacheService.get(leagueId, {
+      month: cacheKey,
+      venueId,
+    });
 
     let baseData;
     if (cachedData) {
@@ -178,15 +185,32 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
         FootballEvent.countDocuments(filter),
       ]);
 
+      // נרמול נתונים - מיפוי name_he ל-name
+      const normalizedFixtures = fixtures.map((fixture) => ({
+        ...fixture,
+        venue: fixture.venue
+          ? {
+              ...fixture.venue,
+              name: fixture.venue.name_he || fixture.venue.name_en,
+              nameHe: fixture.venue.name_he,
+              city: fixture.venue.city_he || fixture.venue.city_en,
+              country: fixture.venue.country_he || fixture.venue.country_en,
+            }
+          : null,
+      }));
+
       baseData = {
-        fixtures,
+        fixtures: normalizedFixtures,
         total,
         leagueId,
         month: month || (months && months.length > 0 ? months.join(",") : null),
       };
 
       // שמירה ב-cache
-      leagueCacheService.set(leagueId, cacheKey, baseData, venueId);
+      fixturesByLeagueCacheService.set(leagueId, baseData, {
+        month: cacheKey,
+        venueId,
+      });
 
       logWithCheckpoint(
         "info",
@@ -297,7 +321,8 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
       leagueId,
       query,
     });
-    throw error;
+
+    return createErrorResponse("INTERNAL_SERVER_ERROR", error.message);
   }
 };
 
@@ -332,127 +357,4 @@ export const getLeagueFixturesWithOffers = async (
   };
 
   return await getLeagueFixturesWithCache(leagueId, query);
-};
-
-// שמירה על הפונקציה הישנה לתאימות לאחור
-export const getFootballEventsByLeagueId = async (leagueId, query = {}) => {
-  // אם יש month parameter, השתמש ב-cache
-  if (query.month) {
-    return await getLeagueFixturesWithCache(leagueId, query);
-  }
-
-  // אחרת, השתמש בלוגיקה הישנה
-  try {
-    logWithCheckpoint(
-      "info",
-      "Starting to fetch football events by league (legacy)",
-      "FOOTBALL_019",
-      { leagueId, query }
-    );
-
-    const validLeagueId = validateObjectId(leagueId, "League ID");
-
-    const {
-      page = 1,
-      limit = 20,
-      season,
-      teamId,
-      venue,
-      sortBy = "date",
-      sortOrder = "asc",
-      status,
-      round,
-      upcoming = undefined,
-    } = query;
-
-    // Build filter object
-    const filter = {
-      league: validLeagueId,
-    };
-
-    // Check if league exists in database first
-    const leagueExists = await League.findById(validLeagueId).lean();
-
-    if (season) {
-      filter.season = season;
-    }
-
-    if (teamId) {
-      filter.$or = [{ homeTeam: teamId }, { awayTeam: teamId }];
-    }
-
-    if (venue) {
-      filter.venue = venue;
-    }
-
-    if (status) {
-      filter.status = status;
-    }
-
-    if (round) {
-      filter.round = round;
-    }
-
-    // Filter by date (upcoming or past)
-    if (upcoming === "true" || upcoming === true) {
-      filter.date = { $gte: new Date() };
-    } else if (upcoming === "false" || upcoming === false) {
-      filter.date = { $lt: new Date() };
-    }
-
-    // Build sort object
-    const sort = buildSortObject(sortBy, sortOrder);
-    const { skip, limit: limitNum } = buildPaginationParams(page, limit);
-
-    const [footballEvents, total] = await Promise.all([
-      FootballEvent.find(filter)
-        .sort(sort)
-        .skip(skip)
-        .limit(limitNum)
-        .populate("league", "name name_he country country_he logoUrl slug")
-        .populate(
-          "homeTeam",
-          "name name_he name_en country country_he country_en code slug logoUrl"
-        )
-        .populate(
-          "awayTeam",
-          "name name_he name_en country country_he country_en code slug logoUrl"
-        )
-        .populate(
-          "venue",
-          "name name_he name_en city city_he city_en country country_he country_en capacity"
-        )
-        .select("+minPrice")
-        .lean(),
-      FootballEvent.countDocuments(filter),
-    ]);
-
-    logWithCheckpoint(
-      "info",
-      "Successfully fetched football events by league (legacy)",
-      "FOOTBALL_020",
-      {
-        leagueId,
-        count: footballEvents.length,
-        total,
-      }
-    );
-
-    return {
-      fixtures: footballEvents,
-      pagination: {
-        page: parseInt(page),
-        limit: parseInt(limit),
-        total,
-        pages: Math.ceil(total / parseInt(limit)),
-      },
-    };
-  } catch (error) {
-    logError(error, {
-      operation: "getFootballEventsByLeagueId",
-      leagueId,
-      query,
-    });
-    throw error;
-  }
 };

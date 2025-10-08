@@ -6,10 +6,8 @@ import {
   requireRole,
   rateLimit,
 } from "../middleware/auth.js";
-import {
-  createErrorResponse,
-  createSuccessResponse,
-} from "../utils/errorCodes.js";
+import { createErrorResponse } from "../utils/errorCodes.js";
+import { createSuccessResponse } from "../utils/successCodes.js";
 
 const router = express.Router();
 

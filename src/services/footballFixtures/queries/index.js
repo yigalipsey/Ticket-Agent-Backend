@@ -1,6 +1,5 @@
 // Export all query functions
 export {
-  getFootballEventsByLeagueId,
   getLeagueFixturesWithCache,
   getLeagueFixturesByMonth,
   getLeagueFixturesWithOffers,

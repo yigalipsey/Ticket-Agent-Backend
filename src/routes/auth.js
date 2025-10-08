@@ -4,11 +4,8 @@ import bcrypt from "bcryptjs";
 import UserService from "../services/user/index.js";
 import { logRequest, logError } from "../utils/logger.js";
 import { rateLimit, authenticateToken } from "../middleware/auth.js";
-import {
-  createErrorResponse,
-  createSuccessResponse,
-  ERROR_CODES,
-} from "../utils/errorCodes.js";
+import { createErrorResponse, ERROR_CODES } from "../utils/errorCodes.js";
+import { createSuccessResponse } from "../utils/successCodes.js";
 
 const router = express.Router();
 
