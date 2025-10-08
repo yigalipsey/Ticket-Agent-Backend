@@ -9,43 +9,49 @@ import {
 import leagueCacheService from "../cache/LeagueCacheService.js";
 
 /**
- * קבלת ליגה בודדת לפי מזהה או slug עם fallback ל-DB
+ * קבלת ליגה בודדת לפי ID בלבד עם fallback ל-DB
  */
-export const getLeague = async (identifier, withTeams = false) => {
+export const getLeague = async (leagueId, withTeams = false) => {
   try {
-    logWithCheckpoint("info", "Fetching single league", "LEAGUE_QUERY_011", {
-      identifier,
-      withTeams,
-    });
+    logWithCheckpoint(
+      "info",
+      "Fetching single league by ID",
+      "LEAGUE_QUERY_011",
+      {
+        leagueId,
+        withTeams,
+      }
+    );
 
-    // ולידציה של identifier
-    const isValidObjectId = mongoose.Types.ObjectId.isValid(identifier);
-    const isSlug = typeof identifier === "string" && !isValidObjectId;
+    // ולידציה של ID
+    if (!mongoose.Types.ObjectId.isValid(leagueId)) {
+      throw new Error(`Invalid league ID: ${leagueId}`);
+    }
 
-    logWithCheckpoint("debug", "Identifier validation", "LEAGUE_QUERY_011.5", {
-      identifier,
-      isValidObjectId,
-      isSlug,
-    });
+    logWithCheckpoint(
+      "debug",
+      "League ID validation passed",
+      "LEAGUE_QUERY_011.5",
+      {
+        leagueId,
+      }
+    );
 
     // ניסיון לקבל מה-cache
     const cachedData = leagueCacheService.get(withTeams);
 
     if (cachedData && cachedData.leagues) {
-      // חיפוש הליגה ב-cache לפי ID או slug
+      // חיפוש הליגה ב-cache לפי ID
       const league = cachedData.leagues.find(
         (l) =>
-          l._id?.toString() === identifier?.toString() ||
-          l.id?.toString() === identifier?.toString() ||
-          l.slug === identifier
+          l._id?.toString() === leagueId?.toString() ||
+          l.id?.toString() === leagueId?.toString()
       );
 
       if (league) {
         logWithCheckpoint("info", "League found in cache", "LEAGUE_QUERY_012", {
-          identifier,
+          leagueId,
           leagueName: league.name,
-          leagueId: league._id,
-          leagueSlug: league.slug,
           withTeams,
           teamsCount: league.teams?.length || 0,
         });
@@ -66,22 +72,14 @@ export const getLeague = async (identifier, withTeams = false) => {
       "info",
       "League not found in cache, fetching from database",
       "LEAGUE_QUERY_013",
-      { identifier, withTeams }
+      { leagueId, withTeams }
     );
 
     let league;
 
-    // בניית query מותאם לפי סוג ה-identifier
-    let query;
-    if (isValidObjectId) {
-      query = { _id: identifier };
-    } else {
-      query = { slug: identifier };
-    }
-
     if (withTeams) {
       // קבלת ליגה עם הקבוצות שלה
-      league = await League.findOne(query)
+      league = await League.findById(leagueId)
         .select("name slug country nameHe logoUrl")
         .lean();
 
@@ -95,7 +93,7 @@ export const getLeague = async (identifier, withTeams = false) => {
       }
     } else {
       // קבלת ליגה בלבד
-      league = await League.findOne(query)
+      league = await League.findById(leagueId)
         .select("name slug country nameHe logoUrl")
         .lean();
     }
@@ -105,7 +103,7 @@ export const getLeague = async (identifier, withTeams = false) => {
         "warn",
         "League not found in database",
         "LEAGUE_QUERY_014",
-        { identifier, withTeams }
+        { leagueId, withTeams }
       );
       return null;
     }
@@ -114,12 +112,16 @@ export const getLeague = async (identifier, withTeams = false) => {
     league = normalizeMongoData(league);
 
     logWithCheckpoint("info", "League found in database", "LEAGUE_QUERY_015", {
-      identifier,
+      leagueId,
       leagueName: league.name,
-      leagueId: league._id,
-      leagueSlug: league.slug,
       withTeams,
       teamsCount: league.teams?.length || 0,
+    });
+
+    // 🟢 Checkpoint 6 - עדכון cache
+    console.log("🟢 [CHECKPOINT 6] Updating cache with new league", {
+      leagueId: league._id,
+      leagueName: league.name,
     });
 
     // עדכון cache עם הליגה החדשה
@@ -141,12 +143,18 @@ export const getLeague = async (identifier, withTeams = false) => {
 
         // שמירה ב-cache
         leagueCacheService.set(withTeams, currentCache);
+
+        // 🟢 Checkpoint 7 - Cache עודכן בהצלחה
+        console.log("🟢 [CHECKPOINT 7] Cache updated successfully", {
+          leagueId: league._id,
+          cacheSize: currentCache.leagues.length,
+        });
+
         logWithCheckpoint(
           "debug",
           "Cache updated with new league",
           "LEAGUE_QUERY_016",
           {
-            identifier,
             leagueId: league._id,
             cacheSize: currentCache.leagues.length,
           }
@@ -155,11 +163,17 @@ export const getLeague = async (identifier, withTeams = false) => {
     } catch (cacheError) {
       logError(cacheError, {
         operation: "updateCacheAfterDBFetch",
-        identifier,
+        leagueId,
         withTeams,
       });
       // לא זורק שגיאה - זה לא קריטי
     }
+
+    // 🟢 Checkpoint 8 - החזרת ליגה מ-DB
+    console.log("🟢 [CHECKPOINT 8] Returning league from DB", {
+      leagueId: league._id,
+      fromCache: false,
+    });
 
     return {
       league,
@@ -169,7 +183,7 @@ export const getLeague = async (identifier, withTeams = false) => {
   } catch (error) {
     logError(error, {
       operation: "getLeague",
-      identifier,
+      leagueId,
       withTeams,
     });
 
@@ -178,9 +192,8 @@ export const getLeague = async (identifier, withTeams = false) => {
     if (staleCache && staleCache.leagues) {
       const staleLeague = staleCache.leagues.find(
         (l) =>
-          l._id?.toString() === identifier?.toString() ||
-          l.id?.toString() === identifier?.toString() ||
-          l.slug === identifier
+          l._id?.toString() === leagueId?.toString() ||
+          l.id?.toString() === leagueId?.toString()
       );
 
       if (staleLeague) {
@@ -189,7 +202,7 @@ export const getLeague = async (identifier, withTeams = false) => {
           "Database failed, returning stale league from cache as fallback",
           "LEAGUE_QUERY_FALLBACK",
           {
-            identifier,
+            leagueId,
             leagueName: staleLeague.name,
             withTeams,
             error: error.message,
@@ -213,10 +226,3 @@ export const getLeague = async (identifier, withTeams = false) => {
     throw error;
   }
 };
-
-// Alias functions for backward compatibility
-export const getLeagueById = (leagueId, withTeams = false) =>
-  getLeague(leagueId, withTeams);
-
-export const getLeagueBySlug = (slug, withTeams = false) =>
-  getLeague(slug, withTeams);

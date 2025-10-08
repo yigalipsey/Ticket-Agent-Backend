@@ -100,9 +100,12 @@ export const getAllLeagues = async (withTeams = false) => {
     // שמירה ב-cache
     leagueCacheService.set(withTeams, result);
 
+    // עדכון מסיבי של slug→ID mappings (אופטימיזציה לעתיד)
+    leagueCacheService.bulkSetSlugToIdMappings(leagues);
+
     logWithCheckpoint(
       "info",
-      "Data fetched from database and cached",
+      "Data fetched from database and cached (including slug→ID mappings)",
       "LEAGUE_QUERY_006",
       {
         withTeams,

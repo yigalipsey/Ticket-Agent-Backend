@@ -11,13 +11,22 @@ class LeagueCacheService {
       updateAgeOnGet: true,
     });
 
+    // LRU Cache מהיר למיפוי slug → ID
+    // זה cache קטן וקל שחוסך queries למונגו
+    this.slugToIdCache = new LRUCache({
+      max: 100, // מקסימום 100 מיפויים (קטן ומהיר)
+      ttl: 1000 * 60 * 60 * 24 * 7, // שבוע TTL (slugs לא משתנים)
+      allowStale: false,
+      updateAgeOnGet: true,
+    });
+
     logWithCheckpoint(
       "info",
       "LeagueCacheService initialized",
       "LEAGUE_CACHE_001",
       {
-        maxSize: 50,
-        ttl: "24 hours",
+        leaguesCache: { maxSize: 50, ttl: "24 hours" },
+        slugToIdCache: { maxSize: 100, ttl: "7 days" },
       }
     );
   }
@@ -176,6 +185,7 @@ class LeagueCacheService {
         maxSize: this.cache.max,
         ttl: this.cache.ttl,
         calculatedSize: this.cache.calculatedSize,
+        slugToIdCacheSize: this.slugToIdCache.size,
       };
 
       logWithCheckpoint(
@@ -188,6 +198,131 @@ class LeagueCacheService {
     } catch (error) {
       logError(error, { operation: "getStats" });
       return null;
+    }
+  }
+
+  // ========================================
+  // Slug → ID Cache (אולטרה מהיר!)
+  // ========================================
+
+  /**
+   * קבלת ID לפי slug מה-cache
+   * @param {string} slug - הslug של הליגה
+   * @returns {string|null} - ה-ID או null אם לא נמצא
+   */
+  getLeagueIdBySlug(slug) {
+    try {
+      const leagueId = this.slugToIdCache.get(slug);
+
+      if (leagueId) {
+        logWithCheckpoint(
+          "info",
+          "Slug→ID cache hit",
+          "LEAGUE_SLUG_CACHE_001",
+          {
+            slug,
+            leagueId,
+          }
+        );
+        return leagueId;
+      }
+
+      logWithCheckpoint(
+        "debug",
+        "Slug→ID cache miss",
+        "LEAGUE_SLUG_CACHE_002",
+        {
+          slug,
+        }
+      );
+      return null;
+    } catch (error) {
+      logError(error, { operation: "getLeagueIdBySlug", slug });
+      return null;
+    }
+  }
+
+  /**
+   * שמירת מיפוי slug → ID
+   * @param {string} slug - הslug של הליגה
+   * @param {string} leagueId - ה-ID של הליגה
+   */
+  setLeagueIdBySlug(slug, leagueId) {
+    try {
+      this.slugToIdCache.set(slug, leagueId);
+
+      logWithCheckpoint(
+        "info",
+        "Slug→ID mapping cached",
+        "LEAGUE_SLUG_CACHE_003",
+        {
+          slug,
+          leagueId,
+          cacheSize: this.slugToIdCache.size,
+        }
+      );
+
+      return true;
+    } catch (error) {
+      logError(error, { operation: "setLeagueIdBySlug", slug, leagueId });
+      return false;
+    }
+  }
+
+  /**
+   * עדכון מסיבי של מיפויי slug→ID (כשמביאים את כל הליגות)
+   * @param {Array} leagues - מערך ליגות עם slug ו-_id
+   */
+  bulkSetSlugToIdMappings(leagues) {
+    try {
+      let count = 0;
+      for (const league of leagues) {
+        if (league.slug && league._id) {
+          this.slugToIdCache.set(league.slug, league._id.toString());
+          count++;
+        }
+      }
+
+      logWithCheckpoint(
+        "info",
+        "Bulk slug→ID mappings cached",
+        "LEAGUE_SLUG_CACHE_004",
+        {
+          mappingsAdded: count,
+          totalLeagues: leagues.length,
+          cacheSize: this.slugToIdCache.size,
+        }
+      );
+
+      return count;
+    } catch (error) {
+      logError(error, { operation: "bulkSetSlugToIdMappings" });
+      return 0;
+    }
+  }
+
+  /**
+   * מחיקת מיפוי slug → ID
+   * @param {string} slug - הslug למחיקה
+   */
+  deleteSlugToIdMapping(slug) {
+    try {
+      const deleted = this.slugToIdCache.delete(slug);
+
+      logWithCheckpoint(
+        "info",
+        "Slug→ID mapping deleted",
+        "LEAGUE_SLUG_CACHE_005",
+        {
+          slug,
+          deleted,
+        }
+      );
+
+      return deleted;
+    } catch (error) {
+      logError(error, { operation: "deleteSlugToIdMapping", slug });
+      return false;
     }
   }
 }
