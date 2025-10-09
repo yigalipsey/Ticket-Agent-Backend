@@ -14,7 +14,9 @@
     "migrate-venueid": "node scripts/migrateVenueId.js",
     "sync-two-fixtures": "node scripts/syncTwoFixtures.js",
     "sync-round2-fixtures": "node scripts/syncRound2Fixtures.js",
-    "fetch-champions-league": "node scripts/fetchChampionsLeagueRounds.js"
+    "fetch-champions-league": "node scripts/fetchChampionsLeagueRounds.js",
+    "initialize-league-months": "node scripts/initializeLeagueMonths.js",
+    "update-league-months": "node scripts/updateLeagueMonths.js"
   },
   "keywords": [
     "tickets",

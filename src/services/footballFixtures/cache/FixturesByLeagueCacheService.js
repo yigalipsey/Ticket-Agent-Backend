@@ -25,19 +25,12 @@ class FixturesByLeagueCacheService {
   generateCacheKey(leagueId, opts = {}) {
     const { month = null, venueId = null } = opts;
 
-    // שילוב של month + venue
-    if (month && venueId) {
-      return `league:${leagueId}:month:${month}:venue:${venueId}`;
-    }
-    // רק month
     if (month) {
       return `league:${leagueId}:month:${month}`;
     }
-    // רק venue (כל החודשים)
     if (venueId) {
       return `league:${leagueId}:venue:${venueId}`;
     }
-    // ללא פילטרים
     return `league:${leagueId}:all`;
   }
 

@@ -80,7 +80,7 @@ export const getLeague = async (leagueId, withTeams = false) => {
     if (withTeams) {
       // קבלת ליגה עם הקבוצות שלה
       league = await League.findById(leagueId)
-        .select("name slug country nameHe logoUrl")
+        .select("name slug country nameHe logoUrl months")
         .lean();
 
       if (league) {
@@ -94,7 +94,7 @@ export const getLeague = async (leagueId, withTeams = false) => {
     } else {
       // קבלת ליגה בלבד
       league = await League.findById(leagueId)
-        .select("name slug country nameHe logoUrl")
+        .select("name slug country nameHe logoUrl months")
         .lean();
     }
 

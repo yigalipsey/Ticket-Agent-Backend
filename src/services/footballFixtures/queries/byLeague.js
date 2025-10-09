@@ -1,4 +1,5 @@
 import FootballEvent from "../../../models/FootballEvent.js";
+import League from "../../../models/League.js";
 import { logWithCheckpoint, logError } from "../../../utils/logger.js";
 import { validateObjectId } from "../validators/validateFootballQuery.js";
 import {
@@ -46,6 +47,10 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
     } catch (error) {
       return createErrorResponse("VALIDATION_INVALID_LEAGUE_ID", error.message);
     }
+
+    // שליפת פרטי הליגה (כולל מערך החודשים)
+    const league = await League.findById(validLeagueId).select("months").lean();
+    const leagueMonths = league?.months || [];
 
     // month is now optional - if not provided, fetch all fixtures for the league
 
@@ -302,6 +307,7 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
       ...result,
       fromCache: !!cachedData,
       cachedAt: cachedData?.cachedAt || new Date(),
+      availableMonths: leagueMonths, // מערך החודשים הזמינים של הליגה
       meta: {
         leagueId,
         month,

@@ -50,6 +50,17 @@ const leagueSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    months: {
+      type: [String],
+      default: [],
+      validate: {
+        validator: function (arr) {
+          // בדיקה שכל ערך הוא בפורמט YYYY-MM
+          return arr.every((month) => /^\d{4}-\d{2}$/.test(month));
+        },
+        message: "Each month must be in YYYY-MM format",
+      },
+    },
     externalIds: {
       apiFootball: {
         type: Number,
