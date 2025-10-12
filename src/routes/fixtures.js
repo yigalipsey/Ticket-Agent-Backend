@@ -3,6 +3,7 @@ import { logRequest, logError } from "../utils/logger.js";
 import { rateLimit } from "../middleware/auth.js";
 import HotFixturesService from "../services/footballFixtures/queries/HotFixturesService.js";
 import { getLeagueFixturesWithCache } from "../services/footballFixtures/queries/byLeague.js";
+import { getFootballEventsByTeamId } from "../services/footballFixtures/queries/byTeam.js";
 import { createErrorResponse } from "../utils/errorCodes.js";
 
 const router = express.Router();
@@ -75,6 +76,59 @@ router.get("/by-league", rateLimit(200), async (req, res) => {
   } catch (error) {
     logError(error, {
       route: "GET /api/fixtures/by-league",
+      query: req.query,
+    });
+    const errorResponse = createErrorResponse(
+      "INTERNAL_SERVER_ERROR",
+      error.message
+    );
+    return res.status(500).json(errorResponse);
+  }
+});
+
+// GET /api/fixtures/by-team - שליפת כל משחקי קבוצה עם cache פשוט
+router.get("/by-team", rateLimit(200), async (req, res) => {
+  try {
+    const { teamId, limit = 1000 } = req.query;
+
+    // וולידציה
+    if (!teamId) {
+      const errorResponse = createErrorResponse(
+        "VALIDATION_TEAM_ID_REQUIRED",
+        "Team ID is required"
+      );
+      return res.status(400).json(errorResponse);
+    }
+
+    if (!teamId.match(/^[0-9a-fA-F]{24}$/)) {
+      const errorResponse = createErrorResponse(
+        "VALIDATION_INVALID_TEAM_ID",
+        "Expected MongoDB ObjectId (24 hex characters)"
+      );
+      return res.status(400).json(errorResponse);
+    }
+
+    // קריאה לסרוויס עם limit בלבד (ללא פילטרים נוספים)
+    const result = await getFootballEventsByTeamId(teamId, {
+      limit,
+      page: 1,
+      // ללא upcoming - מחזיר את כל המשחקים
+    });
+
+    // החזרת התוצאה
+    if (result.success === false) {
+      return res.status(400).json(result);
+    }
+
+    return res.status(200).json({
+      success: true,
+      data: result.footballEvents || [],
+      pagination: result.pagination,
+      fromCache: result.fromCache || false,
+    });
+  } catch (error) {
+    logError(error, {
+      route: "GET /api/fixtures/by-team",
       query: req.query,
     });
     const errorResponse = createErrorResponse(

@@ -31,7 +31,7 @@ function generateMonths(startDate, endDate) {
 }
 
 /**
- * הכנסת חודשים לכל הליגות - מאוקטובר 2025 עד יוני 2026
+ * הכנסת חודשים לכל הליגות - מאוקטובר 2025 עד אוקטובר 2026
  */
 async function initializeLeagueMonths() {
   try {
@@ -45,9 +45,9 @@ async function initializeLeagueMonths() {
     await mongoose.connect(process.env.MONGODB_URI);
     logWithCheckpoint("info", "Connected to MongoDB", "INIT_LEAGUE_MONTHS_002");
 
-    // יצירת מערך חודשים מאוקטובר 2025 עד יוני 2026
+    // יצירת מערך חודשים מאוקטובר 2025 עד אוקטובר 2026
     const startDate = new Date("2025-10-01");
-    const endDate = new Date("2026-06-30");
+    const endDate = new Date("2026-10-31");
     const months = generateMonths(startDate, endDate);
 
     logWithCheckpoint(

@@ -11,6 +11,11 @@
 export const normalizeObjectIds = (obj) => {
   if (obj === null || obj === undefined) return obj;
 
+  // Handle Date objects - convert to ISO string
+  if (obj instanceof Date) {
+    return obj.toISOString();
+  }
+
   // Handle ObjectId (Buffer) conversion
   if (
     obj &&

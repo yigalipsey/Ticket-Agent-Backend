@@ -307,7 +307,6 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
       ...result,
       fromCache: !!cachedData,
       cachedAt: cachedData?.cachedAt || new Date(),
-      availableMonths: leagueMonths, // מערך החודשים הזמינים של הליגה
       meta: {
         leagueId,
         month,

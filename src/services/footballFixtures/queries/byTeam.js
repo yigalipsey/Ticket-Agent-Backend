@@ -12,13 +12,14 @@ import {
   buildPopulateOptions,
 } from "../utils/buildFootballEventFilter.js";
 import { createErrorResponse } from "../../../utils/errorCodes.js";
+import fixturesByTeamCacheService from "../cache/FixturesByTeamCacheService.js";
 
-// Get football events by team ID
+// Get football events by team ID with cache
 export const getFootballEventsByTeamId = async (teamId, query = {}) => {
   try {
     logWithCheckpoint(
       "info",
-      "Starting to fetch football events by team",
+      "Starting to fetch football events by team with cache",
       "FOOTBALL_007",
       { teamId, query }
     );
@@ -30,6 +31,33 @@ export const getFootballEventsByTeamId = async (teamId, query = {}) => {
       return createErrorResponse("VALIDATION_INVALID_TEAM_ID", error.message);
     }
 
+    // בדיקת cache
+    const cachedData = fixturesByTeamCacheService.get(teamId);
+
+    if (cachedData) {
+      logWithCheckpoint(
+        "info",
+        "Using cached team fixtures",
+        "FOOTBALL_007.5",
+        {
+          teamId,
+          cachedFixturesCount: cachedData.footballEvents?.length || 0,
+        }
+      );
+      return {
+        ...cachedData,
+        fromCache: true,
+      };
+    }
+
+    // Cache miss - שליפה מה-DB
+    logWithCheckpoint(
+      "info",
+      "Cache miss - fetching from database",
+      "FOOTBALL_007.6",
+      { teamId }
+    );
+
     const {
       page = 1,
       limit = 20,
@@ -40,7 +68,7 @@ export const getFootballEventsByTeamId = async (teamId, query = {}) => {
       sortBy = "date",
       sortOrder = "asc",
       status,
-      upcoming = true, // Default to upcoming matches
+      upcoming, // אופציונלי - אם לא מצוין, מחזיר הכל
       homeOnly = false,
       awayOnly = false,
     } = query;
@@ -77,12 +105,19 @@ export const getFootballEventsByTeamId = async (teamId, query = {}) => {
       filter.status = status;
     }
 
-    // Filter by date (upcoming or past)
+    // Filter by date (upcoming or past) - רק אם מצוין במפורש
     if (upcoming === "true" || upcoming === true) {
       filter.date = { $gte: new Date() };
+      logWithCheckpoint("debug", "Added upcoming filter", "FOOTBALL_007.7", {
+        upcoming: true,
+      });
     } else if (upcoming === "false" || upcoming === false) {
       filter.date = { $lt: new Date() };
+      logWithCheckpoint("debug", "Added past filter", "FOOTBALL_007.8", {
+        upcoming: false,
+      });
     }
+    // אם upcoming לא מצוין - לא מוסיפים פילטר תאריך (כל המשחקים)
 
     // Build sort object
     const sort = buildSortObject(sortBy, sortOrder);
@@ -93,7 +128,7 @@ export const getFootballEventsByTeamId = async (teamId, query = {}) => {
         .sort(sort)
         .skip(skip)
         .limit(limitNum)
-        .populate("league", "name_he country_he logoUrl slug")
+        .populate("league", "nameHe countryHe logoUrl slug")
         .populate("homeTeam", "name_he country_he code slug logoUrl")
         .populate("awayTeam", "name_he country_he code slug logoUrl")
         .populate("venue", "name_he city_he country_he capacity")
@@ -103,38 +138,43 @@ export const getFootballEventsByTeamId = async (teamId, query = {}) => {
     ]);
 
     // Convert data to Hebrew names only - maps Hebrew fields to standard names
-    const hebrewEvents = footballEvents.map((event) => ({
-      ...event,
-      league: event.league
-        ? {
-            ...event.league,
-            name: event.league.name_he,
-            country: event.league.country_he,
-          }
-        : null,
-      homeTeam: event.homeTeam
-        ? {
-            ...event.homeTeam,
-            name: event.homeTeam.name_he,
-            country: event.homeTeam.country_he,
-          }
-        : null,
-      awayTeam: event.awayTeam
-        ? {
-            ...event.awayTeam,
-            name: event.awayTeam.name_he,
-            country: event.awayTeam.country_he,
-          }
-        : null,
-      venue: event.venue
-        ? {
-            ...event.venue,
-            name: event.venue.name_he,
-            city: event.venue.city_he,
-            country: event.venue.country_he,
-          }
-        : null,
-    }));
+    const hebrewEvents = footballEvents.map((event) => {
+      const mappedEvent = {
+        ...event,
+        league: event.league
+          ? {
+              ...event.league,
+              name: event.league.nameHe || event.league.name,
+              nameHe: event.league.nameHe,
+              country: event.league.countryHe || event.league.country,
+            }
+          : null,
+        homeTeam: event.homeTeam
+          ? {
+              ...event.homeTeam,
+              name: event.homeTeam.name_he,
+              country: event.homeTeam.country_he,
+            }
+          : null,
+        awayTeam: event.awayTeam
+          ? {
+              ...event.awayTeam,
+              name: event.awayTeam.name_he,
+              country: event.awayTeam.country_he,
+            }
+          : null,
+        venue: event.venue
+          ? {
+              ...event.venue,
+              name: event.venue.name_he,
+              city: event.venue.city_he,
+              country: event.venue.country_he,
+            }
+          : null,
+      };
+
+      return mappedEvent;
+    });
 
     logWithCheckpoint(
       "info",
@@ -147,7 +187,7 @@ export const getFootballEventsByTeamId = async (teamId, query = {}) => {
       }
     );
 
-    return {
+    const result = {
       footballEvents: hebrewEvents,
       pagination: {
         page: parseInt(page),
@@ -155,7 +195,23 @@ export const getFootballEventsByTeamId = async (teamId, query = {}) => {
         total,
         pages: Math.ceil(total / parseInt(limit)),
       },
+      fromCache: false,
     };
+
+    // שמירה ב-cache
+    fixturesByTeamCacheService.set(teamId, result);
+
+    logWithCheckpoint(
+      "info",
+      "Team fixtures data cached successfully",
+      "FOOTBALL_008.5",
+      {
+        teamId,
+        fixturesCount: hebrewEvents.length,
+      }
+    );
+
+    return result;
   } catch (error) {
     logError(error, { operation: "getFootballEventsByTeamId", teamId, query });
     return createErrorResponse("INTERNAL_SERVER_ERROR", error.message);
