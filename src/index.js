@@ -11,7 +11,7 @@ import leaguesRoutes from "./routes/leagues.js";
 import agentsRoutes from "./routes/agents.js";
 import usersRoutes from "./routes/users.js";
 import authRoutes from "./routes/auth.js";
-import offersRoutes from "./routes/offers.js";
+import offersRoutes from "./routes/offers/index.js";
 import cacheRoutes from "./routes/cache.js";
 
 // Import utilities

@@ -2,6 +2,9 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 import Offer from "../src/models/Offer.js";
 import FootballEvent from "../src/models/FootballEvent.js";
+import Team from "../src/models/Team.js";
+import League from "../src/models/League.js";
+import Venue from "../src/models/Venue.js";
 import { logWithCheckpoint, logError } from "../src/utils/logger.js";
 
 // Load environment variables
@@ -380,9 +383,9 @@ class MinPriceUpdater {
       const fixturesWithMinPrice = await FootballEvent.find({
         "minPrice.amount": { $exists: true },
       })
-        .populate("homeTeam", "name")
-        .populate("awayTeam", "name")
-        .populate("league", "name")
+        .populate("homeTeam", "name_he name_en")
+        .populate("awayTeam", "name_he name_en")
+        .populate("league", "name_he name_en")
         .sort({ "minPrice.amount": 1 })
         .lean();
 
@@ -424,9 +427,16 @@ class MinPriceUpdater {
 
           fixtures.slice(0, 10).forEach((fixture) => {
             const date = new Date(fixture.date).toLocaleDateString("he-IL");
-            const homeTeam = fixture.homeTeam?.name || "לא ידוע";
-            const awayTeam = fixture.awayTeam?.name || "לא ידוע";
-            const league = fixture.league?.name || "לא ידוע";
+            const homeTeam =
+              fixture.homeTeam?.name_he ||
+              fixture.homeTeam?.name_en ||
+              "לא ידוע";
+            const awayTeam =
+              fixture.awayTeam?.name_he ||
+              fixture.awayTeam?.name_en ||
+              "לא ידוע";
+            const league =
+              fixture.league?.name_he || fixture.league?.name_en || "לא ידוע";
 
             console.log(`${homeTeam} vs ${awayTeam} (${league})`);
             console.log(`  תאריך: ${date}`);

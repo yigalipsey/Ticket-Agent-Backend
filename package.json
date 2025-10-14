@@ -16,7 +16,8 @@
     "sync-round2-fixtures": "node scripts/syncRound2Fixtures.js",
     "fetch-champions-league": "node scripts/fetchChampionsLeagueRounds.js",
     "initialize-league-months": "node scripts/initializeLeagueMonths.js",
-    "update-league-months": "node scripts/updateLeagueMonths.js"
+    "update-league-months": "node scripts/updateLeagueMonths.js",
+    "insert-real-madrid-offers": "node scripts/insertRealMadridOffers.js"
   },
   "keywords": [
     "tickets",

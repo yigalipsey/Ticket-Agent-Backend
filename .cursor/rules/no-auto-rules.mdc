@@ -1,0 +1,10 @@
+---
+description: Block all automatic file creation in backend
+alwaysApply: true
+---
+
+- Cursor must not create any new files in this backend project without explicit developer approval.
+- This includes rule files, configuration files, helper files, documentation, or any other type of file.
+- Auto-generation commands such as /Generate Cursor Rules, /Create File, or similar must not be used unless explicitly requested.
+- All file creation must be manual, intentional, and reviewed by the developer.
+- This backend is governed by strict architectural control. No file should be added without direct permission.

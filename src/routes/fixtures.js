@@ -4,6 +4,7 @@ import { rateLimit } from "../middleware/auth.js";
 import HotFixturesService from "../services/footballFixtures/queries/HotFixturesService.js";
 import { getLeagueFixturesWithCache } from "../services/footballFixtures/queries/byLeague.js";
 import { getFootballEventsByTeamId } from "../services/footballFixtures/queries/byTeam.js";
+import { getFixtureIdBySlug } from "../services/footballFixtures/queries/getFixtureIdBySlug.js";
 import { createErrorResponse } from "../utils/errorCodes.js";
 
 const router = express.Router();
@@ -136,6 +137,40 @@ router.get("/by-team", rateLimit(200), async (req, res) => {
       error.message
     );
     return res.status(500).json(errorResponse);
+  }
+});
+
+// GET /api/fixtures/by-slug/:slug - קבלת ID של משחק לפי slug
+router.get("/by-slug/:slug", rateLimit(200), async (req, res) => {
+  try {
+    const { slug } = req.params;
+
+    if (!slug) {
+      return res.status(400).json(
+        createErrorResponse("VALIDATION_MISSING_FIELDS", {
+          required: ["slug"],
+        })
+      );
+    }
+
+    const result = await getFixtureIdBySlug(slug);
+
+    if (!result) {
+      return res.status(404).json(createErrorResponse("FIXTURE_NOT_FOUND"));
+    }
+
+    return res.status(200).json({
+      success: true,
+      data: result,
+    });
+  } catch (error) {
+    logError(error, {
+      route: "GET /api/fixtures/by-slug/:slug",
+      params: req.params,
+    });
+    return res
+      .status(500)
+      .json(createErrorResponse("INTERNAL_SERVER_ERROR", error.message));
   }
 });
 

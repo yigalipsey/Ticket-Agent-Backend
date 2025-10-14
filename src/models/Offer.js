@@ -64,6 +64,7 @@ offerSchema.index({ createdAt: -1 });
 // Compound indexes
 offerSchema.index({ fixtureId: 1, agentId: 1 });
 offerSchema.index({ fixtureId: 1, isAvailable: 1 });
+offerSchema.index({ fixtureId: 1, price: 1 });
 
 const Offer = mongoose.models.Offer || mongoose.model("Offer", offerSchema);
 
