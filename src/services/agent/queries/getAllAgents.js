@@ -1,14 +1,10 @@
-import express from "express";
-import Agent from "../models/Agent.js";
-import Review from "../models/Review.js";
+import Agent from "../../../models/Agent.js";
+import Review from "../../../models/Review.js";
 
-const router = express.Router();
-
-// GET /api/agents - Get all agents with review statistics
-router.get("/", async (req, res) => {
+const getAllAgents = async () => {
   try {
-    console.log("Received request to get all agents");
-
+    console.log("Starting getAllAgents service...");
+    
     // Find all agents
     const agents = await Agent.find({})
       .select("-passwordHash -tokenVersion")
@@ -23,11 +19,11 @@ router.get("/", async (req, res) => {
     console.log(`Found ${agents.length} agents`);
 
     if (agents.length === 0) {
-      return res.status(200).json({
+      return {
         success: true,
         data: [],
         message: "No agents found",
-      });
+      };
     }
 
     // Calculate review statistics for each agent
@@ -81,49 +77,47 @@ router.get("/", async (req, res) => {
       })
     );
 
-    console.log(
-      `Successfully processed ${agentsWithStats.length} agents with review stats`
-    );
+    console.log(`Successfully processed ${agentsWithStats.length} agents with review stats`);
 
-    return res.status(200).json({
+    return {
       success: true,
       data: agentsWithStats,
       message: `Retrieved ${agentsWithStats.length} agents successfully`,
-    });
+    };
   } catch (error) {
-    console.error("Error in getAllAgents route:", error);
-
+    console.error("Error in getAllAgents service:", error);
+    
     // Provide more specific error messages
-    if (error.name === "MongoServerError") {
-      return res.status(500).json({
+    if (error.name === 'MongoServerError') {
+      return {
         success: false,
         error: `Database error: ${error.message}`,
         details: "Failed to connect to or query the database",
-      });
+      };
     }
-
-    if (error.name === "CastError") {
-      return res.status(500).json({
+    
+    if (error.name === 'CastError') {
+      return {
         success: false,
         error: `Invalid data format: ${error.message}`,
         details: "One or more fields have invalid data types",
-      });
+      };
     }
-
-    if (error.name === "ValidationError") {
-      return res.status(500).json({
+    
+    if (error.name === 'ValidationError') {
+      return {
         success: false,
         error: `Validation error: ${error.message}`,
         details: "Data validation failed",
-      });
+      };
     }
 
-    return res.status(500).json({
+    return {
       success: false,
       error: `Service error: ${error.message}`,
       details: "An unexpected error occurred while retrieving agents",
-    });
+    };
   }
-});
+};
 
-export default router;
+export default getAllAgents;

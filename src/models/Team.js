@@ -2,12 +2,12 @@ import mongoose from "mongoose";
 
 const teamSchema = new mongoose.Schema(
   {
-    name_en: {
+    name: {
       type: String,
       required: true,
       trim: true,
     },
-    name_he: {
+    name_en: {
       type: String,
       trim: true,
     },

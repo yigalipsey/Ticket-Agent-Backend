@@ -41,6 +41,26 @@ export const ERROR_CODES = {
     message: "Invalid token version",
     statusCode: 401,
   },
+  AGENT_INVALID_CREDENTIALS: {
+    code: "AGENT_INVALID_CREDENTIALS",
+    message: "Invalid agent credentials",
+    statusCode: 401,
+  },
+  AGENT_ACCOUNT_DEACTIVATED: {
+    code: "AGENT_ACCOUNT_DEACTIVATED",
+    message: "Agent account is deactivated",
+    statusCode: 401,
+  },
+  AGENT_LOGIN_ERROR: {
+    code: "AGENT_LOGIN_ERROR",
+    message: "Agent login error",
+    statusCode: 500,
+  },
+  AGENT_QUERY_ERROR: {
+    code: "AGENT_QUERY_ERROR",
+    message: "Agent query error",
+    statusCode: 500,
+  },
 
   // Validation
   VALIDATION_FAILED: {
@@ -179,6 +199,9 @@ export const ERROR_CODES = {
     statusCode: 400,
   },
 };
+
+// Export error codes for direct access
+export const errorCodes = ERROR_CODES;
 
 // Helper function to create error response
 export const createErrorResponse = (errorCode, details = null) => {
