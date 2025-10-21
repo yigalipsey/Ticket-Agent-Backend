@@ -42,50 +42,34 @@ export const getOffersByFixtureId = async (fixtureId, query = {}) => {
       console.log("🔍 [DEBUG] Fixture after populate:", fixture);
     }
 
-    // בדיקת cache להצעות
-    const cachedData = offersByFixtureCacheService.get(fixtureId);
-
+    // שליפה ישירה מה-DB (ללא cache זמנית)
     let allOffers;
     let fromCache = false;
 
-    if (cachedData) {
-      logWithCheckpoint(
-        "info",
-        "Using cached offers for fixture",
-        "OFFER_012_CACHE",
-        {
-          fixtureId,
-          cachedOffersCount: cachedData.allOffers?.length || 0,
-        }
-      );
-      allOffers = cachedData.allOffers || [];
-      fromCache = true;
-    } else {
-      // Cache miss - שליפה מה-DB
-      logWithCheckpoint(
-        "info",
-        "Cache miss - fetching offers from database",
-        "OFFER_012_DB",
-        { fixtureId }
-      );
+    // שליפה מה-DB
+    logWithCheckpoint(
+      "info",
+      "Cache miss - fetching offers from database",
+      "OFFER_012_DB",
+      { fixtureId }
+    );
 
-      allOffers = await Offer.find({ fixtureId })
-        .populate("agentId", "name whatsapp isActive")
-        .lean();
+    allOffers = await Offer.find({ fixtureId })
+      .populate("agentId", "name whatsapp isActive")
+      .lean();
 
-      // שמירה ב-cache
-      offersByFixtureCacheService.set(fixtureId, { allOffers });
+    // שמירה ב-cache
+    offersByFixtureCacheService.set(fixtureId, { allOffers });
 
-      logWithCheckpoint(
-        "info",
-        "Offers fetched from DB and cached",
-        "OFFER_012_DB_CACHED",
-        {
-          fixtureId,
-          offersCount: allOffers.length,
-        }
-      );
-    }
+    logWithCheckpoint(
+      "info",
+      "Offers fetched from DB and cached",
+      "OFFER_012_DB_CACHED",
+      {
+        fixtureId,
+        offersCount: allOffers.length,
+      }
+    );
 
     // פילטור והחלת pagination על הנתונים
     let filteredOffers = allOffers.filter(

@@ -6,7 +6,7 @@ import {
   requireRole,
   requireExactRole,
   rateLimit,
-} from "../middleware/auth.js";
+} from "../middleware/userAuth.js";
 
 const router = express.Router();
 

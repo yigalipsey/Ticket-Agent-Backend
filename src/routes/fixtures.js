@@ -1,6 +1,6 @@
 import express from "express";
 import { logRequest, logError } from "../utils/logger.js";
-import { rateLimit } from "../middleware/auth.js";
+import { rateLimit } from "../middleware/userAuth.js";
 import HotFixturesService from "../services/footballFixtures/queries/HotFixturesService.js";
 import { getLeagueFixturesWithCache } from "../services/footballFixtures/queries/byLeague.js";
 import { getFootballEventsByTeamId } from "../services/footballFixtures/queries/byTeam.js";

@@ -2,10 +2,10 @@ import express from "express";
 import OfferService from "../../../services/offer/index.js";
 import { logError } from "../../../utils/logger.js";
 import {
-  authenticateToken,
-  requireRole,
+  authenticateAgentToken,
+  requireAgent,
   rateLimit,
-} from "../../../middleware/auth.js";
+} from "../../../middleware/agentAuth.js";
 import { createErrorResponse } from "../../../utils/errorCodes.js";
 import { createSuccessResponse } from "../../../utils/successCodes.js";
 
@@ -14,15 +14,19 @@ const router = express.Router();
 // POST /api/offers - Create new offer
 router.post(
   "/",
-  authenticateToken,
-  requireRole("agent"),
+  authenticateAgentToken,
+  requireAgent,
   rateLimit(10),
   async (req, res) => {
     try {
       const offerData = req.body;
+      const { fixtureId } = offerData;
+      console.log("🔵 Create offer request body:", offerData);
+      console.log("🔵 FixtureId from params:", fixtureId);
+      console.log("🔵 Agent from req:", req.agent);
 
       // Basic validation
-      if (!offerData.fixtureId || !offerData.price) {
+      if (!fixtureId || !offerData.price) {
         return res.status(400).json(
           createErrorResponse("VALIDATION_MISSING_FIELDS", {
             required: ["fixtureId", "price"],
@@ -30,8 +34,34 @@ router.post(
         );
       }
 
+      // Validate currency if provided
+      if (
+        offerData.currency &&
+        !["EUR", "USD", "ILS"].includes(offerData.currency)
+      ) {
+        return res.status(400).json(
+          createErrorResponse("VALIDATION_INVALID_FORMAT", {
+            field: "currency",
+            expected: "EUR, USD, or ILS",
+          })
+        );
+      }
+
+      // Validate ticketType if provided
+      if (
+        offerData.ticketType &&
+        !["standard", "vip"].includes(offerData.ticketType)
+      ) {
+        return res.status(400).json(
+          createErrorResponse("VALIDATION_INVALID_FORMAT", {
+            field: "ticketType",
+            expected: "standard or vip",
+          })
+        );
+      }
+
       // Validate ObjectId format for fixtureId
-      if (!offerData.fixtureId.match(/^[0-9a-fA-F]{24}$/)) {
+      if (!fixtureId.match(/^[0-9a-fA-F]{24}$/)) {
         return res.status(400).json(
           createErrorResponse("VALIDATION_INVALID_FORMAT", {
             field: "fixtureId",
@@ -40,8 +70,8 @@ router.post(
         );
       }
 
-      // Get agentId from authenticated user
-      const agentId = req.user.agentId;
+      // Get agentId from session
+      const agentId = req.agent.id;
       if (!agentId) {
         return res.status(400).json(
           createErrorResponse("AUTH_AGENT_ID_REQUIRED", {
@@ -60,9 +90,10 @@ router.post(
         );
       }
 
-      // Add agentId to offerData
+      // Add agentId and fixtureId to offerData
       const offerDataWithAgent = {
         ...offerData,
+        fixtureId,
         agentId,
       };
 
@@ -83,6 +114,16 @@ router.post(
 
       if (error.code === "AGENT_INACTIVE") {
         return res.status(403).json(createErrorResponse("AGENT_INACTIVE"));
+      }
+
+      // Handle duplicate key error (agent already has an offer for this fixture)
+      if (error.code === 11000) {
+        return res.status(409).json(
+          createErrorResponse("OFFER_ALREADY_EXISTS", {
+            message:
+              "You already have an offer for this fixture. Use update instead.",
+          })
+        );
       }
 
       res.status(500).json(createErrorResponse("INTERNAL_SERVER_ERROR"));

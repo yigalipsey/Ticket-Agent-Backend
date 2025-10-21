@@ -1,7 +1,9 @@
 import express from "express";
 import cors from "cors";
+import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
 import databaseConnection from "./config/database.js";
+// Session middleware removed - using JWT tokens directly
 
 // Import routes
 import fixturesRoutes from "./routes/fixtures.js";
@@ -14,6 +16,7 @@ import authRoutes from "./routes/auth.js";
 import agentAuthRoutes from "./routes/agentAuth.js";
 import offersRoutes from "./routes/offers/index.js";
 import cacheRoutes from "./routes/cache.js";
+import searchRoutes from "./routes/search.js";
 
 // Import utilities
 import logger, {
@@ -29,9 +32,16 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 // Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: process.env.FRONTEND_URL || "http://localhost:3000",
+    credentials: true, // Allow cookies
+  })
+);
+// Session middleware removed - JWT tokens handled in routes
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
 
 // Request logging middleware
 app.use((req, res, next) => {
@@ -90,6 +100,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/auth/agent", agentAuthRoutes); // Agent authentication routes
 app.use("/api/offers", offersRoutes);
 app.use("/api/cache", cacheRoutes); // Cache management routes
+app.use("/api/search", searchRoutes); // Search routes
 
 // 404 handler
 app.use("*", (req, res) => {

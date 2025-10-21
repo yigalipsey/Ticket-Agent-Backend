@@ -61,6 +61,11 @@ export const ERROR_CODES = {
     message: "Agent query error",
     statusCode: 500,
   },
+  OFFER_ALREADY_EXISTS: {
+    code: "OFFER_ALREADY_EXISTS",
+    message: "Offer already exists for this fixture",
+    statusCode: 409,
+  },
 
   // Validation
   VALIDATION_FAILED: {

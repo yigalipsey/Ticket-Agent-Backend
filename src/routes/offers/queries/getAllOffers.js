@@ -1,7 +1,7 @@
 import express from "express";
 import OfferService from "../../../services/offer/index.js";
 import { logError } from "../../../utils/logger.js";
-import { rateLimit } from "../../../middleware/auth.js";
+import { rateLimit } from "../../../middleware/userAuth.js";
 import { createErrorResponse } from "../../../utils/errorCodes.js";
 
 const router = express.Router();

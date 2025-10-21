@@ -1,5 +1,6 @@
 import Offer from "../../../models/Offer.js";
 import { logWithCheckpoint, logError } from "../../../utils/logger.js";
+import { refreshOffersCache } from "../utils/cacheHelpers.js";
 
 /**
  * Delete offer
@@ -19,8 +20,14 @@ export const deleteOffer = async (id) => {
       return null;
     }
 
+    // Refresh cache with updated offers
+    const cacheRefreshResult = await refreshOffersCache(offer.fixtureId);
+
     logWithCheckpoint("info", "Successfully deleted offer", "OFFER_025", {
       id,
+      fixtureId: offer.fixtureId,
+      cacheRefreshed: cacheRefreshResult.success,
+      offersCount: cacheRefreshResult.offersCount,
     });
     return offer;
   } catch (error) {

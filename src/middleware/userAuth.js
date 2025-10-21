@@ -2,102 +2,50 @@ import jwt from "jsonwebtoken";
 import User from "../models/User.js";
 import { logWithCheckpoint, logError } from "../utils/logger.js";
 import { createErrorResponse, ERROR_CODES } from "../utils/errorCodes.js";
+import { getUserSessionConfig } from "../config/session.js";
 
-// Middleware to verify JWT token
-export const authenticateToken = async (req, res, next) => {
-  let token = null; // Define token outside try block
-
+// Middleware to verify JWT token for users
+export const authenticateUserToken = async (req, res, next) => {
   try {
     logWithCheckpoint("info", "Starting token authentication", "AUTH_001");
 
-    const authHeader = req.headers["authorization"];
-    token = authHeader && authHeader.split(" ")[1]; // Bearer TOKEN
+    // Try to get token from user cookie first, then agent cookie
+    const { cookieName: userCookieName } = getUserSessionConfig();
+    let token = req.cookies[userCookieName];
 
-    logWithCheckpoint("debug", "Token received", "AUTH_001.5", {
-      authHeader: authHeader ? `${authHeader.substring(0, 20)}...` : "null",
-      token: token || "null",
-      tokenLength: token ? token.length : 0,
-    });
+    // If no user token, try agent token
+    if (!token) {
+      token = req.cookies.agent_auth_token;
+    }
 
     if (!token) {
       logWithCheckpoint("warn", "No token provided", "AUTH_002");
-      return res.status(401).json(createErrorResponse("AUTH_TOKEN_REQUIRED"));
+      return res.status(401).json({ message: "Missing authentication token" });
     }
 
-    logWithCheckpoint("debug", "Attempting to verify token", "AUTH_001.6", {
+    logWithCheckpoint("debug", "Token received from cookie", "AUTH_001.5", {
+      tokenLength: token.length,
       tokenStart: token.substring(0, 10),
-      tokenEnd: token.substring(token.length - 10),
-      secretLength: (process.env.JWT_SECRET || "fallback-secret").length,
     });
 
-    const decoded = jwt.verify(
-      token,
-      process.env.JWT_SECRET || "fallback-secret"
-    );
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    req.user = decoded;
 
-    logWithCheckpoint("debug", "Token decoded successfully", "AUTH_001.7", {
-      userId: decoded.userId,
-      whatsapp: decoded.whatsapp,
-      role: decoded.role,
-      tokenVersion: decoded.tokenVersion,
-    });
-
-    const user = await User.findById(decoded.userId)
-      .populate("agentId", "name whatsapp isActive")
-      .lean();
-
-    if (!user) {
-      logWithCheckpoint("warn", "User not found", "AUTH_003", {
-        userId: decoded.userId,
-      });
-      return res.status(401).json(createErrorResponse("USER_NOT_FOUND"));
-    }
-
-    if (!user.isActive) {
-      logWithCheckpoint("warn", "User inactive", "AUTH_004", {
-        userId: user._id,
-      });
-      return res
-        .status(401)
-        .json(createErrorResponse("AUTH_ACCOUNT_DEACTIVATED"));
-    }
-
-    if (user.tokenVersion !== decoded.tokenVersion) {
-      logWithCheckpoint("warn", "Token version mismatch", "AUTH_005", {
-        userId: user._id,
-        userVersion: user.tokenVersion,
-        tokenVersion: decoded.tokenVersion,
-      });
-      return res
-        .status(401)
-        .json(createErrorResponse("AUTH_TOKEN_VERSION_MISMATCH"));
-    }
-
-    req.user = user;
     logWithCheckpoint("info", "Token authentication successful", "AUTH_006", {
-      userId: user._id,
+      userId: decoded.userId,
+      role: decoded.role,
     });
 
     next();
-  } catch (error) {
-    logError(error, { operation: "authenticateToken" });
+  } catch (err) {
+    logError(err, { operation: "authenticateToken" });
 
     logWithCheckpoint("error", "Token verification failed", "AUTH_ERROR", {
-      errorName: error.name,
-      errorMessage: error.message,
-      tokenProvided: !!token,
-      tokenLength: token ? token.length : 0,
+      errorName: err.name,
+      errorMessage: err.message,
     });
 
-    if (error.name === "JsonWebTokenError") {
-      return res.status(401).json(createErrorResponse("AUTH_TOKEN_INVALID"));
-    }
-
-    if (error.name === "TokenExpiredError") {
-      return res.status(401).json(createErrorResponse("AUTH_TOKEN_EXPIRED"));
-    }
-
-    res.status(500).json(createErrorResponse("INTERNAL_SERVER_ERROR"));
+    return res.status(401).json({ message: "Invalid or expired token" });
   }
 };
 
@@ -230,8 +178,9 @@ export const validateRequest = (schema) => {
   };
 };
 
-// Alias for authenticateToken
-export const auth = authenticateToken;
+// Alias for authenticateUserToken
+export const auth = authenticateUserToken;
+export const authenticateToken = authenticateUserToken; // Legacy alias
 
 // Middleware to rate limit requests
 export const rateLimit = (maxRequests = 100, windowMs = 15 * 60 * 1000) => {

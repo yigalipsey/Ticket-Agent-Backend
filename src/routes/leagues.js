@@ -3,7 +3,7 @@ import { getAllLeagues } from "../services/league/queries/getAllLeagues.js";
 import { getLeague } from "../services/league/queries/getLeague.js";
 import { getLeagueIdBySlug } from "../services/league/queries/getLeagueIdBySlug.js";
 import { logRequest, logError } from "../utils/logger.js";
-import { rateLimit } from "../middleware/auth.js";
+import { rateLimit } from "../middleware/userAuth.js";
 
 const router = express.Router();
 

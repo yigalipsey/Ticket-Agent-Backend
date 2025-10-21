@@ -1,9 +1,10 @@
 import express from "express";
 import AgentAuthService from "../services/agent/AgentAuthService.js";
 import { logRequest, logError } from "../utils/logger.js";
-import { rateLimit } from "../middleware/auth.js";
+import { rateLimit } from "../middleware/userAuth.js";
 import { createErrorResponse } from "../utils/errorCodes.js";
 import { createSuccessResponse } from "../utils/successCodes.js";
+import { getAgentSessionConfig } from "../config/session.js";
 
 const router = express.Router();
 
@@ -44,11 +45,14 @@ router.post("/login", rateLimit(50), async (req, res) => {
     }
 
     const result = await AgentAuthService.login(email, password);
+    const { cookieName, cookieOptions } = getAgentSessionConfig();
+
+    // Set secure cookie with token
+    res.cookie(cookieName, result.token, cookieOptions);
 
     res.json(
       createSuccessResponse(
         {
-          token: result.token,
           agent: result.agent,
         },
         "AGENT_LOGIN_SUCCESS"
@@ -101,18 +105,18 @@ router.post("/login", rateLimit(50), async (req, res) => {
 // POST /api/auth/agent/logout - Agent logout
 router.post("/logout", rateLimit(100), async (req, res) => {
   try {
-    const authHeader = req.headers["authorization"];
-    const token = authHeader && authHeader.split(" ")[1];
+    const { cookieName, cookieOptions } = getAgentSessionConfig();
+    const token = req.cookies[cookieName];
 
-    if (!token) {
-      return res.status(400).json(createErrorResponse("AUTH_TOKEN_REQUIRED"));
+    if (token) {
+      // Verify token and get agent info
+      const agentInfo = await AgentAuthService.verifyToken(token);
+      // Increment token version to invalidate all existing tokens
+      await AgentAuthService.incrementTokenVersion(agentInfo.agentId);
     }
 
-    // Verify token and get agent info
-    const agentInfo = await AgentAuthService.verifyToken(token);
-
-    // Increment token version to invalidate all existing tokens
-    await AgentAuthService.incrementTokenVersion(agentInfo.agentId);
+    // Clear the cookie
+    res.clearCookie(cookieName, cookieOptions);
 
     res.json(createSuccessResponse(null, "AGENT_LOGOUT_SUCCESS"));
   } catch (error) {
@@ -124,8 +128,8 @@ router.post("/logout", rateLimit(100), async (req, res) => {
 // GET /api/auth/agent/me - Get current agent info
 router.get("/me", rateLimit(100), async (req, res) => {
   try {
-    const authHeader = req.headers["authorization"];
-    const token = authHeader && authHeader.split(" ")[1];
+    const { cookieName } = getAgentSessionConfig();
+    const token = req.cookies[cookieName];
 
     if (!token) {
       return res.status(401).json(createErrorResponse("AUTH_TOKEN_REQUIRED"));
@@ -136,6 +140,10 @@ router.get("/me", rateLimit(100), async (req, res) => {
 
     // Get full agent details
     const agent = await AgentAuthService.getAgentById(agentInfo.agentId);
+
+    if (!agent) {
+      return res.status(404).json(createErrorResponse("AGENT_NOT_FOUND"));
+    }
 
     res.json(createSuccessResponse(agent, "AGENT_INFO_SUCCESS"));
   } catch (error) {

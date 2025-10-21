@@ -2,13 +2,15 @@ import Offer from "../../../models/Offer.js";
 import FootballEvent from "../../../models/FootballEvent.js";
 import Agent from "../../../models/Agent.js";
 import { logWithCheckpoint, logError } from "../../../utils/logger.js";
+import { refreshOffersCache } from "../utils/cacheHelpers.js";
+import offersByFixtureCacheService from "../cache/OffersByFixtureCacheService.js";
 
 /**
  * Create new offer
  */
 export const createOffer = async (offerData) => {
   try {
-    logWithCheckpoint("info", "Starting to create new offer", "OFFER_016", {
+    logWithCheckpoint("info", "Starting to create/update offer", "OFFER_016", {
       offerData,
     });
 
@@ -58,6 +60,10 @@ export const createOffer = async (offerData) => {
       throw new Error("Price must be greater than 0");
     }
 
+    // Delete any existing offers by this agent for this fixture
+    await Offer.deleteMany({ fixtureId, agentId });
+
+    // Create new offer
     const newOffer = new Offer({
       fixtureId,
       agentId,
@@ -71,9 +77,28 @@ export const createOffer = async (offerData) => {
 
     const savedOffer = await newOffer.save();
 
-    logWithCheckpoint("info", "Successfully created offer", "OFFER_017", {
-      id: savedOffer._id,
-    });
+    console.log("✅ Saved offer:", savedOffer);
+
+    // Refresh cache with updated offers
+    const cacheRefreshResult = await refreshOffersCache(fixtureId);
+    console.log("📊 Cache refresh result:", cacheRefreshResult);
+
+    // בדיקת תוכן ה-cache מיד אחרי הרענון
+    const cached = offersByFixtureCacheService.get(fixtureId);
+    console.log("📦 Cached offers:", cached?.offers);
+
+    logWithCheckpoint(
+      "info",
+      "Successfully created new offer (replaced existing ones)",
+      "OFFER_017",
+      {
+        id: savedOffer._id,
+        fixtureId,
+        agentId,
+        cacheRefreshed: cacheRefreshResult.success,
+        offersCount: cacheRefreshResult.offersCount,
+      }
+    );
 
     return savedOffer;
   } catch (error) {

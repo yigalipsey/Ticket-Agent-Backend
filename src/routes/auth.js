@@ -3,9 +3,10 @@ import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
 import UserService from "../services/user/index.js";
 import { logRequest, logError } from "../utils/logger.js";
-import { rateLimit, authenticateToken } from "../middleware/auth.js";
+import { rateLimit, authenticateUserToken } from "../middleware/userAuth.js";
 import { createErrorResponse, ERROR_CODES } from "../utils/errorCodes.js";
 import { createSuccessResponse } from "../utils/successCodes.js";
+import { getUserSessionConfig } from "../config/session.js";
 
 const router = express.Router();
 
@@ -73,10 +74,13 @@ router.post("/login", rateLimit(100), async (req, res) => {
     // Update last login
     await UserService.auth.updateLastLogin(user._id);
 
+    // Set secure cookie with token
+    const { cookieName, cookieOptions } = getUserSessionConfig();
+    res.cookie(cookieName, token, cookieOptions);
+
     res.json(
       createSuccessResponse(
         {
-          token,
           user: {
             _id: user._id,
             whatsapp: user.whatsapp,
@@ -165,10 +169,13 @@ router.post("/register", rateLimit(50), async (req, res) => {
       { expiresIn: "24h" }
     );
 
+    // Set secure cookie with token
+    const { cookieName, cookieOptions } = getUserSessionConfig();
+    res.cookie(cookieName, token, cookieOptions);
+
     res.status(201).json(
       createSuccessResponse(
         {
-          token,
           user: {
             _id: user._id,
             whatsapp: user.whatsapp,
@@ -206,20 +213,21 @@ router.post("/register", rateLimit(50), async (req, res) => {
 // POST /api/auth/logout - User logout (increment token version)
 router.post("/logout", async (req, res) => {
   try {
-    const authHeader = req.headers["authorization"];
-    const token = authHeader && authHeader.split(" ")[1];
+    const { cookieName, cookieOptions } = getUserSessionConfig();
+    const token = req.cookies[cookieName];
 
-    if (!token) {
-      return res.status(400).json(createErrorResponse("AUTH_TOKEN_REQUIRED"));
+    if (token) {
+      const decoded = jwt.verify(
+        token,
+        process.env.JWT_SECRET || "fallback-secret"
+      );
+
+      // Increment token version to invalidate all existing tokens
+      await UserService.auth.incrementTokenVersion(decoded.userId);
     }
 
-    const decoded = jwt.verify(
-      token,
-      process.env.JWT_SECRET || "fallback-secret"
-    );
-
-    // Increment token version to invalidate all existing tokens
-    await UserService.auth.incrementTokenVersion(decoded.userId);
+    // Clear the cookie
+    res.clearCookie(cookieName, cookieOptions);
 
     res.json(createSuccessResponse(null, "LOGOUT_SUCCESS"));
   } catch (error) {
@@ -229,7 +237,7 @@ router.post("/logout", async (req, res) => {
 });
 
 // GET /api/auth/me - Get current user info
-router.get("/me", authenticateToken, async (req, res) => {
+router.get("/me", authenticateUserToken, async (req, res) => {
   try {
     res.json(
       createSuccessResponse(

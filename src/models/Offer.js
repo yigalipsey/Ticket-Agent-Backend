@@ -22,48 +22,26 @@ const offerSchema = new mongoose.Schema(
       enum: ["EUR", "USD", "ILS"],
       default: "EUR",
     },
+    ticketType: {
+      type: String,
+      enum: ["standard", "vip"],
+      default: "standard",
+    },
     isAvailable: {
       type: Boolean,
       default: true,
     },
-    description: {
+    notes: {
       type: String,
       trim: true,
-      maxlength: 500,
-    },
-    source: {
-      type: String,
-      enum: ["supplier", "affiliate", "direct"],
-      default: "direct",
-    },
-    externalIds: {
-      supplier: {
-        type: String,
-        sparse: true,
-      },
-    },
-    metadata: {
-      seatCategory: String,
-      seatSection: String,
-      seatRow: String,
-      seatNumber: String,
-      notes: String,
+      maxlength: 300,
     },
   },
   { timestamps: true }
 );
 
-// Indexes
-offerSchema.index({ fixtureId: 1 });
-offerSchema.index({ agentId: 1 });
-offerSchema.index({ isAvailable: 1 });
-offerSchema.index({ price: 1 });
-offerSchema.index({ currency: 1 });
-offerSchema.index({ createdAt: -1 });
-
-// Compound indexes
-offerSchema.index({ fixtureId: 1, agentId: 1 });
-offerSchema.index({ fixtureId: 1, isAvailable: 1 });
+// Indexes - Unique constraint: one offer per agent per fixture
+offerSchema.index({ fixtureId: 1, agentId: 1 }, { unique: true });
 offerSchema.index({ fixtureId: 1, price: 1 });
 
 const Offer = mongoose.models.Offer || mongoose.model("Offer", offerSchema);

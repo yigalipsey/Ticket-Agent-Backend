@@ -1,6 +1,6 @@
 import express from "express";
 import { logRequest, logError } from "../utils/logger.js";
-import { rateLimit, auth, requireRole } from "../middleware/auth.js";
+import { rateLimit, auth, requireRole } from "../middleware/userAuth.js";
 import fixturesByTeamCacheService from "../services/footballFixtures/cache/FixturesByTeamCacheService.js";
 import fixturesByLeagueCacheService from "../services/footballFixtures/cache/FixturesByLeagueCacheService.js";
 
