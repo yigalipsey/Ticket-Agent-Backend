@@ -86,7 +86,7 @@ export const getLeague = async (leagueId, withTeams = false) => {
       if (league) {
         const teams = await Team.find({ leagueIds: league._id })
           .select(
-            "name name_he name_en code slug logoUrl country country_he country_en isPopular"
+            "name name_he name_en code slug logoUrl country country_he country_en isPopular primaryColor secondaryColor"
           )
           .lean();
         league.teams = normalizeMongoData(teams);

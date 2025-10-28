@@ -42,6 +42,26 @@ const teamSchema = new mongoose.Schema(
         message: "Logo URL must be a valid HTTP/HTTPS URL",
       },
     },
+    primaryColor: {
+      type: String,
+      trim: true,
+      validate: {
+        validator: function (v) {
+          return !v || /^#[0-9A-Fa-f]{6}$/.test(v);
+        },
+        message: "Primary color must be a valid hex color (e.g., #FF5733)",
+      },
+    },
+    secondaryColor: {
+      type: String,
+      trim: true,
+      validate: {
+        validator: function (v) {
+          return !v || /^#[0-9A-Fa-f]{6}$/.test(v);
+        },
+        message: "Secondary color must be a valid hex color (e.g., #FF5733)",
+      },
+    },
     teamId: {
       type: Number,
       required: true,
@@ -94,6 +114,8 @@ teamSchema.methods.toHebrewObject = function () {
     code: this.code,
     slug: this.slug,
     logoUrl: this.logoUrl,
+    primaryColor: this.primaryColor,
+    secondaryColor: this.secondaryColor,
     teamId: this.teamId,
     venueId: this.venueId
       ? typeof this.venueId === "object"
@@ -115,6 +137,8 @@ teamSchema.statics.toHebrewData = function (team) {
     code: team.code,
     slug: team.slug,
     logoUrl: team.logoUrl,
+    primaryColor: team.primaryColor,
+    secondaryColor: team.secondaryColor,
     teamId: team.teamId,
     venueId: team.venueId
       ? typeof team.venueId === "object"

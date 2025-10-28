@@ -40,6 +40,15 @@ const leagueSchema = new mongoose.Schema(
         message: "Logo URL must be a valid HTTP/HTTPS URL",
       },
     },
+    backgroundImage: {
+      type: String,
+      validate: {
+        validator: function (v) {
+          return !v || /^https?:\/\/.+/.test(v);
+        },
+        message: "Background image URL must be a valid HTTP/HTTPS URL",
+      },
+    },
     type: {
       type: String,
       required: true,

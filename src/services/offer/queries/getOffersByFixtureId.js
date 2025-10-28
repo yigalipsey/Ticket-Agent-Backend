@@ -35,11 +35,38 @@ export const getOffersByFixtureId = async (fixtureId, query = {}) => {
       fixture = await FootballEvent.findById(fixtureId)
         .populate("homeTeam", "name slug logo logoUrl")
         .populate("awayTeam", "name slug logo logoUrl")
-        .populate("venue", "name city country capacity")
-        .populate("league", "name slug country")
+        .populate({
+          path: "venue",
+          select:
+            "name_en name_he city_en city_he country_en country_he capacity",
+        })
+        .populate({
+          path: "league",
+          select: "name nameHe slug country countryHe",
+        })
         .lean();
 
       console.log("🔍 [DEBUG] Fixture after populate:", fixture);
+
+      // Convert venue and league to Hebrew format
+      if (fixture.venue) {
+        fixture.venue = {
+          _id: fixture.venue._id,
+          name: fixture.venue.name_he || fixture.venue.name_en,
+          city: fixture.venue.city_he || fixture.venue.city_en,
+          country: fixture.venue.country_he || fixture.venue.country_en,
+          capacity: fixture.venue.capacity,
+        };
+      }
+
+      if (fixture.league) {
+        fixture.league = {
+          _id: fixture.league._id,
+          name: fixture.league.nameHe || fixture.league.name,
+          slug: fixture.league.slug,
+          country: fixture.league.countryHe || fixture.league.country,
+        };
+      }
     }
 
     // שליפה ישירה מה-DB (ללא cache זמנית)

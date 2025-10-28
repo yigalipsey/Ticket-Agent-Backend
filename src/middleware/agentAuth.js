@@ -165,10 +165,15 @@ export const requireAgentSuperAdmin = requireRole("super-admin");
 export const authenticateAgentSession = authenticateAgentToken;
 
 // Rate limiting middleware
-export const rateLimit = (maxRequests = 100, windowMs = 15 * 60 * 1000) => {
+export const rateLimit = (maxRequests = 200, windowMs = 15 * 60 * 1000) => {
   const requests = new Map();
 
   return (req, res, next) => {
+    // Skip rate limiting in development mode
+    if (process.env.NODE_ENV === "development") {
+      return next();
+    }
+
     const clientId = req.ip || req.connection.remoteAddress;
     const now = Date.now();
     const windowStart = now - windowMs;
