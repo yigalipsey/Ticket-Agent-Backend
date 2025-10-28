@@ -135,58 +135,26 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
 
       const sort = buildSortObject(sortBy, sortOrder);
 
-      // If month or months are specified, fetch all fixtures without pagination
-      // Otherwise, use pagination
+      // Always fetch ALL fixtures without pagination to allow proper filtering
+      // Pagination will be applied after filtering in memory
       const [fixtures, total] = await Promise.all([
-        month || (months && months.length > 0)
-          ? FootballEvent.find(filter)
-              .populate(
-                "league",
-                "name name_he country country_he logoUrl slug"
-              )
-              .populate(
-                "homeTeam",
-                "name name_he name_en country country_he country_en code slug logoUrl"
-              )
-              .populate(
-                "awayTeam",
-                "name name_he name_en country country_he country_en code slug logoUrl"
-              )
-              .populate(
-                "venue",
-                "name name_he name_en city city_he city_en country country_he country_en capacity"
-              )
-              .select("+minPrice")
-              .sort(sort)
-              .lean()
-          : (() => {
-              const { skip, limit: limitNum } = buildPaginationParams(
-                page,
-                limit
-              );
-              return FootballEvent.find(filter)
-                .populate(
-                  "league",
-                  "name name_he country country_he logoUrl slug"
-                )
-                .populate(
-                  "homeTeam",
-                  "name name_he name_en country country_he country_en code slug logoUrl"
-                )
-                .populate(
-                  "awayTeam",
-                  "name name_he name_en country country_he country_en code slug logoUrl"
-                )
-                .populate(
-                  "venue",
-                  "name name_he name_en city city_he city_en country country_he country_en capacity"
-                )
-                .select("+minPrice")
-                .sort(sort)
-                .skip(skip)
-                .limit(limitNum)
-                .lean();
-            })(),
+        FootballEvent.find(filter)
+          .populate("league", "name name_he country country_he logoUrl slug")
+          .populate(
+            "homeTeam",
+            "name name_he name_en country country_he country_en code slug logoUrl"
+          )
+          .populate(
+            "awayTeam",
+            "name name_he name_en country country_he country_en code slug logoUrl"
+          )
+          .populate(
+            "venue",
+            "name name_he name_en city city_he city_en country country_he country_en capacity"
+          )
+          .select("+minPrice")
+          .sort(sort)
+          .lean(),
         FootballEvent.countDocuments(filter),
       ]);
 

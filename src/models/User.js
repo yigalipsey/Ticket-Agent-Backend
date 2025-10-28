@@ -10,8 +10,14 @@ const userSchema = new mongoose.Schema(
     },
     whatsapp: {
       type: String,
-      required: true,
+      required: false, // לא חובה יותר
       trim: true,
+    },
+    email: {
+      type: String,
+      required: false, // אופציונלי
+      trim: true,
+      lowercase: true,
     },
     passwordHash: {
       type: String,
@@ -38,7 +44,8 @@ const userSchema = new mongoose.Schema(
 );
 
 // Indexes
-userSchema.index({ whatsapp: 1 }, { unique: true });
+userSchema.index({ whatsapp: 1 }, { unique: true, sparse: true });
+userSchema.index({ email: 1 }, { unique: true, sparse: true });
 userSchema.index({ agentId: 1 });
 userSchema.index({ isActive: 1 });
 userSchema.index({ role: 1 });

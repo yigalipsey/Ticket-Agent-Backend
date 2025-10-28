@@ -1,6 +1,7 @@
 import express from "express";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
+import User from "../models/User.js";
 import UserService from "../services/user/index.js";
 import { logRequest, logError } from "../utils/logger.js";
 import { rateLimit, authenticateUserToken } from "../middleware/userAuth.js";
@@ -25,18 +26,25 @@ router.use((req, res, next) => {
 // POST /api/auth/login - User login
 router.post("/login", rateLimit(100), async (req, res) => {
   try {
-    const { whatsapp, password } = req.body;
+    const { whatsapp, email, password } = req.body;
 
-    if (!whatsapp || !password) {
+    if ((!whatsapp && !email) || !password) {
       return res.status(400).json(
         createErrorResponse("VALIDATION_MISSING_FIELDS", {
-          required: ["whatsapp", "password"],
+          required: ["whatsapp OR email", "password"],
         })
       );
     }
 
-    // Find user by WhatsApp
-    const user = await UserService.query.getUserByWhatsApp(whatsapp);
+    // Find user by email or whatsapp
+    let user;
+    if (email) {
+      user = await User.findOne({ email, isActive: true })
+        .populate("agentId", "name whatsapp isActive")
+        .lean();
+    } else {
+      user = await UserService.query.getUserByWhatsApp(whatsapp);
+    }
 
     if (!user) {
       return res
@@ -64,6 +72,7 @@ router.post("/login", rateLimit(100), async (req, res) => {
       {
         userId: user._id,
         whatsapp: user.whatsapp,
+        email: user.email,
         role: user.role,
         tokenVersion: user.tokenVersion,
       },
@@ -84,6 +93,7 @@ router.post("/login", rateLimit(100), async (req, res) => {
           user: {
             _id: user._id,
             whatsapp: user.whatsapp,
+            email: user.email,
             role: user.role,
             agentId: user.agentId,
             isActive: user.isActive,

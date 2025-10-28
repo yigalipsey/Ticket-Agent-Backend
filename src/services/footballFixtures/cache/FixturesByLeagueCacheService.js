@@ -25,10 +25,10 @@ class FixturesByLeagueCacheService {
   generateCacheKey(leagueId, opts = {}) {
     const { month = null, venueId = null } = opts;
 
-    if (month) {
+    if (month !== null && month !== undefined) {
       return `league:${leagueId}:month:${month}`;
     }
-    if (venueId) {
+    if (venueId !== null && venueId !== undefined) {
       return `league:${leagueId}:venue:${venueId}`;
     }
     return `league:${leagueId}:all`;
