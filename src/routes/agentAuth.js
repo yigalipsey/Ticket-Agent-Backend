@@ -49,6 +49,11 @@ router.post("/login", rateLimit(50), async (req, res) => {
 
     // Set secure cookie with token
     res.cookie(cookieName, result.token, cookieOptions);
+    console.log("✅ Cookie set:", {
+      name: cookieName,
+      options: cookieOptions,
+      valueLen: result.token?.length || 0,
+    });
 
     res.json(
       createSuccessResponse(
@@ -132,6 +137,31 @@ router.get("/me", rateLimit(100), async (req, res) => {
     const token = req.cookies[cookieName];
 
     if (!token) {
+      // Colored + info diagnostics for missing token
+      const RED = "\x1b[31m";
+      const YELLOW = "\x1b[33m";
+      const CYAN = "\x1b[36m";
+      const RESET = "\x1b[0m";
+      console.error(
+        `${RED}%s${RESET}`,
+        `AUTH_401 AGENT | ${req.method} ${req.originalUrl} | reason=missing_token`
+      );
+      console.error(
+        `${YELLOW}%s${RESET}`,
+        `headers=${JSON.stringify({
+          origin: req.headers.origin,
+          referer: req.headers.referer,
+          host: req.headers.host,
+          xfp: req.headers["x-forwarded-proto"],
+          xfh: req.headers["x-forwarded-host"],
+        })}`
+      );
+      console.error(
+        `${CYAN}%s${RESET}`,
+        `cookies=${JSON.stringify({
+          cookieNames: Object.keys(req.cookies || {}),
+        })}`
+      );
       return res.status(401).json(createErrorResponse("AUTH_TOKEN_REQUIRED"));
     }
 
@@ -148,6 +178,31 @@ router.get("/me", rateLimit(100), async (req, res) => {
     res.json(createSuccessResponse(agent, "AGENT_INFO_SUCCESS"));
   } catch (error) {
     logError(error, { route: "GET /api/auth/agent/me" });
+    // Colored diagnostics for token issues
+    const RED = "\x1b[31m";
+    const YELLOW = "\x1b[33m";
+    const CYAN = "\x1b[36m";
+    const RESET = "\x1b[0m";
+    console.error(
+      `${RED}%s${RESET}`,
+      `AUTH_401 AGENT | ${req.method} ${req.originalUrl} | reason=token_verification_failed | msg=${error.message}`
+    );
+    console.error(
+      `${YELLOW}%s${RESET}`,
+      `headers=${JSON.stringify({
+        origin: req.headers.origin,
+        referer: req.headers.referer,
+        host: req.headers.host,
+        xfp: req.headers["x-forwarded-proto"],
+        xfh: req.headers["x-forwarded-host"],
+      })}`
+    );
+    console.error(
+      `${CYAN}%s${RESET}`,
+      `cookies=${JSON.stringify({
+        cookieNames: Object.keys(req.cookies || {}),
+      })}`
+    );
 
     if (error.message === "AGENT_TOKEN_INVALID") {
       return res.status(401).json(createErrorResponse("AUTH_TOKEN_INVALID"));
