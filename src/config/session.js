@@ -3,8 +3,10 @@
 export const sessionConfig = {
   cookieOptions: {
     httpOnly: true, // מונע גישה מ-JS בצד לקוח (הגנה מ-XSS)
-    secure: process.env.NODE_ENV === "production", // נשלח רק דרך HTTPS בפרודקשן
-    sameSite: "lax", // מאפשר שליחה עם navigation requests (כמו refresh) אבל עדיין מונע CSRF
+    // בפרודקשן עם סאב-דומיינים נדרש SameSite=None ו-Secure כדי לאפשר שליחה בבקשות cross-site
+    secure: true, // חובה בפרודקשן עם SameSite: "none"
+    sameSite: "none", // מאפשר שליחה גם בבקשות cross-site
+    domain: process.env.COOKIE_DOMAIN || ".ticketagent.co.il", // מאפשר שליחה לכל הסאב-דומיינים
     maxAge: 60 * 60 * 24 * 7 * 1000, // זמן חיים של שבוע (במילישניות)
     path: "/", // נשלח לכל הנתיבים באתר
   },

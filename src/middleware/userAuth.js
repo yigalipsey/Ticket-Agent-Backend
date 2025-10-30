@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken";
 import User from "../models/User.js";
 import { logWithCheckpoint, logError } from "../utils/logger.js";
 import { createErrorResponse, ERROR_CODES } from "../utils/errorCodes.js";
-import { getUserSessionConfig } from "../config/session.js";
+import { getUserSessionConfig, sessionConfig } from "../config/session.js";
 
 // Middleware to verify JWT token for users
 export const authenticateUserToken = async (req, res, next) => {
@@ -21,11 +21,29 @@ export const authenticateUserToken = async (req, res, next) => {
     if (!token) {
       logWithCheckpoint("warn", "No token provided", "AUTH_002");
       if (process.env.NODE_ENV === "production") {
-        // Red color for visibility in production
-        // \x1b[31m = red, \x1b[0m = reset
+        const diagnostics = {
+          route: req.originalUrl,
+          reason: "missing_token",
+          nodeEnv: process.env.NODE_ENV,
+          origin: req.headers.origin,
+          referer: req.headers.referer,
+          host: req.headers.host,
+          hostname: req.hostname,
+          protocol: req.protocol,
+          xfp: req.headers["x-forwarded-proto"],
+          xfh: req.headers["x-forwarded-host"],
+          cookieNames: Object.keys(req.cookies || {}),
+          hasUserCookie: !!req.cookies?.[userCookieName],
+          hasAgentCookie: !!req.cookies?.agent_auth_token,
+          userCookieLen: req.cookies?.[userCookieName]?.length || 0,
+          agentCookieLen: req.cookies?.agent_auth_token?.length || 0,
+          expectedCookieName: userCookieName,
+          expectedCookieOptions: sessionConfig.cookieOptions,
+          frontendUrlEnv: process.env.FRONTEND_URL,
+        };
         console.error(
           "\x1b[31m%s\x1b[0m",
-          `AUTH_401 | route=${req.originalUrl} | reason=missing_token`
+          `AUTH_401 | ${JSON.stringify(diagnostics)}`
         );
       }
       return res.status(401).json({ message: "Missing authentication token" });
@@ -54,9 +72,32 @@ export const authenticateUserToken = async (req, res, next) => {
     });
 
     if (process.env.NODE_ENV === "production") {
+      const { cookieName: userCookieName } = getUserSessionConfig();
+      const diagnostics = {
+        route: req.originalUrl,
+        reason: "token_verification_failed",
+        errorName: err.name,
+        errorMessage: err.message,
+        nodeEnv: process.env.NODE_ENV,
+        origin: req.headers.origin,
+        referer: req.headers.referer,
+        host: req.headers.host,
+        hostname: req.hostname,
+        protocol: req.protocol,
+        xfp: req.headers["x-forwarded-proto"],
+        xfh: req.headers["x-forwarded-host"],
+        cookieNames: Object.keys(req.cookies || {}),
+        hasUserCookie: !!req.cookies?.[userCookieName],
+        hasAgentCookie: !!req.cookies?.agent_auth_token,
+        userCookieLen: req.cookies?.[userCookieName]?.length || 0,
+        agentCookieLen: req.cookies?.agent_auth_token?.length || 0,
+        expectedCookieName: userCookieName,
+        expectedCookieOptions: sessionConfig.cookieOptions,
+        frontendUrlEnv: process.env.FRONTEND_URL,
+      };
       console.error(
         "\x1b[31m%s\x1b[0m",
-        `AUTH_401 | route=${req.originalUrl} | reason=token_verification_failed | name=${err.name} | msg=${err.message}`
+        `AUTH_401 | ${JSON.stringify(diagnostics)}`
       );
     }
 

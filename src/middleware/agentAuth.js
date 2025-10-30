@@ -3,7 +3,7 @@ import { createErrorResponse } from "../utils/errorCodes.js";
 
 import jwt from "jsonwebtoken";
 import AgentAuthService from "../services/agent/AgentAuthService.js";
-import { getAgentSessionConfig } from "../config/session.js";
+import { getAgentSessionConfig, sessionConfig } from "../config/session.js";
 
 // Middleware to verify agent JWT token from cookie
 export const authenticateAgentToken = async (req, res, next) => {
@@ -24,6 +24,29 @@ export const authenticateAgentToken = async (req, res, next) => {
         "No agent token found in cookie",
         "JWT_AUTH_002"
       );
+      if (process.env.NODE_ENV === "production") {
+        const diagnostics = {
+          route: req.originalUrl,
+          actor: "agent",
+          reason: "missing_token",
+          nodeEnv: process.env.NODE_ENV,
+          origin: req.headers.origin,
+          referer: req.headers.referer,
+          host: req.headers.host,
+          hostname: req.hostname,
+          protocol: req.protocol,
+          xfp: req.headers["x-forwarded-proto"],
+          xfh: req.headers["x-forwarded-host"],
+          cookieNames: Object.keys(req.cookies || {}),
+          expectedCookieName: cookieName,
+          expectedCookieOptions: sessionConfig.cookieOptions,
+          frontendUrlEnv: process.env.FRONTEND_URL,
+        };
+        console.error(
+          "\x1b[31m%s\x1b[0m",
+          `AUTH_401 | ${JSON.stringify(diagnostics)}`
+        );
+      }
       return res.status(401).json(createErrorResponse("AUTH_TOKEN_REQUIRED"));
     }
 
@@ -87,6 +110,33 @@ export const authenticateAgentToken = async (req, res, next) => {
         errorMessage: err.message,
       }
     );
+
+    if (process.env.NODE_ENV === "production") {
+      const { cookieName } = getAgentSessionConfig();
+      const diagnostics = {
+        route: req.originalUrl,
+        actor: "agent",
+        reason: "token_verification_failed",
+        errorName: err.name,
+        errorMessage: err.message,
+        nodeEnv: process.env.NODE_ENV,
+        origin: req.headers.origin,
+        referer: req.headers.referer,
+        host: req.headers.host,
+        hostname: req.hostname,
+        protocol: req.protocol,
+        xfp: req.headers["x-forwarded-proto"],
+        xfh: req.headers["x-forwarded-host"],
+        cookieNames: Object.keys(req.cookies || {}),
+        expectedCookieName: cookieName,
+        expectedCookieOptions: sessionConfig.cookieOptions,
+        frontendUrlEnv: process.env.FRONTEND_URL,
+      };
+      console.error(
+        "\x1b[31m%s\x1b[0m",
+        `AUTH_401 | ${JSON.stringify(diagnostics)}`
+      );
+    }
 
     return res.status(401).json(createErrorResponse("AUTH_TOKEN_INVALID"));
   }
