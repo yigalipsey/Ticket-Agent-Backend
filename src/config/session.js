@@ -7,9 +7,10 @@ export const sessionConfig = {
     httpOnly: true, // מונע גישה מ-JS בצד לקוח (הגנה מ-XSS)
     secure: isProduction, // בפרודקשן חובה Secure=true
     sameSite: isProduction ? "none" : "lax", // פרוד: cross-site, פיתוח: same-site
-    ...(isProduction && {
-      domain: process.env.COOKIE_DOMAIN || ".ticketagent.co.il", // פרוד: לכל הסאב-דומיינים
-    }),
+    // קביעת דומיין באופן מפורש כדי להימנע מהתנהגות לא צפויה
+    domain: isProduction
+      ? process.env.COOKIE_DOMAIN || ".ticketagent.co.il"
+      : undefined,
     maxAge: 60 * 60 * 24 * 7 * 1000, // זמן חיים של שבוע (במילישניות)
     path: "/", // נשלח לכל הנתיבים באתר
   },

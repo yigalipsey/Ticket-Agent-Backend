@@ -38,6 +38,17 @@ app.use(
     credentials: true, // Allow cookies
   })
 );
+// Print important envs for cookie/cors diagnostics
+try {
+  const YELLOW = "\x1b[33m";
+  const RESET = "\x1b[0m";
+  console.log(
+    `${YELLOW}%s${RESET}`,
+    `ENV CHECK → NODE_ENV=${process.env.NODE_ENV} | FRONTEND_URL=${
+      process.env.FRONTEND_URL
+    } | COOKIE_DOMAIN=${process.env.COOKIE_DOMAIN || "(unset)"}`
+  );
+} catch {}
 // Session middleware removed - JWT tokens handled in routes
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true }));
