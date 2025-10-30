@@ -86,6 +86,11 @@ router.post("/login", rateLimit(100), async (req, res) => {
     // Set secure cookie with token
     const { cookieName, cookieOptions } = getUserSessionConfig();
     res.cookie(cookieName, token, cookieOptions);
+    console.log("✅ Cookie set:", {
+      name: cookieName,
+      options: cookieOptions,
+      valueLen: token?.length || 0,
+    });
 
     res.json(
       createSuccessResponse(
@@ -182,6 +187,11 @@ router.post("/register", rateLimit(50), async (req, res) => {
     // Set secure cookie with token
     const { cookieName, cookieOptions } = getUserSessionConfig();
     res.cookie(cookieName, token, cookieOptions);
+    console.log("✅ Cookie set:", {
+      name: cookieName,
+      options: cookieOptions,
+      valueLen: token?.length || 0,
+    });
 
     res.status(201).json(
       createSuccessResponse(

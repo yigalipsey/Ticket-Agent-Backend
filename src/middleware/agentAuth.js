@@ -24,29 +24,56 @@ export const authenticateAgentToken = async (req, res, next) => {
         "No agent token found in cookie",
         "JWT_AUTH_002"
       );
-      if (process.env.NODE_ENV === "production") {
-        const diagnostics = {
-          route: req.originalUrl,
-          actor: "agent",
-          reason: "missing_token",
-          nodeEnv: process.env.NODE_ENV,
+      const envDump = {
+        NODE_ENV: process.env.NODE_ENV,
+        FRONTEND_URL: process.env.FRONTEND_URL,
+        COOKIE_DOMAIN: process.env.COOKIE_DOMAIN,
+        PORT: process.env.PORT,
+        JWT_SECRET_LEN: process.env.JWT_SECRET?.length || 0,
+        MONGODB_URI_PRESENT: !!process.env.MONGODB_URI,
+      };
+      const diagnostics = {
+        route: req.originalUrl,
+        actor: "agent",
+        reason: "missing_token",
+        origin: req.headers.origin,
+        referer: req.headers.referer,
+        host: req.headers.host,
+        hostname: req.hostname,
+        protocol: req.protocol,
+        xfp: req.headers["x-forwarded-proto"],
+        xfh: req.headers["x-forwarded-host"],
+        cookieNames: Object.keys(req.cookies || {}),
+        expectedCookieName: cookieName,
+        expectedCookieOptions: sessionConfig.cookieOptions,
+      };
+      const RED = "\x1b[31m";
+      const YELLOW = "\x1b[33m";
+      const CYAN = "\x1b[36m";
+      const RESET = "\x1b[0m";
+      console.error(
+        `${RED}%s${RESET}`,
+        `AUTH_401 AGENT | ${req.method} ${req.originalUrl} | reason=missing_token`
+      );
+      console.error(
+        `${YELLOW}%s${RESET}`,
+        `headers=${JSON.stringify({
           origin: req.headers.origin,
           referer: req.headers.referer,
           host: req.headers.host,
-          hostname: req.hostname,
-          protocol: req.protocol,
           xfp: req.headers["x-forwarded-proto"],
           xfh: req.headers["x-forwarded-host"],
-          cookieNames: Object.keys(req.cookies || {}),
-          expectedCookieName: cookieName,
-          expectedCookieOptions: sessionConfig.cookieOptions,
-          frontendUrlEnv: process.env.FRONTEND_URL,
-        };
-        console.error(
-          "\x1b[31m%s\x1b[0m",
-          `AUTH_401 | ${JSON.stringify(diagnostics)}`
-        );
-      }
+        })}`
+      );
+      console.error(
+        `${CYAN}%s${RESET}`,
+        `cookies=${JSON.stringify({
+          cookieNames: diagnostics.cookieNames,
+          expectedCookieName: diagnostics.expectedCookieName,
+          expectedCookieOptions: diagnostics.expectedCookieOptions,
+        })}`
+      );
+      console.error(`${CYAN}%s${RESET}`, `env=${JSON.stringify(envDump)}`);
       return res.status(401).json(createErrorResponse("AUTH_TOKEN_REQUIRED"));
     }
 
@@ -111,32 +138,59 @@ export const authenticateAgentToken = async (req, res, next) => {
       }
     );
 
-    if (process.env.NODE_ENV === "production") {
-      const { cookieName } = getAgentSessionConfig();
-      const diagnostics = {
-        route: req.originalUrl,
-        actor: "agent",
-        reason: "token_verification_failed",
-        errorName: err.name,
-        errorMessage: err.message,
-        nodeEnv: process.env.NODE_ENV,
+    const { cookieName } = getAgentSessionConfig();
+    const envDump = {
+      NODE_ENV: process.env.NODE_ENV,
+      FRONTEND_URL: process.env.FRONTEND_URL,
+      COOKIE_DOMAIN: process.env.COOKIE_DOMAIN,
+      PORT: process.env.PORT,
+      JWT_SECRET_LEN: process.env.JWT_SECRET?.length || 0,
+      MONGODB_URI_PRESENT: !!process.env.MONGODB_URI,
+    };
+    const diagnostics = {
+      route: req.originalUrl,
+      actor: "agent",
+      reason: "token_verification_failed",
+      errorName: err.name,
+      errorMessage: err.message,
+      origin: req.headers.origin,
+      referer: req.headers.referer,
+      host: req.headers.host,
+      hostname: req.hostname,
+      protocol: req.protocol,
+      xfp: req.headers["x-forwarded-proto"],
+      xfh: req.headers["x-forwarded-host"],
+      cookieNames: Object.keys(req.cookies || {}),
+      expectedCookieName: cookieName,
+      expectedCookieOptions: sessionConfig.cookieOptions,
+    };
+    const RED = "\x1b[31m";
+    const YELLOW = "\x1b[33m";
+    const CYAN = "\x1b[36m";
+    const RESET = "\x1b[0m";
+    console.error(
+      `${RED}%s${RESET}`,
+      `AUTH_401 AGENT | ${req.method} ${req.originalUrl} | reason=token_verification_failed | name=${err.name}`
+    );
+    console.error(
+      `${YELLOW}%s${RESET}`,
+      `headers=${JSON.stringify({
         origin: req.headers.origin,
         referer: req.headers.referer,
         host: req.headers.host,
-        hostname: req.hostname,
-        protocol: req.protocol,
         xfp: req.headers["x-forwarded-proto"],
         xfh: req.headers["x-forwarded-host"],
-        cookieNames: Object.keys(req.cookies || {}),
-        expectedCookieName: cookieName,
-        expectedCookieOptions: sessionConfig.cookieOptions,
-        frontendUrlEnv: process.env.FRONTEND_URL,
-      };
-      console.error(
-        "\x1b[31m%s\x1b[0m",
-        `AUTH_401 | ${JSON.stringify(diagnostics)}`
-      );
-    }
+      })}`
+    );
+    console.error(
+      `${CYAN}%s${RESET}`,
+      `cookies=${JSON.stringify({
+        cookieNames: diagnostics.cookieNames,
+        expectedCookieName: diagnostics.expectedCookieName,
+        expectedCookieOptions: diagnostics.expectedCookieOptions,
+      })}`
+    );
+    console.error(`${CYAN}%s${RESET}`, `env=${JSON.stringify(envDump)}`);
 
     return res.status(401).json(createErrorResponse("AUTH_TOKEN_INVALID"));
   }

@@ -20,32 +20,63 @@ export const authenticateUserToken = async (req, res, next) => {
 
     if (!token) {
       logWithCheckpoint("warn", "No token provided", "AUTH_002");
-      if (process.env.NODE_ENV === "production") {
-        const diagnostics = {
-          route: req.originalUrl,
-          reason: "missing_token",
-          nodeEnv: process.env.NODE_ENV,
+      const envDump = {
+        NODE_ENV: process.env.NODE_ENV,
+        FRONTEND_URL: process.env.FRONTEND_URL,
+        COOKIE_DOMAIN: process.env.COOKIE_DOMAIN,
+        PORT: process.env.PORT,
+        JWT_SECRET_LEN: process.env.JWT_SECRET?.length || 0,
+        MONGODB_URI_PRESENT: !!process.env.MONGODB_URI,
+      };
+      const diagnostics = {
+        route: req.originalUrl,
+        reason: "missing_token",
+        origin: req.headers.origin,
+        referer: req.headers.referer,
+        host: req.headers.host,
+        hostname: req.hostname,
+        protocol: req.protocol,
+        xfp: req.headers["x-forwarded-proto"],
+        xfh: req.headers["x-forwarded-host"],
+        cookieNames: Object.keys(req.cookies || {}),
+        hasUserCookie: !!req.cookies?.[userCookieName],
+        hasAgentCookie: !!req.cookies?.agent_auth_token,
+        userCookieLen: req.cookies?.[userCookieName]?.length || 0,
+        agentCookieLen: req.cookies?.agent_auth_token?.length || 0,
+        expectedCookieName: userCookieName,
+        expectedCookieOptions: sessionConfig.cookieOptions,
+      };
+      const RED = "\x1b[31m";
+      const YELLOW = "\x1b[33m";
+      const CYAN = "\x1b[36m";
+      const RESET = "\x1b[0m";
+      console.error(
+        `${RED}%s${RESET}`,
+        `AUTH_401 USER | ${req.method} ${req.originalUrl} | reason=missing_token`
+      );
+      console.error(
+        `${YELLOW}%s${RESET}`,
+        `headers=${JSON.stringify({
           origin: req.headers.origin,
           referer: req.headers.referer,
           host: req.headers.host,
-          hostname: req.hostname,
-          protocol: req.protocol,
           xfp: req.headers["x-forwarded-proto"],
           xfh: req.headers["x-forwarded-host"],
-          cookieNames: Object.keys(req.cookies || {}),
-          hasUserCookie: !!req.cookies?.[userCookieName],
-          hasAgentCookie: !!req.cookies?.agent_auth_token,
-          userCookieLen: req.cookies?.[userCookieName]?.length || 0,
-          agentCookieLen: req.cookies?.agent_auth_token?.length || 0,
-          expectedCookieName: userCookieName,
-          expectedCookieOptions: sessionConfig.cookieOptions,
-          frontendUrlEnv: process.env.FRONTEND_URL,
-        };
-        console.error(
-          "\x1b[31m%s\x1b[0m",
-          `AUTH_401 | ${JSON.stringify(diagnostics)}`
-        );
-      }
+        })}`
+      );
+      console.error(
+        `${CYAN}%s${RESET}`,
+        `cookies=${JSON.stringify({
+          cookieNames: diagnostics.cookieNames,
+          hasUserCookie: diagnostics.hasUserCookie,
+          hasAgentCookie: diagnostics.hasAgentCookie,
+          userCookieLen: diagnostics.userCookieLen,
+          agentCookieLen: diagnostics.agentCookieLen,
+          expectedCookieName: diagnostics.expectedCookieName,
+          expectedCookieOptions: diagnostics.expectedCookieOptions,
+        })}`
+      );
+      console.error(`${CYAN}%s${RESET}`, `env=${JSON.stringify(envDump)}`);
       return res.status(401).json({ message: "Missing authentication token" });
     }
 
@@ -71,35 +102,66 @@ export const authenticateUserToken = async (req, res, next) => {
       errorMessage: err.message,
     });
 
-    if (process.env.NODE_ENV === "production") {
-      const { cookieName: userCookieName } = getUserSessionConfig();
-      const diagnostics = {
-        route: req.originalUrl,
-        reason: "token_verification_failed",
-        errorName: err.name,
-        errorMessage: err.message,
-        nodeEnv: process.env.NODE_ENV,
+    const envDump = {
+      NODE_ENV: process.env.NODE_ENV,
+      FRONTEND_URL: process.env.FRONTEND_URL,
+      COOKIE_DOMAIN: process.env.COOKIE_DOMAIN,
+      PORT: process.env.PORT,
+      JWT_SECRET_LEN: process.env.JWT_SECRET?.length || 0,
+      MONGODB_URI_PRESENT: !!process.env.MONGODB_URI,
+    };
+    const { cookieName: userCookieName } = getUserSessionConfig();
+    const diagnostics = {
+      route: req.originalUrl,
+      reason: "token_verification_failed",
+      errorName: err.name,
+      errorMessage: err.message,
+      origin: req.headers.origin,
+      referer: req.headers.referer,
+      host: req.headers.host,
+      hostname: req.hostname,
+      protocol: req.protocol,
+      xfp: req.headers["x-forwarded-proto"],
+      xfh: req.headers["x-forwarded-host"],
+      cookieNames: Object.keys(req.cookies || {}),
+      hasUserCookie: !!req.cookies?.[userCookieName],
+      hasAgentCookie: !!req.cookies?.agent_auth_token,
+      userCookieLen: req.cookies?.[userCookieName]?.length || 0,
+      agentCookieLen: req.cookies?.agent_auth_token?.length || 0,
+      expectedCookieName: userCookieName,
+      expectedCookieOptions: sessionConfig.cookieOptions,
+    };
+    const RED = "\x1b[31m";
+    const YELLOW = "\x1b[33m";
+    const CYAN = "\x1b[36m";
+    const RESET = "\x1b[0m";
+    console.error(
+      `${RED}%s${RESET}`,
+      `AUTH_401 USER | ${req.method} ${req.originalUrl} | reason=token_verification_failed | name=${err.name}`
+    );
+    console.error(
+      `${YELLOW}%s${RESET}`,
+      `headers=${JSON.stringify({
         origin: req.headers.origin,
         referer: req.headers.referer,
         host: req.headers.host,
-        hostname: req.hostname,
-        protocol: req.protocol,
         xfp: req.headers["x-forwarded-proto"],
         xfh: req.headers["x-forwarded-host"],
-        cookieNames: Object.keys(req.cookies || {}),
-        hasUserCookie: !!req.cookies?.[userCookieName],
-        hasAgentCookie: !!req.cookies?.agent_auth_token,
-        userCookieLen: req.cookies?.[userCookieName]?.length || 0,
-        agentCookieLen: req.cookies?.agent_auth_token?.length || 0,
-        expectedCookieName: userCookieName,
-        expectedCookieOptions: sessionConfig.cookieOptions,
-        frontendUrlEnv: process.env.FRONTEND_URL,
-      };
-      console.error(
-        "\x1b[31m%s\x1b[0m",
-        `AUTH_401 | ${JSON.stringify(diagnostics)}`
-      );
-    }
+      })}`
+    );
+    console.error(
+      `${CYAN}%s${RESET}`,
+      `cookies=${JSON.stringify({
+        cookieNames: diagnostics.cookieNames,
+        hasUserCookie: diagnostics.hasUserCookie,
+        hasAgentCookie: diagnostics.hasAgentCookie,
+        userCookieLen: diagnostics.userCookieLen,
+        agentCookieLen: diagnostics.agentCookieLen,
+        expectedCookieName: diagnostics.expectedCookieName,
+        expectedCookieOptions: diagnostics.expectedCookieOptions,
+      })}`
+    );
+    console.error(`${CYAN}%s${RESET}`, `env=${JSON.stringify(envDump)}`);
 
     return res.status(401).json({ message: "Invalid or expired token" });
   }

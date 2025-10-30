@@ -184,6 +184,45 @@ router.delete(
   }
 );
 
+// DELETE /api/cache/hot-fixtures - Clear only hot fixtures cache (Super Admin only)
+router.delete(
+  "/hot-fixtures",
+  auth,
+  requireRole("super-admin"),
+  rateLimit(10),
+  async (req, res) => {
+    try {
+      logWithCheckpoint(
+        "info",
+        "Starting to clear hot fixtures cache",
+        "CACHE_CLEAR_HOT_001"
+      );
+
+      const result = HotFixturesService.clearCache();
+
+      logWithCheckpoint(
+        "info",
+        "Hot fixtures cache cleared successfully",
+        "CACHE_CLEAR_HOT_002",
+        { result }
+      );
+
+      res.json({
+        success: true,
+        message: "Hot fixtures cache cleared successfully",
+        clearedEntries: result?.clearedEntries || result || 0,
+      });
+    } catch (error) {
+      logError(error, { route: "DELETE /api/cache/hot-fixtures" });
+      res.status(500).json({
+        success: false,
+        error: "Failed to clear hot fixtures cache",
+        message: error.message,
+      });
+    }
+  }
+);
+
 // GET /api/cache/stats - Get cache statistics (Admin only)
 router.get(
   "/stats",
