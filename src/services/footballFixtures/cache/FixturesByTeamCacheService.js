@@ -143,6 +143,40 @@ class FixturesByTeamCacheService {
     }
   }
 
+  // רענון cache - מעדכן את הנתונים בלי למחוק (set מחליף אוטומטית)
+  refresh(teamId, data) {
+    try {
+      logWithCheckpoint(
+        "info",
+        "Refreshing fixtures cache for team",
+        "FIXTURES_BY_TEAM_CACHE_009",
+        {
+          teamId,
+          fixturesCount: data?.footballEvents?.length || 0,
+        }
+      );
+
+      // set מחליף אוטומטית את הערך הקיים אם הוא קיים
+      const updated = this.set(teamId, data);
+
+      logWithCheckpoint(
+        "info",
+        "Fixtures by team cache refreshed successfully",
+        "FIXTURES_BY_TEAM_CACHE_010",
+        {
+          teamId,
+          updated,
+          fixturesCount: data?.footballEvents?.length || 0,
+        }
+      );
+
+      return updated;
+    } catch (error) {
+      logError(error, { operation: "refresh", teamId });
+      return false;
+    }
+  }
+
   // ניקוי כל ה-cache
   clear() {
     try {

@@ -31,6 +31,9 @@ export const getFootballEventsByTeamId = async (teamId, query = {}) => {
       return createErrorResponse("VALIDATION_INVALID_TEAM_ID", error.message);
     }
 
+    // קורא את hasOffers לפני בדיקת cache (לסינון בעת הצורך)
+    const { hasOffers } = query;
+
     // בדיקת cache
     const cachedData = fixturesByTeamCacheService.get(teamId);
 
@@ -44,8 +47,23 @@ export const getFootballEventsByTeamId = async (teamId, query = {}) => {
           cachedFixturesCount: cachedData.footballEvents?.length || 0,
         }
       );
+
+      // סינון משחקים עם הצעות אם נדרש
+      let filteredEvents = cachedData.footballEvents || [];
+      if (hasOffers === true || hasOffers === "true") {
+        filteredEvents = filteredEvents.filter(
+          (event) => event.minPrice?.amount && event.minPrice.amount > 0
+        );
+      }
+
       return {
         ...cachedData,
+        footballEvents: filteredEvents,
+        pagination: {
+          ...cachedData.pagination,
+          total: filteredEvents.length,
+          pages: Math.ceil(filteredEvents.length / parseInt(query.limit || 20)),
+        },
         fromCache: true,
       };
     }
@@ -187,19 +205,19 @@ export const getFootballEventsByTeamId = async (teamId, query = {}) => {
       }
     );
 
-    const result = {
+    // שמירה ב-cache - נתונים גולמיים ללא סינון hasOffers
+    const cacheResult = {
       footballEvents: hebrewEvents,
       pagination: {
         page: parseInt(page),
         limit: parseInt(limit),
-        total,
-        pages: Math.ceil(total / parseInt(limit)),
+        total: hebrewEvents.length,
+        pages: Math.ceil(hebrewEvents.length / parseInt(limit)),
       },
       fromCache: false,
     };
 
-    // שמירה ב-cache
-    fixturesByTeamCacheService.set(teamId, result);
+    fixturesByTeamCacheService.set(teamId, cacheResult);
 
     logWithCheckpoint(
       "info",
@@ -211,7 +229,24 @@ export const getFootballEventsByTeamId = async (teamId, query = {}) => {
       }
     );
 
-    return result;
+    // סינון משחקים עם הצעות - רק לפני החזרת התוצאה (לא ב-cache)
+    let filteredEvents = [...hebrewEvents];
+    if (hasOffers === true || hasOffers === "true") {
+      filteredEvents = filteredEvents.filter(
+        (event) => event.minPrice?.amount && event.minPrice.amount > 0
+      );
+    }
+
+    return {
+      footballEvents: filteredEvents,
+      pagination: {
+        page: parseInt(page),
+        limit: parseInt(limit),
+        total: filteredEvents.length,
+        pages: Math.ceil(filteredEvents.length / parseInt(limit)),
+      },
+      fromCache: false,
+    };
   } catch (error) {
     logError(error, { operation: "getFootballEventsByTeamId", teamId, query });
     return createErrorResponse("INTERNAL_SERVER_ERROR", error.message);

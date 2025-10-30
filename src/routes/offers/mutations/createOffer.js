@@ -16,14 +16,11 @@ router.post(
   "/",
   authenticateAgentToken,
   requireAgent,
-  rateLimit(10),
+  rateLimit(100),
   async (req, res) => {
     try {
       const offerData = req.body;
       const { fixtureId } = offerData;
-      console.log("🔵 Create offer request body:", offerData);
-      console.log("🔵 FixtureId from params:", fixtureId);
-      console.log("🔵 Agent from req:", req.agent);
 
       // Basic validation
       if (!fixtureId || !offerData.price) {
@@ -37,12 +34,12 @@ router.post(
       // Validate currency if provided
       if (
         offerData.currency &&
-        !["EUR", "USD", "ILS"].includes(offerData.currency)
+        !["EUR", "USD", "ILS", "GBP"].includes(offerData.currency)
       ) {
         return res.status(400).json(
           createErrorResponse("VALIDATION_INVALID_FORMAT", {
             field: "currency",
-            expected: "EUR, USD, or ILS",
+            expected: "EUR, USD, ILS, or GBP",
           })
         );
       }

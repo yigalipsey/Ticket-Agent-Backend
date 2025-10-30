@@ -26,14 +26,8 @@ router.get(
   rateLimit(20), // 20 requests per minute
   async (req, res) => {
     try {
-      const {
-        q: query,
-        limit,
-        fixturesLimit,
-        includePastFixtures,
-        leagueId,
-        onlyWithOffers,
-      } = req.query;
+      const { q: query, limit, fixturesLimit, includePastFixtures, leagueId } =
+        req.query;
 
       // Validate required parameters
       if (!query || query.trim().length < 2) {
@@ -50,7 +44,8 @@ router.get(
         fixturesLimit: fixturesLimit ? parseInt(fixturesLimit) : 5,
         includePastFixtures: includePastFixtures === "true",
         leagueId: leagueId || null,
-        onlyWithOffers: onlyWithOffers === "true",
+        // Always return only fixtures that have offers; teams returned regardless
+        onlyWithOffers: true,
       };
 
       // Validate limits

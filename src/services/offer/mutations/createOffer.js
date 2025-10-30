@@ -4,16 +4,16 @@ import Agent from "../../../models/Agent.js";
 import { logWithCheckpoint, logError } from "../../../utils/logger.js";
 import { refreshOffersCache } from "../utils/cacheHelpers.js";
 import offersByFixtureCacheService from "../cache/OffersByFixtureCacheService.js";
+import fixturesByTeamCacheService from "../../footballFixtures/cache/FixturesByTeamCacheService.js";
+import fixturesByLeagueCacheService from "../../footballFixtures/cache/FixturesByLeagueCacheService.js";
+import { getFootballEventsByTeamId } from "../../footballFixtures/queries/byTeam.js";
+import { isLowestOffer } from "../utils/offerComparison.js";
 
 /**
  * Create new offer
  */
 export const createOffer = async (offerData) => {
   try {
-    logWithCheckpoint("info", "Starting to create/update offer", "OFFER_016", {
-      offerData,
-    });
-
     const {
       fixtureId,
       agentId,
@@ -77,28 +77,89 @@ export const createOffer = async (offerData) => {
 
     const savedOffer = await newOffer.save();
 
-    console.log("✅ Saved offer:", savedOffer);
-
-    // Refresh cache with updated offers
+    // 1. Refresh cache of offers for this fixture
     const cacheRefreshResult = await refreshOffersCache(fixtureId);
-    console.log("📊 Cache refresh result:", cacheRefreshResult);
 
-    // בדיקת תוכן ה-cache מיד אחרי הרענון
-    const cached = offersByFixtureCacheService.get(fixtureId);
-    console.log("📦 Cached offers:", cached?.offers);
-
-    logWithCheckpoint(
-      "info",
-      "Successfully created new offer (replaced existing ones)",
-      "OFFER_017",
+    // 2. בדיקה אם ההצעה החדשה היא הכי נמוכה
+    const newOfferCurrency = currency || "EUR";
+    const comparisonResult = await isLowestOffer(
       {
-        id: savedOffer._id,
-        fixtureId,
-        agentId,
-        cacheRefreshed: cacheRefreshResult.success,
-        offersCount: cacheRefreshResult.offersCount,
-      }
+        price,
+        currency: newOfferCurrency,
+      },
+      fixtureId
     );
+
+    // 3. רק אם ההצעה היא הכי נמוכה - עדכון minPrice ואיפוס cache
+    if (comparisonResult.isLowest) {
+      // עדכון minPrice של המשחק
+      await FootballEvent.findByIdAndUpdate(
+        fixtureId,
+        {
+          "minPrice.amount": price,
+          "minPrice.currency": newOfferCurrency,
+          "minPrice.updatedAt": new Date(),
+        },
+        { new: true }
+      );
+
+      // 4. Refresh cache of fixtures by team (homeTeam and awayTeam)
+      // כי minPrice של המשחק יכול להשתנות - שליפה מחדש מה-DB ועדכון cache
+      let teamsCacheRefreshed = 0;
+      if (fixture.homeTeam) {
+        // תמיכה גם ב-ObjectId reference וגם ב-populated object
+        const homeTeamId = fixture.homeTeam._id
+          ? fixture.homeTeam._id.toString()
+          : fixture.homeTeam.toString();
+
+        // מחיקת cache כדי לכפות שליפה מחדש מה-DB
+        fixturesByTeamCacheService.delete(homeTeamId);
+
+        // שליפה מחדש מה-DB - getFootballEventsByTeamId ישלוף וישמור ב-cache מחדש
+        const refreshedData = await getFootballEventsByTeamId(homeTeamId, {
+          limit: "1000",
+        });
+
+        if (refreshedData && refreshedData.success !== false) {
+          teamsCacheRefreshed++;
+        }
+      }
+      if (fixture.awayTeam) {
+        // תמיכה גם ב-ObjectId reference וגם ב-populated object
+        const awayTeamId = fixture.awayTeam._id
+          ? fixture.awayTeam._id.toString()
+          : fixture.awayTeam.toString();
+
+        // מחיקת cache כדי לכפות שליפה מחדש מה-DB
+        fixturesByTeamCacheService.delete(awayTeamId);
+
+        // שליפה מחדש מה-DB - getFootballEventsByTeamId ישלוף וישמור ב-cache מחדש
+        const refreshedData = await getFootballEventsByTeamId(awayTeamId, {
+          limit: "1000",
+        });
+
+        if (refreshedData && refreshedData.success !== false) {
+          teamsCacheRefreshed++;
+        }
+      }
+
+      // 5. Invalidate cache of fixtures by league
+      let leagueCacheInvalidated = 0;
+      if (fixture.league) {
+        // תמיכה גם ב-ObjectId reference וגם ב-populated object
+        const leagueId = fixture.league._id
+          ? fixture.league._id.toString()
+          : fixture.league.toString();
+        leagueCacheInvalidated =
+          fixturesByLeagueCacheService.deleteLeague(leagueId);
+      }
+    }
+
+    // לוג ירוק אחד - האם הקש התרענן והאם זו ההצעה הכי זולה
+    logWithCheckpoint("info", "Offer created successfully", "OFFER_CREATED", {
+      cacheRefreshed: cacheRefreshResult.success,
+      isLowestOffer: comparisonResult.isLowest,
+    });
 
     return savedOffer;
   } catch (error) {

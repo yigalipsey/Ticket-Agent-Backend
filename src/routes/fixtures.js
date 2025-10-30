@@ -89,8 +89,13 @@ router.get("/by-league", rateLimit(200), async (req, res) => {
 
 // GET /api/fixtures/by-team - שליפת כל משחקי קבוצה עם cache פשוט
 router.get("/by-team", rateLimit(200), async (req, res) => {
+  console.log(
+    "\x1b[31m%s\x1b[0m",
+    "🔥 [ROUTE] GET /api/fixtures/by-team - Request received"
+  );
+  console.log(req.query);
   try {
-    const { teamId, limit = 1000 } = req.query;
+    const { teamId, limit = 1000, upcoming, hasOffers } = req.query;
 
     // וולידציה
     if (!teamId) {
@@ -109,11 +114,12 @@ router.get("/by-team", rateLimit(200), async (req, res) => {
       return res.status(400).json(errorResponse);
     }
 
-    // קריאה לסרוויס עם limit בלבד (ללא פילטרים נוספים)
+    // קריאה לסרוויס עם כל הפרמטרים
     const result = await getFootballEventsByTeamId(teamId, {
       limit,
       page: 1,
-      // ללא upcoming - מחזיר את כל המשחקים
+      upcoming,
+      hasOffers,
     });
 
     // החזרת התוצאה

@@ -8,7 +8,7 @@ import { createSuccessResponse } from "../../../utils/successCodes.js";
 const router = express.Router();
 
 // GET /api/offers/fixture/:fixtureId - Get all offers by fixture ID
-router.get("/fixture/:fixtureId", rateLimit(100), async (req, res) => {
+router.get("/fixture/:fixtureId", rateLimit(1000), async (req, res) => {
   try {
     const { fixtureId } = req.params;
 

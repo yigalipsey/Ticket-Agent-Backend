@@ -20,6 +20,14 @@ export const authenticateUserToken = async (req, res, next) => {
 
     if (!token) {
       logWithCheckpoint("warn", "No token provided", "AUTH_002");
+      if (process.env.NODE_ENV === "production") {
+        // Red color for visibility in production
+        // \x1b[31m = red, \x1b[0m = reset
+        console.error(
+          "\x1b[31m%s\x1b[0m",
+          `AUTH_401 | route=${req.originalUrl} | reason=missing_token`
+        );
+      }
       return res.status(401).json({ message: "Missing authentication token" });
     }
 
@@ -44,6 +52,13 @@ export const authenticateUserToken = async (req, res, next) => {
       errorName: err.name,
       errorMessage: err.message,
     });
+
+    if (process.env.NODE_ENV === "production") {
+      console.error(
+        "\x1b[31m%s\x1b[0m",
+        `AUTH_401 | route=${req.originalUrl} | reason=token_verification_failed | name=${err.name} | msg=${err.message}`
+      );
+    }
 
     return res.status(401).json({ message: "Invalid or expired token" });
   }
@@ -189,7 +204,10 @@ export const rateLimit = (maxRequests = 200, windowMs = 15 * 60 * 1000) => {
   return (req, res, next) => {
     try {
       // Skip rate limiting in development mode
-      if (process.env.NODE_ENV === "development") {
+      if (
+        process.env.NODE_ENV === "development" ||
+        process.env.NODE_ENV !== "production"
+      ) {
         return next();
       }
 

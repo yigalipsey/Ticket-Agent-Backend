@@ -161,7 +161,7 @@ export const offerCreateSchema = Joi.object({
   fixtureId: objectIdSchema,
   agentId: objectIdSchema,
   price: Joi.number().positive().required(),
-  currency: Joi.string().valid("EUR", "USD", "ILS").default("EUR"),
+  currency: Joi.string().valid("EUR", "USD", "ILS", "GBP").default("EUR"),
   description: Joi.string().max(500).optional(),
   source: Joi.string().valid("supplier", "affiliate", "direct").default("direct"),
   metadata: Joi.object({
@@ -178,7 +178,7 @@ export const offerCreateSchema = Joi.object({
 
 export const offerUpdateSchema = Joi.object({
   price: Joi.number().positive().optional(),
-  currency: Joi.string().valid("EUR", "USD", "ILS").optional(),
+  currency: Joi.string().valid("EUR", "USD", "ILS", "GBP").optional(),
   description: Joi.string().max(500).optional(),
   source: Joi.string().valid("supplier", "affiliate", "direct").optional(),
   isAvailable: Joi.boolean().optional(),

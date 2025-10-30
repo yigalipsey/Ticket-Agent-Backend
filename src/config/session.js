@@ -4,7 +4,7 @@ export const sessionConfig = {
   cookieOptions: {
     httpOnly: true, // מונע גישה מ-JS בצד לקוח (הגנה מ-XSS)
     secure: process.env.NODE_ENV === "production", // נשלח רק דרך HTTPS בפרודקשן
-    sameSite: "strict", // מונע שליחה מצד שלישי (הגנה מ-CSRF)
+    sameSite: "lax", // מאפשר שליחה עם navigation requests (כמו refresh) אבל עדיין מונע CSRF
     maxAge: 60 * 60 * 24 * 7 * 1000, // זמן חיים של שבוע (במילישניות)
     path: "/", // נשלח לכל הנתיבים באתר
   },

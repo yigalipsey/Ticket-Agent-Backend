@@ -8,7 +8,6 @@ import { getAgentSessionConfig } from "../config/session.js";
 // Middleware to verify agent JWT token from cookie
 export const authenticateAgentToken = async (req, res, next) => {
   try {
-    console.log("🔵 Agent auth middleware - cookies:", req.cookies);
     logWithCheckpoint(
       "info",
       "Starting agent JWT authentication",
@@ -105,22 +104,13 @@ const roleHierarchy = {
 export const requireRole = (requiredRole) => {
   return (req, res, next) => {
     try {
-      console.log("🔵 requireRole - requiredRole:", requiredRole);
-      console.log("🔵 requireRole - req.agent:", req.agent);
-      console.log("🔵 requireRole - req.agent.id:", req.agent?.id);
-
       // For agents, if they're authenticated, they have agent role
       if (req.agent && req.agent.id) {
         const userRole = "agent";
         const userRoleLevel = roleHierarchy[userRole] || 0;
         const requiredRoleLevel = roleHierarchy[requiredRole] || 0;
 
-        console.log("🔵 requireRole - userRole:", userRole);
-        console.log("🔵 requireRole - userRoleLevel:", userRoleLevel);
-        console.log("🔵 requireRole - requiredRoleLevel:", requiredRoleLevel);
-
         if (userRoleLevel < requiredRoleLevel) {
-          console.log("🔴 requireRole - INSUFFICIENT_PERMISSIONS");
           return res.status(403).json(
             createErrorResponse("INSUFFICIENT_PERMISSIONS", {
               required: requiredRole,
@@ -128,10 +118,7 @@ export const requireRole = (requiredRole) => {
             })
           );
         }
-
-        console.log("🔵 requireRole - PERMISSION GRANTED");
       } else {
-        console.log("🔴 requireRole - NO AGENT FOUND");
         return res.status(403).json(
           createErrorResponse("INSUFFICIENT_PERMISSIONS", {
             required: requiredRole,
@@ -142,7 +129,6 @@ export const requireRole = (requiredRole) => {
 
       next();
     } catch (error) {
-      console.log("🔴 requireRole - ERROR:", error);
       logError(error, { operation: "requireRole" });
       return res.status(500).json(createErrorResponse("INTERNAL_SERVER_ERROR"));
     }
@@ -151,7 +137,6 @@ export const requireRole = (requiredRole) => {
 
 // Check if agent has required role or higher
 export const requireAgent = (req, res, next) => {
-  console.log("🔵 requireAgent middleware - req.agent:", req.agent);
   return requireRole("agent")(req, res, next);
 };
 

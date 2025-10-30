@@ -82,7 +82,10 @@ export const getOffersByFixtureId = async (fixtureId, query = {}) => {
     );
 
     allOffers = await Offer.find({ fixtureId })
-      .populate("agentId", "name whatsapp isActive")
+      .populate(
+        "agentId",
+        "name whatsapp isActive imageUrl agentType companyName"
+      )
       .lean();
 
     // שמירה ב-cache

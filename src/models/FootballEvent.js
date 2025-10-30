@@ -76,7 +76,7 @@ const footballEventSchema = new mongoose.Schema(
       },
       currency: {
         type: String,
-        enum: ["EUR", "USD", "ILS"],
+        enum: ["EUR", "USD", "ILS", "GBP"],
         default: "EUR",
       },
       updatedAt: {
