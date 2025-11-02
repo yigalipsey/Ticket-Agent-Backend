@@ -49,6 +49,10 @@ const agentSchema = new mongoose.Schema(
       type: String,
       trim: true,
     },
+    websiteUrl: {
+      type: String,
+      trim: true,
+    },
   },
   { timestamps: true }
 );

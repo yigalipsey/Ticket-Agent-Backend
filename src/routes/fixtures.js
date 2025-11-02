@@ -24,7 +24,7 @@ router.use((req, res, next) => {
 // GET /api/fixtures/hot - שליפת משחקים חמים קרובים
 router.get("/hot", rateLimit(200), async (req, res) => {
   try {
-    const { limit = 5 } = req.query;
+    const { limit = 20 } = req.query;
 
     const result = await HotFixturesService.getUpcomingHotFixtures(
       parseInt(limit)

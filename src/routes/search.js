@@ -26,8 +26,13 @@ router.get(
   rateLimit(20), // 20 requests per minute
   async (req, res) => {
     try {
-      const { q: query, limit, fixturesLimit, includePastFixtures, leagueId } =
-        req.query;
+      const {
+        q: query,
+        limit,
+        fixturesLimit,
+        includePastFixtures,
+        leagueId,
+      } = req.query;
 
       // Validate required parameters
       if (!query || query.trim().length < 2) {
