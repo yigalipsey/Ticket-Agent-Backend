@@ -1,0 +1,17 @@
+{
+  "generated_at": "2025-11-26T19:36:00.152Z",
+  "json_file": "/Users/yigallipsey/Desktop/projects/TicketAgent/backend/data/footballapi/league_2_from_next_week.json",
+  "summary": {
+    "total": 54,
+    "found": 54,
+    "notFound": 0,
+    "perfectMatch": 54,
+    "issues": 0,
+    "reversed": 0,
+    "dateMismatch": 0,
+    "homeTeamMismatch": 0,
+    "awayTeamMismatch": 0,
+    "venueMismatch": 0
+  },
+  "issues": []
+}

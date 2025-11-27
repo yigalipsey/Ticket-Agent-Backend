@@ -60,9 +60,7 @@ export const teamCreateSchema = Joi.object({
   logoUrl: Joi.string().uri().optional(),
   venueId: objectIdSchema,
   teamId: Joi.number().integer().positive().required(),
-  externalIds: Joi.object({
-    apiFootball: Joi.number().integer().positive().required(),
-  }).required(),
+  apiFootballId: Joi.number().integer().positive().required(),
 });
 
 export const teamUpdateSchema = Joi.object({
@@ -72,9 +70,7 @@ export const teamUpdateSchema = Joi.object({
   logoUrl: Joi.string().uri().optional(),
   venueId: objectIdSchema.optional(),
   teamId: Joi.number().integer().positive().optional(),
-  externalIds: Joi.object({
-    apiFootball: Joi.number().integer().positive().optional(),
-  }).optional(),
+  apiFootballId: Joi.number().integer().positive().optional(),
 });
 
 // Venue validation schemas

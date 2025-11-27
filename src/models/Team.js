@@ -42,6 +42,33 @@ const teamSchema = new mongoose.Schema(
         message: "Logo URL must be a valid HTTP/HTTPS URL",
       },
     },
+    shirtImageUrl: {
+      type: String,
+      trim: true,
+      validate: {
+        validator: function (v) {
+          return !v || /^https?:\/\/.+/.test(v);
+        },
+        message: "Shirt image URL must be a valid HTTP/HTTPS URL",
+      },
+    },
+    suppliersInfo: [
+      {
+        supplierRef: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "Supplier",
+          required: true,
+        },
+        supplierTeamName: {
+          type: String,
+          trim: true,
+        },
+        supplierExternalId: {
+          type: String,
+          trim: true,
+        }
+      }
+    ],
     primaryColor: {
       type: String,
       trim: true,
@@ -77,11 +104,10 @@ const teamSchema = new mongoose.Schema(
         ref: "League",
       },
     ],
-    externalIds: {
-      apiFootball: {
-        type: Number,
-        sparse: true,
-      },
+    apiFootballId: {
+      type: Number,
+      sparse: true,
+      unique: true,
     },
     isPopular: {
       type: Boolean,
@@ -98,22 +124,23 @@ const teamSchema = new mongoose.Schema(
 teamSchema.index({ teamId: 1 }, { unique: true });
 teamSchema.index({ venueId: 1 });
 teamSchema.index({ name_en: 1 });
-teamSchema.index({ name_he: 1 });
 teamSchema.index({ code: 1 });
 teamSchema.index({ slug: 1 }, { unique: true });
 teamSchema.index({ leagueIds: 1 });
 teamSchema.index({ country_en: 1 });
 teamSchema.index({ country_he: 1 });
+teamSchema.index({ apiFootballId: 1 }, { unique: true, sparse: true });
 
 // Helper function to return team data with Hebrew names
 teamSchema.methods.toHebrewObject = function () {
   return {
     _id: this._id.toString(),
-    name: this.name_he || this.name_en,
+    name: this.name,
     country: this.country_he || this.country_en,
     code: this.code,
     slug: this.slug,
     logoUrl: this.logoUrl,
+    shirtImageUrl: this.shirtImageUrl,
     primaryColor: this.primaryColor,
     secondaryColor: this.secondaryColor,
     teamId: this.teamId,
@@ -122,7 +149,7 @@ teamSchema.methods.toHebrewObject = function () {
         ? this.venueId._id.toString()
         : this.venueId.toString()
       : null,
-    externalIds: this.externalIds,
+    apiFootballId: this.apiFootballId,
     createdAt: this.createdAt,
     updatedAt: this.updatedAt,
   };
@@ -132,11 +159,12 @@ teamSchema.methods.toHebrewObject = function () {
 teamSchema.statics.toHebrewData = function (team) {
   return {
     _id: team._id.toString(),
-    name: team.name_he || team.name_en,
+    name: team.name,
     country: team.country_he || team.country_en,
     code: team.code,
     slug: team.slug,
     logoUrl: team.logoUrl,
+    shirtImageUrl: team.shirtImageUrl,
     primaryColor: team.primaryColor,
     secondaryColor: team.secondaryColor,
     teamId: team.teamId,
@@ -145,7 +173,7 @@ teamSchema.statics.toHebrewData = function (team) {
         ? team.venueId._id.toString()
         : team.venueId.toString()
       : null,
-    externalIds: team.externalIds,
+    apiFootballId: team.apiFootballId,
     createdAt: team.createdAt,
     updatedAt: team.updatedAt,
   };

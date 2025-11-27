@@ -1,0 +1,102 @@
+[
+  {
+    "_id": "68da7a5d8c51bd5b579b2122",
+    "name": "אברטון",
+    "slug": "everton"
+  },
+  {
+    "_id": "68da7a5f8c51bd5b579b214a",
+    "name": "אסטון וילה",
+    "slug": "aston-villa"
+  },
+  {
+    "_id": "68da7a5d8c51bd5b579b211a",
+    "name": "ארסנל",
+    "slug": "arsenal"
+  },
+  {
+    "_id": "68da7a5d8c51bd5b579b210a",
+    "name": "בורנמות'",
+    "slug": "bournemouth"
+  },
+  {
+    "_id": "68da7a5e8c51bd5b579b2136",
+    "name": "ברייטון",
+    "slug": "brighton"
+  },
+  {
+    "_id": "68da7a5e8c51bd5b579b213e",
+    "name": "ברנטפורד",
+    "slug": "brentford"
+  },
+  {
+    "_id": "68da7a5d8c51bd5b579b211e",
+    "name": "ברנלי",
+    "slug": "burnley"
+  },
+  {
+    "_id": "68da7a5d8c51bd5b579b2112",
+    "name": "וולברהמפטון",
+    "slug": "wolves"
+  },
+  {
+    "_id": "68da7a5e8c51bd5b579b212a",
+    "name": "וסט האם",
+    "slug": "west-ham"
+  },
+  {
+    "_id": "68da7a5e8c51bd5b579b2126",
+    "name": "טוטנהאם",
+    "slug": "tottenham"
+  },
+  {
+    "_id": "68da7a5d8c51bd5b579b2116",
+    "name": "ליברפול",
+    "slug": "liverpool"
+  },
+  {
+    "_id": "68da7a5f8c51bd5b579b2142",
+    "name": "לידס",
+    "slug": "leeds"
+  },
+  {
+    "_id": "68da7a5c8c51bd5b579b2102",
+    "name": "מנצ'סטר יונייטד",
+    "slug": "manchester-united"
+  },
+  {
+    "_id": "68da7a5e8c51bd5b579b2132",
+    "name": "מנצ'סטר סיטי",
+    "slug": "manchester-city"
+  },
+  {
+    "_id": "68da7a5f8c51bd5b579b2146",
+    "name": "נוטינגהאם פורסט",
+    "slug": "nottingham-forest"
+  },
+  {
+    "_id": "68da7a5d8c51bd5b579b2106",
+    "name": "ניוקאסל",
+    "slug": "newcastle"
+  },
+  {
+    "_id": "68da7a5f8c51bd5b579b214e",
+    "name": "סנדרלנד",
+    "slug": "sunderland"
+  },
+  {
+    "_id": "68da7a5d8c51bd5b579b210e",
+    "name": "פולהאם",
+    "slug": "fulham"
+  },
+  {
+    "_id": "68da7a5e8c51bd5b579b212e",
+    "name": "צ'לסי",
+    "slug": "chelsea"
+  },
+  {
+    "_id": "68da7a5e8c51bd5b579b213a",
+    "name": "קריסטל פאלאס",
+    "slug": "crystal-palace"
+  }
+]

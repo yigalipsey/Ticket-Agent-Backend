@@ -1,0 +1,189 @@
+{
+  "fetched_at": "2025-11-25T13:32:50.522Z",
+  "competition": "Europa League",
+  "total_matches": 7,
+  "matches": [
+    {
+      "htPerformanceId": "2294254",
+      "eventName": "Aston Villa FC vs BSC Young Boys - Europa League 2025-2026",
+      "eventDate": "2025-11-27",
+      "eventDateTime": "2025-11-27T17:45:00Z",
+      "homeTeam": {
+        "name": "Aston Villa FC",
+        "helloTicketsId": "81",
+        "slug": "aston-villa"
+      },
+      "awayTeam": {
+        "name": "BSC Young Boys",
+        "helloTicketsId": "15935"
+      },
+      "venue": {
+        "name": "Villa Park",
+        "city": null,
+        "address": null
+      },
+      "localEventId": null,
+      "localEventSlug": null,
+      "localEventDate": null,
+      "mappingStatus": "❓ Unknown Opponent",
+      "dateDifference": "N/A",
+      "opponentLocalId": null
+    },
+    {
+      "htPerformanceId": "2294232",
+      "eventName": "FC Basel vs Aston Villa FC - Europa League 2025-2026",
+      "eventDate": "2025-12-11",
+      "eventDateTime": "2025-12-11T20:00:00Z",
+      "homeTeam": {
+        "name": "Aston Villa FC",
+        "helloTicketsId": "81",
+        "slug": "aston-villa"
+      },
+      "awayTeam": {
+        "name": "FC Basel",
+        "helloTicketsId": "29380"
+      },
+      "venue": {
+        "name": "St. Jakob-Park",
+        "city": null,
+        "address": null
+      },
+      "localEventId": null,
+      "localEventSlug": null,
+      "localEventDate": null,
+      "mappingStatus": "❓ Unknown Opponent",
+      "dateDifference": "N/A",
+      "opponentLocalId": null
+    },
+    {
+      "htPerformanceId": "2294252",
+      "eventName": "Aston Villa FC vs FC Salzburg - Europa League 2025-2026",
+      "eventDate": "2026-01-29",
+      "eventDateTime": "2026-01-29T20:00:00Z",
+      "homeTeam": {
+        "name": "Aston Villa FC",
+        "helloTicketsId": "81",
+        "slug": "aston-villa"
+      },
+      "awayTeam": {
+        "name": "FC Red Bull Salzburg",
+        "helloTicketsId": "23197"
+      },
+      "venue": {
+        "name": "Villa Park",
+        "city": null,
+        "address": null
+      },
+      "localEventId": null,
+      "localEventSlug": null,
+      "localEventDate": null,
+      "mappingStatus": "❓ Unknown Opponent",
+      "dateDifference": "N/A",
+      "opponentLocalId": null
+    },
+    {
+      "htPerformanceId": "2294186",
+      "eventName": "Nottingham Forest FC vs Malmö FF - Europa League 2025-2026",
+      "eventDate": "2025-11-27",
+      "eventDateTime": "2025-11-27T20:00:00Z",
+      "homeTeam": {
+        "name": "Nottingham Forest FC",
+        "helloTicketsId": "528",
+        "slug": "nottingham-forest"
+      },
+      "awayTeam": {
+        "name": "Malmö FF",
+        "helloTicketsId": "29405"
+      },
+      "venue": {
+        "name": "City Ground",
+        "city": null,
+        "address": null
+      },
+      "localEventId": null,
+      "localEventSlug": null,
+      "localEventDate": null,
+      "mappingStatus": "❓ Unknown Opponent",
+      "dateDifference": "N/A",
+      "opponentLocalId": null
+    },
+    {
+      "htPerformanceId": "2294219",
+      "eventName": "FC Utrecht vs Nottingham Forest FC - Europa League 2025-2026",
+      "eventDate": "2025-12-11",
+      "eventDateTime": "2025-12-11T17:45:00Z",
+      "homeTeam": {
+        "name": "Nottingham Forest FC",
+        "helloTicketsId": "528",
+        "slug": "nottingham-forest"
+      },
+      "awayTeam": {
+        "name": "FC Utrecht",
+        "helloTicketsId": "15258"
+      },
+      "venue": {
+        "name": "Stadion Galgenwaard",
+        "city": null,
+        "address": null
+      },
+      "localEventId": null,
+      "localEventSlug": null,
+      "localEventDate": null,
+      "mappingStatus": "❓ Unknown Opponent",
+      "dateDifference": "N/A",
+      "opponentLocalId": null
+    },
+    {
+      "htPerformanceId": "2294150",
+      "eventName": "SC Braga vs Nottingham Forest FC - Europa League 2025-2026",
+      "eventDate": "2026-01-22",
+      "eventDateTime": "2026-01-22T20:00:00Z",
+      "homeTeam": {
+        "name": "Nottingham Forest FC",
+        "helloTicketsId": "528",
+        "slug": "nottingham-forest"
+      },
+      "awayTeam": {
+        "name": "SC Braga",
+        "helloTicketsId": "28702"
+      },
+      "venue": {
+        "name": "Estádio Municipal de Braga",
+        "city": null,
+        "address": null
+      },
+      "localEventId": null,
+      "localEventSlug": null,
+      "localEventDate": null,
+      "mappingStatus": "❓ Unknown Opponent",
+      "dateDifference": "N/A",
+      "opponentLocalId": null
+    },
+    {
+      "htPerformanceId": "2294187",
+      "eventName": "Nottingham Forest FC vs Ferencváros TC - Europa League 2025-2026",
+      "eventDate": "2026-01-29",
+      "eventDateTime": "2026-01-29T20:00:00Z",
+      "homeTeam": {
+        "name": "Nottingham Forest FC",
+        "helloTicketsId": "528",
+        "slug": "nottingham-forest"
+      },
+      "awayTeam": {
+        "name": "Ferencváros TC",
+        "helloTicketsId": "29387"
+      },
+      "venue": {
+        "name": "City Ground",
+        "city": null,
+        "address": null
+      },
+      "localEventId": null,
+      "localEventSlug": null,
+      "localEventDate": null,
+      "mappingStatus": "❓ Unknown Opponent",
+      "dateDifference": "N/A",
+      "opponentLocalId": null
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "performance_id": "2254462",
+  "fetched_at": "2025-11-25T14:17:45.234Z",
+  "performance": {
+    "id": 2254462,
+    "name": "Arsenal FC vs. Brentford",
+    "url": "https://www.hellotickets.com/en-en/united-kingdom/london/sports/arsenal-fc-tickets/2025-12-03,1930/2254462/2",
+    "ticket_groups_count": 255,
+    "start_date": {
+      "local_date": "2025-12-03",
+      "local_time": "19:30",
+      "date_time": "2025-12-03T19:30:00Z",
+      "date_tba": false,
+      "time_tba": false
+    },
+    "price_range": {
+      "min_price": 285,
+      "max_price": 15024,
+      "currency": "EUR"
+    },
+    "event_id": 138646,
+    "venue": {
+      "id": 2101,
+      "name": "Emirates Stadium"
+    },
+    "performers": [
+      {
+        "id": 1835,
+        "name": "Arsenal FC"
+      },
+      {
+        "id": 129,
+        "name": "Brentford FC"
+      }
+    ],
+    "category": {
+      "id": 1,
+      "name": "Sports"
+    },
+    "is_sellable": true
+  }
+}

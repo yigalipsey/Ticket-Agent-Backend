@@ -1,0 +1,17 @@
+{
+  "generated_at": "2025-11-26T19:06:06.405Z",
+  "json_file": "/Users/yigallipsey/Desktop/projects/TicketAgent/backend/data/footballapi/league_61_from_next_week.json",
+  "summary": {
+    "total": 180,
+    "found": 180,
+    "notFound": 0,
+    "perfectMatch": 180,
+    "issues": 0,
+    "reversed": 0,
+    "dateMismatch": 0,
+    "homeTeamMismatch": 0,
+    "awayTeamMismatch": 0,
+    "venueMismatch": 0
+  },
+  "issues": []
+}

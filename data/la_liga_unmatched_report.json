@@ -1,0 +1,1692 @@
+{
+  "generated_at": "2025-11-25T15:18:20.055Z",
+  "total_performances": 292,
+  "matched_events": 183,
+  "unknown_teams_or_competitions": [
+    {
+      "id": 2293337,
+      "name": "Olympiacos FC vs. Real Madrid CF - Champions League 2025-2026",
+      "teams": [
+        {
+          "htId": "16050",
+          "name": "Olympiacos FC",
+          "mapped": false
+        },
+        {
+          "htId": "598",
+          "name": "Real Madrid CF",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2293320,
+      "name": "Real Madrid CF vs. Manchester City FC - Champions League 2025-2026",
+      "teams": [
+        {
+          "htId": "444",
+          "name": "Manchester City FC",
+          "mapped": false
+        },
+        {
+          "htId": "598",
+          "name": "Real Madrid CF",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2293321,
+      "name": "Real Madrid CF vs. AS Monaco - Champions League 2025-2026",
+      "teams": [
+        {
+          "htId": "12244",
+          "name": "AS Monaco FC",
+          "mapped": false
+        },
+        {
+          "htId": "598",
+          "name": "Real Madrid CF",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2253396,
+      "name": "Villarreal CF vs. Real Madrid",
+      "teams": [
+        {
+          "htId": "598",
+          "name": "Real Madrid CF",
+          "mapped": true
+        },
+        {
+          "htId": "789",
+          "name": "Villarreal CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2294077,
+      "name": "SL Benfica vs. Real Madrid CF - Champions League 2025-2026",
+      "teams": [
+        {
+          "htId": "11969",
+          "name": "Benfica",
+          "mapped": false
+        },
+        {
+          "htId": "598",
+          "name": "Real Madrid CF",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2254036,
+      "name": "Osasuna vs. Real Madrid",
+      "teams": [
+        {
+          "htId": "598",
+          "name": "Real Madrid CF",
+          "mapped": true
+        },
+        {
+          "htId": "140",
+          "name": "CA Osasuna",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253606,
+      "name": "Real Madrid vs. Getafe CF",
+      "teams": [
+        {
+          "htId": "598",
+          "name": "Real Madrid CF",
+          "mapped": true
+        },
+        {
+          "htId": "300",
+          "name": "Getafe CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2293388,
+      "name": "Chelsea FC vs. FC Barcelona - Champions League 2025-2026",
+      "teams": [
+        {
+          "htId": "1836",
+          "name": "Chelsea FC",
+          "mapped": false
+        },
+        {
+          "htId": "272",
+          "name": "FC Barcelona",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2293378,
+      "name": "Champions League - FC Barcelona vs. Eintracht Frankfurt",
+      "teams": [
+        {
+          "htId": "272",
+          "name": "FC Barcelona",
+          "mapped": true
+        },
+        {
+          "htId": "251",
+          "name": "Eintracht Frankfurt",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253975,
+      "name": "FC Barcelona vs. Osasuna",
+      "teams": [
+        {
+          "htId": "272",
+          "name": "FC Barcelona",
+          "mapped": true
+        },
+        {
+          "htId": "140",
+          "name": "CA Osasuna",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2314203,
+      "name": "Villarreal CF vs. FC Barcelona",
+      "teams": [
+        {
+          "htId": "272",
+          "name": "FC Barcelona",
+          "mapped": true
+        },
+        {
+          "htId": "789",
+          "name": "Villarreal CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253405,
+      "name": "Villarreal CF vs. FC Barcelona",
+      "teams": [
+        {
+          "htId": "272",
+          "name": "FC Barcelona",
+          "mapped": true
+        },
+        {
+          "htId": "789",
+          "name": "Villarreal CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2294125,
+      "name": "Slavia Prague vs. FC Barcelona - Champions League 2025-2026",
+      "teams": [
+        {
+          "htId": "272",
+          "name": "FC Barcelona",
+          "mapped": true
+        },
+        {
+          "htId": "28715",
+          "name": "SK Slavia Prague",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2293377,
+      "name": "Champions League - FC Barcelona vs. FC Copenhagen",
+      "teams": [
+        {
+          "htId": "28533",
+          "name": "FC Copenhagen",
+          "mapped": false
+        },
+        {
+          "htId": "272",
+          "name": "FC Barcelona",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2253959,
+      "name": "FC Barcelona vs. Villarreal CF",
+      "teams": [
+        {
+          "htId": "272",
+          "name": "FC Barcelona",
+          "mapped": true
+        },
+        {
+          "htId": "789",
+          "name": "Villarreal CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253913,
+      "name": "Getafe CF vs. FC Barcelona",
+      "teams": [
+        {
+          "htId": "272",
+          "name": "FC Barcelona",
+          "mapped": true
+        },
+        {
+          "htId": "300",
+          "name": "Getafe CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2254045,
+      "name": "Osasuna vs. FC Barcelona",
+      "teams": [
+        {
+          "htId": "272",
+          "name": "FC Barcelona",
+          "mapped": true
+        },
+        {
+          "htId": "140",
+          "name": "CA Osasuna",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2294117,
+      "name": "Champions League - Atlético Madrid vs. Internazionale",
+      "teams": [
+        {
+          "htId": "277",
+          "name": "FC Inter Milan",
+          "mapped": false
+        },
+        {
+          "htId": "89",
+          "name": "Atletico de Madrid",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2294083,
+      "name": "PSV Eindhoven vs. Atlético de Madrid - Champions League 2025-2026",
+      "teams": [
+        {
+          "htId": "18756",
+          "name": "PSV Eindhoven",
+          "mapped": false
+        },
+        {
+          "htId": "89",
+          "name": "Atletico de Madrid",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2293362,
+      "name": "Galatasaray SK vs. Atlético de Madrid - Champions League 2025-2026",
+      "teams": [
+        {
+          "htId": "17993",
+          "name": "Galatasaray SK",
+          "mapped": false
+        },
+        {
+          "htId": "89",
+          "name": "Atletico de Madrid",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2294118,
+      "name": "Champions League - Atlético Madrid vs. Bodo/Glimt",
+      "teams": [
+        {
+          "htId": "12078",
+          "name": "FK Bodø/Glimt",
+          "mapped": false
+        },
+        {
+          "htId": "89",
+          "name": "Atletico de Madrid",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2263534,
+      "name": "Atlético Madrid vs. Getafe CF",
+      "teams": [
+        {
+          "htId": "89",
+          "name": "Atletico de Madrid",
+          "mapped": true
+        },
+        {
+          "htId": "300",
+          "name": "Getafe CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2254048,
+      "name": "Osasuna vs. Atlético Madrid",
+      "teams": [
+        {
+          "htId": "89",
+          "name": "Atletico de Madrid",
+          "mapped": true
+        },
+        {
+          "htId": "140",
+          "name": "CA Osasuna",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253409,
+      "name": "Villarreal CF vs. Atlético Madrid",
+      "teams": [
+        {
+          "htId": "89",
+          "name": "Atletico de Madrid",
+          "mapped": true
+        },
+        {
+          "htId": "789",
+          "name": "Villarreal CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253902,
+      "name": "Getafe CF vs. Sevilla FC",
+      "teams": [
+        {
+          "htId": "643",
+          "name": "Sevilla FC",
+          "mapped": true
+        },
+        {
+          "htId": "300",
+          "name": "Getafe CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2254033,
+      "name": "Osasuna vs. Sevilla FC",
+      "teams": [
+        {
+          "htId": "643",
+          "name": "Sevilla FC",
+          "mapped": true
+        },
+        {
+          "htId": "140",
+          "name": "CA Osasuna",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253393,
+      "name": "Villarreal CF vs. Sevilla FC",
+      "teams": [
+        {
+          "htId": "643",
+          "name": "Sevilla FC",
+          "mapped": true
+        },
+        {
+          "htId": "789",
+          "name": "Villarreal CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253575,
+      "name": "Real Sociedad vs. Villarreal CF",
+      "teams": [
+        {
+          "htId": "600",
+          "name": "Real Sociedad",
+          "mapped": true
+        },
+        {
+          "htId": "789",
+          "name": "Villarreal CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253903,
+      "name": "Getafe CF vs. Real Sociedad",
+      "teams": [
+        {
+          "htId": "600",
+          "name": "Real Sociedad",
+          "mapped": true
+        },
+        {
+          "htId": "300",
+          "name": "Getafe CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2323250,
+      "name": "Cordoba CF vs. Real Sociedad II",
+      "teams": [
+        {
+          "htId": "600",
+          "name": "Real Sociedad",
+          "mapped": true
+        },
+        {
+          "htId": "30970",
+          "name": "Córdoba CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253591,
+      "name": "Real Sociedad vs. Osasuna",
+      "teams": [
+        {
+          "htId": "600",
+          "name": "Real Sociedad",
+          "mapped": true
+        },
+        {
+          "htId": "140",
+          "name": "CA Osasuna",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253394,
+      "name": "Villarreal CF vs. Real Sociedad",
+      "teams": [
+        {
+          "htId": "600",
+          "name": "Real Sociedad",
+          "mapped": true
+        },
+        {
+          "htId": "789",
+          "name": "Villarreal CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253587,
+      "name": "Real Sociedad vs. Getafe CF",
+      "teams": [
+        {
+          "htId": "600",
+          "name": "Real Sociedad",
+          "mapped": true
+        },
+        {
+          "htId": "300",
+          "name": "Getafe CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2295170,
+      "name": "Europa League - Real Betis vs. FC Utrecht",
+      "teams": [
+        {
+          "htId": "597",
+          "name": "Real Betis Balompie",
+          "mapped": true
+        },
+        {
+          "htId": "15258",
+          "name": "FC Utrecht",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2295200,
+      "name": "GNK Dinamo Zagreb vs Real Betis Balompié - Europa League 2025-2026",
+      "teams": [
+        {
+          "htId": "12562",
+          "name": "GNK Dinamo Zagreb",
+          "mapped": false
+        },
+        {
+          "htId": "597",
+          "name": "Real Betis Balompie",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2263517,
+      "name": "Real Betis vs. Getafe CF",
+      "teams": [
+        {
+          "htId": "300",
+          "name": "Getafe CF",
+          "mapped": false
+        },
+        {
+          "htId": "597",
+          "name": "Real Betis Balompie",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2263507,
+      "name": "Real Betis vs. Villarreal CF",
+      "teams": [
+        {
+          "htId": "597",
+          "name": "Real Betis Balompie",
+          "mapped": true
+        },
+        {
+          "htId": "789",
+          "name": "Villarreal CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2295183,
+      "name": "PAOK FC vs Real Betis Balompié - Europa League 2025-2026",
+      "teams": [
+        {
+          "htId": "597",
+          "name": "Real Betis Balompie",
+          "mapped": true
+        },
+        {
+          "htId": "16743",
+          "name": "PAOK FC",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2295169,
+      "name": "Europa League - Real Betis vs. Feyenoord",
+      "teams": [
+        {
+          "htId": "15473",
+          "name": "Feyenoord",
+          "mapped": false
+        },
+        {
+          "htId": "597",
+          "name": "Real Betis Balompie",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2253906,
+      "name": "Getafe CF vs. Real Betis",
+      "teams": [
+        {
+          "htId": "300",
+          "name": "Getafe CF",
+          "mapped": false
+        },
+        {
+          "htId": "597",
+          "name": "Real Betis Balompie",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2254037,
+      "name": "Osasuna vs. Real Betis",
+      "teams": [
+        {
+          "htId": "140",
+          "name": "CA Osasuna",
+          "mapped": false
+        },
+        {
+          "htId": "597",
+          "name": "Real Betis Balompie",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2253901,
+      "name": "Getafe CF vs. Valencia CF",
+      "teams": [
+        {
+          "htId": "780",
+          "name": "Valencia CF",
+          "mapped": true
+        },
+        {
+          "htId": "300",
+          "name": "Getafe CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253392,
+      "name": "Villarreal CF vs. Valencia CF",
+      "teams": [
+        {
+          "htId": "780",
+          "name": "Valencia CF",
+          "mapped": true
+        },
+        {
+          "htId": "789",
+          "name": "Villarreal CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253461,
+      "name": "Valencia CF vs. Osasuna",
+      "teams": [
+        {
+          "htId": "780",
+          "name": "Valencia CF",
+          "mapped": true
+        },
+        {
+          "htId": "140",
+          "name": "CA Osasuna",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2294126,
+      "name": "Slavia Prague vs. Athletic Bilbao FC - Champions League 2025-2026",
+      "teams": [
+        {
+          "htId": "83",
+          "name": "Athletic Club",
+          "mapped": true
+        },
+        {
+          "htId": "28715",
+          "name": "SK Slavia Prague",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2294103,
+      "name": "Athletic Bilbao FC vs. Paris Saint-Germain FC - Champions League 2025-2026",
+      "teams": [
+        {
+          "htId": "83",
+          "name": "Athletic Club",
+          "mapped": true
+        },
+        {
+          "htId": "584",
+          "name": "Paris Saint-Germain FC",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2254049,
+      "name": "Osasuna vs. Athletic Bilbao",
+      "teams": [
+        {
+          "htId": "83",
+          "name": "Athletic Club",
+          "mapped": true
+        },
+        {
+          "htId": "140",
+          "name": "CA Osasuna",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2293401,
+      "name": "Atalanta BC vs. Athletic Bilbao FC - Champions League 2025-2026",
+      "teams": [
+        {
+          "htId": "82",
+          "name": "Atalanta BC",
+          "mapped": false
+        },
+        {
+          "htId": "83",
+          "name": "Athletic Club",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2294101,
+      "name": "Athletic Bilbao FC vs. Sporting CP - Champions League 2025-2026",
+      "teams": [
+        {
+          "htId": "13149",
+          "name": "Sporting CP",
+          "mapped": false
+        },
+        {
+          "htId": "83",
+          "name": "Athletic Club",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2253918,
+      "name": "Getafe CF vs. Athletic Bilbao",
+      "teams": [
+        {
+          "htId": "83",
+          "name": "Athletic Club",
+          "mapped": true
+        },
+        {
+          "htId": "300",
+          "name": "Getafe CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2254104,
+      "name": "Athletic Bilbao vs. Villarreal CF",
+      "teams": [
+        {
+          "htId": "83",
+          "name": "Athletic Club",
+          "mapped": true
+        },
+        {
+          "htId": "789",
+          "name": "Villarreal CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2254121,
+      "name": "Athletic Bilbao vs. Osasuna",
+      "teams": [
+        {
+          "htId": "83",
+          "name": "Athletic Club",
+          "mapped": true
+        },
+        {
+          "htId": "140",
+          "name": "CA Osasuna",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2295197,
+      "name": "Ludogorets Razgrad vs Celta de Vigo - Europa League 2025-2026",
+      "teams": [
+        {
+          "htId": "15520",
+          "name": "PFC Ludogorets Razgrad",
+          "mapped": false
+        },
+        {
+          "htId": "594",
+          "name": "RC Celta de Vigo",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2294242,
+      "name": "RC Celta de Vigo vs Bologna FC - Europa League 2025-2026",
+      "reason": "Unexpected performers count"
+    },
+    {
+      "id": 2294241,
+      "name": "RC Celta de Vigo vs LOSC Lille - Europa League 2025-2026",
+      "reason": "Unexpected performers count"
+    },
+    {
+      "id": 2294207,
+      "name": "FK Crvena zvezda vs Celta de Vigo - Europa League 2025-2026",
+      "teams": [
+        {
+          "htId": "14733",
+          "name": "Red Star Belgrade",
+          "mapped": false
+        },
+        {
+          "htId": "594",
+          "name": "RC Celta de Vigo",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2253909,
+      "name": "Getafe CF vs. Celta de Vigo",
+      "teams": [
+        {
+          "htId": "594",
+          "name": "RC Celta de Vigo",
+          "mapped": true
+        },
+        {
+          "htId": "300",
+          "name": "Getafe CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253668,
+      "name": "Celta de Vigo vs. Osasuna",
+      "teams": [
+        {
+          "htId": "594",
+          "name": "RC Celta de Vigo",
+          "mapped": true
+        },
+        {
+          "htId": "140",
+          "name": "CA Osasuna",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253400,
+      "name": "Villarreal CF vs. Celta de Vigo",
+      "teams": [
+        {
+          "htId": "594",
+          "name": "RC Celta de Vigo",
+          "mapped": true
+        },
+        {
+          "htId": "789",
+          "name": "Villarreal CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253908,
+      "name": "Getafe CF vs. RCD Espanyol",
+      "teams": [
+        {
+          "htId": "1861",
+          "name": "RCD Espanyol",
+          "mapped": true
+        },
+        {
+          "htId": "300",
+          "name": "Getafe CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2398709,
+      "name": "Getafe CF vs. RCD Espanyol",
+      "teams": [
+        {
+          "htId": "300",
+          "name": "Getafe CF",
+          "mapped": false
+        },
+        {
+          "htId": "1861",
+          "name": "RCD Espanyol",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2253399,
+      "name": "Villarreal CF vs. RCD Espanyol",
+      "teams": [
+        {
+          "htId": "1861",
+          "name": "RCD Espanyol",
+          "mapped": true
+        },
+        {
+          "htId": "789",
+          "name": "Villarreal CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2262806,
+      "name": "RCD Espanyol vs. Getafe CF",
+      "teams": [
+        {
+          "htId": "1861",
+          "name": "RCD Espanyol",
+          "mapped": true
+        },
+        {
+          "htId": "300",
+          "name": "Getafe CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2254039,
+      "name": "Osasuna vs. RCD Espanyol",
+      "teams": [
+        {
+          "htId": "1861",
+          "name": "RCD Espanyol",
+          "mapped": true
+        },
+        {
+          "htId": "140",
+          "name": "CA Osasuna",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253632,
+      "name": "Mallorca vs. Osasuna",
+      "teams": [
+        {
+          "htId": "596",
+          "name": "RCD Mallorca",
+          "mapped": true
+        },
+        {
+          "htId": "140",
+          "name": "CA Osasuna",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2254038,
+      "name": "Osasuna vs. Mallorca",
+      "teams": [
+        {
+          "htId": "596",
+          "name": "RCD Mallorca",
+          "mapped": true
+        },
+        {
+          "htId": "140",
+          "name": "CA Osasuna",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253616,
+      "name": "Mallorca vs. Villarreal CF",
+      "teams": [
+        {
+          "htId": "596",
+          "name": "RCD Mallorca",
+          "mapped": true
+        },
+        {
+          "htId": "789",
+          "name": "Villarreal CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253907,
+      "name": "Getafe CF vs. Mallorca",
+      "teams": [
+        {
+          "htId": "596",
+          "name": "RCD Mallorca",
+          "mapped": true
+        },
+        {
+          "htId": "300",
+          "name": "Getafe CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2254047,
+      "name": "CA Osasuna vs. Deportivo Alaves",
+      "teams": [
+        {
+          "htId": "227",
+          "name": "Deportivo Alaves",
+          "mapped": true
+        },
+        {
+          "htId": "140",
+          "name": "CA Osasuna",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253407,
+      "name": "Villarreal CF vs. Alavés",
+      "teams": [
+        {
+          "htId": "227",
+          "name": "Deportivo Alaves",
+          "mapped": true
+        },
+        {
+          "htId": "789",
+          "name": "Villarreal CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2254025,
+      "name": "Deportivo Alaves vs. Getafe CF",
+      "teams": [
+        {
+          "htId": "227",
+          "name": "Deportivo Alaves",
+          "mapped": true
+        },
+        {
+          "htId": "300",
+          "name": "Getafe CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2254012,
+      "name": "Deportivo Alaves vs. Villarreal CF",
+      "teams": [
+        {
+          "htId": "227",
+          "name": "Deportivo Alaves",
+          "mapped": true
+        },
+        {
+          "htId": "789",
+          "name": "Villarreal CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2254028,
+      "name": "Deportivo Alaves vs. CA Osasuna",
+      "teams": [
+        {
+          "htId": "227",
+          "name": "Deportivo Alaves",
+          "mapped": true
+        },
+        {
+          "htId": "140",
+          "name": "CA Osasuna",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253897,
+      "name": "Girona vs. Osasuna",
+      "teams": [
+        {
+          "htId": "302",
+          "name": "Girona FC",
+          "mapped": true
+        },
+        {
+          "htId": "140",
+          "name": "CA Osasuna",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253893,
+      "name": "Girona vs. Getafe CF",
+      "teams": [
+        {
+          "htId": "302",
+          "name": "Girona FC",
+          "mapped": true
+        },
+        {
+          "htId": "300",
+          "name": "Getafe CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2254043,
+      "name": "Osasuna vs. Girona",
+      "teams": [
+        {
+          "htId": "302",
+          "name": "Girona FC",
+          "mapped": true
+        },
+        {
+          "htId": "140",
+          "name": "CA Osasuna",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253881,
+      "name": "Girona vs. Villarreal CF",
+      "teams": [
+        {
+          "htId": "302",
+          "name": "Girona FC",
+          "mapped": true
+        },
+        {
+          "htId": "789",
+          "name": "Villarreal CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2321908,
+      "name": "UD Las Palmas vs. Mirandes",
+      "reason": "Unexpected performers count"
+    },
+    {
+      "id": 2321909,
+      "name": "UD Las Palmas vs. Cultural Leonesa",
+      "teams": [
+        {
+          "htId": "769",
+          "name": "UD Las Palmas",
+          "mapped": false
+        },
+        {
+          "htId": "30971",
+          "name": "Cultural Leonesa",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2321897,
+      "name": "UD Las Palmas vs. Deportivo de La Coruna",
+      "teams": [
+        {
+          "htId": "769",
+          "name": "UD Las Palmas",
+          "mapped": false
+        },
+        {
+          "htId": "30972",
+          "name": "Deportivo La Coruña",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2321898,
+      "name": "UD Las Palmas vs. Cordoba CF",
+      "teams": [
+        {
+          "htId": "769",
+          "name": "UD Las Palmas",
+          "mapped": false
+        },
+        {
+          "htId": "30970",
+          "name": "Córdoba CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2321901,
+      "name": "UD Las Palmas vs. Burgos CF",
+      "teams": [
+        {
+          "htId": "769",
+          "name": "UD Las Palmas",
+          "mapped": false
+        },
+        {
+          "htId": "30966",
+          "name": "Burgos FC",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2321900,
+      "name": "UD Las Palmas vs. CD Castellon",
+      "reason": "Unexpected performers count"
+    },
+    {
+      "id": 2321902,
+      "name": "UD Las Palmas vs. AD Ceuta",
+      "teams": [
+        {
+          "htId": "769",
+          "name": "UD Las Palmas",
+          "mapped": false
+        },
+        {
+          "htId": "30963",
+          "name": "AD Ceuta FC",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2321892,
+      "name": "UD Las Palmas vs. Sporting Gijon",
+      "reason": "Unexpected performers count"
+    },
+    {
+      "id": 2321896,
+      "name": "UD Las Palmas vs. Granada CF",
+      "teams": [
+        {
+          "htId": "769",
+          "name": "UD Las Palmas",
+          "mapped": false
+        },
+        {
+          "htId": "30975",
+          "name": "Granada CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2321893,
+      "name": "UD Las Palmas vs. SD Huesca",
+      "teams": [
+        {
+          "htId": "769",
+          "name": "UD Las Palmas",
+          "mapped": false
+        },
+        {
+          "htId": "30980",
+          "name": "SD Huesca",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2321903,
+      "name": "Malaga CF vs. UD Las Palmas",
+      "teams": [
+        {
+          "htId": "769",
+          "name": "UD Las Palmas",
+          "mapped": false
+        },
+        {
+          "htId": "30976",
+          "name": "Málaga CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2321899,
+      "name": "UD Las Palmas vs. CD Leganes",
+      "teams": [
+        {
+          "htId": "769",
+          "name": "UD Las Palmas",
+          "mapped": false
+        },
+        {
+          "htId": "1838",
+          "name": "CD Leganes",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2321895,
+      "name": "UD Las Palmas vs. Real Valladoild",
+      "teams": [
+        {
+          "htId": "769",
+          "name": "UD Las Palmas",
+          "mapped": false
+        },
+        {
+          "htId": "1862",
+          "name": "Real Valladolid CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2321894,
+      "name": "UD Las Palmas vs. Real Zaragoza",
+      "teams": [
+        {
+          "htId": "769",
+          "name": "UD Las Palmas",
+          "mapped": false
+        },
+        {
+          "htId": "30979",
+          "name": "Real Zaragoza",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2294143,
+      "name": "SK Slovan Bratislava vs. Rayo Vallecano - Conference League 2025-2026",
+      "teams": [
+        {
+          "htId": "592",
+          "name": "Rayo Vallecano",
+          "mapped": true
+        },
+        {
+          "htId": "12518",
+          "name": "SK Slovan Bratislava",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2294201,
+      "name": "Jagiellonia Bialystok vs. Rayo Vallecano",
+      "teams": [
+        {
+          "htId": "592",
+          "name": "Rayo Vallecano",
+          "mapped": true
+        },
+        {
+          "htId": "28528",
+          "name": "Jagiellonia Białystok",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2294159,
+      "name": "Rayo Vallecano vs. FC Drita",
+      "teams": [
+        {
+          "htId": "592",
+          "name": "Rayo Vallecano",
+          "mapped": true
+        },
+        {
+          "htId": "30886",
+          "name": "FC Drita",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253700,
+      "name": "Rayo Vallecano vs. Getafe CF",
+      "teams": [
+        {
+          "htId": "592",
+          "name": "Rayo Vallecano",
+          "mapped": true
+        },
+        {
+          "htId": "300",
+          "name": "Getafe CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253704,
+      "name": "Rayo Vallecano vs. Osasuna",
+      "teams": [
+        {
+          "htId": "592",
+          "name": "Rayo Vallecano",
+          "mapped": true
+        },
+        {
+          "htId": "140",
+          "name": "CA Osasuna",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253910,
+      "name": "Getafe CF vs. Rayo Vallecano",
+      "teams": [
+        {
+          "htId": "592",
+          "name": "Rayo Vallecano",
+          "mapped": true
+        },
+        {
+          "htId": "300",
+          "name": "Getafe CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253688,
+      "name": "Rayo Vallecano vs. Villarreal CF",
+      "teams": [
+        {
+          "htId": "592",
+          "name": "Rayo Vallecano",
+          "mapped": true
+        },
+        {
+          "htId": "789",
+          "name": "Villarreal CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253914,
+      "name": "Getafe CF vs. Elche",
+      "teams": [
+        {
+          "htId": "300",
+          "name": "Getafe CF",
+          "mapped": false
+        },
+        {
+          "htId": "28699",
+          "name": "Elche CF",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2262832,
+      "name": "Elche vs. Villarreal CF",
+      "teams": [
+        {
+          "htId": "28699",
+          "name": "Elche CF",
+          "mapped": true
+        },
+        {
+          "htId": "789",
+          "name": "Villarreal CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2262848,
+      "name": "Elche vs. CA Osasuna",
+      "teams": [
+        {
+          "htId": "140",
+          "name": "CA Osasuna",
+          "mapped": false
+        },
+        {
+          "htId": "28699",
+          "name": "Elche CF",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2253406,
+      "name": "Villarreal CF vs. Elche",
+      "teams": [
+        {
+          "htId": "789",
+          "name": "Villarreal CF",
+          "mapped": false
+        },
+        {
+          "htId": "28699",
+          "name": "Elche CF",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2262845,
+      "name": "Elche vs. Getafe CF",
+      "teams": [
+        {
+          "htId": "28699",
+          "name": "Elche CF",
+          "mapped": true
+        },
+        {
+          "htId": "300",
+          "name": "Getafe CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2254042,
+      "name": "Osasuna vs. Levante UD",
+      "teams": [
+        {
+          "htId": "140",
+          "name": "CA Osasuna",
+          "mapped": false
+        },
+        {
+          "htId": "28698",
+          "name": "Levante UD",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2262813,
+      "name": "Levante UD vs. Villarreal CF",
+      "teams": [
+        {
+          "htId": "28698",
+          "name": "Levante UD",
+          "mapped": true
+        },
+        {
+          "htId": "789",
+          "name": "Villarreal CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2262825,
+      "name": "Levante UD vs. Getafe CF",
+      "teams": [
+        {
+          "htId": "28698",
+          "name": "Levante UD",
+          "mapped": true
+        },
+        {
+          "htId": "300",
+          "name": "Getafe CF",
+          "mapped": false
+        }
+      ]
+    },
+    {
+      "id": 2253402,
+      "name": "Villarreal CF vs. Levante UD",
+      "teams": [
+        {
+          "htId": "789",
+          "name": "Villarreal CF",
+          "mapped": false
+        },
+        {
+          "htId": "28698",
+          "name": "Levante UD",
+          "mapped": true
+        }
+      ]
+    },
+    {
+      "id": 2262829,
+      "name": "Levante UD vs. CA Osasuna",
+      "teams": [
+        {
+          "htId": "140",
+          "name": "CA Osasuna",
+          "mapped": false
+        },
+        {
+          "htId": "28698",
+          "name": "Levante UD",
+          "mapped": true
+        }
+      ]
+    }
+  ],
+  "missing_in_db": [
+    {
+      "id": 2253451,
+      "name": "Valencia CF vs. RCD Mallorca",
+      "date": "2025-12-21T22:00:00Z",
+      "teams": [
+        "Mallorca",
+        "Valencia"
+      ]
+    }
+  ],
+  "past_events": []
+}

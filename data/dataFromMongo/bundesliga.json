@@ -1,0 +1,128 @@
+[
+  {
+    "_id": "68f7851162db2d92f4bdf7ed",
+    "name": "RB לייפציג",
+    "slug": "rb-leipzig",
+    "hellotickets_id": "593",
+    "hellotickets_name": "RB Leipzig"
+  },
+  {
+    "_id": "68f7851162db2d92f4bdf7e1",
+    "name": "אאוגסבורג",
+    "slug": "fc-augsburg",
+    "hellotickets_id": "271",
+    "hellotickets_name": "FC Augsburg"
+  },
+  {
+    "_id": "68f7851262db2d92f4bdf7ff",
+    "name": "אוניון ברלין",
+    "slug": "union-berlin",
+    "hellotickets_id": "280",
+    "hellotickets_name": "FC Union Berlin"
+  },
+  {
+    "_id": "68e25b340d7b31dba56dde42",
+    "name": "איינטרכט פרנקפורט",
+    "slug": "eintracht-frankfurt",
+    "hellotickets_id": "251",
+    "hellotickets_name": "Eintracht Frankfurt"
+  },
+  {
+    "_id": "68e25b360d7b31dba56dde72",
+    "name": "באייר לברקוזן",
+    "slug": "bayer-leverkusen",
+    "hellotickets_id": "105",
+    "hellotickets_name": "Bayer 04 Leverkusen"
+  },
+  {
+    "_id": "68e25b320d7b31dba56dde03",
+    "name": "באיירן מינכן",
+    "slug": "bayern-munich",
+    "hellotickets_id": "273",
+    "hellotickets_name": "FC Bayern Munich"
+  },
+  {
+    "_id": "68e25b330d7b31dba56dde22",
+    "name": "בורוסיה דורטמונד",
+    "slug": "borussia-dortmund",
+    "hellotickets_id": "123",
+    "hellotickets_name": "Borussia Dortmund"
+  },
+  {
+    "_id": "68f7851162db2d92f4bdf7c3",
+    "name": "בורוסיה מנשנגלדבך",
+    "slug": "borussia-mnchengladbach",
+    "hellotickets_id": "124",
+    "hellotickets_name": "Borussia Mönchengladbach"
+  },
+  {
+    "_id": "68f7851162db2d92f4bdf7d3",
+    "name": "הופנהיים 1899",
+    "slug": "1899-hoffenheim",
+    "hellotickets_id": "763",
+    "hellotickets_name": "TSG 1899 Hoffenheim"
+  },
+  {
+    "_id": "68f7851162db2d92f4bdf7f9",
+    "name": "היידנהיים",
+    "slug": "1-fc-heidenheim",
+    "hellotickets_id": "276",
+    "hellotickets_name": "FC Heidenheim"
+  },
+  {
+    "_id": "68f7851162db2d92f4bdf7f3",
+    "name": "המבורגר SV",
+    "slug": "hamburger-sv",
+    "hellotickets_id": "28697",
+    "hellotickets_name": "Hamburger SV"
+  },
+  {
+    "_id": "68f7851162db2d92f4bdf7b3",
+    "name": "וולפסבורג",
+    "slug": "vfl-wolfsburg",
+    "hellotickets_id": "788",
+    "hellotickets_name": "VfL Wolfsburg"
+  },
+  {
+    "_id": "68f7851162db2d92f4bdf7bb",
+    "name": "ורדר ברמן",
+    "slug": "werder-bremen",
+    "hellotickets_id": "676",
+    "hellotickets_name": "SV Werder Bremen"
+  },
+  {
+    "_id": "68f7851162db2d92f4bdf7c9",
+    "name": "מיינץ 05",
+    "slug": "fsv-mainz-05",
+    "hellotickets_id": "294",
+    "hellotickets_name": "FSV Mainz 05"
+  },
+  {
+    "_id": "68f7851262db2d92f4bdf805",
+    "name": "סנט פאולי",
+    "slug": "fc-st-pauli",
+    "hellotickets_id": "1863",
+    "hellotickets_name": "FC St. Pauli"
+  },
+  {
+    "_id": "68f7851162db2d92f4bdf7ab",
+    "name": "פרייבורג",
+    "slug": "sc-freiburg",
+    "hellotickets_id": "630",
+    "hellotickets_name": "SC Freiburg"
+  },
+  {
+    "_id": "68f7851262db2d92f4bdf80b",
+    "name": "קלן",
+    "slug": "1fc-kln",
+    "hellotickets_id": "278",
+    "hellotickets_name": "FC Köln"
+  },
+  {
+    "_id": "68f7851162db2d92f4bdf7e7",
+    "name": "שטוטגרט",
+    "slug": "vfb-stuttgart",
+    "hellotickets_id": "786",
+    "hellotickets_name": "VfB Stuttgart"
+  }
+]

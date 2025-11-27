@@ -87,11 +87,14 @@ router.post(
         );
       }
 
-      // Add agentId and fixtureId to offerData
+      // Add agentId, ownerType, and fixtureId to offerData
+      // Default ticketType to "standard" if not provided
       const offerDataWithAgent = {
         ...offerData,
         fixtureId,
-        agentId,
+        agentId, // Keep for backward compatibility
+        ownerType: "Agent", // Set ownerType based on authentication
+        ticketType: offerData.ticketType || "standard", // Default to standard
       };
 
       const offer = await OfferService.mutate.createOffer(offerDataWithAgent);

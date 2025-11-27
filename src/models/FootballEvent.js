@@ -68,6 +68,27 @@ const footballEventSchema = new mongoose.Schema(
       },
     },
 
+    // External IDs from different suppliers (e.g., Hello Tickets performance ID)
+    supplierExternalIds: [
+      {
+        supplierRef: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "Supplier",
+          required: true,
+        },
+        supplierExternalId: {
+          type: String,
+          required: true,
+          trim: true,
+        },
+        // Optional: additional metadata from supplier
+        metadata: {
+          type: Map,
+          of: mongoose.Schema.Types.Mixed,
+        },
+      },
+    ],
+
     // Lowest price from available offers
     minPrice: {
       amount: {
@@ -98,6 +119,8 @@ footballEventSchema.index({ venue: 1 });
 footballEventSchema.index({ slug: 1 }, { unique: true });
 footballEventSchema.index({ "minPrice.amount": 1 });
 footballEventSchema.index({ isHot: 1, date: 1 }); // אינדקס משולב למשחקים חמים
+footballEventSchema.index({ "supplierExternalIds.supplierRef": 1 });
+footballEventSchema.index({ "supplierExternalIds.supplierExternalId": 1 });
 
 // הגדרה בטוחה למניעת OverwriteModelError
 const FootballEvent =

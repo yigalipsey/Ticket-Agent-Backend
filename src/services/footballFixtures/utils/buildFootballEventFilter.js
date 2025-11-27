@@ -81,7 +81,7 @@ export const buildPopulateOptions = (includeDetails = true) => {
     { path: "league", select: "name country logoUrl slug" },
     { path: "homeTeam", select: "name code slug logoUrl" },
     { path: "awayTeam", select: "name code slug logoUrl" },
-    { path: "venue", select: "name city capacity" },
+    { path: "venue", select: "name city_en city_he capacity" },
   ];
 
   if (includeDetails) {
@@ -93,6 +93,6 @@ export const buildPopulateOptions = (includeDetails = true) => {
     { path: "league", select: "name slug" },
     { path: "homeTeam", select: "name code slug" },
     { path: "awayTeam", select: "name code slug" },
-    { path: "venue", select: "name city" },
+    { path: "venue", select: "name city_en city_he" },
   ];
 };

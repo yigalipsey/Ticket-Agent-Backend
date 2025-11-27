@@ -1,0 +1,1176 @@
+{
+  "fetched_at": "2025-11-25T15:55:33.689Z",
+  "performer_id": "273",
+  "performer_name": "FC Bayern Munich",
+  "total_matches": 28,
+  "bundesliga_matches_from_next_week": 22,
+  "german_teams_found": [
+    {
+      "id": "786",
+      "name": "VfB Stuttgart",
+      "matches": 2
+    },
+    {
+      "id": "294",
+      "name": "FSV Mainz 05",
+      "matches": 2
+    },
+    {
+      "id": "276",
+      "name": "FC Heidenheim",
+      "matches": 2
+    },
+    {
+      "id": "788",
+      "name": "VfL Wolfsburg",
+      "matches": 2
+    },
+    {
+      "id": "278",
+      "name": "FC Köln",
+      "matches": 2
+    },
+    {
+      "id": "593",
+      "name": "RB Leipzig",
+      "matches": 1
+    },
+    {
+      "id": "271",
+      "name": "FC Augsburg",
+      "matches": 1
+    },
+    {
+      "id": "28697",
+      "name": "Hamburger SV",
+      "matches": 1
+    },
+    {
+      "id": "763",
+      "name": "TSG 1899 Hoffenheim",
+      "matches": 1
+    },
+    {
+      "id": "676",
+      "name": "SV Werder Bremen",
+      "matches": 1
+    },
+    {
+      "id": "251",
+      "name": "Eintracht Frankfurt",
+      "matches": 1
+    },
+    {
+      "id": "123",
+      "name": "Borussia Dortmund",
+      "matches": 1
+    },
+    {
+      "id": "124",
+      "name": "Borussia Mönchengladbach",
+      "matches": 1
+    },
+    {
+      "id": "105",
+      "name": "Bayer 04 Leverkusen",
+      "matches": 1
+    },
+    {
+      "id": "280",
+      "name": "FC Union Berlin",
+      "matches": 1
+    },
+    {
+      "id": "630",
+      "name": "SC Freiburg",
+      "matches": 1
+    },
+    {
+      "id": "1863",
+      "name": "FC St. Pauli",
+      "matches": 1
+    }
+  ],
+  "all_matches": [
+    {
+      "id": 2293404,
+      "name": "Arsenal FC vs. FC Bayern Munich - Champions League 2025-2026",
+      "url": "https://www.hellotickets.com/en-en/united-kingdom/london/sports/arsenal-fc-tickets/2025-11-26,2000/2293404/2",
+      "ticket_groups_count": 144,
+      "start_date": {
+        "local_date": "2025-11-26",
+        "local_time": "20:00",
+        "date_time": "2025-11-26T20:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 666,
+        "max_price": 7900,
+        "currency": "EUR"
+      },
+      "event_id": 138646,
+      "venue": {
+        "id": 2101,
+        "name": "Emirates Stadium"
+      },
+      "performers": [
+        {
+          "id": 1835,
+          "name": "Arsenal FC"
+        },
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 12872,
+          "name": "UEFA Champions League"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true
+    },
+    {
+      "id": 2253349,
+      "name": "Bayern Munich vs. St Pauli",
+      "url": "https://www.hellotickets.com/en-en/germany/munich/sports/fc-bayern-munich-tickets/2025-11-29,1530/2253349/2",
+      "ticket_groups_count": 228,
+      "start_date": {
+        "local_date": "2025-11-29",
+        "local_time": "15:30",
+        "date_time": "2025-11-29T14:30:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 125,
+        "max_price": 3627,
+        "currency": "EUR"
+      },
+      "event_id": 380005,
+      "venue": {
+        "id": 2622,
+        "name": "Allianz Arena"
+      },
+      "performers": [
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 1863,
+          "name": "FC St. Pauli"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    },
+    {
+      "id": 2392338,
+      "name": "1. FC Union Berlin vs. FC Bayern Munchen - DFB Pokal - Round of 16",
+      "url": "https://www.hellotickets.com/en-en/germany/berlin/sports/1-fc-union-berlin-tickets/2025-12-02,2000/2392338/2",
+      "ticket_groups_count": 3,
+      "start_date": {
+        "local_date": "2025-12-02",
+        "local_time": "20:00",
+        "date_time": "2025-12-02T19:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 340,
+        "max_price": 2268,
+        "currency": "EUR"
+      },
+      "event_id": 382271,
+      "venue": {
+        "id": 2649,
+        "name": "Stadion An der Alten Försterei"
+      },
+      "performers": [
+        {
+          "id": 280,
+          "name": "FC Union Berlin"
+        },
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true
+    },
+    {
+      "id": 2253435,
+      "name": "VfB Stuttgart vs. FC Bayern Munich",
+      "url": "https://www.hellotickets.com/en-en/germany/stuttgart/sports/vfb-stuttgart-tickets/2025-12-06,1530/2253435/2",
+      "ticket_groups_count": 7,
+      "start_date": {
+        "local_date": "2025-12-06",
+        "local_time": "15:30",
+        "date_time": "2025-12-06T14:30:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 568,
+        "max_price": 2041,
+        "currency": "EUR"
+      },
+      "event_id": 399289,
+      "venue": {
+        "id": 2691,
+        "name": "MHPArena"
+      },
+      "performers": [
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 786,
+          "name": "VfB Stuttgart"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    },
+    {
+      "id": 2293372,
+      "name": "FC Bayern Munich vs. Sporting CP - Champions League 2025-2026",
+      "url": "https://www.hellotickets.com/en-en/germany/munich/sports/fc-bayern-munich-tickets/2025-12-09,1845/2293372/2",
+      "ticket_groups_count": 219,
+      "start_date": {
+        "local_date": "2025-12-09",
+        "local_time": "18:45",
+        "date_time": "2025-12-09T17:45:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 124,
+        "max_price": 5100,
+        "currency": "EUR"
+      },
+      "event_id": 380005,
+      "venue": {
+        "id": 2622,
+        "name": "Allianz Arena"
+      },
+      "performers": [
+        {
+          "id": 13149,
+          "name": "Sporting CP"
+        },
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 12872,
+          "name": "UEFA Champions League"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true
+    },
+    {
+      "id": 2253355,
+      "name": "Bayern Munich vs. FSV Mainz 05",
+      "url": "https://www.hellotickets.com/en-en/germany/munich/sports/fc-bayern-munich-tickets/2025-12-13,1530/2253355/2",
+      "ticket_groups_count": 178,
+      "start_date": {
+        "local_date": "2025-12-13",
+        "local_time": "15:30",
+        "date_time": "2025-12-13T14:30:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 87,
+        "max_price": 3624,
+        "currency": "EUR"
+      },
+      "event_id": 380005,
+      "venue": {
+        "id": 2622,
+        "name": "Allianz Arena"
+      },
+      "performers": [
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 294,
+          "name": "FSV Mainz 05"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    },
+    {
+      "id": 2254169,
+      "name": "FC Heidenheim vs. FC Bayern Munich",
+      "url": "https://www.hellotickets.com/en-en/germany/stuttgart/sports/fc-bayern-munich-tickets/2025-12-20,2100/2254169/2",
+      "ticket_groups_count": 0,
+      "start_date": {
+        "local_date": "2025-12-20",
+        "local_time": "21:00",
+        "date_time": "2025-12-20T20:00:00Z",
+        "date_tba": true,
+        "time_tba": true
+      },
+      "price_range": {
+        "min_price": 0,
+        "max_price": 0,
+        "currency": "EUR"
+      },
+      "event_id": 456013,
+      "venue": {
+        "id": 2700,
+        "name": "Voith Arena"
+      },
+      "performers": [
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 276,
+          "name": "FC Heidenheim"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    },
+    {
+      "id": 2253343,
+      "name": "Bayern Munich vs. VfL Wolfsburg",
+      "url": "https://www.hellotickets.com/en-en/germany/munich/sports/fc-bayern-munich-tickets/2026-01-11,2100/2253343/2",
+      "ticket_groups_count": 180,
+      "start_date": {
+        "local_date": "2026-01-11",
+        "local_time": "21:00",
+        "date_time": "2026-01-11T20:00:00Z",
+        "date_tba": true,
+        "time_tba": true
+      },
+      "price_range": {
+        "min_price": 120,
+        "max_price": 3624,
+        "currency": "EUR"
+      },
+      "event_id": 380005,
+      "venue": {
+        "id": 2622,
+        "name": "Allianz Arena"
+      },
+      "performers": [
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 788,
+          "name": "VfL Wolfsburg"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    },
+    {
+      "id": 2253952,
+      "name": "FC Koln vs. FC Bayern Munich",
+      "url": "https://www.hellotickets.com/en-en/germany/cologne/sports/fc-bayern-munich-tickets/2026-01-14,2100/2253952/2",
+      "ticket_groups_count": 15,
+      "start_date": {
+        "local_date": "2026-01-14",
+        "local_time": "21:00",
+        "date_time": "2026-01-14T20:00:00Z",
+        "date_tba": true,
+        "time_tba": true
+      },
+      "price_range": {
+        "min_price": 193,
+        "max_price": 440,
+        "currency": "EUR"
+      },
+      "event_id": 455984,
+      "venue": {
+        "id": 2658,
+        "name": "RheinEnergieStadion"
+      },
+      "performers": [
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 278,
+          "name": "FC Köln"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    },
+    {
+      "id": 2253678,
+      "name": "RB Leipzig vs. FC Bayern Munich",
+      "url": "https://www.hellotickets.com/en-en/spain/san-sebastian/sports/rb-leipzig-tickets/2026-01-17,2100/2253678/2",
+      "ticket_groups_count": 13,
+      "start_date": {
+        "local_date": "2026-01-17",
+        "local_time": "21:00",
+        "date_time": "2026-01-17T20:00:00Z",
+        "date_tba": true,
+        "time_tba": true
+      },
+      "price_range": {
+        "min_price": 398,
+        "max_price": 1532,
+        "currency": "EUR"
+      },
+      "event_id": 455918,
+      "venue": {
+        "id": 2625,
+        "name": "Estadio de Anoeta"
+      },
+      "performers": [
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 593,
+          "name": "RB Leipzig"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    },
+    {
+      "id": 2293371,
+      "name": "FC Bayern Munich vs. Union Saint-Gilloise - Champions League 2025-2026",
+      "url": "https://www.hellotickets.com/en-en/germany/munich/sports/fc-bayern-munich-tickets/2026-01-21,2100/2293371/2",
+      "ticket_groups_count": 148,
+      "start_date": {
+        "local_date": "2026-01-21",
+        "local_time": "21:00",
+        "date_time": "2026-01-21T20:00:00Z",
+        "date_tba": true,
+        "time_tba": true
+      },
+      "price_range": {
+        "min_price": 98,
+        "max_price": 5100,
+        "currency": "EUR"
+      },
+      "event_id": 380005,
+      "venue": {
+        "id": 2622,
+        "name": "Allianz Arena"
+      },
+      "performers": [
+        {
+          "id": 1860,
+          "name": "Union Saint-Gilloise"
+        },
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 12872,
+          "name": "UEFA Champions League"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true
+    },
+    {
+      "id": 2253350,
+      "name": "Bayern Munich vs. FC Augsburg",
+      "url": "https://www.hellotickets.com/en-en/germany/munich/sports/fc-bayern-munich-tickets/2026-01-24,2100/2253350/2",
+      "ticket_groups_count": 126,
+      "start_date": {
+        "local_date": "2026-01-24",
+        "local_time": "21:00",
+        "date_time": "2026-01-24T20:00:00Z",
+        "date_tba": true,
+        "time_tba": true
+      },
+      "price_range": {
+        "min_price": 147,
+        "max_price": 3627,
+        "currency": "EUR"
+      },
+      "event_id": 380005,
+      "venue": {
+        "id": 2622,
+        "name": "Allianz Arena"
+      },
+      "performers": [
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 271,
+          "name": "FC Augsburg"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    },
+    {
+      "id": 2294082,
+      "name": "PSV Eindhoven vs. FC Bayern Munich - Champions League 2025-2026",
+      "url": "https://www.hellotickets.com/en-en/netherlands/eindhoven/sports/psv-eindhoven-tickets/2026-01-28,2100/2294082/2",
+      "ticket_groups_count": 23,
+      "start_date": {
+        "local_date": "2026-01-28",
+        "local_time": "21:00",
+        "date_time": "2026-01-28T20:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 162,
+        "max_price": 1701,
+        "currency": "EUR"
+      },
+      "event_id": 458362,
+      "venue": {
+        "id": 2660,
+        "name": "Philips Stadion"
+      },
+      "performers": [
+        {
+          "id": 18756,
+          "name": "PSV Eindhoven"
+        },
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 12872,
+          "name": "UEFA Champions League"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true
+    },
+    {
+      "id": 2253873,
+      "name": "Hamburger SV vs. FC Bayern Munich",
+      "url": "https://www.hellotickets.com/en-en/germany/hamburg/sports/fc-bayern-munich-tickets/2026-01-31,2100/2253873/2",
+      "ticket_groups_count": 3,
+      "start_date": {
+        "local_date": "2026-01-31",
+        "local_time": "21:00",
+        "date_time": "2026-01-31T20:00:00Z",
+        "date_tba": true,
+        "time_tba": true
+      },
+      "price_range": {
+        "min_price": 1133,
+        "max_price": 3115,
+        "currency": "EUR"
+      },
+      "event_id": 455943,
+      "venue": {
+        "id": 2709,
+        "name": "Volksparkstadion"
+      },
+      "performers": [
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 28697,
+          "name": "Hamburger SV"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    },
+    {
+      "id": 2253345,
+      "name": "Bayern Munich vs. TSG 1899 Hoffenheim",
+      "url": "https://www.hellotickets.com/en-en/germany/munich/sports/fc-bayern-munich-tickets/2026-02-07,2100/2253345/2",
+      "ticket_groups_count": 90,
+      "start_date": {
+        "local_date": "2026-02-07",
+        "local_time": "21:00",
+        "date_time": "2026-02-07T20:00:00Z",
+        "date_tba": true,
+        "time_tba": true
+      },
+      "price_range": {
+        "min_price": 135,
+        "max_price": 3627,
+        "currency": "EUR"
+      },
+      "event_id": 380005,
+      "venue": {
+        "id": 2622,
+        "name": "Allianz Arena"
+      },
+      "performers": [
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 763,
+          "name": "TSG 1899 Hoffenheim"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    },
+    {
+      "id": 2262103,
+      "name": "SV Werder Bremen vs. FC Bayern Munich",
+      "url": "https://www.hellotickets.com/en-en/germany/bremen/sports/sv-werder-bremen-tickets/2026-02-14,2100/2262103/2",
+      "ticket_groups_count": 4,
+      "start_date": {
+        "local_date": "2026-02-14",
+        "local_time": "21:00",
+        "date_time": "2026-02-14T20:00:00Z",
+        "date_tba": true,
+        "time_tba": true
+      },
+      "price_range": {
+        "min_price": 341,
+        "max_price": 2605,
+        "currency": "EUR"
+      },
+      "event_id": 399292,
+      "venue": {
+        "id": 2694,
+        "name": "Weser-Stadion"
+      },
+      "performers": [
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 676,
+          "name": "SV Werder Bremen"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    },
+    {
+      "id": 2253351,
+      "name": "Bayern Munich vs. Eintracht Frankfurt",
+      "url": "https://www.hellotickets.com/en-en/germany/munich/sports/fc-bayern-munich-tickets/2026-02-21,2100/2253351/2",
+      "ticket_groups_count": 76,
+      "start_date": {
+        "local_date": "2026-02-21",
+        "local_time": "21:00",
+        "date_time": "2026-02-21T20:00:00Z",
+        "date_tba": true,
+        "time_tba": true
+      },
+      "price_range": {
+        "min_price": 226,
+        "max_price": 3627,
+        "currency": "EUR"
+      },
+      "event_id": 380005,
+      "venue": {
+        "id": 2622,
+        "name": "Allianz Arena"
+      },
+      "performers": [
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 251,
+          "name": "Eintracht Frankfurt"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    },
+    {
+      "id": 2254075,
+      "name": "Borussia Dortmund vs. Bayern Munich",
+      "url": "https://www.hellotickets.com/en-en/germany/dortmund/sports/borussia-dortmund-tickets/2026-02-28,2100/2254075/2",
+      "ticket_groups_count": 43,
+      "start_date": {
+        "local_date": "2026-02-28",
+        "local_time": "21:00",
+        "date_time": "2026-02-28T20:00:00Z",
+        "date_tba": true,
+        "time_tba": true
+      },
+      "price_range": {
+        "min_price": 413,
+        "max_price": 10199,
+        "currency": "EUR"
+      },
+      "event_id": 388154,
+      "venue": {
+        "id": 2655,
+        "name": "Signal Iduna Park"
+      },
+      "performers": [
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 123,
+          "name": "Borussia Dortmund"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    },
+    {
+      "id": 2253352,
+      "name": "Bayern Munich vs. Borussia Monchengladbach",
+      "url": "https://www.hellotickets.com/en-en/germany/munich/sports/fc-bayern-munich-tickets/2026-03-07,2100/2253352/2",
+      "ticket_groups_count": 68,
+      "start_date": {
+        "local_date": "2026-03-07",
+        "local_time": "21:00",
+        "date_time": "2026-03-07T20:00:00Z",
+        "date_tba": true,
+        "time_tba": true
+      },
+      "price_range": {
+        "min_price": 217,
+        "max_price": 3624,
+        "currency": "EUR"
+      },
+      "event_id": 380005,
+      "venue": {
+        "id": 2622,
+        "name": "Allianz Arena"
+      },
+      "performers": [
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 124,
+          "name": "Borussia Mönchengladbach"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    },
+    {
+      "id": 2254092,
+      "name": "Bayer 04 Leverkusen vs. FC Bayern Munich",
+      "url": "https://www.hellotickets.com/en-en/germany/cologne/sports/bayer-04-leverkusen-tickets/2026-03-14,2100/2254092/2",
+      "ticket_groups_count": 27,
+      "start_date": {
+        "local_date": "2026-03-14",
+        "local_time": "21:00",
+        "date_time": "2026-03-14T20:00:00Z",
+        "date_tba": true,
+        "time_tba": true
+      },
+      "price_range": {
+        "min_price": 219,
+        "max_price": 2605,
+        "currency": "EUR"
+      },
+      "event_id": 388133,
+      "venue": {
+        "id": 2656,
+        "name": "BayArena"
+      },
+      "performers": [
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 105,
+          "name": "Bayer 04 Leverkusen"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    },
+    {
+      "id": 2253356,
+      "name": "Bayern Munich vs. FC Union Berlin",
+      "url": "https://www.hellotickets.com/en-en/germany/munich/sports/fc-bayern-munich-tickets/2026-03-21,2100/2253356/2",
+      "ticket_groups_count": 64,
+      "start_date": {
+        "local_date": "2026-03-21",
+        "local_time": "21:00",
+        "date_time": "2026-03-21T20:00:00Z",
+        "date_tba": true,
+        "time_tba": true
+      },
+      "price_range": {
+        "min_price": 226,
+        "max_price": 3624,
+        "currency": "EUR"
+      },
+      "event_id": 380005,
+      "venue": {
+        "id": 2622,
+        "name": "Allianz Arena"
+      },
+      "performers": [
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 280,
+          "name": "FC Union Berlin"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    },
+    {
+      "id": 2253565,
+      "name": "SC Freiburg vs. FC Bayern Munich",
+      "url": "https://www.hellotickets.com/en-en/germany/freiburg-im-breisgau/sports/sc-freiburg-tickets/2026-04-04,2100/2253565/2",
+      "ticket_groups_count": 2,
+      "start_date": {
+        "local_date": "2026-04-04",
+        "local_time": "21:00",
+        "date_time": "2026-04-04T20:00:00Z",
+        "date_tba": true,
+        "time_tba": true
+      },
+      "price_range": {
+        "min_price": 792,
+        "max_price": 1356,
+        "currency": "EUR"
+      },
+      "event_id": 399294,
+      "venue": {
+        "id": 2696,
+        "name": "Europa-Park Stadium"
+      },
+      "performers": [
+        {
+          "id": 630,
+          "name": "SC Freiburg"
+        },
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    },
+    {
+      "id": 2262118,
+      "name": "FC St. Pauli vs. FC Bayern Munich",
+      "url": "https://www.hellotickets.com/en-en/germany/hamburg/sports/fc-st-pauli-tickets/2026-04-11,2100/2262118/2",
+      "ticket_groups_count": 0,
+      "start_date": {
+        "local_date": "2026-04-11",
+        "local_time": "21:00",
+        "date_time": "2026-04-11T20:00:00Z",
+        "date_tba": true,
+        "time_tba": true
+      },
+      "price_range": {
+        "min_price": 0,
+        "max_price": 0,
+        "currency": "EUR"
+      },
+      "event_id": 455942,
+      "venue": {
+        "id": 4156,
+        "name": "Millerntor Stadion"
+      },
+      "performers": [
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 1863,
+          "name": "FC St. Pauli"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    },
+    {
+      "id": 2253344,
+      "name": "Bayern Munich vs. VfB Stuttgart",
+      "url": "https://www.hellotickets.com/en-en/germany/munich/sports/fc-bayern-munich-tickets/2026-04-18,2100/2253344/2",
+      "ticket_groups_count": 54,
+      "start_date": {
+        "local_date": "2026-04-18",
+        "local_time": "21:00",
+        "date_time": "2026-04-18T20:00:00Z",
+        "date_tba": true,
+        "time_tba": true
+      },
+      "price_range": {
+        "min_price": 280,
+        "max_price": 3627,
+        "currency": "EUR"
+      },
+      "event_id": 380005,
+      "venue": {
+        "id": 2622,
+        "name": "Allianz Arena"
+      },
+      "performers": [
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 786,
+          "name": "VfB Stuttgart"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    },
+    {
+      "id": 2254138,
+      "name": "FSV Mainz 05 vs. FC Bayern Munich",
+      "url": "https://www.hellotickets.com/en-en/germany/frankfurt/sports/1-fsv-mainz-05-tickets/2026-04-25,2100/2254138/2",
+      "ticket_groups_count": 5,
+      "start_date": {
+        "local_date": "2026-04-25",
+        "local_time": "21:00",
+        "date_time": "2026-04-25T20:00:00Z",
+        "date_tba": true,
+        "time_tba": true
+      },
+      "price_range": {
+        "min_price": 512,
+        "max_price": 1701,
+        "currency": "EUR"
+      },
+      "event_id": 399441,
+      "venue": {
+        "id": 2699,
+        "name": "Opel Arena"
+      },
+      "performers": [
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 294,
+          "name": "FSV Mainz 05"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    },
+    {
+      "id": 2253358,
+      "name": "Bayern Munich vs. FC Heidenheim",
+      "url": "https://www.hellotickets.com/en-en/germany/munich/sports/fc-bayern-munich-tickets/2026-05-02,2100/2253358/2",
+      "ticket_groups_count": 54,
+      "start_date": {
+        "local_date": "2026-05-02",
+        "local_time": "21:00",
+        "date_time": "2026-05-02T20:00:00Z",
+        "date_tba": true,
+        "time_tba": true
+      },
+      "price_range": {
+        "min_price": 228,
+        "max_price": 9059,
+        "currency": "EUR"
+      },
+      "event_id": 380005,
+      "venue": {
+        "id": 2622,
+        "name": "Allianz Arena"
+      },
+      "performers": [
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 276,
+          "name": "FC Heidenheim"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    },
+    {
+      "id": 2253418,
+      "name": "VfL Wolfsburg vs. FC Bayern Munich",
+      "url": "https://www.hellotickets.com/en-en/germany/wolfsburg/sports/vfl-wolfsburg-tickets/2026-05-09,2100/2253418/2",
+      "ticket_groups_count": 3,
+      "start_date": {
+        "local_date": "2026-05-09",
+        "local_time": "21:00",
+        "date_time": "2026-05-09T20:00:00Z",
+        "date_tba": true,
+        "time_tba": true
+      },
+      "price_range": {
+        "min_price": 905,
+        "max_price": 2824,
+        "currency": "EUR"
+      },
+      "event_id": 399290,
+      "venue": {
+        "id": 2692,
+        "name": "Volkswagen Arena"
+      },
+      "performers": [
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 788,
+          "name": "VfL Wolfsburg"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    },
+    {
+      "id": 2253357,
+      "name": "Bayern Munich vs. 1. FC Koln",
+      "url": "https://www.hellotickets.com/en-en/germany/munich/sports/fc-bayern-munich-tickets/2026-05-16,2100/2253357/2",
+      "ticket_groups_count": 48,
+      "start_date": {
+        "local_date": "2026-05-16",
+        "local_time": "21:00",
+        "date_time": "2026-05-16T20:00:00Z",
+        "date_tba": true,
+        "time_tba": true
+      },
+      "price_range": {
+        "min_price": 235,
+        "max_price": 9066,
+        "currency": "EUR"
+      },
+      "event_id": 380005,
+      "venue": {
+        "id": 2622,
+        "name": "Allianz Arena"
+      },
+      "performers": [
+        {
+          "id": 273,
+          "name": "FC Bayern Munich"
+        },
+        {
+          "id": 278,
+          "name": "FC Köln"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    }
+  ]
+}

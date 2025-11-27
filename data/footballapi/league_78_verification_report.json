@@ -1,0 +1,2151 @@
+{
+  "generated_at": "2025-11-26T17:55:22.044Z",
+  "json_file": "/Users/yigallipsey/Desktop/projects/TicketAgent/backend/data/footballapi/league_78_from_next_week.json",
+  "summary": {
+    "total": 198,
+    "found": 11,
+    "notFound": 187,
+    "perfectMatch": 0,
+    "issues": 198,
+    "dateMismatch": 0,
+    "homeTeamMismatch": 0,
+    "awayTeamMismatch": 0,
+    "venueMismatch": 11
+  },
+  "issues": [
+    {
+      "apiFootballId": 1388421,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FSV Mainz 05",
+        "awayTeam": "Borussia Mönchengladbach",
+        "date": "2025-12-05T19:30:00+00:00",
+        "venue": "Mewa Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388424,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "VfL Wolfsburg",
+        "awayTeam": "Union Berlin",
+        "date": "2025-12-06T14:30:00+00:00",
+        "venue": "Volkswagen Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388416,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FC Augsburg",
+        "awayTeam": "Bayer Leverkusen",
+        "date": "2025-12-06T14:30:00+00:00",
+        "venue": "WWK Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388423,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "VfB Stuttgart",
+        "awayTeam": "Bayern München",
+        "date": "2025-12-06T14:30:00+00:00",
+        "venue": "MHPArena"
+      }
+    },
+    {
+      "apiFootballId": 1388420,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1. FC Heidenheim",
+        "awayTeam": "SC Freiburg",
+        "date": "2025-12-06T14:30:00+00:00",
+        "venue": "Voith-Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388418,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1.FC Köln",
+        "awayTeam": "FC St. Pauli",
+        "date": "2025-12-06T14:30:00+00:00",
+        "venue": "RheinEnergieStadion"
+      }
+    },
+    {
+      "apiFootballId": 1388422,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "RB Leipzig",
+        "awayTeam": "Eintracht Frankfurt",
+        "date": "2025-12-06T17:30:00+00:00",
+        "venue": "Red Bull Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388419,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Hamburger SV",
+        "awayTeam": "Werder Bremen",
+        "date": "2025-12-07T14:30:00+00:00",
+        "venue": "Volksparkstadion"
+      }
+    },
+    {
+      "apiFootballId": 1388417,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Borussia Dortmund",
+        "awayTeam": "1899 Hoffenheim",
+        "date": "2025-12-07T16:30:00+00:00",
+        "venue": "Signal Iduna Park"
+      }
+    },
+    {
+      "apiFootballId": 1388432,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Union Berlin",
+        "awayTeam": "RB Leipzig",
+        "date": "2025-12-12T19:30:00+00:00",
+        "venue": "Stadion An der Alten Försterei"
+      }
+    },
+    {
+      "apiFootballId": 1388427,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Borussia Mönchengladbach",
+        "awayTeam": "VfL Wolfsburg",
+        "date": "2025-12-13T14:30:00+00:00",
+        "venue": "Borussia-Park"
+      }
+    },
+    {
+      "apiFootballId": 1388430,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1899 Hoffenheim",
+        "awayTeam": "Hamburger SV",
+        "date": "2025-12-13T14:30:00+00:00",
+        "venue": "PreZero Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388428,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Eintracht Frankfurt",
+        "awayTeam": "FC Augsburg",
+        "date": "2025-12-13T14:30:00+00:00",
+        "venue": "Deutsche Bank Park"
+      }
+    },
+    {
+      "apiFootballId": 1388431,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FC St. Pauli",
+        "awayTeam": "1. FC Heidenheim",
+        "date": "2025-12-13T14:30:00+00:00",
+        "venue": "Millerntor-Stadion"
+      }
+    },
+    {
+      "apiFootballId": 1388425,
+      "dbMatchId": "6926e330a3a933930dad45d2",
+      "slug": "1fc-kln-vs-bayer-leverkusen-2025-12-13",
+      "issues": [
+        {
+          "field": "venue",
+          "json": "BayArena (ID: 699)",
+          "db": "Cologne Stadium (ID: 20736)"
+        }
+      ],
+      "jsonMatch": {
+        "homeTeam": "Bayer Leverkusen",
+        "awayTeam": "1.FC Köln",
+        "date": "2025-12-13T17:30:00+00:00",
+        "venue": "BayArena"
+      },
+      "dbMatch": {
+        "homeTeam": "Bayer Leverkusen",
+        "awayTeam": "1.FC Köln",
+        "date": "2025-12-13T17:30:00.000Z",
+        "venue": "Cologne Stadium"
+      }
+    },
+    {
+      "apiFootballId": 1388429,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "SC Freiburg",
+        "awayTeam": "Borussia Dortmund",
+        "date": "2025-12-14T14:30:00+00:00",
+        "venue": "Europa-Park Stadion"
+      }
+    },
+    {
+      "apiFootballId": 1388426,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Bayern München",
+        "awayTeam": "FSV Mainz 05",
+        "date": "2025-12-14T16:30:00+00:00",
+        "venue": "Allianz Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388433,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Werder Bremen",
+        "awayTeam": "VfB Stuttgart",
+        "date": "2025-12-14T18:30:00+00:00",
+        "venue": "Weserstadion"
+      }
+    },
+    {
+      "apiFootballId": 1388435,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Borussia Dortmund",
+        "awayTeam": "Borussia Mönchengladbach",
+        "date": "2025-12-19T19:30:00+00:00",
+        "venue": "Signal Iduna Park"
+      }
+    },
+    {
+      "apiFootballId": 1388442,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "VfL Wolfsburg",
+        "awayTeam": "SC Freiburg",
+        "date": "2025-12-20T14:30:00+00:00",
+        "venue": "Volkswagen Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388434,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FC Augsburg",
+        "awayTeam": "Werder Bremen",
+        "date": "2025-12-20T14:30:00+00:00",
+        "venue": "WWK Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388441,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "VfB Stuttgart",
+        "awayTeam": "1899 Hoffenheim",
+        "date": "2025-12-20T14:30:00+00:00",
+        "venue": "MHPArena"
+      }
+    },
+    {
+      "apiFootballId": 1388437,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Hamburger SV",
+        "awayTeam": "Eintracht Frankfurt",
+        "date": "2025-12-20T14:30:00+00:00",
+        "venue": "Volksparkstadion"
+      }
+    },
+    {
+      "apiFootballId": 1388436,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1.FC Köln",
+        "awayTeam": "Union Berlin",
+        "date": "2025-12-20T14:30:00+00:00",
+        "venue": "RheinEnergieStadion"
+      }
+    },
+    {
+      "apiFootballId": 1388440,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "RB Leipzig",
+        "awayTeam": "Bayer Leverkusen",
+        "date": "2025-12-20T17:30:00+00:00",
+        "venue": "Red Bull Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388439,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FSV Mainz 05",
+        "awayTeam": "FC St. Pauli",
+        "date": "2025-12-21T14:30:00+00:00",
+        "venue": "Mewa Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388438,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1. FC Heidenheim",
+        "awayTeam": "Bayern München",
+        "date": "2025-12-21T16:30:00+00:00",
+        "venue": "Voith-Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388446,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Eintracht Frankfurt",
+        "awayTeam": "Borussia Dortmund",
+        "date": "2026-01-09T19:30:00+00:00",
+        "venue": "Deutsche Bank Park"
+      }
+    },
+    {
+      "apiFootballId": 1388447,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "SC Freiburg",
+        "awayTeam": "Hamburger SV",
+        "date": "2026-01-10T14:30:00+00:00",
+        "venue": "Europa-Park Stadion"
+      }
+    },
+    {
+      "apiFootballId": 1388451,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Werder Bremen",
+        "awayTeam": "1899 Hoffenheim",
+        "date": "2026-01-10T14:30:00+00:00",
+        "venue": "Weserstadion"
+      }
+    },
+    {
+      "apiFootballId": 1388448,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1. FC Heidenheim",
+        "awayTeam": "1.FC Köln",
+        "date": "2026-01-10T14:30:00+00:00",
+        "venue": "Voith-Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388450,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Union Berlin",
+        "awayTeam": "FSV Mainz 05",
+        "date": "2026-01-10T14:30:00+00:00",
+        "venue": "Stadion An der Alten Försterei"
+      }
+    },
+    {
+      "apiFootballId": 1388449,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FC St. Pauli",
+        "awayTeam": "RB Leipzig",
+        "date": "2026-01-10T14:30:00+00:00",
+        "venue": "Millerntor-Stadion"
+      }
+    },
+    {
+      "apiFootballId": 1388443,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Bayer Leverkusen",
+        "awayTeam": "VfB Stuttgart",
+        "date": "2026-01-10T17:30:00+00:00",
+        "venue": "BayArena"
+      }
+    },
+    {
+      "apiFootballId": 1388445,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Borussia Mönchengladbach",
+        "awayTeam": "FC Augsburg",
+        "date": "2026-01-11T14:30:00+00:00",
+        "venue": "Borussia-Park"
+      }
+    },
+    {
+      "apiFootballId": 1388444,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Bayern München",
+        "awayTeam": "VfL Wolfsburg",
+        "date": "2026-01-11T16:30:00+00:00",
+        "venue": "Allianz Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388459,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "VfB Stuttgart",
+        "awayTeam": "Eintracht Frankfurt",
+        "date": "2026-01-13T17:30:00+00:00",
+        "venue": "MHPArena"
+      }
+    },
+    {
+      "apiFootballId": 1388457,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FSV Mainz 05",
+        "awayTeam": "1. FC Heidenheim",
+        "date": "2026-01-13T19:30:00+00:00",
+        "venue": "Mewa Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388453,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Borussia Dortmund",
+        "awayTeam": "Werder Bremen",
+        "date": "2026-01-13T19:30:00+00:00",
+        "venue": "Signal Iduna Park"
+      }
+    },
+    {
+      "apiFootballId": 1388455,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Hamburger SV",
+        "awayTeam": "Bayer Leverkusen",
+        "date": "2026-01-13T19:30:00+00:00",
+        "venue": "Volksparkstadion"
+      }
+    },
+    {
+      "apiFootballId": 1388460,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "VfL Wolfsburg",
+        "awayTeam": "FC St. Pauli",
+        "date": "2026-01-14T17:30:00+00:00",
+        "venue": "Volkswagen Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388456,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1899 Hoffenheim",
+        "awayTeam": "Borussia Mönchengladbach",
+        "date": "2026-01-14T19:30:00+00:00",
+        "venue": "PreZero Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388458,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "RB Leipzig",
+        "awayTeam": "SC Freiburg",
+        "date": "2026-01-14T19:30:00+00:00",
+        "venue": "Red Bull Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388454,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1.FC Köln",
+        "awayTeam": "Bayern München",
+        "date": "2026-01-14T19:30:00+00:00",
+        "venue": "RheinEnergieStadion"
+      }
+    },
+    {
+      "apiFootballId": 1388452,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FC Augsburg",
+        "awayTeam": "Union Berlin",
+        "date": "2026-01-15T19:30:00+00:00",
+        "venue": "WWK Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388468,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Werder Bremen",
+        "awayTeam": "Eintracht Frankfurt",
+        "date": "2026-01-16T19:30:00+00:00",
+        "venue": "Weserstadion"
+      }
+    },
+    {
+      "apiFootballId": 1388469,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "VfL Wolfsburg",
+        "awayTeam": "1. FC Heidenheim",
+        "date": "2026-01-17T14:30:00+00:00",
+        "venue": "Volkswagen Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388462,
+      "dbMatchId": "6926e335a3a933930dad4676",
+      "slug": "fc-st-pauli-vs-borussia-dortmund-2026-01-17",
+      "issues": [
+        {
+          "field": "venue",
+          "json": "Signal Iduna Park (ID: null)",
+          "db": "Millerntor-Stadion (ID: 745)"
+        }
+      ],
+      "jsonMatch": {
+        "homeTeam": "Borussia Dortmund",
+        "awayTeam": "FC St. Pauli",
+        "date": "2026-01-17T14:30:00+00:00",
+        "venue": "Signal Iduna Park"
+      },
+      "dbMatch": {
+        "homeTeam": "Borussia Dortmund",
+        "awayTeam": "FC St. Pauli",
+        "date": "2026-01-17T14:30:00.000Z",
+        "venue": "Millerntor-Stadion"
+      }
+    },
+    {
+      "apiFootballId": 1388465,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1899 Hoffenheim",
+        "awayTeam": "Bayer Leverkusen",
+        "date": "2026-01-17T14:30:00+00:00",
+        "venue": "PreZero Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388464,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Hamburger SV",
+        "awayTeam": "Borussia Mönchengladbach",
+        "date": "2026-01-17T14:30:00+00:00",
+        "venue": "Volksparkstadion"
+      }
+    },
+    {
+      "apiFootballId": 1388463,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1.FC Köln",
+        "awayTeam": "FSV Mainz 05",
+        "date": "2026-01-17T14:30:00+00:00",
+        "venue": "RheinEnergieStadion"
+      }
+    },
+    {
+      "apiFootballId": 1388466,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "RB Leipzig",
+        "awayTeam": "Bayern München",
+        "date": "2026-01-17T17:30:00+00:00",
+        "venue": "Red Bull Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388467,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "VfB Stuttgart",
+        "awayTeam": "Union Berlin",
+        "date": "2026-01-18T14:30:00+00:00",
+        "venue": "MHPArena"
+      }
+    },
+    {
+      "apiFootballId": 1388461,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FC Augsburg",
+        "awayTeam": "SC Freiburg",
+        "date": "2026-01-18T16:30:00+00:00",
+        "venue": "WWK Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388477,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FC St. Pauli",
+        "awayTeam": "Hamburger SV",
+        "date": "2026-01-23T19:30:00+00:00",
+        "venue": "Millerntor-Stadion"
+      }
+    },
+    {
+      "apiFootballId": 1388471,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Bayern München",
+        "awayTeam": "FC Augsburg",
+        "date": "2026-01-24T14:30:00+00:00",
+        "venue": "Allianz Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388476,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FSV Mainz 05",
+        "awayTeam": "VfL Wolfsburg",
+        "date": "2026-01-24T14:30:00+00:00",
+        "venue": "Mewa Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388470,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Bayer Leverkusen",
+        "awayTeam": "Werder Bremen",
+        "date": "2026-01-24T14:30:00+00:00",
+        "venue": "BayArena"
+      }
+    },
+    {
+      "apiFootballId": 1388473,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Eintracht Frankfurt",
+        "awayTeam": "1899 Hoffenheim",
+        "date": "2026-01-24T14:30:00+00:00",
+        "venue": "Deutsche Bank Park"
+      }
+    },
+    {
+      "apiFootballId": 1388475,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1. FC Heidenheim",
+        "awayTeam": "RB Leipzig",
+        "date": "2026-01-24T14:30:00+00:00",
+        "venue": "Voith-Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388478,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Union Berlin",
+        "awayTeam": "Borussia Dortmund",
+        "date": "2026-01-24T17:30:00+00:00",
+        "venue": "Stadion An der Alten Försterei"
+      }
+    },
+    {
+      "apiFootballId": 1388472,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Borussia Mönchengladbach",
+        "awayTeam": "VfB Stuttgart",
+        "date": "2026-01-25T14:30:00+00:00",
+        "venue": "Borussia-Park"
+      }
+    },
+    {
+      "apiFootballId": 1388474,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "SC Freiburg",
+        "awayTeam": "1.FC Köln",
+        "date": "2026-01-25T16:30:00+00:00",
+        "venue": "Europa-Park Stadion"
+      }
+    },
+    {
+      "apiFootballId": 1388487,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Werder Bremen",
+        "awayTeam": "Borussia Mönchengladbach",
+        "date": "2026-01-31T14:30:00+00:00",
+        "venue": "Weserstadion"
+      }
+    },
+    {
+      "apiFootballId": 1388480,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Borussia Dortmund",
+        "awayTeam": "1. FC Heidenheim",
+        "date": "2026-01-31T14:30:00+00:00",
+        "venue": "Signal Iduna Park"
+      }
+    },
+    {
+      "apiFootballId": 1388484,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1899 Hoffenheim",
+        "awayTeam": "Union Berlin",
+        "date": "2026-01-31T14:30:00+00:00",
+        "venue": "PreZero Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388481,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Eintracht Frankfurt",
+        "awayTeam": "Bayer Leverkusen",
+        "date": "2026-01-31T14:30:00+00:00",
+        "venue": "Deutsche Bank Park"
+      }
+    },
+    {
+      "apiFootballId": 1388479,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FC Augsburg",
+        "awayTeam": "FC St. Pauli",
+        "date": "2026-01-31T14:30:00+00:00",
+        "venue": "WWK Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388486,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "VfB Stuttgart",
+        "awayTeam": "SC Freiburg",
+        "date": "2026-01-31T14:30:00+00:00",
+        "venue": "MHPArena"
+      }
+    },
+    {
+      "apiFootballId": 1388485,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "RB Leipzig",
+        "awayTeam": "FSV Mainz 05",
+        "date": "2026-01-31T14:30:00+00:00",
+        "venue": "Red Bull Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388483,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Hamburger SV",
+        "awayTeam": "Bayern München",
+        "date": "2026-01-31T14:30:00+00:00",
+        "venue": "Volksparkstadion"
+      }
+    },
+    {
+      "apiFootballId": 1388482,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1.FC Köln",
+        "awayTeam": "VfL Wolfsburg",
+        "date": "2026-01-31T14:30:00+00:00",
+        "venue": "RheinEnergieStadion"
+      }
+    },
+    {
+      "apiFootballId": 1388488,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Bayern München",
+        "awayTeam": "1899 Hoffenheim",
+        "date": "2026-02-07T14:30:00+00:00",
+        "venue": "Allianz Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388491,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "SC Freiburg",
+        "awayTeam": "Werder Bremen",
+        "date": "2026-02-07T14:30:00+00:00",
+        "venue": "Europa-Park Stadion"
+      }
+    },
+    {
+      "apiFootballId": 1388496,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "VfL Wolfsburg",
+        "awayTeam": "Borussia Dortmund",
+        "date": "2026-02-07T14:30:00+00:00",
+        "venue": "Volkswagen Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388489,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Borussia Mönchengladbach",
+        "awayTeam": "Bayer Leverkusen",
+        "date": "2026-02-07T14:30:00+00:00",
+        "venue": "Borussia-Park"
+      }
+    },
+    {
+      "apiFootballId": 1388493,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FSV Mainz 05",
+        "awayTeam": "FC Augsburg",
+        "date": "2026-02-07T14:30:00+00:00",
+        "venue": "Mewa Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388492,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1. FC Heidenheim",
+        "awayTeam": "Hamburger SV",
+        "date": "2026-02-07T14:30:00+00:00",
+        "venue": "Voith-Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388495,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Union Berlin",
+        "awayTeam": "Eintracht Frankfurt",
+        "date": "2026-02-07T14:30:00+00:00",
+        "venue": "Stadion An der Alten Försterei"
+      }
+    },
+    {
+      "apiFootballId": 1388494,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FC St. Pauli",
+        "awayTeam": "VfB Stuttgart",
+        "date": "2026-02-07T14:30:00+00:00",
+        "venue": "Millerntor-Stadion"
+      }
+    },
+    {
+      "apiFootballId": 1388490,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1.FC Köln",
+        "awayTeam": "RB Leipzig",
+        "date": "2026-02-07T14:30:00+00:00",
+        "venue": "RheinEnergieStadion"
+      }
+    },
+    {
+      "apiFootballId": 1388505,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Werder Bremen",
+        "awayTeam": "Bayern München",
+        "date": "2026-02-14T14:30:00+00:00",
+        "venue": "Weserstadion"
+      }
+    },
+    {
+      "apiFootballId": 1388499,
+      "dbMatchId": "6926e33aa3a933930dad470a",
+      "slug": "fsv-mainz-05-vs-borussia-dortmund-2026-02-14",
+      "issues": [
+        {
+          "field": "venue",
+          "json": "Signal Iduna Park (ID: null)",
+          "db": "MEWA ARENA (ID: 11899)"
+        }
+      ],
+      "jsonMatch": {
+        "homeTeam": "Borussia Dortmund",
+        "awayTeam": "FSV Mainz 05",
+        "date": "2026-02-14T14:30:00+00:00",
+        "venue": "Signal Iduna Park"
+      },
+      "dbMatch": {
+        "homeTeam": "Borussia Dortmund",
+        "awayTeam": "FSV Mainz 05",
+        "date": "2026-02-14T14:30:00.000Z",
+        "venue": "MEWA ARENA"
+      }
+    },
+    {
+      "apiFootballId": 1388502,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1899 Hoffenheim",
+        "awayTeam": "SC Freiburg",
+        "date": "2026-02-14T14:30:00+00:00",
+        "venue": "PreZero Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388498,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Bayer Leverkusen",
+        "awayTeam": "FC St. Pauli",
+        "date": "2026-02-14T14:30:00+00:00",
+        "venue": "BayArena"
+      }
+    },
+    {
+      "apiFootballId": 1388500,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Eintracht Frankfurt",
+        "awayTeam": "Borussia Mönchengladbach",
+        "date": "2026-02-14T14:30:00+00:00",
+        "venue": "Deutsche Bank Park"
+      }
+    },
+    {
+      "apiFootballId": 1388497,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FC Augsburg",
+        "awayTeam": "1. FC Heidenheim",
+        "date": "2026-02-14T14:30:00+00:00",
+        "venue": "WWK Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388504,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "VfB Stuttgart",
+        "awayTeam": "1.FC Köln",
+        "date": "2026-02-14T14:30:00+00:00",
+        "venue": "MHPArena"
+      }
+    },
+    {
+      "apiFootballId": 1388503,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "RB Leipzig",
+        "awayTeam": "VfL Wolfsburg",
+        "date": "2026-02-14T14:30:00+00:00",
+        "venue": "Red Bull Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388501,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Hamburger SV",
+        "awayTeam": "Union Berlin",
+        "date": "2026-02-14T14:30:00+00:00",
+        "venue": "Volksparkstadion"
+      }
+    },
+    {
+      "apiFootballId": 1388506,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Bayern München",
+        "awayTeam": "Eintracht Frankfurt",
+        "date": "2026-02-21T14:30:00+00:00",
+        "venue": "Allianz Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388508,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "SC Freiburg",
+        "awayTeam": "Borussia Mönchengladbach",
+        "date": "2026-02-21T14:30:00+00:00",
+        "venue": "Europa-Park Stadion"
+      }
+    },
+    {
+      "apiFootballId": 1388514,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "VfL Wolfsburg",
+        "awayTeam": "FC Augsburg",
+        "date": "2026-02-21T14:30:00+00:00",
+        "venue": "Volkswagen Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388510,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FSV Mainz 05",
+        "awayTeam": "Hamburger SV",
+        "date": "2026-02-21T14:30:00+00:00",
+        "venue": "Mewa Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388511,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "RB Leipzig",
+        "awayTeam": "Borussia Dortmund",
+        "date": "2026-02-21T14:30:00+00:00",
+        "venue": "Red Bull Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388509,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1. FC Heidenheim",
+        "awayTeam": "VfB Stuttgart",
+        "date": "2026-02-21T14:30:00+00:00",
+        "venue": "Voith-Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388513,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Union Berlin",
+        "awayTeam": "Bayer Leverkusen",
+        "date": "2026-02-21T14:30:00+00:00",
+        "venue": "Stadion An der Alten Försterei"
+      }
+    },
+    {
+      "apiFootballId": 1388512,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FC St. Pauli",
+        "awayTeam": "Werder Bremen",
+        "date": "2026-02-21T14:30:00+00:00",
+        "venue": "Millerntor-Stadion"
+      }
+    },
+    {
+      "apiFootballId": 1388507,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1.FC Köln",
+        "awayTeam": "1899 Hoffenheim",
+        "date": "2026-02-21T14:30:00+00:00",
+        "venue": "RheinEnergieStadion"
+      }
+    },
+    {
+      "apiFootballId": 1388523,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Werder Bremen",
+        "awayTeam": "1. FC Heidenheim",
+        "date": "2026-02-28T14:30:00+00:00",
+        "venue": "Weserstadion"
+      }
+    },
+    {
+      "apiFootballId": 1388517,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Borussia Mönchengladbach",
+        "awayTeam": "Union Berlin",
+        "date": "2026-02-28T14:30:00+00:00",
+        "venue": "Borussia-Park"
+      }
+    },
+    {
+      "apiFootballId": 1388518,
+      "dbMatchId": "6926e33ca3a933930dad474a",
+      "slug": "bayern-munich-vs-borussia-dortmund-2026-02-28",
+      "issues": [
+        {
+          "field": "venue",
+          "json": "Signal Iduna Park (ID: null)",
+          "db": "Fußball Arena München (ID: 20732)"
+        }
+      ],
+      "jsonMatch": {
+        "homeTeam": "Borussia Dortmund",
+        "awayTeam": "Bayern München",
+        "date": "2026-02-28T14:30:00+00:00",
+        "venue": "Signal Iduna Park"
+      },
+      "dbMatch": {
+        "homeTeam": "Borussia Dortmund",
+        "awayTeam": "Bayern München",
+        "date": "2026-02-28T14:30:00.000Z",
+        "venue": "Fußball Arena München"
+      }
+    },
+    {
+      "apiFootballId": 1388521,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1899 Hoffenheim",
+        "awayTeam": "FC St. Pauli",
+        "date": "2026-02-28T14:30:00+00:00",
+        "venue": "PreZero Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388516,
+      "dbMatchId": "6926e33ca3a933930dad4746",
+      "slug": "fsv-mainz-05-vs-bayer-leverkusen-2026-02-28",
+      "issues": [
+        {
+          "field": "venue",
+          "json": "BayArena (ID: 699)",
+          "db": "MEWA ARENA (ID: 11899)"
+        }
+      ],
+      "jsonMatch": {
+        "homeTeam": "Bayer Leverkusen",
+        "awayTeam": "FSV Mainz 05",
+        "date": "2026-02-28T14:30:00+00:00",
+        "venue": "BayArena"
+      },
+      "dbMatch": {
+        "homeTeam": "Bayer Leverkusen",
+        "awayTeam": "FSV Mainz 05",
+        "date": "2026-02-28T14:30:00.000Z",
+        "venue": "MEWA ARENA"
+      }
+    },
+    {
+      "apiFootballId": 1388519,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Eintracht Frankfurt",
+        "awayTeam": "SC Freiburg",
+        "date": "2026-02-28T14:30:00+00:00",
+        "venue": "Deutsche Bank Park"
+      }
+    },
+    {
+      "apiFootballId": 1388515,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FC Augsburg",
+        "awayTeam": "1.FC Köln",
+        "date": "2026-02-28T14:30:00+00:00",
+        "venue": "WWK Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388522,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "VfB Stuttgart",
+        "awayTeam": "VfL Wolfsburg",
+        "date": "2026-02-28T14:30:00+00:00",
+        "venue": "MHPArena"
+      }
+    },
+    {
+      "apiFootballId": 1388520,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Hamburger SV",
+        "awayTeam": "RB Leipzig",
+        "date": "2026-02-28T14:30:00+00:00",
+        "venue": "Volksparkstadion"
+      }
+    },
+    {
+      "apiFootballId": 1388524,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Bayern München",
+        "awayTeam": "Borussia Mönchengladbach",
+        "date": "2026-03-07T14:30:00+00:00",
+        "venue": "Allianz Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388526,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "SC Freiburg",
+        "awayTeam": "Bayer Leverkusen",
+        "date": "2026-03-07T14:30:00+00:00",
+        "venue": "Europa-Park Stadion"
+      }
+    },
+    {
+      "apiFootballId": 1388532,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "VfL Wolfsburg",
+        "awayTeam": "Hamburger SV",
+        "date": "2026-03-07T14:30:00+00:00",
+        "venue": "Volkswagen Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388528,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FSV Mainz 05",
+        "awayTeam": "VfB Stuttgart",
+        "date": "2026-03-07T14:30:00+00:00",
+        "venue": "Mewa Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388529,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "RB Leipzig",
+        "awayTeam": "FC Augsburg",
+        "date": "2026-03-07T14:30:00+00:00",
+        "venue": "Red Bull Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388527,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1. FC Heidenheim",
+        "awayTeam": "1899 Hoffenheim",
+        "date": "2026-03-07T14:30:00+00:00",
+        "venue": "Voith-Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388531,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Union Berlin",
+        "awayTeam": "Werder Bremen",
+        "date": "2026-03-07T14:30:00+00:00",
+        "venue": "Stadion An der Alten Försterei"
+      }
+    },
+    {
+      "apiFootballId": 1388530,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FC St. Pauli",
+        "awayTeam": "Eintracht Frankfurt",
+        "date": "2026-03-07T14:30:00+00:00",
+        "venue": "Millerntor-Stadion"
+      }
+    },
+    {
+      "apiFootballId": 1388525,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1.FC Köln",
+        "awayTeam": "Borussia Dortmund",
+        "date": "2026-03-07T14:30:00+00:00",
+        "venue": "RheinEnergieStadion"
+      }
+    },
+    {
+      "apiFootballId": 1388537,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "SC Freiburg",
+        "awayTeam": "Union Berlin",
+        "date": "2026-03-14T14:30:00+00:00",
+        "venue": "Europa-Park Stadion"
+      }
+    },
+    {
+      "apiFootballId": 1388541,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Werder Bremen",
+        "awayTeam": "FSV Mainz 05",
+        "date": "2026-03-14T14:30:00+00:00",
+        "venue": "Weserstadion"
+      }
+    },
+    {
+      "apiFootballId": 1388534,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Borussia Mönchengladbach",
+        "awayTeam": "FC St. Pauli",
+        "date": "2026-03-14T14:30:00+00:00",
+        "venue": "Borussia-Park"
+      }
+    },
+    {
+      "apiFootballId": 1388535,
+      "dbMatchId": "6926e33ea3a933930dad4782",
+      "slug": "fc-augsburg-vs-borussia-dortmund-2026-03-14",
+      "issues": [
+        {
+          "field": "venue",
+          "json": "Signal Iduna Park (ID: null)",
+          "db": "WWK Arena (ID: 698)"
+        }
+      ],
+      "jsonMatch": {
+        "homeTeam": "Borussia Dortmund",
+        "awayTeam": "FC Augsburg",
+        "date": "2026-03-14T14:30:00+00:00",
+        "venue": "Signal Iduna Park"
+      },
+      "dbMatch": {
+        "homeTeam": "Borussia Dortmund",
+        "awayTeam": "FC Augsburg",
+        "date": "2026-03-14T14:30:00.000Z",
+        "venue": "WWK Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388539,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1899 Hoffenheim",
+        "awayTeam": "VfL Wolfsburg",
+        "date": "2026-03-14T14:30:00+00:00",
+        "venue": "PreZero Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388533,
+      "dbMatchId": "6926e33fa3a933930dad478e",
+      "slug": "bayern-munich-vs-bayer-leverkusen-2026-03-14",
+      "issues": [
+        {
+          "field": "venue",
+          "json": "BayArena (ID: 699)",
+          "db": "Fußball Arena München (ID: 20732)"
+        }
+      ],
+      "jsonMatch": {
+        "homeTeam": "Bayer Leverkusen",
+        "awayTeam": "Bayern München",
+        "date": "2026-03-14T14:30:00+00:00",
+        "venue": "BayArena"
+      },
+      "dbMatch": {
+        "homeTeam": "Bayer Leverkusen",
+        "awayTeam": "Bayern München",
+        "date": "2026-03-14T14:30:00.000Z",
+        "venue": "Fußball Arena München"
+      }
+    },
+    {
+      "apiFootballId": 1388536,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Eintracht Frankfurt",
+        "awayTeam": "1. FC Heidenheim",
+        "date": "2026-03-14T14:30:00+00:00",
+        "venue": "Deutsche Bank Park"
+      }
+    },
+    {
+      "apiFootballId": 1388540,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "VfB Stuttgart",
+        "awayTeam": "RB Leipzig",
+        "date": "2026-03-14T14:30:00+00:00",
+        "venue": "MHPArena"
+      }
+    },
+    {
+      "apiFootballId": 1388538,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Hamburger SV",
+        "awayTeam": "1.FC Köln",
+        "date": "2026-03-14T14:30:00+00:00",
+        "venue": "Volksparkstadion"
+      }
+    },
+    {
+      "apiFootballId": 1388543,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Bayern München",
+        "awayTeam": "Union Berlin",
+        "date": "2026-03-21T14:30:00+00:00",
+        "venue": "Allianz Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388550,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "VfL Wolfsburg",
+        "awayTeam": "Werder Bremen",
+        "date": "2026-03-21T14:30:00+00:00",
+        "venue": "Volkswagen Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388547,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FSV Mainz 05",
+        "awayTeam": "Eintracht Frankfurt",
+        "date": "2026-03-21T14:30:00+00:00",
+        "venue": "Mewa Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388544,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Borussia Dortmund",
+        "awayTeam": "Hamburger SV",
+        "date": "2026-03-21T14:30:00+00:00",
+        "venue": "Signal Iduna Park"
+      }
+    },
+    {
+      "apiFootballId": 1388542,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FC Augsburg",
+        "awayTeam": "VfB Stuttgart",
+        "date": "2026-03-21T14:30:00+00:00",
+        "venue": "WWK Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388548,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "RB Leipzig",
+        "awayTeam": "1899 Hoffenheim",
+        "date": "2026-03-21T14:30:00+00:00",
+        "venue": "Red Bull Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388546,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1. FC Heidenheim",
+        "awayTeam": "Bayer Leverkusen",
+        "date": "2026-03-21T14:30:00+00:00",
+        "venue": "Voith-Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388549,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FC St. Pauli",
+        "awayTeam": "SC Freiburg",
+        "date": "2026-03-21T14:30:00+00:00",
+        "venue": "Millerntor-Stadion"
+      }
+    },
+    {
+      "apiFootballId": 1388545,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1.FC Köln",
+        "awayTeam": "Borussia Mönchengladbach",
+        "date": "2026-03-21T14:30:00+00:00",
+        "venue": "RheinEnergieStadion"
+      }
+    },
+    {
+      "apiFootballId": 1388554,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "SC Freiburg",
+        "awayTeam": "Bayern München",
+        "date": "2026-04-04T13:30:00+00:00",
+        "venue": "Europa-Park Stadion"
+      }
+    },
+    {
+      "apiFootballId": 1388559,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Werder Bremen",
+        "awayTeam": "RB Leipzig",
+        "date": "2026-04-04T13:30:00+00:00",
+        "venue": "Weserstadion"
+      }
+    },
+    {
+      "apiFootballId": 1388552,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Borussia Mönchengladbach",
+        "awayTeam": "1. FC Heidenheim",
+        "date": "2026-04-04T13:30:00+00:00",
+        "venue": "Borussia-Park"
+      }
+    },
+    {
+      "apiFootballId": 1388556,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1899 Hoffenheim",
+        "awayTeam": "FSV Mainz 05",
+        "date": "2026-04-04T13:30:00+00:00",
+        "venue": "PreZero Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388551,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Bayer Leverkusen",
+        "awayTeam": "VfL Wolfsburg",
+        "date": "2026-04-04T13:30:00+00:00",
+        "venue": "BayArena"
+      }
+    },
+    {
+      "apiFootballId": 1388553,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Eintracht Frankfurt",
+        "awayTeam": "1.FC Köln",
+        "date": "2026-04-04T13:30:00+00:00",
+        "venue": "Deutsche Bank Park"
+      }
+    },
+    {
+      "apiFootballId": 1388557,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "VfB Stuttgart",
+        "awayTeam": "Borussia Dortmund",
+        "date": "2026-04-04T13:30:00+00:00",
+        "venue": "MHPArena"
+      }
+    },
+    {
+      "apiFootballId": 1388555,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Hamburger SV",
+        "awayTeam": "FC Augsburg",
+        "date": "2026-04-04T13:30:00+00:00",
+        "venue": "Volksparkstadion"
+      }
+    },
+    {
+      "apiFootballId": 1388558,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Union Berlin",
+        "awayTeam": "FC St. Pauli",
+        "date": "2026-04-04T13:30:00+00:00",
+        "venue": "Stadion An der Alten Försterei"
+      }
+    },
+    {
+      "apiFootballId": 1388568,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "VfL Wolfsburg",
+        "awayTeam": "Eintracht Frankfurt",
+        "date": "2026-04-11T13:30:00+00:00",
+        "venue": "Volkswagen Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388564,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FSV Mainz 05",
+        "awayTeam": "SC Freiburg",
+        "date": "2026-04-11T13:30:00+00:00",
+        "venue": "Mewa Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388561,
+      "dbMatchId": "6926e342a3a933930dad47fa",
+      "slug": "bayer-leverkusen-vs-borussia-dortmund-2026-04-11",
+      "issues": [
+        {
+          "field": "venue",
+          "json": "Signal Iduna Park (ID: null)",
+          "db": "BayArena (ID: 699)"
+        }
+      ],
+      "jsonMatch": {
+        "homeTeam": "Borussia Dortmund",
+        "awayTeam": "Bayer Leverkusen",
+        "date": "2026-04-11T13:30:00+00:00",
+        "venue": "Signal Iduna Park"
+      },
+      "dbMatch": {
+        "homeTeam": "Borussia Dortmund",
+        "awayTeam": "Bayer Leverkusen",
+        "date": "2026-04-11T13:30:00.000Z",
+        "venue": "BayArena"
+      }
+    },
+    {
+      "apiFootballId": 1388560,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FC Augsburg",
+        "awayTeam": "1899 Hoffenheim",
+        "date": "2026-04-11T13:30:00+00:00",
+        "venue": "WWK Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388567,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "VfB Stuttgart",
+        "awayTeam": "Hamburger SV",
+        "date": "2026-04-11T13:30:00+00:00",
+        "venue": "MHPArena"
+      }
+    },
+    {
+      "apiFootballId": 1388565,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "RB Leipzig",
+        "awayTeam": "Borussia Mönchengladbach",
+        "date": "2026-04-11T13:30:00+00:00",
+        "venue": "Red Bull Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388563,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1. FC Heidenheim",
+        "awayTeam": "Union Berlin",
+        "date": "2026-04-11T13:30:00+00:00",
+        "venue": "Voith-Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388566,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FC St. Pauli",
+        "awayTeam": "Bayern München",
+        "date": "2026-04-11T13:30:00+00:00",
+        "venue": "Millerntor-Stadion"
+      }
+    },
+    {
+      "apiFootballId": 1388562,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1.FC Köln",
+        "awayTeam": "Werder Bremen",
+        "date": "2026-04-11T13:30:00+00:00",
+        "venue": "RheinEnergieStadion"
+      }
+    },
+    {
+      "apiFootballId": 1388570,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Bayern München",
+        "awayTeam": "VfB Stuttgart",
+        "date": "2026-04-18T13:30:00+00:00",
+        "venue": "Allianz Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388573,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "SC Freiburg",
+        "awayTeam": "1. FC Heidenheim",
+        "date": "2026-04-18T13:30:00+00:00",
+        "venue": "Europa-Park Stadion"
+      }
+    },
+    {
+      "apiFootballId": 1388577,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Werder Bremen",
+        "awayTeam": "Hamburger SV",
+        "date": "2026-04-18T13:30:00+00:00",
+        "venue": "Weserstadion"
+      }
+    },
+    {
+      "apiFootballId": 1388571,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Borussia Mönchengladbach",
+        "awayTeam": "FSV Mainz 05",
+        "date": "2026-04-18T13:30:00+00:00",
+        "venue": "Borussia-Park"
+      }
+    },
+    {
+      "apiFootballId": 1388574,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1899 Hoffenheim",
+        "awayTeam": "Borussia Dortmund",
+        "date": "2026-04-18T13:30:00+00:00",
+        "venue": "PreZero Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388569,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Bayer Leverkusen",
+        "awayTeam": "FC Augsburg",
+        "date": "2026-04-18T13:30:00+00:00",
+        "venue": "BayArena"
+      }
+    },
+    {
+      "apiFootballId": 1388572,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Eintracht Frankfurt",
+        "awayTeam": "RB Leipzig",
+        "date": "2026-04-18T13:30:00+00:00",
+        "venue": "Deutsche Bank Park"
+      }
+    },
+    {
+      "apiFootballId": 1388576,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Union Berlin",
+        "awayTeam": "VfL Wolfsburg",
+        "date": "2026-04-18T13:30:00+00:00",
+        "venue": "Stadion An der Alten Försterei"
+      }
+    },
+    {
+      "apiFootballId": 1388575,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FC St. Pauli",
+        "awayTeam": "1.FC Köln",
+        "date": "2026-04-18T13:30:00+00:00",
+        "venue": "Millerntor-Stadion"
+      }
+    },
+    {
+      "apiFootballId": 1388586,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "VfL Wolfsburg",
+        "awayTeam": "Borussia Mönchengladbach",
+        "date": "2026-04-25T13:30:00+00:00",
+        "venue": "Volkswagen Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388583,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FSV Mainz 05",
+        "awayTeam": "Bayern München",
+        "date": "2026-04-25T13:30:00+00:00",
+        "venue": "Mewa Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388579,
+      "dbMatchId": "6926e345a3a933930dad4842",
+      "slug": "sc-freiburg-vs-borussia-dortmund-2026-04-25",
+      "issues": [
+        {
+          "field": "venue",
+          "json": "Signal Iduna Park (ID: null)",
+          "db": "Europa-Park Stadion (ID: 12717)"
+        }
+      ],
+      "jsonMatch": {
+        "homeTeam": "Borussia Dortmund",
+        "awayTeam": "SC Freiburg",
+        "date": "2026-04-25T13:30:00+00:00",
+        "venue": "Signal Iduna Park"
+      },
+      "dbMatch": {
+        "homeTeam": "Borussia Dortmund",
+        "awayTeam": "SC Freiburg",
+        "date": "2026-04-25T13:30:00.000Z",
+        "venue": "Europa-Park Stadion"
+      }
+    },
+    {
+      "apiFootballId": 1388578,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FC Augsburg",
+        "awayTeam": "Eintracht Frankfurt",
+        "date": "2026-04-25T13:30:00+00:00",
+        "venue": "WWK Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388585,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "VfB Stuttgart",
+        "awayTeam": "Werder Bremen",
+        "date": "2026-04-25T13:30:00+00:00",
+        "venue": "MHPArena"
+      }
+    },
+    {
+      "apiFootballId": 1388584,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "RB Leipzig",
+        "awayTeam": "Union Berlin",
+        "date": "2026-04-25T13:30:00+00:00",
+        "venue": "Red Bull Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388581,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Hamburger SV",
+        "awayTeam": "1899 Hoffenheim",
+        "date": "2026-04-25T13:30:00+00:00",
+        "venue": "Volksparkstadion"
+      }
+    },
+    {
+      "apiFootballId": 1388582,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1. FC Heidenheim",
+        "awayTeam": "FC St. Pauli",
+        "date": "2026-04-25T13:30:00+00:00",
+        "venue": "Voith-Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388580,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1.FC Köln",
+        "awayTeam": "Bayer Leverkusen",
+        "date": "2026-04-25T13:30:00+00:00",
+        "venue": "RheinEnergieStadion"
+      }
+    },
+    {
+      "apiFootballId": 1388588,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Bayern München",
+        "awayTeam": "1. FC Heidenheim",
+        "date": "2026-05-02T13:30:00+00:00",
+        "venue": "Allianz Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388591,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "SC Freiburg",
+        "awayTeam": "VfL Wolfsburg",
+        "date": "2026-05-02T13:30:00+00:00",
+        "venue": "Europa-Park Stadion"
+      }
+    },
+    {
+      "apiFootballId": 1388595,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Werder Bremen",
+        "awayTeam": "FC Augsburg",
+        "date": "2026-05-02T13:30:00+00:00",
+        "venue": "Weserstadion"
+      }
+    },
+    {
+      "apiFootballId": 1388589,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Borussia Mönchengladbach",
+        "awayTeam": "Borussia Dortmund",
+        "date": "2026-05-02T13:30:00+00:00",
+        "venue": "Borussia-Park"
+      }
+    },
+    {
+      "apiFootballId": 1388592,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1899 Hoffenheim",
+        "awayTeam": "VfB Stuttgart",
+        "date": "2026-05-02T13:30:00+00:00",
+        "venue": "PreZero Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388587,
+      "dbMatchId": "6926e345a3a933930dad4856",
+      "slug": "rb-leipzig-vs-bayer-leverkusen-2026-05-02",
+      "issues": [
+        {
+          "field": "venue",
+          "json": "BayArena (ID: 699)",
+          "db": "Leipzig Stadium (ID: 20737)"
+        }
+      ],
+      "jsonMatch": {
+        "homeTeam": "Bayer Leverkusen",
+        "awayTeam": "RB Leipzig",
+        "date": "2026-05-02T13:30:00+00:00",
+        "venue": "BayArena"
+      },
+      "dbMatch": {
+        "homeTeam": "Bayer Leverkusen",
+        "awayTeam": "RB Leipzig",
+        "date": "2026-05-02T13:30:00.000Z",
+        "venue": "Leipzig Stadium"
+      }
+    },
+    {
+      "apiFootballId": 1388590,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Eintracht Frankfurt",
+        "awayTeam": "Hamburger SV",
+        "date": "2026-05-02T13:30:00+00:00",
+        "venue": "Deutsche Bank Park"
+      }
+    },
+    {
+      "apiFootballId": 1388594,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Union Berlin",
+        "awayTeam": "1.FC Köln",
+        "date": "2026-05-02T13:30:00+00:00",
+        "venue": "Stadion An der Alten Försterei"
+      }
+    },
+    {
+      "apiFootballId": 1388593,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FC St. Pauli",
+        "awayTeam": "FSV Mainz 05",
+        "date": "2026-05-02T13:30:00+00:00",
+        "venue": "Millerntor-Stadion"
+      }
+    },
+    {
+      "apiFootballId": 1388604,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "VfL Wolfsburg",
+        "awayTeam": "Bayern München",
+        "date": "2026-05-09T13:30:00+00:00",
+        "venue": "Volkswagen Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388601,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FSV Mainz 05",
+        "awayTeam": "Union Berlin",
+        "date": "2026-05-09T13:30:00+00:00",
+        "venue": "Mewa Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388597,
+      "dbMatchId": "6926e347a3a933930dad4886",
+      "slug": "eintracht-frankfurt-vs-borussia-dortmund-2026-05-09",
+      "issues": [
+        {
+          "field": "venue",
+          "json": "Signal Iduna Park (ID: null)",
+          "db": "Frankfurt Arena (ID: 20734)"
+        }
+      ],
+      "jsonMatch": {
+        "homeTeam": "Borussia Dortmund",
+        "awayTeam": "Eintracht Frankfurt",
+        "date": "2026-05-09T13:30:00+00:00",
+        "venue": "Signal Iduna Park"
+      },
+      "dbMatch": {
+        "homeTeam": "Borussia Dortmund",
+        "awayTeam": "Eintracht Frankfurt",
+        "date": "2026-05-09T13:30:00.000Z",
+        "venue": "Frankfurt Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388600,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1899 Hoffenheim",
+        "awayTeam": "Werder Bremen",
+        "date": "2026-05-09T13:30:00+00:00",
+        "venue": "PreZero Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388596,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FC Augsburg",
+        "awayTeam": "Borussia Mönchengladbach",
+        "date": "2026-05-09T13:30:00+00:00",
+        "venue": "WWK Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388603,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "VfB Stuttgart",
+        "awayTeam": "Bayer Leverkusen",
+        "date": "2026-05-09T13:30:00+00:00",
+        "venue": "MHPArena"
+      }
+    },
+    {
+      "apiFootballId": 1388602,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "RB Leipzig",
+        "awayTeam": "FC St. Pauli",
+        "date": "2026-05-09T13:30:00+00:00",
+        "venue": "Red Bull Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388599,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Hamburger SV",
+        "awayTeam": "SC Freiburg",
+        "date": "2026-05-09T13:30:00+00:00",
+        "venue": "Volksparkstadion"
+      }
+    },
+    {
+      "apiFootballId": 1388598,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1.FC Köln",
+        "awayTeam": "1. FC Heidenheim",
+        "date": "2026-05-09T13:30:00+00:00",
+        "venue": "RheinEnergieStadion"
+      }
+    },
+    {
+      "apiFootballId": 1388606,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Bayern München",
+        "awayTeam": "1.FC Köln",
+        "date": "2026-05-16T13:30:00+00:00",
+        "venue": "Allianz Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388609,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "SC Freiburg",
+        "awayTeam": "RB Leipzig",
+        "date": "2026-05-16T13:30:00+00:00",
+        "venue": "Europa-Park Stadion"
+      }
+    },
+    {
+      "apiFootballId": 1388613,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Werder Bremen",
+        "awayTeam": "Borussia Dortmund",
+        "date": "2026-05-16T13:30:00+00:00",
+        "venue": "Weserstadion"
+      }
+    },
+    {
+      "apiFootballId": 1388607,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Borussia Mönchengladbach",
+        "awayTeam": "1899 Hoffenheim",
+        "date": "2026-05-16T13:30:00+00:00",
+        "venue": "Borussia-Park"
+      }
+    },
+    {
+      "apiFootballId": 1388605,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Bayer Leverkusen",
+        "awayTeam": "Hamburger SV",
+        "date": "2026-05-16T13:30:00+00:00",
+        "venue": "BayArena"
+      }
+    },
+    {
+      "apiFootballId": 1388608,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Eintracht Frankfurt",
+        "awayTeam": "VfB Stuttgart",
+        "date": "2026-05-16T13:30:00+00:00",
+        "venue": "Deutsche Bank Park"
+      }
+    },
+    {
+      "apiFootballId": 1388610,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "1. FC Heidenheim",
+        "awayTeam": "FSV Mainz 05",
+        "date": "2026-05-16T13:30:00+00:00",
+        "venue": "Voith-Arena"
+      }
+    },
+    {
+      "apiFootballId": 1388612,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "Union Berlin",
+        "awayTeam": "FC Augsburg",
+        "date": "2026-05-16T13:30:00+00:00",
+        "venue": "Stadion An der Alten Försterei"
+      }
+    },
+    {
+      "apiFootballId": 1388611,
+      "issue": "NOT_FOUND",
+      "jsonMatch": {
+        "homeTeam": "FC St. Pauli",
+        "awayTeam": "VfL Wolfsburg",
+        "date": "2026-05-16T13:30:00+00:00",
+        "venue": "Millerntor-Stadion"
+      }
+    }
+  ]
+}

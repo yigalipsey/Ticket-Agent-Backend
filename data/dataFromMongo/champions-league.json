@@ -1,0 +1,182 @@
+[
+  {
+    "_id": "68e25b370d7b31dba56dde86",
+    "name": "אולימפיאקוס פיראוס",
+    "slug": "olympiakos-piraeus"
+  },
+  {
+    "_id": "68e25b350d7b31dba56dde54",
+    "name": "אוניון סן גילואז",
+    "slug": "union-st-gilloise"
+  },
+  {
+    "_id": "68e25b360d7b31dba56dde60",
+    "name": "אטאלנטה",
+    "slug": "atalanta"
+  },
+  {
+    "_id": "68e25b340d7b31dba56dde42",
+    "name": "איינטרכט פרנקפורט",
+    "slug": "eintracht-frankfurt"
+  },
+  {
+    "_id": "68e25b390d7b31dba56ddea6",
+    "name": "אייקס",
+    "slug": "ajax"
+  },
+  {
+    "_id": "68e25b320d7b31dba56dde14",
+    "name": "אינטר",
+    "slug": "inter"
+  },
+  {
+    "_id": "68da7a5d8c51bd5b579b211a",
+    "name": "ארסנל",
+    "slug": "arsenal"
+  },
+  {
+    "_id": "68da7a5a8c51bd5b579b20ba",
+    "name": "אתלטיק בילבאו",
+    "slug": "athletic-bilbao"
+  },
+  {
+    "_id": "68da7a5a8c51bd5b579b20b6",
+    "name": "אתלטיקו מדריד",
+    "slug": "atletico-madrid"
+  },
+  {
+    "_id": "68e25b360d7b31dba56dde72",
+    "name": "באייר לברקוזן",
+    "slug": "bayer-leverkusen"
+  },
+  {
+    "_id": "68e25b320d7b31dba56dde03",
+    "name": "באיירן מינכן",
+    "slug": "bayern-munich"
+  },
+  {
+    "_id": "68e25b360d7b31dba56dde6c",
+    "name": "בודו/גלימט",
+    "slug": "bodoglimt"
+  },
+  {
+    "_id": "68e25b330d7b31dba56dde22",
+    "name": "בורוסיה דורטמונד",
+    "slug": "borussia-dortmund"
+  },
+  {
+    "_id": "68e25b380d7b31dba56dde9e",
+    "name": "בנפיקה",
+    "slug": "benfica"
+  },
+  {
+    "_id": "68da7a5a8c51bd5b579b20ae",
+    "name": "ברצלונה",
+    "slug": "barcelona"
+  },
+  {
+    "_id": "68e25b350d7b31dba56dde5a",
+    "name": "גלאטסראיי",
+    "slug": "galatasaray"
+  },
+  {
+    "_id": "68da7a5a8c51bd5b579b20c2",
+    "name": "ויאריאל",
+    "slug": "villarreal"
+  },
+  {
+    "_id": "68da7a5e8c51bd5b579b2126",
+    "name": "טוטנהאם",
+    "slug": "tottenham"
+  },
+  {
+    "_id": "68e25b360d7b31dba56dde66",
+    "name": "יובנטוס",
+    "slug": "juventus"
+  },
+  {
+    "_id": "68da7a5d8c51bd5b579b2116",
+    "name": "ליברפול",
+    "slug": "liverpool"
+  },
+  {
+    "_id": "68e25b380d7b31dba56dde8c",
+    "name": "מונקو",
+    "slug": "monaco"
+  },
+  {
+    "_id": "68da7a5e8c51bd5b579b2132",
+    "name": "מנצ'סטר סיטי",
+    "slug": "manchester-city"
+  },
+  {
+    "_id": "68e25b340d7b31dba56dde30",
+    "name": "מרסיי",
+    "slug": "marseille"
+  },
+  {
+    "_id": "68e25b350d7b31dba56dde4e",
+    "name": "נאפולי",
+    "slug": "napoli"
+  },
+  {
+    "_id": "68da7a5d8c51bd5b579b2106",
+    "name": "ניוקאסל",
+    "slug": "newcastle"
+  },
+  {
+    "_id": "68e25b380d7b31dba56dde92",
+    "name": "סלאביה פראג",
+    "slug": "slavia-praha"
+  },
+  {
+    "_id": "68e25b340d7b31dba56dde3c",
+    "name": "ספורטינג ליסבון",
+    "slug": "sporting-cp"
+  },
+  {
+    "_id": "68e25b370d7b31dba56dde7a",
+    "name": "פ.ס.ו איינדהובן",
+    "slug": "psv-eindhoven"
+  },
+  {
+    "_id": "68e25b380d7b31dba56dde98",
+    "name": "פאפוס",
+    "slug": "pafos"
+  },
+  {
+    "_id": "68e25b320d7b31dba56dde0e",
+    "name": "פאריס סן ז'רמן",
+    "slug": "paris-saint-germain"
+  },
+  {
+    "_id": "68da7a5e8c51bd5b579b212e",
+    "name": "צ'לסי",
+    "slug": "chelsea"
+  },
+  {
+    "_id": "68e25b370d7b31dba56dde80",
+    "name": "קופנהגן",
+    "slug": "fc-copenhagen"
+  },
+  {
+    "_id": "68e25b390d7b31dba56ddeac",
+    "name": "קייראט אלמטי",
+    "slug": "kairat-almaty"
+  },
+  {
+    "_id": "68e25b340d7b31dba56dde36",
+    "name": "קלאב ברוז'",
+    "slug": "club-brugge-kv"
+  },
+  {
+    "_id": "68e25b330d7b31dba56dde1c",
+    "name": "קרבאג",
+    "slug": "qarabag"
+  },
+  {
+    "_id": "68da7a5b8c51bd5b579b20d6",
+    "name": "ריאל מדריד",
+    "slug": "real-madrid"
+  }
+]

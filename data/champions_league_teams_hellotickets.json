@@ -1,0 +1,564 @@
+{
+  "fetched_at": "2025-11-25T13:32:50.522Z",
+  "teams": {
+    "total": 19,
+    "list": [
+      {
+        "helloTicketsId": "273",
+        "helloTicketsName": "FC Bayern Munich",
+        "matches_count": 1
+      },
+      {
+        "helloTicketsId": "12177",
+        "helloTicketsName": "Club Brugge KV",
+        "matches_count": 1
+      },
+      {
+        "helloTicketsId": "277",
+        "helloTicketsName": "FC Inter Milan",
+        "matches_count": 2
+      },
+      {
+        "helloTicketsId": "29389",
+        "helloTicketsName": "Kairat Almaty",
+        "matches_count": 1
+      },
+      {
+        "helloTicketsId": "272",
+        "helloTicketsName": "FC Barcelona",
+        "matches_count": 1
+      },
+      {
+        "helloTicketsId": "82",
+        "helloTicketsName": "Atalanta BC",
+        "matches_count": 1
+      },
+      {
+        "helloTicketsId": "28531",
+        "helloTicketsName": "Pafos FC",
+        "matches_count": 1
+      },
+      {
+        "helloTicketsId": "660",
+        "helloTicketsName": "SSC Napoli",
+        "matches_count": 1
+      },
+      {
+        "helloTicketsId": "18756",
+        "helloTicketsName": "PSV Eindhoven",
+        "matches_count": 2
+      },
+      {
+        "helloTicketsId": "537",
+        "helloTicketsName": "Olympique de Marseille",
+        "matches_count": 2
+      },
+      {
+        "helloTicketsId": "29382",
+        "helloTicketsName": "Qarabağ FK",
+        "matches_count": 1
+      },
+      {
+        "helloTicketsId": "105",
+        "helloTicketsName": "Bayer 04 Leverkusen",
+        "matches_count": 2
+      },
+      {
+        "helloTicketsId": "598",
+        "helloTicketsName": "Real Madrid CF",
+        "matches_count": 1
+      },
+      {
+        "helloTicketsId": "12078",
+        "helloTicketsName": "FK Bodø/Glimt",
+        "matches_count": 1
+      },
+      {
+        "helloTicketsId": "17993",
+        "helloTicketsName": "Galatasaray SK",
+        "matches_count": 1
+      },
+      {
+        "helloTicketsId": "584",
+        "helloTicketsName": "Paris Saint-Germain FC",
+        "matches_count": 2
+      },
+      {
+        "helloTicketsId": "28715",
+        "helloTicketsName": "SK Slavia Prague",
+        "matches_count": 1
+      },
+      {
+        "helloTicketsId": "123",
+        "helloTicketsName": "Borussia Dortmund",
+        "matches_count": 1
+      },
+      {
+        "helloTicketsId": "251",
+        "helloTicketsName": "Eintracht Frankfurt",
+        "matches_count": 1
+      }
+    ]
+  },
+  "matches": {
+    "total": 24,
+    "list": [
+      {
+        "htPerformanceId": "2293404",
+        "eventName": "Arsenal FC vs. FC Bayern Munich - Champions League 2025-2026",
+        "eventDate": "2025-11-26",
+        "eventDateTime": "2025-11-26T20:00:00Z",
+        "homeTeam": {
+          "name": "Arsenal FC",
+          "helloTicketsId": "1835",
+          "slug": "arsenal"
+        },
+        "awayTeam": {
+          "name": "FC Bayern Munich",
+          "helloTicketsId": "273"
+        },
+        "venue": {
+          "name": "Emirates Stadium",
+          "city": null
+        }
+      },
+      {
+        "htPerformanceId": "2294131",
+        "eventName": "Club Brugge vs. Arsenal FC - Champions League 2025-2026",
+        "eventDate": "2025-12-10",
+        "eventDateTime": "2025-12-10T20:00:00Z",
+        "homeTeam": {
+          "name": "Arsenal FC",
+          "helloTicketsId": "1835",
+          "slug": "arsenal"
+        },
+        "awayTeam": {
+          "name": "Club Brugge KV",
+          "helloTicketsId": "12177"
+        },
+        "venue": {
+          "name": "Jan Breydelstadion",
+          "city": null
+        }
+      },
+      {
+        "htPerformanceId": "2294110",
+        "eventName": "Inter Milan vs. Arsenal FC - Champions League 2025-2026",
+        "eventDate": "2026-01-20",
+        "eventDateTime": "2026-01-20T20:00:00Z",
+        "homeTeam": {
+          "name": "Arsenal FC",
+          "helloTicketsId": "1835",
+          "slug": "arsenal"
+        },
+        "awayTeam": {
+          "name": "FC Inter Milan",
+          "helloTicketsId": "277"
+        },
+        "venue": {
+          "name": "Stadio San Siro",
+          "city": null
+        }
+      },
+      {
+        "htPerformanceId": "2294109",
+        "eventName": "Inter Milan vs. Liverpool FC - Champions League 2025-2026",
+        "eventDate": "2025-12-09",
+        "eventDateTime": "2025-12-09T20:00:00Z",
+        "homeTeam": {
+          "name": "Liverpool FC",
+          "helloTicketsId": "422",
+          "slug": "liverpool"
+        },
+        "awayTeam": {
+          "name": "FC Inter Milan",
+          "helloTicketsId": "277"
+        },
+        "venue": {
+          "name": "Stadio San Siro",
+          "city": null
+        }
+      },
+      {
+        "htPerformanceId": "2293403",
+        "eventName": "Arsenal FC vs. FC Kairat - Champions League 2025-2026",
+        "eventDate": "2026-01-28",
+        "eventDateTime": "2026-01-28T20:00:00Z",
+        "homeTeam": {
+          "name": "Arsenal FC",
+          "helloTicketsId": "1835",
+          "slug": "arsenal"
+        },
+        "awayTeam": {
+          "name": "Kairat Almaty",
+          "helloTicketsId": "29389"
+        },
+        "venue": {
+          "name": "Emirates Stadium",
+          "city": null
+        }
+      },
+      {
+        "htPerformanceId": "2293388",
+        "eventName": "Chelsea FC vs. FC Barcelona - Champions League 2025-2026",
+        "eventDate": "2025-11-25",
+        "eventDateTime": "2025-11-25T20:00:00Z",
+        "homeTeam": {
+          "name": "Chelsea FC",
+          "helloTicketsId": "1836",
+          "slug": "chelsea"
+        },
+        "awayTeam": {
+          "name": "FC Barcelona",
+          "helloTicketsId": "272"
+        },
+        "venue": {
+          "name": "Stamford Bridge",
+          "city": null
+        }
+      },
+      {
+        "htPerformanceId": "2293400",
+        "eventName": "Atalanta BC vs. Chelsea FC - Champions League 2025-2026",
+        "eventDate": "2025-12-09",
+        "eventDateTime": "2025-12-09T20:00:00Z",
+        "homeTeam": {
+          "name": "Chelsea FC",
+          "helloTicketsId": "1836",
+          "slug": "chelsea"
+        },
+        "awayTeam": {
+          "name": "Atalanta BC",
+          "helloTicketsId": "82"
+        },
+        "venue": {
+          "name": "Gewiss Stadium",
+          "city": null
+        }
+      },
+      {
+        "htPerformanceId": "2293387",
+        "eventName": "Chelsea FC vs. Pafos FC - Champions League 2025-2026",
+        "eventDate": "2026-01-21",
+        "eventDateTime": "2026-01-21T20:00:00Z",
+        "homeTeam": {
+          "name": "Chelsea FC",
+          "helloTicketsId": "1836",
+          "slug": "chelsea"
+        },
+        "awayTeam": {
+          "name": "Pafos FC",
+          "helloTicketsId": "28531"
+        },
+        "venue": {
+          "name": "Stamford Bridge",
+          "city": null
+        }
+      },
+      {
+        "htPerformanceId": "2293310",
+        "eventName": "SSC Napoli vs. Chelsea FC - Champions League 2025-2026",
+        "eventDate": "2026-01-28",
+        "eventDateTime": "2026-01-28T20:00:00Z",
+        "homeTeam": {
+          "name": "Chelsea FC",
+          "helloTicketsId": "1836",
+          "slug": "chelsea"
+        },
+        "awayTeam": {
+          "name": "SSC Napoli",
+          "helloTicketsId": "660"
+        },
+        "venue": {
+          "name": "Stadio Diego Armando Maradona",
+          "city": null
+        }
+      },
+      {
+        "htPerformanceId": "2293351",
+        "eventName": "Liverpool FC vs. PSV Eindhoven - Champions League 2025-2026",
+        "eventDate": "2025-11-26",
+        "eventDateTime": "2025-11-26T20:00:00Z",
+        "homeTeam": {
+          "name": "Liverpool FC",
+          "helloTicketsId": "422",
+          "slug": "liverpool"
+        },
+        "awayTeam": {
+          "name": "PSV Eindhoven",
+          "helloTicketsId": "18756"
+        },
+        "venue": {
+          "name": "Anfield Stadium",
+          "city": null
+        }
+      },
+      {
+        "htPerformanceId": "2293342",
+        "eventName": "Newcastle United FC vs. PSV Eindhoven - Champions League 2025-2026",
+        "eventDate": "2026-01-21",
+        "eventDateTime": "2026-01-21T20:00:00Z",
+        "homeTeam": {
+          "name": "Newcastle United FC",
+          "helloTicketsId": "520",
+          "slug": "newcastle"
+        },
+        "awayTeam": {
+          "name": "PSV Eindhoven",
+          "helloTicketsId": "18756"
+        },
+        "venue": {
+          "name": "St. James' Park",
+          "city": null
+        }
+      },
+      {
+        "htPerformanceId": "2293335",
+        "eventName": "Olympique de Marseille vs. Liverpool FC - Champions League 2025-2026",
+        "eventDate": "2026-01-21",
+        "eventDateTime": "2026-01-21T20:00:00Z",
+        "homeTeam": {
+          "name": "Liverpool FC",
+          "helloTicketsId": "422",
+          "slug": "liverpool"
+        },
+        "awayTeam": {
+          "name": "Olympique de Marseille",
+          "helloTicketsId": "537"
+        },
+        "venue": {
+          "name": "Stade Vélodrome",
+          "city": null
+        }
+      },
+      {
+        "htPerformanceId": "2293334",
+        "eventName": "Olympique de Marseille vs. Newcastle United FC - Champions League 2025-2026",
+        "eventDate": "2025-11-25",
+        "eventDateTime": "2025-11-25T20:00:00Z",
+        "homeTeam": {
+          "name": "Newcastle United FC",
+          "helloTicketsId": "520",
+          "slug": "newcastle"
+        },
+        "awayTeam": {
+          "name": "Olympique de Marseille",
+          "helloTicketsId": "537"
+        },
+        "venue": {
+          "name": "Stade Vélodrome",
+          "city": null
+        }
+      },
+      {
+        "htPerformanceId": "2293350",
+        "eventName": "Liverpool FC vs. Qarabağ FK - Champions League 2025-2026",
+        "eventDate": "2026-01-28",
+        "eventDateTime": "2026-01-28T20:00:00Z",
+        "homeTeam": {
+          "name": "Liverpool FC",
+          "helloTicketsId": "422",
+          "slug": "liverpool"
+        },
+        "awayTeam": {
+          "name": "Qarabağ FK",
+          "helloTicketsId": "29382"
+        },
+        "venue": {
+          "name": "Anfield Stadium",
+          "city": null
+        }
+      },
+      {
+        "htPerformanceId": "2293348",
+        "eventName": "Manchester City FC vs. Bayer 04 Leverkusen - Champions League 2025-2026",
+        "eventDate": "2025-11-25",
+        "eventDateTime": "2025-11-25T20:00:00Z",
+        "homeTeam": {
+          "name": "Manchester City FC",
+          "helloTicketsId": "444",
+          "slug": "manchester-city"
+        },
+        "awayTeam": {
+          "name": "Bayer 04 Leverkusen",
+          "helloTicketsId": "105"
+        },
+        "venue": {
+          "name": "Etihad Stadium",
+          "city": null
+        }
+      },
+      {
+        "htPerformanceId": "2293397",
+        "eventName": "Bayer 04 Leverkusen vs. Newcastle United FC - Champions League 2025-2026",
+        "eventDate": "2025-12-10",
+        "eventDateTime": "2025-12-10T20:00:00Z",
+        "homeTeam": {
+          "name": "Newcastle United FC",
+          "helloTicketsId": "520",
+          "slug": "newcastle"
+        },
+        "awayTeam": {
+          "name": "Bayer 04 Leverkusen",
+          "helloTicketsId": "105"
+        },
+        "venue": {
+          "name": "BayArena",
+          "city": null
+        }
+      },
+      {
+        "htPerformanceId": "2293320",
+        "eventName": "Real Madrid CF vs. Manchester City FC - Champions League 2025-2026",
+        "eventDate": "2025-12-10",
+        "eventDateTime": "2025-12-10T20:00:00Z",
+        "homeTeam": {
+          "name": "Manchester City FC",
+          "helloTicketsId": "444",
+          "slug": "manchester-city"
+        },
+        "awayTeam": {
+          "name": "Real Madrid CF",
+          "helloTicketsId": "598"
+        },
+        "venue": {
+          "name": "Santiago Bernabeu",
+          "city": null
+        }
+      },
+      {
+        "htPerformanceId": "2294085",
+        "eventName": "FK Bodø/Glimt vs. Manchester City FC - Champions League 2025-2026",
+        "eventDate": "2026-01-20",
+        "eventDateTime": "2026-01-20T17:45:00Z",
+        "homeTeam": {
+          "name": "Manchester City FC",
+          "helloTicketsId": "444",
+          "slug": "manchester-city"
+        },
+        "awayTeam": {
+          "name": "FK Bodø/Glimt",
+          "helloTicketsId": "12078"
+        },
+        "venue": {
+          "name": "Aspmyra Stadion",
+          "city": null
+        }
+      },
+      {
+        "htPerformanceId": "2293346",
+        "eventName": "Manchester City FC vs. Galatasaray SK - Champions League 2025-2026",
+        "eventDate": "2026-01-28",
+        "eventDateTime": "2026-01-28T20:00:00Z",
+        "homeTeam": {
+          "name": "Manchester City FC",
+          "helloTicketsId": "444",
+          "slug": "manchester-city"
+        },
+        "awayTeam": {
+          "name": "Galatasaray SK",
+          "helloTicketsId": "17993"
+        },
+        "venue": {
+          "name": "Etihad Stadium",
+          "city": null
+        }
+      },
+      {
+        "htPerformanceId": "2293327",
+        "eventName": "Paris Saint-Germain FC vs. Newcastle United FC - Champions League 2025-2026",
+        "eventDate": "2026-01-28",
+        "eventDateTime": "2026-01-28T20:00:00Z",
+        "homeTeam": {
+          "name": "Newcastle United FC",
+          "helloTicketsId": "520",
+          "slug": "newcastle"
+        },
+        "awayTeam": {
+          "name": "Paris Saint-Germain FC",
+          "helloTicketsId": "584"
+        },
+        "venue": {
+          "name": "Parc Des Princes",
+          "city": null
+        }
+      },
+      {
+        "htPerformanceId": "2293326",
+        "eventName": "Paris Saint-Germain FC vs. Tottenham Hotspur FC - Champions League 2025-2026",
+        "eventDate": "2025-11-26",
+        "eventDateTime": "2025-11-26T20:00:00Z",
+        "homeTeam": {
+          "name": "Tottenham Hotspur FC",
+          "helloTicketsId": "756",
+          "slug": "tottenham"
+        },
+        "awayTeam": {
+          "name": "Paris Saint-Germain FC",
+          "helloTicketsId": "584"
+        },
+        "venue": {
+          "name": "Parc Des Princes",
+          "city": null
+        }
+      },
+      {
+        "htPerformanceId": "2293305",
+        "eventName": "Tottenham Hotspur FC vs. Slavia Prague - Champions League 2025-2026",
+        "eventDate": "2025-12-09",
+        "eventDateTime": "2025-12-09T20:00:00Z",
+        "homeTeam": {
+          "name": "Tottenham Hotspur FC",
+          "helloTicketsId": "756",
+          "slug": "tottenham"
+        },
+        "awayTeam": {
+          "name": "SK Slavia Prague",
+          "helloTicketsId": "28715"
+        },
+        "venue": {
+          "name": "Tottenham Hotspur Stadium",
+          "city": null
+        }
+      },
+      {
+        "htPerformanceId": "2293306",
+        "eventName": "Tottenham Hotspur FC vs. Borussia Dortmund - Champions League 2025-2026",
+        "eventDate": "2026-01-20",
+        "eventDateTime": "2026-01-20T20:00:00Z",
+        "homeTeam": {
+          "name": "Tottenham Hotspur FC",
+          "helloTicketsId": "756",
+          "slug": "tottenham"
+        },
+        "awayTeam": {
+          "name": "Borussia Dortmund",
+          "helloTicketsId": "123"
+        },
+        "venue": {
+          "name": "Tottenham Hotspur Stadium",
+          "city": null
+        }
+      },
+      {
+        "htPerformanceId": "2293379",
+        "eventName": "Eintracht Frankfurt vs. Tottenham Hotspur FC - Champions League 2025-2026",
+        "eventDate": "2026-01-28",
+        "eventDateTime": "2026-01-28T20:00:00Z",
+        "homeTeam": {
+          "name": "Tottenham Hotspur FC",
+          "helloTicketsId": "756",
+          "slug": "tottenham"
+        },
+        "awayTeam": {
+          "name": "Eintracht Frankfurt",
+          "helloTicketsId": "251"
+        },
+        "venue": {
+          "name": "Deutsche Bank Park",
+          "city": null
+        }
+      }
+    ]
+  }
+}

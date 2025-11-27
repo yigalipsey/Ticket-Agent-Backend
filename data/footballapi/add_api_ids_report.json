@@ -1,0 +1,1259 @@
+{
+  "generated_at": "2025-11-26T18:04:19.509Z",
+  "summary": {
+    "total": 198,
+    "updated": 87,
+    "alreadyHasId": 11,
+    "reversed": 91,
+    "notFound": 9,
+    "teamNotFound": 0
+  },
+  "errors": [
+    {
+      "apiFootballId": 1388416,
+      "dbMatchId": "6926e32fa3a933930dad459d",
+      "issue": "REVERSED",
+      "json": {
+        "home": "FC Augsburg",
+        "away": "Bayer Leverkusen"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388423,
+      "dbMatchId": "6926e32fa3a933930dad45c2",
+      "issue": "REVERSED",
+      "json": {
+        "home": "VfB Stuttgart",
+        "away": "Bayern München"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388420,
+      "dbMatchId": "6926e32fa3a933930dad45b7",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1. FC Heidenheim",
+        "away": "SC Freiburg"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388418,
+      "dbMatchId": "6926e32fa3a933930dad45bc",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1.FC Köln",
+        "away": "FC St. Pauli"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388419,
+      "dbMatchId": "6926e32fa3a933930dad45c6",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Hamburger SV",
+        "away": "Werder Bremen"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388417,
+      "issue": "NOT_FOUND",
+      "homeTeam": "Borussia Dortmund",
+      "awayTeam": "1899 Hoffenheim",
+      "date": "2025-12-07T16:30:00+00:00"
+    },
+    {
+      "apiFootballId": 1388432,
+      "dbMatchId": "6926e331a3a933930dad45ea",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Union Berlin",
+        "away": "RB Leipzig"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388431,
+      "dbMatchId": "6926e331a3a933930dad45ee",
+      "issue": "REVERSED",
+      "json": {
+        "home": "FC St. Pauli",
+        "away": "1. FC Heidenheim"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388426,
+      "issue": "NOT_FOUND",
+      "homeTeam": "Bayern München",
+      "awayTeam": "FSV Mainz 05",
+      "date": "2025-12-14T16:30:00+00:00"
+    },
+    {
+      "apiFootballId": 1388433,
+      "issue": "NOT_FOUND",
+      "homeTeam": "Werder Bremen",
+      "awayTeam": "VfB Stuttgart",
+      "date": "2025-12-14T18:30:00+00:00"
+    },
+    {
+      "apiFootballId": 1388435,
+      "dbMatchId": "6926e331a3a933930dad45f6",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Borussia Dortmund",
+        "away": "Borussia Mönchengladbach"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388442,
+      "dbMatchId": "6926e332a3a933930dad460a",
+      "issue": "REVERSED",
+      "json": {
+        "home": "VfL Wolfsburg",
+        "away": "SC Freiburg"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388434,
+      "issue": "NOT_FOUND",
+      "homeTeam": "FC Augsburg",
+      "awayTeam": "Werder Bremen",
+      "date": "2025-12-20T14:30:00+00:00"
+    },
+    {
+      "apiFootballId": 1388437,
+      "dbMatchId": "6926e331a3a933930dad4602",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Hamburger SV",
+        "away": "Eintracht Frankfurt"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388436,
+      "dbMatchId": "6926e331a3a933930dad45fe",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1.FC Köln",
+        "away": "Union Berlin"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388438,
+      "dbMatchId": "6926e332a3a933930dad4612",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1. FC Heidenheim",
+        "away": "Bayern München"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388451,
+      "dbMatchId": "6926e333a3a933930dad462a",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Werder Bremen",
+        "away": "1899 Hoffenheim"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388448,
+      "dbMatchId": "6926e333a3a933930dad462e",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1. FC Heidenheim",
+        "away": "1.FC Köln"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388450,
+      "dbMatchId": "6926e333a3a933930dad4622",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Union Berlin",
+        "away": "FSV Mainz 05"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388449,
+      "dbMatchId": "6926e332a3a933930dad461a",
+      "issue": "REVERSED",
+      "json": {
+        "home": "FC St. Pauli",
+        "away": "RB Leipzig"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388457,
+      "issue": "NOT_FOUND",
+      "homeTeam": "FSV Mainz 05",
+      "awayTeam": "1. FC Heidenheim",
+      "date": "2026-01-13T19:30:00+00:00"
+    },
+    {
+      "apiFootballId": 1388453,
+      "dbMatchId": "6926e334a3a933930dad463e",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Borussia Dortmund",
+        "away": "Werder Bremen"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388455,
+      "issue": "NOT_FOUND",
+      "homeTeam": "Hamburger SV",
+      "awayTeam": "Bayer Leverkusen",
+      "date": "2026-01-13T19:30:00+00:00"
+    },
+    {
+      "apiFootballId": 1388460,
+      "dbMatchId": "6926e335a3a933930dad465e",
+      "issue": "REVERSED",
+      "json": {
+        "home": "VfL Wolfsburg",
+        "away": "FC St. Pauli"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388456,
+      "dbMatchId": "6926e334a3a933930dad4656",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1899 Hoffenheim",
+        "away": "Borussia Mönchengladbach"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388458,
+      "dbMatchId": "6926e334a3a933930dad4642",
+      "issue": "REVERSED",
+      "json": {
+        "home": "RB Leipzig",
+        "away": "SC Freiburg"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388454,
+      "dbMatchId": "6926e334a3a933930dad4652",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1.FC Köln",
+        "away": "Bayern München"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388468,
+      "issue": "NOT_FOUND",
+      "homeTeam": "Werder Bremen",
+      "awayTeam": "Eintracht Frankfurt",
+      "date": "2026-01-16T19:30:00+00:00"
+    },
+    {
+      "apiFootballId": 1388465,
+      "dbMatchId": "6926e335a3a933930dad4672",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1899 Hoffenheim",
+        "away": "Bayer Leverkusen"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388464,
+      "dbMatchId": "6926e336a3a933930dad467a",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Hamburger SV",
+        "away": "Borussia Mönchengladbach"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388463,
+      "dbMatchId": "6926e336a3a933930dad4682",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1.FC Köln",
+        "away": "FSV Mainz 05"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388466,
+      "dbMatchId": "6926e335a3a933930dad4662",
+      "issue": "REVERSED",
+      "json": {
+        "home": "RB Leipzig",
+        "away": "Bayern München"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388461,
+      "dbMatchId": "6926e335a3a933930dad4666",
+      "issue": "REVERSED",
+      "json": {
+        "home": "FC Augsburg",
+        "away": "SC Freiburg"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388477,
+      "issue": "NOT_FOUND",
+      "homeTeam": "FC St. Pauli",
+      "awayTeam": "Hamburger SV",
+      "date": "2026-01-23T19:30:00+00:00"
+    },
+    {
+      "apiFootballId": 1388475,
+      "dbMatchId": "6926e336a3a933930dad4686",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1. FC Heidenheim",
+        "away": "RB Leipzig"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388478,
+      "dbMatchId": "6926e336a3a933930dad468e",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Union Berlin",
+        "away": "Borussia Dortmund"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388487,
+      "dbMatchId": "6926e338a3a933930dad46c2",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Werder Bremen",
+        "away": "Borussia Mönchengladbach"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388481,
+      "dbMatchId": "6926e338a3a933930dad46b6",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Eintracht Frankfurt",
+        "away": "Bayer Leverkusen"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388486,
+      "dbMatchId": "6926e338a3a933930dad46ca",
+      "issue": "REVERSED",
+      "json": {
+        "home": "VfB Stuttgart",
+        "away": "SC Freiburg"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388483,
+      "dbMatchId": "6926e338a3a933930dad46ba",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Hamburger SV",
+        "away": "Bayern München"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388482,
+      "dbMatchId": "6926e338a3a933930dad46c6",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1.FC Köln",
+        "away": "VfL Wolfsburg"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388489,
+      "dbMatchId": "6926e339a3a933930dad46da",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Borussia Mönchengladbach",
+        "away": "Bayer Leverkusen"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388492,
+      "dbMatchId": "6926e339a3a933930dad46e6",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1. FC Heidenheim",
+        "away": "Hamburger SV"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388495,
+      "dbMatchId": "6926e339a3a933930dad46d6",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Union Berlin",
+        "away": "Eintracht Frankfurt"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388494,
+      "dbMatchId": "6926e339a3a933930dad46ee",
+      "issue": "REVERSED",
+      "json": {
+        "home": "FC St. Pauli",
+        "away": "VfB Stuttgart"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388490,
+      "dbMatchId": "6926e338a3a933930dad46ce",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1.FC Köln",
+        "away": "RB Leipzig"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388505,
+      "dbMatchId": "6926e33aa3a933930dad4706",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Werder Bremen",
+        "away": "Bayern München"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388502,
+      "dbMatchId": "6926e33aa3a933930dad470e",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1899 Hoffenheim",
+        "away": "SC Freiburg"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388500,
+      "dbMatchId": "6926e33aa3a933930dad46fe",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Eintracht Frankfurt",
+        "away": "Borussia Mönchengladbach"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388504,
+      "dbMatchId": "6926e33ba3a933930dad4712",
+      "issue": "REVERSED",
+      "json": {
+        "home": "VfB Stuttgart",
+        "away": "1.FC Köln"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388514,
+      "dbMatchId": "6926e33ba3a933930dad471a",
+      "issue": "REVERSED",
+      "json": {
+        "home": "VfL Wolfsburg",
+        "away": "FC Augsburg"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388509,
+      "dbMatchId": "6926e33ba3a933930dad472a",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1. FC Heidenheim",
+        "away": "VfB Stuttgart"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388513,
+      "issue": "NOT_FOUND",
+      "homeTeam": "Union Berlin",
+      "awayTeam": "Bayer Leverkusen",
+      "date": "2026-02-21T14:30:00+00:00"
+    },
+    {
+      "apiFootballId": 1388507,
+      "dbMatchId": "6926e33ba3a933930dad4726",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1.FC Köln",
+        "away": "1899 Hoffenheim"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388519,
+      "dbMatchId": "6926e33ca3a933930dad4742",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Eintracht Frankfurt",
+        "away": "SC Freiburg"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388515,
+      "dbMatchId": "6926e33ca3a933930dad473a",
+      "issue": "REVERSED",
+      "json": {
+        "home": "FC Augsburg",
+        "away": "1.FC Köln"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388520,
+      "dbMatchId": "6926e33ca3a933930dad4736",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Hamburger SV",
+        "away": "RB Leipzig"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388527,
+      "dbMatchId": "6926e33ea3a933930dad4772",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1. FC Heidenheim",
+        "away": "1899 Hoffenheim"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388531,
+      "dbMatchId": "6926e33da3a933930dad475e",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Union Berlin",
+        "away": "Werder Bremen"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388530,
+      "dbMatchId": "6926e33da3a933930dad4762",
+      "issue": "REVERSED",
+      "json": {
+        "home": "FC St. Pauli",
+        "away": "Eintracht Frankfurt"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388525,
+      "dbMatchId": "6926e33ea3a933930dad476e",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1.FC Köln",
+        "away": "Borussia Dortmund"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388541,
+      "dbMatchId": "6926e33fa3a933930dad479e",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Werder Bremen",
+        "away": "FSV Mainz 05"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388540,
+      "dbMatchId": "6926e33ea3a933930dad477e",
+      "issue": "REVERSED",
+      "json": {
+        "home": "VfB Stuttgart",
+        "away": "RB Leipzig"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388538,
+      "dbMatchId": "6926e33fa3a933930dad479a",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Hamburger SV",
+        "away": "1.FC Köln"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388542,
+      "dbMatchId": "6926e33fa3a933930dad47a6",
+      "issue": "REVERSED",
+      "json": {
+        "home": "FC Augsburg",
+        "away": "VfB Stuttgart"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388546,
+      "dbMatchId": "6926e340a3a933930dad47b2",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1. FC Heidenheim",
+        "away": "Bayer Leverkusen"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388549,
+      "dbMatchId": "6926e340a3a933930dad47c2",
+      "issue": "REVERSED",
+      "json": {
+        "home": "FC St. Pauli",
+        "away": "SC Freiburg"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388545,
+      "dbMatchId": "6926e340a3a933930dad47ba",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1.FC Köln",
+        "away": "Borussia Mönchengladbach"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388559,
+      "dbMatchId": "6926e341a3a933930dad47c6",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Werder Bremen",
+        "away": "RB Leipzig"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388556,
+      "dbMatchId": "6926e342a3a933930dad47e6",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1899 Hoffenheim",
+        "away": "FSV Mainz 05"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388553,
+      "dbMatchId": "6926e341a3a933930dad47d2",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Eintracht Frankfurt",
+        "away": "1.FC Köln"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388555,
+      "dbMatchId": "6926e341a3a933930dad47ca",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Hamburger SV",
+        "away": "FC Augsburg"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388558,
+      "dbMatchId": "6926e341a3a933930dad47ce",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Union Berlin",
+        "away": "FC St. Pauli"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388568,
+      "dbMatchId": "6926e342a3a933930dad47f6",
+      "issue": "REVERSED",
+      "json": {
+        "home": "VfL Wolfsburg",
+        "away": "Eintracht Frankfurt"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388564,
+      "dbMatchId": "6926e343a3a933930dad480a",
+      "issue": "REVERSED",
+      "json": {
+        "home": "FSV Mainz 05",
+        "away": "SC Freiburg"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388563,
+      "dbMatchId": "6926e342a3a933930dad47f2",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1. FC Heidenheim",
+        "away": "Union Berlin"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388566,
+      "dbMatchId": "6926e342a3a933930dad47fe",
+      "issue": "REVERSED",
+      "json": {
+        "home": "FC St. Pauli",
+        "away": "Bayern München"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388562,
+      "dbMatchId": "6926e343a3a933930dad4806",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1.FC Köln",
+        "away": "Werder Bremen"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388571,
+      "dbMatchId": "6926e344a3a933930dad4822",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Borussia Mönchengladbach",
+        "away": "FSV Mainz 05"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388572,
+      "dbMatchId": "6926e343a3a933930dad480e",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Eintracht Frankfurt",
+        "away": "RB Leipzig"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388576,
+      "dbMatchId": "6926e343a3a933930dad4816",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Union Berlin",
+        "away": "VfL Wolfsburg"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388575,
+      "dbMatchId": "6926e344a3a933930dad482e",
+      "issue": "REVERSED",
+      "json": {
+        "home": "FC St. Pauli",
+        "away": "1.FC Köln"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388586,
+      "dbMatchId": "6926e345a3a933930dad4846",
+      "issue": "REVERSED",
+      "json": {
+        "home": "VfL Wolfsburg",
+        "away": "Borussia Mönchengladbach"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388583,
+      "dbMatchId": "6926e345a3a933930dad483e",
+      "issue": "REVERSED",
+      "json": {
+        "home": "FSV Mainz 05",
+        "away": "Bayern München"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388578,
+      "dbMatchId": "6926e344a3a933930dad4836",
+      "issue": "REVERSED",
+      "json": {
+        "home": "FC Augsburg",
+        "away": "Eintracht Frankfurt"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388581,
+      "dbMatchId": "6926e345a3a933930dad484a",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Hamburger SV",
+        "away": "1899 Hoffenheim"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388582,
+      "dbMatchId": "6926e345a3a933930dad484e",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1. FC Heidenheim",
+        "away": "FC St. Pauli"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388580,
+      "dbMatchId": "6926e344a3a933930dad483a",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1.FC Köln",
+        "away": "Bayer Leverkusen"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388595,
+      "dbMatchId": "6926e346a3a933930dad485a",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Werder Bremen",
+        "away": "FC Augsburg"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388592,
+      "dbMatchId": "6926e346a3a933930dad486e",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1899 Hoffenheim",
+        "away": "VfB Stuttgart"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388594,
+      "dbMatchId": "6926e346a3a933930dad485e",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Union Berlin",
+        "away": "1.FC Köln"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388593,
+      "dbMatchId": "6926e346a3a933930dad4876",
+      "issue": "REVERSED",
+      "json": {
+        "home": "FC St. Pauli",
+        "away": "FSV Mainz 05"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388604,
+      "dbMatchId": "6926e347a3a933930dad488e",
+      "issue": "REVERSED",
+      "json": {
+        "home": "VfL Wolfsburg",
+        "away": "Bayern München"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388596,
+      "dbMatchId": "6926e347a3a933930dad487e",
+      "issue": "REVERSED",
+      "json": {
+        "home": "FC Augsburg",
+        "away": "Borussia Mönchengladbach"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388603,
+      "dbMatchId": "6926e347a3a933930dad488a",
+      "issue": "REVERSED",
+      "json": {
+        "home": "VfB Stuttgart",
+        "away": "Bayer Leverkusen"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388599,
+      "dbMatchId": "6926e348a3a933930dad489a",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Hamburger SV",
+        "away": "SC Freiburg"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388598,
+      "dbMatchId": "6926e347a3a933930dad4896",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1.FC Köln",
+        "away": "1. FC Heidenheim"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388613,
+      "dbMatchId": "6926e348a3a933930dad48b2",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Werder Bremen",
+        "away": "Borussia Dortmund"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388610,
+      "dbMatchId": "6926e349a3a933930dad48ba",
+      "issue": "REVERSED",
+      "json": {
+        "home": "1. FC Heidenheim",
+        "away": "FSV Mainz 05"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    },
+    {
+      "apiFootballId": 1388612,
+      "dbMatchId": "6926e348a3a933930dad48a2",
+      "issue": "REVERSED",
+      "json": {
+        "home": "Union Berlin",
+        "away": "FC Augsburg"
+      },
+      "db": {
+        "home": "N/A",
+        "away": "N/A"
+      }
+    }
+  ]
+}

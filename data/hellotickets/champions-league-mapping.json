@@ -1,0 +1,254 @@
+[
+  {
+    "id": "68e25b390d7b31dba56ddea6",
+    "slug": "ajax",
+    "name": "אייקס",
+    "hellotickets_id": "1837",
+    "hellotickets_name": "AFC Ajax"
+  },
+  {
+    "id": "68e25b380d7b31dba56dde9e",
+    "slug": "benfica",
+    "name": "בנפיקה",
+    "hellotickets_id": "11969",
+    "hellotickets_name": "Benfica"
+  },
+  {
+    "id": "68e25b350d7b31dba56dde4e",
+    "slug": "napoli",
+    "name": "נאפולי",
+    "hellotickets_id": "660",
+    "hellotickets_name": "SSC Napoli"
+  },
+  {
+    "id": "68e25b330d7b31dba56dde1c",
+    "slug": "qarabag",
+    "name": "קרבאג",
+    "hellotickets_id": "29382",
+    "hellotickets_name": "Qarabağ FK"
+  },
+  {
+    "id": "68e25b330d7b31dba56dde22",
+    "slug": "borussia-dortmund",
+    "name": "בורוסיה דורטמונד",
+    "hellotickets_id": "123",
+    "hellotickets_name": "Borussia Dortmund"
+  },
+  {
+    "id": "68da7a5a8c51bd5b579b20c2",
+    "slug": "villarreal",
+    "name": "ויאריאל",
+    "hellotickets_id": "789",
+    "hellotickets_name": "Villarreal CF"
+  },
+  {
+    "id": "68da7a5e8c51bd5b579b212e",
+    "slug": "chelsea",
+    "name": "צ'לסי",
+    "hellotickets_id": "1836",
+    "hellotickets_name": "Chelsea FC"
+  },
+  {
+    "id": "68da7a5a8c51bd5b579b20ae",
+    "slug": "barcelona",
+    "name": "ברצלונה",
+    "hellotickets_id": "272",
+    "hellotickets_name": "FC Barcelona"
+  },
+  {
+    "id": "68da7a5e8c51bd5b579b2132",
+    "slug": "manchester-city",
+    "name": "מנצ'סטר סיטי",
+    "hellotickets_id": "444",
+    "hellotickets_name": "Manchester City FC"
+  },
+  {
+    "id": "68e25b360d7b31dba56dde72",
+    "slug": "bayer-leverkusen",
+    "name": "באייר לברקוזן",
+    "hellotickets_id": "105",
+    "hellotickets_name": "Bayer 04 Leverkusen"
+  },
+  {
+    "id": "68da7a5d8c51bd5b579b2106",
+    "slug": "newcastle",
+    "name": "ניוקאסל",
+    "hellotickets_id": "520",
+    "hellotickets_name": "Newcastle United FC"
+  },
+  {
+    "id": "68e25b340d7b31dba56dde30",
+    "slug": "marseille",
+    "name": "מרסיי",
+    "hellotickets_id": "537",
+    "hellotickets_name": "Olympique de Marseille"
+  },
+  {
+    "id": "68da7a5e8c51bd5b579b2126",
+    "slug": "tottenham",
+    "name": "טוטנהאם",
+    "hellotickets_id": "756",
+    "hellotickets_name": "Tottenham Hotspur FC"
+  },
+  {
+    "id": "68e25b320d7b31dba56dde0e",
+    "slug": "paris-saint-germain",
+    "name": "פאריס סן ז'רמן",
+    "hellotickets_id": "584",
+    "hellotickets_name": "Paris Saint-Germain FC"
+  },
+  {
+    "id": "68e25b340d7b31dba56dde3c",
+    "slug": "sporting-cp",
+    "name": "ספורטינג ליסבון",
+    "hellotickets_id": "13149",
+    "hellotickets_name": "Sporting CP"
+  },
+  {
+    "id": "68e25b340d7b31dba56dde36",
+    "slug": "club-brugge-kv",
+    "name": "קלאב ברוז'",
+    "hellotickets_id": "12177",
+    "hellotickets_name": "Club Brugge KV"
+  },
+  {
+    "id": "68da7a5d8c51bd5b579b211a",
+    "slug": "arsenal",
+    "name": "ארסנל",
+    "hellotickets_id": "1835",
+    "hellotickets_name": "Arsenal FC"
+  },
+  {
+    "id": "68e25b320d7b31dba56dde03",
+    "slug": "bayern-munich",
+    "name": "באיירן מינכן",
+    "hellotickets_id": "273",
+    "hellotickets_name": "FC Bayern Munich"
+  },
+  {
+    "id": "68e25b370d7b31dba56dde7a",
+    "slug": "psv-eindhoven",
+    "name": "פ.ס.ו איינדהובן",
+    "hellotickets_id": "18756",
+    "hellotickets_name": "PSV Eindhoven"
+  },
+  {
+    "id": "68da7a5d8c51bd5b579b2116",
+    "slug": "liverpool",
+    "name": "ליברפול",
+    "hellotickets_id": "422",
+    "hellotickets_name": "Liverpool FC"
+  },
+  {
+    "id": "68da7a5a8c51bd5b579b20b6",
+    "slug": "atletico-madrid",
+    "name": "אתלטיקו מדריד",
+    "hellotickets_id": "89",
+    "hellotickets_name": "Atletico de Madrid"
+  },
+  {
+    "id": "68e25b320d7b31dba56dde14",
+    "slug": "inter",
+    "name": "אינטר",
+    "hellotickets_id": "277",
+    "hellotickets_name": "FC Inter Milan"
+  },
+  {
+    "id": "68e25b380d7b31dba56dde92",
+    "slug": "slavia-praha",
+    "name": "סלאביה פראג",
+    "hellotickets_id": "28715",
+    "hellotickets_name": "SK Slavia Prague"
+  },
+  {
+    "id": "68e25b360d7b31dba56dde60",
+    "slug": "atalanta",
+    "name": "אטאלנטה",
+    "hellotickets_id": "82",
+    "hellotickets_name": "Atalanta BC"
+  },
+  {
+    "id": "68e25b340d7b31dba56dde42",
+    "slug": "eintracht-frankfurt",
+    "name": "איינטרכט פרנקפורט",
+    "hellotickets_id": "251",
+    "hellotickets_name": "Eintracht Frankfurt"
+  },
+  {
+    "id": "68e25b380d7b31dba56dde8c",
+    "slug": "monaco",
+    "name": "מונקو",
+    "hellotickets_id": "12244",
+    "hellotickets_name": "AS Monaco FC"
+  },
+  {
+    "id": "68e25b350d7b31dba56dde5a",
+    "slug": "galatasaray",
+    "name": "גלאטסראיי",
+    "hellotickets_id": "17993",
+    "hellotickets_name": "Galatasaray SK"
+  },
+  {
+    "id": "68e25b360d7b31dba56dde66",
+    "slug": "juventus",
+    "name": "יובנטוס",
+    "hellotickets_id": "381",
+    "hellotickets_name": "Juventus FC"
+  },
+  {
+    "id": "68da7a5b8c51bd5b579b20d6",
+    "slug": "real-madrid",
+    "name": "ריאל מדריד",
+    "hellotickets_id": "598",
+    "hellotickets_name": "Real Madrid CF"
+  },
+  {
+    "id": "68da7a5a8c51bd5b579b20ba",
+    "slug": "athletic-bilbao",
+    "name": "אתלטיק בילבאו",
+    "hellotickets_id": "83",
+    "hellotickets_name": "Athletic Club"
+  },
+  {
+    "id": "68e25b380d7b31dba56dde98",
+    "slug": "pafos",
+    "name": "פאפוס",
+    "hellotickets_id": "28531",
+    "hellotickets_name": "Pafos FC"
+  },
+  {
+    "id": "68e25b360d7b31dba56dde6c",
+    "slug": "bodoglimt",
+    "name": "בודו/גלימט",
+    "hellotickets_id": "12078",
+    "hellotickets_name": "FK Bodø/Glimt"
+  },
+  {
+    "id": "68e25b350d7b31dba56dde54",
+    "slug": "union-st-gilloise",
+    "name": "אוניון סן גילואז",
+    "hellotickets_id": "1860",
+    "hellotickets_name": "Union Saint-Gilloise"
+  },
+  {
+    "id": "68e25b390d7b31dba56ddeac",
+    "slug": "kairat-almaty",
+    "name": "קייראט אלמטי",
+    "hellotickets_id": "29389",
+    "hellotickets_name": "Kairat Almaty"
+  },
+  {
+    "id": "68e25b370d7b31dba56dde86",
+    "slug": "olympiakos-piraeus",
+    "name": "אולימפיאקוס פיראוס",
+    "hellotickets_id": "16050",
+    "hellotickets_name": "Olympiacos FC"
+  },
+  {
+    "id": "68e25b370d7b31dba56dde80",
+    "slug": "fc-copenhagen",
+    "name": "קופנהגן",
+    "hellotickets_id": "28533",
+    "hellotickets_name": "FC Copenhagen"
+  }
+]

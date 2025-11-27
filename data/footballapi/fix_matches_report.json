@@ -1,0 +1,45 @@
+{
+  "generated_at": "2025-11-26T18:16:05.291Z",
+  "summary": {
+    "total": 198,
+    "fixed": 86,
+    "updated": 170,
+    "dateUpdated": 167,
+    "venueUpdated": 46,
+    "slugUpdated": 167,
+    "notFound": 2,
+    "teamNotFound": 0,
+    "errors": [
+      {
+        "apiFootballId": 1388434,
+        "issue": "NOT_FOUND",
+        "homeTeam": "FC Augsburg",
+        "awayTeam": "Werder Bremen",
+        "date": "2025-12-20T14:30:00+00:00"
+      },
+      {
+        "apiFootballId": 1388513,
+        "issue": "NOT_FOUND",
+        "homeTeam": "Union Berlin",
+        "awayTeam": "Bayer Leverkusen",
+        "date": "2026-02-21T14:30:00+00:00"
+      }
+    ]
+  },
+  "errors": [
+    {
+      "apiFootballId": 1388434,
+      "issue": "NOT_FOUND",
+      "homeTeam": "FC Augsburg",
+      "awayTeam": "Werder Bremen",
+      "date": "2025-12-20T14:30:00+00:00"
+    },
+    {
+      "apiFootballId": 1388513,
+      "issue": "NOT_FOUND",
+      "homeTeam": "Union Berlin",
+      "awayTeam": "Bayer Leverkusen",
+      "date": "2026-02-21T14:30:00+00:00"
+    }
+  ]
+}

@@ -17,18 +17,30 @@ export const createOffer = async (offerData) => {
     const {
       fixtureId,
       agentId,
+      ownerType,
+      ownerId,
       price,
       currency,
-      description,
+      ticketType = "standard",
+      notes,
       source,
       metadata,
     } = offerData;
 
+    // Determine ownerType and ownerId
+    // Support both old format (agentId) and new format (ownerType + ownerId)
+    const finalOwnerType = ownerType || (agentId ? "Agent" : null);
+    const finalOwnerId = ownerId || agentId;
+
     // Validate required fields
-    if (!fixtureId || !agentId || !price) {
+    if (!fixtureId || !finalOwnerId || !price) {
       throw new Error(
-        "Missing required fields: fixtureId, agentId, and price are required"
+        "Missing required fields: fixtureId, ownerId (or agentId), and price are required"
       );
+    }
+
+    if (!finalOwnerType) {
+      throw new Error("ownerType is required (must be 'Agent' or 'Supplier')");
     }
 
     // Validate fixture exists
@@ -40,37 +52,52 @@ export const createOffer = async (offerData) => {
       throw error;
     }
 
-    // Validate agent exists and is active
-    const agent = await Agent.findById(agentId);
-    if (!agent) {
-      const error = new Error("Agent not found");
-      error.code = "AGENT_NOT_FOUND";
-      error.statusCode = 404;
-      throw error;
+    // Validate owner exists and is active
+    if (finalOwnerType === "Agent") {
+      const agent = await Agent.findById(finalOwnerId);
+      if (!agent) {
+        const error = new Error("Agent not found");
+        error.code = "AGENT_NOT_FOUND";
+        error.statusCode = 404;
+        throw error;
+      }
+      if (!agent.isActive) {
+        const error = new Error("Agent is not active");
+        error.code = "AGENT_INACTIVE";
+        error.statusCode = 403;
+        throw error;
+      }
     }
-    if (!agent.isActive) {
-      const error = new Error("Agent is not active");
-      error.code = "AGENT_INACTIVE";
-      error.statusCode = 403;
-      throw error;
-    }
+    // TODO: Add Supplier validation if needed
 
     // Validate price
     if (price <= 0) {
       throw new Error("Price must be greater than 0");
     }
 
-    // Delete any existing offers by this agent for this fixture
-    await Offer.deleteMany({ fixtureId, agentId });
+    // Validate ticketType
+    if (!["standard", "vip"].includes(ticketType)) {
+      throw new Error("ticketType must be 'standard' or 'vip'");
+    }
+
+    // Delete any existing offers by this owner for this fixture
+    // Unique constraint: { fixtureId, ownerId } - only one offer per owner per fixture
+    await Offer.deleteMany({
+      fixtureId,
+      ownerId: finalOwnerId,
+      ownerType: finalOwnerType,
+    });
 
     // Create new offer
     const newOffer = new Offer({
       fixtureId,
-      agentId,
+      ownerType: finalOwnerType,
+      ownerId: finalOwnerId,
       price,
       currency: currency || "EUR",
-      description,
-      source: source || "direct",
+      ticketType,
+      notes,
+      source: source || "p1",
       metadata,
       isAvailable: true,
     });
@@ -92,13 +119,17 @@ export const createOffer = async (offerData) => {
 
     // 3. רק אם ההצעה היא הכי נמוכה - עדכון minPrice ואיפוס cache
     if (comparisonResult.isLowest) {
-      // עדכון minPrice של המשחק
+      // עדכון minPrice של המשחק - שימוש ב-$set עם מבנה מלא כדי לטפל במקרה ש-minPrice הוא null
       await FootballEvent.findByIdAndUpdate(
         fixtureId,
         {
-          "minPrice.amount": price,
-          "minPrice.currency": newOfferCurrency,
-          "minPrice.updatedAt": new Date(),
+          $set: {
+            minPrice: {
+              amount: price,
+              currency: newOfferCurrency,
+              updatedAt: new Date(),
+            },
+          },
         },
         { new: true }
       );

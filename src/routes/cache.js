@@ -21,7 +21,58 @@ router.use((req, res, next) => {
   next();
 });
 
-// DELETE /api/cache/leagues - Clear leagues cache (Super Admin only)
+// DELETE /api/cache/leagues/:leagueId - Clear cache for specific league (Super Admin only)
+router.delete(
+  "/leagues/:leagueId",
+  auth,
+  requireRole("super-admin"),
+  rateLimit(20),
+  async (req, res) => {
+    try {
+      const { leagueId } = req.params;
+
+      if (!leagueId.match(/^[0-9a-fA-F]{24}$/)) {
+        return res.status(400).json({
+          success: false,
+          error: "Invalid leagueId format",
+          message: "leagueId must be a valid MongoDB ObjectId",
+        });
+      }
+
+      logWithCheckpoint(
+        "info",
+        "Starting to clear league fixtures cache for specific league",
+        "CACHE_CLEAR_LEAGUE_001",
+        { leagueId }
+      );
+
+      const deletedCount = fixturesByLeagueCacheService.deleteLeague(leagueId);
+
+      logWithCheckpoint(
+        "info",
+        "League fixtures cache cleared for specific league",
+        "CACHE_CLEAR_LEAGUE_002",
+        { leagueId, deletedCount }
+      );
+
+      res.json({
+        success: true,
+        message: `League fixtures cache cleared for league: ${leagueId}`,
+        clearedEntries: deletedCount,
+        leagueId,
+      });
+    } catch (error) {
+      logError(error, { route: "DELETE /api/cache/leagues/:leagueId" });
+      res.status(500).json({
+        success: false,
+        error: "Failed to clear league fixtures cache",
+        message: error.message,
+      });
+    }
+  }
+);
+
+// DELETE /api/cache/leagues - Clear ALL leagues cache (Super Admin only)
 router.delete(
   "/leagues",
   auth,
@@ -29,11 +80,30 @@ router.delete(
   rateLimit(10),
   async (req, res) => {
     try {
-      const clearedEntries = fixturesByLeagueCacheService.clear();
+      const { type } = req.query; // 'fixtures' or 'leagues' or both (default)
+
+      const results = {};
+
+      // Clear league fixtures cache
+      if (!type || type === "fixtures" || type === "all") {
+        results.fixtures = fixturesByLeagueCacheService.clear();
+      }
+
+      // Clear leagues data cache (the one used by /api/leagues endpoint)
+      if (!type || type === "leagues" || type === "all") {
+        results.leagues = leagueCacheService.clear();
+        results.slugToId = leagueCacheService.slugToIdCache.clear();
+      }
+
+      const totalCleared = Object.values(results).reduce((sum, val) => {
+        return sum + (typeof val === "number" ? val : 0);
+      }, 0);
+
       res.json({
         success: true,
-        message: "League fixtures cache cleared successfully",
-        clearedEntries,
+        message: "Leagues cache cleared successfully",
+        clearedEntries: totalCleared,
+        details: results,
       });
     } catch (error) {
       logError(error, { route: "DELETE /api/cache/leagues" });
@@ -246,6 +316,97 @@ router.get(
       res.status(500).json({
         success: false,
         error: "Failed to get cache stats",
+        message: error.message,
+      });
+    }
+  }
+);
+
+// DELETE /api/cache/offers - Clear ALL offers cache (Super Admin only)
+// NOTE: This route MUST come before /offers/:fixtureId to avoid route matching conflicts
+router.delete(
+  "/offers",
+  auth,
+  requireRole("super-admin"),
+  rateLimit(10),
+  async (req, res) => {
+    try {
+      logWithCheckpoint(
+        "info",
+        "Starting to clear all offers cache",
+        "CACHE_CLEAR_OFFERS_ALL_001"
+      );
+
+      const clearedEntries = offersByFixtureCacheService.clear();
+
+      logWithCheckpoint(
+        "info",
+        "All offers cache cleared successfully",
+        "CACHE_CLEAR_OFFERS_ALL_002",
+        { clearedEntries }
+      );
+
+      res.json({
+        success: true,
+        message: "All offers cache cleared successfully",
+        clearedEntries,
+      });
+    } catch (error) {
+      logError(error, { route: "DELETE /api/cache/offers" });
+      res.status(500).json({
+        success: false,
+        error: "Failed to clear offers cache",
+        message: error.message,
+      });
+    }
+  }
+);
+
+// DELETE /api/cache/offers/:fixtureId - Clear offers cache for a specific fixture (Super Admin only)
+router.delete(
+  "/offers/:fixtureId",
+  auth,
+  requireRole("super-admin"),
+  rateLimit(20),
+  async (req, res) => {
+    try {
+      const { fixtureId } = req.params;
+
+      if (!fixtureId.match(/^[0-9a-fA-F]{24}$/)) {
+        return res.status(400).json({
+          success: false,
+          error: "Invalid fixtureId format",
+          message: "fixtureId must be a valid MongoDB ObjectId",
+        });
+      }
+
+      logWithCheckpoint(
+        "info",
+        "Starting to clear offers cache for specific fixture",
+        "CACHE_CLEAR_OFFERS_001",
+        { fixtureId }
+      );
+
+      const deleted = offersByFixtureCacheService.delete(fixtureId);
+
+      logWithCheckpoint(
+        "info",
+        "Offers cache cleared for specific fixture",
+        "CACHE_CLEAR_OFFERS_002",
+        { fixtureId, deleted }
+      );
+
+      res.json({
+        success: true,
+        message: `Offers cache cleared for fixture: ${fixtureId}`,
+        clearedEntries: deleted ? 1 : 0,
+        fixtureId,
+      });
+    } catch (error) {
+      logError(error, { route: "DELETE /api/cache/offers/:fixtureId" });
+      res.status(500).json({
+        success: false,
+        error: "Failed to clear offers cache",
         message: error.message,
       });
     }

@@ -2,13 +2,9 @@ import mongoose from "mongoose";
 
 const venueSchema = new mongoose.Schema(
   {
-    name_en: {
+    name: {
       type: String,
       required: true,
-      trim: true,
-    },
-    name_he: {
-      type: String,
       trim: true,
     },
     city_en: {
@@ -67,8 +63,7 @@ const venueSchema = new mongoose.Schema(
 
 // Indexes
 venueSchema.index({ venueId: 1 }, { unique: true });
-venueSchema.index({ name_en: 1 });
-venueSchema.index({ name_he: 1 });
+venueSchema.index({ name: 1 });
 venueSchema.index({ city_en: 1 });
 venueSchema.index({ city_he: 1 });
 venueSchema.index({ country_en: 1 });
@@ -78,7 +73,7 @@ venueSchema.index({ country_he: 1 });
 venueSchema.methods.toHebrewObject = function () {
   return {
     _id: this._id.toString(),
-    name: this.name_he || this.name_en,
+    name: this.name,
     city: this.city_he || this.city_en,
     capacity: this.capacity,
     country: this.country_he || this.country_en,
@@ -95,7 +90,7 @@ venueSchema.methods.toHebrewObject = function () {
 venueSchema.statics.toHebrewData = function (venue) {
   return {
     _id: venue._id.toString(),
-    name: venue.name_he || venue.name_en,
+    name: venue.name,
     city: venue.city_he || venue.city_en,
     capacity: venue.capacity,
     country: venue.country_he || venue.country_en,

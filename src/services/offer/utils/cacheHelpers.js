@@ -1,4 +1,6 @@
 import Offer from "../../../models/Offer.js";
+import Agent from "../../../models/Agent.js";
+import Supplier from "../../../models/Supplier.js";
 import offersByFixtureCacheService from "../cache/OffersByFixtureCacheService.js";
 import { logWithCheckpoint, logError } from "../../../utils/logger.js";
 
@@ -19,16 +21,30 @@ export const refreshOffersCache = async (fixtureId) => {
 
     // Fetch latest offers from database
     const offers = await Offer.find({ fixtureId })
-      .populate("agentId", "name whatsapp isActive")
-      .sort({ price: 1 }); // Sort by price ascending
+      .populate({
+        path: "ownerId",
+        select: "name whatsapp isActive imageUrl agentType companyName logoUrl",
+      })
+      .sort({ price: 1 }) // Sort by price ascending
+      .lean();
+
+    // מיפוי ownerId ל-agentId/supplierId לתאימות לאחור עם Frontend
+    const mappedOffers = offers.map((offer) => {
+      if (offer.ownerType === "Agent" && offer.ownerId) {
+        offer.agentId = offer.ownerId;
+      } else if (offer.ownerType === "Supplier" && offer.ownerId) {
+        offer.supplierId = offer.ownerId;
+      }
+      return offer;
+    });
 
     // Refresh cache with updated data
     const cacheRefreshed = offersByFixtureCacheService.refresh(fixtureId, {
-      offers,
+      offers: mappedOffers,
       pagination: {
         page: 1,
         limit: 20,
-        total: offers.length,
+        total: mappedOffers.length,
         pages: 1,
       },
       fromCache: false,
@@ -40,14 +56,14 @@ export const refreshOffersCache = async (fixtureId) => {
       "OFFER_CACHE_HELPER_002",
       {
         fixtureId,
-        offersCount: offers.length,
+        offersCount: mappedOffers.length,
         cacheRefreshed,
       }
     );
 
     return {
       success: true,
-      offersCount: offers.length,
+      offersCount: mappedOffers.length,
       cacheRefreshed,
     };
   } catch (error) {
@@ -100,45 +116,60 @@ export const clearOffersCache = (fixtureId) => {
 };
 
 /**
- * Get offers from cache or database with automatic refresh
- * This is a smart getter that ensures fresh data
+ * Get offers from database (no cache - always fresh data)
+ * Cache disabled - always returns fresh data from DB
  */
 export const getOffersWithCacheRefresh = async (fixtureId) => {
   try {
-    // First try to get from cache
-    const cachedData = offersByFixtureCacheService.get(fixtureId);
-
-    if (cachedData) {
-      logWithCheckpoint(
-        "info",
-        "Offers retrieved from cache",
-        "OFFER_CACHE_HELPER_005",
-        {
-          fixtureId,
-          offersCount: cachedData.offers?.length || 0,
-        }
-      );
-      return cachedData;
-    }
-
-    // Cache miss - refresh from database
+    // Always fetch from database - cache disabled
     logWithCheckpoint(
       "info",
-      "Cache miss - refreshing from database",
-      "OFFER_CACHE_HELPER_006",
+      "Fetching offers from database (cache disabled)",
+      "OFFER_CACHE_HELPER_005",
       {
         fixtureId,
       }
     );
 
-    const refreshResult = await refreshOffersCache(fixtureId);
+    // Fetch latest offers from database
+    const offers = await Offer.find({ fixtureId })
+      .populate({
+        path: "ownerId",
+        select: "name whatsapp isActive imageUrl agentType companyName logoUrl",
+      })
+      .sort({ price: 1 }) // Sort by price ascending
+      .lean();
 
-    if (refreshResult.success) {
-      // Return the freshly cached data
-      return offersByFixtureCacheService.get(fixtureId);
-    }
+    // מיפוי ownerId ל-agentId/supplierId לתאימות לאחור עם Frontend
+    const mappedOffers = offers.map((offer) => {
+      if (offer.ownerType === "Agent" && offer.ownerId) {
+        offer.agentId = offer.ownerId;
+      } else if (offer.ownerType === "Supplier" && offer.ownerId) {
+        offer.supplierId = offer.ownerId;
+      }
+      return offer;
+    });
 
-    throw new Error("Failed to refresh cache");
+    logWithCheckpoint(
+      "info",
+      "Offers fetched from DB (cache disabled)",
+      "OFFER_CACHE_HELPER_006",
+      {
+        fixtureId,
+        offersCount: mappedOffers.length,
+      }
+    );
+
+    return {
+      offers: mappedOffers,
+      pagination: {
+        page: 1,
+        limit: 20,
+        total: mappedOffers.length,
+        pages: Math.ceil(mappedOffers.length / 20),
+      },
+      fromCache: false,
+    };
   } catch (error) {
     logError(error, { operation: "getOffersWithCacheRefresh", fixtureId });
     throw error;

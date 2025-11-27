@@ -18,7 +18,11 @@
     "initialize-league-months": "node scripts/initializeLeagueMonths.js",
     "update-league-months": "node scripts/updateLeagueMonths.js",
     "insert-real-madrid-offers": "node scripts/insertRealMadridOffers.js",
-    "update-team-colors": "node scripts/updateTeamColors.js"
+    "update-team-colors": "node scripts/updateTeamColors.js",
+    "extract-team-shirts": "node scripts/extractTeamShirtUrls.js",
+    "update-team-shirts": "node scripts/updateTeamShirtUrls.js",
+    "create-p1-supplier": "node scripts/createP1Supplier.js",
+    "add-supplier-team-names": "node scripts/addSupplierTeamNames.js"
   },
   "keywords": [
     "tickets",
@@ -33,6 +37,7 @@
     "bcryptjs": "^3.0.2",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
+    "csv-parse": "^6.1.0",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "joi": "^18.0.1",
@@ -45,6 +50,8 @@
     "redis": "^5.8.2"
   },
   "devDependencies": {
-    "nodemon": "^3.0.2"
+    "csv-parser": "^3.2.0",
+    "nodemon": "^3.0.2",
+    "xml2js": "^0.6.2"
   }
 }

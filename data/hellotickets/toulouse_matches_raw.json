@@ -1,0 +1,122 @@
+{
+  "fetched_at": "2025-11-26T13:30:54.780Z",
+  "team": "Toulouse FC",
+  "team_id": "757",
+  "total_count": 3,
+  "performances": [
+    {
+      "id": 2315137,
+      "name": "Paris FC vs. Toulouse FC",
+      "url": "https://www.hellotickets.com/en-en/france/angers/sports/toulouse-fc-tickets/2025-12-14,1500/2315137/2",
+      "ticket_groups_count": 0,
+      "start_date": {
+        "local_date": "2025-12-14",
+        "local_time": "15:00",
+        "date_time": "2025-12-14T14:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 0,
+        "max_price": 0,
+        "currency": "EUR"
+      },
+      "event_id": 475107,
+      "venue": {
+        "id": 5736,
+        "name": "Stade Jean Bouin"
+      },
+      "performers": [
+        {
+          "id": 757,
+          "name": "Toulouse FC"
+        },
+        {
+          "id": 30847,
+          "name": "Paris FC"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true
+    },
+    {
+      "id": 2253841,
+      "name": "Le Havre vs. Toulouse FC",
+      "url": "https://www.hellotickets.com/en-en/france/le-havre/sports/le-havre-tickets/2026-02-15,1500/2253841/2",
+      "ticket_groups_count": 1,
+      "start_date": {
+        "local_date": "2026-02-15",
+        "local_time": "15:00",
+        "date_time": "2026-02-15T14:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 52,
+        "max_price": 52,
+        "currency": "EUR"
+      },
+      "event_id": 455927,
+      "venue": {
+        "id": 2727,
+        "name": "Stade Oceane"
+      },
+      "performers": [
+        {
+          "id": 1841,
+          "name": "Le Havre"
+        },
+        {
+          "id": 757,
+          "name": "Toulouse FC"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    },
+    {
+      "id": 2279692,
+      "name": "Paris Saint-Germain FC vs. Toulouse FC",
+      "url": "https://www.hellotickets.com/en-en/france/paris/sports/psg-paris-saint-germain-fc-tickets/2026-04-05,2100/2279692/2",
+      "ticket_groups_count": 85,
+      "start_date": {
+        "local_date": "2026-04-05",
+        "local_time": "21:00",
+        "date_time": "2026-04-05T19:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 72,
+        "max_price": 1419,
+        "currency": "EUR"
+      },
+      "event_id": 380004,
+      "venue": {
+        "id": 2623,
+        "name": "Parc Des Princes"
+      },
+      "performers": [
+        {
+          "id": 584,
+          "name": "Paris Saint-Germain FC"
+        },
+        {
+          "id": 757,
+          "name": "Toulouse FC"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": false
+    }
+  ]
+}

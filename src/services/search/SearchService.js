@@ -39,7 +39,7 @@ export const searchTeamsWithFixtures = async (query, options = {}) => {
     // Build team search filter
     const teamFilter = {
       $or: [
-        { name_he: { $regex: searchQuery, $options: "i" } },
+        { name: { $regex: searchQuery, $options: "i" } },
         { name_en: { $regex: searchQuery, $options: "i" } },
         { code: { $regex: searchQuery, $options: "i" } },
       ],
@@ -56,7 +56,7 @@ export const searchTeamsWithFixtures = async (query, options = {}) => {
 
     // Find teams matching the search query
     const teams = await Team.find(teamFilter)
-      .select("name_he name_en code slug _id")
+      .select("name name_en code slug _id")
       .limit(limit)
       .lean();
 
@@ -95,9 +95,9 @@ export const searchTeamsWithFixtures = async (query, options = {}) => {
       // Get all upcoming fixtures for all teams
       const fixtures = await FootballEvent.find(fixturesFilter)
         .populate("league", "nameHe countryHe logoUrl slug")
-        .populate("homeTeam", "name_he country_he code slug logoUrl")
-        .populate("awayTeam", "name_he country_he code slug logoUrl")
-        .populate("venue", "name_he city_he country_he capacity")
+        .populate("homeTeam", "name country_he code slug logoUrl")
+        .populate("awayTeam", "name country_he code slug logoUrl")
+        .populate("venue", "name city_he country_he capacity")
         .select("+minPrice")
         .sort({ date: 1 })
         .limit(fixturesLimit * teams.length) // Get more fixtures to have enough for all teams
@@ -128,26 +128,26 @@ export const searchTeamsWithFixtures = async (query, options = {}) => {
             date: fixture.date,
             slug: fixture.slug,
             homeTeam: {
-              name: fixture.homeTeam.name_he,
+              name: fixture.homeTeam.name,
             },
             awayTeam: {
-              name: fixture.awayTeam.name_he,
+              name: fixture.awayTeam.name,
             },
             venue: {
-              name: fixture.venue.name_he,
+              name: fixture.venue.name,
             },
           }));
 
           logWithCheckpoint("debug", "Found fixtures for team", "SEARCH_005", {
             teamId: team._id,
-            teamName: team.name_he,
+            teamName: team.name,
             fixturesCount: hebrewFixtures.length,
           });
 
           // Convert team to Hebrew format
           const hebrewTeam = {
             _id: team._id.toString(),
-            name: team.name_he || team.name_en,
+            name: team.name,
             code: team.code,
             slug: team.slug,
           };
@@ -166,7 +166,7 @@ export const searchTeamsWithFixtures = async (query, options = {}) => {
           // Return team without fixtures if there's an error
           const hebrewTeam = {
             _id: team._id.toString(),
-            name: team.name_he || team.name_en,
+            name: team.name,
             code: team.code,
             slug: team.slug,
           };
@@ -246,17 +246,17 @@ export const getSearchSuggestions = async (query, limit = 5) => {
     const suggestions = await Team.find({
       isPopular: true,
       $or: [
-        { name_he: { $regex: searchQuery, $options: "i" } },
+        { name: { $regex: searchQuery, $options: "i" } },
         { name_en: { $regex: searchQuery, $options: "i" } },
         { code: { $regex: searchQuery, $options: "i" } },
       ],
     })
-      .select("name_he name_en code slug")
+      .select("name name_en code slug")
       .limit(limit)
       .lean();
 
     const formattedSuggestions = suggestions.map((team) => ({
-      name: team.name_he || team.name_en,
+      name: team.name,
       code: team.code,
       slug: team.slug,
     }));

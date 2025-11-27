@@ -3,6 +3,7 @@ import { getOffersByFixtureId } from "./queries/getOffersByFixtureId.js";
 
 // Mutation functions
 import { createOffer } from "./mutations/createOffer.js";
+import { updateOffer } from "./mutations/updateOffer.js";
 import { deleteOffer } from "./mutations/deleteOffer.js";
 
 // Cache helper functions
@@ -19,6 +20,7 @@ export default {
   },
   mutate: {
     createOffer,
+    updateOffer,
     deleteOffer,
   },
   cache: {

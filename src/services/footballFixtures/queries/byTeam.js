@@ -8,7 +8,6 @@ import {
 import {
   buildFootballEventFilter,
   buildSortObject,
-  buildPaginationParams,
   buildPopulateOptions,
 } from "../utils/buildFootballEventFilter.js";
 import { createErrorResponse } from "../../../utils/errorCodes.js";
@@ -60,9 +59,10 @@ export const getFootballEventsByTeamId = async (teamId, query = {}) => {
         ...cachedData,
         footballEvents: filteredEvents,
         pagination: {
-          ...cachedData.pagination,
+          page: 1,
+          limit: filteredEvents.length,
           total: filteredEvents.length,
-          pages: Math.ceil(filteredEvents.length / parseInt(query.limit || 20)),
+          pages: 1,
         },
         fromCache: true,
       };
@@ -77,8 +77,6 @@ export const getFootballEventsByTeamId = async (teamId, query = {}) => {
     );
 
     const {
-      page = 1,
-      limit = 20,
       league,
       season,
       venue,
@@ -137,61 +135,37 @@ export const getFootballEventsByTeamId = async (teamId, query = {}) => {
     }
     // אם upcoming לא מצוין - לא מוסיפים פילטר תאריך (כל המשחקים)
 
+    // Add hasOffers filter to DB query for better performance
+    if (hasOffers === true || hasOffers === "true") {
+      filter["minPrice.amount"] = { $exists: true, $gt: 0 };
+    }
+
     // Build sort object
     const sort = buildSortObject(sortBy, sortOrder);
-    const { skip, limit: limitNum } = buildPaginationParams(page, limit);
 
-    const [footballEvents, total] = await Promise.all([
-      FootballEvent.find(filter)
-        .sort(sort)
-        .skip(skip)
-        .limit(limitNum)
-        .populate("league", "nameHe countryHe logoUrl slug")
-        .populate("homeTeam", "name_he country_he code slug logoUrl")
-        .populate("awayTeam", "name_he country_he code slug logoUrl")
-        .populate("venue", "name_he city_he country_he capacity")
-        .select("+minPrice") // Include minPrice field in response
-        .lean(),
-      FootballEvent.countDocuments(filter),
-    ]);
+    // Fetch all fixtures without pagination
+    const footballEvents = await FootballEvent.find(filter)
+      .sort(sort)
+      .populate("league", "name logoUrl slug")
+      .populate("homeTeam", "name slug logoUrl")
+      .populate("awayTeam", "name slug logoUrl")
+      .populate("venue", "name city_en city_he")
+      .select("+minPrice") // Include minPrice (hidden field)
+      .lean();
 
-    // Convert data to Hebrew names only - maps Hebrew fields to standard names
+    // Remove unnecessary fields from response
     const hebrewEvents = footballEvents.map((event) => {
-      const mappedEvent = {
-        ...event,
-        league: event.league
-          ? {
-              ...event.league,
-              name: event.league.nameHe || event.league.name,
-              nameHe: event.league.nameHe,
-              country: event.league.countryHe || event.league.country,
-            }
-          : null,
-        homeTeam: event.homeTeam
-          ? {
-              ...event.homeTeam,
-              name: event.homeTeam.name_he,
-              country: event.homeTeam.country_he,
-            }
-          : null,
-        awayTeam: event.awayTeam
-          ? {
-              ...event.awayTeam,
-              name: event.awayTeam.name_he,
-              country: event.awayTeam.country_he,
-            }
-          : null,
-        venue: event.venue
-          ? {
-              ...event.venue,
-              name: event.venue.name_he,
-              city: event.venue.city_he,
-              country: event.venue.country_he,
-            }
-          : null,
-      };
-
-      return mappedEvent;
+      const {
+        status,
+        round,
+        externalIds,
+        createdAt,
+        updatedAt,
+        __v,
+        supplierExternalIds,
+        ...rest
+      } = event;
+      return rest;
     });
 
     logWithCheckpoint(
@@ -201,7 +175,6 @@ export const getFootballEventsByTeamId = async (teamId, query = {}) => {
       {
         teamId,
         count: hebrewEvents.length,
-        total,
       }
     );
 
@@ -209,10 +182,10 @@ export const getFootballEventsByTeamId = async (teamId, query = {}) => {
     const cacheResult = {
       footballEvents: hebrewEvents,
       pagination: {
-        page: parseInt(page),
-        limit: parseInt(limit),
+        page: 1,
+        limit: hebrewEvents.length,
         total: hebrewEvents.length,
-        pages: Math.ceil(hebrewEvents.length / parseInt(limit)),
+        pages: 1,
       },
       fromCache: false,
     };
@@ -229,21 +202,17 @@ export const getFootballEventsByTeamId = async (teamId, query = {}) => {
       }
     );
 
-    // סינון משחקים עם הצעות - רק לפני החזרת התוצאה (לא ב-cache)
-    let filteredEvents = [...hebrewEvents];
-    if (hasOffers === true || hasOffers === "true") {
-      filteredEvents = filteredEvents.filter(
-        (event) => event.minPrice?.amount && event.minPrice.amount > 0
-      );
-    }
+    // hasOffers filter is now applied in DB query, so no need to filter here
+    // But we keep the code structure for consistency
+    const filteredEvents = hebrewEvents;
 
     return {
       footballEvents: filteredEvents,
       pagination: {
-        page: parseInt(page),
-        limit: parseInt(limit),
+        page: 1,
+        limit: filteredEvents.length,
         total: filteredEvents.length,
-        pages: Math.ceil(filteredEvents.length / parseInt(limit)),
+        pages: 1,
       },
       fromCache: false,
     };

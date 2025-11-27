@@ -2,10 +2,7 @@ import FootballEvent from "../../../models/FootballEvent.js";
 import League from "../../../models/League.js";
 import { logWithCheckpoint, logError } from "../../../utils/logger.js";
 import { validateObjectId } from "../validators/validateFootballQuery.js";
-import {
-  buildSortObject,
-  buildPaginationParams,
-} from "../utils/buildFootballEventFilter.js";
+import { buildSortObject } from "../utils/buildFootballEventFilter.js";
 import {
   buildDateRangeFromMonth,
   validateMonthFormat,
@@ -28,8 +25,6 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
     );
 
     const {
-      page = 1,
-      limit = 20,
       month, // אופציונלי - אם לא נשלח, נקבל את כל המשחקים של הליגה
       months, // אופציונלי - array של חודשים (למשל: ["2025-10", "2025-11"])
       city,
@@ -56,14 +51,6 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
 
     if (month && !validateMonthFormat(month)) {
       return createErrorResponse("VALIDATION_INVALID_MONTH_FORMAT");
-    }
-
-    const validation = validateFilters({ page, limit });
-    if (!validation.isValid) {
-      return createErrorResponse(
-        "VALIDATION_INVALID_PAGINATION",
-        validation.errors.join(", ")
-      );
     }
 
     // בדיקת cache
@@ -135,46 +122,59 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
 
       const sort = buildSortObject(sortBy, sortOrder);
 
-      // Always fetch ALL fixtures without pagination to allow proper filtering
-      // Pagination will be applied after filtering in memory
-      const [fixtures, total] = await Promise.all([
-        FootballEvent.find(filter)
-          .populate("league", "name name_he country country_he logoUrl slug")
-          .populate(
-            "homeTeam",
-            "name name_he name_en country country_he country_en code slug logoUrl"
-          )
-          .populate(
-            "awayTeam",
-            "name name_he name_en country country_he country_en code slug logoUrl"
-          )
-          .populate(
-            "venue",
-            "name name_he name_en city city_he city_en country country_he country_en capacity"
-          )
-          .select("+minPrice")
-          .sort(sort)
-          .lean(),
-        FootballEvent.countDocuments(filter),
-      ]);
+      // Add filters to DB query for better performance
+      // פילטר משחקים עתידיים
+      if (upcoming === true || upcoming === "true") {
+        const now = new Date();
+        if (filter.date) {
+          // אם יש כבר פילטר תאריך, נשלב אותו
+          filter.date = {
+            ...filter.date,
+            $gte: filter.date.$gte
+              ? new Date(Math.max(filter.date.$gte, now))
+              : now,
+          };
+        } else {
+          filter.date = { $gte: now };
+        }
+      }
 
-      // נרמול נתונים - מיפוי name_he ל-name
-      const normalizedFixtures = fixtures.map((fixture) => ({
-        ...fixture,
-        venue: fixture.venue
-          ? {
-              ...fixture.venue,
-              name: fixture.venue.name_he || fixture.venue.name_en,
-              nameHe: fixture.venue.name_he,
-              city: fixture.venue.city_he || fixture.venue.city_en,
-              country: fixture.venue.country_he || fixture.venue.country_en,
-            }
-          : null,
-      }));
+      // פילטר משחקים עם הצעות
+      if (hasOffers === true || hasOffers === "true") {
+        filter["minPrice.amount"] = { $exists: true, $gt: 0 };
+      }
 
+      // Build base query - no pagination, return all fixtures
+      const baseQuery = FootballEvent.find(filter)
+        .populate("league", "name logoUrl slug")
+        .populate("homeTeam", "name slug logoUrl")
+        .populate("awayTeam", "name slug logoUrl")
+        .populate("venue", "name city_en city_he")
+        .select("+minPrice") // Include minPrice (hidden field)
+        .sort(sort);
+
+      // Fetch all fixtures without pagination
+      const fixturesRaw = await baseQuery.lean();
+
+      // Remove unnecessary fields from response
+      const fixtures = fixturesRaw.map((fixture) => {
+        const {
+          status,
+          round,
+          externalIds,
+          createdAt,
+          updatedAt,
+          __v,
+          supplierExternalIds,
+          ...rest
+        } = fixture;
+        return rest;
+      });
+
+      // Use data as-is from DB - no normalization needed
       baseData = {
-        fixtures: normalizedFixtures,
-        total,
+        fixtures: fixtures,
+        total: fixtures.length,
         leagueId,
         month: month || (months && months.length > 0 ? months.join(",") : null),
       };
@@ -197,64 +197,27 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
       );
     }
 
-    // סינון הנתונים
+    // סינון הנתונים (רק פילטרים שלא יכולים להיות ב-DB)
     let filteredFixtures = [...(baseData.fixtures || [])];
 
-    // פילטר עיר
+    // פילטר עיר - צריך להישאר ב-memory כי צריך לבדוק venue.name
+    // (לא ניתן לסנן ב-DB לפני populate)
     if (city) {
-      filteredFixtures = filteredFixtures.filter(
-        (fixture) =>
-          fixture.venue?.city_he?.toLowerCase().includes(city.toLowerCase()) ||
-          fixture.venue?.city?.toLowerCase().includes(city.toLowerCase())
+      filteredFixtures = filteredFixtures.filter((fixture) =>
+        fixture.venue?.name?.toLowerCase().includes(city.toLowerCase())
       );
     }
 
-    // פילטר משחקים עם הצעות
-    if (hasOffers === true || hasOffers === "true") {
-      filteredFixtures = filteredFixtures.filter(
-        (fixture) => fixture.minPrice?.amount && fixture.minPrice.amount > 0
-      );
-    }
-
-    // פילטר משחקים עתידיים
-    if (upcoming === true || upcoming === "true") {
-      const now = new Date();
-      filteredFixtures = filteredFixtures.filter(
-        (fixture) => new Date(fixture.date) >= now
-      );
-    }
-
-    // Apply pagination only if month or months are not specified
-    const result =
-      month || (months && months.length > 0)
-        ? {
-            data: filteredFixtures, // Return all fixtures when month(s) are specified
-            pagination: {
-              page: 1,
-              limit: filteredFixtures.length,
-              total: filteredFixtures.length,
-              pages: 1,
-            },
-          }
-        : (() => {
-            // Apply pagination when month is not specified
-            const startIndex = (page - 1) * limit;
-            const endIndex = startIndex + limit;
-            const paginatedFixtures = filteredFixtures.slice(
-              startIndex,
-              endIndex
-            );
-
-            return {
-              data: paginatedFixtures,
-              pagination: {
-                page,
-                limit,
-                total: filteredFixtures.length,
-                pages: Math.ceil(filteredFixtures.length / limit),
-              },
-            };
-          })();
+    // Return all fixtures without pagination
+    const result = {
+      data: filteredFixtures,
+      pagination: {
+        page: 1,
+        limit: filteredFixtures.length,
+        total: filteredFixtures.length,
+        pages: 1,
+      },
+    };
 
     logWithCheckpoint(
       "info",

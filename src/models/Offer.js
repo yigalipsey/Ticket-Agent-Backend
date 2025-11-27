@@ -7,10 +7,17 @@ const offerSchema = new mongoose.Schema(
       ref: "FootballEvent",
       required: true,
     },
-    agentId: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Agent",
+    // Owner can be either a Supplier or an Agent
+    ownerType: {
+      type: String,
+      enum: ["Supplier", "Agent"],
       required: true,
+    },
+    ownerId: {
+      type: mongoose.Schema.Types.ObjectId,
+      required: true,
+      // Dynamic reference based on ownerType (Supplier or Agent)
+      refPath: "ownerType",
     },
     price: {
       type: Number,
@@ -27,6 +34,10 @@ const offerSchema = new mongoose.Schema(
       enum: ["standard", "vip"],
       default: "standard",
     },
+    isHospitality: {
+      type: Boolean,
+      default: false,
+    },
     isAvailable: {
       type: Boolean,
       default: true,
@@ -36,12 +47,22 @@ const offerSchema = new mongoose.Schema(
       trim: true,
       maxlength: 300,
     },
+    url: {
+      type: String,
+      trim: true,
+      validate: {
+        validator: function (v) {
+          return !v || /^https?:\/\/.+/.test(v);
+        },
+        message: "URL must be a valid HTTP/HTTPS URL",
+      },
+    },
   },
   { timestamps: true }
 );
 
-// Indexes - Unique constraint: one offer per agent per fixture
-offerSchema.index({ fixtureId: 1, agentId: 1 }, { unique: true });
+// Indexes - Unique constraint: one offer per owner per fixture (regardless of ticketType)
+offerSchema.index({ fixtureId: 1, ownerId: 1 }, { unique: true });
 offerSchema.index({ fixtureId: 1, price: 1 });
 
 const Offer = mongoose.models.Offer || mongoose.model("Offer", offerSchema);

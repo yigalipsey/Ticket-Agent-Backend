@@ -1,0 +1,2325 @@
+{
+  "Serie A": [
+    {
+      "homeTeam": "Napoli",
+      "awayTeam": "Atalanta Bergamo",
+      "date": "2025-11-22",
+      "minPrice": 75,
+      "url": "https://www.p1travel.com/en/football/serie-a/napoli-vs-atalanta-bergamo",
+      "reason": "Fixture not found in DB",
+      "fixtureId": null
+    },
+    {
+      "homeTeam": "Napoli",
+      "awayTeam": "Juventus",
+      "date": "2025-12-07",
+      "minPrice": 235,
+      "url": "https://www.p1travel.com/en/football/serie-a/napoli-vs-juventus",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40168f315f81d41a188"
+    },
+    {
+      "homeTeam": "Napoli",
+      "awayTeam": "AS Roma",
+      "date": "2026-02-15",
+      "minPrice": 199,
+      "url": "https://www.p1travel.com/en/football/serie-a/napoli-vs-as-roma",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41668f315f81d41a330"
+    },
+    {
+      "homeTeam": "Napoli",
+      "awayTeam": "ACF Fiorentina",
+      "date": "2026-02-01",
+      "minPrice": 79,
+      "url": "https://www.p1travel.com/en/football/serie-a/napoli-vs-acf-fiorentina",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41268f315f81d41a2e0"
+    },
+    {
+      "homeTeam": "Napoli",
+      "awayTeam": "Lazio Roma",
+      "date": "2026-04-19",
+      "minPrice": 169,
+      "url": "https://www.p1travel.com/en/football/serie-a/napoli-vs-lazio-roma",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42568f315f81d41a46c"
+    },
+    {
+      "homeTeam": "Napoli",
+      "awayTeam": "AC Milan",
+      "date": "2026-04-04",
+      "minPrice": 299,
+      "url": "https://www.p1travel.com/en/football/serie-a/napoli-vs-ac-milan",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42268f315f81d41a420"
+    },
+    {
+      "homeTeam": "Napoli",
+      "awayTeam": "Bologna",
+      "date": "2026-05-10",
+      "minPrice": 149,
+      "url": "https://www.p1travel.com/en/football/serie-a/napoli-vs-bologna",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42c68f315f81d41a4ec"
+    },
+    {
+      "homeTeam": "Napoli",
+      "awayTeam": "Torino",
+      "date": "2026-03-08",
+      "minPrice": 99,
+      "url": "https://www.p1travel.com/en/football/serie-a/napoli-vs-torino",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41c68f315f81d41a3ac"
+    },
+    {
+      "homeTeam": "Napoli",
+      "awayTeam": "Udinese",
+      "date": "2026-05-24",
+      "minPrice": 159,
+      "url": "https://www.p1travel.com/en/football/serie-a/napoli-vs-udinese",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f43068f315f81d41a538"
+    },
+    {
+      "homeTeam": "Napoli",
+      "awayTeam": "Hellas Verona",
+      "date": "2026-01-07",
+      "minPrice": 49,
+      "url": "https://www.p1travel.com/en/football/serie-a/napoli-vs-hellas-verona",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40968f315f81d41a234"
+    },
+    {
+      "homeTeam": "Napoli",
+      "awayTeam": "Parma",
+      "date": "2026-01-14",
+      "minPrice": 39,
+      "url": "https://www.p1travel.com/en/football/serie-a/napoli-vs-parma-calcio-1913",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40c68f315f81d41a278"
+    },
+    {
+      "homeTeam": "Napoli",
+      "awayTeam": "US Lecce",
+      "date": "2026-03-15",
+      "minPrice": 79,
+      "url": "https://www.p1travel.com/en/football/serie-a/napoli-vs-us-lecce",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41e68f315f81d41a3d0"
+    },
+    {
+      "homeTeam": "Napoli",
+      "awayTeam": "Sassuolo",
+      "date": "2026-01-17",
+      "minPrice": 79,
+      "url": "https://www.p1travel.com/en/football/serie-a/napoli-vs-sassuolo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40e68f315f81d41a290"
+    },
+    {
+      "homeTeam": "Inter Milan",
+      "awayTeam": "Napoli",
+      "date": "2026-01-11",
+      "minPrice": 175,
+      "url": "https://www.p1travel.com/en/football/serie-a/fc-internazionale-milano-vs-napoli",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40c68f315f81d41a26c"
+    },
+    {
+      "homeTeam": "Inter Milan",
+      "awayTeam": "Atalanta Bergamo",
+      "date": "2026-03-15",
+      "minPrice": 75,
+      "url": "https://www.p1travel.com/en/football/serie-a/fc-internazionale-milano-vs-atalanta-bergamo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41e68f315f81d41a3e0"
+    },
+    {
+      "homeTeam": "Inter Milan",
+      "awayTeam": "Juventus",
+      "date": "2026-02-15",
+      "minPrice": 199,
+      "url": "https://www.p1travel.com/en/football/serie-a/fc-internazionale-milano-vs-juventus",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41668f315f81d41a33c"
+    },
+    {
+      "homeTeam": "Inter Milan",
+      "awayTeam": "AS Roma",
+      "date": "2026-04-04",
+      "minPrice": 149,
+      "url": "https://www.p1travel.com/en/football/serie-a/fc-internazionale-milano-vs-as-roma",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42268f315f81d41a430"
+    },
+    {
+      "homeTeam": "Inter Milan",
+      "awayTeam": "AC Milan",
+      "date": "2025-11-23",
+      "minPrice": 349,
+      "url": "https://www.p1travel.com/en/football/serie-a/fc-internazionale-milano-vs-ac-milan",
+      "reason": "Fixture not found in DB",
+      "fixtureId": null
+    },
+    {
+      "homeTeam": "Inter Milan",
+      "awayTeam": "Bologna",
+      "date": "2026-01-04",
+      "minPrice": 49,
+      "url": "https://www.p1travel.com/en/football/serie-a/fc-internazionale-milano-vs-bologna",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40868f315f81d41a224"
+    },
+    {
+      "homeTeam": "Inter Milan",
+      "awayTeam": "Como",
+      "date": "2025-12-06",
+      "minPrice": 125,
+      "url": "https://www.p1travel.com/en/football/serie-a/fc-internazionale-milano-vs-como-1907",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40068f315f81d41a174"
+    },
+    {
+      "homeTeam": "Inter Milan",
+      "awayTeam": "Genoa",
+      "date": "2026-03-01",
+      "minPrice": 49,
+      "url": "https://www.p1travel.com/en/football/serie-a/fc-internazionale-milano-vs-genoa",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41a68f315f81d41a38c"
+    },
+    {
+      "homeTeam": "Inter Milan",
+      "awayTeam": "Hellas Verona",
+      "date": "2026-05-17",
+      "minPrice": 179,
+      "url": "https://www.p1travel.com/en/football/serie-a/fc-internazionale-milano-vs-hellas-verona",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42f68f315f81d41a524"
+    },
+    {
+      "homeTeam": "Inter Milan",
+      "awayTeam": "Cagliari",
+      "date": "2026-04-19",
+      "minPrice": 49,
+      "url": "https://www.p1travel.com/en/football/serie-a/fc-internazionale-milano-vs-cagliari",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42668f315f81d41a480"
+    },
+    {
+      "homeTeam": "Inter Milan",
+      "awayTeam": "Parma",
+      "date": "2026-05-03",
+      "minPrice": 75,
+      "url": "https://www.p1travel.com/en/football/serie-a/fc-internazionale-milano-vs-parma-calcio-1913",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42a68f315f81d41a4d0"
+    },
+    {
+      "homeTeam": "Inter Milan",
+      "awayTeam": "US Lecce",
+      "date": "2026-01-14",
+      "minPrice": 39,
+      "url": "https://www.p1travel.com/en/football/serie-a/fc-internazionale-milano-vs-us-lecce",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40d68f315f81d41a27c"
+    },
+    {
+      "homeTeam": "Inter Milan",
+      "awayTeam": "Pisa SC",
+      "date": "2026-01-23",
+      "minPrice": 39,
+      "url": "https://www.p1travel.com/en/football/serie-a/fc-internazionale-milano-vs-pisa-sc",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40f68f315f81d41a2b0"
+    },
+    {
+      "homeTeam": "Juventus",
+      "awayTeam": "Napoli",
+      "date": "2026-01-25",
+      "minPrice": 449,
+      "url": "https://www.p1travel.com/en/football/serie-a/juventus-vs-napoli",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41168f315f81d41a2cc"
+    },
+    {
+      "homeTeam": "Juventus",
+      "awayTeam": "AS Roma",
+      "date": "2025-12-20",
+      "minPrice": 449,
+      "url": "https://www.p1travel.com/en/football/serie-a/juventus-vs-as-roma",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40468f315f81d41a1c4"
+    },
+    {
+      "homeTeam": "Juventus",
+      "awayTeam": "ACF Fiorentina",
+      "date": "2026-05-17",
+      "minPrice": 299,
+      "url": "https://www.p1travel.com/en/football/serie-a/juventus-vs-acf-fiorentina",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42e68f315f81d41a518"
+    },
+    {
+      "homeTeam": "Juventus",
+      "awayTeam": "Lazio Roma",
+      "date": "2026-02-08",
+      "minPrice": 299,
+      "url": "https://www.p1travel.com/en/football/serie-a/juventus-vs-lazio-roma",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41468f315f81d41a30c"
+    },
+    {
+      "homeTeam": "Juventus",
+      "awayTeam": "Bologna",
+      "date": "2026-04-19",
+      "minPrice": 249,
+      "url": "https://www.p1travel.com/en/football/serie-a/juventus-vs-bologna",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42668f315f81d41a474"
+    },
+    {
+      "homeTeam": "Juventus",
+      "awayTeam": "Como",
+      "date": "2026-02-22",
+      "minPrice": 249,
+      "url": "https://www.p1travel.com/en/football/serie-a/juventus-vs-como-1907",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41868f315f81d41a360"
+    },
+    {
+      "homeTeam": "Juventus",
+      "awayTeam": "Genoa",
+      "date": "2026-04-04",
+      "minPrice": 249,
+      "url": "https://www.p1travel.com/en/football/serie-a/juventus-vs-genoa",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42268f315f81d41a428"
+    },
+    {
+      "homeTeam": "Juventus",
+      "awayTeam": "Hellas Verona",
+      "date": "2026-05-03",
+      "minPrice": 199,
+      "url": "https://www.p1travel.com/en/football/serie-a/juventus-vs-hellas-verona",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42a68f315f81d41a4c0"
+    },
+    {
+      "homeTeam": "Juventus",
+      "awayTeam": "Cagliari",
+      "date": "2025-11-29",
+      "minPrice": 149,
+      "url": "https://www.p1travel.com/en/football/serie-a/juventus-vs-cagliari",
+      "reason": "Fixture not found in DB",
+      "fixtureId": null
+    },
+    {
+      "homeTeam": "Juventus",
+      "awayTeam": "US Lecce",
+      "date": "2026-01-03",
+      "minPrice": 175,
+      "url": "https://www.p1travel.com/en/football/serie-a/juventus-vs-us-lecce",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40768f315f81d41a210"
+    },
+    {
+      "homeTeam": "Juventus",
+      "awayTeam": "Sassuolo",
+      "date": "2026-03-22",
+      "minPrice": 175,
+      "url": "https://www.p1travel.com/en/football/serie-a/juventus-vs-sassuolo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42068f315f81d41a3fc"
+    },
+    {
+      "homeTeam": "Juventus",
+      "awayTeam": "Pisa SC",
+      "date": "2026-03-08",
+      "minPrice": 175,
+      "url": "https://www.p1travel.com/en/football/serie-a/juventus-vs-pisa-sc",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41c68f315f81d41a3b4"
+    },
+    {
+      "homeTeam": "AS Roma",
+      "awayTeam": "Napoli",
+      "date": "2025-11-30",
+      "minPrice": 149,
+      "url": "https://www.p1travel.com/en/football/serie-a/as-roma-vs-napoli",
+      "reason": "Fixture not found in DB",
+      "fixtureId": null
+    },
+    {
+      "homeTeam": "AS Roma",
+      "awayTeam": "Atalanta Bergamo",
+      "date": "2026-04-19",
+      "minPrice": 119,
+      "url": "https://www.p1travel.com/en/football/serie-a/as-roma-vs-atalanta-bergamo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42668f315f81d41a478"
+    },
+    {
+      "homeTeam": "AS Roma",
+      "awayTeam": "Juventus",
+      "date": "2026-03-01",
+      "minPrice": 179,
+      "url": "https://www.p1travel.com/en/football/serie-a/as-roma-vs-juventus",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41a68f315f81d41a380"
+    },
+    {
+      "homeTeam": "AS Roma",
+      "awayTeam": "ACF Fiorentina",
+      "date": "2026-05-03",
+      "minPrice": 119,
+      "url": "https://www.p1travel.com/en/football/serie-a/as-roma-vs-acf-fiorentina",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42a68f315f81d41a4c4"
+    },
+    {
+      "homeTeam": "AS Roma",
+      "awayTeam": "Lazio Roma",
+      "date": "2026-05-17",
+      "minPrice": 275,
+      "url": "https://www.p1travel.com/en/football/serie-a/as-roma-vs-lazio-roma",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42e68f315f81d41a51c"
+    },
+    {
+      "homeTeam": "AS Roma",
+      "awayTeam": "AC Milan",
+      "date": "2026-01-25",
+      "minPrice": 179,
+      "url": "https://www.p1travel.com/en/football/serie-a/as-roma-vs-ac-milan",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41168f315f81d41a2d0"
+    },
+    {
+      "homeTeam": "AS Roma",
+      "awayTeam": "Como",
+      "date": "2025-12-15",
+      "minPrice": 79,
+      "url": "https://www.p1travel.com/en/football/serie-a/as-roma-vs-como-1907",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40368f315f81d41a1bc"
+    },
+    {
+      "homeTeam": "AS Roma",
+      "awayTeam": "Genoa",
+      "date": "2025-12-29",
+      "minPrice": 79,
+      "url": "https://www.p1travel.com/en/football/serie-a/as-roma-vs-genoa",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40668f315f81d41a1fc"
+    },
+    {
+      "homeTeam": "AS Roma",
+      "awayTeam": "Cagliari",
+      "date": "2026-02-08",
+      "minPrice": 79,
+      "url": "https://www.p1travel.com/en/football/serie-a/as-roma-vs-cagliari",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41468f315f81d41a310"
+    },
+    {
+      "homeTeam": "AS Roma",
+      "awayTeam": "US Lecce",
+      "date": "2026-03-22",
+      "minPrice": 79,
+      "url": "https://www.p1travel.com/en/football/serie-a/as-roma-vs-us-lecce",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42068f315f81d41a400"
+    },
+    {
+      "homeTeam": "AS Roma",
+      "awayTeam": "Sassuolo",
+      "date": "2026-01-10",
+      "minPrice": 79,
+      "url": "https://www.p1travel.com/en/football/serie-a/as-roma-vs-sassuolo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40b68f315f81d41a258"
+    },
+    {
+      "homeTeam": "AS Roma",
+      "awayTeam": "Pisa SC",
+      "date": "2026-04-12",
+      "minPrice": 79,
+      "url": "https://www.p1travel.com/en/football/serie-a/as-roma-vs-pisa-sc",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42468f315f81d41a44c"
+    },
+    {
+      "homeTeam": "Lazio Roma",
+      "awayTeam": "Napoli",
+      "date": "2026-01-04",
+      "minPrice": 99,
+      "url": "https://www.p1travel.com/en/football/serie-a/lazio-roma-vs-napoli",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40868f315f81d41a218"
+    },
+    {
+      "homeTeam": "Lazio Roma",
+      "awayTeam": "Inter Milan",
+      "date": "2026-05-10",
+      "minPrice": 149,
+      "url": "https://www.p1travel.com/en/football/serie-a/lazio-roma-vs-fc-internazionale-milano",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42b68f315f81d41a4e0"
+    },
+    {
+      "homeTeam": "Lazio Roma",
+      "awayTeam": "Atalanta Bergamo",
+      "date": "2026-02-15",
+      "minPrice": 59,
+      "url": "https://www.p1travel.com/en/football/serie-a/lazio-roma-vs-atalanta-bergamo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41568f315f81d41a328"
+    },
+    {
+      "homeTeam": "Lazio Roma",
+      "awayTeam": "ACF Fiorentina",
+      "date": "2026-01-07",
+      "minPrice": 49,
+      "url": "https://www.p1travel.com/en/football/serie-a/lazio-roma-vs-acf-fiorentina",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40968f315f81d41a23c"
+    },
+    {
+      "homeTeam": "Lazio Roma",
+      "awayTeam": "AC Milan",
+      "date": "2026-03-15",
+      "minPrice": 119,
+      "url": "https://www.p1travel.com/en/football/serie-a/lazio-roma-vs-ac-milan",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41d68f315f81d41a3c8"
+    },
+    {
+      "homeTeam": "Lazio Roma",
+      "awayTeam": "Bologna",
+      "date": "2025-12-07",
+      "minPrice": 39,
+      "url": "https://www.p1travel.com/en/football/serie-a/lazio-roma-vs-bologna",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40068f315f81d41a184"
+    },
+    {
+      "homeTeam": "Lazio Roma",
+      "awayTeam": "Como",
+      "date": "2026-01-19",
+      "minPrice": 29,
+      "url": "https://www.p1travel.com/en/football/serie-a/lazio-roma-vs-como-1907",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40f68f315f81d41a2ac"
+    },
+    {
+      "homeTeam": "Lazio Roma",
+      "awayTeam": "Udinese",
+      "date": "2026-04-26",
+      "minPrice": 39,
+      "url": "https://www.p1travel.com/en/football/serie-a/lazio-roma-vs-udinese",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42768f315f81d41a490"
+    },
+    {
+      "homeTeam": "Lazio Roma",
+      "awayTeam": "Genoa",
+      "date": "2026-02-01",
+      "minPrice": 29,
+      "url": "https://www.p1travel.com/en/football/serie-a/lazio-roma-vs-genoa",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41168f315f81d41a2d8"
+    },
+    {
+      "homeTeam": "Lazio Roma",
+      "awayTeam": "Parma",
+      "date": "2026-04-04",
+      "minPrice": 69,
+      "url": "https://www.p1travel.com/en/football/serie-a/lazio-roma-vs-parma-calcio-1913",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42168f315f81d41a418"
+    },
+    {
+      "homeTeam": "Lazio Roma",
+      "awayTeam": "US Lecce",
+      "date": "2025-11-23",
+      "minPrice": 39,
+      "url": "https://www.p1travel.com/en/football/serie-a/lazio-roma-vs-us-lecce",
+      "reason": "Fixture not found in DB",
+      "fixtureId": null
+    },
+    {
+      "homeTeam": "Lazio Roma",
+      "awayTeam": "Sassuolo",
+      "date": "2026-03-08",
+      "minPrice": 39,
+      "url": "https://www.p1travel.com/en/football/serie-a/lazio-roma-vs-sassuolo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41b68f315f81d41a3a0"
+    },
+    {
+      "homeTeam": "Lazio Roma",
+      "awayTeam": "Pisa SC",
+      "date": "2026-05-24",
+      "minPrice": 59,
+      "url": "https://www.p1travel.com/en/football/serie-a/lazio-roma-vs-pisa-sc",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42f68f315f81d41a530"
+    },
+    {
+      "homeTeam": "AC Milan",
+      "awayTeam": "Inter Milan",
+      "date": "2026-03-08",
+      "minPrice": 249,
+      "url": "https://www.p1travel.com/en/football/serie-a/ac-milan-vs-fc-internazionale-milano",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41b68f315f81d41a3a4"
+    },
+    {
+      "homeTeam": "AC Milan",
+      "awayTeam": "Atalanta Bergamo",
+      "date": "2026-05-10",
+      "minPrice": 79,
+      "url": "https://www.p1travel.com/en/football/serie-a/ac-milan-vs-atalanta-bergamo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42b68f315f81d41a4e4"
+    },
+    {
+      "homeTeam": "AC Milan",
+      "awayTeam": "Juventus",
+      "date": "2026-04-26",
+      "minPrice": 175,
+      "url": "https://www.p1travel.com/en/football/serie-a/ac-milan-vs-juventus",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42768f315f81d41a494"
+    },
+    {
+      "homeTeam": "AC Milan",
+      "awayTeam": "Lazio Roma",
+      "date": "2025-11-29",
+      "minPrice": 99,
+      "url": "https://www.p1travel.com/en/football/serie-a/ac-milan-vs-lazio-roma",
+      "reason": "Fixture not found in DB",
+      "fixtureId": null
+    },
+    {
+      "homeTeam": "AC Milan",
+      "awayTeam": "Torino",
+      "date": "2026-03-22",
+      "minPrice": 49,
+      "url": "https://www.p1travel.com/en/football/serie-a/ac-milan-vs-torino",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41f68f315f81d41a3f0"
+    },
+    {
+      "homeTeam": "AC Milan",
+      "awayTeam": "Udinese",
+      "date": "2026-04-12",
+      "minPrice": 39,
+      "url": "https://www.p1travel.com/en/football/serie-a/ac-milan-vs-udinese",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42368f315f81d41a440"
+    },
+    {
+      "homeTeam": "AC Milan",
+      "awayTeam": "Genoa",
+      "date": "2026-01-08",
+      "minPrice": 35,
+      "url": "https://www.p1travel.com/en/football/serie-a/ac-milan-vs-genoa",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40a68f315f81d41a24c"
+    },
+    {
+      "homeTeam": "AC Milan",
+      "awayTeam": "Hellas Verona",
+      "date": "2025-12-28",
+      "minPrice": 49,
+      "url": "https://www.p1travel.com/en/football/serie-a/ac-milan-vs-hellas-verona",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40668f315f81d41a1ec"
+    },
+    {
+      "homeTeam": "AC Milan",
+      "awayTeam": "Cagliari",
+      "date": "2026-05-24",
+      "minPrice": 59,
+      "url": "https://www.p1travel.com/en/football/serie-a/ac-milan-vs-cagliari",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42f68f315f81d41a534"
+    },
+    {
+      "homeTeam": "AC Milan",
+      "awayTeam": "Parma",
+      "date": "2026-02-22",
+      "minPrice": 35,
+      "url": "https://www.p1travel.com/en/football/serie-a/ac-milan-vs-parma-calcio-1913",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41768f315f81d41a354"
+    },
+    {
+      "homeTeam": "AC Milan",
+      "awayTeam": "US Lecce",
+      "date": "2026-01-18",
+      "minPrice": 39,
+      "url": "https://www.p1travel.com/en/football/serie-a/ac-milan-vs-us-lecce",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40f68f315f81d41a2a4"
+    },
+    {
+      "homeTeam": "AC Milan",
+      "awayTeam": "Sassuolo",
+      "date": "2025-12-14",
+      "minPrice": 39,
+      "url": "https://www.p1travel.com/en/football/serie-a/ac-milan-vs-sassuolo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40268f315f81d41a1a8"
+    },
+    {
+      "homeTeam": "Atalanta Bergamo",
+      "awayTeam": "Napoli",
+      "date": "2026-02-22",
+      "minPrice": 149,
+      "url": "https://www.p1travel.com/en/football/serie-a/atalanta-bergamo-vs-napoli",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41868f315f81d41a368"
+    },
+    {
+      "homeTeam": "Atalanta Bergamo",
+      "awayTeam": "Inter Milan",
+      "date": "2025-12-28",
+      "minPrice": 199,
+      "url": "https://www.p1travel.com/en/football/serie-a/atalanta-bergamo-vs-fc-internazionale-milano",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40668f315f81d41a1f8"
+    },
+    {
+      "homeTeam": "Atalanta Bergamo",
+      "awayTeam": "Juventus",
+      "date": "2026-04-12",
+      "minPrice": 149,
+      "url": "https://www.p1travel.com/en/football/serie-a/atalanta-bergamo-vs-juventus",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42468f315f81d41a450"
+    },
+    {
+      "homeTeam": "Atalanta Bergamo",
+      "awayTeam": "AS Roma",
+      "date": "2026-01-03",
+      "minPrice": 99,
+      "url": "https://www.p1travel.com/en/football/serie-a/atalanta-bergamo-vs-as-roma",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40868f315f81d41a214"
+    },
+    {
+      "homeTeam": "Atalanta Bergamo",
+      "awayTeam": "ACF Fiorentina",
+      "date": "2025-11-30",
+      "minPrice": 99,
+      "url": "https://www.p1travel.com/en/football/serie-a/atalanta-bergamo-vs-acf-fiorentina",
+      "reason": "Fixture not found in DB",
+      "fixtureId": null
+    },
+    {
+      "homeTeam": "Atalanta Bergamo",
+      "awayTeam": "Bologna",
+      "date": "2026-05-17",
+      "minPrice": 119,
+      "url": "https://www.p1travel.com/en/football/serie-a/atalanta-bergamo-vs-bologna",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42e68f315f81d41a520"
+    },
+    {
+      "homeTeam": "Atalanta Bergamo",
+      "awayTeam": "Torino",
+      "date": "2026-01-10",
+      "minPrice": 59,
+      "url": "https://www.p1travel.com/en/football/serie-a/atalanta-bergamo-vs-torino",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40b68f315f81d41a25c"
+    },
+    {
+      "homeTeam": "Atalanta Bergamo",
+      "awayTeam": "Udinese",
+      "date": "2026-03-08",
+      "minPrice": 79,
+      "url": "https://www.p1travel.com/en/football/serie-a/atalanta-bergamo-vs-udinese",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41c68f315f81d41a3b8"
+    },
+    {
+      "homeTeam": "Atalanta Bergamo",
+      "awayTeam": "Genoa",
+      "date": "2026-05-03",
+      "minPrice": 89,
+      "url": "https://www.p1travel.com/en/football/serie-a/atalanta-bergamo-vs-genoa",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42a68f315f81d41a4c8"
+    },
+    {
+      "homeTeam": "Atalanta Bergamo",
+      "awayTeam": "Cagliari",
+      "date": "2025-12-13",
+      "minPrice": 79,
+      "url": "https://www.p1travel.com/en/football/serie-a/atalanta-bergamo-vs-cagliari",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40268f315f81d41a1a4"
+    },
+    {
+      "homeTeam": "Atalanta Bergamo",
+      "awayTeam": "Hellas Verona",
+      "date": "2026-03-22",
+      "minPrice": 79,
+      "url": "https://www.p1travel.com/en/football/serie-a/atalanta-bergamo-vs-hellas-verona",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42068f315f81d41a404"
+    },
+    {
+      "homeTeam": "Atalanta Bergamo",
+      "awayTeam": "Parma",
+      "date": "2026-01-25",
+      "minPrice": 59,
+      "url": "https://www.p1travel.com/en/football/serie-a/atalanta-bergamo-vs-parma-calcio-1913",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41068f315f81d41a2c8"
+    },
+    {
+      "homeTeam": "Como",
+      "awayTeam": "Napoli",
+      "date": "2026-05-03",
+      "minPrice": 199,
+      "url": "https://www.p1travel.com/en/football/serie-a/como-1907-vs-napoli",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42b68f315f81d41a4dc"
+    },
+    {
+      "homeTeam": "Como",
+      "awayTeam": "Inter Milan",
+      "date": "2026-04-12",
+      "minPrice": 249,
+      "url": "https://www.p1travel.com/en/football/serie-a/como-1907-vs-fc-internazionale-milano",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42568f315f81d41a464"
+    },
+    {
+      "homeTeam": "Como",
+      "awayTeam": "Atalanta Bergamo",
+      "date": "2026-02-01",
+      "minPrice": 75,
+      "url": "https://www.p1travel.com/en/football/serie-a/como-1907-vs-atalanta-bergamo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41368f315f81d41a2fc"
+    },
+    {
+      "homeTeam": "Como",
+      "awayTeam": "AS Roma",
+      "date": "2026-03-15",
+      "minPrice": 119,
+      "url": "https://www.p1travel.com/en/football/serie-a/como-1907-vs-as-roma",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41f68f315f81d41a3ec"
+    },
+    {
+      "homeTeam": "Como",
+      "awayTeam": "ACF Fiorentina",
+      "date": "2026-02-15",
+      "minPrice": 49,
+      "url": "https://www.p1travel.com/en/football/serie-a/como-1907-vs-acf-fiorentina",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41768f315f81d41a34c"
+    },
+    {
+      "homeTeam": "Como",
+      "awayTeam": "AC Milan",
+      "date": "2026-01-15",
+      "minPrice": 149,
+      "url": "https://www.p1travel.com/en/football/serie-a/como-1907-vs-ac-milan",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40d68f315f81d41a284"
+    },
+    {
+      "homeTeam": "Como",
+      "awayTeam": "Bologna",
+      "date": "2026-01-10",
+      "minPrice": 75,
+      "url": "https://www.p1travel.com/en/football/serie-a/como-1907-vs-bologna",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40b68f315f81d41a254"
+    },
+    {
+      "homeTeam": "Como",
+      "awayTeam": "Torino",
+      "date": "2026-01-24",
+      "minPrice": 69,
+      "url": "https://www.p1travel.com/en/football/serie-a/como-1907-vs-torino",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40f68f315f81d41a2b4"
+    },
+    {
+      "homeTeam": "Como",
+      "awayTeam": "Udinese",
+      "date": "2026-01-03",
+      "minPrice": 79,
+      "url": "https://www.p1travel.com/en/football/serie-a/como-1907-vs-udinese",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40768f315f81d41a204"
+    },
+    {
+      "homeTeam": "Como",
+      "awayTeam": "US Lecce",
+      "date": "2026-03-01",
+      "minPrice": 39,
+      "url": "https://www.p1travel.com/en/football/serie-a/como-1907-vs-us-lecce",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41b68f315f81d41a39c"
+    },
+    {
+      "homeTeam": "Como",
+      "awayTeam": "Parma",
+      "date": "2026-05-17",
+      "minPrice": 99,
+      "url": "https://www.p1travel.com/en/football/serie-a/como-1907-vs-parma-calcio-1913",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42f68f315f81d41a52c"
+    },
+    {
+      "homeTeam": "Como",
+      "awayTeam": "Pisa SC",
+      "date": "2026-03-22",
+      "minPrice": 49,
+      "url": "https://www.p1travel.com/en/football/serie-a/como-1907-vs-pisa-sc",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42168f315f81d41a414"
+    },
+    {
+      "homeTeam": "Napoli",
+      "awayTeam": "US Cremonese",
+      "date": "2026-04-26",
+      "minPrice": 99,
+      "url": "https://www.p1travel.com/en/football/serie-a/napoli-vs-us-cremonese",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42868f315f81d41a49c"
+    },
+    {
+      "homeTeam": "AS Roma",
+      "awayTeam": "US Cremonese",
+      "date": "2026-02-22",
+      "minPrice": 79,
+      "url": "https://www.p1travel.com/en/football/serie-a/as-roma-vs-us-cremonese",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41868f315f81d41a364"
+    },
+    {
+      "homeTeam": "Lazio Roma",
+      "awayTeam": "US Cremonese",
+      "date": "2025-12-20",
+      "minPrice": 29,
+      "url": "https://www.p1travel.com/en/football/serie-a/lazio-roma-vs-us-cremonese",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40368f315f81d41a1c0"
+    },
+    {
+      "homeTeam": "Atalanta Bergamo",
+      "awayTeam": "US Cremonese",
+      "date": "2026-02-08",
+      "minPrice": 69,
+      "url": "https://www.p1travel.com/en/football/serie-a/atalanta-bergamo-vs-us-cremonese",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41468f315f81d41a314"
+    },
+    {
+      "homeTeam": "Juventus",
+      "awayTeam": "US Cremonese",
+      "date": "2026-01-12",
+      "minPrice": 175,
+      "url": "https://www.p1travel.com/en/football/serie-a/juventus-vs-us-cremonese",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40c68f315f81d41a274"
+    },
+    {
+      "homeTeam": "Bologna",
+      "awayTeam": "US Cremonese",
+      "date": "2025-12-01",
+      "minPrice": 59,
+      "url": "https://www.p1travel.com/en/football/serie-a/bologna-vs-us-cremonese",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f3ff68f315f81d41a16c"
+    },
+    {
+      "homeTeam": "Bologna",
+      "awayTeam": "Juventus",
+      "date": "2025-12-14",
+      "minPrice": 129,
+      "url": "https://www.p1travel.com/en/football/serie-a/bologna-vs-juventus",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40368f315f81d41a1b8"
+    },
+    {
+      "homeTeam": "Bologna",
+      "awayTeam": "Sassuolo",
+      "date": "2025-12-28",
+      "minPrice": 69,
+      "url": "https://www.p1travel.com/en/football/serie-a/bologna-vs-sassuolo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40668f315f81d41a1f4"
+    },
+    {
+      "homeTeam": "Bologna",
+      "awayTeam": "Atalanta Bergamo",
+      "date": "2026-01-06",
+      "minPrice": 75,
+      "url": "https://www.p1travel.com/en/football/serie-a/bologna-vs-atalanta-bergamo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40968f315f81d41a238"
+    },
+    {
+      "homeTeam": "Bologna",
+      "awayTeam": "ACF Fiorentina",
+      "date": "2026-01-18",
+      "minPrice": 119,
+      "url": "https://www.p1travel.com/en/football/serie-a/bologna-vs-acf-fiorentina",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f40e68f315f81d41a29c"
+    },
+    {
+      "homeTeam": "Bologna",
+      "awayTeam": "AC Milan",
+      "date": "2026-02-01",
+      "minPrice": 175,
+      "url": "https://www.p1travel.com/en/football/serie-a/bologna-vs-ac-milan",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41268f315f81d41a2e8"
+    },
+    {
+      "homeTeam": "Bologna",
+      "awayTeam": "Parma",
+      "date": "2026-02-08",
+      "minPrice": 109,
+      "url": "https://www.p1travel.com/en/football/serie-a/bologna-vs-parma-calcio-1913",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41468f315f81d41a318"
+    },
+    {
+      "homeTeam": "Bologna",
+      "awayTeam": "Udinese",
+      "date": "2026-02-22",
+      "minPrice": 79,
+      "url": "https://www.p1travel.com/en/football/serie-a/bologna-vs-udinese",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41968f315f81d41a36c"
+    },
+    {
+      "homeTeam": "Bologna",
+      "awayTeam": "Hellas Verona",
+      "date": "2026-03-08",
+      "minPrice": 79,
+      "url": "https://www.p1travel.com/en/football/serie-a/bologna-vs-hellas-verona",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f41d68f315f81d41a3bc"
+    },
+    {
+      "homeTeam": "Bologna",
+      "awayTeam": "Lazio Roma",
+      "date": "2026-03-22",
+      "minPrice": 119,
+      "url": "https://www.p1travel.com/en/football/serie-a/bologna-vs-lazio-roma",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42068f315f81d41a408"
+    },
+    {
+      "homeTeam": "Bologna",
+      "awayTeam": "US Lecce",
+      "date": "2026-04-12",
+      "minPrice": 89,
+      "url": "https://www.p1travel.com/en/football/serie-a/bologna-vs-us-lecce",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42468f315f81d41a454"
+    },
+    {
+      "homeTeam": "Bologna",
+      "awayTeam": "AS Roma",
+      "date": "2026-04-26",
+      "minPrice": 119,
+      "url": "https://www.p1travel.com/en/football/serie-a/bologna-vs-as-roma",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42868f315f81d41a4a4"
+    },
+    {
+      "homeTeam": "Bologna",
+      "awayTeam": "Cagliari",
+      "date": "2026-05-03",
+      "minPrice": 119,
+      "url": "https://www.p1travel.com/en/football/serie-a/bologna-vs-cagliari",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f42a68f315f81d41a4cc"
+    },
+    {
+      "homeTeam": "Bologna",
+      "awayTeam": "Inter Milan",
+      "date": "2026-05-24",
+      "minPrice": 199,
+      "url": "https://www.p1travel.com/en/football/serie-a/bologna-vs-fc-internazionale-milano",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926f43068f315f81d41a53c"
+    }
+  ],
+  "La Liga": [
+    {
+      "homeTeam": "FC Barcelona",
+      "awayTeam": "Athletic Bilbao",
+      "date": "2025-11-22",
+      "minPrice": 450,
+      "url": "https://www.p1travel.com/en/football/la-liga/fc-barcelona-vs-athletic-bilbao",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e06db039369f239c173"
+    },
+    {
+      "homeTeam": "Real Betis",
+      "awayTeam": "FC Barcelona",
+      "date": "2025-12-06",
+      "minPrice": 170,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-betis-vs-fc-barcelona",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e0ddb039369f239c229"
+    },
+    {
+      "homeTeam": "Real Betis",
+      "awayTeam": "Real Madrid",
+      "date": "2026-04-19",
+      "minPrice": 220,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-betis-vs-real-madrid",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e3cdb039369f239c6c8"
+    },
+    {
+      "homeTeam": "Real Betis",
+      "awayTeam": "Villarreal CF",
+      "date": "2026-01-18",
+      "minPrice": 55,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-betis-vs-villarreal",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e1adb039369f239c379"
+    },
+    {
+      "homeTeam": "Real Betis",
+      "awayTeam": "Celta de Vigo",
+      "date": "2026-03-15",
+      "minPrice": 50,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-betis-vs-celta-de-vigo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e30db039369f239c5a9"
+    },
+    {
+      "homeTeam": "Real Betis",
+      "awayTeam": "Rayo Vallecano",
+      "date": "2026-02-22",
+      "minPrice": 40,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-betis-vs-rayo-vallecano",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e29db039369f239c4e5"
+    },
+    {
+      "homeTeam": "Real Betis",
+      "awayTeam": "Valencia CF",
+      "date": "2026-02-01",
+      "minPrice": 60,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-betis-vs-valencia",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e20db039369f239c405"
+    },
+    {
+      "homeTeam": "Real Betis",
+      "awayTeam": "Getafe",
+      "date": "2025-12-21",
+      "minPrice": 40,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-betis-vs-getafe",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e12db039369f239c2ae"
+    },
+    {
+      "homeTeam": "Real Betis",
+      "awayTeam": "RCD Espanyol",
+      "date": "2026-04-05",
+      "minPrice": 60,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-betis-vs-rcd-espanyol",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e36db039369f239c62e"
+    },
+    {
+      "homeTeam": "Real Betis",
+      "awayTeam": "Girona FC",
+      "date": "2025-11-23",
+      "minPrice": 39,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-betis-vs-girona-fc",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e08db039369f239c196"
+    },
+    {
+      "homeTeam": "Real Betis",
+      "awayTeam": "Sevilla FC",
+      "date": "2026-03-01",
+      "minPrice": 275,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-betis-vs-sevilla",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e2bdb039369f239c51d"
+    },
+    {
+      "homeTeam": "Real Betis",
+      "awayTeam": "Levante",
+      "date": "2026-05-24",
+      "minPrice": 70,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-betis-vs-levante",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e4cdb039369f239c873"
+    },
+    {
+      "homeTeam": "Real Betis",
+      "awayTeam": "Elche",
+      "date": "2026-05-13",
+      "minPrice": 50,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-betis-vs-elche",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e47db039369f239c7e7"
+    },
+    {
+      "homeTeam": "Athletic Bilbao",
+      "awayTeam": "FC Barcelona",
+      "date": "2026-03-08",
+      "minPrice": 511,
+      "url": "https://www.p1travel.com/en/football/la-liga/athletic-bilbao-vs-fc-barcelona",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e2ddb039369f239c54e"
+    },
+    {
+      "homeTeam": "Athletic Bilbao",
+      "awayTeam": "Real Madrid",
+      "date": "2025-12-03",
+      "minPrice": 408,
+      "url": "https://www.p1travel.com/en/football/la-liga/athletic-bilbao-vs-real-madrid",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e17db039369f239c31e"
+    },
+    {
+      "homeTeam": "Athletic Bilbao",
+      "awayTeam": "Atlético Madrid",
+      "date": "2025-12-06",
+      "minPrice": 378,
+      "url": "https://www.p1travel.com/en/football/la-liga/athletic-bilbao-vs-atletico-madrid",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e0cdb039369f239c1ff"
+    },
+    {
+      "homeTeam": "Athletic Bilbao",
+      "awayTeam": "Villarreal CF",
+      "date": "2026-04-12",
+      "minPrice": 199,
+      "url": "https://www.p1travel.com/en/football/la-liga/athletic-bilbao-vs-villarreal",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e38db039369f239c666"
+    },
+    {
+      "homeTeam": "Athletic Bilbao",
+      "awayTeam": "Real Betis",
+      "date": "2026-03-22",
+      "minPrice": 199,
+      "url": "https://www.p1travel.com/en/football/la-liga/athletic-bilbao-vs-real-betis",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e32db039369f239c5da"
+    },
+    {
+      "homeTeam": "Athletic Bilbao",
+      "awayTeam": "Celta de Vigo",
+      "date": "2026-05-17",
+      "minPrice": 219,
+      "url": "https://www.p1travel.com/en/football/la-liga/athletic-bilbao-vs-celta-de-vigo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e48db039369f239c811"
+    },
+    {
+      "homeTeam": "Athletic Bilbao",
+      "awayTeam": "Osasuna",
+      "date": "2026-04-22",
+      "minPrice": 169,
+      "url": "https://www.p1travel.com/en/football/la-liga/athletic-bilbao-vs-osasuna",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e3ddb039369f239c6f2"
+    },
+    {
+      "homeTeam": "Athletic Bilbao",
+      "awayTeam": "Real Sociedad",
+      "date": "2026-02-01",
+      "minPrice": 249,
+      "url": "https://www.p1travel.com/en/football/la-liga/athletic-bilbao-vs-real-sociedad",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e1fdb039369f239c3e9"
+    },
+    {
+      "homeTeam": "Athletic Bilbao",
+      "awayTeam": "Valencia CF",
+      "date": "2026-05-10",
+      "minPrice": 199,
+      "url": "https://www.p1travel.com/en/football/la-liga/athletic-bilbao-vs-valencia",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e43db039369f239c785"
+    },
+    {
+      "homeTeam": "Athletic Bilbao",
+      "awayTeam": "RCD Espanyol",
+      "date": "2025-12-21",
+      "minPrice": 119,
+      "url": "https://www.p1travel.com/en/football/la-liga/athletic-bilbao-vs-rcd-espanyol",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e11db039369f239c28b"
+    },
+    {
+      "homeTeam": "Athletic Bilbao",
+      "awayTeam": "Levante",
+      "date": "2026-02-08",
+      "minPrice": 149,
+      "url": "https://www.p1travel.com/en/football/la-liga/athletic-bilbao-vs-levante",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e22db039369f239c43d"
+    },
+    {
+      "homeTeam": "Athletic Bilbao",
+      "awayTeam": "Elche",
+      "date": "2026-02-22",
+      "minPrice": 149,
+      "url": "https://www.p1travel.com/en/football/la-liga/athletic-bilbao-vs-elche",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e28db039369f239c4c9"
+    },
+    {
+      "homeTeam": "Sevilla FC",
+      "awayTeam": "Real Madrid",
+      "date": "2026-05-17",
+      "minPrice": 409,
+      "url": "https://www.p1travel.com/en/football/la-liga/sevilla-vs-real-madrid",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b2db670d863241bd798"
+    },
+    {
+      "homeTeam": "Sevilla FC",
+      "awayTeam": "Atlético Madrid",
+      "date": "2026-04-12",
+      "minPrice": 170,
+      "url": "https://www.p1travel.com/en/football/la-liga/sevilla-vs-atletico-madrid",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b25b670d863241bd6be"
+    },
+    {
+      "homeTeam": "Sevilla FC",
+      "awayTeam": "Athletic Bilbao",
+      "date": "2026-01-24",
+      "minPrice": 200,
+      "url": "https://www.p1travel.com/en/football/la-liga/sevilla-vs-athletic-bilbao",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b18b670d863241bd562"
+    },
+    {
+      "homeTeam": "Sevilla FC",
+      "awayTeam": "Real Betis",
+      "date": "2025-11-30",
+      "minPrice": 180,
+      "url": "https://www.p1travel.com/en/football/la-liga/sevilla-vs-real-betis",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b0eb670d863241bd456"
+    },
+    {
+      "homeTeam": "Sevilla FC",
+      "awayTeam": "Celta de Vigo",
+      "date": "2026-01-11",
+      "minPrice": 90,
+      "url": "https://www.p1travel.com/en/football/la-liga/sevilla-vs-celta-de-vigo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b16b670d863241bd51a"
+    },
+    {
+      "homeTeam": "Sevilla FC",
+      "awayTeam": "Rayo Vallecano",
+      "date": "2026-03-08",
+      "minPrice": 90,
+      "url": "https://www.p1travel.com/en/football/la-liga/sevilla-vs-rayo-vallecano",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b21b670d863241bd63e"
+    },
+    {
+      "homeTeam": "Sevilla FC",
+      "awayTeam": "Real Sociedad",
+      "date": "2026-05-03",
+      "minPrice": 100,
+      "url": "https://www.p1travel.com/en/football/la-liga/sevilla-vs-real-sociedad",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b2ab670d863241bd736"
+    },
+    {
+      "homeTeam": "Sevilla FC",
+      "awayTeam": "RCD Espanyol",
+      "date": "2026-05-10",
+      "minPrice": 100,
+      "url": "https://www.p1travel.com/en/football/la-liga/sevilla-vs-rcd-espanyol",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b2bb670d863241bd750"
+    },
+    {
+      "homeTeam": "Sevilla FC",
+      "awayTeam": "Alavés",
+      "date": "2026-02-15",
+      "minPrice": 100,
+      "url": "https://www.p1travel.com/en/football/la-liga/sevilla-vs-alaves",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b1cb670d863241bd5be"
+    },
+    {
+      "homeTeam": "Sevilla FC",
+      "awayTeam": "Girona FC",
+      "date": "2026-02-08",
+      "minPrice": 100,
+      "url": "https://www.p1travel.com/en/football/la-liga/sevilla-vs-girona-fc",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b1bb670d863241bd5b0"
+    },
+    {
+      "homeTeam": "Sevilla FC",
+      "awayTeam": "Levante",
+      "date": "2026-01-04",
+      "minPrice": 90,
+      "url": "https://www.p1travel.com/en/football/la-liga/sevilla-vs-levante",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b14b670d863241bd4e6"
+    },
+    {
+      "homeTeam": "Real Madrid",
+      "awayTeam": "Atlético Madrid",
+      "date": "2026-03-22",
+      "minPrice": 950,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-madrid-vs-atletico-madrid",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b23b670d863241bd68c"
+    },
+    {
+      "homeTeam": "Real Madrid",
+      "awayTeam": "Athletic Bilbao",
+      "date": "2026-05-24",
+      "minPrice": 700,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-madrid-vs-athletic-bilbao",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b2fb670d863241bd7c7"
+    },
+    {
+      "homeTeam": "Real Madrid",
+      "awayTeam": "Real Betis",
+      "date": "2026-01-04",
+      "minPrice": 450,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-madrid-vs-real-betis",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b14b670d863241bd4f0"
+    },
+    {
+      "homeTeam": "Real Madrid",
+      "awayTeam": "Celta de Vigo",
+      "date": "2025-12-07",
+      "minPrice": 450,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-madrid-vs-celta-de-vigo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b10b670d863241bd482"
+    },
+    {
+      "homeTeam": "Real Madrid",
+      "awayTeam": "Rayo Vallecano",
+      "date": "2026-02-01",
+      "minPrice": 500,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-madrid-vs-rayo-vallecano",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b19b670d863241bd580"
+    },
+    {
+      "homeTeam": "Real Madrid",
+      "awayTeam": "Real Sociedad",
+      "date": "2026-02-15",
+      "minPrice": 525,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-madrid-vs-real-sociedad",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b1cb670d863241bd5cc"
+    },
+    {
+      "homeTeam": "Real Madrid",
+      "awayTeam": "Getafe",
+      "date": "2026-03-01",
+      "minPrice": 449,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-madrid-vs-getafe",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b1fb670d863241bd610"
+    },
+    {
+      "homeTeam": "Real Madrid",
+      "awayTeam": "Alavés",
+      "date": "2026-04-22",
+      "minPrice": 449,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-madrid-vs-alaves",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b28b670d863241bd70c"
+    },
+    {
+      "homeTeam": "Real Madrid",
+      "awayTeam": "Girona FC",
+      "date": "2026-04-12",
+      "minPrice": 550,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-madrid-vs-girona-fc",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b26b670d863241bd6cc"
+    },
+    {
+      "homeTeam": "Real Madrid",
+      "awayTeam": "Sevilla FC",
+      "date": "2025-12-21",
+      "minPrice": 500,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-madrid-vs-sevilla",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b13b670d863241bd4ce"
+    },
+    {
+      "homeTeam": "Real Madrid",
+      "awayTeam": "Elche",
+      "date": "2026-03-15",
+      "minPrice": 429,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-madrid-vs-elche",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b21b670d863241bd656"
+    },
+    {
+      "homeTeam": "Real Madrid",
+      "awayTeam": "Levante",
+      "date": "2026-01-18",
+      "minPrice": 450,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-madrid-vs-levante",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b17b670d863241bd538"
+    },
+    {
+      "homeTeam": "Atlético Madrid",
+      "awayTeam": "FC Barcelona",
+      "date": "2026-04-05",
+      "minPrice": 225,
+      "url": "https://www.p1travel.com/en/football/la-liga/atletico-madrid-vs-fc-barcelona",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e35db039369f239c619"
+    },
+    {
+      "homeTeam": "Atlético Madrid",
+      "awayTeam": "Athletic Bilbao",
+      "date": "2026-04-19",
+      "minPrice": 119,
+      "url": "https://www.p1travel.com/en/football/la-liga/atletico-madrid-vs-athletic-bilbao",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e3adb039369f239c6a5"
+    },
+    {
+      "homeTeam": "Atlético Madrid",
+      "awayTeam": "Real Betis",
+      "date": "2026-02-08",
+      "minPrice": 89,
+      "url": "https://www.p1travel.com/en/football/la-liga/atletico-madrid-vs-real-betis",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e22db039369f239c436"
+    },
+    {
+      "homeTeam": "Atlético Madrid",
+      "awayTeam": "Celta de Vigo",
+      "date": "2026-05-10",
+      "minPrice": 79,
+      "url": "https://www.p1travel.com/en/football/la-liga/atletico-madrid-vs-celta-de-vigo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e43db039369f239c77e"
+    },
+    {
+      "homeTeam": "Atlético Madrid",
+      "awayTeam": "RCD Mallorca",
+      "date": "2026-01-25",
+      "minPrice": 75,
+      "url": "https://www.p1travel.com/en/football/la-liga/atletico-madrid-vs-rcd-mallorca",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e1cdb039369f239c3aa"
+    },
+    {
+      "homeTeam": "Atlético Madrid",
+      "awayTeam": "Real Sociedad",
+      "date": "2026-03-08",
+      "minPrice": 79,
+      "url": "https://www.p1travel.com/en/football/la-liga/atletico-madrid-vs-real-sociedad",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e2ddb039369f239c547"
+    },
+    {
+      "homeTeam": "Atlético Madrid",
+      "awayTeam": "Valencia CF",
+      "date": "2025-12-14",
+      "minPrice": 79,
+      "url": "https://www.p1travel.com/en/football/la-liga/atletico-madrid-vs-valencia",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e0fdb039369f239c24c"
+    },
+    {
+      "homeTeam": "Atlético Madrid",
+      "awayTeam": "Getafe",
+      "date": "2026-03-15",
+      "minPrice": 75,
+      "url": "https://www.p1travel.com/en/football/la-liga/atletico-madrid-vs-getafe",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e30db039369f239c594"
+    },
+    {
+      "homeTeam": "Atlético Madrid",
+      "awayTeam": "RCD Espanyol",
+      "date": "2026-02-22",
+      "minPrice": 65,
+      "url": "https://www.p1travel.com/en/football/la-liga/atletico-madrid-vs-rcd-espanyol",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e27db039369f239c4c2"
+    },
+    {
+      "homeTeam": "Atlético Madrid",
+      "awayTeam": "Alavés",
+      "date": "2026-01-18",
+      "minPrice": 69,
+      "url": "https://www.p1travel.com/en/football/la-liga/atletico-madrid-vs-alaves",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e19db039369f239c35d"
+    },
+    {
+      "homeTeam": "Atlético Madrid",
+      "awayTeam": "Girona FC",
+      "date": "2026-05-17",
+      "minPrice": 99,
+      "url": "https://www.p1travel.com/en/football/la-liga/atletico-madrid-vs-girona-fc",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e48db039369f239c80a"
+    },
+    {
+      "homeTeam": "RCD Mallorca",
+      "awayTeam": "Real Madrid",
+      "date": "2026-04-05",
+      "minPrice": 300,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-mallorca-vs-real-madrid",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b25b670d863241bd6b4"
+    },
+    {
+      "homeTeam": "RCD Mallorca",
+      "awayTeam": "Athletic Bilbao",
+      "date": "2026-01-18",
+      "minPrice": 75,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-mallorca-vs-athletic-bilbao",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b17b670d863241bd54c"
+    },
+    {
+      "homeTeam": "RCD Mallorca",
+      "awayTeam": "Villarreal CF",
+      "date": "2026-05-10",
+      "minPrice": 65,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-mallorca-vs-villarreal",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b2cb670d863241bd76c"
+    },
+    {
+      "homeTeam": "RCD Mallorca",
+      "awayTeam": "Real Betis",
+      "date": "2026-02-15",
+      "minPrice": 65,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-mallorca-vs-real-betis",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b1db670d863241bd5e4"
+    },
+    {
+      "homeTeam": "RCD Mallorca",
+      "awayTeam": "Rayo Vallecano",
+      "date": "2026-04-12",
+      "minPrice": 65,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-mallorca-vs-rayo-vallecano",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b26b670d863241bd6dc"
+    },
+    {
+      "homeTeam": "RCD Mallorca",
+      "awayTeam": "Osasuna",
+      "date": "2025-11-29",
+      "minPrice": 25,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-mallorca-vs-osasuna",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b0fb670d863241bd46c"
+    },
+    {
+      "homeTeam": "RCD Mallorca",
+      "awayTeam": "Real Sociedad",
+      "date": "2026-03-01",
+      "minPrice": 65,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-mallorca-vs-real-sociedad",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b20b670d863241bd628"
+    },
+    {
+      "homeTeam": "RCD Mallorca",
+      "awayTeam": "Valencia CF",
+      "date": "2026-04-22",
+      "minPrice": 65,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-mallorca-vs-valencia",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b29b670d863241bd724"
+    },
+    {
+      "homeTeam": "RCD Mallorca",
+      "awayTeam": "RCD Espanyol",
+      "date": "2026-03-15",
+      "minPrice": 45,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-mallorca-vs-rcd-espanyol",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b22b670d863241bd66c"
+    },
+    {
+      "homeTeam": "RCD Mallorca",
+      "awayTeam": "Girona FC",
+      "date": "2026-01-04",
+      "minPrice": 45,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-mallorca-vs-girona-fc",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b15b670d863241bd504"
+    },
+    {
+      "homeTeam": "RCD Mallorca",
+      "awayTeam": "Sevilla FC",
+      "date": "2026-02-01",
+      "minPrice": 65,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-mallorca-vs-sevilla",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b1ab670d863241bd598"
+    },
+    {
+      "homeTeam": "RCD Mallorca",
+      "awayTeam": "Elche",
+      "date": "2025-12-14",
+      "minPrice": 35,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-mallorca-vs-elche",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b12b670d863241bd4b4"
+    },
+    {
+      "homeTeam": "Real Sociedad",
+      "awayTeam": "FC Barcelona",
+      "date": "2026-01-18",
+      "minPrice": 249,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-sociedad-vs-fc-barcelona",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e1bdb039369f239c387"
+    },
+    {
+      "homeTeam": "Real Sociedad",
+      "awayTeam": "Atlético Madrid",
+      "date": "2026-01-04",
+      "minPrice": 175,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-sociedad-vs-atletico-madrid",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e15db039369f239c2f4"
+    },
+    {
+      "homeTeam": "Real Sociedad",
+      "awayTeam": "Villarreal CF",
+      "date": "2025-11-30",
+      "minPrice": 85,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-sociedad-vs-villarreal",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e0bdb039369f239c1ea"
+    },
+    {
+      "homeTeam": "Real Sociedad",
+      "awayTeam": "Real Betis",
+      "date": "2026-05-10",
+      "minPrice": 95,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-sociedad-vs-real-betis",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e44db039369f239c79a"
+    },
+    {
+      "homeTeam": "Real Sociedad",
+      "awayTeam": "Celta de Vigo",
+      "date": "2026-01-25",
+      "minPrice": 95,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-sociedad-vs-celta-de-vigo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e1edb039369f239c3db"
+    },
+    {
+      "homeTeam": "Real Sociedad",
+      "awayTeam": "Osasuna",
+      "date": "2026-03-15",
+      "minPrice": 85,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-sociedad-vs-osasuna",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e31db039369f239c5b7"
+    },
+    {
+      "homeTeam": "Real Sociedad",
+      "awayTeam": "Valencia CF",
+      "date": "2026-05-17",
+      "minPrice": 95,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-sociedad-vs-valencia",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e49db039369f239c826"
+    },
+    {
+      "homeTeam": "Real Sociedad",
+      "awayTeam": "Getafe",
+      "date": "2026-04-22",
+      "minPrice": 85,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-sociedad-vs-getafe",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e3edb039369f239c70e"
+    },
+    {
+      "homeTeam": "Real Sociedad",
+      "awayTeam": "Alavés",
+      "date": "2026-04-12",
+      "minPrice": 85,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-sociedad-vs-alaves",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e39db039369f239c689"
+    },
+    {
+      "homeTeam": "Real Sociedad",
+      "awayTeam": "Girona FC",
+      "date": "2025-12-14",
+      "minPrice": 75,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-sociedad-vs-girona-fc",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e10db039369f239c276"
+    },
+    {
+      "homeTeam": "Real Sociedad",
+      "awayTeam": "Levante",
+      "date": "2026-04-05",
+      "minPrice": 85,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-sociedad-vs-levante",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e36db039369f239c643"
+    },
+    {
+      "homeTeam": "Real Sociedad",
+      "awayTeam": "Elche",
+      "date": "2026-02-08",
+      "minPrice": 75,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-sociedad-vs-elche",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e24db039369f239c467"
+    },
+    {
+      "homeTeam": "RCD Espanyol",
+      "awayTeam": "FC Barcelona",
+      "date": "2026-01-04",
+      "minPrice": 159,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-espanyol-vs-fc-barcelona",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e14db039369f239c2df"
+    },
+    {
+      "homeTeam": "RCD Espanyol",
+      "awayTeam": "Real Madrid",
+      "date": "2026-05-03",
+      "minPrice": 189,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-espanyol-vs-real-madrid",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e41db039369f239c74d"
+    },
+    {
+      "homeTeam": "RCD Espanyol",
+      "awayTeam": "Athletic Bilbao",
+      "date": "2026-05-13",
+      "minPrice": 89,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-espanyol-vs-athletic-bilbao",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e46db039369f239c7d2"
+    },
+    {
+      "homeTeam": "RCD Espanyol",
+      "awayTeam": "Celta de Vigo",
+      "date": "2026-02-15",
+      "minPrice": 89,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-espanyol-vs-celta-de-vigo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e25db039369f239c483"
+    },
+    {
+      "homeTeam": "RCD Espanyol",
+      "awayTeam": "Rayo Vallecano",
+      "date": "2025-12-07",
+      "minPrice": 89,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-espanyol-vs-rayo-vallecano",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e0cdb039369f239c214"
+    },
+    {
+      "homeTeam": "RCD Espanyol",
+      "awayTeam": "Real Sociedad",
+      "date": "2026-05-24",
+      "minPrice": 89,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-espanyol-vs-real-sociedad",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79d539f772374ccdf2fc6"
+    },
+    {
+      "homeTeam": "RCD Espanyol",
+      "awayTeam": "Getafe",
+      "date": "2026-03-22",
+      "minPrice": 65,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-espanyol-vs-getafe",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e34db039369f239c5fd"
+    },
+    {
+      "homeTeam": "RCD Espanyol",
+      "awayTeam": "Alavés",
+      "date": "2026-02-01",
+      "minPrice": 65,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-espanyol-vs-alaves",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e1fdb039369f239c3f7"
+    },
+    {
+      "homeTeam": "RCD Espanyol",
+      "awayTeam": "Girona FC",
+      "date": "2026-01-18",
+      "minPrice": 65,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-espanyol-vs-girona-fc",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e1adb039369f239c36b"
+    },
+    {
+      "homeTeam": "RCD Espanyol",
+      "awayTeam": "Sevilla FC",
+      "date": "2025-11-24",
+      "minPrice": 65,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-espanyol-vs-sevilla",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e07db039369f239c188"
+    },
+    {
+      "homeTeam": "RCD Espanyol",
+      "awayTeam": "Levante",
+      "date": "2026-04-19",
+      "minPrice": 65,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-espanyol-vs-levante",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e3bdb039369f239c6ba"
+    },
+    {
+      "homeTeam": "Sevilla FC",
+      "awayTeam": "Valencia CF",
+      "date": "2026-03-22",
+      "minPrice": 100,
+      "url": "https://www.p1travel.com/en/football/la-liga/sevilla-vs-valencia",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b23b670d863241bd67c"
+    },
+    {
+      "homeTeam": "Real Madrid",
+      "awayTeam": "Real Oviedo",
+      "date": "2026-05-13",
+      "minPrice": 499,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-madrid-vs-real-oviedo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b2db670d863241bd782"
+    },
+    {
+      "homeTeam": "Real Betis",
+      "awayTeam": "Real Oviedo",
+      "date": "2026-05-03",
+      "minPrice": 50,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-betis-vs-real-oviedo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e41db039369f239c75b"
+    },
+    {
+      "homeTeam": "Sevilla FC",
+      "awayTeam": "Real Oviedo",
+      "date": "2025-12-14",
+      "minPrice": 90,
+      "url": "https://www.p1travel.com/en/football/la-liga/sevilla-vs-real-oviedo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b11b670d863241bd49e"
+    },
+    {
+      "homeTeam": "Real Sociedad",
+      "awayTeam": "Real Oviedo",
+      "date": "2026-02-22",
+      "minPrice": 75,
+      "url": "https://www.p1travel.com/en/football/la-liga/real-sociedad-vs-real-oviedo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e29db039369f239c4f3"
+    },
+    {
+      "homeTeam": "Atlético Madrid",
+      "awayTeam": "Real Oviedo",
+      "date": "2025-11-29",
+      "minPrice": 99,
+      "url": "https://www.p1travel.com/en/football/la-liga/atletico-madrid-vs-real-oviedo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e09db039369f239c1c0"
+    },
+    {
+      "homeTeam": "RCD Mallorca",
+      "awayTeam": "Real Oviedo",
+      "date": "2026-05-24",
+      "minPrice": 65,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-mallorca-vs-real-oviedo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79b30b670d863241bd7e1"
+    },
+    {
+      "homeTeam": "RCD Espanyol",
+      "awayTeam": "Real Oviedo",
+      "date": "2026-03-08",
+      "minPrice": 65,
+      "url": "https://www.p1travel.com/en/football/la-liga/rcd-espanyol-vs-real-oviedo",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "68e79e2fdb039369f239c578"
+    }
+  ],
+  "Ligue 1": [
+    {
+      "homeTeam": "Paris Saint Germain",
+      "awayTeam": "Olympique Marseille",
+      "date": "2026-02-08",
+      "minPrice": 290,
+      "url": "https://www.p1travel.com/en/football/ligue-1/paris-saint-germain-vs-olympique-marseille",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed6073f27ca278aff574"
+    },
+    {
+      "homeTeam": "Paris Saint Germain",
+      "awayTeam": "AS Monaco",
+      "date": "2026-03-08",
+      "minPrice": 170,
+      "url": "https://www.p1travel.com/en/football/ligue-1/paris-saint-germain-vs-as-monaco",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed6873f27ca278aff608"
+    },
+    {
+      "homeTeam": "Paris Saint Germain",
+      "awayTeam": "Lille OSC",
+      "date": "2026-01-18",
+      "minPrice": 110,
+      "url": "https://www.p1travel.com/en/football/ligue-1/paris-saint-germain-vs-lille-osc",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed5b73f27ca278aff500"
+    },
+    {
+      "homeTeam": "Paris Saint Germain",
+      "awayTeam": "Stade Brestois",
+      "date": "2026-05-09",
+      "minPrice": 180,
+      "url": "https://www.p1travel.com/en/football/ligue-1/paris-saint-germain-vs-brest",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed7673f27ca278aff71c"
+    },
+    {
+      "homeTeam": "Paris Saint Germain",
+      "awayTeam": "Toulouse",
+      "date": "2026-04-05",
+      "minPrice": 150,
+      "url": "https://www.p1travel.com/en/football/ligue-1/paris-saint-germain-vs-toulouse",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed6d73f27ca278aff66c"
+    },
+    {
+      "homeTeam": "Paris Saint Germain",
+      "awayTeam": "Stade Rennes",
+      "date": "2025-12-06",
+      "minPrice": 120,
+      "url": "https://www.p1travel.com/en/football/ligue-1/paris-saint-germain-vs-stade-rennes",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed5673f27ca278aff4a0"
+    },
+    {
+      "homeTeam": "Paris Saint Germain",
+      "awayTeam": "Nantes",
+      "date": "2026-03-15",
+      "minPrice": 130,
+      "url": "https://www.p1travel.com/en/football/ligue-1/paris-saint-germain-vs-nantes",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed6973f27ca278aff624"
+    },
+    {
+      "homeTeam": "Paris Saint Germain",
+      "awayTeam": "Le Havre AC",
+      "date": "2025-11-22",
+      "minPrice": 59,
+      "url": "https://www.p1travel.com/en/football/ligue-1/paris-saint-germain-vs-le-havre-ac",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed5273f27ca278aff454"
+    },
+    {
+      "homeTeam": "Paris Saint Germain",
+      "awayTeam": "Lorient",
+      "date": "2026-05-03",
+      "minPrice": 140,
+      "url": "https://www.p1travel.com/en/football/ligue-1/paris-saint-germain-vs-lorient",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed7473f27ca278aff704"
+    },
+    {
+      "homeTeam": "Paris Saint Germain",
+      "awayTeam": "Paris FC",
+      "date": "2026-01-04",
+      "minPrice": 150,
+      "url": "https://www.p1travel.com/en/football/ligue-1/paris-saint-germain-vs-paris-fc",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed5a73f27ca278aff4f8"
+    },
+    {
+      "homeTeam": "Olympique Lyon",
+      "awayTeam": "AS Monaco",
+      "date": "2026-03-22",
+      "minPrice": 75,
+      "url": "https://www.p1travel.com/en/football/ligue-1/olympique-lyonnais-vs-as-monaco",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed6b73f27ca278aff640"
+    },
+    {
+      "homeTeam": "Olympique Lyon",
+      "awayTeam": "OGC Nice",
+      "date": "2026-02-15",
+      "minPrice": 35,
+      "url": "https://www.p1travel.com/en/football/ligue-1/olympique-lyonnais-vs-ogc-nice",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed6273f27ca278aff590"
+    },
+    {
+      "homeTeam": "Olympique Lyon",
+      "awayTeam": "Lille OSC",
+      "date": "2026-02-01",
+      "minPrice": 35,
+      "url": "https://www.p1travel.com/en/football/ligue-1/olympique-lyonnais-vs-lille-osc",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed5f73f27ca278aff554"
+    },
+    {
+      "homeTeam": "Olympique Lyon",
+      "awayTeam": "Lens",
+      "date": "2026-05-16",
+      "minPrice": 35,
+      "url": "https://www.p1travel.com/en/football/ligue-1/olympique-lyonnais-vs-lens",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed7773f27ca278aff740"
+    },
+    {
+      "homeTeam": "Olympique Lyon",
+      "awayTeam": "Stade Brestois",
+      "date": "2026-01-18",
+      "minPrice": 25,
+      "url": "https://www.p1travel.com/en/football/ligue-1/olympique-lyonnais-vs-brest",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed5c73f27ca278aff51c"
+    },
+    {
+      "homeTeam": "Olympique Lyon",
+      "awayTeam": "AJ Auxerre",
+      "date": "2026-04-26",
+      "minPrice": 25,
+      "url": "https://www.p1travel.com/en/football/ligue-1/olympique-lyonnais-vs-aj-auxerre",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed7273f27ca278aff6d4"
+    },
+    {
+      "homeTeam": "Olympique Lyon",
+      "awayTeam": "Stade Rennes",
+      "date": "2026-05-03",
+      "minPrice": 35,
+      "url": "https://www.p1travel.com/en/football/ligue-1/olympique-lyonnais-vs-stade-rennes",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed7473f27ca278aff6f8"
+    },
+    {
+      "homeTeam": "Olympique Lyon",
+      "awayTeam": "Nantes",
+      "date": "2025-11-30",
+      "minPrice": 19,
+      "url": "https://www.p1travel.com/en/football/ligue-1/olympique-lyonnais-vs-nantes",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed5573f27ca278aff48c"
+    },
+    {
+      "homeTeam": "Olympique Lyon",
+      "awayTeam": "Le Havre AC",
+      "date": "2025-12-14",
+      "minPrice": 25,
+      "url": "https://www.p1travel.com/en/football/ligue-1/olympique-lyonnais-vs-le-havre-ac",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed5873f27ca278aff4c4"
+    },
+    {
+      "homeTeam": "Olympique Lyon",
+      "awayTeam": "Lorient",
+      "date": "2026-04-12",
+      "minPrice": 25,
+      "url": "https://www.p1travel.com/en/football/ligue-1/olympique-lyonnais-vs-lorient",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed6e73f27ca278aff688"
+    },
+    {
+      "homeTeam": "Olympique Lyon",
+      "awayTeam": "Paris FC",
+      "date": "2026-03-08",
+      "minPrice": 25,
+      "url": "https://www.p1travel.com/en/football/ligue-1/olympique-lyonnais-vs-paris-fc",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed6773f27ca278aff5fc"
+    },
+    {
+      "homeTeam": "OGC Nice",
+      "awayTeam": "Paris Saint Germain",
+      "date": "2026-03-22",
+      "minPrice": 169,
+      "url": "https://www.p1travel.com/en/football/ligue-1/ogc-nice-vs-paris-saint-germain",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed6b73f27ca278aff64c"
+    },
+    {
+      "homeTeam": "OGC Nice",
+      "awayTeam": "AS Monaco",
+      "date": "2026-02-08",
+      "minPrice": 59,
+      "url": "https://www.p1travel.com/en/football/ligue-1/ogc-nice-vs-as-monaco",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed6073f27ca278aff570"
+    },
+    {
+      "homeTeam": "OGC Nice",
+      "awayTeam": "Strasbourg",
+      "date": "2026-01-03",
+      "minPrice": 25,
+      "url": "https://www.p1travel.com/en/football/ligue-1/ogc-nice-vs-strasbourg",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed5973f27ca278aff4e0"
+    },
+    {
+      "homeTeam": "OGC Nice",
+      "awayTeam": "Lens",
+      "date": "2026-05-03",
+      "minPrice": 39,
+      "url": "https://www.p1travel.com/en/football/ligue-1/ogc-nice-vs-lens",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed7473f27ca278aff700"
+    },
+    {
+      "homeTeam": "OGC Nice",
+      "awayTeam": "Stade Brestois",
+      "date": "2026-02-01",
+      "minPrice": 25,
+      "url": "https://www.p1travel.com/en/football/ligue-1/ogc-nice-vs-brest",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed5f73f27ca278aff55c"
+    },
+    {
+      "homeTeam": "OGC Nice",
+      "awayTeam": "Stade Rennes",
+      "date": "2026-03-08",
+      "minPrice": 25,
+      "url": "https://www.p1travel.com/en/football/ligue-1/ogc-nice-vs-stade-rennes",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed6873f27ca278aff604"
+    },
+    {
+      "homeTeam": "OGC Nice",
+      "awayTeam": "Angers",
+      "date": "2025-12-07",
+      "minPrice": 25,
+      "url": "https://www.p1travel.com/en/football/ligue-1/ogc-nice-vs-angers",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed5673f27ca278aff4a4"
+    },
+    {
+      "homeTeam": "OGC Nice",
+      "awayTeam": "Le Havre AC",
+      "date": "2026-04-12",
+      "minPrice": 35,
+      "url": "https://www.p1travel.com/en/football/ligue-1/ogc-nice-vs-le-havre-ac",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed6f73f27ca278aff690"
+    },
+    {
+      "homeTeam": "OGC Nice",
+      "awayTeam": "Lorient",
+      "date": "2026-02-22",
+      "minPrice": 40,
+      "url": "https://www.p1travel.com/en/football/ligue-1/ogc-nice-vs-lorient",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed6473f27ca278aff5b8"
+    },
+    {
+      "homeTeam": "Paris Saint Germain",
+      "awayTeam": "FC Metz",
+      "date": "2026-02-22",
+      "minPrice": 135,
+      "url": "https://www.p1travel.com/en/football/ligue-1/paris-saint-germain-vs-fc-metz",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed6473f27ca278aff5bc"
+    },
+    {
+      "homeTeam": "OGC Nice",
+      "awayTeam": "FC Metz",
+      "date": "2026-05-16",
+      "minPrice": 25,
+      "url": "https://www.p1travel.com/en/football/ligue-1/ogc-nice-vs-fc-metz",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed7873f27ca278aff74c"
+    },
+    {
+      "homeTeam": "Paris Saint Germain",
+      "awayTeam": "Olympique Lyon",
+      "date": "2026-04-19",
+      "minPrice": 180,
+      "url": "https://www.p1travel.com/en/football/ligue-1/paris-saint-germain-vs-olympique-lyonnais",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926ed7173f27ca278aff6b8"
+    }
+  ],
+  "Bundesliga": [
+    {
+      "homeTeam": "Bayer 04 Leverkusen",
+      "awayTeam": "Borussia Dortmund",
+      "date": "2025-11-29",
+      "minPrice": 99,
+      "url": "https://www.p1travel.com/en/football/bundesliga/bayer-04-leverkusen-vs-borussia-dortmund",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "69272f2931af0dba4baeca99"
+    },
+    {
+      "homeTeam": "Borussia Dortmund",
+      "awayTeam": "Stuttgart",
+      "date": "2025-11-22",
+      "minPrice": 249,
+      "url": "https://www.p1travel.com/en/football/bundesliga/borussia-dortmund-vs-stuttgart",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "692730189fde1e88e1de5792"
+    },
+    {
+      "homeTeam": "Borussia Dortmund",
+      "awayTeam": "Sport-Club Freiburg",
+      "date": "2026-04-25",
+      "minPrice": 550,
+      "url": "https://www.p1travel.com/en/football/bundesliga/borussia-dortmund-vs-sport-club-freiburg",
+      "reason": "Fixture exists but no P1 offer",
+      "fixtureId": "6926e345a3a933930dad4842"
+    }
+  ],
+  "Europa League": [
+    {
+      "homeTeam": "AS Roma",
+      "awayTeam": "Stuttgart",
+      "date": "2026-01-22",
+      "minPrice": 75,
+      "url": "https://www.p1travel.com/en/football/europa-league/as-roma-vs-stuttgart",
+      "reason": "Fixture not found in DB",
+      "fixtureId": null
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "updated": [
+    {
+      "match": "Paris Saint Germain vs Tottenham Hotspur (2025-11-26)",
+      "oldPrice": 372,
+      "oldCurrency": "EUR",
+      "newPrice": 280,
+      "newCurrency": "EUR",
+      "fixtureId": "68e79ee64a00e38f56da0860"
+    },
+    {
+      "match": "Sporting CP vs Club Brugge (2025-11-26)",
+      "oldPrice": 103,
+      "oldCurrency": "EUR",
+      "newPrice": 39,
+      "newCurrency": "EUR",
+      "fixtureId": "68e79ee64a00e38f56da0870"
+    },
+    {
+      "match": "FC Copenhagen vs Kairat Almaty (2025-11-26)",
+      "oldPrice": 151,
+      "oldCurrency": "EUR",
+      "newPrice": 49,
+      "newCurrency": "EUR",
+      "fixtureId": "68e79ee44a00e38f56da0840"
+    },
+    {
+      "match": "Inter Milan vs Liverpool (2025-12-09)",
+      "oldPrice": 261,
+      "oldCurrency": "EUR",
+      "newPrice": 159,
+      "newCurrency": "EUR",
+      "fixtureId": "68e79ee94a00e38f56da08b5"
+    },
+    {
+      "match": "Atalanta Bergamo vs Chelsea FC (2025-12-09)",
+      "oldPrice": 258,
+      "oldCurrency": "EUR",
+      "newPrice": 175,
+      "newCurrency": "EUR",
+      "fixtureId": "68e79ee84a00e38f56da08ad"
+    },
+    {
+      "match": "PSV Eindhoven vs Atlético Madrid (2025-12-09)",
+      "oldPrice": 310,
+      "oldCurrency": "EUR",
+      "newPrice": 249,
+      "newCurrency": "EUR",
+      "fixtureId": "68e79ee84a00e38f56da08a5"
+    },
+    {
+      "match": "Tottenham Hotspur vs Slavia Praha (2025-12-09)",
+      "oldPrice": 218,
+      "oldCurrency": "EUR",
+      "newPrice": 99,
+      "newCurrency": "EUR",
+      "fixtureId": "68e79ee84a00e38f56da0895"
+    },
+    {
+      "match": "Borussia Dortmund vs FK Bodø/Glimt (2025-12-10)",
+      "oldPrice": 450,
+      "oldCurrency": "EUR",
+      "newPrice": 375,
+      "newCurrency": "EUR",
+      "fixtureId": "68e79eea4a00e38f56da08db"
+    },
+    {
+      "match": "Inter Milan vs Arsenal (2026-01-20)",
+      "oldPrice": 269,
+      "oldCurrency": "EUR",
+      "newPrice": 199,
+      "newCurrency": "EUR",
+      "fixtureId": "68e79eee4a00e38f56da0938"
+    },
+    {
+      "match": "Real Madrid vs AS Monaco (2026-01-20)",
+      "oldPrice": 624,
+      "oldCurrency": "EUR",
+      "newPrice": 500,
+      "newCurrency": "EUR",
+      "fixtureId": "68e79eee4a00e38f56da0948"
+    },
+    {
+      "match": "Sporting CP vs Paris Saint Germain (2026-01-20)",
+      "oldPrice": 186,
+      "oldCurrency": "EUR",
+      "newPrice": 149,
+      "newCurrency": "EUR",
+      "fixtureId": "68e79eed4a00e38f56da0928"
+    },
+    {
+      "match": "Tottenham Hotspur vs Borussia Dortmund (2026-01-20)",
+      "oldPrice": 286,
+      "oldCurrency": "EUR",
+      "newPrice": 219,
+      "newCurrency": "EUR",
+      "fixtureId": "68e79eed4a00e38f56da0920"
+    },
+    {
+      "match": "Atalanta Bergamo vs Athletic Bilbao (2026-01-21)",
+      "oldPrice": 166,
+      "oldCurrency": "EUR",
+      "newPrice": 109,
+      "newCurrency": "EUR",
+      "fixtureId": "68e79ef14a00e38f56da098e"
+    },
+    {
+      "match": "Juventus vs Benfica (2026-01-21)",
+      "oldPrice": 305,
+      "oldCurrency": "EUR",
+      "newPrice": 249,
+      "newCurrency": "EUR",
+      "fixtureId": "68e79ef04a00e38f56da0986"
+    },
+    {
+      "match": "Paris Saint Germain vs Newcastle United (2026-01-28)",
+      "oldPrice": 338,
+      "oldCurrency": "EUR",
+      "newPrice": 280,
+      "newCurrency": "EUR",
+      "fixtureId": "68e79ef24a00e38f56da09b6"
+    },
+    {
+      "match": "Bayer 04 Leverkusen vs Villarreal CF (2026-01-28)",
+      "oldPrice": 160,
+      "oldCurrency": "EUR",
+      "newPrice": 168,
+      "newCurrency": "EUR",
+      "fixtureId": "68e79ef34a00e38f56da09ce"
+    },
+    {
+      "match": "Atlético Madrid vs FK Bodø/Glimt (2026-01-28)",
+      "oldPrice": 129,
+      "oldCurrency": "EUR",
+      "newPrice": 70,
+      "newCurrency": "EUR",
+      "fixtureId": "68e79ef54a00e38f56da0a03"
+    },
+    {
+      "match": "Liverpool vs Qarabağ FK (2026-01-28)",
+      "oldPrice": 360,
+      "oldCurrency": "EUR",
+      "newPrice": 381,
+      "newCurrency": "EUR",
+      "fixtureId": "68e79ef14a00e38f56da099e"
+    },
+    {
+      "match": "PSV Eindhoven vs FC Bayern München (2026-01-28)",
+      "oldPrice": 345,
+      "oldCurrency": "EUR",
+      "newPrice": 280,
+      "newCurrency": "EUR",
+      "fixtureId": "68e79ef44a00e38f56da09e6"
+    },
+    {
+      "match": "Napoli vs Chelsea FC (2026-01-28)",
+      "oldPrice": 240,
+      "oldCurrency": "EUR",
+      "newPrice": 149,
+      "newCurrency": "EUR",
+      "fixtureId": "68e79ef44a00e38f56da09f5"
+    },
+    {
+      "match": "Arsenal vs Kairat Almaty (2026-01-28)",
+      "oldPrice": 400,
+      "oldCurrency": "EUR",
+      "newPrice": 350,
+      "newCurrency": "EUR",
+      "fixtureId": "68e79ef24a00e38f56da09a6"
+    }
+  ],
+  "notFound": [],
+  "alreadyCorrect": [
+    {
+      "match": "FC Copenhagen vs Napoli (2026-01-20)",
+      "price": 307,
+      "currency": "EUR"
+    }
+  ]
+}

@@ -72,14 +72,30 @@ class HotFixturesService {
     sort[sortBy] = sortOrder === "desc" ? -1 : 1;
 
     // שליפת משחקים חמים
-    const hotFixtures = await FootballEvent.find(query)
+    const hotFixturesRaw = await FootballEvent.find(query)
       .populate("league", "name slug country nameHe")
-      .populate("homeTeam", "name_en slug logoUrl name_he")
-      .populate("awayTeam", "name_en slug logoUrl name_he")
-      .populate("venue", "name_en city_en capacity name_he city_he")
+      .populate("homeTeam", "name name_en slug logoUrl")
+      .populate("awayTeam", "name name_en slug logoUrl")
+      .populate("venue", "name city_en capacity city_he")
+      .select("+minPrice") // Include minPrice (hidden field)
       .sort(sort)
       .limit(limit)
       .lean();
+
+    // Remove unnecessary fields from response
+    const hotFixtures = hotFixturesRaw.map((fixture) => {
+      const {
+        status,
+        round,
+        externalIds,
+        createdAt,
+        updatedAt,
+        __v,
+        supplierExternalIds,
+        ...rest
+      } = fixture;
+      return rest;
+    });
 
     // נרמול ObjectIds לפני שמירה ב-cache
     const normalizedFixtures = normalizeMongoData(hotFixtures);
