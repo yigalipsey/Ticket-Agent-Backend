@@ -33,6 +33,7 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
       upcoming = true,
       sortBy = "date",
       sortOrder = "asc",
+      limit, // מספר משחקים להחזיר
     } = query;
 
     // וולידציה
@@ -208,13 +209,24 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
       );
     }
 
-    // Return all fixtures without pagination
+    // יישום limit אם נשלח - אבל לא אם יש venueId (אז נחזיר את כל המשחקים של האצטדיון)
+    const totalCount = filteredFixtures.length;
+    let paginatedFixtures = filteredFixtures;
+
+    // אם יש venueId, לא נחיל limit - נחזיר את כל המשחקים של האצטדיון
+    if (limit && !venueId) {
+      const limitNum = parseInt(limit, 10);
+      if (!isNaN(limitNum) && limitNum > 0) {
+        paginatedFixtures = filteredFixtures.slice(0, limitNum);
+      }
+    }
+
     const result = {
-      data: filteredFixtures,
+      data: paginatedFixtures,
       pagination: {
         page: 1,
-        limit: filteredFixtures.length,
-        total: filteredFixtures.length,
+        limit: limit && !venueId ? parseInt(limit, 10) : totalCount,
+        total: totalCount,
         pages: 1,
       },
     };
@@ -235,7 +247,9 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
 
     return {
       success: true,
-      ...result,
+      fixtures: result.data, // החזרת fixtures בפורמט שהפרונטאנד מצפה
+      data: result.data, // שמירה על תאימות לאחור
+      pagination: result.pagination,
       fromCache: !!cachedData,
       cachedAt: cachedData?.cachedAt || new Date(),
       meta: {
