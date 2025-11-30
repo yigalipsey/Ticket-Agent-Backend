@@ -1,0 +1,28 @@
+{
+  "endpoint": "/tournaments/9?apiKey=efb6eb94df390eb06bd4d6dd9bc50e8a",
+  "method": "GET",
+  "status": 200,
+  "headers": {
+    "date": "Sun, 30 Nov 2025 13:59:05 GMT",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "server": "Apache/2.4.65 () OpenSSL/1.0.2k-fips",
+    "cache-control": "no-cache, private",
+    "access-control-allow-origin": "*",
+    "vary": "Authorization"
+  },
+  "data": {
+    "data": {
+      "id": 9,
+      "name": "הליגה האנגלית בכדורגל",
+      "eventTypeId": 1000,
+      "logo": "https://images-cdn.sportsevents365.com/logos/tournaments/9.png"
+    },
+    "success": true,
+    "meta": {
+      "title": "Tournaments",
+      "apiId": 5472
+    }
+  }
+}

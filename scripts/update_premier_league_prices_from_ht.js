@@ -450,3 +450,4 @@ async function updatePremierLeaguePrices() {
 connectDB().then(() => updatePremierLeaguePrices());
 
 
+

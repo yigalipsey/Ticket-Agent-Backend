@@ -131,7 +131,7 @@ export const getOffersByFixtureId = async (fixtureId, query = {}) => {
     allOffers = await Offer.find({ fixtureId })
       .populate({
         path: "ownerId",
-        select: "name whatsapp isActive imageUrl agentType companyName logoUrl",
+        select: "name whatsapp isActive imageUrl agentType companyName",
       })
       .lean();
 

@@ -23,7 +23,7 @@ export const refreshOffersCache = async (fixtureId) => {
     const offers = await Offer.find({ fixtureId })
       .populate({
         path: "ownerId",
-        select: "name whatsapp isActive imageUrl agentType companyName logoUrl",
+        select: "name whatsapp isActive imageUrl agentType companyName",
       })
       .sort({ price: 1 }) // Sort by price ascending
       .lean();
@@ -135,7 +135,7 @@ export const getOffersWithCacheRefresh = async (fixtureId) => {
     const offers = await Offer.find({ fixtureId })
       .populate({
         path: "ownerId",
-        select: "name whatsapp isActive imageUrl agentType companyName logoUrl",
+        select: "name whatsapp isActive imageUrl agentType companyName",
       })
       .sort({ price: 1 }) // Sort by price ascending
       .lean();

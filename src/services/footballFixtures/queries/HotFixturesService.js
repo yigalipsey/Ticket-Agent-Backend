@@ -117,9 +117,9 @@ class HotFixturesService {
   }
 
   /**
-   * שליפת משחקים חמים קרובים (בחודש הקרוב) עם cache
+   * שליפת משחקים חמים עתידיים (מהתאריך הנוכחי ואילך) עם cache
    * @param {number} limit - מספר משחקים מקסימלי
-   * @returns {Promise<Object>} משחקים חמים קרובים
+   * @returns {Promise<Object>} משחקים חמים עתידיים
    */
   static async getUpcomingHotFixtures(limit = 5) {
     const cacheKey = `upcoming:${limit}`;
@@ -140,16 +140,15 @@ class HotFixturesService {
     console.log("🔥 [HotFixturesService] Upcoming cache miss", { cacheKey });
 
     // אם אין ב-cache, מביא מהמסד נתונים
+    // מסנן רק משחקים מהתאריך הנוכחי ואילך (ללא הגבלת זמן קדימה)
     const now = new Date();
-    const nextMonth = new Date();
-    nextMonth.setMonth(now.getMonth() + 1);
 
     const result = await this.getHotFixtures({
       limit,
       sortBy: "date",
       sortOrder: "asc",
       fromDate: now,
-      toDate: nextMonth,
+      // ללא toDate - מחזיר את כל המשחקים החמים העתידיים ללא הגבלה
     });
 
     // שמירה ב-cache אם הצליח

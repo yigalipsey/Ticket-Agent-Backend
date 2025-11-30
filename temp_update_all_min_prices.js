@@ -154,3 +154,4 @@ async function updateAllMinPrices() {
 // Run the script
 updateAllMinPrices();
 
+

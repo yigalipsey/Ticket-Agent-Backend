@@ -25,14 +25,14 @@ const supplierSchema = new mongoose.Schema(
             trim: true,
             maxlength: 500,
         },
-        logoUrl: {
+        imageUrl: {
             type: String,
-            required: true,
+            trim: true,
             validate: {
                 validator: function (v) {
-                    return /^https?:\/\/.+/.test(v);
+                    return !v || /^https?:\/\/.+/.test(v);
                 },
-                message: "Logo URL must be a valid HTTP/HTTPS URL",
+                message: "Image URL must be a valid HTTP/HTTPS URL",
             },
         },
         websiteUrl: {
@@ -161,7 +161,7 @@ supplierSchema.methods.toPublicObject = function () {
         slug: this.slug,
         type: this.type,
         description: this.description,
-        logoUrl: this.logoUrl,
+        imageUrl: this.imageUrl,
         websiteUrl: this.websiteUrl,
         countries: this.countries,
         leagues: this.leagues,

@@ -1,0 +1,135 @@
+{
+  "endpoint": "/event-types?apiKey=efb6eb94df390eb06bd4d6dd9bc50e8a",
+  "method": "GET",
+  "status": 200,
+  "headers": {
+    "date": "Sun, 30 Nov 2025 13:59:07 GMT",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "server": "Apache/2.4.65 () OpenSSL/1.0.2k-fips",
+    "cache-control": "no-cache, private",
+    "access-control-allow-origin": "*",
+    "vary": "Authorization"
+  },
+  "data": {
+    "data": [
+      {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      {
+        "id": 1001,
+        "name": "טניס",
+        "isTeamSport": false,
+        "concert": false
+      },
+      {
+        "id": 1002,
+        "name": "כדורסל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      {
+        "id": 1003,
+        "name": "מרוצי מכוניות",
+        "isTeamSport": false,
+        "concert": false
+      },
+      {
+        "id": 1005,
+        "name": "בייסבול",
+        "isTeamSport": true,
+        "concert": false
+      },
+      {
+        "id": 1006,
+        "name": "פוטבול",
+        "isTeamSport": true,
+        "concert": false
+      },
+      {
+        "id": 1007,
+        "name": "מרוצי אופנועים",
+        "isTeamSport": false,
+        "concert": false
+      },
+      {
+        "id": 1008,
+        "name": "מרוצי אופניים",
+        "isTeamSport": false,
+        "concert": false
+      },
+      {
+        "id": 1009,
+        "name": "אתלטיקה",
+        "isTeamSport": false,
+        "concert": false
+      },
+      {
+        "id": 1010,
+        "name": "הוקי קרח",
+        "isTeamSport": true,
+        "concert": false
+      }
+    ],
+    "links": {
+      "first": "http://api-v2.sportsevents365.com/event-types?page=1",
+      "last": "http://api-v2.sportsevents365.com/event-types?page=5",
+      "prev": null,
+      "next": "http://api-v2.sportsevents365.com/event-types?page=2"
+    },
+    "meta": {
+      "current_page": 1,
+      "from": 1,
+      "last_page": 5,
+      "links": [
+        {
+          "url": null,
+          "label": "&laquo; Previous",
+          "active": false
+        },
+        {
+          "url": "http://api-v2.sportsevents365.com/event-types?page=1",
+          "label": "1",
+          "active": true
+        },
+        {
+          "url": "http://api-v2.sportsevents365.com/event-types?page=2",
+          "label": "2",
+          "active": false
+        },
+        {
+          "url": "http://api-v2.sportsevents365.com/event-types?page=3",
+          "label": "3",
+          "active": false
+        },
+        {
+          "url": "http://api-v2.sportsevents365.com/event-types?page=4",
+          "label": "4",
+          "active": false
+        },
+        {
+          "url": "http://api-v2.sportsevents365.com/event-types?page=5",
+          "label": "5",
+          "active": false
+        },
+        {
+          "url": "http://api-v2.sportsevents365.com/event-types?page=2",
+          "label": "Next &raquo;",
+          "active": false
+        }
+      ],
+      "path": "http://api-v2.sportsevents365.com/event-types",
+      "per_page": 10,
+      "to": 10,
+      "total": 42,
+      "title": "Event Types",
+      "apiId": 5472,
+      "totalPages": 5
+    },
+    "success": true
+  }
+}
