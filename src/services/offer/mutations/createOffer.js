@@ -7,6 +7,7 @@ import offersByFixtureCacheService from "../cache/OffersByFixtureCacheService.js
 import fixturesByTeamCacheService from "../../footballFixtures/cache/FixturesByTeamCacheService.js";
 import fixturesByLeagueCacheService from "../../footballFixtures/cache/FixturesByLeagueCacheService.js";
 import { getFootballEventsByTeamId } from "../../footballFixtures/queries/byTeam.js";
+import { getLeagueFixturesWithCache } from "../../footballFixtures/queries/byLeague.js";
 import { isLowestOffer } from "../utils/offerComparison.js";
 
 /**
@@ -25,6 +26,7 @@ export const createOffer = async (offerData) => {
       notes,
       source,
       metadata,
+      url,
     } = offerData;
 
     // Determine ownerType and ownerId
@@ -99,6 +101,7 @@ export const createOffer = async (offerData) => {
       notes,
       source: source || "p1",
       metadata,
+      url,
       isAvailable: true,
     });
 
@@ -174,15 +177,25 @@ export const createOffer = async (offerData) => {
         }
       }
 
-      // 5. Invalidate cache of fixtures by league
-      let leagueCacheInvalidated = 0;
+      // 5. Refresh cache of fixtures by league
+      let leagueCacheRefreshed = 0;
       if (fixture.league) {
         // תמיכה גם ב-ObjectId reference וגם ב-populated object
         const leagueId = fixture.league._id
           ? fixture.league._id.toString()
           : fixture.league.toString();
-        leagueCacheInvalidated =
-          fixturesByLeagueCacheService.deleteLeague(leagueId);
+
+        // מחיקת cache כדי לכפות שליפה מחדש מה-DB
+        fixturesByLeagueCacheService.deleteLeague(leagueId);
+
+        // שליפה מחדש מה-DB - getLeagueFixturesWithCache ישלוף וישמור ב-cache מחדש
+        const refreshedData = await getLeagueFixturesWithCache(leagueId, {
+          limit: "1000",
+        });
+
+        if (refreshedData && refreshedData.success !== false) {
+          leagueCacheRefreshed = 1;
+        }
       }
     }
 
@@ -190,6 +203,10 @@ export const createOffer = async (offerData) => {
     logWithCheckpoint("info", "Offer created successfully", "OFFER_CREATED", {
       cacheRefreshed: cacheRefreshResult.success,
       isLowestOffer: comparisonResult.isLowest,
+      teamsCacheRefreshed: comparisonResult.isLowest ? teamsCacheRefreshed : 0,
+      leagueCacheRefreshed: comparisonResult.isLowest
+        ? leagueCacheRefreshed
+        : 0,
     });
 
     return savedOffer;

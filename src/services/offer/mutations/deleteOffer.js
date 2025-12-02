@@ -6,6 +6,7 @@ import { getLowestOffer } from "../utils/offerComparison.js";
 import fixturesByTeamCacheService from "../../footballFixtures/cache/FixturesByTeamCacheService.js";
 import fixturesByLeagueCacheService from "../../footballFixtures/cache/FixturesByLeagueCacheService.js";
 import { getFootballEventsByTeamId } from "../../footballFixtures/queries/byTeam.js";
+import { getLeagueFixturesWithCache } from "../../footballFixtures/queries/byLeague.js";
 
 /**
  * Delete offer
@@ -109,25 +110,43 @@ export const deleteOffer = async (id) => {
     }
 
     // 4. אם minPrice התעדכן - רענון caches של fixtures
+    let teamsCacheRefreshed = 0;
+    let leagueCacheRefreshed = 0;
+
     if (minPriceUpdated) {
       // Refresh cache of fixtures by team (homeTeam and awayTeam)
       if (homeTeamId) {
         fixturesByTeamCacheService.delete(homeTeamId);
-        await getFootballEventsByTeamId(homeTeamId, {
+        const refreshedData = await getFootballEventsByTeamId(homeTeamId, {
           limit: "1000",
         });
+        if (refreshedData && refreshedData.success !== false) {
+          teamsCacheRefreshed++;
+        }
       }
 
       if (awayTeamId) {
         fixturesByTeamCacheService.delete(awayTeamId);
-        await getFootballEventsByTeamId(awayTeamId, {
+        const refreshedData = await getFootballEventsByTeamId(awayTeamId, {
           limit: "1000",
         });
+        if (refreshedData && refreshedData.success !== false) {
+          teamsCacheRefreshed++;
+        }
       }
 
-      // Invalidate cache of fixtures by league
+      // Refresh cache of fixtures by league
       if (leagueId) {
         fixturesByLeagueCacheService.deleteLeague(leagueId);
+
+        // שליפה מחדש מה-DB
+        const refreshedData = await getLeagueFixturesWithCache(leagueId, {
+          limit: "1000",
+        });
+
+        if (refreshedData && refreshedData.success !== false) {
+          leagueCacheRefreshed = 1;
+        }
       }
     }
 
@@ -136,6 +155,8 @@ export const deleteOffer = async (id) => {
       fixtureId,
       cacheRefreshed: cacheRefreshResult.success,
       minPriceUpdated,
+      teamsCacheRefreshed,
+      leagueCacheRefreshed,
       newLowestOffer: lowestOfferResult
         ? {
             price: lowestOfferResult.offer.price,

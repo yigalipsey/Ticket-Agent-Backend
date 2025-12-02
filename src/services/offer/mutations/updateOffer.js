@@ -6,7 +6,23 @@ import { refreshOffersCache } from "../utils/cacheHelpers.js";
 import fixturesByTeamCacheService from "../../footballFixtures/cache/FixturesByTeamCacheService.js";
 import fixturesByLeagueCacheService from "../../footballFixtures/cache/FixturesByLeagueCacheService.js";
 import { getFootballEventsByTeamId } from "../../footballFixtures/queries/byTeam.js";
+import { getLeagueFixturesWithCache } from "../../footballFixtures/queries/byLeague.js";
 import { getLowestOffer } from "../utils/offerComparison.js";
+
+const refreshTeamFixturesCache = async (team) => {
+  if (!team) {
+    return false;
+  }
+
+  const teamId = team._id ? team._id.toString() : team.toString();
+  fixturesByTeamCacheService.delete(teamId);
+
+  const refreshedData = await getFootballEventsByTeamId(teamId, {
+    limit: "1000",
+  });
+
+  return refreshedData && refreshedData.success !== false;
+};
 
 /**
  * Update existing offer
@@ -22,9 +38,14 @@ export const updateOffer = async (id, updateData) => {
     const existingOffer = await Offer.findById(id);
 
     if (!existingOffer) {
-      logWithCheckpoint("warn", "Offer not found for update", "OFFER_UPDATE_002", {
-        id,
-      });
+      logWithCheckpoint(
+        "warn",
+        "Offer not found for update",
+        "OFFER_UPDATE_002",
+        {
+          id,
+        }
+      );
       return null;
     }
 
@@ -52,11 +73,16 @@ export const updateOffer = async (id, updateData) => {
     }
 
     if (updateData.ownerId !== undefined || updateData.agentId !== undefined) {
-      throw new Error("Cannot change ownerId or agentId. Delete and create a new offer instead.");
+      throw new Error(
+        "Cannot change ownerId or agentId. Delete and create a new offer instead."
+      );
     }
 
     // ולידציה של agent אם ownerType הוא Agent
-    if (updateData.ownerType === "Agent" || existingOffer.ownerType === "Agent") {
+    if (
+      updateData.ownerType === "Agent" ||
+      existingOffer.ownerType === "Agent"
+    ) {
       const ownerId = updateData.ownerId || existingOffer.ownerId;
       const agent = await Agent.findById(ownerId);
       if (agent && !agent.isActive) {
@@ -128,58 +154,35 @@ export const updateOffer = async (id, updateData) => {
     }
 
     // 4. אם minPrice התעדכן או שהמחיר/מטבע של ההצעה השתנו - רענון caches של fixtures
-    const priceChanged =
-      oldPrice !== updatedOffer.price || oldCurrency !== updatedOffer.currency;
-
-    if (minPriceUpdated || priceChanged) {
+    if (minPriceUpdated) {
       // Refresh cache of fixtures by team (homeTeam and awayTeam)
       let teamsCacheRefreshed = 0;
-      if (fixture?.homeTeam) {
-        // תמיכה גם ב-ObjectId reference וגם ב-populated object
-        const homeTeamId = fixture.homeTeam._id
-          ? fixture.homeTeam._id.toString()
-          : fixture.homeTeam.toString();
-
-        // מחיקת cache כדי לכפות שליפה מחדש מה-DB
-        fixturesByTeamCacheService.delete(homeTeamId);
-
-        // שליפה מחדש מה-DB - getFootballEventsByTeamId ישלוף וישמור ב-cache מחדש
-        const refreshedData = await getFootballEventsByTeamId(homeTeamId, {
-          limit: "1000",
-        });
-
-        if (refreshedData && refreshedData.success !== false) {
-          teamsCacheRefreshed++;
-        }
-      }
-      if (fixture?.awayTeam) {
-        // תמיכה גם ב-ObjectId reference וגם ב-populated object
-        const awayTeamId = fixture.awayTeam._id
-          ? fixture.awayTeam._id.toString()
-          : fixture.awayTeam.toString();
-
-        // מחיקת cache כדי לכפות שליפה מחדש מה-DB
-        fixturesByTeamCacheService.delete(awayTeamId);
-
-        // שליפה מחדש מה-DB - getFootballEventsByTeamId ישלוף וישמור ב-cache מחדש
-        const refreshedData = await getFootballEventsByTeamId(awayTeamId, {
-          limit: "1000",
-        });
-
-        if (refreshedData && refreshedData.success !== false) {
-          teamsCacheRefreshed++;
-        }
+      if (await refreshTeamFixturesCache(fixture?.homeTeam)) {
+        teamsCacheRefreshed++;
       }
 
-      // 5. Invalidate cache of fixtures by league
-      let leagueCacheInvalidated = 0;
+      if (await refreshTeamFixturesCache(fixture?.awayTeam)) {
+        teamsCacheRefreshed++;
+      }
+
+      // Refresh cache of fixtures by league
+      let leagueCacheRefreshed = 0;
       if (fixture?.league) {
-        // תמיכה גם ב-ObjectId reference וגם ב-populated object
         const leagueId = fixture.league._id
           ? fixture.league._id.toString()
           : fixture.league.toString();
-        leagueCacheInvalidated =
-          fixturesByLeagueCacheService.deleteLeague(leagueId);
+
+        // מחיקת cache כדי לכפות שליפה מחדש מה-DB
+        fixturesByLeagueCacheService.deleteLeague(leagueId);
+
+        // שליפה מחדש מה-DB
+        const refreshedData = await getLeagueFixturesWithCache(leagueId, {
+          limit: "1000",
+        });
+
+        if (refreshedData && refreshedData.success !== false) {
+          leagueCacheRefreshed = 1;
+        }
       }
 
       logWithCheckpoint(
@@ -191,9 +194,8 @@ export const updateOffer = async (id, updateData) => {
           fixtureId,
           cacheRefreshed: cacheRefreshResult.success,
           minPriceUpdated,
-          priceChanged,
           teamsCacheRefreshed,
-          leagueCacheInvalidated,
+          leagueCacheRefreshed,
           oldPrice,
           newPrice: updatedOffer.price,
           oldCurrency,
@@ -201,13 +203,17 @@ export const updateOffer = async (id, updateData) => {
         }
       );
     } else {
-      logWithCheckpoint("info", "Offer updated successfully", "OFFER_UPDATE_005", {
-        id,
-        fixtureId,
-        cacheRefreshed: cacheRefreshResult.success,
-        minPriceUpdated: false,
-        priceChanged: false,
-      });
+      logWithCheckpoint(
+        "info",
+        "Offer updated successfully",
+        "OFFER_UPDATE_005",
+        {
+          id,
+          fixtureId,
+          cacheRefreshed: cacheRefreshResult.success,
+          minPriceUpdated: false,
+        }
+      );
     }
 
     return updatedOffer;
@@ -217,3 +223,21 @@ export const updateOffer = async (id, updateData) => {
   }
 };
 
+/**
+ * Update offer price (and optionally currency) using the standard update workflow
+ */
+export const updateOfferPrice = async (id, { price, currency } = {}) => {
+  if (price === undefined && currency === undefined) {
+    throw new Error("updateOfferPrice requires price or currency");
+  }
+
+  const updatePayload = {};
+  if (price !== undefined) {
+    updatePayload.price = price;
+  }
+  if (currency) {
+    updatePayload.currency = currency;
+  }
+
+  return updateOffer(id, updatePayload);
+};
