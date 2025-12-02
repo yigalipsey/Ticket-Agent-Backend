@@ -1,0 +1,318 @@
+{
+  "created_at": "2025-11-30T16:00:00.000Z",
+  "supplier": {
+    "id": "692c5e80270da1b2ea057dd9",
+    "name": "Sportsevents365",
+    "slug": "sportsevents365"
+  },
+  "league": {
+    "id": "68e257c87413ca349124a5e3",
+    "name": "UEFA Champions League"
+  },
+  "summary": {
+    "total_api_teams": 37,
+    "matched": 37,
+    "unmatched": 0,
+    "match_rate": "100.00%"
+  },
+  "mappings": [
+    {
+      "apiTeamId": 1490,
+      "apiTeamName": "אולימפיאקוס",
+      "dbTeamId": "68e25b370d7b31dba56dde86",
+      "dbTeamName": "אולימפיאקוס פיראוס",
+      "dbTeamNameEn": "אולימפיאקוס פיראוס",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1874,
+      "apiTeamName": "אטאלנטה",
+      "dbTeamId": "68e25b360d7b31dba56dde60",
+      "dbTeamName": "אטאלנטה",
+      "dbTeamNameEn": "Atalanta",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1175,
+      "apiTeamName": "איינטרכט פרנקפורט",
+      "dbTeamId": "68e25b340d7b31dba56dde42",
+      "dbTeamName": "איינטרכט פרנקפורט",
+      "dbTeamNameEn": "Eintracht Frankfurt",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1760,
+      "apiTeamName": "אינטר",
+      "dbTeamId": "68e25b320d7b31dba56dde14",
+      "dbTeamName": "אינטר",
+      "dbTeamNameEn": "Inter",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1104,
+      "apiTeamName": "ארסנל",
+      "dbTeamId": "68da7a5d8c51bd5b579b211a",
+      "dbTeamName": "ארסנל",
+      "dbTeamNameEn": "Arsenal",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1381,
+      "apiTeamName": "אתלטיק בילבאו",
+      "dbTeamId": "68da7a5a8c51bd5b579b20ba",
+      "dbTeamName": "אתלטיק בילבאו",
+      "dbTeamNameEn": "Athletic Bilbao",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1384,
+      "apiTeamName": "אתלטיקו מדריד",
+      "dbTeamId": "68da7a5a8c51bd5b579b20b6",
+      "dbTeamName": "אתלטיקו מדריד",
+      "dbTeamNameEn": "Atletico Madrid",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1182,
+      "apiTeamName": "באיירן מינכן",
+      "dbTeamId": "68e25b320d7b31dba56dde03",
+      "dbTeamName": "באיירן מינכן",
+      "dbTeamNameEn": "Bayern München",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 7184,
+      "apiTeamName": "בודו/גלימט",
+      "dbTeamId": "68e25b360d7b31dba56dde6c",
+      "dbTeamName": "בודו/גלימט",
+      "dbTeamNameEn": "Bodo/Glimt",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1174,
+      "apiTeamName": "בורוסיה דורטמונד",
+      "dbTeamId": "68e25b330d7b31dba56dde22",
+      "dbTeamName": "בורוסיה דורטמונד",
+      "dbTeamNameEn": "Borussia Dortmund",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1763,
+      "apiTeamName": "בנפיקה ליסבון",
+      "dbTeamId": "68e25b380d7b31dba56dde9e",
+      "dbTeamName": "בנפיקה",
+      "dbTeamNameEn": "Benfica",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1013,
+      "apiTeamName": "ברצלונה",
+      "dbTeamId": "68da7a5a8c51bd5b579b20ae",
+      "dbTeamName": "ברצלונה",
+      "dbTeamNameEn": "Barcelona",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1467,
+      "apiTeamName": "גלאטסראיי",
+      "dbTeamId": "68e25b350d7b31dba56dde5a",
+      "dbTeamName": "גלאטסראיי",
+      "dbTeamNameEn": "Galatasaray",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1394,
+      "apiTeamName": "ויאריאל",
+      "dbTeamId": "68da7a5a8c51bd5b579b20c2",
+      "dbTeamName": "ויאריאל",
+      "dbTeamNameEn": "Villarreal",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1108,
+      "apiTeamName": "טוטנהאם",
+      "dbTeamId": "68da7a5e8c51bd5b579b2126",
+      "dbTeamName": "טוטנהאם",
+      "dbTeamNameEn": "Tottenham",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 2442,
+      "apiTeamName": "יובנטוס",
+      "dbTeamId": "68e25b360d7b31dba56dde66",
+      "dbTeamName": "יובנטוס",
+      "dbTeamNameEn": "Juventus",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1179,
+      "apiTeamName": "לברקוזן",
+      "dbTeamId": "68e25b360d7b31dba56dde72",
+      "dbTeamName": "באייר לברקוזן",
+      "dbTeamNameEn": "Bayer Leverkusen",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1103,
+      "apiTeamName": "ליברפול",
+      "dbTeamId": "68da7a5d8c51bd5b579b2116",
+      "dbTeamName": "ליברפול",
+      "dbTeamNameEn": "Liverpool",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1197,
+      "apiTeamName": "מונאקו",
+      "dbTeamId": "68e25b380d7b31dba56dde8c",
+      "dbTeamName": "מונאקו",
+      "dbTeamNameEn": "Monaco",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1110,
+      "apiTeamName": "מנצ'סטר סיטי",
+      "dbTeamId": "68da7a5e8c51bd5b579b2132",
+      "dbTeamName": "מנצ'סטר סיטי",
+      "dbTeamNameEn": "Manchester City",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 2448,
+      "apiTeamName": "נאפולי",
+      "dbTeamId": "68e25b350d7b31dba56dde4e",
+      "dbTeamName": "נאפולי",
+      "dbTeamNameEn": "Napoli",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1113,
+      "apiTeamName": "ניוקאסל",
+      "dbTeamId": "68da7a5d8c51bd5b579b2106",
+      "dbTeamName": "ניוקאסל",
+      "dbTeamNameEn": "Newcastle",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1277,
+      "apiTeamName": "סלאביה פראג",
+      "dbTeamId": "68e25b380d7b31dba56dde92",
+      "dbTeamName": "סלאביה פראג",
+      "dbTeamNameEn": "Slavia Praha",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1758,
+      "apiTeamName": "ספורטינג ליסבון",
+      "dbTeamId": "68e25b340d7b31dba56dde3c",
+      "dbTeamName": "ספורטינג ליסבון",
+      "dbTeamNameEn": "Sporting CP",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 7860,
+      "apiTeamName": "פאפוס",
+      "dbTeamId": "68e25b380d7b31dba56dde98",
+      "dbTeamName": "פאפוס",
+      "dbTeamNameEn": "Pafos",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1106,
+      "apiTeamName": "צ'לסי",
+      "dbTeamId": "68da7a5e8c51bd5b579b212e",
+      "dbTeamName": "צ'לסי",
+      "dbTeamNameEn": "Chelsea",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1295,
+      "apiTeamName": "קלאב ברוז'",
+      "dbTeamId": "68e25b340d7b31dba56dde36",
+      "dbTeamName": "קלאב ברוז'",
+      "dbTeamNameEn": "Club Brugge KV",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1385,
+      "apiTeamName": "ריאל מדריד",
+      "dbTeamId": "68da7a5b8c51bd5b579b20d6",
+      "dbTeamName": "ריאל מדריד",
+      "dbTeamNameEn": "Real Madrid",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1210,
+      "apiTeamName": "אייאקס",
+      "dbTeamId": "68e25b390d7b31dba56ddea6",
+      "dbTeamName": "אייקס",
+      "dbTeamNameEn": "Ajax",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1193,
+      "apiTeamName": "מארסיי",
+      "dbTeamId": "68e25b340d7b31dba56dde30",
+      "dbTeamName": "מרסיי",
+      "dbTeamNameEn": "Marseille",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 6660,
+      "apiTeamName": "מונקו",
+      "dbTeamId": "68e25b380d7b31dba56dde8c",
+      "dbTeamName": "מונאקו",
+      "dbTeamNameEn": "Monaco",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 7176,
+      "apiTeamName": "סנט גילוואה",
+      "dbTeamId": "68e25b350d7b31dba56dde54",
+      "dbTeamName": "אוניון סן גילואז",
+      "dbTeamNameEn": "Union St. Gilloise",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1207,
+      "apiTeamName": "פ.ס.וו. איינדהובן",
+      "dbTeamId": "68e25b370d7b31dba56dde7a",
+      "dbTeamName": "פ.ס.ו איינדהובן",
+      "dbTeamNameEn": "PSV Eindhoven",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1186,
+      "apiTeamName": "פ.ס.ז'",
+      "dbTeamId": "68e25b320d7b31dba56dde0e",
+      "dbTeamName": "פאריס סן ז'רמן",
+      "dbTeamNameEn": "Paris Saint Germain",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 6111,
+      "apiTeamName": "קאיירט",
+      "dbTeamId": "68e25b390d7b31dba56ddeac",
+      "dbTeamName": "קייראט אלמטי",
+      "dbTeamNameEn": "Kairat Almaty",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 1762,
+      "apiTeamName": "קופנהאגן",
+      "dbTeamId": "68e25b370d7b31dba56dde80",
+      "dbTeamName": "קופנהגן",
+      "dbTeamNameEn": "FC Copenhagen",
+      "status": "MATCHED"
+    },
+    {
+      "apiTeamId": 3158,
+      "apiTeamName": "קראבאג",
+      "dbTeamId": "68e25b330d7b31dba56dde1c",
+      "dbTeamName": "קרבאג",
+      "dbTeamNameEn": "Qarabag",
+      "status": "MATCHED"
+    }
+  ],
+  "unmatched": []
+}
+

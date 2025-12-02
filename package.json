@@ -8,6 +8,8 @@
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
     "sync-fixtures": "node src/workers/syncFixtures.js",
+    "update-prices-worker": "node src/workers/updatePricesWorker.js --start",
+    "update-prices-once": "node src/workers/updatePricesWorker.js --run-once",
     "import-teams": "node scripts/importPremierLeagueTeams.js",
     "update-teams-venues": "node scripts/updateTeamsWithVenues.js",
     "migrate-teamid": "node scripts/migrateTeamId.js",

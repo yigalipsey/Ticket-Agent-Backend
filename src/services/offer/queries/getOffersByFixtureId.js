@@ -1,10 +1,25 @@
 import mongoose from "mongoose";
-import Offer from "../../../models/Offer.js";
 import FootballEvent from "../../../models/FootballEvent.js";
-import Agent from "../../../models/Agent.js";
-import Supplier from "../../../models/Supplier.js";
 import { logWithCheckpoint, logError } from "../../../utils/logger.js";
-// Cache disabled - always fetch fresh data from DB
+import AgentOfferService from "../agent/AgentOfferService.js";
+import SupplierApiService from "../suppliers/SupplierApiService.js";
+import { formatOfferForResponse } from "../utils/offerMapper.js";
+import { getExchangeRate } from "../../../utils/exchangeRate.js";
+// Cache disabled - always fetch fresh data from DB or supplier APIs
+
+const parseBoolean = (value, defaultValue) => {
+  if (typeof value === "boolean") {
+    return value;
+  }
+
+  if (typeof value === "string") {
+    const normalized = value.toLowerCase();
+    if (normalized === "true") return true;
+    if (normalized === "false") return false;
+  }
+
+  return defaultValue;
+};
 
 /**
  * Get offers by fixture ID (no cache - always fresh data from DB)
@@ -27,7 +42,13 @@ export const getOffersByFixtureId = async (fixtureId, query = {}) => {
       isAvailable = true,
       sortBy = "price",
       sortOrder = "asc",
+      forceRefresh = false,
     } = query;
+
+    const numericPage = Number.isNaN(Number(page)) ? 1 : parseInt(page, 10);
+    const numericLimit = Number.isNaN(Number(limit)) ? 20 : parseInt(limit, 10);
+    const normalizedIsAvailable = parseBoolean(isAvailable, true);
+    const normalizedForceRefresh = parseBoolean(forceRefresh, false);
 
     // שליפת פרטי המשחק תמיד (query קל ומהיר)
     // בדיקת תקינות ObjectId
@@ -55,8 +76,7 @@ export const getOffersByFixtureId = async (fixtureId, query = {}) => {
           .populate("awayTeam", "name slug logo logoUrl")
           .populate({
             path: "venue",
-            select:
-              "name city_en city_he country_en country_he capacity",
+            select: "name city_en city_he country_en country_he capacity",
           })
           .populate({
             path: "league",
@@ -116,55 +136,90 @@ export const getOffersByFixtureId = async (fixtureId, query = {}) => {
       });
     }
 
-    // שליפה ישירה מה-DB (ללא cache - תמיד נתונים טריים)
-    let allOffers;
-    let fromCache = false;
-
-    // שליפה מה-DB - תמיד ללא cache
+    // שליפה מה-DB (Agents) + קריאה ל-API (Suppliers)
     logWithCheckpoint(
       "info",
-      "Fetching offers from database (no cache)",
+      "Fetching agent/supplier offers (live suppliers refreshed)",
       "OFFER_012_DB",
-      { fixtureId }
+      { fixtureId, forceRefresh: normalizedForceRefresh }
     );
 
-    allOffers = await Offer.find({ fixtureId })
-      .populate({
-        path: "ownerId",
-        select: "name whatsapp isActive imageUrl agentType companyName",
-      })
-      .lean();
+    const [agentOffers, supplierOffers] = await Promise.all([
+      AgentOfferService.getOffersByFixture(fixtureId),
+      SupplierApiService.getOffersByFixture(fixture, {
+        forceRefresh: normalizedForceRefresh,
+        fixtureId,
+      }),
+    ]);
 
-    // מיפוי ownerId ל-agentId/supplierId לתאימות לאחור עם Frontend
-    allOffers = allOffers.map((offer) => {
-      if (offer.ownerType === "Agent" && offer.ownerId) {
-        offer.agentId = offer.ownerId;
-      } else if (offer.ownerType === "Supplier" && offer.ownerId) {
-        offer.supplierId = offer.ownerId;
-      }
-      return offer;
-    });
+    let allOffers = [...agentOffers, ...supplierOffers];
 
-    // לא שומרים ב-cache - תמיד נתונים טריים מה-DB
     logWithCheckpoint(
       "info",
-      "Offers fetched from DB (no cache used)",
+      "Offers fetched (including supplier APIs)",
       "OFFER_012_DB_NO_CACHE",
       {
         fixtureId,
-        offersCount: allOffers.length,
+        totalOffers: allOffers.length,
+        agentOffers: agentOffers.length,
+        supplierOffers: supplierOffers.length,
       }
     );
 
     // פילטור והחלת pagination על הנתונים
-    let filteredOffers = allOffers.filter(
-      (offer) => offer.isAvailable === isAvailable
-    );
+    let offersForSorting = allOffers;
+
+    if (sortBy === "price") {
+      offersForSorting = await Promise.all(
+        allOffers.map(async (offer) => {
+          if (!offer?.currency || offer.currency === "EUR") {
+            return {
+              ...offer,
+              _priceSortValue: Number.isFinite(offer.price)
+                ? offer.price
+                : Number.MAX_SAFE_INTEGER,
+            };
+          }
+
+          try {
+            const rate = await getExchangeRate(offer.currency, "EUR");
+            return {
+              ...offer,
+              _priceSortValue: Number.isFinite(rate)
+                ? offer.price * rate
+                : offer.price,
+            };
+          } catch (error) {
+            logError(error, {
+              operation: "convertOfferPriceForSorting",
+              offerId: offer._id,
+              currency: offer.currency,
+            });
+            return {
+              ...offer,
+              _priceSortValue: offer.price,
+            };
+          }
+        })
+      );
+    }
+
+    let filteredOffers = offersForSorting;
+    if (typeof normalizedIsAvailable === "boolean") {
+      filteredOffers = filteredOffers.filter(
+        (offer) => offer.isAvailable === normalizedIsAvailable
+      );
+    }
 
     // מיון
     filteredOffers.sort((a, b) => {
-      const aValue = a[sortBy];
-      const bValue = b[sortBy];
+      let aValue = a[sortBy];
+      let bValue = b[sortBy];
+
+      if (sortBy === "price") {
+        aValue = a._priceSortValue ?? a.price;
+        bValue = b._priceSortValue ?? b.price;
+      }
 
       if (sortOrder === "asc") {
         return aValue > bValue ? 1 : aValue < bValue ? -1 : 0;
@@ -174,8 +229,9 @@ export const getOffersByFixtureId = async (fixtureId, query = {}) => {
     });
 
     const total = filteredOffers.length;
-    const skip = (page - 1) * limit;
-    const paginatedOffers = filteredOffers.slice(skip, skip + parseInt(limit));
+    const skip = (numericPage - 1) * numericLimit;
+    const paginatedOffers = filteredOffers.slice(skip, skip + numericLimit);
+    const responseOffers = paginatedOffers.map(formatOfferForResponse);
 
     logWithCheckpoint(
       "info",
@@ -185,21 +241,80 @@ export const getOffersByFixtureId = async (fixtureId, query = {}) => {
         fixtureId,
         count: paginatedOffers.length,
         total,
-        fromCache,
+        fromCache: false,
         hasFixture: !!fixture,
       }
     );
 
+    const selectHebrewName = (entity) => {
+      if (!entity) return null;
+      return (
+        entity.name_he ||
+        entity.nameHe ||
+        entity.name ||
+        entity.name_en ||
+        entity.nameEn ||
+        null
+      );
+    };
+
+    const extractLogo = (entity) => {
+      if (!entity) return null;
+      return entity.logoUrl || entity.logo || entity.imageUrl || null;
+    };
+
+    const responseFixture = fixture
+      ? {
+          _id: fixture._id,
+          date: fixture.date,
+          homeTeam: fixture.homeTeam
+            ? {
+                name: selectHebrewName(fixture.homeTeam),
+                logoUrl: extractLogo(fixture.homeTeam),
+              }
+            : null,
+          awayTeam: fixture.awayTeam
+            ? {
+                name: selectHebrewName(fixture.awayTeam),
+                logoUrl: extractLogo(fixture.awayTeam),
+              }
+            : null,
+          venue: fixture.venue
+            ? {
+                name:
+                  fixture.venue.name_he ||
+                  fixture.venue.name ||
+                  fixture.venue.name_en ||
+                  null,
+                city:
+                  fixture.venue.city_he ||
+                  fixture.venue.city ||
+                  fixture.venue.city_en ||
+                  null,
+              }
+            : null,
+          league: fixture.league
+            ? {
+                name:
+                  fixture.league.nameHe ||
+                  fixture.league.name_he ||
+                  fixture.league.name ||
+                  null,
+              }
+            : null,
+        }
+      : null;
+
     return {
-      offers: paginatedOffers,
-      fixture: fixture || null,
+      offers: responseOffers,
+      fixture: responseFixture,
       pagination: {
-        page: parseInt(page),
-        limit: parseInt(limit),
+        page: numericPage,
+        limit: numericLimit,
         total,
-        pages: Math.ceil(total / limit),
+        pages: Math.ceil(total / numericLimit),
       },
-      fromCache,
+      fromCache: false,
     };
   } catch (error) {
     logError(error, { operation: "getOffersByFixtureId", fixtureId, query });

@@ -1,0 +1,6507 @@
+{
+  "fetched_at": "2025-11-30T15:56:05.004Z",
+  "tournament_id": 42,
+  "tournament_name": "UEFA Champions League",
+  "api_events_count": 55,
+  "db_matches_count": 109,
+  "api_events": [
+    {
+      "id": 379692,
+      "name": "באיירן מינכן - ספורטינג ליסבון",
+      "homeTeam": {
+        "id": 1182,
+        "name": "באיירן מינכן"
+      },
+      "awayTeam": {
+        "id": 1758,
+        "name": "ספורטינג ליסבון"
+      },
+      "participants": [
+        {
+          "id": 1182,
+          "name": "באיירן מינכן"
+        },
+        {
+          "id": 1758,
+          "name": "ספורטינג ליסבון"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "09/12/2025",
+      "timeOfEvent": "18:45",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1029,
+        "name": "גרמניה"
+      },
+      "city": {
+        "id": 1051,
+        "name": "מינכן"
+      },
+      "venue": {
+        "id": 1030,
+        "name": "אצטדיון אליאנץ ארנה",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/1_allianzarena.jpg",
+        "address": "Werner-Heisenberg-Allee 25\r\n80939 Muenchen",
+        "latitude": 48.218,
+        "longitude": 11.6263
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,379692",
+      "availableCategoriesQuantity": 22,
+      "minTicketPrice": {
+        "price": 594,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378237,
+      "name": "טוטנהאם - סלאביה פראג",
+      "homeTeam": {
+        "id": 1108,
+        "name": "טוטנהאם"
+      },
+      "awayTeam": {
+        "id": 1277,
+        "name": "סלאביה פראג"
+      },
+      "participants": [
+        {
+          "id": 1108,
+          "name": "טוטנהאם"
+        },
+        {
+          "id": 1277,
+          "name": "סלאביה פראג"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "09/12/2025",
+      "timeOfEvent": "20:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1003,
+        "name": "אנגליה"
+      },
+      "city": {
+        "id": 1006,
+        "name": "לונדון"
+      },
+      "venue": {
+        "id": 4231,
+        "name": "אצטדיון טוטנהאם הוטספר",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/spurs.png",
+        "address": "782 High Rd, London N17 0BX, UK",
+        "latitude": 51.6044,
+        "longitude": -0.066389
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378237",
+      "availableCategoriesQuantity": 12,
+      "minTicketPrice": {
+        "price": 410,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378306,
+      "name": "קאיירט - אולימפיאקוס",
+      "homeTeam": {
+        "id": 6111,
+        "name": "קאיירט"
+      },
+      "awayTeam": {
+        "id": 1490,
+        "name": "אולימפיאקוס"
+      },
+      "participants": [
+        {
+          "id": 6111,
+          "name": "קאיירט"
+        },
+        {
+          "id": 1490,
+          "name": "אולימפיאקוס"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "09/12/2025",
+      "timeOfEvent": "20:30",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1006,
+        "name": "קזחסטן"
+      },
+      "city": {
+        "id": 1096,
+        "name": "אלמטי"
+      },
+      "venue": {
+        "id": 4775,
+        "name": "אצטדיון אלמטי סנטרל",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/almatycentral.png",
+        "address": "Satpaev Street 29/3, Almaty 050000, Kazakhstan",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378306",
+      "availableCategoriesQuantity": 0,
+      "minTicketPrice": {
+        "price": null,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378183,
+      "name": "אינטר - ליברפול",
+      "homeTeam": {
+        "id": 1760,
+        "name": "אינטר"
+      },
+      "awayTeam": {
+        "id": 1103,
+        "name": "ליברפול"
+      },
+      "participants": [
+        {
+          "id": 1760,
+          "name": "אינטר"
+        },
+        {
+          "id": 1103,
+          "name": "ליברפול"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "09/12/2025",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1017,
+        "name": "איטליה"
+      },
+      "city": {
+        "id": 1361,
+        "name": "מילאנו"
+      },
+      "venue": {
+        "id": 1497,
+        "name": "אצטדיון ג'וזפה מאצה (סן סירו)",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/sansiro2.jpg",
+        "address": "Via Piccolomini 5\r\n20151 Milan",
+        "latitude": 45.478,
+        "longitude": 9.12421
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378183",
+      "availableCategoriesQuantity": 11,
+      "minTicketPrice": {
+        "price": 806,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378218,
+      "name": "אטאלנטה - צ'לסי",
+      "homeTeam": {
+        "id": 1874,
+        "name": "אטאלנטה"
+      },
+      "awayTeam": {
+        "id": 1106,
+        "name": "צ'לסי"
+      },
+      "participants": [
+        {
+          "id": 1874,
+          "name": "אטאלנטה"
+        },
+        {
+          "id": 1106,
+          "name": "צ'לסי"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "09/12/2025",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1017,
+        "name": "איטליה"
+      },
+      "city": {
+        "id": 1481,
+        "name": "ברגמו"
+      },
+      "venue": {
+        "id": 1514,
+        "name": "סטאד די ברגמו (אצטדיון ג'-וויס)",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/1_Atleti-Azzurri-dItalia.jpg",
+        "address": "Viale Giulio Cesare 18\r\n24100 Bergamo",
+        "latitude": 45.7089,
+        "longitude": 9.68083
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378218",
+      "availableCategoriesQuantity": 4,
+      "minTicketPrice": {
+        "price": 669,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378241,
+      "name": "פ.ס.וו. איינדהובן - אתלטיקו מדריד",
+      "homeTeam": {
+        "id": 1207,
+        "name": "פ.ס.וו. איינדהובן"
+      },
+      "awayTeam": {
+        "id": 1384,
+        "name": "אתלטיקו מדריד"
+      },
+      "participants": [
+        {
+          "id": 1207,
+          "name": "פ.ס.וו. איינדהובן"
+        },
+        {
+          "id": 1384,
+          "name": "אתלטיקו מדריד"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "09/12/2025",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1048,
+        "name": "הולנד"
+      },
+      "city": {
+        "id": 1105,
+        "name": "איינדהובן"
+      },
+      "venue": {
+        "id": 1095,
+        "name": "אצטדיון פיליפס",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/PSV_eindhoven.jpg",
+        "address": "Frederiklaan 10a\r\n5616 NH Eindhoven",
+        "latitude": 51.4418,
+        "longitude": 5.46744
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378241",
+      "availableCategoriesQuantity": 2,
+      "minTicketPrice": {
+        "price": 1509,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378276,
+      "name": "מונאקו - גלאטסראיי",
+      "homeTeam": {
+        "id": 1197,
+        "name": "מונאקו"
+      },
+      "awayTeam": {
+        "id": 1467,
+        "name": "גלאטסראיי"
+      },
+      "participants": [
+        {
+          "id": 1197,
+          "name": "מונאקו"
+        },
+        {
+          "id": 1467,
+          "name": "גלאטסראיי"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "09/12/2025",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1004,
+        "name": "צרפת"
+      },
+      "city": {
+        "id": 2135,
+        "name": "מונקו"
+      },
+      "venue": {
+        "id": 2815,
+        "name": "אצטדיון לואי 2",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/Stade-Louis-II.jpg",
+        "address": "3, avenue des Castelans",
+        "latitude": 43.7276,
+        "longitude": 7.41561
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378276",
+      "availableCategoriesQuantity": 0,
+      "minTicketPrice": {
+        "price": null,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378283,
+      "name": "סנט גילוואה - מארסיי",
+      "homeTeam": {
+        "id": 7176,
+        "name": "סנט גילוואה"
+      },
+      "awayTeam": {
+        "id": 1193,
+        "name": "מארסיי"
+      },
+      "participants": [
+        {
+          "id": 7176,
+          "name": "סנט גילוואה"
+        },
+        {
+          "id": 1193,
+          "name": "מארסיי"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "09/12/2025",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1005,
+        "name": "בלגיה"
+      },
+      "city": {
+        "id": 1093,
+        "name": "בריסל"
+      },
+      "venue": {
+        "id": 1077,
+        "name": "לוטו פארק",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/anderlecht.jpg",
+        "address": "Theo Verbeecklaan 2\r\n1070 Bruxelles-Brussel",
+        "latitude": 50.8342,
+        "longitude": 4.29836
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378283",
+      "availableCategoriesQuantity": 0,
+      "minTicketPrice": {
+        "price": null,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378655,
+      "name": "ברצלונה - איינטרכט פרנקפורט",
+      "homeTeam": {
+        "id": 1013,
+        "name": "ברצלונה"
+      },
+      "awayTeam": {
+        "id": 1175,
+        "name": "איינטרכט פרנקפורט"
+      },
+      "participants": [
+        {
+          "id": 1013,
+          "name": "ברצלונה"
+        },
+        {
+          "id": 1175,
+          "name": "איינטרכט פרנקפורט"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "09/12/2025",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1002,
+        "name": "ספרד"
+      },
+      "city": {
+        "id": 1005,
+        "name": "ברצלונה"
+      },
+      "venue": {
+        "id": 1193,
+        "name": "אצטדיון קאמפ נואו",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/camp-nou_2019_across.png",
+        "address": "Avinguda Aristides Maillol s/n\r\n08028 Barcelona.",
+        "latitude": 41.3809,
+        "longitude": 2.12283
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378655",
+      "availableCategoriesQuantity": 29,
+      "minTicketPrice": {
+        "price": 975,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378222,
+      "name": "ויאריאל - קופנהאגן",
+      "homeTeam": {
+        "id": 1394,
+        "name": "ויאריאל"
+      },
+      "awayTeam": {
+        "id": 1762,
+        "name": "קופנהאגן"
+      },
+      "participants": [
+        {
+          "id": 1394,
+          "name": "ויאריאל"
+        },
+        {
+          "id": 1762,
+          "name": "קופנהאגן"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "10/12/2025",
+      "timeOfEvent": "18:45",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1002,
+        "name": "ספרד"
+      },
+      "city": {
+        "id": 1225,
+        "name": "ויאריאל"
+      },
+      "venue": {
+        "id": 1209,
+        "name": "אסטדיו דה לה סרמיקה",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/Estadio-El-Madrigal.jpg",
+        "address": "Plaza Labrador s/n\r\nVillarreal",
+        "latitude": 39.9442,
+        "longitude": -0.103611
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378222",
+      "availableCategoriesQuantity": 0,
+      "minTicketPrice": {
+        "price": null,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378211,
+      "name": "בנפיקה ליסבון - נאפולי",
+      "homeTeam": {
+        "id": 1763,
+        "name": "בנפיקה ליסבון"
+      },
+      "awayTeam": {
+        "id": 2448,
+        "name": "נאפולי"
+      },
+      "participants": [
+        {
+          "id": 1763,
+          "name": "בנפיקה ליסבון"
+        },
+        {
+          "id": 2448,
+          "name": "נאפולי"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "10/12/2025",
+      "timeOfEvent": "20:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1016,
+        "name": "פורטוגל"
+      },
+      "city": {
+        "id": 1421,
+        "name": "ליסבון"
+      },
+      "venue": {
+        "id": 1556,
+        "name": "אצטדיון האור",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/benfica_2022.jpg",
+        "address": "Av. General Norton De Matos 1500\r\nLisboa",
+        "latitude": 38.7527,
+        "longitude": -9.18468
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378211",
+      "availableCategoriesQuantity": 8,
+      "minTicketPrice": {
+        "price": 740,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378167,
+      "name": "ריאל מדריד - מנצ'סטר סיטי",
+      "homeTeam": {
+        "id": 1385,
+        "name": "ריאל מדריד"
+      },
+      "awayTeam": {
+        "id": 1110,
+        "name": "מנצ'סטר סיטי"
+      },
+      "participants": [
+        {
+          "id": 1385,
+          "name": "ריאל מדריד"
+        },
+        {
+          "id": 1110,
+          "name": "מנצ'סטר סיטי"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "10/12/2025",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1002,
+        "name": "ספרד"
+      },
+      "city": {
+        "id": 1217,
+        "name": "מדריד"
+      },
+      "venue": {
+        "id": 1200,
+        "name": "אצטדיון סנטיאגו ברנבאו",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/santiago_Bernabeu_map-650x543.png",
+        "address": "Avenida Concha Espina 1\r\n28036 Madrid",
+        "latitude": 40.4528,
+        "longitude": -3.68806
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378167",
+      "availableCategoriesQuantity": 79,
+      "minTicketPrice": {
+        "price": 1678,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378193,
+      "name": "בורוסיה דורטמונד - בודו/גלימט",
+      "homeTeam": {
+        "id": 1174,
+        "name": "בורוסיה דורטמונד"
+      },
+      "awayTeam": {
+        "id": 7184,
+        "name": "בודו/גלימט"
+      },
+      "participants": [
+        {
+          "id": 1174,
+          "name": "בורוסיה דורטמונד"
+        },
+        {
+          "id": 7184,
+          "name": "בודו/גלימט"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "10/12/2025",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1029,
+        "name": "גרמניה"
+      },
+      "city": {
+        "id": 1058,
+        "name": "דורטמונד"
+      },
+      "venue": {
+        "id": 1037,
+        "name": "אצטדיון סיגנל אידונה פארק",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/signal_iduna_park.png",
+        "address": "Strobelalle 50\r\n44139 Dortmund",
+        "latitude": 51.4926,
+        "longitude": 7.45184
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378193",
+      "availableCategoriesQuantity": 22,
+      "minTicketPrice": {
+        "price": 692,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378206,
+      "name": "לברקוזן - ניוקאסל",
+      "homeTeam": {
+        "id": 1179,
+        "name": "לברקוזן"
+      },
+      "awayTeam": {
+        "id": 1113,
+        "name": "ניוקאסל"
+      },
+      "participants": [
+        {
+          "id": 1179,
+          "name": "לברקוזן"
+        },
+        {
+          "id": 1113,
+          "name": "ניוקאסל"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "10/12/2025",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1029,
+        "name": "גרמניה"
+      },
+      "city": {
+        "id": 1063,
+        "name": "לברקוזן"
+      },
+      "venue": {
+        "id": 1042,
+        "name": "אצטדיון ביי ארנה",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/BAYARENA.png",
+        "address": "Bismarckstr. 122-124\r\n51373 Leverkusen",
+        "latitude": 51.0383,
+        "longitude": 7.00221
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378206",
+      "availableCategoriesQuantity": 8,
+      "minTicketPrice": {
+        "price": 806,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378225,
+      "name": "יובנטוס - פאפוס",
+      "homeTeam": {
+        "id": 2442,
+        "name": "יובנטוס"
+      },
+      "awayTeam": {
+        "id": 7860,
+        "name": "פאפוס"
+      },
+      "participants": [
+        {
+          "id": 2442,
+          "name": "יובנטוס"
+        },
+        {
+          "id": 7860,
+          "name": "פאפוס"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "10/12/2025",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1017,
+        "name": "איטליה"
+      },
+      "city": {
+        "id": 1402,
+        "name": "טורינו"
+      },
+      "venue": {
+        "id": 1505,
+        "name": "אצטדיון יובנטוס",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/juventus_arena.jpg",
+        "address": "Altessano St. 131\r\n10151 Torino",
+        "latitude": 45.1094,
+        "longitude": 7.6411
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378225",
+      "availableCategoriesQuantity": 11,
+      "minTicketPrice": {
+        "price": 382,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378234,
+      "name": "קלאב ברוז' - ארסנל",
+      "homeTeam": {
+        "id": 1295,
+        "name": "קלאב ברוז'"
+      },
+      "awayTeam": {
+        "id": 1104,
+        "name": "ארסנל"
+      },
+      "participants": [
+        {
+          "id": 1295,
+          "name": "קלאב ברוז'"
+        },
+        {
+          "id": 1104,
+          "name": "ארסנל"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "10/12/2025",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1005,
+        "name": "בלגיה"
+      },
+      "city": {
+        "id": 1158,
+        "name": "ברוז'"
+      },
+      "venue": {
+        "id": 1139,
+        "name": "אצטדיון ז'אן בריידל",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/Club-Brugge.jpg",
+        "address": "Olympialaan 74\r\n8200 Brugge",
+        "latitude": 51.1933,
+        "longitude": 3.18058
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378234",
+      "availableCategoriesQuantity": 1,
+      "minTicketPrice": {
+        "price": 2573,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378292,
+      "name": "אתלטיק בילבאו - פ.ס.ז'",
+      "homeTeam": {
+        "id": 1381,
+        "name": "אתלטיק בילבאו"
+      },
+      "awayTeam": {
+        "id": 1186,
+        "name": "פ.ס.ז'"
+      },
+      "participants": [
+        {
+          "id": 1381,
+          "name": "אתלטיק בילבאו"
+        },
+        {
+          "id": 1186,
+          "name": "פ.ס.ז'"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "10/12/2025",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1002,
+        "name": "ספרד"
+      },
+      "city": {
+        "id": 1214,
+        "name": "בילבאו"
+      },
+      "venue": {
+        "id": 1195,
+        "name": "אצטדיון סן מאמס",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/MamesFootball.png",
+        "address": "Felipe Serrate\r\nE-48009 Bilbao",
+        "latitude": 43.2635,
+        "longitude": -2.94839
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378292",
+      "availableCategoriesQuantity": 1,
+      "minTicketPrice": {
+        "price": 2962,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378288,
+      "name": "קראבאג - אייאקס",
+      "homeTeam": {
+        "id": 3158,
+        "name": "קראבאג"
+      },
+      "awayTeam": {
+        "id": 1210,
+        "name": "אייאקס"
+      },
+      "participants": [
+        {
+          "id": 3158,
+          "name": "קראבאג"
+        },
+        {
+          "id": 1210,
+          "name": "אייאקס"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "10/12/2025",
+      "timeOfEvent": "21:45",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1012,
+        "name": "אזרבייג'אן"
+      },
+      "city": {
+        "id": 1234,
+        "name": "באקו"
+      },
+      "venue": {
+        "id": 1221,
+        "name": "אצטדיון טופיק בחרמוב",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/Tofiqbahramov.png",
+        "address": "24 Hasan Aliyev Str\r\nAZ 370000 Baku",
+        "latitude": 40.3973,
+        "longitude": 49.8524
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378288",
+      "availableCategoriesQuantity": 0,
+      "minTicketPrice": {
+        "price": null,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378266,
+      "name": "בודו/גלימט - מנצ'סטר סיטי",
+      "homeTeam": {
+        "id": 7184,
+        "name": "בודו/גלימט"
+      },
+      "awayTeam": {
+        "id": 1110,
+        "name": "מנצ'סטר סיטי"
+      },
+      "participants": [
+        {
+          "id": 7184,
+          "name": "בודו/גלימט"
+        },
+        {
+          "id": 1110,
+          "name": "מנצ'סטר סיטי"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "20/01/2026",
+      "timeOfEvent": "18:45",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1024,
+        "name": "נורבגיה"
+      },
+      "city": {
+        "id": 2715,
+        "name": "בודו"
+      },
+      "venue": {
+        "id": 4719,
+        "name": "אצטדיון Aspmyra",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/Aspmyrastadion.png",
+        "address": "Hålogalandsgata 1",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378266",
+      "availableCategoriesQuantity": 0,
+      "minTicketPrice": {
+        "price": null,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378254,
+      "name": "ספורטינג ליסבון - פ.ס.ז'",
+      "homeTeam": {
+        "id": 1758,
+        "name": "ספורטינג ליסבון"
+      },
+      "awayTeam": {
+        "id": 1186,
+        "name": "פ.ס.ז'"
+      },
+      "participants": [
+        {
+          "id": 1758,
+          "name": "ספורטינג ליסבון"
+        },
+        {
+          "id": 1186,
+          "name": "פ.ס.ז'"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "20/01/2026",
+      "timeOfEvent": "20:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1016,
+        "name": "פורטוגל"
+      },
+      "city": {
+        "id": 1421,
+        "name": "ליסבון"
+      },
+      "venue": {
+        "id": 1558,
+        "name": "אצטדיון ז'וזה אלבלדה",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/estadio_jose_alvade2.png",
+        "address": "Rua Professor Fernando da Fonseca\r\nLisbon",
+        "latitude": 38.7612,
+        "longitude": -9.16078
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378254",
+      "availableCategoriesQuantity": 17,
+      "minTicketPrice": {
+        "price": 1065,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378558,
+      "name": "טוטנהאם - בורוסיה דורטמונד",
+      "homeTeam": {
+        "id": 1108,
+        "name": "טוטנהאם"
+      },
+      "awayTeam": {
+        "id": 1174,
+        "name": "בורוסיה דורטמונד"
+      },
+      "participants": [
+        {
+          "id": 1108,
+          "name": "טוטנהאם"
+        },
+        {
+          "id": 1174,
+          "name": "בורוסיה דורטמונד"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "20/01/2026",
+      "timeOfEvent": "20:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1003,
+        "name": "אנגליה"
+      },
+      "city": {
+        "id": 1006,
+        "name": "לונדון"
+      },
+      "venue": {
+        "id": 4231,
+        "name": "אצטדיון טוטנהאם הוטספר",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/spurs.png",
+        "address": "782 High Rd, London N17 0BX, UK",
+        "latitude": 51.6044,
+        "longitude": -0.066389
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378558",
+      "availableCategoriesQuantity": 14,
+      "minTicketPrice": {
+        "price": 683,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378305,
+      "name": "קאיירט - קלאב ברוז'",
+      "homeTeam": {
+        "id": 6111,
+        "name": "קאיירט"
+      },
+      "awayTeam": {
+        "id": 1295,
+        "name": "קלאב ברוז'"
+      },
+      "participants": [
+        {
+          "id": 6111,
+          "name": "קאיירט"
+        },
+        {
+          "id": 1295,
+          "name": "קלאב ברוז'"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "20/01/2026",
+      "timeOfEvent": "20:30",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1006,
+        "name": "קזחסטן"
+      },
+      "city": {
+        "id": 1096,
+        "name": "אלמטי"
+      },
+      "venue": {
+        "id": 4775,
+        "name": "אצטדיון אלמטי סנטרל",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/almatycentral.png",
+        "address": "Satpaev Street 29/3, Almaty 050000, Kazakhstan",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378305",
+      "availableCategoriesQuantity": 0,
+      "minTicketPrice": {
+        "price": null,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378170,
+      "name": "ריאל מדריד - מונקו",
+      "homeTeam": {
+        "id": 1385,
+        "name": "ריאל מדריד"
+      },
+      "awayTeam": {
+        "id": 6660,
+        "name": "מונקו"
+      },
+      "participants": [
+        {
+          "id": 1385,
+          "name": "ריאל מדריד"
+        },
+        {
+          "id": 6660,
+          "name": "מונקו"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "20/01/2026",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1002,
+        "name": "ספרד"
+      },
+      "city": {
+        "id": 1217,
+        "name": "מדריד"
+      },
+      "venue": {
+        "id": 1200,
+        "name": "אצטדיון סנטיאגו ברנבאו",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/santiago_Bernabeu_map-650x543.png",
+        "address": "Avenida Concha Espina 1\r\n28036 Madrid",
+        "latitude": 40.4528,
+        "longitude": -3.68806
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378170",
+      "availableCategoriesQuantity": 55,
+      "minTicketPrice": {
+        "price": 1069,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378184,
+      "name": "אינטר - ארסנל",
+      "homeTeam": {
+        "id": 1760,
+        "name": "אינטר"
+      },
+      "awayTeam": {
+        "id": 1104,
+        "name": "ארסנל"
+      },
+      "participants": [
+        {
+          "id": 1760,
+          "name": "אינטר"
+        },
+        {
+          "id": 1104,
+          "name": "ארסנל"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "20/01/2026",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1017,
+        "name": "איטליה"
+      },
+      "city": {
+        "id": 1361,
+        "name": "מילאנו"
+      },
+      "venue": {
+        "id": 1497,
+        "name": "אצטדיון ג'וזפה מאצה (סן סירו)",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/sansiro2.jpg",
+        "address": "Via Piccolomini 5\r\n20151 Milan",
+        "latitude": 45.478,
+        "longitude": 9.12421
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378184",
+      "availableCategoriesQuantity": 16,
+      "minTicketPrice": {
+        "price": 1046,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378219,
+      "name": "ויאריאל - אייאקס",
+      "homeTeam": {
+        "id": 1394,
+        "name": "ויאריאל"
+      },
+      "awayTeam": {
+        "id": 1210,
+        "name": "אייאקס"
+      },
+      "participants": [
+        {
+          "id": 1394,
+          "name": "ויאריאל"
+        },
+        {
+          "id": 1210,
+          "name": "אייאקס"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "20/01/2026",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1002,
+        "name": "ספרד"
+      },
+      "city": {
+        "id": 1225,
+        "name": "ויאריאל"
+      },
+      "venue": {
+        "id": 1209,
+        "name": "אסטדיו דה לה סרמיקה",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/Estadio-El-Madrigal.jpg",
+        "address": "Plaza Labrador s/n\r\nVillarreal",
+        "latitude": 39.9442,
+        "longitude": -0.103611
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378219",
+      "availableCategoriesQuantity": 0,
+      "minTicketPrice": {
+        "price": null,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378274,
+      "name": "קופנהאגן - נאפולי",
+      "homeTeam": {
+        "id": 1762,
+        "name": "קופנהאגן"
+      },
+      "awayTeam": {
+        "id": 2448,
+        "name": "נאפולי"
+      },
+      "participants": [
+        {
+          "id": 1762,
+          "name": "קופנהאגן"
+        },
+        {
+          "id": 2448,
+          "name": "נאפולי"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "20/01/2026",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1039,
+        "name": "דנמרק"
+      },
+      "city": {
+        "id": 1040,
+        "name": "קופנהאגן"
+      },
+      "venue": {
+        "id": 1027,
+        "name": "אצטדיון פארקן",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/5454.png",
+        "address": "Oster Alle 50\r\nDK-2100 Copenhagen",
+        "latitude": 55.7025,
+        "longitude": 12.5722
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378274",
+      "availableCategoriesQuantity": 0,
+      "minTicketPrice": {
+        "price": null,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378258,
+      "name": "אולימפיאקוס - לברקוזן",
+      "homeTeam": {
+        "id": 1490,
+        "name": "אולימפיאקוס"
+      },
+      "awayTeam": {
+        "id": 1179,
+        "name": "לברקוזן"
+      },
+      "participants": [
+        {
+          "id": 1490,
+          "name": "אולימפיאקוס"
+        },
+        {
+          "id": 1179,
+          "name": "לברקוזן"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "20/01/2026",
+      "timeOfEvent": "22:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1021,
+        "name": "יוון"
+      },
+      "city": {
+        "id": 1290,
+        "name": "פיראוס"
+      },
+      "venue": {
+        "id": 1309,
+        "name": "אצטדיון קאראיסקאקיס",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/olympiacos_stadium.jpg",
+        "address": "Alexandra Square GR \r\n18534 Piraeus",
+        "latitude": 37.9464,
+        "longitude": 23.6643
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378258",
+      "availableCategoriesQuantity": 0,
+      "minTicketPrice": {
+        "price": null,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378280,
+      "name": "גלאטסראיי - אתלטיקו מדריד",
+      "homeTeam": {
+        "id": 1467,
+        "name": "גלאטסראיי"
+      },
+      "awayTeam": {
+        "id": 1384,
+        "name": "אתלטיקו מדריד"
+      },
+      "participants": [
+        {
+          "id": 1467,
+          "name": "גלאטסראיי"
+        },
+        {
+          "id": 1384,
+          "name": "אתלטיקו מדריד"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "21/01/2026",
+      "timeOfEvent": "19:45",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1025,
+        "name": "טורקיה"
+      },
+      "city": {
+        "id": 1044,
+        "name": "איסטנבול"
+      },
+      "venue": {
+        "id": 3299,
+        "name": "אצטדיון ראמס פארק",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/gala.png",
+        "address": "",
+        "latitude": 41.1029,
+        "longitude": 28.9904
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378280",
+      "availableCategoriesQuantity": 3,
+      "minTicketPrice": {
+        "price": 1934,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378190,
+      "name": "צ'לסי - פאפוס",
+      "homeTeam": {
+        "id": 1106,
+        "name": "צ'לסי"
+      },
+      "awayTeam": {
+        "id": 7860,
+        "name": "פאפוס"
+      },
+      "participants": [
+        {
+          "id": 1106,
+          "name": "צ'לסי"
+        },
+        {
+          "id": 7860,
+          "name": "פאפוס"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "21/01/2026",
+      "timeOfEvent": "20:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1003,
+        "name": "אנגליה"
+      },
+      "city": {
+        "id": 1006,
+        "name": "לונדון"
+      },
+      "venue": {
+        "id": 1008,
+        "name": "אצטדיון סטמפורד ברידג'",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/3_stamford-bridge.jpg",
+        "address": "Fulham Road\r\nLondon SW6 1HS",
+        "latitude": 51.4817,
+        "longitude": -0.190972
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378190",
+      "availableCategoriesQuantity": 14,
+      "minTicketPrice": {
+        "price": 764,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378297,
+      "name": "ניוקאסל - פ.ס.וו. איינדהובן",
+      "homeTeam": {
+        "id": 1113,
+        "name": "ניוקאסל"
+      },
+      "awayTeam": {
+        "id": 1207,
+        "name": "פ.ס.וו. איינדהובן"
+      },
+      "participants": [
+        {
+          "id": 1113,
+          "name": "ניוקאסל"
+        },
+        {
+          "id": 1207,
+          "name": "פ.ס.וו. איינדהובן"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "21/01/2026",
+      "timeOfEvent": "20:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1003,
+        "name": "אנגליה"
+      },
+      "city": {
+        "id": 1036,
+        "name": "ניוקאסל"
+      },
+      "venue": {
+        "id": 1020,
+        "name": "אצטדיון סנט. ג'יימס פארק",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/stjamespark.png",
+        "address": "Newcastle-upon-Tyne NE1 4ST",
+        "latitude": 50.7307,
+        "longitude": -3.52115
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378297",
+      "availableCategoriesQuantity": 3,
+      "minTicketPrice": {
+        "price": 858,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378215,
+      "name": "אטאלנטה - אתלטיק בילבאו",
+      "homeTeam": {
+        "id": 1874,
+        "name": "אטאלנטה"
+      },
+      "awayTeam": {
+        "id": 1381,
+        "name": "אתלטיק בילבאו"
+      },
+      "participants": [
+        {
+          "id": 1874,
+          "name": "אטאלנטה"
+        },
+        {
+          "id": 1381,
+          "name": "אתלטיק בילבאו"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "21/01/2026",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1017,
+        "name": "איטליה"
+      },
+      "city": {
+        "id": 1481,
+        "name": "ברגמו"
+      },
+      "venue": {
+        "id": 1514,
+        "name": "סטאד די ברגמו (אצטדיון ג'-וויס)",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/1_Atleti-Azzurri-dItalia.jpg",
+        "address": "Viale Giulio Cesare 18\r\n24100 Bergamo",
+        "latitude": 45.7089,
+        "longitude": 9.68083
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378215",
+      "availableCategoriesQuantity": 6,
+      "minTicketPrice": {
+        "price": 366,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378223,
+      "name": "יובנטוס - בנפיקה ליסבון",
+      "homeTeam": {
+        "id": 2442,
+        "name": "יובנטוס"
+      },
+      "awayTeam": {
+        "id": 1763,
+        "name": "בנפיקה ליסבון"
+      },
+      "participants": [
+        {
+          "id": 2442,
+          "name": "יובנטוס"
+        },
+        {
+          "id": 1763,
+          "name": "בנפיקה ליסבון"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "21/01/2026",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1017,
+        "name": "איטליה"
+      },
+      "city": {
+        "id": 1402,
+        "name": "טורינו"
+      },
+      "venue": {
+        "id": 1505,
+        "name": "אצטדיון יובנטוס",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/juventus_arena.jpg",
+        "address": "Altessano St. 131\r\n10151 Torino",
+        "latitude": 45.1094,
+        "longitude": 7.6411
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378223",
+      "availableCategoriesQuantity": 18,
+      "minTicketPrice": {
+        "price": 468,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378262,
+      "name": "סלאביה פראג - ברצלונה",
+      "homeTeam": {
+        "id": 1277,
+        "name": "סלאביה פראג"
+      },
+      "awayTeam": {
+        "id": 1013,
+        "name": "ברצלונה"
+      },
+      "participants": [
+        {
+          "id": 1277,
+          "name": "סלאביה פראג"
+        },
+        {
+          "id": 1013,
+          "name": "ברצלונה"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "21/01/2026",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1034,
+        "name": "צ'כיה"
+      },
+      "city": {
+        "id": 1133,
+        "name": "פראג"
+      },
+      "venue": {
+        "id": 2436,
+        "name": "פורטונה ארנה (לשעבר אצטדיון סינובו)",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/EdenArena.png",
+        "address": "Vladivostocká 1460 ,\r\nEden,\r\n100 00 Prague",
+        "latitude": 50.0675,
+        "longitude": 14.4717
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378262",
+      "availableCategoriesQuantity": 1,
+      "minTicketPrice": {
+        "price": 3862,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378269,
+      "name": "מארסיי - ליברפול",
+      "homeTeam": {
+        "id": 1193,
+        "name": "מארסיי"
+      },
+      "awayTeam": {
+        "id": 1103,
+        "name": "ליברפול"
+      },
+      "participants": [
+        {
+          "id": 1193,
+          "name": "מארסיי"
+        },
+        {
+          "id": 1103,
+          "name": "ליברפול"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "21/01/2026",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1004,
+        "name": "צרפת"
+      },
+      "city": {
+        "id": 1078,
+        "name": "מארסיי"
+      },
+      "venue": {
+        "id": 1060,
+        "name": "אצטדיון סטאד ולודרום",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/velodrome_se365_2021.png",
+        "address": "3 Boulevard Michelet\r\n13008 Marseille",
+        "latitude": 43.2698,
+        "longitude": 5.39592
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378269",
+      "availableCategoriesQuantity": 7,
+      "minTicketPrice": {
+        "price": 1069,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378566,
+      "name": "באיירן מינכן - סנט גילוואה",
+      "homeTeam": {
+        "id": 1182,
+        "name": "באיירן מינכן"
+      },
+      "awayTeam": {
+        "id": 7176,
+        "name": "סנט גילוואה"
+      },
+      "participants": [
+        {
+          "id": 1182,
+          "name": "באיירן מינכן"
+        },
+        {
+          "id": 7176,
+          "name": "סנט גילוואה"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "21/01/2026",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1029,
+        "name": "גרמניה"
+      },
+      "city": {
+        "id": 1051,
+        "name": "מינכן"
+      },
+      "venue": {
+        "id": 1030,
+        "name": "אצטדיון אליאנץ ארנה",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/1_allianzarena.jpg",
+        "address": "Werner-Heisenberg-Allee 25\r\n80939 Muenchen",
+        "latitude": 48.218,
+        "longitude": 11.6263
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378566",
+      "availableCategoriesQuantity": 27,
+      "minTicketPrice": {
+        "price": 594,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378289,
+      "name": "קראבאג - איינטרכט פרנקפורט",
+      "homeTeam": {
+        "id": 3158,
+        "name": "קראבאג"
+      },
+      "awayTeam": {
+        "id": 1175,
+        "name": "איינטרכט פרנקפורט"
+      },
+      "participants": [
+        {
+          "id": 3158,
+          "name": "קראבאג"
+        },
+        {
+          "id": 1175,
+          "name": "איינטרכט פרנקפורט"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "21/01/2026",
+      "timeOfEvent": "21:45",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1012,
+        "name": "אזרבייג'אן"
+      },
+      "city": {
+        "id": 1234,
+        "name": "באקו"
+      },
+      "venue": {
+        "id": 1221,
+        "name": "אצטדיון טופיק בחרמוב",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/Tofiqbahramov.png",
+        "address": "24 Hasan Aliyev Str\r\nAZ 370000 Baku",
+        "latitude": 40.3973,
+        "longitude": 49.8524
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378289",
+      "availableCategoriesQuantity": 0,
+      "minTicketPrice": {
+        "price": null,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378182,
+      "name": "ליברפול - קראבאג",
+      "homeTeam": {
+        "id": 1103,
+        "name": "ליברפול"
+      },
+      "awayTeam": {
+        "id": 3158,
+        "name": "קראבאג"
+      },
+      "participants": [
+        {
+          "id": 1103,
+          "name": "ליברפול"
+        },
+        {
+          "id": 3158,
+          "name": "קראבאג"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "28/01/2026",
+      "timeOfEvent": "20:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1003,
+        "name": "אנגליה"
+      },
+      "city": {
+        "id": 1029,
+        "name": "ליברפול"
+      },
+      "venue": {
+        "id": 1016,
+        "name": "אצטדיון אנפילד",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/anfield2024.png",
+        "address": "Anfield Road\r\nLiverpool L4 0TH",
+        "latitude": 53.4308,
+        "longitude": -2.96083
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378182",
+      "availableCategoriesQuantity": 17,
+      "minTicketPrice": {
+        "price": 1074,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378199,
+      "name": "ארסנל - קאיירט",
+      "homeTeam": {
+        "id": 1104,
+        "name": "ארסנל"
+      },
+      "awayTeam": {
+        "id": 6111,
+        "name": "קאיירט"
+      },
+      "participants": [
+        {
+          "id": 1104,
+          "name": "ארסנל"
+        },
+        {
+          "id": 6111,
+          "name": "קאיירט"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "28/01/2026",
+      "timeOfEvent": "20:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1003,
+        "name": "אנגליה"
+      },
+      "city": {
+        "id": 1006,
+        "name": "לונדון"
+      },
+      "venue": {
+        "id": 1006,
+        "name": "אצטדיון האמירויות",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/emirates2.png",
+        "address": "Ashburton Grove \r\nLondon",
+        "latitude": 51.555,
+        "longitude": -0.108472
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378199",
+      "availableCategoriesQuantity": 4,
+      "minTicketPrice": {
+        "price": 1612,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378212,
+      "name": "בנפיקה ליסבון - ריאל מדריד",
+      "homeTeam": {
+        "id": 1763,
+        "name": "בנפיקה ליסבון"
+      },
+      "awayTeam": {
+        "id": 1385,
+        "name": "ריאל מדריד"
+      },
+      "participants": [
+        {
+          "id": 1763,
+          "name": "בנפיקה ליסבון"
+        },
+        {
+          "id": 1385,
+          "name": "ריאל מדריד"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "28/01/2026",
+      "timeOfEvent": "20:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1016,
+        "name": "פורטוגל"
+      },
+      "city": {
+        "id": 1421,
+        "name": "ליסבון"
+      },
+      "venue": {
+        "id": 1556,
+        "name": "אצטדיון האור",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/benfica_2022.jpg",
+        "address": "Av. General Norton De Matos 1500\r\nLisboa",
+        "latitude": 38.7527,
+        "longitude": -9.18468
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378212",
+      "availableCategoriesQuantity": 7,
+      "minTicketPrice": {
+        "price": 1595,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378570,
+      "name": "מנצ'סטר סיטי - גלאטסראיי",
+      "homeTeam": {
+        "id": 1110,
+        "name": "מנצ'סטר סיטי"
+      },
+      "awayTeam": {
+        "id": 1467,
+        "name": "גלאטסראיי"
+      },
+      "participants": [
+        {
+          "id": 1110,
+          "name": "מנצ'סטר סיטי"
+        },
+        {
+          "id": 1467,
+          "name": "גלאטסראיי"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "28/01/2026",
+      "timeOfEvent": "20:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1003,
+        "name": "אנגליה"
+      },
+      "city": {
+        "id": 1030,
+        "name": "מנצ'סטר"
+      },
+      "venue": {
+        "id": 1017,
+        "name": "אצטדיון אתיחאד (אצטדיון סיטי אוף מנצ'סטר)",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/etihad_stadium.png",
+        "address": "Rowsley Street\r\nManchester M11 3FF",
+        "latitude": 53.4831,
+        "longitude": -2.2003
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378570",
+      "availableCategoriesQuantity": 13,
+      "minTicketPrice": {
+        "price": 612,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378166,
+      "name": "פ.ס.ז' - ניוקאסל",
+      "homeTeam": {
+        "id": 1186,
+        "name": "פ.ס.ז'"
+      },
+      "awayTeam": {
+        "id": 1113,
+        "name": "ניוקאסל"
+      },
+      "participants": [
+        {
+          "id": 1186,
+          "name": "פ.ס.ז'"
+        },
+        {
+          "id": 1113,
+          "name": "ניוקאסל"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "28/01/2026",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1004,
+        "name": "צרפת"
+      },
+      "city": {
+        "id": 1070,
+        "name": "פריז"
+      },
+      "venue": {
+        "id": 1052,
+        "name": "אצטדיון פארק דה פראנס",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/2023.png",
+        "address": "24 rue du Commandant Guilbaud\r\n75016 Paris",
+        "latitude": 48.8414,
+        "longitude": 2.25305
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378166",
+      "availableCategoriesQuantity": 26,
+      "minTicketPrice": {
+        "price": 940,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378191,
+      "name": "בורוסיה דורטמונד - אינטר",
+      "homeTeam": {
+        "id": 1174,
+        "name": "בורוסיה דורטמונד"
+      },
+      "awayTeam": {
+        "id": 1760,
+        "name": "אינטר"
+      },
+      "participants": [
+        {
+          "id": 1174,
+          "name": "בורוסיה דורטמונד"
+        },
+        {
+          "id": 1760,
+          "name": "אינטר"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "28/01/2026",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1029,
+        "name": "גרמניה"
+      },
+      "city": {
+        "id": 1058,
+        "name": "דורטמונד"
+      },
+      "venue": {
+        "id": 1037,
+        "name": "אצטדיון סיגנל אידונה פארק",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/signal_iduna_park.png",
+        "address": "Strobelalle 50\r\n44139 Dortmund",
+        "latitude": 51.4926,
+        "longitude": 7.45184
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378191",
+      "availableCategoriesQuantity": 21,
+      "minTicketPrice": {
+        "price": 913,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378203,
+      "name": "לברקוזן - ויאריאל",
+      "homeTeam": {
+        "id": 1179,
+        "name": "לברקוזן"
+      },
+      "awayTeam": {
+        "id": 1394,
+        "name": "ויאריאל"
+      },
+      "participants": [
+        {
+          "id": 1179,
+          "name": "לברקוזן"
+        },
+        {
+          "id": 1394,
+          "name": "ויאריאל"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "28/01/2026",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1029,
+        "name": "גרמניה"
+      },
+      "city": {
+        "id": 1063,
+        "name": "לברקוזן"
+      },
+      "venue": {
+        "id": 1042,
+        "name": "אצטדיון ביי ארנה",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/BAYARENA.png",
+        "address": "Bismarckstr. 122-124\r\n51373 Leverkusen",
+        "latitude": 51.0383,
+        "longitude": 7.00221
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378203",
+      "availableCategoriesQuantity": 8,
+      "minTicketPrice": {
+        "price": 692,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378208,
+      "name": "אתלטיקו מדריד - בודו/גלימט",
+      "homeTeam": {
+        "id": 1384,
+        "name": "אתלטיקו מדריד"
+      },
+      "awayTeam": {
+        "id": 7184,
+        "name": "בודו/גלימט"
+      },
+      "participants": [
+        {
+          "id": 1384,
+          "name": "אתלטיקו מדריד"
+        },
+        {
+          "id": 7184,
+          "name": "בודו/גלימט"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "28/01/2026",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1002,
+        "name": "ספרד"
+      },
+      "city": {
+        "id": 1217,
+        "name": "מדריד"
+      },
+      "venue": {
+        "id": 4180,
+        "name": "אצטדיון מטרופוליטנו מדריד",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/11111111111111111111111111.png",
+        "address": "28022 Madrid, Spain",
+        "latitude": 40.4361,
+        "longitude": -3.59944
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378208",
+      "availableCategoriesQuantity": 9,
+      "minTicketPrice": {
+        "price": 457,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378228,
+      "name": "איינטרכט פרנקפורט - טוטנהאם",
+      "homeTeam": {
+        "id": 1175,
+        "name": "איינטרכט פרנקפורט"
+      },
+      "awayTeam": {
+        "id": 1108,
+        "name": "טוטנהאם"
+      },
+      "participants": [
+        {
+          "id": 1175,
+          "name": "איינטרכט פרנקפורט"
+        },
+        {
+          "id": 1108,
+          "name": "טוטנהאם"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "28/01/2026",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1029,
+        "name": "גרמניה"
+      },
+      "city": {
+        "id": 1059,
+        "name": "פרנקפורט"
+      },
+      "venue": {
+        "id": 1038,
+        "name": "דויטשה בנק פארק",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/Deutsche-Bank-Park.png",
+        "address": "Moerfelder Landstrasse 362\r\n60528 Frankfurt am Main",
+        "latitude": 50.0686,
+        "longitude": 8.64546
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378228",
+      "availableCategoriesQuantity": 2,
+      "minTicketPrice": {
+        "price": 1607,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378232,
+      "name": "קלאב ברוז' - מארסיי",
+      "homeTeam": {
+        "id": 1295,
+        "name": "קלאב ברוז'"
+      },
+      "awayTeam": {
+        "id": 1193,
+        "name": "מארסיי"
+      },
+      "participants": [
+        {
+          "id": 1295,
+          "name": "קלאב ברוז'"
+        },
+        {
+          "id": 1193,
+          "name": "מארסיי"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "28/01/2026",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1005,
+        "name": "בלגיה"
+      },
+      "city": {
+        "id": 1158,
+        "name": "ברוז'"
+      },
+      "venue": {
+        "id": 1139,
+        "name": "אצטדיון ז'אן בריידל",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/Club-Brugge.jpg",
+        "address": "Olympialaan 74\r\n8200 Brugge",
+        "latitude": 51.1933,
+        "longitude": 3.18058
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378232",
+      "availableCategoriesQuantity": 1,
+      "minTicketPrice": {
+        "price": 1337,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378240,
+      "name": "פ.ס.וו. איינדהובן - באיירן מינכן",
+      "homeTeam": {
+        "id": 1207,
+        "name": "פ.ס.וו. איינדהובן"
+      },
+      "awayTeam": {
+        "id": 1182,
+        "name": "באיירן מינכן"
+      },
+      "participants": [
+        {
+          "id": 1207,
+          "name": "פ.ס.וו. איינדהובן"
+        },
+        {
+          "id": 1182,
+          "name": "באיירן מינכן"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "28/01/2026",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1048,
+        "name": "הולנד"
+      },
+      "city": {
+        "id": 1105,
+        "name": "איינדהובן"
+      },
+      "venue": {
+        "id": 1095,
+        "name": "אצטדיון פיליפס",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/PSV_eindhoven.jpg",
+        "address": "Frederiklaan 10a\r\n5616 NH Eindhoven",
+        "latitude": 51.4418,
+        "longitude": 5.46744
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378240",
+      "availableCategoriesQuantity": 1,
+      "minTicketPrice": {
+        "price": 1517,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378243,
+      "name": "אייאקס - אולימפיאקוס",
+      "homeTeam": {
+        "id": 1210,
+        "name": "אייאקס"
+      },
+      "awayTeam": {
+        "id": 1490,
+        "name": "אולימפיאקוס"
+      },
+      "participants": [
+        {
+          "id": 1210,
+          "name": "אייאקס"
+        },
+        {
+          "id": 1490,
+          "name": "אולימפיאקוס"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "28/01/2026",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1048,
+        "name": "הולנד"
+      },
+      "city": {
+        "id": 1101,
+        "name": "אמסטרדם"
+      },
+      "venue": {
+        "id": 1091,
+        "name": "אצטדיון יוהאן קרויף",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/amsterdamarena4.png",
+        "address": "Arena Boulevard 29\r\n1100 AM Amsterdam",
+        "latitude": 52.3142,
+        "longitude": 4.94194
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378243",
+      "availableCategoriesQuantity": 5,
+      "minTicketPrice": {
+        "price": 1069,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378249,
+      "name": "נאפולי - צ'לסי",
+      "homeTeam": {
+        "id": 2448,
+        "name": "נאפולי"
+      },
+      "awayTeam": {
+        "id": 1106,
+        "name": "צ'לסי"
+      },
+      "participants": [
+        {
+          "id": 2448,
+          "name": "נאפולי"
+        },
+        {
+          "id": 1106,
+          "name": "צ'לסי"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "28/01/2026",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1017,
+        "name": "איטליה"
+      },
+      "city": {
+        "id": 1211,
+        "name": "נאפולי"
+      },
+      "venue": {
+        "id": 1189,
+        "name": "אצטדיון דייגו ארמנדו מראדונה (סאן פאולו)",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/nisida.png",
+        "address": "Pizzale Vincenzo Tecchio,\r\n80125 Naples",
+        "latitude": 40.828,
+        "longitude": 14.193
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378249",
+      "availableCategoriesQuantity": 10,
+      "minTicketPrice": {
+        "price": 751,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378275,
+      "name": "מונאקו - יובנטוס",
+      "homeTeam": {
+        "id": 1197,
+        "name": "מונאקו"
+      },
+      "awayTeam": {
+        "id": 2442,
+        "name": "יובנטוס"
+      },
+      "participants": [
+        {
+          "id": 1197,
+          "name": "מונאקו"
+        },
+        {
+          "id": 2442,
+          "name": "יובנטוס"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "28/01/2026",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1004,
+        "name": "צרפת"
+      },
+      "city": {
+        "id": 2135,
+        "name": "מונקו"
+      },
+      "venue": {
+        "id": 2815,
+        "name": "אצטדיון לואי 2",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/Stade-Louis-II.jpg",
+        "address": "3, avenue des Castelans",
+        "latitude": 43.7276,
+        "longitude": 7.41561
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378275",
+      "availableCategoriesQuantity": 0,
+      "minTicketPrice": {
+        "price": null,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378285,
+      "name": "סנט גילוואה - אטאלנטה",
+      "homeTeam": {
+        "id": 7176,
+        "name": "סנט גילוואה"
+      },
+      "awayTeam": {
+        "id": 1874,
+        "name": "אטאלנטה"
+      },
+      "participants": [
+        {
+          "id": 7176,
+          "name": "סנט גילוואה"
+        },
+        {
+          "id": 1874,
+          "name": "אטאלנטה"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "28/01/2026",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1005,
+        "name": "בלגיה"
+      },
+      "city": {
+        "id": 1093,
+        "name": "בריסל"
+      },
+      "venue": {
+        "id": 1077,
+        "name": "לוטו פארק",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/anderlecht.jpg",
+        "address": "Theo Verbeecklaan 2\r\n1070 Bruxelles-Brussel",
+        "latitude": 50.8342,
+        "longitude": 4.29836
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378285",
+      "availableCategoriesQuantity": 2,
+      "minTicketPrice": {
+        "price": 692,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378294,
+      "name": "אתלטיק בילבאו - ספורטינג ליסבון",
+      "homeTeam": {
+        "id": 1381,
+        "name": "אתלטיק בילבאו"
+      },
+      "awayTeam": {
+        "id": 1758,
+        "name": "ספורטינג ליסבון"
+      },
+      "participants": [
+        {
+          "id": 1381,
+          "name": "אתלטיק בילבאו"
+        },
+        {
+          "id": 1758,
+          "name": "ספורטינג ליסבון"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "28/01/2026",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1002,
+        "name": "ספרד"
+      },
+      "city": {
+        "id": 1214,
+        "name": "בילבאו"
+      },
+      "venue": {
+        "id": 1195,
+        "name": "אצטדיון סן מאמס",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/MamesFootball.png",
+        "address": "Felipe Serrate\r\nE-48009 Bilbao",
+        "latitude": 43.2635,
+        "longitude": -2.94839
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378294",
+      "availableCategoriesQuantity": 2,
+      "minTicketPrice": {
+        "price": 1065,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378656,
+      "name": "ברצלונה - קופנהאגן",
+      "homeTeam": {
+        "id": 1013,
+        "name": "ברצלונה"
+      },
+      "awayTeam": {
+        "id": 1762,
+        "name": "קופנהאגן"
+      },
+      "participants": [
+        {
+          "id": 1013,
+          "name": "ברצלונה"
+        },
+        {
+          "id": 1762,
+          "name": "קופנהאגן"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "28/01/2026",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1002,
+        "name": "ספרד"
+      },
+      "city": {
+        "id": 1005,
+        "name": "ברצלונה"
+      },
+      "venue": {
+        "id": 1193,
+        "name": "אצטדיון קאמפ נואו",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/camp-nou_2019_across.png",
+        "address": "Avinguda Aristides Maillol s/n\r\n08028 Barcelona.",
+        "latitude": 41.3809,
+        "longitude": 2.12283
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378656",
+      "availableCategoriesQuantity": 16,
+      "minTicketPrice": {
+        "price": 1015,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 378299,
+      "name": "פאפוס - סלאביה פראג",
+      "homeTeam": {
+        "id": 7860,
+        "name": "פאפוס"
+      },
+      "awayTeam": {
+        "id": 1277,
+        "name": "סלאביה פראג"
+      },
+      "participants": [
+        {
+          "id": 7860,
+          "name": "פאפוס"
+        },
+        {
+          "id": 1277,
+          "name": "סלאביה פראג"
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "28/01/2026",
+      "timeOfEvent": "22:00",
+      "finalDate": true,
+      "finalTime": true,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1028,
+        "name": "קפריסין"
+      },
+      "city": {
+        "id": 2272,
+        "name": "לימאסול"
+      },
+      "venue": {
+        "id": 4971,
+        "name": "אצטדיון אלפאמגה (לימסול ארנה)",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/alphamegastadium.jpg",
+        "address": "MWVQ+8H2, Kolossi 4632",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,378299",
+      "availableCategoriesQuantity": 1,
+      "minTicketPrice": {
+        "price": 798,
+        "currency": "ILS"
+      }
+    },
+    {
+      "id": 368681,
+      "name": "גמר ליגת האלופות: יוחלט בעתיד - יוחלט בעתיד",
+      "homeTeam": {
+        "id": null,
+        "name": null
+      },
+      "awayTeam": {
+        "id": null,
+        "name": "יוחלט בעתיד"
+      },
+      "participants": [
+        {
+          "id": null,
+          "name": null
+        },
+        {
+          "id": null,
+          "name": null
+        }
+      ],
+      "eventType": {
+        "id": 1000,
+        "name": "כדורגל",
+        "isTeamSport": true,
+        "concert": false
+      },
+      "tournament": {
+        "id": 42,
+        "name": "ליגת האלופות",
+        "isGroupEvent": true
+      },
+      "dateOfEvent": "30/05/2026",
+      "timeOfEvent": "21:00",
+      "finalDate": true,
+      "finalTime": false,
+      "dateTimeBoundaries": "",
+      "country": {
+        "id": 1022,
+        "name": "הונגריה"
+      },
+      "city": {
+        "id": 1050,
+        "name": "בודפשט"
+      },
+      "venue": {
+        "id": 1191,
+        "name": "אצטדיון פרנץ פושקש",
+        "mapUrl": "https://images-cdn.sportsevents365.com/venues/thumbs/generic.jpg",
+        "address": "Istvanmezei u. 3-5\r\nDistrict XIV\r\n1146 Budapest",
+        "latitude": 47.5031,
+        "longitude": 19.0982
+      },
+      "eventUrl": "https://tickets-partners.com/event/?q=eq,368681",
+      "availableCategoriesQuantity": 22,
+      "minTicketPrice": {
+        "price": 27515,
+        "currency": "ILS"
+      }
+    }
+  ],
+  "db_matches": [
+    {
+      "_id": "68e79ed74a00e38f56da06e6",
+      "slug": "kairat-almaty-vs-pafos-2025-10-21",
+      "date": "2025-10-21T16:45:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b390d7b31dba56ddeac",
+        "name": "קייראט אלמטי",
+        "name_en": "Kairat Almaty"
+      },
+      "awayTeam": {
+        "_id": "68e25b380d7b31dba56dde98",
+        "name": "פאפוס",
+        "name_en": "Pafos"
+      },
+      "venue": {
+        "_id": "68e25b390d7b31dba56ddeaa",
+        "name": "Ortalyq stadıon",
+        "name_en": "Ortalyq stadıon"
+      },
+      "externalIds": {
+        "apiFootball": 1451056
+      }
+    },
+    {
+      "_id": "68e79ed74a00e38f56da06d4",
+      "slug": "barcelona-vs-olympiakos-piraeus-2025-10-21",
+      "date": "2025-10-21T16:45:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5a8c51bd5b579b20ae",
+        "name": "ברצלונה",
+        "name_en": "Barcelona"
+      },
+      "awayTeam": {
+        "_id": "68e25b370d7b31dba56dde86",
+        "name": "אולימפיאקוס פיראוס",
+        "name_en": "אולימפיאקוס פיראוס"
+      },
+      "venue": {
+        "_id": "68da7884d0d1c672d2395c86",
+        "name": "אצטדיון אולימפי לואיס קומפאניס",
+        "name_en": "אצטדיון אולימפי לואיס קומפאניס"
+      },
+      "externalIds": {
+        "apiFootball": 1451057
+      }
+    },
+    {
+      "_id": "68e79ed84a00e38f56da06f7",
+      "slug": "arsenal-vs-atletico-madrid-2025-10-21",
+      "date": "2025-10-21T19:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5d8c51bd5b579b211a",
+        "name": "ארסנל",
+        "name_en": "Arsenal"
+      },
+      "awayTeam": {
+        "_id": "68da7a5a8c51bd5b579b20b6",
+        "name": "אתלטיקו מדריד",
+        "name_en": "Atletico Madrid"
+      },
+      "venue": {
+        "_id": "68da79e4d3dea7a7449ef991",
+        "name": "אצטדיון אמירטס",
+        "name_en": "אצטדיון אמירטס"
+      },
+      "externalIds": {
+        "apiFootball": 1451061
+      }
+    },
+    {
+      "_id": "68e79ed84a00e38f56da06ef",
+      "slug": "newcastle-vs-benfica-2025-10-21",
+      "date": "2025-10-21T19:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5d8c51bd5b579b2106",
+        "name": "ניוקאסל",
+        "name_en": "Newcastle"
+      },
+      "awayTeam": {
+        "_id": "68e25b380d7b31dba56dde9e",
+        "name": "בנפיקה",
+        "name_en": "Benfica"
+      },
+      "venue": {
+        "_id": "68da79e4d3dea7a7449ef982",
+        "name": "סנט ג'יימס פארק",
+        "name_en": "סנט ג'יימס פארק"
+      },
+      "externalIds": {
+        "apiFootball": 1451064
+      }
+    },
+    {
+      "_id": "68e79eda4a00e38f56da071e",
+      "slug": "union-st-gilloise-vs-inter-2025-10-21",
+      "date": "2025-10-21T19:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b350d7b31dba56dde54",
+        "name": "אוניון סן גילואז",
+        "name_en": "Union St. Gilloise"
+      },
+      "awayTeam": {
+        "_id": "68e25b320d7b31dba56dde14",
+        "name": "אינטר",
+        "name_en": "Inter"
+      },
+      "venue": {
+        "_id": "68e25b350d7b31dba56dde52",
+        "name": "סטאד ז'וזף מריאן",
+        "name_en": "סטאד ז'וזף מריאן"
+      },
+      "externalIds": {
+        "apiFootball": 1451058
+      }
+    },
+    {
+      "_id": "68e79ed94a00e38f56da0717",
+      "slug": "villarreal-vs-manchester-city-2025-10-21",
+      "date": "2025-10-21T19:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5a8c51bd5b579b20c2",
+        "name": "ויאריאל",
+        "name_en": "Villarreal"
+      },
+      "awayTeam": {
+        "_id": "68da7a5e8c51bd5b579b2132",
+        "name": "מנצ'סטר סיטי",
+        "name_en": "Manchester City"
+      },
+      "venue": {
+        "_id": "68da78c817271b236307d179",
+        "name": "אצטדיון דה לה קרמיקה",
+        "name_en": "אצטדיון דה לה קרמיקה"
+      },
+      "externalIds": {
+        "apiFootball": 1451063
+      }
+    },
+    {
+      "_id": "68e79ed94a00e38f56da0707",
+      "slug": "psv-eindhoven-vs-napoli-2025-10-21",
+      "date": "2025-10-21T19:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b370d7b31dba56dde7a",
+        "name": "פ.ס.ו איינדהובן",
+        "name_en": "PSV Eindhoven"
+      },
+      "awayTeam": {
+        "_id": "68e25b350d7b31dba56dde4e",
+        "name": "נאפולי",
+        "name_en": "Napoli"
+      },
+      "venue": {
+        "_id": "68e25b370d7b31dba56dde78",
+        "name": "אצטדיון פיליפס",
+        "name_en": "אצטדיון פיליפס"
+      },
+      "externalIds": {
+        "apiFootball": 1451059
+      }
+    },
+    {
+      "_id": "68e79ed84a00e38f56da06ff",
+      "slug": "bayer-leverkusen-vs-paris-saint-germain-2025-10-21",
+      "date": "2025-10-21T19:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b360d7b31dba56dde72",
+        "name": "באייר לברקוזן",
+        "name_en": "Bayer Leverkusen"
+      },
+      "awayTeam": {
+        "_id": "68e25b320d7b31dba56dde0e",
+        "name": "פאריס סן ז'רמן",
+        "name_en": "Paris Saint Germain"
+      },
+      "venue": {
+        "_id": "68e25b360d7b31dba56dde70",
+        "name": "אצטדיון באי",
+        "name_en": "אצטדיון באי"
+      },
+      "externalIds": {
+        "apiFootball": 1451060
+      }
+    },
+    {
+      "_id": "68e79ed94a00e38f56da070f",
+      "slug": "fc-copenhagen-vs-borussia-dortmund-2025-10-21",
+      "date": "2025-10-21T19:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b370d7b31dba56dde80",
+        "name": "קופנהגן",
+        "name_en": "FC Copenhagen"
+      },
+      "awayTeam": {
+        "_id": "68e25b330d7b31dba56dde22",
+        "name": "בורוסיה דורטמונד",
+        "name_en": "Borussia Dortmund"
+      },
+      "venue": {
+        "_id": "68e25b370d7b31dba56dde7e",
+        "name": "פארקן",
+        "name_en": "פארקן"
+      },
+      "externalIds": {
+        "apiFootball": 1451062
+      }
+    },
+    {
+      "_id": "68e79eda4a00e38f56da0725",
+      "slug": "athletic-club-vs-qarabag-2025-10-22",
+      "date": "2025-10-22T16:45:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5a8c51bd5b579b20ba",
+        "name": "אתלטיק בילבאו",
+        "name_en": "Athletic Bilbao"
+      },
+      "awayTeam": {
+        "_id": "68e25b330d7b31dba56dde1c",
+        "name": "קרבאג",
+        "name_en": "Qarabag"
+      },
+      "venue": {
+        "_id": "68da78c817271b236307d173",
+        "name": "סן מאמס בריה",
+        "name_en": "סן מאמס בריה"
+      },
+      "externalIds": {
+        "apiFootball": 1451066
+      }
+    },
+    {
+      "_id": "68e79eda4a00e38f56da072c",
+      "slug": "galatasaray-vs-bodoglimt-2025-10-22",
+      "date": "2025-10-22T16:45:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b350d7b31dba56dde5a",
+        "name": "גלאטסראיי",
+        "name_en": "Galatasaray"
+      },
+      "awayTeam": {
+        "_id": "68e25b360d7b31dba56dde6c",
+        "name": "בודו/גלימט",
+        "name_en": "Bodo/Glimt"
+      },
+      "venue": {
+        "_id": "68e25b350d7b31dba56dde58",
+        "name": "אצטדיון רמס גלובל",
+        "name_en": "אצטדיון רמס גלובל"
+      },
+      "externalIds": {
+        "apiFootball": 1451065
+      }
+    },
+    {
+      "_id": "68e79edc4a00e38f56da0764",
+      "slug": "real-madrid-vs-juventus-2025-10-22",
+      "date": "2025-10-22T19:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5b8c51bd5b579b20d6",
+        "name": "ריאל מדריד",
+        "name_en": "Real Madrid"
+      },
+      "awayTeam": {
+        "_id": "68e25b360d7b31dba56dde66",
+        "name": "יובנטוס",
+        "name_en": "Juventus"
+      },
+      "venue": {
+        "_id": "68da78c817271b236307d188",
+        "name": "אצטדיון סנטיאגו ברנבאו",
+        "name_en": "אצטדיון סנטיאגו ברנבאו"
+      },
+      "externalIds": {
+        "apiFootball": 1451068
+      }
+    },
+    {
+      "_id": "68e79edc4a00e38f56da075c",
+      "slug": "atalanta-vs-slavia-praha-2025-10-22",
+      "date": "2025-10-22T19:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b360d7b31dba56dde60",
+        "name": "אטאלנטה",
+        "name_en": "Atalanta"
+      },
+      "awayTeam": {
+        "_id": "68e25b380d7b31dba56dde92",
+        "name": "סלאביה פראג",
+        "name_en": "Slavia Praha"
+      },
+      "venue": {
+        "_id": "68e25b360d7b31dba56dde5e",
+        "name": "גוויס סטיידיום",
+        "name_en": "גוויס סטיידיום"
+      },
+      "externalIds": {
+        "apiFootball": 1451071
+      }
+    },
+    {
+      "_id": "68e79edc4a00e38f56da0754",
+      "slug": "sporting-cp-vs-marseille-2025-10-22",
+      "date": "2025-10-22T19:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b340d7b31dba56dde3c",
+        "name": "ספורטינג ליסבון",
+        "name_en": "Sporting CP"
+      },
+      "awayTeam": {
+        "_id": "68e25b340d7b31dba56dde30",
+        "name": "מרסיי",
+        "name_en": "Marseille"
+      },
+      "venue": {
+        "_id": "68e25b340d7b31dba56dde3a",
+        "name": "אצטדיון ז'וזה אלוואלדה",
+        "name_en": "אצטדיון ז'וזה אלוואלדה"
+      },
+      "externalIds": {
+        "apiFootball": 1451072
+      }
+    },
+    {
+      "_id": "68e79edb4a00e38f56da074c",
+      "slug": "eintracht-frankfurt-vs-liverpool-2025-10-22",
+      "date": "2025-10-22T19:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b340d7b31dba56dde42",
+        "name": "איינטרכט פרנקפורט",
+        "name_en": "Eintracht Frankfurt"
+      },
+      "awayTeam": {
+        "_id": "68da7a5d8c51bd5b579b2116",
+        "name": "ליברפול",
+        "name_en": "Liverpool"
+      },
+      "venue": {
+        "_id": "68e25b340d7b31dba56dde40",
+        "name": "אצטדיון פרנקפורט",
+        "name_en": "אצטדיון פרנקפורט"
+      },
+      "externalIds": {
+        "apiFootball": 1451069
+      }
+    },
+    {
+      "_id": "68e79edb4a00e38f56da0744",
+      "slug": "bayern-mnchen-vs-club-brugge-kv-2025-10-22",
+      "date": "2025-10-22T19:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b320d7b31dba56dde03",
+        "name": "באיירן מינכן",
+        "name_en": "Bayern München"
+      },
+      "awayTeam": {
+        "_id": "68e25b340d7b31dba56dde36",
+        "name": "קלאב ברוז'",
+        "name_en": "Club Brugge KV"
+      },
+      "venue": {
+        "_id": "68e25b320d7b31dba56dddff",
+        "name": "אצטדיון הכדורגל מינכן",
+        "name_en": "אצטדיון הכדורגל מינכן"
+      },
+      "externalIds": {
+        "apiFootball": 1451073
+      }
+    },
+    {
+      "_id": "68e79edb4a00e38f56da073c",
+      "slug": "monaco-vs-tottenham-2025-10-22",
+      "date": "2025-10-22T19:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b380d7b31dba56dde8c",
+        "name": "מונאקו",
+        "name_en": "Monaco"
+      },
+      "awayTeam": {
+        "_id": "68da7a5e8c51bd5b579b2126",
+        "name": "טוטנהאם",
+        "name_en": "Tottenham"
+      },
+      "venue": {
+        "_id": "68e25b380d7b31dba56dde8a",
+        "name": "Stade Louis-II",
+        "name_en": "סטאד לואי-II"
+      },
+      "externalIds": {
+        "apiFootball": 1451067
+      }
+    },
+    {
+      "_id": "68e79eda4a00e38f56da0734",
+      "slug": "chelsea-vs-ajax-2025-10-22",
+      "date": "2025-10-22T19:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5e8c51bd5b579b212e",
+        "name": "צ'לסי",
+        "name_en": "Chelsea"
+      },
+      "awayTeam": {
+        "_id": "68e25b390d7b31dba56ddea6",
+        "name": "אייקס",
+        "name_en": "Ajax"
+      },
+      "venue": {
+        "_id": "68da79e5d3dea7a7449ef9a0",
+        "name": "סטמפורד ברידג'",
+        "name_en": "סטמפורד ברידג'"
+      },
+      "externalIds": {
+        "apiFootball": 1451070
+      }
+    },
+    {
+      "_id": "68e79edc4a00e38f56da076c",
+      "slug": "napoli-vs-eintracht-frankfurt-2025-11-04",
+      "date": "2025-11-04T17:45:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b350d7b31dba56dde4e",
+        "name": "נאפולי",
+        "name_en": "Napoli"
+      },
+      "awayTeam": {
+        "_id": "68e25b340d7b31dba56dde42",
+        "name": "איינטרכט פרנקפורט",
+        "name_en": "Eintracht Frankfurt"
+      },
+      "venue": {
+        "_id": "68e25b350d7b31dba56dde4c",
+        "name": "אצטדיון דייגו ארמנדו מראדונה",
+        "name_en": "אצטדיון דייגו ארמנדו מראדונה"
+      },
+      "externalIds": {
+        "apiFootball": 1451074
+      }
+    },
+    {
+      "_id": "68e79edd4a00e38f56da0774",
+      "slug": "slavia-praha-vs-arsenal-2025-11-04",
+      "date": "2025-11-04T17:45:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b380d7b31dba56dde92",
+        "name": "סלאביה פראג",
+        "name_en": "Slavia Praha"
+      },
+      "awayTeam": {
+        "_id": "68da7a5d8c51bd5b579b211a",
+        "name": "ארסנל",
+        "name_en": "Arsenal"
+      },
+      "venue": {
+        "_id": "68e25b380d7b31dba56dde90",
+        "name": "אצטדיון פורטונה",
+        "name_en": "אצטדיון פורטונה"
+      },
+      "externalIds": {
+        "apiFootball": 1451075
+      }
+    },
+    {
+      "_id": "68e79edd4a00e38f56da077c",
+      "slug": "liverpool-vs-real-madrid-2025-11-04",
+      "date": "2025-11-04T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5d8c51bd5b579b2116",
+        "name": "ליברפול",
+        "name_en": "Liverpool"
+      },
+      "awayTeam": {
+        "_id": "68da7a5b8c51bd5b579b20d6",
+        "name": "ריאל מדריד",
+        "name_en": "Real Madrid"
+      },
+      "venue": {
+        "_id": "68da79e4d3dea7a7449ef98e",
+        "name": "אנפילד",
+        "name_en": "אנפילד"
+      },
+      "externalIds": {
+        "apiFootball": 1451077
+      }
+    },
+    {
+      "_id": "68e79edd4a00e38f56da0784",
+      "slug": "tottenham-vs-fc-copenhagen-2025-11-04",
+      "date": "2025-11-04T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5e8c51bd5b579b2126",
+        "name": "טוטנהאם",
+        "name_en": "Tottenham"
+      },
+      "awayTeam": {
+        "_id": "68e25b370d7b31dba56dde80",
+        "name": "קופנהגן",
+        "name_en": "FC Copenhagen"
+      },
+      "venue": {
+        "_id": "68da79e5d3dea7a7449ef99a",
+        "name": "אצטדיון טוטנהאם הוטספר",
+        "name_en": "אצטדיון טוטנהאם הוטספר"
+      },
+      "externalIds": {
+        "apiFootball": 1451076
+      }
+    },
+    {
+      "_id": "68e79ede4a00e38f56da078c",
+      "slug": "paris-saint-germain-vs-bayern-mnchen-2025-11-04",
+      "date": "2025-11-04T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b320d7b31dba56dde0e",
+        "name": "פאריס סן ז'רמן",
+        "name_en": "Paris Saint Germain"
+      },
+      "awayTeam": {
+        "_id": "68e25b320d7b31dba56dde03",
+        "name": "באיירן מינכן",
+        "name_en": "Bayern München"
+      },
+      "venue": {
+        "_id": "68e25b320d7b31dba56dde0c",
+        "name": "פארק דה פרינס",
+        "name_en": "פארק דה פרינס"
+      },
+      "externalIds": {
+        "apiFootball": 1451081
+      }
+    },
+    {
+      "_id": "68e79ede4a00e38f56da0794",
+      "slug": "bodoglimt-vs-monaco-2025-11-04",
+      "date": "2025-11-04T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b360d7b31dba56dde6c",
+        "name": "בודו/גלימט",
+        "name_en": "Bodo/Glimt"
+      },
+      "awayTeam": {
+        "_id": "68e25b380d7b31dba56dde8c",
+        "name": "מונאקו",
+        "name_en": "Monaco"
+      },
+      "venue": {
+        "_id": "68e25b360d7b31dba56dde6a",
+        "name": "Aspmyra Stadion",
+        "name_en": "אצטדיון Aspmyra Stadion"
+      },
+      "externalIds": {
+        "apiFootball": 1451080
+      }
+    },
+    {
+      "_id": "68e79ede4a00e38f56da079c",
+      "slug": "juventus-vs-sporting-cp-2025-11-04",
+      "date": "2025-11-04T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b360d7b31dba56dde66",
+        "name": "יובנטוס",
+        "name_en": "Juventus"
+      },
+      "awayTeam": {
+        "_id": "68e25b340d7b31dba56dde3c",
+        "name": "ספורטינג ליסבון",
+        "name_en": "Sporting CP"
+      },
+      "venue": {
+        "_id": "68e25b360d7b31dba56dde64",
+        "name": "אליאנץ סטיידיום",
+        "name_en": "אליאנץ סטיידיום"
+      },
+      "externalIds": {
+        "apiFootball": 1451082
+      }
+    },
+    {
+      "_id": "68e79edf4a00e38f56da07a3",
+      "slug": "atletico-madrid-vs-union-st-gilloise-2025-11-04",
+      "date": "2025-11-04T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5a8c51bd5b579b20b6",
+        "name": "אתלטיקו מדריד",
+        "name_en": "Atletico Madrid"
+      },
+      "awayTeam": {
+        "_id": "68e25b350d7b31dba56dde54",
+        "name": "אוניון סן גילואז",
+        "name_en": "Union St. Gilloise"
+      },
+      "venue": {
+        "_id": "68da78c817271b236307d170",
+        "name": "אצטדיון סיביטס מטרופוליטנו",
+        "name_en": "אצטדיון סיביטס מטרופוליטנו"
+      },
+      "externalIds": {
+        "apiFootball": 1451079
+      }
+    },
+    {
+      "_id": "68e79edf4a00e38f56da07aa",
+      "slug": "olympiakos-piraeus-vs-psv-eindhoven-2025-11-04",
+      "date": "2025-11-04T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b370d7b31dba56dde86",
+        "name": "אולימפיאקוס פיראוס",
+        "name_en": "אולימפיאקוס פיראוס"
+      },
+      "awayTeam": {
+        "_id": "68e25b370d7b31dba56dde7a",
+        "name": "פ.ס.ו איינדהובן",
+        "name_en": "PSV Eindhoven"
+      },
+      "venue": {
+        "_id": "68e25b370d7b31dba56dde84",
+        "name": "אצטדיון גיאורגיוס קראיסקאקי",
+        "name_en": "אצטדיון גיאורגיוס קראיסקאקי"
+      },
+      "externalIds": {
+        "apiFootball": 1451078
+      }
+    },
+    {
+      "_id": "68e79edf4a00e38f56da07ba",
+      "slug": "pafos-vs-villarreal-2025-11-05",
+      "date": "2025-11-05T17:45:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b380d7b31dba56dde98",
+        "name": "פאפוס",
+        "name_en": "Pafos"
+      },
+      "awayTeam": {
+        "_id": "68da7a5a8c51bd5b579b20c2",
+        "name": "ויאריאל",
+        "name_en": "Villarreal"
+      },
+      "venue": {
+        "_id": "68e25b380d7b31dba56dde96",
+        "name": "אצטדיון סטליוס קיריאקידס",
+        "name_en": "אצטדיון סטליוס קיריאקידס"
+      },
+      "externalIds": {
+        "apiFootball": 1451084
+      }
+    },
+    {
+      "_id": "68e79edf4a00e38f56da07b2",
+      "slug": "qarabag-vs-chelsea-2025-11-05",
+      "date": "2025-11-05T17:45:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b330d7b31dba56dde1c",
+        "name": "קרבאג",
+        "name_en": "Qarabag"
+      },
+      "awayTeam": {
+        "_id": "68da7a5e8c51bd5b579b212e",
+        "name": "צ'לסי",
+        "name_en": "Chelsea"
+      },
+      "venue": {
+        "_id": "68e25b330d7b31dba56dde1a",
+        "name": "Tofiq Bəhramov adına Respublika stadionu",
+        "name_en": "אצטדיון Tofiq Bəhramov adına Respublika stadionu"
+      },
+      "externalIds": {
+        "apiFootball": 1451083
+      }
+    },
+    {
+      "_id": "68e79ee04a00e38f56da07c2",
+      "slug": "newcastle-vs-athletic-club-2025-11-05",
+      "date": "2025-11-05T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5d8c51bd5b579b2106",
+        "name": "ניוקאסל",
+        "name_en": "Newcastle"
+      },
+      "awayTeam": {
+        "_id": "68da7a5a8c51bd5b579b20ba",
+        "name": "אתלטיק בילבאו",
+        "name_en": "Athletic Bilbao"
+      },
+      "venue": {
+        "_id": "68da79e4d3dea7a7449ef982",
+        "name": "סנט ג'יימס פארק",
+        "name_en": "סנט ג'יימס פארק"
+      },
+      "externalIds": {
+        "apiFootball": 1451088
+      }
+    },
+    {
+      "_id": "68e79ee04a00e38f56da07ca",
+      "slug": "manchester-city-vs-borussia-dortmund-2025-11-05",
+      "date": "2025-11-05T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5e8c51bd5b579b2132",
+        "name": "מנצ'סטר סיטי",
+        "name_en": "Manchester City"
+      },
+      "awayTeam": {
+        "_id": "68e25b330d7b31dba56dde22",
+        "name": "בורוסיה דורטמונד",
+        "name_en": "Borussia Dortmund"
+      },
+      "venue": {
+        "_id": "68da79e5d3dea7a7449ef9a3",
+        "name": "אצטדיון אתיהאד",
+        "name_en": "אצטדיון אתיהאד"
+      },
+      "externalIds": {
+        "apiFootball": 1451085
+      }
+    },
+    {
+      "_id": "68e79ee04a00e38f56da07d2",
+      "slug": "marseille-vs-atalanta-2025-11-05",
+      "date": "2025-11-05T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b340d7b31dba56dde30",
+        "name": "מרסיי",
+        "name_en": "Marseille"
+      },
+      "awayTeam": {
+        "_id": "68e25b360d7b31dba56dde60",
+        "name": "אטאלנטה",
+        "name_en": "Atalanta"
+      },
+      "venue": {
+        "_id": "68e25b340d7b31dba56dde2e",
+        "name": "Stade Orange Vélodrome",
+        "name_en": "סטאד Orange Vélodrome"
+      },
+      "externalIds": {
+        "apiFootball": 1451091
+      }
+    },
+    {
+      "_id": "68e79ee14a00e38f56da07da",
+      "slug": "ajax-vs-galatasaray-2025-11-05",
+      "date": "2025-11-05T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b390d7b31dba56ddea6",
+        "name": "אייקס",
+        "name_en": "Ajax"
+      },
+      "awayTeam": {
+        "_id": "68e25b350d7b31dba56dde5a",
+        "name": "גלאטסראיי",
+        "name_en": "Galatasaray"
+      },
+      "venue": {
+        "_id": "68e25b390d7b31dba56ddea4",
+        "name": "יוהן קרויף ארנה",
+        "name_en": "יוהן קרויף ארנה"
+      },
+      "externalIds": {
+        "apiFootball": 1451087
+      }
+    },
+    {
+      "_id": "68e79ee14a00e38f56da07e1",
+      "slug": "benfica-vs-bayer-leverkusen-2025-11-05",
+      "date": "2025-11-05T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b380d7b31dba56dde9e",
+        "name": "בנפיקה",
+        "name_en": "Benfica"
+      },
+      "awayTeam": {
+        "_id": "68e25b360d7b31dba56dde72",
+        "name": "באייר לברקוזן",
+        "name_en": "Bayer Leverkusen"
+      },
+      "venue": {
+        "_id": "68e25b380d7b31dba56dde9c",
+        "name": "Estádio do Sport Lisboa e Benfica (da Luz)",
+        "name_en": "Estádio do Sport Lisboa e Benfica (da Luz)"
+      },
+      "externalIds": {
+        "apiFootball": 1451089
+      }
+    },
+    {
+      "_id": "68e79ee14a00e38f56da07e9",
+      "slug": "inter-vs-kairat-almaty-2025-11-05",
+      "date": "2025-11-05T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b320d7b31dba56dde14",
+        "name": "אינטר",
+        "name_en": "Inter"
+      },
+      "awayTeam": {
+        "_id": "68e25b390d7b31dba56ddeac",
+        "name": "קייראט אלמטי",
+        "name_en": "Kairat Almaty"
+      },
+      "venue": {
+        "_id": "68e25b320d7b31dba56dde12",
+        "name": "סטאדיו ג'וזפה מאצה",
+        "name_en": "סטאדיו ג'וזפה מאצה"
+      },
+      "externalIds": {
+        "apiFootball": 1451090
+      }
+    },
+    {
+      "_id": "68e79ee24a00e38f56da07f1",
+      "slug": "club-brugge-kv-vs-barcelona-2025-11-05",
+      "date": "2025-11-05T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b340d7b31dba56dde36",
+        "name": "קלאב ברוז'",
+        "name_en": "Club Brugge KV"
+      },
+      "awayTeam": {
+        "_id": "68da7a5a8c51bd5b579b20ae",
+        "name": "ברצלונה",
+        "name_en": "Barcelona"
+      },
+      "venue": {
+        "_id": "68e25b340d7b31dba56dde34",
+        "name": "אצטדיון יאן ברידל",
+        "name_en": "אצטדיון יאן ברידל"
+      },
+      "externalIds": {
+        "apiFootball": 1451086
+      }
+    },
+    {
+      "_id": "68e79ee24a00e38f56da07f9",
+      "slug": "ajax-vs-benfica-2025-11-25",
+      "date": "2025-11-25T17:45:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b390d7b31dba56ddea6",
+        "name": "אייקס",
+        "name_en": "Ajax"
+      },
+      "awayTeam": {
+        "_id": "68e25b380d7b31dba56dde9e",
+        "name": "בנפיקה",
+        "name_en": "Benfica"
+      },
+      "venue": {
+        "_id": "68e25b390d7b31dba56ddea4",
+        "name": "יוהן קרויף ארנה",
+        "name_en": "יוהן קרויף ארנה"
+      },
+      "externalIds": {
+        "apiFootball": 1451092
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2294092",
+          "metadata": {
+            "htEventName": "AFC Ajax vs. SL Benfica - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:21.170Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/netherlands/amsterdam/sports/afc-ajax-tickets/2025-11-25,1845/2294092/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/netherlands/amsterdam/sports/afc-ajax-tickets/2025-11-25,1845/2294092/2"
+          },
+          "_id": "6925c04d99108065d0b5b9e2"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ee24a00e38f56da0800",
+      "slug": "galatasaray-vs-union-st-gilloise-2025-11-25",
+      "date": "2025-11-25T17:45:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b350d7b31dba56dde5a",
+        "name": "גלאטסראיי",
+        "name_en": "Galatasaray"
+      },
+      "awayTeam": {
+        "_id": "68e25b350d7b31dba56dde54",
+        "name": "אוניון סן גילואז",
+        "name_en": "Union St. Gilloise"
+      },
+      "venue": {
+        "_id": "68e25b350d7b31dba56dde58",
+        "name": "אצטדיון רמס גלובל",
+        "name_en": "אצטדיון רמס גלובל"
+      },
+      "externalIds": {
+        "apiFootball": 1451093
+      }
+    },
+    {
+      "_id": "68e79ee34a00e38f56da0820",
+      "slug": "borussia-dortmund-vs-villarreal-2025-11-25",
+      "date": "2025-11-25T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b330d7b31dba56dde22",
+        "name": "בורוסיה דורטמונד",
+        "name_en": "Borussia Dortmund"
+      },
+      "awayTeam": {
+        "_id": "68da7a5a8c51bd5b579b20c2",
+        "name": "ויאריאל",
+        "name_en": "Villarreal"
+      },
+      "venue": {
+        "_id": "68e25b330d7b31dba56dde20",
+        "name": "אצטדיון BVB דורטמונד",
+        "name_en": "אצטדיון BVB דורטמונד"
+      },
+      "externalIds": {
+        "apiFootball": 1451098
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293390",
+          "metadata": {
+            "htEventName": "Borussia Dortmund vs. Villarreal CF - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:21.465Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/germany/dortmund/sports/borussia-dortmund-tickets/2025-11-25,2100/2293390/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/germany/dortmund/sports/borussia-dortmund-tickets/2025-11-25,2100/2293390/2"
+          },
+          "_id": "6925c04d99108065d0b5b9ea"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ee44a00e38f56da0838",
+      "slug": "slavia-praha-vs-athletic-club-2025-11-25",
+      "date": "2025-11-25T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b380d7b31dba56dde92",
+        "name": "סלאביה פראג",
+        "name_en": "Slavia Praha"
+      },
+      "awayTeam": {
+        "_id": "68da7a5a8c51bd5b579b20ba",
+        "name": "אתלטיק בילבאו",
+        "name_en": "Athletic Bilbao"
+      },
+      "venue": {
+        "_id": "68e25b380d7b31dba56dde90",
+        "name": "אצטדיון פורטונה",
+        "name_en": "אצטדיון פורטונה"
+      },
+      "externalIds": {
+        "apiFootball": 1451099
+      }
+    },
+    {
+      "_id": "68e79ee44a00e38f56da0830",
+      "slug": "napoli-vs-qarabag-2025-11-25",
+      "date": "2025-11-25T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b350d7b31dba56dde4e",
+        "name": "נאפולי",
+        "name_en": "Napoli"
+      },
+      "awayTeam": {
+        "_id": "68e25b330d7b31dba56dde1c",
+        "name": "קרבאג",
+        "name_en": "Qarabag"
+      },
+      "venue": {
+        "_id": "68e25b350d7b31dba56dde4c",
+        "name": "אצטדיון דייגו ארמנדו מראדונה",
+        "name_en": "אצטדיון דייגו ארמנדו מראדונה"
+      },
+      "externalIds": {
+        "apiFootball": 1451097
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293308",
+          "metadata": {
+            "htEventName": "SSC Napoli vs. Qarabag FK - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:21.537Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/italy/naples/sports/ssc-napoli-tickets/2025-11-25,2100/2293308/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/italy/naples/sports/ssc-napoli-tickets/2025-11-25,2100/2293308/2"
+          },
+          "_id": "6925c04d99108065d0b5b9ec"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ee44a00e38f56da0828",
+      "slug": "bodoglimt-vs-juventus-2025-11-25",
+      "date": "2025-11-25T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b360d7b31dba56dde6c",
+        "name": "בודו/גלימט",
+        "name_en": "Bodo/Glimt"
+      },
+      "awayTeam": {
+        "_id": "68e25b360d7b31dba56dde66",
+        "name": "יובנטוס",
+        "name_en": "Juventus"
+      },
+      "venue": {
+        "_id": "68e25b360d7b31dba56dde6a",
+        "name": "Aspmyra Stadion",
+        "name_en": "אצטדיון Aspmyra Stadion"
+      },
+      "externalIds": {
+        "apiFootball": 1451100
+      }
+    },
+    {
+      "_id": "68e79ee34a00e38f56da0818",
+      "slug": "marseille-vs-newcastle-2025-11-25",
+      "date": "2025-11-25T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b340d7b31dba56dde30",
+        "name": "מרסיי",
+        "name_en": "Marseille"
+      },
+      "awayTeam": {
+        "_id": "68da7a5d8c51bd5b579b2106",
+        "name": "ניוקאסל",
+        "name_en": "Newcastle"
+      },
+      "venue": {
+        "_id": "68e25b340d7b31dba56dde2e",
+        "name": "Stade Orange Vélodrome",
+        "name_en": "סטאד Orange Vélodrome"
+      },
+      "externalIds": {
+        "apiFootball": 1451095
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293334",
+          "metadata": {
+            "htEventName": "Olympique de Marseille vs. Newcastle United FC - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:21.392Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/france/marseille/sports/olympique-de-marseille-tickets/2025-11-25,2100/2293334/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/france/marseille/sports/olympique-de-marseille-tickets/2025-11-25,2100/2293334/2"
+          },
+          "_id": "6925c04d99108065d0b5b9e8"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ee34a00e38f56da0810",
+      "slug": "manchester-city-vs-bayer-leverkusen-2025-11-25",
+      "date": "2025-11-25T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5e8c51bd5b579b2132",
+        "name": "מנצ'סטר סיטי",
+        "name_en": "Manchester City"
+      },
+      "awayTeam": {
+        "_id": "68e25b360d7b31dba56dde72",
+        "name": "באייר לברקוזן",
+        "name_en": "Bayer Leverkusen"
+      },
+      "venue": {
+        "_id": "68da79e5d3dea7a7449ef9a3",
+        "name": "אצטדיון אתיהאד",
+        "name_en": "אצטדיון אתיהאד"
+      },
+      "externalIds": {
+        "apiFootball": 1451094
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293348",
+          "metadata": {
+            "htEventName": "Manchester City FC vs. Bayer 04 Leverkusen - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:21.321Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/united-kingdom/manchester/sports/manchester-city-fc-tickets/2025-11-25,2000/2293348/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/united-kingdom/manchester/sports/manchester-city-fc-tickets/2025-11-25,2000/2293348/2"
+          },
+          "_id": "6925c04d99108065d0b5b9e6"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ee24a00e38f56da0808",
+      "slug": "chelsea-vs-barcelona-2025-11-25",
+      "date": "2025-11-25T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5e8c51bd5b579b212e",
+        "name": "צ'לסי",
+        "name_en": "Chelsea"
+      },
+      "awayTeam": {
+        "_id": "68da7a5a8c51bd5b579b20ae",
+        "name": "ברצלונה",
+        "name_en": "Barcelona"
+      },
+      "venue": {
+        "_id": "68da79e5d3dea7a7449ef9a0",
+        "name": "סטמפורד ברידג'",
+        "name_en": "סטמפורד ברידג'"
+      },
+      "externalIds": {
+        "apiFootball": 1451096
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293388",
+          "metadata": {
+            "htEventName": "Chelsea FC vs. FC Barcelona - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:21.248Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/united-kingdom/london/sports/chelsea-fc-tickets/2025-11-25,2000/2293388/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/united-kingdom/london/sports/chelsea-fc-tickets/2025-11-25,2000/2293388/2"
+          },
+          "_id": "6925c04d99108065d0b5b9e4"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ee44a00e38f56da0840",
+      "slug": "fc-copenhagen-vs-kairat-almaty-2025-11-26",
+      "date": "2025-11-26T17:45:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b370d7b31dba56dde80",
+        "name": "קופנהגן",
+        "name_en": "FC Copenhagen"
+      },
+      "awayTeam": {
+        "_id": "68e25b390d7b31dba56ddeac",
+        "name": "קייראט אלמטי",
+        "name_en": "Kairat Almaty"
+      },
+      "venue": {
+        "_id": "68e25b370d7b31dba56dde7e",
+        "name": "פארקן",
+        "name_en": "פארקן"
+      },
+      "externalIds": {
+        "apiFootball": 1451101
+      }
+    },
+    {
+      "_id": "68e79ee54a00e38f56da0848",
+      "slug": "pafos-vs-monaco-2025-11-26",
+      "date": "2025-11-26T17:45:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b380d7b31dba56dde98",
+        "name": "פאפוס",
+        "name_en": "Pafos"
+      },
+      "awayTeam": {
+        "_id": "68e25b380d7b31dba56dde8c",
+        "name": "מונאקו",
+        "name_en": "Monaco"
+      },
+      "venue": {
+        "_id": "68e25b380d7b31dba56dde96",
+        "name": "אצטדיון סטליוס קיריאקידס",
+        "name_en": "אצטדיון סטליוס קיריאקידס"
+      },
+      "externalIds": {
+        "apiFootball": 1451102
+      }
+    },
+    {
+      "_id": "68e79ee54a00e38f56da0850",
+      "slug": "liverpool-vs-psv-eindhoven-2025-11-26",
+      "date": "2025-11-26T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5d8c51bd5b579b2116",
+        "name": "ליברפול",
+        "name_en": "Liverpool"
+      },
+      "awayTeam": {
+        "_id": "68e25b370d7b31dba56dde7a",
+        "name": "פ.ס.ו איינדהובן",
+        "name_en": "PSV Eindhoven"
+      },
+      "venue": {
+        "_id": "68da79e4d3dea7a7449ef98e",
+        "name": "אנפילד",
+        "name_en": "אנפילד"
+      },
+      "externalIds": {
+        "apiFootball": 1451109
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293351",
+          "metadata": {
+            "htEventName": "Liverpool FC vs. PSV Eindhoven - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:21.608Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/united-kingdom/liverpool/sports/liverpool-fc-tickets/2025-11-26,2000/2293351/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/united-kingdom/liverpool/sports/liverpool-fc-tickets/2025-11-26,2000/2293351/2"
+          },
+          "_id": "6925c04d99108065d0b5b9ee"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ee54a00e38f56da0858",
+      "slug": "arsenal-vs-bayern-mnchen-2025-11-26",
+      "date": "2025-11-26T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5d8c51bd5b579b211a",
+        "name": "ארסנל",
+        "name_en": "Arsenal"
+      },
+      "awayTeam": {
+        "_id": "68e25b320d7b31dba56dde03",
+        "name": "באיירן מינכן",
+        "name_en": "Bayern München"
+      },
+      "venue": {
+        "_id": "68da79e4d3dea7a7449ef991",
+        "name": "אצטדיון אמירטס",
+        "name_en": "אצטדיון אמירטס"
+      },
+      "externalIds": {
+        "apiFootball": 1451107
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293404",
+          "metadata": {
+            "htEventName": "Arsenal FC vs. FC Bayern Munich - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:21.677Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/united-kingdom/london/sports/arsenal-fc-tickets/2025-11-26,2000/2293404/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/united-kingdom/london/sports/arsenal-fc-tickets/2025-11-26,2000/2293404/2"
+          },
+          "_id": "6925c04d99108065d0b5b9f0"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ee64a00e38f56da0860",
+      "slug": "paris-saint-germain-vs-tottenham-2025-11-26",
+      "date": "2025-11-26T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b320d7b31dba56dde0e",
+        "name": "פאריס סן ז'רמן",
+        "name_en": "Paris Saint Germain"
+      },
+      "awayTeam": {
+        "_id": "68da7a5e8c51bd5b579b2126",
+        "name": "טוטנהאם",
+        "name_en": "Tottenham"
+      },
+      "venue": {
+        "_id": "68e25b320d7b31dba56dde0c",
+        "name": "פארק דה פרינס",
+        "name_en": "פארק דה פרינס"
+      },
+      "externalIds": {
+        "apiFootball": 1451105
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293326",
+          "metadata": {
+            "htEventName": "Paris Saint-Germain FC vs. Tottenham Hotspur FC - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:21.747Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/france/paris/sports/psg-paris-saint-germain-fc-tickets/2025-11-26,2100/2293326/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/france/paris/sports/psg-paris-saint-germain-fc-tickets/2025-11-26,2100/2293326/2"
+          },
+          "_id": "6925c04d99108065d0b5b9f2"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ee64a00e38f56da0868",
+      "slug": "eintracht-frankfurt-vs-atalanta-2025-11-26",
+      "date": "2025-11-26T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b340d7b31dba56dde42",
+        "name": "איינטרכט פרנקפורט",
+        "name_en": "Eintracht Frankfurt"
+      },
+      "awayTeam": {
+        "_id": "68e25b360d7b31dba56dde60",
+        "name": "אטאלנטה",
+        "name_en": "Atalanta"
+      },
+      "venue": {
+        "_id": "68e25b340d7b31dba56dde40",
+        "name": "אצטדיון פרנקפורט",
+        "name_en": "אצטדיון פרנקפורט"
+      },
+      "externalIds": {
+        "apiFootball": 1451108
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293381",
+          "metadata": {
+            "htEventName": "Eintracht Frankfurt vs. Atalanta BC - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:21.817Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/germany/frankfurt/sports/eintracht-frankfurt-tickets/2025-11-26,2100/2293381/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/germany/frankfurt/sports/eintracht-frankfurt-tickets/2025-11-26,2100/2293381/2"
+          },
+          "_id": "6925c04d99108065d0b5b9f4"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ee64a00e38f56da0870",
+      "slug": "sporting-cp-vs-club-brugge-kv-2025-11-26",
+      "date": "2025-11-26T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b340d7b31dba56dde3c",
+        "name": "ספורטינג ליסבון",
+        "name_en": "Sporting CP"
+      },
+      "awayTeam": {
+        "_id": "68e25b340d7b31dba56dde36",
+        "name": "קלאב ברוז'",
+        "name_en": "Club Brugge KV"
+      },
+      "venue": {
+        "_id": "68e25b340d7b31dba56dde3a",
+        "name": "אצטדיון ז'וזה אלוואלדה",
+        "name_en": "אצטדיון ז'וזה אלוואלדה"
+      },
+      "externalIds": {
+        "apiFootball": 1451106
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2294075",
+          "metadata": {
+            "htEventName": "Sporting CP vs. Club Brugge - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:21.888Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/portugal/lisbon/sports/sporting-cp-tickets/2025-11-26,2000/2294075/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/portugal/lisbon/sports/sporting-cp-tickets/2025-11-26,2000/2294075/2"
+          },
+          "_id": "6925c04d99108065d0b5b9f6"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ee64a00e38f56da0877",
+      "slug": "atletico-madrid-vs-inter-2025-11-26",
+      "date": "2025-11-26T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5a8c51bd5b579b20b6",
+        "name": "אתלטיקו מדריד",
+        "name_en": "Atletico Madrid"
+      },
+      "awayTeam": {
+        "_id": "68e25b320d7b31dba56dde14",
+        "name": "אינטר",
+        "name_en": "Inter"
+      },
+      "venue": {
+        "_id": "68da78c817271b236307d170",
+        "name": "אצטדיון סיביטס מטרופוליטנו",
+        "name_en": "אצטדיון סיביטס מטרופוליטנו"
+      },
+      "externalIds": {
+        "apiFootball": 1451104
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2294117",
+          "metadata": {
+            "htEventName": "Atlético de Madrid vs. Inter Milan - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:21.956Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/spain/madrid/sports/atletico-madrid-tickets/2025-11-26,2100/2294117/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/spain/madrid/sports/atletico-madrid-tickets/2025-11-26,2100/2294117/2"
+          },
+          "_id": "6925c04d99108065d0b5b9f8"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ee74a00e38f56da087e",
+      "slug": "olympiakos-piraeus-vs-real-madrid-2025-11-26",
+      "date": "2025-11-26T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b370d7b31dba56dde86",
+        "name": "אולימפיאקוס פיראוס",
+        "name_en": "אולימפיאקוס פיראוס"
+      },
+      "awayTeam": {
+        "_id": "68da7a5b8c51bd5b579b20d6",
+        "name": "ריאל מדריד",
+        "name_en": "Real Madrid"
+      },
+      "venue": {
+        "_id": "68e25b370d7b31dba56dde84",
+        "name": "אצטדיון גיאורגיוס קראיסקאקי",
+        "name_en": "אצטדיון גיאורגיוס קראיסקאקי"
+      },
+      "externalIds": {
+        "apiFootball": 1451103
+      }
+    },
+    {
+      "_id": "68e79ee74a00e38f56da0885",
+      "slug": "kairat-almaty-vs-olympiakos-piraeus-2025-12-09",
+      "date": "2025-12-09T15:30:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b390d7b31dba56ddeac",
+        "name": "קייראט אלמטי",
+        "name_en": "Kairat Almaty"
+      },
+      "awayTeam": {
+        "_id": "68e25b370d7b31dba56dde86",
+        "name": "אולימפיאקוס פיראוס",
+        "name_en": "אולימפיאקוס פיראוס"
+      },
+      "venue": {
+        "_id": "68e25b390d7b31dba56ddeaa",
+        "name": "Ortalyq stadıon",
+        "name_en": "Ortalyq stadıon"
+      },
+      "externalIds": {
+        "apiFootball": 1451110
+      }
+    },
+    {
+      "_id": "68e79ee74a00e38f56da088d",
+      "slug": "bayern-munich-vs-sporting-cp-2025-12-09",
+      "date": "2025-12-09T17:45:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b320d7b31dba56dde03",
+        "name": "באיירן מינכן",
+        "name_en": "Bayern München"
+      },
+      "awayTeam": {
+        "_id": "68e25b340d7b31dba56dde3c",
+        "name": "ספורטינג ליסבון",
+        "name_en": "Sporting CP"
+      },
+      "venue": {
+        "_id": "68e25b320d7b31dba56dddff",
+        "name": "אצטדיון הכדורגל מינכן",
+        "name_en": "אצטדיון הכדורגל מינכן"
+      },
+      "externalIds": {
+        "apiFootball": 1451111
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293372",
+          "metadata": {
+            "htEventName": "FC Bayern Munich vs. Sporting CP - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:22.025Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/germany/munich/sports/fc-bayern-munich-tickets/2025-12-09,1845/2293372/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/germany/munich/sports/fc-bayern-munich-tickets/2025-12-09,1845/2293372/2"
+          },
+          "_id": "6925c04e99108065d0b5b9fa"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ee84a00e38f56da0895",
+      "slug": "tottenham-vs-slavia-praha-2025-12-09",
+      "date": "2025-12-09T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5e8c51bd5b579b2126",
+        "name": "טוטנהאם",
+        "name_en": "Tottenham"
+      },
+      "awayTeam": {
+        "_id": "68e25b380d7b31dba56dde92",
+        "name": "סלאביה פראג",
+        "name_en": "Slavia Praha"
+      },
+      "venue": {
+        "_id": "68da79e5d3dea7a7449ef99a",
+        "name": "אצטדיון טוטנהאם הוטספר",
+        "name_en": "אצטדיון טוטנהאם הוטספר"
+      },
+      "externalIds": {
+        "apiFootball": 1451117
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293305",
+          "metadata": {
+            "htEventName": "Tottenham Hotspur FC vs. Slavia Prague - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:22.095Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/united-kingdom/london/sports/tottenham-hotspur-fc-tickets/2025-12-09,2000/2293305/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/united-kingdom/london/sports/tottenham-hotspur-fc-tickets/2025-12-09,2000/2293305/2"
+          },
+          "_id": "6925c04e99108065d0b5b9fc"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ee94a00e38f56da08c3",
+      "slug": "union-st-gilloise-vs-marseille-2025-12-09",
+      "date": "2025-12-09T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b350d7b31dba56dde54",
+        "name": "אוניון סן גילואז",
+        "name_en": "Union St. Gilloise"
+      },
+      "awayTeam": {
+        "_id": "68e25b340d7b31dba56dde30",
+        "name": "מרסיי",
+        "name_en": "Marseille"
+      },
+      "venue": {
+        "_id": "68e25b350d7b31dba56dde52",
+        "name": "סטאד ז'וזף מריאן",
+        "name_en": "סטאד ז'וזף מריאן"
+      },
+      "externalIds": {
+        "apiFootball": 1451115
+      }
+    },
+    {
+      "_id": "68e79ee94a00e38f56da08bc",
+      "slug": "barcelona-vs-eintracht-frankfurt-2025-12-09",
+      "date": "2025-12-09T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5a8c51bd5b579b20ae",
+        "name": "ברצלונה",
+        "name_en": "Barcelona"
+      },
+      "awayTeam": {
+        "_id": "68e25b340d7b31dba56dde42",
+        "name": "איינטרכט פרנקפורט",
+        "name_en": "Eintracht Frankfurt"
+      },
+      "venue": {
+        "_id": "68da7884d0d1c672d2395c86",
+        "name": "אצטדיון אולימפי לואיס קומפאניס",
+        "name_en": "אצטדיון אולימפי לואיס קומפאניס"
+      },
+      "externalIds": {
+        "apiFootball": 1451112
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293378",
+          "metadata": {
+            "htEventName": "FC Barcelona vs. Eintracht Frankfurt - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:22.460Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/spain/barcelona/sports/fc-barcelona-tickets/2025-12-09,2100/2293378/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/spain/barcelona/sports/fc-barcelona-tickets/2025-12-09,2100/2293378/2"
+          },
+          "_id": "6925c04e99108065d0b5ba06"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ee94a00e38f56da08b5",
+      "slug": "inter-vs-liverpool-2025-12-09",
+      "date": "2025-12-09T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b320d7b31dba56dde14",
+        "name": "אינטר",
+        "name_en": "Inter"
+      },
+      "awayTeam": {
+        "_id": "68da7a5d8c51bd5b579b2116",
+        "name": "ליברפול",
+        "name_en": "Liverpool"
+      },
+      "venue": {
+        "_id": "68e25b320d7b31dba56dde12",
+        "name": "סטאדיו ג'וזפה מאצה",
+        "name_en": "סטאדיו ג'וזפה מאצה"
+      },
+      "externalIds": {
+        "apiFootball": 1451113
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2294109",
+          "metadata": {
+            "htEventName": "Inter Milan vs. Liverpool FC - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:22.381Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/italy/milan/sports/fc-inter-milan-tickets/2025-12-09,2100/2294109/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/italy/milan/sports/fc-inter-milan-tickets/2025-12-09,2100/2294109/2"
+          },
+          "_id": "6925c04e99108065d0b5ba04"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ee84a00e38f56da08a5",
+      "slug": "psv-eindhoven-vs-atletico-madrid-2025-12-09",
+      "date": "2025-12-09T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b370d7b31dba56dde7a",
+        "name": "פ.ס.ו איינדהובן",
+        "name_en": "PSV Eindhoven"
+      },
+      "awayTeam": {
+        "_id": "68da7a5a8c51bd5b579b20b6",
+        "name": "אתלטיקו מדריד",
+        "name_en": "Atletico Madrid"
+      },
+      "venue": {
+        "_id": "68e25b370d7b31dba56dde78",
+        "name": "אצטדיון פיליפס",
+        "name_en": "אצטדיון פיליפס"
+      },
+      "externalIds": {
+        "apiFootball": 1451118
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2294083",
+          "metadata": {
+            "htEventName": "PSV Eindhoven vs. Atlético de Madrid - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:22.236Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/netherlands/eindhoven/sports/psv-eindhoven-tickets/2025-12-09,2100/2294083/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/netherlands/eindhoven/sports/psv-eindhoven-tickets/2025-12-09,2100/2294083/2"
+          },
+          "_id": "6925c04e99108065d0b5ba00"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ee84a00e38f56da089d",
+      "slug": "monaco-vs-galatasaray-2025-12-09",
+      "date": "2025-12-09T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b380d7b31dba56dde8c",
+        "name": "מונאקו",
+        "name_en": "Monaco"
+      },
+      "awayTeam": {
+        "_id": "68e25b350d7b31dba56dde5a",
+        "name": "גלאטסראיי",
+        "name_en": "Galatasaray"
+      },
+      "venue": {
+        "_id": "68e25b380d7b31dba56dde8a",
+        "name": "Stade Louis-II",
+        "name_en": "סטאד לואי-II"
+      },
+      "externalIds": {
+        "apiFootball": 1451116
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2294108",
+          "metadata": {
+            "htEventName": "AS Monaco vs. Galatasaray SK - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:22.166Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/monaco/monaco/sports/as-monaco-fc-tickets/2025-12-09,2100/2294108/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/monaco/monaco/sports/as-monaco-fc-tickets/2025-12-09,2100/2294108/2"
+          },
+          "_id": "6925c04e99108065d0b5b9fe"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ee84a00e38f56da08ad",
+      "slug": "atalanta-vs-chelsea-2025-12-09",
+      "date": "2025-12-09T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b360d7b31dba56dde60",
+        "name": "אטאלנטה",
+        "name_en": "Atalanta"
+      },
+      "awayTeam": {
+        "_id": "68da7a5e8c51bd5b579b212e",
+        "name": "צ'לסי",
+        "name_en": "Chelsea"
+      },
+      "venue": {
+        "_id": "68e25b360d7b31dba56dde5e",
+        "name": "גוויס סטיידיום",
+        "name_en": "גוויס סטיידיום"
+      },
+      "externalIds": {
+        "apiFootball": 1451114
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293400",
+          "metadata": {
+            "htEventName": "Atalanta BC vs. Chelsea FC - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:22.309Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/italy/bergamo/sports/atalanta-bc-tickets/2025-12-09,2100/2293400/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/italy/bergamo/sports/atalanta-bc-tickets/2025-12-09,2100/2293400/2"
+          },
+          "_id": "6925c04e99108065d0b5ba02"
+        }
+      ]
+    },
+    {
+      "_id": "68e79eea4a00e38f56da08cb",
+      "slug": "villarreal-vs-fc-copenhagen-2025-12-10",
+      "date": "2025-12-10T17:45:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5a8c51bd5b579b20c2",
+        "name": "ויאריאל",
+        "name_en": "Villarreal"
+      },
+      "awayTeam": {
+        "_id": "68e25b370d7b31dba56dde80",
+        "name": "קופנהגן",
+        "name_en": "FC Copenhagen"
+      },
+      "venue": {
+        "_id": "68da78c817271b236307d179",
+        "name": "אצטדיון דה לה קרמיקה",
+        "name_en": "אצטדיון דה לה קרמיקה"
+      },
+      "externalIds": {
+        "apiFootball": 1451119
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293302",
+          "metadata": {
+            "url": "https://www.hellotickets.com/en-en/spain/castellon/sports/villarreal-cf-tickets/2025-12-10,1845/2293302/2",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/spain/castellon/sports/villarreal-cf-tickets/2025-12-10,1845/2293302/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "minPrice": 680,
+            "maxPrice": 1275,
+            "currency": "EUR",
+            "ticketGroupsCount": 5,
+            "helloTicketsEventId": 380002
+          },
+          "_id": "69273127a846710b9fbd03be"
+        }
+      ]
+    },
+    {
+      "_id": "68e79eea4a00e38f56da08d3",
+      "slug": "qarabag-vs-ajax-2025-12-10",
+      "date": "2025-12-10T17:45:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b330d7b31dba56dde1c",
+        "name": "קרבאג",
+        "name_en": "Qarabag"
+      },
+      "awayTeam": {
+        "_id": "68e25b390d7b31dba56ddea6",
+        "name": "אייקס",
+        "name_en": "Ajax"
+      },
+      "venue": {
+        "_id": "68e25b330d7b31dba56dde1a",
+        "name": "Tofiq Bəhramov adına Respublika stadionu",
+        "name_en": "אצטדיון Tofiq Bəhramov adına Respublika stadionu"
+      },
+      "externalIds": {
+        "apiFootball": 1451120
+      }
+    },
+    {
+      "_id": "68e79eec4a00e38f56da0909",
+      "slug": "club-brugge-kv-vs-arsenal-2025-12-10",
+      "date": "2025-12-10T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b340d7b31dba56dde36",
+        "name": "קלאב ברוז'",
+        "name_en": "Club Brugge KV"
+      },
+      "awayTeam": {
+        "_id": "68da7a5d8c51bd5b579b211a",
+        "name": "ארסנל",
+        "name_en": "Arsenal"
+      },
+      "venue": {
+        "_id": "68e25b340d7b31dba56dde34",
+        "name": "אצטדיון יאן ברידל",
+        "name_en": "אצטדיון יאן ברידל"
+      },
+      "externalIds": {
+        "apiFootball": 1451123
+      },
+      "supplierExternalIds": []
+    },
+    {
+      "_id": "68e79eec4a00e38f56da0901",
+      "slug": "real-madrid-vs-manchester-city-2025-12-10",
+      "date": "2025-12-10T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5b8c51bd5b579b20d6",
+        "name": "ריאל מדריד",
+        "name_en": "Real Madrid"
+      },
+      "awayTeam": {
+        "_id": "68da7a5e8c51bd5b579b2132",
+        "name": "מנצ'סטר סיטי",
+        "name_en": "Manchester City"
+      },
+      "venue": {
+        "_id": "68da78c817271b236307d188",
+        "name": "אצטדיון סנטיאגו ברנבאו",
+        "name_en": "אצטדיון סנטיאגו ברנבאו"
+      },
+      "externalIds": {
+        "apiFootball": 1451121
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293320",
+          "metadata": {
+            "htEventName": "Real Madrid CF vs. Manchester City FC - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:22.879Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/spain/madrid/sports/real-madrid-cf-tickets/2025-12-10,2100/2293320/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/spain/madrid/sports/real-madrid-cf-tickets/2025-12-10,2100/2293320/2"
+          },
+          "_id": "6925c04e99108065d0b5ba12"
+        }
+      ]
+    },
+    {
+      "_id": "68e79eeb4a00e38f56da08f9",
+      "slug": "athletic-bilbao-vs-paris-saint-germain-2025-12-10",
+      "date": "2025-12-10T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5a8c51bd5b579b20ba",
+        "name": "אתלטיק בילבאו",
+        "name_en": "Athletic Bilbao"
+      },
+      "awayTeam": {
+        "_id": "68e25b320d7b31dba56dde0e",
+        "name": "פאריס סן ז'רמן",
+        "name_en": "Paris Saint Germain"
+      },
+      "venue": {
+        "_id": "68da78c817271b236307d173",
+        "name": "סן מאמס בריה",
+        "name_en": "סן מאמס בריה"
+      },
+      "externalIds": {
+        "apiFootball": 1451122
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2294103",
+          "metadata": {
+            "htEventName": "Athletic Bilbao FC vs. Paris Saint-Germain FC - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:22.809Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/spain/bilbao/sports/athletic-club-tickets/2025-12-10,2100/2294103/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/spain/bilbao/sports/athletic-club-tickets/2025-12-10,2100/2294103/2"
+          },
+          "_id": "6925c04e99108065d0b5ba10"
+        }
+      ]
+    },
+    {
+      "_id": "68e79eeb4a00e38f56da08f2",
+      "slug": "juventus-vs-pafos-2025-12-10",
+      "date": "2025-12-10T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b360d7b31dba56dde66",
+        "name": "יובנטוס",
+        "name_en": "Juventus"
+      },
+      "awayTeam": {
+        "_id": "68e25b380d7b31dba56dde98",
+        "name": "פאפוס",
+        "name_en": "Pafos"
+      },
+      "venue": {
+        "_id": "68e25b360d7b31dba56dde64",
+        "name": "אליאנץ סטיידיום",
+        "name_en": "אליאנץ סטיידיום"
+      },
+      "externalIds": {
+        "apiFootball": 1451125
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293355",
+          "metadata": {
+            "htEventName": "Juventus FC vs. Pafos FC - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:22.739Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/italy/turin/sports/juventus-fc-tickets/2025-12-10,2100/2293355/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/italy/turin/sports/juventus-fc-tickets/2025-12-10,2100/2293355/2"
+          },
+          "_id": "6925c04e99108065d0b5ba0e"
+        }
+      ]
+    },
+    {
+      "_id": "68e79eeb4a00e38f56da08ea",
+      "slug": "benfica-vs-napoli-2025-12-10",
+      "date": "2025-12-10T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b380d7b31dba56dde9e",
+        "name": "בנפיקה",
+        "name_en": "Benfica"
+      },
+      "awayTeam": {
+        "_id": "68e25b350d7b31dba56dde4e",
+        "name": "נאפולי",
+        "name_en": "Napoli"
+      },
+      "venue": {
+        "_id": "68e25b380d7b31dba56dde9c",
+        "name": "Estádio do Sport Lisboa e Benfica (da Luz)",
+        "name_en": "Estádio do Sport Lisboa e Benfica (da Luz)"
+      },
+      "externalIds": {
+        "apiFootball": 1451127
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2294076",
+          "metadata": {
+            "htEventName": "SL Benfica vs. SSC Napoli - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:22.670Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/portugal/lisbon/sports/sl-benfica-tickets/2025-12-10,2000/2294076/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/portugal/lisbon/sports/sl-benfica-tickets/2025-12-10,2000/2294076/2"
+          },
+          "_id": "6925c04e99108065d0b5ba0c"
+        }
+      ]
+    },
+    {
+      "_id": "68e79eea4a00e38f56da08e3",
+      "slug": "bayer-leverkusen-vs-newcastle-2025-12-10",
+      "date": "2025-12-10T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b360d7b31dba56dde72",
+        "name": "באייר לברקוזן",
+        "name_en": "Bayer Leverkusen"
+      },
+      "awayTeam": {
+        "_id": "68da7a5d8c51bd5b579b2106",
+        "name": "ניוקאסל",
+        "name_en": "Newcastle"
+      },
+      "venue": {
+        "_id": "68e25b360d7b31dba56dde70",
+        "name": "אצטדיון באי",
+        "name_en": "אצטדיון באי"
+      },
+      "externalIds": {
+        "apiFootball": 1451124
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293397",
+          "metadata": {
+            "htEventName": "Bayer 04 Leverkusen vs. Newcastle United FC - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:22.599Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/germany/cologne/sports/bayer-04-leverkusen-tickets/2025-12-10,2100/2293397/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/germany/cologne/sports/bayer-04-leverkusen-tickets/2025-12-10,2100/2293397/2"
+          },
+          "_id": "6925c04e99108065d0b5ba0a"
+        }
+      ]
+    },
+    {
+      "_id": "68e79eea4a00e38f56da08db",
+      "slug": "borussia-dortmund-vs-bodoglimt-2025-12-10",
+      "date": "2025-12-10T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b330d7b31dba56dde22",
+        "name": "בורוסיה דורטמונד",
+        "name_en": "Borussia Dortmund"
+      },
+      "awayTeam": {
+        "_id": "68e25b360d7b31dba56dde6c",
+        "name": "בודו/גלימט",
+        "name_en": "Bodo/Glimt"
+      },
+      "venue": {
+        "_id": "68e25b330d7b31dba56dde20",
+        "name": "אצטדיון BVB דורטמונד",
+        "name_en": "אצטדיון BVB דורטמונד"
+      },
+      "externalIds": {
+        "apiFootball": 1451126
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293392",
+          "metadata": {
+            "htEventName": "Borussia Dortmund vs. FK Bodø/Glimt - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:22.530Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/germany/dortmund/sports/borussia-dortmund-tickets/2025-12-10,2100/2293392/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/germany/dortmund/sports/borussia-dortmund-tickets/2025-12-10,2100/2293392/2"
+          },
+          "_id": "6925c04e99108065d0b5ba08"
+        }
+      ]
+    },
+    {
+      "_id": "68e79eec4a00e38f56da0910",
+      "slug": "kairat-almaty-vs-club-brugge-kv-2026-01-20",
+      "date": "2026-01-20T15:30:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b390d7b31dba56ddeac",
+        "name": "קייראט אלמטי",
+        "name_en": "Kairat Almaty"
+      },
+      "awayTeam": {
+        "_id": "68e25b340d7b31dba56dde36",
+        "name": "קלאב ברוז'",
+        "name_en": "Club Brugge KV"
+      },
+      "venue": {
+        "_id": "68e25b390d7b31dba56ddeaa",
+        "name": "Ortalyq stadıon",
+        "name_en": "Ortalyq stadıon"
+      },
+      "externalIds": {
+        "apiFootball": 1451128
+      }
+    },
+    {
+      "_id": "68e79eec4a00e38f56da0918",
+      "slug": "bodoglimt-vs-manchester-city-2026-01-20",
+      "date": "2026-01-20T17:45:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b360d7b31dba56dde6c",
+        "name": "בודו/גלימט",
+        "name_en": "Bodo/Glimt"
+      },
+      "awayTeam": {
+        "_id": "68da7a5e8c51bd5b579b2132",
+        "name": "מנצ'סטר סיטי",
+        "name_en": "Manchester City"
+      },
+      "venue": {
+        "_id": "68e25b360d7b31dba56dde6a",
+        "name": "Aspmyra Stadion",
+        "name_en": "אצטדיון Aspmyra Stadion"
+      },
+      "externalIds": {
+        "apiFootball": 1451129
+      }
+    },
+    {
+      "_id": "68e79eed4a00e38f56da0920",
+      "slug": "tottenham-vs-borussia-dortmund-2026-01-20",
+      "date": "2026-01-20T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5e8c51bd5b579b2126",
+        "name": "טוטנהאם",
+        "name_en": "Tottenham"
+      },
+      "awayTeam": {
+        "_id": "68e25b330d7b31dba56dde22",
+        "name": "בורוסיה דורטמונד",
+        "name_en": "Borussia Dortmund"
+      },
+      "venue": {
+        "_id": "68da79e5d3dea7a7449ef99a",
+        "name": "אצטדיון טוטנהאם הוטספר",
+        "name_en": "אצטדיון טוטנהאם הוטספר"
+      },
+      "externalIds": {
+        "apiFootball": 1451135
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293306",
+          "metadata": {
+            "htEventName": "Tottenham Hotspur FC vs. Borussia Dortmund - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:22.950Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/united-kingdom/london/sports/tottenham-hotspur-fc-tickets/2026-01-20,2000/2293306/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/united-kingdom/london/sports/tottenham-hotspur-fc-tickets/2026-01-20,2000/2293306/2"
+          },
+          "_id": "6925c04e99108065d0b5ba14"
+        }
+      ]
+    },
+    {
+      "_id": "68e79eed4a00e38f56da0928",
+      "slug": "sporting-cp-vs-paris-saint-germain-2026-01-20",
+      "date": "2026-01-20T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b340d7b31dba56dde3c",
+        "name": "ספורטינג ליסבון",
+        "name_en": "Sporting CP"
+      },
+      "awayTeam": {
+        "_id": "68e25b320d7b31dba56dde0e",
+        "name": "פאריס סן ז'רמן",
+        "name_en": "Paris Saint Germain"
+      },
+      "venue": {
+        "_id": "68e25b340d7b31dba56dde3a",
+        "name": "אצטדיון ז'וזה אלוואלדה",
+        "name_en": "אצטדיון ז'וזה אלוואלדה"
+      },
+      "externalIds": {
+        "apiFootball": 1451131
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2294072",
+          "metadata": {
+            "htEventName": "Sporting CP vs. Paris Saint-Germain - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:23.020Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/portugal/lisbon/sports/sporting-cp-tickets/2026-01-20,2000/2294072/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/portugal/lisbon/sports/sporting-cp-tickets/2026-01-20,2000/2294072/2"
+          },
+          "_id": "6925c04f99108065d0b5ba16"
+        }
+      ]
+    },
+    {
+      "_id": "68e79eed4a00e38f56da0930",
+      "slug": "fc-copenhagen-vs-napoli-2026-01-20",
+      "date": "2026-01-20T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b370d7b31dba56dde80",
+        "name": "קופנהגן",
+        "name_en": "FC Copenhagen"
+      },
+      "awayTeam": {
+        "_id": "68e25b350d7b31dba56dde4e",
+        "name": "נאפולי",
+        "name_en": "Napoli"
+      },
+      "venue": {
+        "_id": "68e25b370d7b31dba56dde7e",
+        "name": "פארקן",
+        "name_en": "פארקן"
+      },
+      "externalIds": {
+        "apiFootball": 1451132
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2294088",
+          "metadata": {
+            "htEventName": "FC Copenhagen vs. SSC Napoli - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:52:55.464Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/denmark/copenhagen/sports/fc-copenhagen-tickets/2026-01-20,2100/2294088/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/denmark/copenhagen/sports/fc-copenhagen-tickets/2026-01-20,2100/2294088/2"
+          },
+          "_id": "6925c2c7cba612b1adfa38fa"
+        }
+      ]
+    },
+    {
+      "_id": "68e79eee4a00e38f56da0938",
+      "slug": "inter-vs-arsenal-2026-01-20",
+      "date": "2026-01-20T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b320d7b31dba56dde14",
+        "name": "אינטר",
+        "name_en": "Inter"
+      },
+      "awayTeam": {
+        "_id": "68da7a5d8c51bd5b579b211a",
+        "name": "ארסנל",
+        "name_en": "Arsenal"
+      },
+      "venue": {
+        "_id": "68e25b320d7b31dba56dde12",
+        "name": "סטאדיו ג'וזפה מאצה",
+        "name_en": "סטאדיו ג'וזפה מאצה"
+      },
+      "externalIds": {
+        "apiFootball": 1451136
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2294110",
+          "metadata": {
+            "htEventName": "Inter Milan vs. Arsenal FC - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:23.092Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/italy/milan/sports/fc-inter-milan-tickets/2026-01-20,2100/2294110/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/italy/milan/sports/fc-inter-milan-tickets/2026-01-20,2100/2294110/2"
+          },
+          "_id": "6925c04f99108065d0b5ba18"
+        }
+      ]
+    },
+    {
+      "_id": "68e79eee4a00e38f56da0940",
+      "slug": "villarreal-vs-ajax-2026-01-20",
+      "date": "2026-01-20T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5a8c51bd5b579b20c2",
+        "name": "ויאריאל",
+        "name_en": "Villarreal"
+      },
+      "awayTeam": {
+        "_id": "68e25b390d7b31dba56ddea6",
+        "name": "אייקס",
+        "name_en": "Ajax"
+      },
+      "venue": {
+        "_id": "68da78c817271b236307d179",
+        "name": "אצטדיון דה לה קרמיקה",
+        "name_en": "אצטדיון דה לה קרמיקה"
+      },
+      "externalIds": {
+        "apiFootball": 1451133
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293303",
+          "metadata": {
+            "url": "https://www.hellotickets.com/en-en/spain/castellon/sports/villarreal-cf-tickets/2026-01-20,2100/2293303/2",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/spain/castellon/sports/villarreal-cf-tickets/2026-01-20,2100/2293303/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "minPrice": 737,
+            "maxPrice": 964,
+            "currency": "EUR",
+            "ticketGroupsCount": 2,
+            "helloTicketsEventId": 380002
+          },
+          "_id": "69273128a846710b9fbd03c9"
+        }
+      ]
+    },
+    {
+      "_id": "68e79eee4a00e38f56da0948",
+      "slug": "real-madrid-vs-monaco-2026-01-20",
+      "date": "2026-01-20T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5b8c51bd5b579b20d6",
+        "name": "ריאל מדריד",
+        "name_en": "Real Madrid"
+      },
+      "awayTeam": {
+        "_id": "68e25b380d7b31dba56dde8c",
+        "name": "מונאקו",
+        "name_en": "Monaco"
+      },
+      "venue": {
+        "_id": "68da78c817271b236307d188",
+        "name": "אצטדיון סנטיאגו ברנבאו",
+        "name_en": "אצטדיון סנטיאגו ברנבאו"
+      },
+      "externalIds": {
+        "apiFootball": 1451130
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293321",
+          "metadata": {
+            "htEventName": "Real Madrid CF vs. AS Monaco - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:23.163Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/spain/madrid/sports/real-madrid-cf-tickets/2026-01-20,2100/2293321/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/spain/madrid/sports/real-madrid-cf-tickets/2026-01-20,2100/2293321/2"
+          },
+          "_id": "6925c04f99108065d0b5ba1a"
+        }
+      ]
+    },
+    {
+      "_id": "68e79eee4a00e38f56da094f",
+      "slug": "olympiakos-piraeus-vs-bayer-leverkusen-2026-01-20",
+      "date": "2026-01-20T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b370d7b31dba56dde86",
+        "name": "אולימפיאקוס פיראוס",
+        "name_en": "אולימפיאקוס פיראוס"
+      },
+      "awayTeam": {
+        "_id": "68e25b360d7b31dba56dde72",
+        "name": "באייר לברקוזן",
+        "name_en": "Bayer Leverkusen"
+      },
+      "venue": {
+        "_id": "68e25b370d7b31dba56dde84",
+        "name": "אצטדיון גיאורגיוס קראיסקאקי",
+        "name_en": "אצטדיון גיאורגיוס קראיסקאקי"
+      },
+      "externalIds": {
+        "apiFootball": 1451134
+      }
+    },
+    {
+      "_id": "68e79eef4a00e38f56da095e",
+      "slug": "galatasaray-vs-atletico-madrid-2026-01-21",
+      "date": "2026-01-21T17:45:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b350d7b31dba56dde5a",
+        "name": "גלאטסראיי",
+        "name_en": "Galatasaray"
+      },
+      "awayTeam": {
+        "_id": "68da7a5a8c51bd5b579b20b6",
+        "name": "אתלטיקו מדריד",
+        "name_en": "Atletico Madrid"
+      },
+      "venue": {
+        "_id": "68e25b350d7b31dba56dde58",
+        "name": "אצטדיון רמס גלובל",
+        "name_en": "אצטדיון רמס גלובל"
+      },
+      "externalIds": {
+        "apiFootball": 1451137
+      }
+    },
+    {
+      "_id": "68e79eef4a00e38f56da0957",
+      "slug": "qarabag-vs-eintracht-frankfurt-2026-01-21",
+      "date": "2026-01-21T17:45:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b330d7b31dba56dde1c",
+        "name": "קרבאג",
+        "name_en": "Qarabag"
+      },
+      "awayTeam": {
+        "_id": "68e25b340d7b31dba56dde42",
+        "name": "איינטרכט פרנקפורט",
+        "name_en": "Eintracht Frankfurt"
+      },
+      "venue": {
+        "_id": "68e25b330d7b31dba56dde1a",
+        "name": "Tofiq Bəhramov adına Respublika stadionu",
+        "name_en": "אצטדיון Tofiq Bəhramov adına Respublika stadionu"
+      },
+      "externalIds": {
+        "apiFootball": 1451138
+      }
+    },
+    {
+      "_id": "68e79eef4a00e38f56da0966",
+      "slug": "newcastle-vs-psv-eindhoven-2026-01-21",
+      "date": "2026-01-21T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5d8c51bd5b579b2106",
+        "name": "ניוקאסל",
+        "name_en": "Newcastle"
+      },
+      "awayTeam": {
+        "_id": "68e25b370d7b31dba56dde7a",
+        "name": "פ.ס.ו איינדהובן",
+        "name_en": "PSV Eindhoven"
+      },
+      "venue": {
+        "_id": "68da79e4d3dea7a7449ef982",
+        "name": "סנט ג'יימס פארק",
+        "name_en": "סנט ג'יימס פארק"
+      },
+      "externalIds": {
+        "apiFootball": 1451143
+      }
+    },
+    {
+      "_id": "68e79ef14a00e38f56da0996",
+      "slug": "slavia-praha-vs-barcelona-2026-01-21",
+      "date": "2026-01-21T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b380d7b31dba56dde92",
+        "name": "סלאביה פראג",
+        "name_en": "Slavia Praha"
+      },
+      "awayTeam": {
+        "_id": "68da7a5a8c51bd5b579b20ae",
+        "name": "ברצלונה",
+        "name_en": "Barcelona"
+      },
+      "venue": {
+        "_id": "68e25b380d7b31dba56dde90",
+        "name": "אצטדיון פורטונה",
+        "name_en": "אצטדיון פורטונה"
+      },
+      "externalIds": {
+        "apiFootball": 1451139
+      }
+    },
+    {
+      "_id": "68e79ef14a00e38f56da098e",
+      "slug": "atalanta-vs-athletic-bilbao-2026-01-21",
+      "date": "2026-01-21T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b360d7b31dba56dde60",
+        "name": "אטאלנטה",
+        "name_en": "Atalanta"
+      },
+      "awayTeam": {
+        "_id": "68da7a5a8c51bd5b579b20ba",
+        "name": "אתלטיק בילבאו",
+        "name_en": "Athletic Bilbao"
+      },
+      "venue": {
+        "_id": "68e25b360d7b31dba56dde5e",
+        "name": "גוויס סטיידיום",
+        "name_en": "גוויס סטיידיום"
+      },
+      "externalIds": {
+        "apiFootball": 1451140
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293401",
+          "metadata": {
+            "htEventName": "Atalanta BC vs. Athletic Bilbao FC - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:23.513Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/italy/bergamo/sports/atalanta-bc-tickets/2026-01-21,2100/2293401/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/italy/bergamo/sports/atalanta-bc-tickets/2026-01-21,2100/2293401/2"
+          },
+          "_id": "6925c04f99108065d0b5ba24"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ef04a00e38f56da0986",
+      "slug": "juventus-vs-benfica-2026-01-21",
+      "date": "2026-01-21T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b360d7b31dba56dde66",
+        "name": "יובנטוס",
+        "name_en": "Juventus"
+      },
+      "awayTeam": {
+        "_id": "68e25b380d7b31dba56dde9e",
+        "name": "בנפיקה",
+        "name_en": "Benfica"
+      },
+      "venue": {
+        "_id": "68e25b360d7b31dba56dde64",
+        "name": "אליאנץ סטיידיום",
+        "name_en": "אליאנץ סטיידיום"
+      },
+      "externalIds": {
+        "apiFootball": 1451141
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293354",
+          "metadata": {
+            "htEventName": "Juventus FC vs. SL Benfica - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:23.442Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/italy/turin/sports/juventus-fc-tickets/2026-01-21,2100/2293354/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/italy/turin/sports/juventus-fc-tickets/2026-01-21,2100/2293354/2"
+          },
+          "_id": "6925c04f99108065d0b5ba22"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ef04a00e38f56da097e",
+      "slug": "bayern-munich-vs-union-st-gilloise-2026-01-21",
+      "date": "2026-01-21T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b320d7b31dba56dde03",
+        "name": "באיירן מינכן",
+        "name_en": "Bayern München"
+      },
+      "awayTeam": {
+        "_id": "68e25b350d7b31dba56dde54",
+        "name": "אוניון סן גילואז",
+        "name_en": "Union St. Gilloise"
+      },
+      "venue": {
+        "_id": "68e25b320d7b31dba56dddff",
+        "name": "אצטדיון הכדורגל מינכן",
+        "name_en": "אצטדיון הכדורגל מינכן"
+      },
+      "externalIds": {
+        "apiFootball": 1451144
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293371",
+          "metadata": {
+            "htEventName": "FC Bayern Munich vs. Union Saint-Gilloise - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:23.372Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/germany/munich/sports/fc-bayern-munich-tickets/2026-01-21,2100/2293371/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/germany/munich/sports/fc-bayern-munich-tickets/2026-01-21,2100/2293371/2"
+          },
+          "_id": "6925c04f99108065d0b5ba20"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ef04a00e38f56da0976",
+      "slug": "marseille-vs-liverpool-2026-01-21",
+      "date": "2026-01-21T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b340d7b31dba56dde30",
+        "name": "מרסיי",
+        "name_en": "Marseille"
+      },
+      "awayTeam": {
+        "_id": "68da7a5d8c51bd5b579b2116",
+        "name": "ליברפול",
+        "name_en": "Liverpool"
+      },
+      "venue": {
+        "_id": "68e25b340d7b31dba56dde2e",
+        "name": "Stade Orange Vélodrome",
+        "name_en": "סטאד Orange Vélodrome"
+      },
+      "externalIds": {
+        "apiFootball": 1451145
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293335",
+          "metadata": {
+            "htEventName": "Olympique de Marseille vs. Liverpool FC - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:23.303Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/france/marseille/sports/olympique-de-marseille-tickets/2026-01-21,2100/2293335/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/france/marseille/sports/olympique-de-marseille-tickets/2026-01-21,2100/2293335/2"
+          },
+          "_id": "6925c04f99108065d0b5ba1e"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ef04a00e38f56da096e",
+      "slug": "chelsea-vs-pafos-2026-01-21",
+      "date": "2026-01-21T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5e8c51bd5b579b212e",
+        "name": "צ'לסי",
+        "name_en": "Chelsea"
+      },
+      "awayTeam": {
+        "_id": "68e25b380d7b31dba56dde98",
+        "name": "פאפוס",
+        "name_en": "Pafos"
+      },
+      "venue": {
+        "_id": "68da79e5d3dea7a7449ef9a0",
+        "name": "סטמפורד ברידג'",
+        "name_en": "סטמפורד ברידג'"
+      },
+      "externalIds": {
+        "apiFootball": 1451142
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293387",
+          "metadata": {
+            "htEventName": "Chelsea FC vs. Pafos FC - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:23.232Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/united-kingdom/london/sports/chelsea-fc-tickets/2026-01-21,2000/2293387/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/united-kingdom/london/sports/chelsea-fc-tickets/2026-01-21,2000/2293387/2"
+          },
+          "_id": "6925c04f99108065d0b5ba1c"
+        }
+      ]
+    },
+    {
+      "_id": "692493d7d7f10174e2c1f69e",
+      "slug": "arsenal-vs-olympiakos-piraeus-2026-01-28",
+      "date": "2026-01-28T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5d8c51bd5b579b211a",
+        "name": "ארסנל",
+        "name_en": "Arsenal"
+      },
+      "awayTeam": {
+        "_id": "68e25b370d7b31dba56dde86",
+        "name": "אולימפיאקוס פיראוס",
+        "name_en": "אולימפיאקוס פיראוס"
+      },
+      "venue": {
+        "_id": "68da79e4d3dea7a7449ef991",
+        "name": "אצטדיון אמירטס",
+        "name_en": "אצטדיון אמירטס"
+      },
+      "supplierExternalIds": []
+    },
+    {
+      "_id": "68e79ef64a00e38f56da0a21",
+      "slug": "pafos-vs-slavia-praha-2026-01-28",
+      "date": "2026-01-28T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b380d7b31dba56dde98",
+        "name": "פאפוס",
+        "name_en": "Pafos"
+      },
+      "awayTeam": {
+        "_id": "68e25b380d7b31dba56dde92",
+        "name": "סלאביה פראג",
+        "name_en": "Slavia Praha"
+      },
+      "venue": {
+        "_id": "68e25b380d7b31dba56dde96",
+        "name": "אצטדיון סטליוס קיריאקידס",
+        "name_en": "אצטדיון סטליוס קיריאקידס"
+      },
+      "externalIds": {
+        "apiFootball": 1451151
+      }
+    },
+    {
+      "_id": "68e79ef64a00e38f56da0a19",
+      "slug": "union-st-gilloise-vs-atalanta-2026-01-28",
+      "date": "2026-01-28T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b350d7b31dba56dde54",
+        "name": "אוניון סן גילואז",
+        "name_en": "Union St. Gilloise"
+      },
+      "awayTeam": {
+        "_id": "68e25b360d7b31dba56dde60",
+        "name": "אטאלנטה",
+        "name_en": "Atalanta"
+      },
+      "venue": {
+        "_id": "68e25b350d7b31dba56dde52",
+        "name": "סטאד ז'וזף מריאן",
+        "name_en": "סטאד ז'וזף מריאן"
+      },
+      "externalIds": {
+        "apiFootball": 1451158
+      }
+    },
+    {
+      "_id": "68e79ef54a00e38f56da0a12",
+      "slug": "club-brugge-kv-vs-marseille-2026-01-28",
+      "date": "2026-01-28T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b340d7b31dba56dde36",
+        "name": "קלאב ברוז'",
+        "name_en": "Club Brugge KV"
+      },
+      "awayTeam": {
+        "_id": "68e25b340d7b31dba56dde30",
+        "name": "מרסיי",
+        "name_en": "Marseille"
+      },
+      "venue": {
+        "_id": "68e25b340d7b31dba56dde34",
+        "name": "אצטדיון יאן ברידל",
+        "name_en": "אצטדיון יאן ברידל"
+      },
+      "externalIds": {
+        "apiFootball": 1451163
+      }
+    },
+    {
+      "_id": "68e79ef54a00e38f56da0a0a",
+      "slug": "athletic-bilbao-vs-sporting-cp-2026-01-28",
+      "date": "2026-01-28T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5a8c51bd5b579b20ba",
+        "name": "אתלטיק בילבאו",
+        "name_en": "Athletic Bilbao"
+      },
+      "awayTeam": {
+        "_id": "68e25b340d7b31dba56dde3c",
+        "name": "ספורטינג ליסבון",
+        "name_en": "Sporting CP"
+      },
+      "venue": {
+        "_id": "68da78c817271b236307d173",
+        "name": "סן מאמס בריה",
+        "name_en": "סן מאמס בריה"
+      },
+      "externalIds": {
+        "apiFootball": 1451156
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2294101",
+          "metadata": {
+            "htEventName": "Athletic Bilbao FC vs. Sporting CP - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:24.505Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/spain/bilbao/sports/athletic-club-tickets/2026-01-28,2100/2294101/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/spain/bilbao/sports/athletic-club-tickets/2026-01-28,2100/2294101/2"
+          },
+          "_id": "6925c05099108065d0b5ba40"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ef54a00e38f56da0a03",
+      "slug": "atletico-madrid-vs-bodoglimt-2026-01-28",
+      "date": "2026-01-28T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5a8c51bd5b579b20b6",
+        "name": "אתלטיקו מדריד",
+        "name_en": "Atletico Madrid"
+      },
+      "awayTeam": {
+        "_id": "68e25b360d7b31dba56dde6c",
+        "name": "בודו/גלימט",
+        "name_en": "Bodo/Glimt"
+      },
+      "venue": {
+        "_id": "68da78c817271b236307d170",
+        "name": "אצטדיון סיביטס מטרופוליטנו",
+        "name_en": "אצטדיון סיביטס מטרופוליטנו"
+      },
+      "externalIds": {
+        "apiFootball": 1451152
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2294118",
+          "metadata": {
+            "htEventName": "Atlético de Madrid vs. FK Bodø/Glimt - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:24.434Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/spain/madrid/sports/atletico-madrid-tickets/2026-01-28,2100/2294118/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/spain/madrid/sports/atletico-madrid-tickets/2026-01-28,2100/2294118/2"
+          },
+          "_id": "6925c05099108065d0b5ba3e"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ef54a00e38f56da09fc",
+      "slug": "barcelona-vs-fc-copenhagen-2026-01-28",
+      "date": "2026-01-28T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5a8c51bd5b579b20ae",
+        "name": "ברצלונה",
+        "name_en": "Barcelona"
+      },
+      "awayTeam": {
+        "_id": "68e25b370d7b31dba56dde80",
+        "name": "קופנהגן",
+        "name_en": "FC Copenhagen"
+      },
+      "venue": {
+        "_id": "68da7884d0d1c672d2395c86",
+        "name": "אצטדיון אולימפי לואיס קומפאניס",
+        "name_en": "אצטדיון אולימפי לואיס קומפאניס"
+      },
+      "externalIds": {
+        "apiFootball": 1451161
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293377",
+          "metadata": {
+            "htEventName": "FC Barcelona vs. FC Copenhagen - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:52:55.547Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/spain/barcelona/sports/fc-barcelona-tickets/2026-01-28,2100/2293377/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/spain/barcelona/sports/fc-barcelona-tickets/2026-01-28,2100/2293377/2"
+          },
+          "_id": "6925c2c7cba612b1adfa38fc"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ef44a00e38f56da09f5",
+      "slug": "napoli-vs-chelsea-2026-01-28",
+      "date": "2026-01-28T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b350d7b31dba56dde4e",
+        "name": "נאפולי",
+        "name_en": "Napoli"
+      },
+      "awayTeam": {
+        "_id": "68da7a5e8c51bd5b579b212e",
+        "name": "צ'לסי",
+        "name_en": "Chelsea"
+      },
+      "venue": {
+        "_id": "68e25b350d7b31dba56dde4c",
+        "name": "אצטדיון דייגו ארמנדו מראדונה",
+        "name_en": "אצטדיון דייגו ארמנדו מראדונה"
+      },
+      "externalIds": {
+        "apiFootball": 1451146
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293310",
+          "metadata": {
+            "htEventName": "SSC Napoli vs. Chelsea FC - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:24.364Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/italy/naples/sports/ssc-napoli-tickets/2026-01-28,2100/2293310/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/italy/naples/sports/ssc-napoli-tickets/2026-01-28,2100/2293310/2"
+          },
+          "_id": "6925c05099108065d0b5ba3c"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ef44a00e38f56da09ed",
+      "slug": "benfica-vs-real-madrid-2026-01-28",
+      "date": "2026-01-28T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b380d7b31dba56dde9e",
+        "name": "בנפיקה",
+        "name_en": "Benfica"
+      },
+      "awayTeam": {
+        "_id": "68da7a5b8c51bd5b579b20d6",
+        "name": "ריאל מדריד",
+        "name_en": "Real Madrid"
+      },
+      "venue": {
+        "_id": "68e25b380d7b31dba56dde9c",
+        "name": "Estádio do Sport Lisboa e Benfica (da Luz)",
+        "name_en": "Estádio do Sport Lisboa e Benfica (da Luz)"
+      },
+      "externalIds": {
+        "apiFootball": 1451162
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2294077",
+          "metadata": {
+            "htEventName": "SL Benfica vs. Real Madrid CF - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:24.295Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/portugal/lisbon/sports/sl-benfica-tickets/2026-01-28,2000/2294077/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/portugal/lisbon/sports/sl-benfica-tickets/2026-01-28,2000/2294077/2"
+          },
+          "_id": "6925c05099108065d0b5ba3a"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ef44a00e38f56da09e6",
+      "slug": "psv-eindhoven-vs-bayern-munich-2026-01-28",
+      "date": "2026-01-28T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b370d7b31dba56dde7a",
+        "name": "פ.ס.ו איינדהובן",
+        "name_en": "PSV Eindhoven"
+      },
+      "awayTeam": {
+        "_id": "68e25b320d7b31dba56dde03",
+        "name": "באיירן מינכן",
+        "name_en": "Bayern München"
+      },
+      "venue": {
+        "_id": "68e25b370d7b31dba56dde78",
+        "name": "אצטדיון פיליפס",
+        "name_en": "אצטדיון פיליפס"
+      },
+      "externalIds": {
+        "apiFootball": 1451154
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2294082",
+          "metadata": {
+            "htEventName": "PSV Eindhoven vs. FC Bayern Munich - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:24.225Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/netherlands/eindhoven/sports/psv-eindhoven-tickets/2026-01-28,2100/2294082/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/netherlands/eindhoven/sports/psv-eindhoven-tickets/2026-01-28,2100/2294082/2"
+          },
+          "_id": "6925c05099108065d0b5ba38"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ef44a00e38f56da09de",
+      "slug": "ajax-vs-olympiakos-piraeus-2026-01-28",
+      "date": "2026-01-28T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b390d7b31dba56ddea6",
+        "name": "אייקס",
+        "name_en": "Ajax"
+      },
+      "awayTeam": {
+        "_id": "68e25b370d7b31dba56dde86",
+        "name": "אולימפיאקוס פיראוס",
+        "name_en": "אולימפיאקוס פיראוס"
+      },
+      "venue": {
+        "_id": "68e25b390d7b31dba56ddea4",
+        "name": "יוהן קרויף ארנה",
+        "name_en": "יוהן קרויף ארנה"
+      },
+      "externalIds": {
+        "apiFootball": 1451157
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2294093",
+          "metadata": {
+            "htEventName": "AFC Ajax vs. Olympiacos FC - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:24.155Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/netherlands/amsterdam/sports/afc-ajax-tickets/2026-01-28,2100/2294093/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/netherlands/amsterdam/sports/afc-ajax-tickets/2026-01-28,2100/2294093/2"
+          },
+          "_id": "6925c05099108065d0b5ba36"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ef34a00e38f56da09d6",
+      "slug": "eintracht-frankfurt-vs-tottenham-2026-01-28",
+      "date": "2026-01-28T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b340d7b31dba56dde42",
+        "name": "איינטרכט פרנקפורט",
+        "name_en": "Eintracht Frankfurt"
+      },
+      "awayTeam": {
+        "_id": "68da7a5e8c51bd5b579b2126",
+        "name": "טוטנהאם",
+        "name_en": "Tottenham"
+      },
+      "venue": {
+        "_id": "68e25b340d7b31dba56dde40",
+        "name": "אצטדיון פרנקפורט",
+        "name_en": "אצטדיון פרנקפורט"
+      },
+      "externalIds": {
+        "apiFootball": 1451150
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293379",
+          "metadata": {
+            "htEventName": "Eintracht Frankfurt vs. Tottenham Hotspur FC - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:24.085Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/germany/frankfurt/sports/eintracht-frankfurt-tickets/2026-01-28,2100/2293379/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/germany/frankfurt/sports/eintracht-frankfurt-tickets/2026-01-28,2100/2293379/2"
+          },
+          "_id": "6925c05099108065d0b5ba34"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ef34a00e38f56da09ce",
+      "slug": "bayer-leverkusen-vs-villarreal-2026-01-28",
+      "date": "2026-01-28T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b360d7b31dba56dde72",
+        "name": "באייר לברקוזן",
+        "name_en": "Bayer Leverkusen"
+      },
+      "awayTeam": {
+        "_id": "68da7a5a8c51bd5b579b20c2",
+        "name": "ויאריאל",
+        "name_en": "Villarreal"
+      },
+      "venue": {
+        "_id": "68e25b360d7b31dba56dde70",
+        "name": "אצטדיון באי",
+        "name_en": "אצטדיון באי"
+      },
+      "externalIds": {
+        "apiFootball": 1451155
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293394",
+          "metadata": {
+            "htEventName": "Bayer 04 Leverkusen vs. Villarreal CF - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:24.002Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/germany/cologne/sports/bayer-04-leverkusen-tickets/2026-01-28,2100/2293394/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/germany/cologne/sports/bayer-04-leverkusen-tickets/2026-01-28,2100/2293394/2"
+          },
+          "_id": "6925c05099108065d0b5ba32"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ef34a00e38f56da09c6",
+      "slug": "borussia-dortmund-vs-inter-2026-01-28",
+      "date": "2026-01-28T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b330d7b31dba56dde22",
+        "name": "בורוסיה דורטמונד",
+        "name_en": "Borussia Dortmund"
+      },
+      "awayTeam": {
+        "_id": "68e25b320d7b31dba56dde14",
+        "name": "אינטר",
+        "name_en": "Inter"
+      },
+      "venue": {
+        "_id": "68e25b330d7b31dba56dde20",
+        "name": "אצטדיון BVB דורטמונד",
+        "name_en": "אצטדיון BVB דורטמונד"
+      },
+      "externalIds": {
+        "apiFootball": 1451147
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293391",
+          "metadata": {
+            "htEventName": "Borussia Dortmund vs. Inter Milan - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:23.932Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/germany/dortmund/sports/borussia-dortmund-tickets/2026-01-28,2100/2293391/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/germany/dortmund/sports/borussia-dortmund-tickets/2026-01-28,2100/2293391/2"
+          },
+          "_id": "6925c04f99108065d0b5ba30"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ef24a00e38f56da09be",
+      "slug": "monaco-vs-juventus-2026-01-28",
+      "date": "2026-01-28T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b380d7b31dba56dde8c",
+        "name": "מונאקו",
+        "name_en": "Monaco"
+      },
+      "awayTeam": {
+        "_id": "68e25b360d7b31dba56dde66",
+        "name": "יובנטוס",
+        "name_en": "Juventus"
+      },
+      "venue": {
+        "_id": "68e25b380d7b31dba56dde8a",
+        "name": "Stade Louis-II",
+        "name_en": "סטאד לואי-II"
+      },
+      "externalIds": {
+        "apiFootball": 1451148
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2294107",
+          "metadata": {
+            "htEventName": "AS Monaco vs. Juventus FC - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:23.863Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/monaco/monaco/sports/as-monaco-fc-tickets/2026-01-28,2100/2294107/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/monaco/monaco/sports/as-monaco-fc-tickets/2026-01-28,2100/2294107/2"
+          },
+          "_id": "6925c04f99108065d0b5ba2e"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ef24a00e38f56da09b6",
+      "slug": "paris-saint-germain-vs-newcastle-2026-01-28",
+      "date": "2026-01-28T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68e25b320d7b31dba56dde0e",
+        "name": "פאריס סן ז'רמן",
+        "name_en": "Paris Saint Germain"
+      },
+      "awayTeam": {
+        "_id": "68da7a5d8c51bd5b579b2106",
+        "name": "ניוקאסל",
+        "name_en": "Newcastle"
+      },
+      "venue": {
+        "_id": "68e25b320d7b31dba56dde0c",
+        "name": "פארק דה פרינס",
+        "name_en": "פארק דה פרינס"
+      },
+      "externalIds": {
+        "apiFootball": 1451149
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293327",
+          "metadata": {
+            "htEventName": "Paris Saint-Germain FC vs. Newcastle United FC - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:23.793Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/france/paris/sports/psg-paris-saint-germain-fc-tickets/2026-01-28,2100/2293327/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/france/paris/sports/psg-paris-saint-germain-fc-tickets/2026-01-28,2100/2293327/2"
+          },
+          "_id": "6925c04f99108065d0b5ba2c"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ef24a00e38f56da09ae",
+      "slug": "manchester-city-vs-galatasaray-2026-01-28",
+      "date": "2026-01-28T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5e8c51bd5b579b2132",
+        "name": "מנצ'סטר סיטי",
+        "name_en": "Manchester City"
+      },
+      "awayTeam": {
+        "_id": "68e25b350d7b31dba56dde5a",
+        "name": "גלאטסראיי",
+        "name_en": "Galatasaray"
+      },
+      "venue": {
+        "_id": "68da79e5d3dea7a7449ef9a3",
+        "name": "אצטדיון אתיהאד",
+        "name_en": "אצטדיון אתיהאד"
+      },
+      "externalIds": {
+        "apiFootball": 1451153
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293346",
+          "metadata": {
+            "htEventName": "Manchester City FC vs. Galatasaray SK - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:23.724Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/united-kingdom/manchester/sports/manchester-city-fc-tickets/2026-01-28,2000/2293346/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/united-kingdom/manchester/sports/manchester-city-fc-tickets/2026-01-28,2000/2293346/2"
+          },
+          "_id": "6925c04f99108065d0b5ba2a"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ef24a00e38f56da09a6",
+      "slug": "arsenal-vs-kairat-almaty-2026-01-28",
+      "date": "2026-01-28T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5d8c51bd5b579b211a",
+        "name": "ארסנל",
+        "name_en": "Arsenal"
+      },
+      "awayTeam": {
+        "_id": "68e25b390d7b31dba56ddeac",
+        "name": "קייראט אלמטי",
+        "name_en": "Kairat Almaty"
+      },
+      "venue": {
+        "_id": "68da79e4d3dea7a7449ef991",
+        "name": "אצטדיון אמירטס",
+        "name_en": "אצטדיון אמירטס"
+      },
+      "externalIds": {
+        "apiFootball": 1451159
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293403",
+          "metadata": {
+            "htEventName": "Arsenal FC vs. FC Kairat - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:23.654Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/united-kingdom/london/sports/arsenal-fc-tickets/2026-01-28,2000/2293403/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/united-kingdom/london/sports/arsenal-fc-tickets/2026-01-28,2000/2293403/2"
+          },
+          "_id": "6925c04f99108065d0b5ba28"
+        }
+      ]
+    },
+    {
+      "_id": "68e79ef14a00e38f56da099e",
+      "slug": "liverpool-vs-qarabag-2026-01-28",
+      "date": "2026-01-28T20:00:00.000Z",
+      "homeTeam": {
+        "_id": "68da7a5d8c51bd5b579b2116",
+        "name": "ליברפול",
+        "name_en": "Liverpool"
+      },
+      "awayTeam": {
+        "_id": "68e25b330d7b31dba56dde1c",
+        "name": "קרבאג",
+        "name_en": "Qarabag"
+      },
+      "venue": {
+        "_id": "68da79e4d3dea7a7449ef98e",
+        "name": "אנפילד",
+        "name_en": "אנפילד"
+      },
+      "externalIds": {
+        "apiFootball": 1451160
+      },
+      "supplierExternalIds": [
+        {
+          "supplierRef": "692476c8b4f389968e1f00f5",
+          "supplierExternalId": "2293350",
+          "metadata": {
+            "htEventName": "Liverpool FC vs. Qarabağ FK - Champions League 2025-2026",
+            "mappedAt": "2025-11-25T14:42:23.583Z",
+            "affiliateUrl": "https://www.hellotickets.com/en-en/united-kingdom/liverpool/sports/liverpool-fc-tickets/2026-01-28,2000/2293350/2?tap_a=141252-18675a&tap_s=8995852-00a564",
+            "url": "https://www.hellotickets.com/en-en/united-kingdom/liverpool/sports/liverpool-fc-tickets/2026-01-28,2000/2293350/2"
+          },
+          "_id": "6925c04f99108065d0b5ba26"
+        }
+      ]
+    }
+  ],
+  "mapping_analysis": {
+    "note": "This file contains API events and DB matches for mapping analysis",
+    "next_steps": [
+      "Compare API events with DB matches by date and teams",
+      "Map sportsevents365 event IDs to DB match IDs",
+      "Store mappings in supplierExternalIds field"
+    ]
+  }
+}
