@@ -10,6 +10,8 @@
     "sync-fixtures": "node src/workers/syncFixtures.js",
     "update-prices-worker": "node src/workers/updatePricesWorker.js --start",
     "update-prices-once": "node src/workers/updatePricesWorker.js --run-once",
+    "update-exchange-rates-worker": "node src/workers/updateExchangeRatesWorker.js --start",
+    "update-exchange-rates-once": "node src/workers/updateExchangeRatesWorker.js --run-once",
     "import-teams": "node scripts/importPremierLeagueTeams.js",
     "update-teams-venues": "node scripts/updateTeamsWithVenues.js",
     "migrate-teamid": "node scripts/migrateTeamId.js",

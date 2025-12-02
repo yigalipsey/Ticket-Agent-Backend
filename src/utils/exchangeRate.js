@@ -19,152 +19,165 @@ const FALLBACK_RATES = {
   EUR: 1.0, // 1 EUR = 1 EUR
 };
 
-// Flag כדי למנוע קריאות מקבילות ל-API
-let isLoadingRates = false;
-let loadPromise = null;
+// שמירת השער האחרון כגיבוי (תמיד)
+let lastLoadedRates = null;
 
 /**
- * טעינה מראש של כל השערים המרכזיים ל-EUR פעם ביום
- * פונקציה זו נקראת אוטומטית בפעם הראשונה שמתבקשת המרה
+ * טעינת שערים מה-API (לקריאה מ-worker בלבד - לא בזמן אמת!)
+ * פונקציה זו נקראת פעם ביום דרך worker
  */
-const loadBaseRates = async () => {
-  const now = Date.now();
+export const loadBaseRatesFromAPI = async () => {
+  try {
+    logWithCheckpoint(
+      "info",
+      "Loading base exchange rates from API",
+      "EXCHANGE_RATE_LOAD_001",
+      {
+        currencies: SUPPORTED_CURRENCIES.filter((c) => c !== "EUR"),
+      }
+    );
 
-  // בדיקה אם צריך לטעון מחדש (אם אין cache או שפג תוקפו)
+    // טעינת כל השערים בבת אחת מה-API
+    const symbols = SUPPORTED_CURRENCIES.filter((c) => c !== "EUR").join(",");
+    const url = `https://api.exchangerate.host/latest?base=EUR&symbols=${symbols}`;
+
+    const response = await axios.get(url, {
+      timeout: 5000,
+    });
+
+    if (!response.data || !response.data.rates) {
+      throw new Error("Invalid response from exchange rate API");
+    }
+
+    const rates = response.data.rates;
+    const timestamp = Date.now();
+
+    // שמירת כל השערים ב-cache
+    for (const currency of SUPPORTED_CURRENCIES) {
+      if (currency === "EUR") {
+        // EUR ל-EUR הוא 1
+        baseRatesCache.set("EUR", {
+          rate: 1.0,
+          timestamp,
+        });
+      } else if (rates[currency]) {
+        // השער שמגיע מהא API הוא מ-EUR למטבע, אז נעשה הפוך (1/rate)
+        baseRatesCache.set(currency, {
+          rate: 1 / rates[currency], // המרה מ-currency ל-EUR
+          timestamp,
+        });
+      }
+    }
+
+    // שמירת השערים האחרונים כגיבוי
+    lastLoadedRates = {
+      rates: Object.fromEntries(
+        Array.from(baseRatesCache.entries()).map(([key, value]) => [
+          key,
+          value.rate,
+        ])
+      ),
+      timestamp,
+    };
+
+    logWithCheckpoint(
+      "info",
+      "Base exchange rates loaded successfully",
+      "EXCHANGE_RATE_LOAD_002",
+      {
+        loadedCurrencies: Array.from(baseRatesCache.keys()),
+        timestamp: new Date(timestamp).toISOString(),
+      }
+    );
+
+    return {
+      success: true,
+      loadedCurrencies: Array.from(baseRatesCache.keys()),
+      timestamp: new Date(timestamp).toISOString(),
+    };
+  } catch (error) {
+    logError(error, { operation: "loadBaseRatesFromAPI" });
+
+    // ניסיון 1: אם יש שערים שטענו בעבר - נשתמש בהם
+    if (lastLoadedRates) {
+      logWithCheckpoint(
+        "warn",
+        "API failed, using last loaded rates as fallback",
+        "EXCHANGE_RATE_LOAD_LAST_FALLBACK",
+        {
+          lastLoadedTimestamp: new Date(
+            lastLoadedRates.timestamp
+          ).toISOString(),
+          currencies: Object.keys(lastLoadedRates.rates),
+        }
+      );
+
+      const now = Date.now();
+      for (const [currency, rate] of Object.entries(lastLoadedRates.rates)) {
+        baseRatesCache.set(currency, {
+          rate,
+          timestamp: now, // עדכון timestamp כדי שימשיך לעבוד
+        });
+      }
+
+      return {
+        success: false,
+        error: error.message,
+        usedFallback: true,
+        fallbackType: "lastLoadedRates",
+      };
+    }
+
+    // ניסיון 2: נטען שערים קבועים
+    logWithCheckpoint(
+      "warn",
+      "API failed, loading fixed fallback rates",
+      "EXCHANGE_RATE_LOAD_FALLBACK",
+      {
+        currencies: SUPPORTED_CURRENCIES.filter((c) => c !== "EUR"),
+      }
+    );
+
+    const fallbackTimestamp = Date.now();
+    for (const currency of SUPPORTED_CURRENCIES) {
+      if (FALLBACK_RATES[currency]) {
+        baseRatesCache.set(currency, {
+          rate: FALLBACK_RATES[currency],
+          timestamp: fallbackTimestamp,
+        });
+      }
+    }
+
+    logWithCheckpoint(
+      "info",
+      "Fixed fallback rates loaded",
+      "EXCHANGE_RATE_LOAD_FALLBACK_SUCCESS",
+      {
+        loadedCurrencies: Array.from(baseRatesCache.keys()),
+        note: "Rates may not be up-to-date",
+      }
+    );
+
+    return {
+      success: false,
+      error: error.message,
+      usedFallback: true,
+      fallbackType: "fixedRates",
+    };
+  }
+};
+
+/**
+ * בדיקה אם יש cache תקין (לא קורא ל-API)
+ */
+const checkCache = () => {
+  const now = Date.now();
   const needsRefresh = SUPPORTED_CURRENCIES.some((currency) => {
-    if (currency === "EUR") return false; // EUR הוא בסיס
+    if (currency === "EUR") return false;
     const cached = baseRatesCache.get(currency);
     return !cached || now - cached.timestamp >= CACHE_TTL_MS;
   });
-
-  if (!needsRefresh) {
-    return; // הכל תקין, אין צורך בטעינה
-  }
-
-  // אם כבר בטעינה - מחכים לאותה טעינה
-  if (isLoadingRates && loadPromise) {
-    return await loadPromise;
-  }
-
-  // התחלת טעינה חדשה
-  isLoadingRates = true;
-  loadPromise = (async () => {
-    try {
-      logWithCheckpoint(
-        "info",
-        "Loading base exchange rates from API",
-        "EXCHANGE_RATE_LOAD_001",
-        {
-          currencies: SUPPORTED_CURRENCIES.filter((c) => c !== "EUR"),
-        }
-      );
-
-      // טעינת כל השערים בבת אחת מה-API
-      const symbols = SUPPORTED_CURRENCIES.filter((c) => c !== "EUR").join(",");
-      const url = `https://api.exchangerate.host/latest?base=EUR&symbols=${symbols}`;
-
-      const response = await axios.get(url, {
-        timeout: 5000,
-      });
-
-      if (!response.data || !response.data.rates) {
-        throw new Error("Invalid response from exchange rate API");
-      }
-
-      const rates = response.data.rates;
-      const timestamp = Date.now();
-
-      // שמירת כל השערים ב-cache
-      for (const currency of SUPPORTED_CURRENCIES) {
-        if (currency === "EUR") {
-          // EUR ל-EUR הוא 1
-          baseRatesCache.set("EUR", {
-            rate: 1.0,
-            timestamp,
-          });
-        } else if (rates[currency]) {
-          // השער שמגיע מהא API הוא מ-EUR למטבע, אז נעשה הפוך (1/rate)
-          baseRatesCache.set(currency, {
-            rate: 1 / rates[currency], // המרה מ-currency ל-EUR
-            timestamp,
-          });
-        }
-      }
-
-      logWithCheckpoint(
-        "info",
-        "Base exchange rates loaded successfully",
-        "EXCHANGE_RATE_LOAD_002",
-        {
-          loadedCurrencies: Array.from(baseRatesCache.keys()),
-          timestamp: new Date(timestamp).toISOString(),
-        }
-      );
-    } catch (error) {
-      logError(error, { operation: "loadBaseRates" });
-
-      // אם ה-API נכשל, נשתמש בשערים קבועים אם אין בקש
-      const now = Date.now();
-      let hasAnyCache = false;
-
-      for (const currency of SUPPORTED_CURRENCIES) {
-        const cached = baseRatesCache.get(currency);
-        if (cached) {
-          hasAnyCache = true;
-          break;
-        }
-      }
-
-      // אם אין cache בכלל, נטען שערים קבועים
-      if (!hasAnyCache) {
-        logWithCheckpoint(
-          "warn",
-          "API failed, loading fixed fallback rates",
-          "EXCHANGE_RATE_LOAD_FALLBACK",
-          {
-            currencies: SUPPORTED_CURRENCIES.filter((c) => c !== "EUR"),
-          }
-        );
-
-        const fallbackTimestamp = now;
-        for (const currency of SUPPORTED_CURRENCIES) {
-          if (FALLBACK_RATES[currency]) {
-            baseRatesCache.set(currency, {
-              rate: FALLBACK_RATES[currency],
-              timestamp: fallbackTimestamp,
-            });
-          }
-        }
-
-        logWithCheckpoint(
-          "info",
-          "Fixed fallback rates loaded",
-          "EXCHANGE_RATE_LOAD_FALLBACK_SUCCESS",
-          {
-            loadedCurrencies: Array.from(baseRatesCache.keys()),
-            note: "Rates may not be up-to-date",
-          }
-        );
-      } else {
-        // יש cache - נמשיך להשתמש בו (גם אם פג תוקף)
-        logWithCheckpoint(
-          "warn",
-          "API failed, but cache exists - will use stale cache",
-          "EXCHANGE_RATE_LOAD_CACHE_FALLBACK",
-          {
-            cachedCurrencies: Array.from(baseRatesCache.keys()),
-          }
-        );
-      }
-
-      // לא זורקים שגיאה - נמשיך עם cache או fallback
-    } finally {
-      isLoadingRates = false;
-      loadPromise = null;
-    }
-  })();
-
-  return await loadPromise;
+  return !needsRefresh;
 };
 
 /**
@@ -189,8 +202,19 @@ export const getExchangeRate = async (fromCurrency, toCurrency) => {
       SUPPORTED_CURRENCIES.includes(from) &&
       SUPPORTED_CURRENCIES.includes(to)
     ) {
-      // טעינת שערים מרכזיים אם נדרש
-      await loadBaseRates();
+      // בדיקה אם יש cache - אם לא, נשתמש ב-fallback (ללא קריאת API!)
+      if (!checkCache()) {
+        // Cache פג תוקף - נשתמש ב-fallback
+        logWithCheckpoint(
+          "warn",
+          "Exchange rate cache expired, using fallback (no API call)",
+          "EXCHANGE_RATE_CACHE_EXPIRED",
+          {
+            fromCurrency: from,
+            toCurrency: to,
+          }
+        );
+      }
 
       const fromRate = baseRatesCache.get(from);
       const toRate = baseRatesCache.get(to);
@@ -206,7 +230,7 @@ export const getExchangeRate = async (fromCurrency, toCurrency) => {
       }
     }
 
-    // אם לא מהמטבעות המרכזיים, נשתמש ב-cache הרגיל או נשלוף מה-API
+    // אם לא מהמטבעות המרכזיים, נשתמש ב-cache הרגיל בלבד (ללא קריאת API!)
     const cacheKey = `${from}->${to}`;
     const now = Date.now();
 
@@ -215,29 +239,21 @@ export const getExchangeRate = async (fromCurrency, toCurrency) => {
       return cached.rate;
     }
 
-    // שליפה מה-API רק אם זה מטבע שלא נפוץ
-    const url = `https://api.exchangerate.host/convert?from=${from}&to=${to}`;
-    const response = await axios.get(url, {
-      timeout: 5000,
-    });
+    // Cache פג תוקף - לא עושים קריאת API, נשתמש ב-fallback
+    logWithCheckpoint(
+      "warn",
+      "Exchange rate cache expired for non-standard currency, cannot convert",
+      "EXCHANGE_RATE_UNSUPPORTED",
+      {
+        fromCurrency: from,
+        toCurrency: to,
+      }
+    );
 
-    if (!response.data || typeof response.data.result !== "number") {
-      throw new Error(
-        `Invalid response from exchange rate API: ${JSON.stringify(
-          response.data
-        )}`
-      );
-    }
-
-    const rate = response.data.result;
-
-    // שמירה ב-cache
-    exchangeRateCache.set(cacheKey, {
-      rate,
-      timestamp: now,
-    });
-
-    return rate;
+    // זורק שגיאה כדי שניפול ל-fallback
+    throw new Error(
+      `Exchange rate for ${from}->${to} not in cache and API calls disabled`
+    );
   } catch (error) {
     logError(error, {
       operation: "getExchangeRate",

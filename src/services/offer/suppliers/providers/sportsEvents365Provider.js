@@ -84,16 +84,6 @@ export const fetchSportsEvents365Offer = async ({
       }
     );
 
-    console.log(
-      "\x1b[33m🔗 [SPORTSEVENTS365 API CALL] Making external API request to Sportsevents365\x1b[0m",
-      {
-        url: `${baseUrl}/events/${externalId}`,
-        eventId: externalId,
-        fixtureId: fixture?._id?.toString(),
-        offerId: offer?._id?.toString(),
-      }
-    );
-
     const response = await sportsEventsClient.get(`/events/${externalId}`, {
       params: { apiKey },
     });
@@ -141,18 +131,6 @@ export const fetchSportsEvents365Offer = async ({
         offerId: offer?._id?.toString(),
         minPrice: liveData.price,
         currency: liveData.currency,
-      }
-    );
-
-    console.log(
-      "\x1b[33m✅ [SPORTSEVENTS365 API RESPONSE] External API call completed successfully\x1b[0m",
-      {
-        eventId: externalId,
-        fixtureId: fixture?._id?.toString(),
-        offerId: offer?._id?.toString(),
-        minPrice: liveData.price,
-        currency: liveData.currency,
-        isAvailable: liveData.isAvailable,
       }
     );
 

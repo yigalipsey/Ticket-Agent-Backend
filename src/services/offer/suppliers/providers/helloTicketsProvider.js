@@ -48,16 +48,6 @@ export const fetchHelloTicketsOffer = async ({
       }
     );
 
-    console.log(
-      "\x1b[33m🔗 [HELLOTICKETS API CALL] Making external API request to HelloTickets\x1b[0m",
-      {
-        url: `${apiUrl}/performances/${externalId}`,
-        performanceId: externalId,
-        fixtureId: fixture?._id?.toString(),
-        offerId: offer?._id?.toString(),
-      }
-    );
-
     const { data } = await axios.get(`${apiUrl}/performances/${externalId}`, {
       headers: {
         Accept: "application/json",
@@ -103,18 +93,6 @@ export const fetchHelloTicketsOffer = async ({
         offerId: offer?._id?.toString(),
         minPrice: liveData.price,
         currency: liveData.currency,
-      }
-    );
-
-    console.log(
-      "\x1b[33m✅ [HELLOTICKETS API RESPONSE] External API call completed successfully\x1b[0m",
-      {
-        performanceId: externalId,
-        fixtureId: fixture?._id?.toString(),
-        offerId: offer?._id?.toString(),
-        minPrice: liveData.price,
-        currency: liveData.currency,
-        isAvailable: liveData.isAvailable,
       }
     );
 
