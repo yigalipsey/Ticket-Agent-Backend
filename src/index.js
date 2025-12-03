@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
+import helmet from "helmet";
 import dotenv from "dotenv";
 import databaseConnection from "./config/database.js";
 // Session middleware removed - using JWT tokens directly
@@ -31,7 +32,28 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-// Middleware
+// Security middleware - Helmet.js
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+        styleSrc: ["'self'", "'unsafe-inline'"],
+        scriptSrc: ["'self'"],
+        imgSrc: ["'self'", "data:", "https:"],
+        connectSrc: ["'self'"],
+        fontSrc: ["'self'"],
+        objectSrc: ["'none'"],
+        mediaSrc: ["'self'"],
+        frameSrc: ["'none'"],
+      },
+    },
+    crossOriginEmbedderPolicy: false, // Allow embedding from frontend
+    crossOriginResourcePolicy: { policy: "cross-origin" }, // Allow cross-origin requests
+  })
+);
+
+// CORS middleware
 app.use(
   cors({
     origin: process.env.FRONTEND_URL || "http://localhost:3000",
@@ -39,16 +61,11 @@ app.use(
   })
 );
 // Print important envs for cookie/cors diagnostics
-try {
-  const YELLOW = "\x1b[33m";
-  const RESET = "\x1b[0m";
-  console.log(
-    `${YELLOW}%s${RESET}`,
-    `ENV CHECK → NODE_ENV=${process.env.NODE_ENV} | FRONTEND_URL=${
-      process.env.FRONTEND_URL
-    } | COOKIE_DOMAIN=${process.env.COOKIE_DOMAIN || "(unset)"}`
-  );
-} catch {}
+logWithCheckpoint("info", "Environment configuration loaded", "ENV_CHECK_001", {
+  NODE_ENV: process.env.NODE_ENV,
+  FRONTEND_URL: process.env.FRONTEND_URL,
+  COOKIE_DOMAIN: process.env.COOKIE_DOMAIN || "(unset)",
+});
 // Session middleware removed - JWT tokens handled in routes
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true }));
@@ -144,10 +161,10 @@ app.use((error, req, res, next) => {
 async function connectToDatabase() {
   try {
     const result = await databaseConnection.connect(process.env.MONGODB_URI);
-    console.log("Database connection result:", result);
+    logWithCheckpoint("info", "Database connection result", "DB_CONNECT_001", { result });
     return result;
   } catch (error) {
-    console.error("Database connection failed:", error);
+    logError(error, { operation: "connectToDatabase" });
     return false;
   }
 }
@@ -165,10 +182,8 @@ async function startServer() {
       logWithCheckpoint("info", "Server started successfully", "SERVER_003", {
         port: PORT,
         environment: process.env.NODE_ENV || "development",
+        healthCheck: `http://localhost:${PORT}/health`,
       });
-
-      console.log(`🚀 Ticket Agent API is running on port ${PORT}`);
-      console.log(`📊 Health check: http://localhost:${PORT}/health`);
     });
   } catch (error) {
     logError(error, { operation: "startServer" });

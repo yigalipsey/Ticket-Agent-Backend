@@ -146,14 +146,14 @@ export const getFootballEventsByTeamId = async (teamId, query = {}) => {
     // Fetch all fixtures without pagination
     const footballEvents = await FootballEvent.find(filter)
       .sort(sort)
-      .populate("league", "name logoUrl slug")
+      .populate("league", "name nameHe logoUrl slug")
       .populate("homeTeam", "name slug logoUrl")
       .populate("awayTeam", "name slug logoUrl")
       .populate("venue", "name city_en city_he")
       .select("+minPrice") // Include minPrice (hidden field)
       .lean();
 
-    // Remove unnecessary fields from response
+    // Remove unnecessary fields from response and set Hebrew name as default
     const hebrewEvents = footballEvents.map((event) => {
       const {
         status,
@@ -165,6 +165,12 @@ export const getFootballEventsByTeamId = async (teamId, query = {}) => {
         supplierExternalIds,
         ...rest
       } = event;
+      
+      // Set Hebrew name as default name for league
+      if (rest.league && rest.league.nameHe) {
+        rest.league.name = rest.league.nameHe;
+      }
+      
       return rest;
     });
 

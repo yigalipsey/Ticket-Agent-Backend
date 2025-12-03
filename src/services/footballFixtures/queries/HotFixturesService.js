@@ -82,7 +82,7 @@ class HotFixturesService {
       .limit(limit)
       .lean();
 
-    // Remove unnecessary fields from response
+    // Remove unnecessary fields from response and set Hebrew name as default
     const hotFixtures = hotFixturesRaw.map((fixture) => {
       const {
         status,
@@ -94,6 +94,12 @@ class HotFixturesService {
         supplierExternalIds,
         ...rest
       } = fixture;
+      
+      // Set Hebrew name as default name for league
+      if (rest.league && rest.league.nameHe) {
+        rest.league.name = rest.league.nameHe;
+      }
+      
       return rest;
     });
 

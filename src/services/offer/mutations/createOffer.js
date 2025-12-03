@@ -29,6 +29,9 @@ export const createOffer = async (offerData) => {
       url,
     } = offerData;
 
+    const sanitizedUrl =
+      typeof url === "string" && url.trim().length > 0 ? url.trim() : undefined;
+
     // Determine ownerType and ownerId
     // Support both old format (agentId) and new format (ownerType + ownerId)
     const finalOwnerType = ownerType || (agentId ? "Agent" : null);
@@ -101,7 +104,7 @@ export const createOffer = async (offerData) => {
       notes,
       source: source || "p1",
       metadata,
-      url,
+      url: sanitizedUrl,
       isAvailable: true,
     });
 

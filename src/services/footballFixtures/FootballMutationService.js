@@ -54,7 +54,7 @@ class FootballMutationService {
           runValidators: true,
         }
       )
-        .populate("league", "name country")
+        .populate("league", "name nameHe country")
         .populate("homeTeam", "name code")
         .populate("awayTeam", "name code")
         .populate("venue", "name city capacity")
@@ -80,6 +80,12 @@ class FootballMutationService {
           id,
         }
       );
+      
+      // Set Hebrew name as default name for league
+      if (footballEvent && footballEvent.league && footballEvent.league.nameHe) {
+        footballEvent.league.name = footballEvent.league.nameHe;
+      }
+      
       return footballEvent;
     } catch (error) {
       logError(error, { operation: "updateFootballEvent", id, updateData });
@@ -133,7 +139,7 @@ class FootballMutationService {
           updateData,
           { new: true, runValidators: true }
         )
-          .populate("league", "name country")
+          .populate("league", "name nameHe country")
           .populate("homeTeam", "name code")
           .populate("awayTeam", "name code")
           .populate("venue", "name city capacity")
@@ -147,6 +153,11 @@ class FootballMutationService {
             footballEventId: updatedFootballEvent._id,
           }
         );
+
+        // Set Hebrew name as default name for league
+        if (updatedFootballEvent && updatedFootballEvent.league && updatedFootballEvent.league.nameHe) {
+          updatedFootballEvent.league.name = updatedFootballEvent.league.nameHe;
+        }
 
         return updatedFootballEvent;
       } else {

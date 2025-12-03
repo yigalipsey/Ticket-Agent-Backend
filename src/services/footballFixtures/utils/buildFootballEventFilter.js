@@ -78,7 +78,7 @@ export const buildPaginationParams = (page, limit) => {
 // Build populate options for football events
 export const buildPopulateOptions = (includeDetails = true) => {
   const basePopulate = [
-    { path: "league", select: "name country logoUrl slug" },
+    { path: "league", select: "name nameHe country logoUrl slug" },
     { path: "homeTeam", select: "name code slug logoUrl" },
     { path: "awayTeam", select: "name code slug logoUrl" },
     { path: "venue", select: "name city_en city_he capacity" },
@@ -90,7 +90,7 @@ export const buildPopulateOptions = (includeDetails = true) => {
 
   // Minimal populate for list views
   return [
-    { path: "league", select: "name slug" },
+    { path: "league", select: "name nameHe slug" },
     { path: "homeTeam", select: "name code slug" },
     { path: "awayTeam", select: "name code slug" },
     { path: "venue", select: "name city_en city_he" },

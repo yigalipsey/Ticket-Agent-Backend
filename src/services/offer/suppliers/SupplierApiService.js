@@ -80,7 +80,7 @@ class SupplierApiService {
         .populate({
           path: "ownerId",
           select:
-            "name slug imageUrl logoUrl syncConfig isActive priority metadata affiliateLinkBase",
+            "name slug imageUrl logoUrl syncConfig isActive priority metadata affiliateLinkBase trustpilotRating trustpilotUrl",
         })
         .lean();
 

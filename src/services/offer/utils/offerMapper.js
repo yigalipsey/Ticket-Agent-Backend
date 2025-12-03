@@ -127,6 +127,14 @@ const resolveOwnerObject = (offer) => {
     imageUrl: getImageUrl(populatedOwner),
   };
 
+  if (offer.ownerType === "Supplier") {
+    baseOwnerData.trustpilotRating =
+      typeof populatedOwner.trustpilotRating === "number"
+        ? populatedOwner.trustpilotRating
+        : null;
+    baseOwnerData.trustpilotUrl = populatedOwner.trustpilotUrl || null;
+  }
+
   return baseOwnerData;
 };
 

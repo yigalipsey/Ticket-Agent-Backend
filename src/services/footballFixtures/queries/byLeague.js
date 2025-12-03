@@ -147,7 +147,7 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
 
       // Build base query - no pagination, return all fixtures
       const baseQuery = FootballEvent.find(filter)
-        .populate("league", "name logoUrl slug")
+        .populate("league", "name nameHe logoUrl slug")
         .populate("homeTeam", "name slug logoUrl")
         .populate("awayTeam", "name slug logoUrl")
         .populate("venue", "name city_en city_he")
@@ -157,7 +157,7 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
       // Fetch all fixtures without pagination
       const fixturesRaw = await baseQuery.lean();
 
-      // Remove unnecessary fields from response
+      // Remove unnecessary fields from response and set Hebrew name as default
       const fixtures = fixturesRaw.map((fixture) => {
         const {
           status,
@@ -169,6 +169,12 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
           supplierExternalIds,
           ...rest
         } = fixture;
+        
+        // Set Hebrew name as default name for league
+        if (rest.league && rest.league.nameHe) {
+          rest.league.name = rest.league.nameHe;
+        }
+        
         return rest;
       });
 

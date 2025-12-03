@@ -87,6 +87,33 @@ router.post(
         );
       }
 
+      // Validate URL for sales page if provided
+      let normalizedUrl;
+      if (typeof offerData.url === "string") {
+        const trimmedUrl = offerData.url.trim();
+        if (trimmedUrl.length > 0) {
+          try {
+            const parsedUrl = new URL(trimmedUrl);
+            if (!["http:", "https:"].includes(parsedUrl.protocol)) {
+              return res.status(400).json(
+                createErrorResponse("VALIDATION_INVALID_FORMAT", {
+                  field: "url",
+                  reason: "URL must start with http or https",
+                })
+              );
+            }
+            normalizedUrl = parsedUrl.toString();
+          } catch {
+            return res.status(400).json(
+              createErrorResponse("VALIDATION_INVALID_FORMAT", {
+                field: "url",
+                reason: "Invalid sales page URL",
+              })
+            );
+          }
+        }
+      }
+
       // Add agentId, ownerType, and fixtureId to offerData
       // Default ticketType to "standard" if not provided
       const offerDataWithAgent = {
@@ -95,6 +122,7 @@ router.post(
         agentId, // Keep for backward compatibility
         ownerType: "Agent", // Set ownerType based on authentication
         ticketType: offerData.ticketType || "standard", // Default to standard
+        url: normalizedUrl,
       };
 
       const offer = await OfferService.mutate.createOffer(offerDataWithAgent);

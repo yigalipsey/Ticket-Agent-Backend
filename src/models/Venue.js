@@ -55,6 +55,11 @@ const venueSchema = new mongoose.Schema(
         sparse: true,
       },
     },
+    isPopular: {
+      type: Boolean,
+      default: false,
+      index: true,
+    },
   },
   {
     timestamps: true,
@@ -68,6 +73,7 @@ venueSchema.index({ city_en: 1 });
 venueSchema.index({ city_he: 1 });
 venueSchema.index({ country_en: 1 });
 venueSchema.index({ country_he: 1 });
+venueSchema.index({ isPopular: 1 });
 
 // Helper function to return venue data with Hebrew names (for Mongoose documents)
 venueSchema.methods.toHebrewObject = function () {

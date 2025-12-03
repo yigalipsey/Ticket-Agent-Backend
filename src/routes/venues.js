@@ -41,6 +41,31 @@ router.get("/", rateLimit(100), async (req, res) => {
   }
 });
 
+// GET /api/venues/stadiums - Get stadiums from all leagues with optional isPopular filter
+router.get("/stadiums", rateLimit(100), async (req, res) => {
+  try {
+    const result = await VenueService.query.getStadiumsFromAllLeagues(
+      req.query
+    );
+
+    res.json({
+      success: true,
+      data: result.venues,
+      pagination: result.pagination,
+    });
+  } catch (error) {
+    logError(error, {
+      route: "GET /api/venues/stadiums",
+      query: req.query,
+    });
+    res.status(500).json({
+      success: false,
+      error: "Failed to fetch stadiums",
+      message: error.message,
+    });
+  }
+});
+
 // GET /api/venues/:id - Get venue by ID
 router.get("/:id", rateLimit(100), async (req, res) => {
   try {
@@ -77,72 +102,84 @@ router.get("/:id", rateLimit(100), async (req, res) => {
 });
 
 // POST /api/venues - Create new venue
-router.post("/", authenticateToken, requireRole("agent"), rateLimit(10), async (req, res) => {
-  try {
-    const venueData = req.body;
+router.post(
+  "/",
+  authenticateToken,
+  requireRole("agent"),
+  rateLimit(10),
+  async (req, res) => {
+    try {
+      const venueData = req.body;
 
-    // Basic validation
-    if (!venueData.name || !venueData.city) {
-      return res.status(400).json({
+      // Basic validation
+      if (!venueData.name || !venueData.city) {
+        return res.status(400).json({
+          success: false,
+          error: "Name and city are required",
+        });
+      }
+
+      const venue = await VenueService.mutate.createVenue(venueData);
+
+      res.status(201).json({
+        success: true,
+        data: venue,
+      });
+    } catch (error) {
+      logError(error, { route: "POST /api/venues", body: req.body });
+      res.status(500).json({
         success: false,
-        error: "Name and city are required",
+        error: "Failed to create venue",
+        message: error.message,
       });
     }
-
-    const venue = await VenueService.mutate.createVenue(venueData);
-
-    res.status(201).json({
-      success: true,
-      data: venue,
-    });
-  } catch (error) {
-    logError(error, { route: "POST /api/venues", body: req.body });
-    res.status(500).json({
-      success: false,
-      error: "Failed to create venue",
-      message: error.message,
-    });
   }
-});
+);
 
 // PUT /api/venues/:id - Update venue
-router.put("/:id", authenticateToken, requireRole("agent"), rateLimit(20), async (req, res) => {
-  try {
-    const { id } = req.params;
-    const updateData = req.body;
+router.put(
+  "/:id",
+  authenticateToken,
+  requireRole("agent"),
+  rateLimit(20),
+  async (req, res) => {
+    try {
+      const { id } = req.params;
+      const updateData = req.body;
 
-    if (!id.match(/^[0-9a-fA-F]{24}$/)) {
-      return res.status(400).json({
+      if (!id.match(/^[0-9a-fA-F]{24}$/)) {
+        return res.status(400).json({
+          success: false,
+          error: "Invalid venue ID format",
+        });
+      }
+
+      const venue = await VenueService.mutate.updateVenue(id, updateData);
+
+      if (!venue) {
+        return res.status(404).json({
+          success: false,
+          error: "Venue not found",
+        });
+      }
+
+      res.json({
+        success: true,
+        data: venue,
+      });
+    } catch (error) {
+      logError(error, {
+        route: "PUT /api/venues/:id",
+        id: req.params.id,
+        body: req.body,
+      });
+      res.status(500).json({
         success: false,
-        error: "Invalid venue ID format",
+        error: "Failed to update venue",
+        message: error.message,
       });
     }
-
-    const venue = await VenueService.mutate.updateVenue(id, updateData);
-
-    if (!venue) {
-      return res.status(404).json({
-        success: false,
-        error: "Venue not found",
-      });
-    }
-
-    res.json({
-      success: true,
-      data: venue,
-    });
-  } catch (error) {
-    logError(error, {
-      route: "PUT /api/venues/:id",
-      id: req.params.id,
-      body: req.body,
-    });
-    res.status(500).json({
-      success: false,
-      error: "Failed to update venue",
-      message: error.message,
-    });
   }
-});
+);
 
 export default router;

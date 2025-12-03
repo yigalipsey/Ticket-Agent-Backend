@@ -138,11 +138,17 @@ npm start
 - Timestamps for audit trail
 
 ### Security
+- **Helmet.js** - Secure HTTP headers
 - JWT authentication
 - Password hashing with bcryptjs
 - Rate limiting
-- Input validation
+- Input validation with Joi
 - CORS configuration
+- Content Security Policy (CSP)
+- XSS protection
+- Clickjacking protection
+
+For detailed security documentation, see [SECURITY.md](./SECURITY.md)
 
 ## Contributing
 
