@@ -127,12 +127,36 @@ const resolveOwnerObject = (offer) => {
     imageUrl: getImageUrl(populatedOwner),
   };
 
-  if (offer.ownerType === "Supplier") {
-    baseOwnerData.trustpilotRating =
-      typeof populatedOwner.trustpilotRating === "number"
-        ? populatedOwner.trustpilotRating
-        : null;
-    baseOwnerData.trustpilotUrl = populatedOwner.trustpilotUrl || null;
+  // Support externalRating for both Suppliers and Agents
+  if (offer.ownerType === "Supplier" || offer.ownerType === "Agent") {
+    if (populatedOwner.externalRating) {
+      baseOwnerData.externalRating = {
+        rating:
+          typeof populatedOwner.externalRating.rating === "number"
+            ? populatedOwner.externalRating.rating
+            : null,
+        url: populatedOwner.externalRating.url || null,
+        provider: populatedOwner.externalRating.provider || null,
+      };
+    } else {
+      // Backward compatibility: check for old trustpilot fields (only for Suppliers)
+      if (
+        offer.ownerType === "Supplier" &&
+        (typeof populatedOwner.trustpilotRating === "number" ||
+          populatedOwner.trustpilotUrl)
+      ) {
+        baseOwnerData.externalRating = {
+          rating:
+            typeof populatedOwner.trustpilotRating === "number"
+              ? populatedOwner.trustpilotRating
+              : null,
+          url: populatedOwner.trustpilotUrl || null,
+          provider: "trustpilot",
+        };
+      } else {
+        baseOwnerData.externalRating = null;
+      }
+    }
   }
 
   return baseOwnerData;

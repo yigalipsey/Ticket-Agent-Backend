@@ -53,6 +53,28 @@ const agentSchema = new mongoose.Schema(
       type: String,
       trim: true,
     },
+    externalRating: {
+      rating: {
+        type: Number,
+        min: 0,
+        max: 5,
+      },
+      url: {
+        type: String,
+        trim: true,
+        validate: {
+          validator: function (v) {
+            return !v || /^https?:\/\/.+/.test(v);
+          },
+          message: "External rating URL must be a valid HTTP/HTTPS URL",
+        },
+      },
+      provider: {
+        type: String,
+        enum: ["trustpilot", "google"],
+        trim: true,
+      },
+    },
   },
   { timestamps: true }
 );

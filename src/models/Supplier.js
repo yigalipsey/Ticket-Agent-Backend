@@ -45,19 +45,26 @@ const supplierSchema = new mongoose.Schema(
         message: "Website URL must be a valid HTTP/HTTPS URL",
       },
     },
-    trustpilotRating: {
-      type: Number,
-      min: 0,
-      max: 5,
-    },
-    trustpilotUrl: {
-      type: String,
-      trim: true,
-      validate: {
-        validator: function (v) {
-          return !v || /^https?:\/\/.+/.test(v);
+    externalRating: {
+      rating: {
+        type: Number,
+        min: 0,
+        max: 5,
+      },
+      url: {
+        type: String,
+        trim: true,
+        validate: {
+          validator: function (v) {
+            return !v || /^https?:\/\/.+/.test(v);
+          },
+          message: "External rating URL must be a valid HTTP/HTTPS URL",
         },
-        message: "Trustpilot URL must be a valid HTTP/HTTPS URL",
+      },
+      provider: {
+        type: String,
+        enum: ["trustpilot", "google"],
+        trim: true,
       },
     },
     affiliateLinkBase: {
@@ -178,8 +185,13 @@ supplierSchema.methods.toPublicObject = function () {
     description: this.description,
     imageUrl: this.imageUrl,
     websiteUrl: this.websiteUrl,
-    trustpilotRating: this.trustpilotRating ?? null,
-    trustpilotUrl: this.trustpilotUrl || null,
+    externalRating: this.externalRating
+      ? {
+          rating: this.externalRating.rating ?? null,
+          url: this.externalRating.url || null,
+          provider: this.externalRating.provider || null,
+        }
+      : null,
     countries: this.countries,
     leagues: this.leagues,
     isActive: this.isActive,

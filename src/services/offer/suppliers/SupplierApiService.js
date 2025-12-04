@@ -8,6 +8,7 @@ import {
 import { fetchHelloTicketsOffer } from "./providers/helloTicketsProvider.js";
 import { fetchSportsEvents365Offer } from "./providers/sportsEvents365Provider.js";
 import { updateOfferPrice } from "../mutations/updateOffer.js";
+import { updateFixtureMinPrice } from "../utils/fixtureMinPriceService.js";
 
 const LIVE_SUPPLIER_FETCHERS = {
   "692476c8b4f389968e1f00f5": {
@@ -80,7 +81,7 @@ class SupplierApiService {
         .populate({
           path: "ownerId",
           select:
-            "name slug imageUrl logoUrl syncConfig isActive priority metadata affiliateLinkBase trustpilotRating trustpilotUrl",
+            "name slug imageUrl logoUrl syncConfig isActive priority metadata affiliateLinkBase externalRating",
         })
         .lean();
 
@@ -339,6 +340,7 @@ class SupplierApiService {
     if (Object.keys(priceUpdatePayload).length > 0) {
       await updateOfferPrice(offer._id, priceUpdatePayload);
       persisted = true;
+      // updateOfferPrice already calls updateFixtureMinPrice internally
     }
 
     if (Object.keys(nonPriceUpdates).length > 0) {
@@ -347,6 +349,23 @@ class SupplierApiService {
         { $set: nonPriceUpdates, $currentDate: { updatedAt: true } }
       );
       persisted = true;
+
+      // אם יש עדכון של isAvailable, צריך לבדוק אם minPrice צריך להתעדכן
+      // (כי אם ההצעה הכי נמוכה הפכה ללא זמינה, צריך למצוא את ההצעה הכי נמוכה הבאה)
+      if (nonPriceUpdates.isAvailable !== undefined && offer.fixtureId) {
+        try {
+          await updateFixtureMinPrice(offer.fixtureId, {
+            refreshCache: false, // לא לרענן cache כאן כי זה חלק מתהליך שליפה
+          });
+        } catch (error) {
+          logError(error, {
+            operation: "updateFixtureMinPrice in SupplierApiService",
+            offerId: offer._id,
+            fixtureId: offer.fixtureId,
+          });
+          // ממשיכים גם אם יש שגיאה בעדכון minPrice
+        }
+      }
     }
 
     return { persisted };

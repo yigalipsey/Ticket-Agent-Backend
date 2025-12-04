@@ -7,27 +7,9 @@ import { logWithCheckpoint, logError } from "../src/utils/logger.js";
 dotenv.config();
 
 /**
- * Script to update Trustpilot rating and URL for suppliers
+ * Script to migrate all suppliers from trustpilotRating/trustpilotUrl to externalRating format
+ * This script finds all suppliers with old trustpilot fields and converts them to the new externalRating format
  */
-
-// Supplier data to update
-const supplierUpdates = [
-  {
-    id: "692476c8b4f389968e1f00f5",
-    trustpilotUrl: "https://www.trustpilot.com/review/hellotickets.com",
-    trustpilotRating: 4.2,
-  },
-  {
-    id: "691f13ba34f1aabcacf68b18",
-    trustpilotUrl: "https://www.trustpilot.com/review/p1travel.com",
-    trustpilotRating: 4.6,
-  },
-  {
-    id: "692c5e80270da1b2ea057dd9",
-    trustpilotUrl: "https://www.trustpilot.com/review/www.sportsevents365.com",
-    trustpilotRating: 4,
-  },
-];
 
 async function connectToDatabase() {
   try {
@@ -48,58 +30,91 @@ async function connectToDatabase() {
   }
 }
 
-async function findSuppliersByIds() {
+async function findSuppliersToMigrate() {
   try {
     logWithCheckpoint(
       "info",
-      "Finding suppliers by MongoDB IDs",
+      "Finding suppliers with old trustpilot fields",
       "SCRIPT_003"
     );
 
-    const foundSuppliers = [];
+    // Find all suppliers that have trustpilotRating or trustpilotUrl but don't have externalRating
+    const suppliers = await Supplier.find({
+      $and: [
+        {
+          $or: [
+            { trustpilotRating: { $exists: true, $ne: null } },
+            { trustpilotUrl: { $exists: true, $ne: null } },
+          ],
+        },
+        {
+          $or: [
+            { externalRating: { $exists: false } },
+            { externalRating: null },
+          ],
+        },
+      ],
+    }).lean();
 
-    for (const update of supplierUpdates) {
-      const supplier = await Supplier.findById(update.id).lean();
+    logWithCheckpoint(
+      "info",
+      `Found ${suppliers.length} suppliers to migrate`,
+      "SCRIPT_004",
+      { count: suppliers.length }
+    );
 
-      if (supplier) {
-        foundSuppliers.push({
+    const suppliersToUpdate = suppliers
+      .map((supplier) => {
+        // Convert old trustpilot fields to new externalRating format
+        const externalRating = {
+          rating:
+            supplier.trustpilotRating != null
+              ? Number(supplier.trustpilotRating)
+              : null,
+          url: supplier.trustpilotUrl || null,
+          provider: "trustpilot",
+        };
+
+        // Only include if we have at least rating or url
+        if (externalRating.rating == null && !externalRating.url) {
+          return null;
+        }
+
+        return {
           _id: supplier._id,
           name: supplier.name,
           slug: supplier.slug,
           currentRating: supplier.trustpilotRating || null,
           currentUrl: supplier.trustpilotUrl || null,
           updateData: {
-            trustpilotUrl: update.trustpilotUrl,
-            trustpilotRating: update.trustpilotRating,
+            externalRating,
           },
-        });
-        logWithCheckpoint(
-          "info",
-          `Found supplier: ${supplier.name} (${supplier.slug})`,
-          "SCRIPT_004",
-          { supplierId: supplier._id }
-        );
-      } else {
-        logWithCheckpoint(
-          "warn",
-          `Supplier not found with ID: ${update.id}`,
-          "SCRIPT_004"
-        );
-      }
-    }
+        };
+      })
+      .filter(Boolean);
 
-    return foundSuppliers;
+    logWithCheckpoint(
+      "info",
+      `Prepared ${suppliersToUpdate.length} suppliers for migration`,
+      "SCRIPT_004",
+      {
+        total: suppliers.length,
+        valid: suppliersToUpdate.length,
+      }
+    );
+
+    return suppliersToUpdate;
   } catch (error) {
-    logError(error, { operation: "findSuppliersByIds" });
+    logError(error, { operation: "findSuppliersToMigrate" });
     throw error;
   }
 }
 
-async function updateSuppliersTrustpilot(suppliers) {
+async function updateSuppliersExternalRating(suppliers) {
   try {
     logWithCheckpoint(
       "info",
-      `Updating ${suppliers.length} suppliers with Trustpilot data`,
+      `Updating ${suppliers.length} suppliers with external rating data`,
       "SCRIPT_005"
     );
 
@@ -111,8 +126,12 @@ async function updateSuppliersTrustpilot(suppliers) {
           supplier._id,
           {
             $set: {
-              trustpilotUrl: supplier.updateData.trustpilotUrl,
-              trustpilotRating: supplier.updateData.trustpilotRating,
+              externalRating: supplier.updateData.externalRating,
+            },
+            // Remove old trustpilot fields if they exist
+            $unset: {
+              trustpilotRating: "",
+              trustpilotUrl: "",
             },
           },
           { runValidators: true, new: true }
@@ -125,8 +144,7 @@ async function updateSuppliersTrustpilot(suppliers) {
               _id: result._id,
               name: result.name,
               slug: result.slug,
-              trustpilotRating: result.trustpilotRating,
-              trustpilotUrl: result.trustpilotUrl,
+              externalRating: result.externalRating,
             },
           });
 
@@ -136,8 +154,9 @@ async function updateSuppliersTrustpilot(suppliers) {
             "SCRIPT_006",
             {
               supplierId: result._id,
-              rating: result.trustpilotRating,
-              url: result.trustpilotUrl,
+              rating: result.externalRating?.rating,
+              url: result.externalRating?.url,
+              provider: result.externalRating?.provider,
             }
           );
         }
@@ -149,7 +168,7 @@ async function updateSuppliersTrustpilot(suppliers) {
         });
 
         logError(error, {
-          operation: "updateSupplierTrustpilot",
+          operation: "updateSupplierExternalRating",
           supplierId: supplier._id,
           supplierName: supplier.name,
         });
@@ -158,7 +177,7 @@ async function updateSuppliersTrustpilot(suppliers) {
 
     return results;
   } catch (error) {
-    logError(error, { operation: "updateSuppliersTrustpilot" });
+    logError(error, { operation: "updateSuppliersExternalRating" });
     throw error;
   }
 }
@@ -168,46 +187,39 @@ async function main() {
     // Connect to database
     await connectToDatabase();
 
-    // Find suppliers by IDs
-    const foundSuppliers = await findSuppliersByIds();
+    // Find suppliers that need migration
+    const foundSuppliers = await findSuppliersToMigrate();
 
     if (foundSuppliers.length === 0) {
       logWithCheckpoint(
-        "warn",
-        "No suppliers found with the provided IDs",
+        "info",
+        "No suppliers found that need migration",
         "SCRIPT_007"
+      );
+      console.log(
+        "\n✅ No suppliers need migration. All suppliers are up to date."
       );
       return;
     }
 
-    if (foundSuppliers.length < supplierUpdates.length) {
-      logWithCheckpoint(
-        "warn",
-        `Only found ${foundSuppliers.length} out of ${supplierUpdates.length} suppliers`,
-        "SCRIPT_008",
-        {
-          found: foundSuppliers.length,
-          expected: supplierUpdates.length,
-        }
-      );
-    }
-
     logWithCheckpoint(
       "info",
-      `Found ${foundSuppliers.length} suppliers to update`,
+      `Found ${foundSuppliers.length} suppliers to migrate`,
       "SCRIPT_008",
       {
         suppliers: foundSuppliers.map((s) => ({
           name: s.name,
           slug: s.slug,
           currentRating: s.currentRating,
-          newRating: s.updateData.trustpilotRating,
+          currentUrl: s.currentUrl,
+          newRating: s.updateData.externalRating.rating,
+          provider: s.updateData.externalRating.provider,
         })),
       }
     );
 
     // Update suppliers
-    const updateResults = await updateSuppliersTrustpilot(foundSuppliers);
+    const updateResults = await updateSuppliersExternalRating(foundSuppliers);
 
     // Display results
     const successful = updateResults.filter((r) => r.success);
@@ -215,7 +227,7 @@ async function main() {
 
     logWithCheckpoint(
       "info",
-      "Trustpilot data update completed",
+      "External rating data update completed",
       "SCRIPT_009",
       {
         successful: successful.length,
@@ -223,31 +235,33 @@ async function main() {
       }
     );
 
-    console.log("\n✅ Successfully updated suppliers with Trustpilot data:");
+    console.log(
+      "\n✅ Successfully migrated suppliers to external rating format:"
+    );
     successful.forEach((result, index) => {
       const s = result.supplier;
-      console.log(
-        `${index + 1}. ${s.name} (${s.slug})`
-      );
+      const rating = s.externalRating;
+      console.log(`${index + 1}. ${s.name} (${s.slug})`);
       console.log(`   ID: ${s._id}`);
-      console.log(`   Trustpilot Rating: ${s.trustpilotRating}`);
-      console.log(`   Trustpilot URL: ${s.trustpilotUrl}`);
+      console.log(`   Provider: ${rating?.provider || "N/A"}`);
+      console.log(`   Rating: ${rating?.rating ?? "N/A"}`);
+      console.log(`   URL: ${rating?.url || "N/A"}`);
     });
 
     if (failed.length > 0) {
       console.log("\n❌ Failed to update suppliers:");
       failed.forEach((result, index) => {
-        console.log(
-          `${index + 1}. Supplier ID: ${result.supplierId}`
-        );
+        console.log(`${index + 1}. Supplier ID: ${result.supplierId}`);
         console.log(`   Error: ${result.error}`);
       });
     }
 
-    console.log(`\nTotal: ${successful.length} suppliers updated successfully`);
+    console.log(`\n📊 Migration Summary:`);
+    console.log(`   ✅ Successfully migrated: ${successful.length} suppliers`);
     if (failed.length > 0) {
-      console.log(`Failed: ${failed.length} suppliers`);
+      console.log(`   ❌ Failed: ${failed.length} suppliers`);
     }
+    console.log(`   📝 Total processed: ${foundSuppliers.length} suppliers`);
   } catch (error) {
     logError(error, { operation: "main" });
     console.error("❌ Error updating suppliers:", error.message);
@@ -261,4 +275,3 @@ async function main() {
 
 // Run the script
 main();
-
