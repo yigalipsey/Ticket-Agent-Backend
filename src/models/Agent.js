@@ -53,6 +53,16 @@ const agentSchema = new mongoose.Schema(
       type: String,
       trim: true,
     },
+    instagramUrl: {
+      type: String,
+      trim: true,
+      validate: {
+        validator: function (v) {
+          return !v || /^https?:\/\/.+/.test(v);
+        },
+        message: "Instagram URL must be a valid HTTP/HTTPS URL",
+      },
+    },
     externalRating: {
       rating: {
         type: Number,
