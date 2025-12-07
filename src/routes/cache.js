@@ -197,7 +197,7 @@ router.delete(
         leagueFixtures: fixturesByLeagueCacheService.clear(),
         leagues: leagueCacheService.clear(),
         offersByFixture: offersByFixtureCacheService.clear(),
-        hotFixtures: HotFixturesService.clearCache(),
+        // hotFixtures: אין cache למשחקים חמים - מביאים ישירות מה-DB
       };
 
       const totalCleared = Object.values(results).reduce((sum, val) => {
@@ -254,7 +254,7 @@ router.delete(
   }
 );
 
-// DELETE /api/cache/hot-fixtures - Clear only hot fixtures cache (Super Admin only)
+// DELETE /api/cache/hot-fixtures - אין cache למשחקים חמים (מביאים ישירות מה-DB)
 router.delete(
   "/hot-fixtures",
   auth,
@@ -264,23 +264,14 @@ router.delete(
     try {
       logWithCheckpoint(
         "info",
-        "Starting to clear hot fixtures cache",
+        "Hot fixtures cache clear requested - no cache exists",
         "CACHE_CLEAR_HOT_001"
-      );
-
-      const result = HotFixturesService.clearCache();
-
-      logWithCheckpoint(
-        "info",
-        "Hot fixtures cache cleared successfully",
-        "CACHE_CLEAR_HOT_002",
-        { result }
       );
 
       res.json({
         success: true,
-        message: "Hot fixtures cache cleared successfully",
-        clearedEntries: result?.clearedEntries || result || 0,
+        message: "אין cache למשחקים חמים - הנתונים מביאים ישירות מה-DB",
+        clearedEntries: 0,
       });
     } catch (error) {
       logError(error, { route: "DELETE /api/cache/hot-fixtures" });

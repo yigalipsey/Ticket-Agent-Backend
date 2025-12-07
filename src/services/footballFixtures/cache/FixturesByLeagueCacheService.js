@@ -23,15 +23,22 @@ class FixturesByLeagueCacheService {
 
   // יצירת מפתח cache גמיש
   generateCacheKey(leagueId, opts = {}) {
-    const { month = null, venueId = null } = opts;
+    const { month = null, venueId = null, hasOffers = null } = opts;
+
+    // בניית מפתח כולל את כל הפרמטרים הרלוונטיים
+    const parts = [`league:${leagueId}`];
 
     if (month !== null && month !== undefined) {
-      return `league:${leagueId}:month:${month}`;
+      parts.push(`month:${month}`);
     }
     if (venueId !== null && venueId !== undefined) {
-      return `league:${leagueId}:venue:${venueId}`;
+      parts.push(`venue:${venueId}`);
     }
-    return `league:${leagueId}:all`;
+    if (hasOffers === true || hasOffers === "true") {
+      parts.push(`hasOffers:true`);
+    }
+
+    return parts.length > 1 ? parts.join(":") : `league:${leagueId}:all`;
   }
 
   // קבלת נתונים מה-cache

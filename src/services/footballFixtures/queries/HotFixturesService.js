@@ -1,19 +1,11 @@
-import { LRUCache } from "lru-cache";
 import FootballEvent from "../../../models/FootballEvent.js";
-import {
-  immutableArrayCopy,
-  normalizeMongoData,
-} from "../../../utils/immutable.js";
+import { normalizeMongoData } from "../../../utils/immutable.js";
 
 /**
  * שירות לשליפת משחקים חמים
+ * מביא ישירות מה-DB ללא cache
  */
 class HotFixturesService {
-  // Cache פנימי ל-Service
-  static cache = new LRUCache({
-    max: 50, // עד 50 רשומות
-    ttl: 1000 * 60 * 60 * 8, // 8 שעות
-  });
   /**
    * שליפת משחקים חמים
    * @param {Object} options - אפשרויות סינון
@@ -33,31 +25,7 @@ class HotFixturesService {
       toDate,
     } = options;
 
-    // יצירת מפתח cache
-    const cacheKey = JSON.stringify({
-      limit,
-      sortBy,
-      sortOrder,
-      fromDate,
-      toDate,
-    });
-
-    // בדיקת cache
-    const cached = this.cache.get(cacheKey);
-    if (cached) {
-      console.log("🔥 [HotFixturesService] Cache hit", { cacheKey });
-      return {
-        success: true,
-        data: immutableArrayCopy(cached),
-        count: cached.length,
-        message: `נמצאו ${cached.length} משחקים חמים (מ-cache)`,
-        fromCache: true,
-      };
-    }
-
-    console.log("🔥 [HotFixturesService] Cache miss", { cacheKey });
-
-    // בניית query
+    // בניית query - רק משחקים חמים
     const query = { isHot: true };
 
     // הוספת סינון לפי תאריכים
@@ -71,7 +39,7 @@ class HotFixturesService {
     const sort = {};
     sort[sortBy] = sortOrder === "desc" ? -1 : 1;
 
-    // שליפת משחקים חמים
+    // שליפת משחקים חמים ישירות מה-DB
     const hotFixturesRaw = await FootballEvent.find(query)
       .populate("league", "name slug country nameHe")
       .populate("homeTeam", "name name_en slug logoUrl")
@@ -94,24 +62,17 @@ class HotFixturesService {
         supplierExternalIds,
         ...rest
       } = fixture;
-      
+
       // Set Hebrew name as default name for league
       if (rest.league && rest.league.nameHe) {
         rest.league.name = rest.league.nameHe;
       }
-      
+
       return rest;
     });
 
-    // נרמול ObjectIds לפני שמירה ב-cache
+    // נרמול ObjectIds
     const normalizedFixtures = normalizeMongoData(hotFixtures);
-
-    // שמירה ב-cache
-    this.cache.set(cacheKey, normalizedFixtures);
-    console.log("🔥 [HotFixturesService] Data cached", {
-      cacheKey,
-      fixturesCount: normalizedFixtures.length,
-    });
 
     return {
       success: true,
@@ -123,71 +84,23 @@ class HotFixturesService {
   }
 
   /**
-   * שליפת משחקים חמים עתידיים (מהתאריך הנוכחי ואילך) עם cache
+   * שליפת משחקים חמים עתידיים (מהתאריך הנוכחי ואילך)
+   * מביא ישירות מה-DB ללא cache
    * @param {number} limit - מספר משחקים מקסימלי
    * @returns {Promise<Object>} משחקים חמים עתידיים
    */
   static async getUpcomingHotFixtures(limit = 5) {
-    const cacheKey = `upcoming:${limit}`;
-
-    // בדיקה אם יש נתונים ב-cache
-    const cached = this.cache.get(cacheKey);
-    if (cached) {
-      console.log("🔥 [HotFixturesService] Upcoming cache hit", { cacheKey });
-      return {
-        success: true,
-        data: immutableArrayCopy(cached),
-        count: cached.length,
-        message: `נמצאו ${cached.length} משחקים חמים (מ-cache)`,
-        fromCache: true,
-      };
-    }
-
-    console.log("🔥 [HotFixturesService] Upcoming cache miss", { cacheKey });
-
-    // אם אין ב-cache, מביא מהמסד נתונים
-    // מסנן רק משחקים מהתאריך הנוכחי ואילך (ללא הגבלת זמן קדימה)
+    // תאריך נוכחי
     const now = new Date();
 
-    const result = await this.getHotFixtures({
+    // שליפה ישירה מה-DB - משחקים חמים עם תאריך עתידי
+    return await this.getHotFixtures({
       limit,
       sortBy: "date",
       sortOrder: "asc",
       fromDate: now,
       // ללא toDate - מחזיר את כל המשחקים החמים העתידיים ללא הגבלה
     });
-
-    // שמירה ב-cache אם הצליח
-    if (result.success && result.data) {
-      this.cache.set(cacheKey, result.data);
-      console.log("🔥 [HotFixturesService] Upcoming data cached", {
-        cacheKey,
-        fixturesCount: result.data.length,
-      });
-    }
-
-    return {
-      ...result,
-      fromCache: false,
-    };
-  }
-
-  /**
-   * איפוס cache של משחקים חמים
-   * @returns {Object} תוצאה של ניקוי cache
-   */
-  static clearCache() {
-    const size = this.cache.size;
-    this.cache.clear();
-    console.log("🔥 [HotFixturesService] Cache cleared", {
-      clearedEntries: size,
-    });
-
-    return {
-      success: true,
-      clearedEntries: size,
-      message: `Cache נוקה בהצלחה - ${size} רשומות נמחקו`,
-    };
   }
 }
 

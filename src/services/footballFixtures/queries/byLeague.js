@@ -55,12 +55,13 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
     }
 
     // בדיקת cache
-    // Create cache key that includes month or months and venueId
+    // Create cache key that includes month or months, venueId, and hasOffers
     const cacheKey =
       month || (months && months.length > 0 ? months.join(",") : null);
     const cachedData = fixturesByLeagueCacheService.get(leagueId, {
       month: cacheKey,
       venueId,
+      hasOffers,
     });
 
     let baseData;
@@ -169,12 +170,12 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
           supplierExternalIds,
           ...rest
         } = fixture;
-        
+
         // Set Hebrew name as default name for league
         if (rest.league && rest.league.nameHe) {
           rest.league.name = rest.league.nameHe;
         }
-        
+
         return rest;
       });
 
@@ -190,6 +191,7 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
       fixturesByLeagueCacheService.set(leagueId, baseData, {
         month: cacheKey,
         venueId,
+        hasOffers,
       });
 
       logWithCheckpoint(
@@ -206,6 +208,14 @@ export const getLeagueFixturesWithCache = async (leagueId, query = {}) => {
 
     // סינון הנתונים (רק פילטרים שלא יכולים להיות ב-DB)
     let filteredFixtures = [...(baseData.fixtures || [])];
+
+    // פילטר משחקים עם הצעות - צריך להישאר ב-memory כגיבוי
+    // (אם הנתונים הגיעו מ-cache שלא כלל את הפילטר)
+    if (hasOffers === true || hasOffers === "true") {
+      filteredFixtures = filteredFixtures.filter(
+        (fixture) => fixture.minPrice?.amount && fixture.minPrice.amount > 0
+      );
+    }
 
     // פילטר עיר - צריך להישאר ב-memory כי צריך לבדוק venue.name
     // (לא ניתן לסנן ב-DB לפני populate)
