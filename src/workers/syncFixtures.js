@@ -1,11 +1,57 @@
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import cron from "node-cron";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 import syncService from "../services/syncService.js";
 import { logWithCheckpoint, logError } from "../utils/logger.js";
 
 // Load environment variables
 dotenv.config();
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Results directory
+const RESULTS_DIR = path.join(__dirname, "../../data/footballApi");
+
+// Ensure results directory exists
+function ensureResultsDirectory() {
+  if (!fs.existsSync(RESULTS_DIR)) {
+    fs.mkdirSync(RESULTS_DIR, { recursive: true });
+  }
+}
+
+// Save worker results to file
+function saveResults(result, leagueId, season, error = null) {
+  try {
+    ensureResultsDirectory();
+    const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
+    const filename = `sync_fixtures_${leagueId}_${season}_${timestamp}.json`;
+    const filepath = path.join(RESULTS_DIR, filename);
+
+    const output = {
+      timestamp: new Date().toISOString(),
+      leagueId,
+      season,
+      success: !error,
+      ...(error ? { error: error.message, stack: error.stack } : { result }),
+    };
+
+    fs.writeFileSync(filepath, JSON.stringify(output, null, 2), "utf8");
+    logWithCheckpoint(
+      "info",
+      "Worker results saved",
+      "SYNC_FIXTURES_RESULT_SAVED",
+      { filepath }
+    );
+    return filepath;
+  } catch (saveError) {
+    logError(saveError, { operation: "saveResults" });
+    return null;
+  }
+}
 
 class SyncFixturesWorker {
   constructor() {
@@ -120,9 +166,11 @@ class SyncFixturesWorker {
               }
             );
 
-            await this.runSync(leagueId, season, options);
+            const result = await this.runSync(leagueId, season, options);
+            saveResults(result, leagueId, season);
           } catch (error) {
             logError(error, { operation: "scheduledSync", leagueId, season });
+            saveResults(null, leagueId, season, error);
           }
         },
         {
@@ -221,6 +269,43 @@ class SyncFixturesWorker {
 // Create worker instance
 const syncWorker = new SyncFixturesWorker();
 
+// Handle uncaught exceptions - prevent worker crash
+process.on("uncaughtException", (error) => {
+  logError(error, {
+    operation: "uncaughtException",
+    worker: "syncFixturesWorker",
+  });
+  logWithCheckpoint(
+    "error",
+    "Uncaught exception in sync fixtures worker - shutting down gracefully",
+    "WORKER_019",
+    { error: error.message }
+  );
+  // Stop the worker and exit
+  try {
+    syncWorker.stopAllJobs();
+  } catch (stopError) {
+    logError(stopError, { operation: "stopWorkerOnError" });
+  }
+  process.exit(1);
+});
+
+// Handle unhandled promise rejections - prevent worker crash
+process.on("unhandledRejection", (reason, promise) => {
+  logError(new Error(`Unhandled Rejection at: ${promise}, reason: ${reason}`), {
+    operation: "unhandledRejection",
+    worker: "syncFixturesWorker",
+  });
+  logWithCheckpoint(
+    "error",
+    "Unhandled rejection in sync fixtures worker",
+    "WORKER_020",
+    { reason: reason?.toString() || "Unknown" }
+  );
+  // Note: We don't exit on unhandled rejection to allow the worker to continue
+  // but we log it for monitoring
+});
+
 // Handle process termination
 process.on("SIGINT", async () => {
   logWithCheckpoint(
@@ -295,9 +380,23 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       await syncWorker.connectToDatabase();
       const result = await syncWorker.runSync(leagueId, season, options);
       console.log("Sync completed:", result);
+
+      // Save results to file
+      const savedPath = saveResults(result, leagueId, season);
+      if (savedPath) {
+        console.log(`\n✅ Results saved to: ${savedPath}`);
+      }
+
       await syncWorker.disconnectFromDatabase();
     } catch (error) {
       console.error("Sync failed:", error);
+
+      // Save error results to file
+      const savedPath = saveResults(null, leagueId, season, error);
+      if (savedPath) {
+        console.log(`\n⚠️ Error results saved to: ${savedPath}`);
+      }
+
       process.exit(1);
     }
   })();

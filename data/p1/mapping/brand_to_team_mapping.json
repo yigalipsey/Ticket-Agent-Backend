@@ -1,0 +1,686 @@
+{
+  "generatedAt": "2025-12-07T12:49:51.939Z",
+  "supplierId": "691f13ba34f1aabcacf68b18",
+  "supplierName": "P1 Travel",
+  "totalLeagues": 6,
+  "totalBrands": 127,
+  "leagues": [
+    {
+      "leagueId": "68f784ee63924d01b9f06eaa",
+      "leagueName": "Bundesliga",
+      "leagueSlug": "bundesliga",
+      "brands": [
+        {
+          "brand": "1. FSV Mainz 05",
+          "teamId": "68f7851162db2d92f4bdf7c9",
+          "teamName": "מיינץ 05"
+        },
+        {
+          "brand": "Bayer 04 Leverkusen",
+          "teamId": "68e25b360d7b31dba56dde72",
+          "teamName": "באייר לברקוזן"
+        },
+        {
+          "brand": "Borussia Dortmund",
+          "teamId": "68e25b330d7b31dba56dde22",
+          "teamName": "בורוסיה דורטמונד"
+        },
+        {
+          "brand": "Eintracht Frankfurt",
+          "teamId": "68e25b340d7b31dba56dde42",
+          "teamName": "איינטרכט פרנקפורט"
+        },
+        {
+          "brand": "FC Augsburg",
+          "teamId": "68f7851162db2d92f4bdf7e1",
+          "teamName": "אאוגסבורג"
+        },
+        {
+          "brand": "FC Bayern München",
+          "teamId": "68e25b320d7b31dba56dde03",
+          "teamName": "באיירן מינכן"
+        },
+        {
+          "brand": "FC Heidenheim 1846",
+          "teamId": "68f7851162db2d92f4bdf7f9",
+          "teamName": "היידנהיים"
+        },
+        {
+          "brand": "FC Köln",
+          "teamId": "68f7851262db2d92f4bdf80b",
+          "teamName": "קלן"
+        },
+        {
+          "brand": "FC St. Pauli",
+          "teamId": "68f7851262db2d92f4bdf805",
+          "teamName": "סנט פאולי"
+        },
+        {
+          "brand": "Hamburger SV",
+          "teamId": "68f7851162db2d92f4bdf7f3",
+          "teamName": "המבורגר SV"
+        },
+        {
+          "brand": "RB Leipzig",
+          "teamId": "68f7851162db2d92f4bdf7ed",
+          "teamName": "RB לייפציג"
+        },
+        {
+          "brand": "Sport-Club Freiburg",
+          "teamId": "68f7851162db2d92f4bdf7ab",
+          "teamName": "פרייבורג"
+        },
+        {
+          "brand": "Stuttgart",
+          "teamId": "68f7851162db2d92f4bdf7e7",
+          "teamName": "שטוטגרט"
+        },
+        {
+          "brand": "TSG 1899 Hoffenheim",
+          "teamId": "68f7851162db2d92f4bdf7d3",
+          "teamName": "הופנהיים 1899"
+        },
+        {
+          "brand": "Werden Bremen",
+          "teamId": "68f7851162db2d92f4bdf7bb",
+          "teamName": "ורדר ברמן"
+        },
+        {
+          "brand": "Wolfsburg",
+          "teamId": "68f7851162db2d92f4bdf7b3",
+          "teamName": "וולפסבורג"
+        }
+      ]
+    },
+    {
+      "leagueId": "68e257c87413ca349124a5e3",
+      "leagueName": "Champions League",
+      "leagueSlug": "champions-league",
+      "brands": [
+        {
+          "brand": "Ajax",
+          "teamId": "68e25b390d7b31dba56ddea6",
+          "teamName": "אייקס"
+        },
+        {
+          "brand": "Arsenal",
+          "teamId": "68da7a5d8c51bd5b579b211a",
+          "teamName": "ארסנל"
+        },
+        {
+          "brand": "AS Monaco",
+          "teamId": "68e25b380d7b31dba56dde8c",
+          "teamName": "מונאקו"
+        },
+        {
+          "brand": "Atalanta Bergamo",
+          "teamId": "68e25b360d7b31dba56dde60",
+          "teamName": "אטאלנטה"
+        },
+        {
+          "brand": "Athletic Bilbao",
+          "teamId": "68da7a5a8c51bd5b579b20ba",
+          "teamName": "אתלטיק בילבאו"
+        },
+        {
+          "brand": "Atlético Madrid",
+          "teamId": "68da7a5a8c51bd5b579b20b6",
+          "teamName": "אתלטיקו מדריד"
+        },
+        {
+          "brand": "Bayer 04 Leverkusen",
+          "teamId": "68e25b360d7b31dba56dde72",
+          "teamName": "באייר לברקוזן"
+        },
+        {
+          "brand": "Benfica",
+          "teamId": "68e25b380d7b31dba56dde9e",
+          "teamName": "בנפיקה"
+        },
+        {
+          "brand": "Borussia Dortmund",
+          "teamId": "68e25b330d7b31dba56dde22",
+          "teamName": "בורוסיה דורטמונד"
+        },
+        {
+          "brand": "Chelsea FC",
+          "teamId": "68da7a5e8c51bd5b579b212e",
+          "teamName": "צ'לסי"
+        },
+        {
+          "brand": "Club Brugge",
+          "teamId": "68e25b340d7b31dba56dde36",
+          "teamName": "קלאב ברוז'"
+        },
+        {
+          "brand": "Eintracht Frankfurt",
+          "teamId": "68e25b340d7b31dba56dde42",
+          "teamName": "איינטרכט פרנקפורט"
+        },
+        {
+          "brand": "FC Barcelona",
+          "teamId": "68da7a5a8c51bd5b579b20ae",
+          "teamName": "ברצלונה"
+        },
+        {
+          "brand": "FC Bayern München",
+          "teamId": "68e25b320d7b31dba56dde03",
+          "teamName": "באיירן מינכן"
+        },
+        {
+          "brand": "FC Copenhagen",
+          "teamId": "68e25b370d7b31dba56dde80",
+          "teamName": "קופנהגן"
+        },
+        {
+          "brand": "FK Bodø/Glimt",
+          "teamId": "68e25b360d7b31dba56dde6c",
+          "teamName": "בודו/גלימט"
+        },
+        {
+          "brand": "Inter Milan",
+          "teamId": "68e25b320d7b31dba56dde14",
+          "teamName": "אינטר"
+        },
+        {
+          "brand": "Juventus",
+          "teamId": "68e25b360d7b31dba56dde66",
+          "teamName": "יובנטוס"
+        },
+        {
+          "brand": "Kairat Almaty",
+          "teamId": "68e25b390d7b31dba56ddeac",
+          "teamName": "קייראט אלמטי"
+        },
+        {
+          "brand": "Liverpool",
+          "teamId": "68da7a5d8c51bd5b579b2116",
+          "teamName": "ליברפול"
+        },
+        {
+          "brand": "Manchester City",
+          "teamId": "68da7a5e8c51bd5b579b2132",
+          "teamName": "מנצ'סטר סיטי"
+        },
+        {
+          "brand": "Napoli",
+          "teamId": "68e25b350d7b31dba56dde4e",
+          "teamName": "נאפולי"
+        },
+        {
+          "brand": "Newcastle United",
+          "teamId": "68da7a5d8c51bd5b579b2106",
+          "teamName": "ניוקאסל"
+        },
+        {
+          "brand": "Olympique Marseille",
+          "teamId": "68e25b340d7b31dba56dde30",
+          "teamName": "מרסיי"
+        },
+        {
+          "brand": "Pafos FC",
+          "teamId": "68e25b380d7b31dba56dde98",
+          "teamName": "פאפוס"
+        },
+        {
+          "brand": "Paris Saint Germain",
+          "teamId": "68e25b320d7b31dba56dde0e",
+          "teamName": "פאריס סן ז'רמן"
+        },
+        {
+          "brand": "PSV Eindhoven",
+          "teamId": "68e25b370d7b31dba56dde7a",
+          "teamName": "פ.ס.ו איינדהובן"
+        },
+        {
+          "brand": "Qarabağ FK",
+          "teamId": "68e25b330d7b31dba56dde1c",
+          "teamName": "קרבאג"
+        },
+        {
+          "brand": "Real Madrid",
+          "teamId": "68da7a5b8c51bd5b579b20d6",
+          "teamName": "ריאל מדריד"
+        },
+        {
+          "brand": "Slavia Praha",
+          "teamId": "68e25b380d7b31dba56dde92",
+          "teamName": "סלאביה פראג"
+        },
+        {
+          "brand": "Sporting CP",
+          "teamId": "68e25b340d7b31dba56dde3c",
+          "teamName": "ספורטינג ליסבון"
+        },
+        {
+          "brand": "Tottenham Hotspur",
+          "teamId": "68da7a5e8c51bd5b579b2126",
+          "teamName": "טוטנהאם"
+        },
+        {
+          "brand": "Villarreal CF",
+          "teamId": "68da7a5a8c51bd5b579b20c2",
+          "teamName": "ויאריאל"
+        }
+      ]
+    },
+    {
+      "leagueId": "68da875303bee90385d564b9",
+      "leagueName": "La Liga",
+      "leagueSlug": "laliga",
+      "brands": [
+        {
+          "brand": "Alavés",
+          "teamId": "68da7a5b8c51bd5b579b20da",
+          "teamName": "אלאבס"
+        },
+        {
+          "brand": "Athletic Bilbao",
+          "teamId": "68da7a5a8c51bd5b579b20ba",
+          "teamName": "אתלטיק בילבאו"
+        },
+        {
+          "brand": "Atlético Madrid",
+          "teamId": "68da7a5a8c51bd5b579b20b6",
+          "teamName": "אתלטיקו מדריד"
+        },
+        {
+          "brand": "Celta de Vigo",
+          "teamId": "68da7a5b8c51bd5b579b20ca",
+          "teamName": "סלטה ויגו"
+        },
+        {
+          "brand": "Elche",
+          "teamId": "68da7a5c8c51bd5b579b20fa",
+          "teamName": "אלצ'ה"
+        },
+        {
+          "brand": "FC Barcelona",
+          "teamId": "68da7a5a8c51bd5b579b20ae",
+          "teamName": "ברצלונה"
+        },
+        {
+          "brand": "Getafe",
+          "teamId": "68da7a5b8c51bd5b579b20e2",
+          "teamName": "חתאפה"
+        },
+        {
+          "brand": "Girona FC",
+          "teamId": "68da7a5c8c51bd5b579b20e6",
+          "teamName": "חירונה"
+        },
+        {
+          "brand": "Levante",
+          "teamId": "68da7a5b8c51bd5b579b20ce",
+          "teamName": "לבנטה"
+        },
+        {
+          "brand": "Osasuna",
+          "teamId": "68da7a5c8c51bd5b579b20f2",
+          "teamName": "אוססונה"
+        },
+        {
+          "brand": "Rayo Vallecano",
+          "teamId": "68da7a5c8c51bd5b579b20f6",
+          "teamName": "ראיו ואיקאנו"
+        },
+        {
+          "brand": "RCD Espanyol",
+          "teamId": "68da7a5b8c51bd5b579b20d2",
+          "teamName": "אספניול"
+        },
+        {
+          "brand": "RCD Mallorca",
+          "teamId": "68da7a5c8c51bd5b579b20fe",
+          "teamName": "מיורקה"
+        },
+        {
+          "brand": "Real Betis",
+          "teamId": "68da7a5b8c51bd5b579b20de",
+          "teamName": "ריאל בטיס"
+        },
+        {
+          "brand": "Real Madrid",
+          "teamId": "68da7a5b8c51bd5b579b20d6",
+          "teamName": "ריאל מדריד"
+        },
+        {
+          "brand": "Real Oviedo",
+          "teamId": "68da7a5c8c51bd5b579b20ee",
+          "teamName": "אוביידו"
+        },
+        {
+          "brand": "Real Sociedad",
+          "teamId": "68da7a5c8c51bd5b579b20ea",
+          "teamName": "ריאל סוסיאדד"
+        },
+        {
+          "brand": "Sevilla FC",
+          "teamId": "68da7a5b8c51bd5b579b20c6",
+          "teamName": "סביליה"
+        },
+        {
+          "brand": "Valencia CF",
+          "teamId": "68da7a5a8c51bd5b579b20be",
+          "teamName": "ולנסיה"
+        },
+        {
+          "brand": "Villarreal CF",
+          "teamId": "68da7a5a8c51bd5b579b20c2",
+          "teamName": "ויאריאל"
+        }
+      ]
+    },
+    {
+      "leagueId": "6926eb65157fcaee5df59760",
+      "leagueName": "Ligue 1",
+      "leagueSlug": "ligue-1",
+      "brands": [
+        {
+          "brand": "AJ Auxerre",
+          "teamId": "6926ecd5c3aef3887f2add61",
+          "teamName": "אוסר"
+        },
+        {
+          "brand": "Angers",
+          "teamId": "6926ecd5c3aef3887f2add4d",
+          "teamName": "אנז'ה"
+        },
+        {
+          "brand": "AS Monaco",
+          "teamId": "68e25b380d7b31dba56dde8c",
+          "teamName": "מונאקו"
+        },
+        {
+          "brand": "FC Metz",
+          "teamId": "6926ecd5c3aef3887f2add65",
+          "teamName": "מץ"
+        },
+        {
+          "brand": "Le Havre AC",
+          "teamId": "6926ecd5c3aef3887f2add63",
+          "teamName": "לה הבר"
+        },
+        {
+          "brand": "Lens",
+          "teamId": "6926ecd6c3aef3887f2add69",
+          "teamName": "לאנס"
+        },
+        {
+          "brand": "Lille OSC",
+          "teamId": "6926ecd5c3aef3887f2add4f",
+          "teamName": "ליל"
+        },
+        {
+          "brand": "Lorient",
+          "teamId": "6926ecd5c3aef3887f2add5d",
+          "teamName": "לוריאן"
+        },
+        {
+          "brand": "Nantes",
+          "teamId": "6926ecd5c3aef3887f2add53",
+          "teamName": "נאנט"
+        },
+        {
+          "brand": "OGC Nice",
+          "teamId": "6926ecd5c3aef3887f2add55",
+          "teamName": "ניס"
+        },
+        {
+          "brand": "Olympique Lyon",
+          "teamId": "6926ecd5c3aef3887f2add51",
+          "teamName": "ליון"
+        },
+        {
+          "brand": "Olympique Marseille",
+          "teamId": "68e25b340d7b31dba56dde30",
+          "teamName": "מרסיי"
+        },
+        {
+          "brand": "Paris FC",
+          "teamId": "6926ecd6c3aef3887f2add67",
+          "teamName": "פריז"
+        },
+        {
+          "brand": "Paris Saint Germain",
+          "teamId": "68e25b320d7b31dba56dde0e",
+          "teamName": "פאריס סן ז'רמן"
+        },
+        {
+          "brand": "Stade Brestois",
+          "teamId": "6926ecd5c3aef3887f2add5f",
+          "teamName": "ברסט"
+        },
+        {
+          "brand": "Stade Rennes",
+          "teamId": "6926ecd5c3aef3887f2add57",
+          "teamName": "רן"
+        },
+        {
+          "brand": "Strasbourg",
+          "teamId": "6926ecd5c3aef3887f2add59",
+          "teamName": "שטרסבורג"
+        },
+        {
+          "brand": "Toulouse",
+          "teamId": "6926ecd5c3aef3887f2add5b",
+          "teamName": "טולוז"
+        }
+      ]
+    },
+    {
+      "leagueId": "68d6809aa0fb97844d2084b9",
+      "leagueName": "Premier League",
+      "leagueSlug": "epl",
+      "brands": [
+        {
+          "brand": "Arsenal",
+          "teamId": "68da7a5d8c51bd5b579b211a",
+          "teamName": "ארסנל"
+        },
+        {
+          "brand": "Aston Villa FC",
+          "teamId": "68da7a5f8c51bd5b579b214a",
+          "teamName": "אסטון וילה"
+        },
+        {
+          "brand": "Bournemouth FC",
+          "teamId": "68da7a5d8c51bd5b579b210a",
+          "teamName": "בורנמות'"
+        },
+        {
+          "brand": "Brentford",
+          "teamId": "68da7a5e8c51bd5b579b213e",
+          "teamName": "ברנטפורד"
+        },
+        {
+          "brand": "Brighton & Hove Albion",
+          "teamId": "68da7a5e8c51bd5b579b2136",
+          "teamName": "ברייטון"
+        },
+        {
+          "brand": "Burnley FC",
+          "teamId": "68da7a5d8c51bd5b579b211e",
+          "teamName": "ברנלי"
+        },
+        {
+          "brand": "Chelsea FC",
+          "teamId": "68da7a5e8c51bd5b579b212e",
+          "teamName": "צ'לסי"
+        },
+        {
+          "brand": "Crystal Palace",
+          "teamId": "68da7a5e8c51bd5b579b213a",
+          "teamName": "קריסטל פאלאס"
+        },
+        {
+          "brand": "Everton",
+          "teamId": "68da7a5d8c51bd5b579b2122",
+          "teamName": "אברטון"
+        },
+        {
+          "brand": "Fulham FC",
+          "teamId": "68da7a5d8c51bd5b579b210e",
+          "teamName": "פולהאם"
+        },
+        {
+          "brand": "Leeds United",
+          "teamId": "68da7a5f8c51bd5b579b2142",
+          "teamName": "לידס"
+        },
+        {
+          "brand": "Liverpool",
+          "teamId": "68da7a5d8c51bd5b579b2116",
+          "teamName": "ליברפול"
+        },
+        {
+          "brand": "Manchester City",
+          "teamId": "68da7a5e8c51bd5b579b2132",
+          "teamName": "מנצ'סטר סיטי"
+        },
+        {
+          "brand": "Manchester United",
+          "teamId": "68da7a5c8c51bd5b579b2102",
+          "teamName": "מנצ'סטר יונייטד"
+        },
+        {
+          "brand": "Newcastle United",
+          "teamId": "68da7a5d8c51bd5b579b2106",
+          "teamName": "ניוקאסל"
+        },
+        {
+          "brand": "Nottingham Forest",
+          "teamId": "68da7a5f8c51bd5b579b2146",
+          "teamName": "נוטינגהאם פורסט"
+        },
+        {
+          "brand": "Sunderland",
+          "teamId": "68da7a5f8c51bd5b579b214e",
+          "teamName": "סנדרלנד"
+        },
+        {
+          "brand": "Tottenham Hotspur",
+          "teamId": "68da7a5e8c51bd5b579b2126",
+          "teamName": "טוטנהאם"
+        },
+        {
+          "brand": "West Ham United",
+          "teamId": "68da7a5e8c51bd5b579b212a",
+          "teamName": "וסט האם"
+        },
+        {
+          "brand": "Wolverhampton Wanderers FC",
+          "teamId": "68da7a5d8c51bd5b579b2112",
+          "teamName": "וולברהמפטון"
+        }
+      ]
+    },
+    {
+      "leagueId": "6926f079518b2d5adbba7229",
+      "leagueName": "Serie A",
+      "leagueSlug": "serie-a",
+      "brands": [
+        {
+          "brand": "AC Milan",
+          "teamId": "6926f2b7db62a299f152395f",
+          "teamName": "מילאן"
+        },
+        {
+          "brand": "ACF Fiorentina",
+          "teamId": "6926f2b8db62a299f152396b",
+          "teamName": "פיורנטינה"
+        },
+        {
+          "brand": "AS Roma",
+          "teamId": "6926f2b8db62a299f1523967",
+          "teamName": "רומא"
+        },
+        {
+          "brand": "Atalanta Bergamo",
+          "teamId": "68e25b360d7b31dba56dde60",
+          "teamName": "אטאלנטה"
+        },
+        {
+          "brand": "Bologna",
+          "teamId": "6926f2b8db62a299f1523969",
+          "teamName": "בולוניה"
+        },
+        {
+          "brand": "Cagliari",
+          "teamId": "6926f2b8db62a299f1523961",
+          "teamName": "קליארי"
+        },
+        {
+          "brand": "Como",
+          "teamId": "6926f2b8db62a299f1523979",
+          "teamName": "קומו"
+        },
+        {
+          "brand": "Genoa",
+          "teamId": "6926f2b8db62a299f1523965",
+          "teamName": "גנואה"
+        },
+        {
+          "brand": "Hellas Verona",
+          "teamId": "6926f2b8db62a299f152396f",
+          "teamName": "ורונה"
+        },
+        {
+          "brand": "Inter Milan",
+          "teamId": "68e25b320d7b31dba56dde14",
+          "teamName": "אינטר"
+        },
+        {
+          "brand": "Juventus",
+          "teamId": "68e25b360d7b31dba56dde66",
+          "teamName": "יובנטוס"
+        },
+        {
+          "brand": "Lazio Roma",
+          "teamId": "6926f2b7db62a299f152395b",
+          "teamName": "לאציו"
+        },
+        {
+          "brand": "Napoli",
+          "teamId": "68e25b350d7b31dba56dde4e",
+          "teamName": "נאפולי"
+        },
+        {
+          "brand": "Parma",
+          "teamId": "6926f2b8db62a299f1523973",
+          "teamName": "פארמה"
+        },
+        {
+          "brand": "Pisa SC",
+          "teamId": "6926f2b8db62a299f1523975",
+          "teamName": "פיזה"
+        },
+        {
+          "brand": "Sassuolo",
+          "teamId": "6926f2b7db62a299f152395d",
+          "teamName": "ססואולו"
+        },
+        {
+          "brand": "Torino",
+          "teamId": "6926f2b8db62a299f152396d",
+          "teamName": "טורינו"
+        },
+        {
+          "brand": "Udinese",
+          "teamId": "6926f2b8db62a299f1523963",
+          "teamName": "אודינזה"
+        },
+        {
+          "brand": "US Cremonese",
+          "teamId": "6926f2b8db62a299f1523971",
+          "teamName": "קרמונזה"
+        },
+        {
+          "brand": "US Lecce",
+          "teamId": "6926f2b8db62a299f1523977",
+          "teamName": "לצ'ה"
+        }
+      ]
+    }
+  ]
+}

@@ -61,8 +61,12 @@ const offerSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// Indexes - Unique constraint: one offer per owner per fixture (regardless of ticketType)
-offerSchema.index({ fixtureId: 1, ownerId: 1 }, { unique: true });
+// Indexes - Unique constraint: one offer per owner per fixture per ticketType
+// Allows each owner to have both standard and vip offers for the same fixture
+offerSchema.index(
+  { fixtureId: 1, ownerId: 1, ticketType: 1 },
+  { unique: true }
+);
 offerSchema.index({ fixtureId: 1, price: 1 });
 
 const Offer = mongoose.models.Offer || mongoose.model("Offer", offerSchema);

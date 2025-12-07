@@ -1,7 +1,58 @@
 import "dotenv/config";
 import cron from "node-cron";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 import { loadBaseRatesFromAPI } from "../utils/exchangeRate.js";
 import { logWithCheckpoint, logError } from "../utils/logger.js";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Results directory
+const RESULTS_DIR = path.join(__dirname, "../../data/exchangeRates");
+
+// Ensure results directory exists
+function ensureResultsDirectory() {
+  if (!fs.existsSync(RESULTS_DIR)) {
+    fs.mkdirSync(RESULTS_DIR, { recursive: true });
+  }
+}
+
+// Save worker results to file
+function saveResults(result, error = null) {
+  try {
+    ensureResultsDirectory();
+    const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
+    const filename = `exchange_rates_${timestamp}.json`;
+    const filepath = path.join(RESULTS_DIR, filename);
+
+    const output = {
+      timestamp: new Date().toISOString(),
+      success: !error && result?.success !== false,
+      ...(error
+        ? { error: error.message, stack: error.stack }
+        : {
+            loadedCurrencies: result.loadedCurrencies,
+            timestamp: result.timestamp,
+            usedFallback: result.usedFallback || false,
+            ...(result.error && { error: result.error }),
+          }),
+    };
+
+    fs.writeFileSync(filepath, JSON.stringify(output, null, 2), "utf8");
+    logWithCheckpoint(
+      "info",
+      "Worker results saved",
+      "EXCHANGE_RATE_WORKER_RESULT_SAVED",
+      { filepath }
+    );
+    return filepath;
+  } catch (saveError) {
+    logError(saveError, { operation: "saveResults" });
+    return null;
+  }
+}
 
 class UpdateExchangeRatesWorker {
   constructor() {
@@ -88,9 +139,11 @@ class UpdateExchangeRatesWorker {
       cronExpression,
       async () => {
         try {
-          await this.updateExchangeRates();
+          const result = await this.updateExchangeRates();
+          saveResults(result);
         } catch (error) {
           logError(error, { operation: "scheduledExchangeRatesUpdate" });
+          saveResults(null, error);
         }
       },
       {
@@ -138,6 +191,43 @@ class UpdateExchangeRatesWorker {
 
 const updateExchangeRatesWorker = new UpdateExchangeRatesWorker();
 
+// Handle uncaught exceptions - prevent worker crash
+process.on("uncaughtException", (error) => {
+  logError(error, {
+    operation: "uncaughtException",
+    worker: "updateExchangeRatesWorker",
+  });
+  logWithCheckpoint(
+    "error",
+    "Uncaught exception in exchange rates worker - shutting down gracefully",
+    "EXCHANGE_RATE_WORKER_009",
+    { error: error.message }
+  );
+  // Stop the worker and exit
+  try {
+    updateExchangeRatesWorker.stop();
+  } catch (stopError) {
+    logError(stopError, { operation: "stopWorkerOnError" });
+  }
+  process.exit(1);
+});
+
+// Handle unhandled promise rejections - prevent worker crash
+process.on("unhandledRejection", (reason, promise) => {
+  logError(new Error(`Unhandled Rejection at: ${promise}, reason: ${reason}`), {
+    operation: "unhandledRejection",
+    worker: "updateExchangeRatesWorker",
+  });
+  logWithCheckpoint(
+    "error",
+    "Unhandled rejection in exchange rates worker",
+    "EXCHANGE_RATE_WORKER_010",
+    { reason: reason?.toString() || "Unknown" }
+  );
+  // Note: We don't exit on unhandled rejection to allow the worker to continue
+  // but we log it for monitoring
+});
+
 // טעינה ראשונית בעת הפעלת ה-worker
 if (import.meta.url === `file://${process.argv[1]}`) {
   const args = process.argv.slice(2);
@@ -147,7 +237,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     (async () => {
       try {
         // טעינה ראשונית מיד בעת הפעלה
-        await updateExchangeRatesWorker.updateExchangeRates();
+        const result = await updateExchangeRatesWorker.updateExchangeRates();
+        saveResults(result);
 
         // הפעלת ה-scheduler
         updateExchangeRatesWorker.start();
@@ -180,9 +271,22 @@ if (import.meta.url === `file://${process.argv[1]}`) {
           }
         }
 
+        // Save results to file
+        const savedPath = saveResults(result);
+        if (savedPath) {
+          console.log(`\n✅ Results saved to: ${savedPath}`);
+        }
+
         process.exit(0);
       } catch (error) {
         console.error("❌ Exchange rates update failed:", error);
+
+        // Save error results to file
+        const savedPath = saveResults(null, error);
+        if (savedPath) {
+          console.log(`\n⚠️ Error results saved to: ${savedPath}`);
+        }
+
         process.exit(1);
       }
     })();

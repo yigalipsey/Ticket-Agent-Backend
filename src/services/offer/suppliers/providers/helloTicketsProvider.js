@@ -68,6 +68,10 @@ export const fetchHelloTicketsOffer = async ({
         ? Number(minPriceRaw)
         : null;
 
+    // Determine isAvailable: if there's a price, the offer is available
+    // is_sellable is not relevant - if there's a price, the offer exists
+    const isAvailable = Number.isFinite(minPrice) && minPrice > 0;
+
     const liveData = {
       price: Number.isFinite(minPrice) ? minPrice : null,
       currency: performance.price_range?.currency || offer?.currency || "EUR",
@@ -75,11 +79,12 @@ export const fetchHelloTicketsOffer = async ({
         addAffiliateLink(performance.url, affiliateParams) ||
         offer?.url ||
         null,
-      isAvailable: performance.is_sellable !== false,
+      isAvailable: isAvailable,
       fetchedAt: new Date().toISOString(),
       metadata: {
         baseUrl: performance.url,
         priceRange: performance.price_range || null,
+        is_sellable: performance.is_sellable, // Store original value for debugging
       },
     };
 
@@ -93,6 +98,8 @@ export const fetchHelloTicketsOffer = async ({
         offerId: offer?._id?.toString(),
         minPrice: liveData.price,
         currency: liveData.currency,
+        is_sellable: performance.is_sellable,
+        isAvailable: liveData.isAvailable,
       }
     );
 

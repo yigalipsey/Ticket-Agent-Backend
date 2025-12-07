@@ -104,6 +104,23 @@ class SupplierApiService {
           liveCandidates,
           forceRefresh,
         });
+
+        // Re-fetch offers from DB to get updated isAvailable values
+        // (since we use .lean(), the in-memory objects don't reflect DB updates)
+        const updatedOffers = await Offer.find({
+          fixtureId,
+          ownerType: "Supplier",
+        })
+          .populate({
+            path: "ownerId",
+            select:
+              "name slug imageUrl logoUrl syncConfig isActive priority metadata affiliateLinkBase externalRating",
+          })
+          .lean();
+
+        // Replace offers array with updated data
+        offers.length = 0;
+        offers.push(...updatedOffers);
       }
 
       logWithCheckpoint("info", "Supplier offers ready", "SUPPLIER_API_003", {

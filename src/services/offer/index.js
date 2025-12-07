@@ -13,6 +13,9 @@ import {
   getOffersWithCacheRefresh,
 } from "./utils/cacheHelpers.js";
 
+// Fixture minPrice service
+import { updateFixtureMinPrice } from "./utils/fixtureMinPriceService.js";
+
 // Export as organized service object
 export default {
   query: {
@@ -27,5 +30,8 @@ export default {
     refreshOffersCache,
     clearOffersCache,
     getOffersWithCacheRefresh,
+  },
+  fixture: {
+    updateFixtureMinPrice,
   },
 };

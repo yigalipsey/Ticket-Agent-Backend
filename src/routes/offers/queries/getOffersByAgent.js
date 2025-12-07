@@ -1,35 +1,26 @@
 import express from "express";
-import OfferService from "../../../services/offer/index.js";
+import AgentOfferService from "../../../services/offer/agent/AgentOfferService.js";
 import { logError } from "../../../utils/logger.js";
 import {
-  authenticateToken,
-  requireRole,
+  authenticateAgentToken,
+  requireAgent,
   rateLimit,
-} from "../../../middleware/userAuth.js";
+} from "../../../middleware/agentAuth.js";
 import { createErrorResponse } from "../../../utils/errorCodes.js";
 
 const router = express.Router();
 
-// GET /api/offers/agent/:agentId - Get offers by agent
+// GET /api/offers/agent - Get offers of the authenticated agent
 router.get(
-  "/agent/:agentId",
-  authenticateToken,
-  requireRole("agent"),
+  "/agent",
+  authenticateAgentToken,
+  requireAgent,
   rateLimit(50),
   async (req, res) => {
     try {
-      const { agentId } = req.params;
+      const agentId = req.agent.id;
 
-      if (!agentId.match(/^[0-9a-fA-F]{24}$/)) {
-        return res.status(400).json(
-          createErrorResponse("VALIDATION_INVALID_FORMAT", {
-            field: "agentId",
-            expected: "MongoDB ObjectId",
-          })
-        );
-      }
-
-      const result = await OfferService.query.getOffersByAgent(
+      const result = await AgentOfferService.getOffersByAgent(
         agentId,
         req.query
       );
@@ -41,8 +32,8 @@ router.get(
       });
     } catch (error) {
       logError(error, {
-        route: "GET /api/offers/agent/:agentId",
-        agentId: req.params.agentId,
+        route: "GET /api/offers/agent",
+        agentId: req.agent?.id,
         query: req.query,
       });
       res.status(500).json(createErrorResponse("INTERNAL_SERVER_ERROR"));
