@@ -18,6 +18,7 @@ import agentAuthRoutes from "./routes/agentAuth.js";
 import offersRoutes from "./routes/offers/index.js";
 import cacheRoutes from "./routes/cache.js";
 import searchRoutes from "./routes/search.js";
+import whatsappRoutes from "./routes/whatsapp.js";
 
 // Import utilities
 import logger, {
@@ -54,9 +55,32 @@ app.use(
 );
 
 // CORS middleware
+const allowedOrigins = [
+  process.env.FRONTEND_URL || "http://localhost:3000",
+  "https://api.ticketagent.co.il",
+  "https://ticketagent.co.il",
+  "https://www.ticketagent.co.il",
+  "http://localhost:3000",
+  "http://localhost:8080",
+];
+
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || "http://localhost:3000",
+    origin: (origin, callback) => {
+      // Allow requests with no origin (like mobile apps or curl requests)
+      if (!origin) return callback(null, true);
+
+      if (allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        // In development, allow all origins
+        if (process.env.NODE_ENV === "development") {
+          callback(null, true);
+        } else {
+          callback(new Error("Not allowed by CORS"));
+        }
+      }
+    },
     credentials: true, // Allow cookies
   })
 );
@@ -130,8 +154,40 @@ app.use("/api/offers", offersRoutes);
 app.use("/api/cache", cacheRoutes); // Cache management routes
 app.use("/api/search", searchRoutes); // Search routes
 
+// WhatsApp routes with logging
+app.use(
+  "/api/whatsapp",
+  (req, res, next) => {
+    const colors = {
+      reset: "\x1b[0m",
+      bright: "\x1b[1m",
+      cyan: "\x1b[36m",
+      yellow: "\x1b[33m",
+    };
+    console.log(
+      `\n${colors.cyan}${colors.bright}🔵 [MIDDLEWARE - WHATSAPP ROUTE MATCHED]${colors.reset} ${colors.cyan}${req.method} ${req.originalUrl}${colors.reset}`
+    );
+    console.log(`${colors.yellow}  Path: ${req.path}${colors.reset}`);
+    next();
+  },
+  whatsappRoutes
+); // WhatsApp bot routes
+
 // 404 handler
 app.use("*", (req, res) => {
+  const colors = {
+    reset: "\x1b[0m",
+    bright: "\x1b[1m",
+    red: "\x1b[31m",
+    yellow: "\x1b[33m",
+  };
+  console.log(
+    `\n${colors.red}${colors.bright}❌ [404 HANDLER]${colors.reset} ${colors.red}Route not found: ${req.method} ${req.originalUrl}${colors.reset}`
+  );
+  console.log(`${colors.yellow}  Path: ${req.path}${colors.reset}`);
+  console.log(
+    `${colors.yellow}  Registered routes: /api/whatsapp/offers/natural-language, /api/whatsapp/health${colors.reset}\n`
+  );
   res.status(404).json({
     success: false,
     error: "Route not found",
@@ -161,7 +217,9 @@ app.use((error, req, res, next) => {
 async function connectToDatabase() {
   try {
     const result = await databaseConnection.connect(process.env.MONGODB_URI);
-    logWithCheckpoint("info", "Database connection result", "DB_CONNECT_001", { result });
+    logWithCheckpoint("info", "Database connection result", "DB_CONNECT_001", {
+      result,
+    });
     return result;
   } catch (error) {
     logError(error, { operation: "connectToDatabase" });

@@ -187,10 +187,22 @@ const findTeamByTextWithSuggestions = async (text, aliases) => {
 
     // Check aliases
     for (const alias of team.aliases || []) {
-      const aliasScore =
-        normalizeText(alias) === normalizedText
-          ? 1.0
-          : calculateSimilarity(alias, text);
+      const normalizedAlias = normalizeText(alias);
+      let aliasScore;
+
+      if (normalizedAlias === normalizedText) {
+        // Exact match - highest priority
+        aliasScore = 1.0;
+      } else if (
+        normalizedText.includes(normalizedAlias) ||
+        normalizedAlias.includes(normalizedText)
+      ) {
+        // Substring match - high priority (e.g., "ריאל" matches "ריאל מדריד")
+        aliasScore = Math.max(0.9, calculateSimilarity(alias, text));
+      } else {
+        aliasScore = calculateSimilarity(alias, text);
+      }
+
       allMatches.push({
         team,
         score: aliasScore,
@@ -268,9 +280,45 @@ const findTeamByTextWithSuggestions = async (text, aliases) => {
 
 /**
  * Extract team names from natural language query
+ * Cleans common phrases before extracting team names
  */
 const extractTeamNames = (query) => {
   const normalizedQuery = normalizeText(query);
+
+  // Common phrases to remove before extracting team names
+  const commonPhrases = [
+    /תמצא\s+לי\s+כרטסים?\s+ל?/gi,
+    /תמצא\s+כרטסים?\s+ל?/gi,
+    /כרטסים?\s+ל?/gi,
+    /תמצא\s+לי\s+ל?/gi,
+    /תמצא\s+ל?/gi,
+    /אני\s+רוצה\s+כרטסים?\s+ל?/gi,
+    /רוצה\s+כרטסים?\s+ל?/gi,
+    /אני\s+מחפש\s+כרטסים?\s+ל?/gi,
+    /מחפש\s+כרטסים?\s+ל?/gi,
+    /אני\s+צריך\s+כרטסים?\s+ל?/gi,
+    /צריך\s+כרטסים?\s+ל?/gi,
+    /בוא\s+תמצא\s+לי\s+כרטסים?\s+ל?/gi,
+    /תראה\s+לי\s+כרטסים?\s+ל?/gi,
+    /תראה\s+כרטסים?\s+ל?/gi,
+  ];
+
+  // Clean the query from common phrases
+  let cleanedQuery = normalizedQuery;
+  for (const phrase of commonPhrases) {
+    cleanedQuery = cleanedQuery.replace(phrase, "").trim();
+  }
+
+  logColor(
+    colors.yellow,
+    "🧹 [CLEANING]",
+    "Cleaned query from common phrases",
+    {
+      original: query,
+      normalized: normalizedQuery,
+      cleaned: cleanedQuery,
+    }
+  );
 
   // Common separators in Hebrew
   const separators = [
@@ -285,19 +333,34 @@ const extractTeamNames = (query) => {
   ];
 
   for (const separator of separators) {
-    if (normalizedQuery.includes(separator)) {
-      const parts = normalizedQuery.split(separator);
+    if (cleanedQuery.includes(separator)) {
+      const parts = cleanedQuery.split(separator);
       if (parts.length === 2) {
-        return {
-          team1: parts[0].trim(),
-          team2: parts[1].trim(),
-        };
+        const team1 = parts[0].trim();
+        const team2 = parts[1].trim();
+
+        // Additional cleaning: remove common words that might be left
+        const team1Cleaned = team1
+          .replace(/^ל\s+/, "") // Remove leading "ל"
+          .replace(/\s+ל$/, "") // Remove trailing "ל"
+          .trim();
+        const team2Cleaned = team2
+          .replace(/^ל\s+/, "") // Remove leading "ל"
+          .replace(/\s+ל$/, "") // Remove trailing "ל"
+          .trim();
+
+        if (team1Cleaned && team2Cleaned) {
+          return {
+            team1: team1Cleaned,
+            team2: team2Cleaned,
+          };
+        }
       }
     }
   }
 
   // Try to find two words/phrases (simple heuristic)
-  const words = normalizedQuery.split(/\s+/);
+  const words = cleanedQuery.split(/\s+/).filter((w) => w.length > 0);
   if (words.length >= 2) {
     // Try different splits
     for (let i = 1; i < words.length; i++) {
