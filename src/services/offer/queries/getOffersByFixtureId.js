@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import FootballEvent from "../../../models/FootballEvent.js";
 import { logWithCheckpoint, logError } from "../../../utils/logger.js";
+import { isValidObjectId } from "../../../utils/validation.js";
 import AgentOfferService from "../agent/AgentOfferService.js";
 import SupplierApiService from "../suppliers/SupplierApiService.js";
 import { formatOfferForResponse } from "../utils/offerMapper.js";
@@ -52,7 +53,7 @@ export const getOffersByFixtureId = async (fixtureId, query = {}) => {
 
     // שליפת פרטי המשחק תמיד (query קל ומהיר)
     // בדיקת תקינות ObjectId
-    if (!mongoose.Types.ObjectId.isValid(fixtureId)) {
+    if (!isValidObjectId(fixtureId)) {
       console.error("❌ [DEBUG] Invalid ObjectId format:", fixtureId);
       throw new Error(`Invalid fixtureId format: ${fixtureId}`);
     }
@@ -63,7 +64,6 @@ export const getOffersByFixtureId = async (fixtureId, query = {}) => {
       fixtureId,
       fixtureFound: !!fixture,
       fixtureIdType: typeof fixtureId,
-      isValidObjectId: mongoose.Types.ObjectId.isValid(fixtureId),
     });
 
     if (fixture) {
@@ -132,7 +132,6 @@ export const getOffersByFixtureId = async (fixtureId, query = {}) => {
       console.warn("⚠️ [DEBUG] Fixture not found in DB:", {
         fixtureId,
         fixtureIdType: typeof fixtureId,
-        isValidObjectId: mongoose.Types.ObjectId.isValid(fixtureId),
       });
     }
 
@@ -265,44 +264,57 @@ export const getOffersByFixtureId = async (fixtureId, query = {}) => {
 
     const responseFixture = fixture
       ? {
-          _id: fixture._id,
-          date: fixture.date,
-          homeTeam: fixture.homeTeam
+        _id: fixture._id,
+        date: fixture.date,
+        homeTeam: fixture.homeTeam
+          ? {
+            name: selectHebrewName(fixture.homeTeam),
+            logoUrl: extractLogo(fixture.homeTeam),
+          }
+          : fixture.homeTeamName
             ? {
-                name: selectHebrewName(fixture.homeTeam),
-                logoUrl: extractLogo(fixture.homeTeam),
-              }
+              name: fixture.homeTeamName,
+              logoUrl: null,
+            }
             : null,
-          awayTeam: fixture.awayTeam
+        awayTeam: fixture.awayTeam
+          ? {
+            name: selectHebrewName(fixture.awayTeam),
+            logoUrl: extractLogo(fixture.awayTeam),
+          }
+          : fixture.awayTeamName
             ? {
-                name: selectHebrewName(fixture.awayTeam),
-                logoUrl: extractLogo(fixture.awayTeam),
-              }
+              name: fixture.awayTeamName,
+              logoUrl: null,
+            }
             : null,
-          venue: fixture.venue
-            ? {
-                name:
-                  fixture.venue.name_he ||
-                  fixture.venue.name ||
-                  fixture.venue.name_en ||
-                  null,
-                city:
-                  fixture.venue.city_he ||
-                  fixture.venue.city ||
-                  fixture.venue.city_en ||
-                  null,
-              }
-            : null,
-          league: fixture.league
-            ? {
-                name:
-                  fixture.league.nameHe ||
-                  fixture.league.name_he ||
-                  fixture.league.name ||
-                  null,
-              }
-            : null,
-        }
+        // Include homeTeamName and awayTeamName for TBD teams
+        homeTeamName: fixture.homeTeamName || null,
+        awayTeamName: fixture.awayTeamName || null,
+        venue: fixture.venue
+          ? {
+            name:
+              fixture.venue.name_he ||
+              fixture.venue.name ||
+              fixture.venue.name_en ||
+              null,
+            city:
+              fixture.venue.city_he ||
+              fixture.venue.city ||
+              fixture.venue.city_en ||
+              null,
+          }
+          : null,
+        league: fixture.league
+          ? {
+            name:
+              fixture.league.nameHe ||
+              fixture.league.name_he ||
+              fixture.league.name ||
+              null,
+          }
+          : null,
+      }
       : null;
 
     return {

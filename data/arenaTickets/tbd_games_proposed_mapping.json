@@ -1,0 +1,805 @@
+{
+  "totalTbdGames": 53,
+  "totalUnmappedDbFixtures": 52,
+  "highConfidence": 16,
+  "mediumConfidence": 0,
+  "lowConfidence": 22,
+  "noMatch": 15,
+  "proposedMappings": [
+    {
+      "arenaGameId": 41214,
+      "arenaGameName": "מונדיאל 2026: משחק 2",
+      "arenaDate": "2026-06-11T18:30:00.000Z",
+      "arenaArena": "Estadio Akron  |  Guadalajara  |  מקסיקו",
+      "dbFixtureId": null,
+      "confidence": "NONE",
+      "matchReason": "No matching fixture found"
+    },
+    {
+      "arenaGameId": 41220,
+      "arenaGameName": "מונדיאל 2026: משחק 3: קנדה - טרם נקבע",
+      "arenaDate": "2026-06-12T18:00:00.000Z",
+      "arenaArena": "BMO Field",
+      "dbFixtureId": "69399b5ad0b57a17517e5d37",
+      "dbFixtureDate": "2026-06-12T19:00:00.000Z",
+      "dbFixtureRound": "Group B",
+      "dbVenueName": "בימו פילד",
+      "confidence": "HIGH",
+      "matchReason": "Unique date match within 6 hours"
+    },
+    {
+      "arenaGameId": 41229,
+      "arenaGameName": "מונדיאל 2026 משחק 6: אוסטרליה - טרם נקבע",
+      "arenaDate": "2026-06-13T16:00:00.000Z",
+      "arenaArena": "BC Place  |  ונקובר  |  קנדה",
+      "dbFixtureId": "69399b5bd0b57a17517e5d3f",
+      "dbFixtureDate": "2026-06-13T19:00:00.000Z",
+      "dbFixtureRound": "Group B",
+      "dbVenueName": "אצטדיון ליווייס",
+      "confidence": "HIGH",
+      "matchReason": "Unique date match within 6 hours"
+    },
+    {
+      "arenaGameId": 41241,
+      "arenaGameName": "מונדיאל 2026 משחק 8: קטאר - שוויץ",
+      "arenaDate": "2026-06-13T18:30:00.000Z",
+      "arenaArena": "Levi's Stadium  |  סנטה קלרה  |  ארה\"ב",
+      "dbFixtureId": "69399b5bd0b57a17517e5d3f",
+      "dbFixtureDate": "2026-06-13T19:00:00.000Z",
+      "dbFixtureRound": "Group B",
+      "dbVenueName": "אצטדיון ליווייס",
+      "confidence": "HIGH",
+      "matchReason": "Unique date match within 6 hours"
+    },
+    {
+      "arenaGameId": 41265,
+      "arenaGameName": "מונדיאל 2026 משחק 12: טרם נקבע - תוניסיה",
+      "arenaDate": "2026-06-14T18:00:00.000Z",
+      "arenaArena": "Estadio BBVA  |  Monterrey  |  מקסיקו",
+      "dbFixtureId": null,
+      "confidence": "NONE",
+      "matchReason": "No matching fixture found"
+    },
+    {
+      "arenaGameId": 41298,
+      "arenaGameName": "מונדיאל 2026 משחק 18: טרם נקבע - נורבגיה",
+      "arenaDate": "2026-06-16T13:30:00.000Z",
+      "arenaArena": "Gillette Stadium  |  פוקסבורו  |  ארה\"ב",
+      "dbFixtureId": null,
+      "confidence": "NONE",
+      "matchReason": "No matching fixture found"
+    },
+    {
+      "arenaGameId": 41328,
+      "arenaGameName": "מונדיאל 2026 משחק 23: פורטוגל - טרם נקבע",
+      "arenaDate": "2026-06-17T16:00:00.000Z",
+      "arenaArena": "NRG Stadium  |  יוסטון  |  ארה\"ב",
+      "dbFixtureId": "69399b72d0b57a17517e5e30",
+      "dbFixtureDate": "2026-06-17T17:00:00.000Z",
+      "dbFixtureRound": "Group K",
+      "dbVenueName": "אצטדיון NRG",
+      "confidence": "HIGH",
+      "matchReason": "Unique date match within 6 hours"
+    },
+    {
+      "arenaGameId": 41342,
+      "arenaGameName": "מונדיאל 2026 משחק 25: טרם נקבע - דרום אפריקה",
+      "arenaDate": "2026-06-18T14:00:00.000Z",
+      "arenaArena": "Mercedes-Benz Stadium  |  Atlanta  |  ארה\"ב",
+      "dbFixtureId": "69399b59d0b57a17517e5d0c",
+      "dbFixtureDate": "2026-06-18T16:00:00.000Z",
+      "dbFixtureRound": "Group A",
+      "dbVenueName": "אצטדיון מרצדס-בנץ",
+      "confidence": "LOW",
+      "matchReason": "Multiple date matches (2), picked first",
+      "alternatives": [
+        {
+          "id": "69399b5bd0b57a17517e5d42",
+          "date": "2026-06-18T19:00:00.000Z",
+          "round": "Group B"
+        }
+      ]
+    },
+    {
+      "arenaGameId": 41350,
+      "arenaGameName": "מונדיאל 2026 משחק 26: שוויץ - טרם נקבע",
+      "arenaDate": "2026-06-18T16:00:00.000Z",
+      "arenaArena": "SoFi Stadium  |  אינגלווד  |  ארה\"ב",
+      "dbFixtureId": "69399b59d0b57a17517e5d0c",
+      "dbFixtureDate": "2026-06-18T16:00:00.000Z",
+      "dbFixtureRound": "Group A",
+      "dbVenueName": "אצטדיון מרצדס-בנץ",
+      "confidence": "LOW",
+      "matchReason": "Multiple date matches (2), picked first",
+      "alternatives": [
+        {
+          "id": "69399b5bd0b57a17517e5d42",
+          "date": "2026-06-18T19:00:00.000Z",
+          "round": "Group B"
+        }
+      ]
+    },
+    {
+      "arenaGameId": 41374,
+      "arenaGameName": "מונדיאל 2026: משחק 31 טרם נקבע - פאראגוואי",
+      "arenaDate": "2026-06-19T15:00:00.000Z",
+      "arenaArena": "Levi's Stadium  |  סנטה קלרה  |  ארה\"ב",
+      "dbFixtureId": null,
+      "confidence": "NONE",
+      "matchReason": "No matching fixture found"
+    },
+    {
+      "arenaGameId": 41392,
+      "arenaGameName": "מונדיאל 2026 משחק 35: הולנד - טרם נקבע",
+      "arenaDate": "2026-06-20T16:00:00.000Z",
+      "arenaArena": "AT&amp;T Stadium  |  Arlington  |  ארה\"ב",
+      "dbFixtureId": "69399b65d0b57a17517e5dae",
+      "dbFixtureDate": "2026-06-20T17:00:00.000Z",
+      "dbFixtureRound": "Group F",
+      "dbVenueName": "אצטדיון NRG",
+      "confidence": "HIGH",
+      "matchReason": "Unique date match within 6 hours"
+    },
+    {
+      "arenaGameId": 41427,
+      "arenaGameName": "מונדיאל 2026 משחק 42: צרפת - טרם נקבע",
+      "arenaDate": "2026-06-22T13:00:00.000Z",
+      "arenaArena": "Lincoln Financial Field  |  פילדלפיה  |  ארה\"ב",
+      "dbFixtureId": null,
+      "confidence": "NONE",
+      "matchReason": "No matching fixture found"
+    },
+    {
+      "arenaGameId": 42214,
+      "arenaGameName": "מונדיאל 2026 משחק 48: קולומביה - טרם נקבע",
+      "arenaDate": "2026-06-23T18:30:00.000Z",
+      "arenaArena": "Estadio Akron  |  Guadalajara  |  מקסיקו",
+      "dbFixtureId": null,
+      "confidence": "NONE",
+      "matchReason": "No matching fixture found"
+    },
+    {
+      "arenaGameId": 42225,
+      "arenaGameName": "מונדיאל 2026: משחק 50",
+      "arenaDate": "2026-06-24T14:00:00.000Z",
+      "arenaArena": "Mercedes-Benz Stadium , אטלנטה ארה\"ב ",
+      "dbFixtureId": "69399b5cd0b57a17517e5d4f",
+      "dbFixtureDate": "2026-06-24T19:00:00.000Z",
+      "dbFixtureRound": "Group B",
+      "dbVenueName": "אצטדיון לומן",
+      "confidence": "HIGH",
+      "matchReason": "Unique date match within 6 hours"
+    },
+    {
+      "arenaGameId": 42230,
+      "arenaGameName": "מונדיאל 2026 משחק 52: טרם נקבע - קטאר",
+      "arenaDate": "2026-06-24T18:30:00.000Z",
+      "arenaArena": "Lumen Field  |  סיאטל  |  ארה\"ב",
+      "dbFixtureId": "69399b5cd0b57a17517e5d4f",
+      "dbFixtureDate": "2026-06-24T19:00:00.000Z",
+      "dbFixtureRound": "Group B",
+      "dbVenueName": "אצטדיון לומן",
+      "confidence": "HIGH",
+      "matchReason": "Unique date match within 6 hours"
+    },
+    {
+      "arenaGameId": 47098,
+      "arenaGameName": "מונדיאל 2026: משחק 53",
+      "arenaDate": "2026-06-24T20:00:00.000Z",
+      "arenaArena": "Estadio Azteca  |  מקסיקו סיטי  |  מקסיקו",
+      "dbFixtureId": "69399b5ad0b57a17517e5d27",
+      "dbFixtureDate": "2026-06-25T01:00:00.000Z",
+      "dbFixtureRound": "Group A",
+      "dbVenueName": "אצטדיון אצטקה",
+      "confidence": "LOW",
+      "matchReason": "Multiple date matches (2), picked first",
+      "alternatives": [
+        {
+          "id": "69399b5cd0b57a17517e5d4f",
+          "date": "2026-06-24T19:00:00.000Z",
+          "round": "Group B"
+        }
+      ]
+    },
+    {
+      "arenaGameId": 42250,
+      "arenaGameName": "מונדיאל 2026 משחק 57: יפן - טרם נקבע",
+      "arenaDate": "2026-06-25T17:00:00.000Z",
+      "arenaArena": "AT&amp;T Stadium  |  Arlington  |  טקסס ארה\"ב",
+      "dbFixtureId": null,
+      "confidence": "NONE",
+      "matchReason": "No matching fixture found"
+    },
+    {
+      "arenaGameId": 45345,
+      "arenaGameName": "מונדיאל 2026: משחק 59: ארצות הברית - טרם נקבע",
+      "arenaDate": "2026-06-25T18:30:00.000Z",
+      "arenaArena": "SoFi Stadium  |  אינגלווד - לוס אנג'לס  |  ארה\"ב",
+      "dbFixtureId": "69399b66d0b57a17517e5dbb",
+      "dbFixtureDate": "2026-06-25T23:00:00.000Z",
+      "dbFixtureRound": "Group F",
+      "dbVenueName": "אצטדיון ארוהד",
+      "confidence": "HIGH",
+      "matchReason": "Unique date match within 6 hours"
+    },
+    {
+      "arenaGameId": 42270,
+      "arenaGameName": "מונדיאל 2026 משחק 62: סנגל - טרם נקבע",
+      "arenaDate": "2026-06-26T14:00:00.000Z",
+      "arenaArena": "BMO Field  |  טורונטו  |  קנדה",
+      "dbFixtureId": "69399b6fd0b57a17517e5e0f",
+      "dbFixtureDate": "2026-06-26T19:00:00.000Z",
+      "dbFixtureRound": "Group I",
+      "dbVenueName": "בימו פילד",
+      "confidence": "HIGH",
+      "matchReason": "Unique date match within 6 hours"
+    },
+    {
+      "arenaGameId": 42305,
+      "arenaGameName": "מונדיאל 2026 משחק 69: אלג'יריה - אוסטריה",
+      "arenaDate": "2026-06-27T16:30:00.000Z",
+      "arenaArena": "Arrowhead Stadium  |  קנזס סיטי  |  ארה\"ב",
+      "dbFixtureId": null,
+      "confidence": "NONE",
+      "matchReason": "No matching fixture found"
+    },
+    {
+      "arenaGameId": 42320,
+      "arenaGameName": "מונדיאל 2026: משחק 72",
+      "arenaDate": "2026-06-27T18:30:00.000Z",
+      "arenaArena": "Mercedes-Benz Stadium  |  Atlanta  |  ארה\"ב",
+      "dbFixtureId": "69399b74d0b57a17517e5e45",
+      "dbFixtureDate": "2026-06-27T23:30:00.000Z",
+      "dbFixtureRound": "Group K",
+      "dbVenueName": "אצטדיון מרצדס-בנץ",
+      "confidence": "HIGH",
+      "matchReason": "Unique date match within 6 hours"
+    },
+    {
+      "arenaGameId": 43400,
+      "arenaGameName": "מונדיאל 2026: משחק 73 שלב 32 האחרונות",
+      "arenaDate": "2026-06-28T12:00:00.000Z",
+      "arenaArena": "SoFi Stadium  |  אינגלווד  | קליפורניה ארה\"ב",
+      "dbFixtureId": null,
+      "confidence": "NONE",
+      "matchReason": "No matching fixture found"
+    },
+    {
+      "arenaGameId": 42326,
+      "arenaGameName": "מונדיאל 2026: משחק 74 שלב 32 האחרונות",
+      "arenaDate": "2026-06-29T12:00:00.000Z",
+      "arenaArena": "Gillette Stadium  |  פוקסבורו  | בוסטון ארה\"ב",
+      "dbFixtureId": null,
+      "confidence": "NONE",
+      "matchReason": "No matching fixture found"
+    },
+    {
+      "arenaGameId": 42331,
+      "arenaGameName": "מונדיאל 2026: משחק 75 שלב 32 האחרונות",
+      "arenaDate": "2026-06-29T15:00:00.000Z",
+      "arenaArena": "Estadio BBVA  |  Monterrey  |  מקסיקו",
+      "dbFixtureId": "69399b78d0b57a17517e5e69",
+      "dbFixtureDate": "2026-06-29T19:00:00.000Z",
+      "dbFixtureRound": "Round of 32",
+      "dbVenueName": "אצטדיון ג'ילט",
+      "confidence": "LOW",
+      "matchReason": "Multiple date matches (3), picked first",
+      "alternatives": [
+        {
+          "id": "69399b78d0b57a17517e5e6c",
+          "date": "2026-06-29T19:00:00.000Z",
+          "round": "Round of 32"
+        },
+        {
+          "id": "69399b79d0b57a17517e5e6f",
+          "date": "2026-06-29T19:00:00.000Z",
+          "round": "Round of 32"
+        }
+      ]
+    },
+    {
+      "arenaGameId": 42393,
+      "arenaGameName": "מונדיאל 2026: משחק 76 שלב 32 האחרונות",
+      "arenaDate": "2026-06-29T18:00:00.000Z",
+      "arenaArena": "NRG Stadium  |  יוסטון  |  ארה\"ב",
+      "dbFixtureId": "69399b78d0b57a17517e5e69",
+      "dbFixtureDate": "2026-06-29T19:00:00.000Z",
+      "dbFixtureRound": "Round of 32",
+      "dbVenueName": "אצטדיון ג'ילט",
+      "confidence": "LOW",
+      "matchReason": "Multiple date matches (3), picked first",
+      "alternatives": [
+        {
+          "id": "69399b78d0b57a17517e5e6c",
+          "date": "2026-06-29T19:00:00.000Z",
+          "round": "Round of 32"
+        },
+        {
+          "id": "69399b79d0b57a17517e5e6f",
+          "date": "2026-06-29T19:00:00.000Z",
+          "round": "Round of 32"
+        }
+      ]
+    },
+    {
+      "arenaGameId": 42398,
+      "arenaGameName": "מונדיאל 2026: משחק 77 שלב 32 האחרונות",
+      "arenaDate": "2026-06-30T12:00:00.000Z",
+      "arenaArena": "MetLife Stadium  |  East Rutherford  |  ארה\"ב",
+      "dbFixtureId": null,
+      "confidence": "NONE",
+      "matchReason": "No matching fixture found"
+    },
+    {
+      "arenaGameId": 42403,
+      "arenaGameName": "מונדיאל 2026: משחק 78 שלב 32 האחרונות",
+      "arenaDate": "2026-06-30T15:00:00.000Z",
+      "arenaArena": "AT&amp;T Stadium  |  Arlington  | טקסס ארה\"ב",
+      "dbFixtureId": "69399b79d0b57a17517e5e72",
+      "dbFixtureDate": "2026-06-30T19:00:00.000Z",
+      "dbFixtureRound": "Round of 32",
+      "dbVenueName": "אצטדיון מטלייף",
+      "confidence": "LOW",
+      "matchReason": "Multiple date matches (3), picked first",
+      "alternatives": [
+        {
+          "id": "69399b79d0b57a17517e5e75",
+          "date": "2026-06-30T19:00:00.000Z",
+          "round": "Round of 32"
+        },
+        {
+          "id": "69399b7ad0b57a17517e5e78",
+          "date": "2026-06-30T19:00:00.000Z",
+          "round": "Round of 32"
+        }
+      ]
+    },
+    {
+      "arenaGameId": 42408,
+      "arenaGameName": "מונדיאל 2026: משחק 79 שלב 32 האחרונות",
+      "arenaDate": "2026-06-30T18:00:00.000Z",
+      "arenaArena": "Estadio Azteca  |  מקסיקו סיטי  |  מקסיקו",
+      "dbFixtureId": "69399b79d0b57a17517e5e72",
+      "dbFixtureDate": "2026-06-30T19:00:00.000Z",
+      "dbFixtureRound": "Round of 32",
+      "dbVenueName": "אצטדיון מטלייף",
+      "confidence": "LOW",
+      "matchReason": "Multiple date matches (3), picked first",
+      "alternatives": [
+        {
+          "id": "69399b79d0b57a17517e5e75",
+          "date": "2026-06-30T19:00:00.000Z",
+          "round": "Round of 32"
+        },
+        {
+          "id": "69399b7ad0b57a17517e5e78",
+          "date": "2026-06-30T19:00:00.000Z",
+          "round": "Round of 32"
+        }
+      ]
+    },
+    {
+      "arenaGameId": 42413,
+      "arenaGameName": "מונדיאל 2026: משחק 80 שלב 32 האחרונות",
+      "arenaDate": "2026-07-01T12:00:00.000Z",
+      "arenaArena": "Mercedes-Benz Stadium  |  Atlanta  |  ארה\"ב",
+      "dbFixtureId": null,
+      "confidence": "NONE",
+      "matchReason": "No matching fixture found"
+    },
+    {
+      "arenaGameId": 42418,
+      "arenaGameName": "מונדיאל 2026: משחק 81 שלב 32 האחרונות",
+      "arenaDate": "2026-07-01T15:00:00.000Z",
+      "arenaArena": "Levi's Stadium  |  סנטה קלרה  |  ארה\"ב",
+      "dbFixtureId": "69399b7ad0b57a17517e5e7b",
+      "dbFixtureDate": "2026-07-01T19:00:00.000Z",
+      "dbFixtureRound": "Round of 32",
+      "dbVenueName": "אצטדיון מרצדס-בנץ",
+      "confidence": "LOW",
+      "matchReason": "Multiple date matches (3), picked first",
+      "alternatives": [
+        {
+          "id": "69399b7ad0b57a17517e5e7e",
+          "date": "2026-07-01T19:00:00.000Z",
+          "round": "Round of 32"
+        },
+        {
+          "id": "69399b7ad0b57a17517e5e81",
+          "date": "2026-07-01T19:00:00.000Z",
+          "round": "Round of 32"
+        }
+      ]
+    },
+    {
+      "arenaGameId": 42423,
+      "arenaGameName": "מונדיאל 2026: משחק 82 שלב 32 האחרונות",
+      "arenaDate": "2026-07-01T18:00:00.000Z",
+      "arenaArena": "Lumen Field  |  סיאטל  |  ארה\"ב",
+      "dbFixtureId": "69399b7ad0b57a17517e5e7b",
+      "dbFixtureDate": "2026-07-01T19:00:00.000Z",
+      "dbFixtureRound": "Round of 32",
+      "dbVenueName": "אצטדיון מרצדס-בנץ",
+      "confidence": "LOW",
+      "matchReason": "Multiple date matches (3), picked first",
+      "alternatives": [
+        {
+          "id": "69399b7ad0b57a17517e5e7e",
+          "date": "2026-07-01T19:00:00.000Z",
+          "round": "Round of 32"
+        },
+        {
+          "id": "69399b7ad0b57a17517e5e81",
+          "date": "2026-07-01T19:00:00.000Z",
+          "round": "Round of 32"
+        }
+      ]
+    },
+    {
+      "arenaGameId": 42428,
+      "arenaGameName": "מונדיאל 2026: משחק 83 שלב 32 האחרונות",
+      "arenaDate": "2026-07-02T12:00:00.000Z",
+      "arenaArena": "BMO Field  |  טורונטו  |  קנדה",
+      "dbFixtureId": null,
+      "confidence": "NONE",
+      "matchReason": "No matching fixture found"
+    },
+    {
+      "arenaGameId": 42434,
+      "arenaGameName": "מונדיאל 2026: משחק 84 שלב 32 האחרונות",
+      "arenaDate": "2026-07-02T15:00:00.000Z",
+      "arenaArena": "Los Angeles Stadium |  אינגלווד  |  ארה\"ב",
+      "dbFixtureId": "69399b7bd0b57a17517e5e84",
+      "dbFixtureDate": "2026-07-02T19:00:00.000Z",
+      "dbFixtureRound": "Round of 32",
+      "dbVenueName": "בימו פילד",
+      "confidence": "LOW",
+      "matchReason": "Multiple date matches (3), picked first",
+      "alternatives": [
+        {
+          "id": "69399b7bd0b57a17517e5e87",
+          "date": "2026-07-02T19:00:00.000Z",
+          "round": "Round of 32"
+        },
+        {
+          "id": "69399b7bd0b57a17517e5e8a",
+          "date": "2026-07-02T19:00:00.000Z",
+          "round": "Round of 32"
+        }
+      ]
+    },
+    {
+      "arenaGameId": 42440,
+      "arenaGameName": "מונדיאל 2026: משחק 85 שלב 32 האחרונות",
+      "arenaDate": "2026-07-02T18:00:00.000Z",
+      "arenaArena": "BC Place  |  ונקובר  |  קנדה",
+      "dbFixtureId": "69399b7bd0b57a17517e5e84",
+      "dbFixtureDate": "2026-07-02T19:00:00.000Z",
+      "dbFixtureRound": "Round of 32",
+      "dbVenueName": "בימו פילד",
+      "confidence": "LOW",
+      "matchReason": "Multiple date matches (3), picked first",
+      "alternatives": [
+        {
+          "id": "69399b7bd0b57a17517e5e87",
+          "date": "2026-07-02T19:00:00.000Z",
+          "round": "Round of 32"
+        },
+        {
+          "id": "69399b7bd0b57a17517e5e8a",
+          "date": "2026-07-02T19:00:00.000Z",
+          "round": "Round of 32"
+        }
+      ]
+    },
+    {
+      "arenaGameId": 42465,
+      "arenaGameName": "מונדיאל 2026: משחק 86 שלב 32 האחרונות",
+      "arenaDate": "2026-07-03T12:00:00.000Z",
+      "arenaArena": "Hard Rock Stadium  |  Miami Gardens  |  ארה\"ב",
+      "dbFixtureId": null,
+      "confidence": "NONE",
+      "matchReason": "No matching fixture found"
+    },
+    {
+      "arenaGameId": 42470,
+      "arenaGameName": "מונדיאל 2026: משחק 87 שלב 32 האחרונות",
+      "arenaDate": "2026-07-03T15:00:00.000Z",
+      "arenaArena": "Arrowhead Stadium  |  קנזס סיטי  |  ארה\"ב",
+      "dbFixtureId": "69399b7bd0b57a17517e5e8d",
+      "dbFixtureDate": "2026-07-03T19:00:00.000Z",
+      "dbFixtureRound": "Round of 32",
+      "dbVenueName": "אצטדיון הארד רוק",
+      "confidence": "LOW",
+      "matchReason": "Multiple date matches (3), picked first",
+      "alternatives": [
+        {
+          "id": "69399b7cd0b57a17517e5e90",
+          "date": "2026-07-03T19:00:00.000Z",
+          "round": "Round of 32"
+        },
+        {
+          "id": "69399b7cd0b57a17517e5e93",
+          "date": "2026-07-03T19:00:00.000Z",
+          "round": "Round of 32"
+        }
+      ]
+    },
+    {
+      "arenaGameId": 42475,
+      "arenaGameName": "מונדיאל 2026: משחק 88 שלב 32 האחרונות",
+      "arenaDate": "2026-07-03T18:00:00.000Z",
+      "arenaArena": "AT&amp;T Stadium  |  Arlington  | דאלאס ארה\"ב",
+      "dbFixtureId": "69399b7bd0b57a17517e5e8d",
+      "dbFixtureDate": "2026-07-03T19:00:00.000Z",
+      "dbFixtureRound": "Round of 32",
+      "dbVenueName": "אצטדיון הארד רוק",
+      "confidence": "LOW",
+      "matchReason": "Multiple date matches (3), picked first",
+      "alternatives": [
+        {
+          "id": "69399b7cd0b57a17517e5e90",
+          "date": "2026-07-03T19:00:00.000Z",
+          "round": "Round of 32"
+        },
+        {
+          "id": "69399b7cd0b57a17517e5e93",
+          "date": "2026-07-03T19:00:00.000Z",
+          "round": "Round of 32"
+        }
+      ]
+    },
+    {
+      "arenaGameId": 42198,
+      "arenaGameName": "מונדיאל 2026: משחק 89 שמינית גמר",
+      "arenaDate": "2026-07-04T12:00:00.000Z",
+      "arenaArena": "Lincoln Financial Field  |  פילדלפיה  |  ארה\"ב",
+      "dbFixtureId": null,
+      "confidence": "NONE",
+      "matchReason": "No matching fixture found"
+    },
+    {
+      "arenaGameId": 42193,
+      "arenaGameName": "מונדיאל 2026: משחק 90 שמינית גמר",
+      "arenaDate": "2026-07-04T15:00:00.000Z",
+      "arenaArena": "NRG Stadium  |  יוסטון  |  ארה\"ב",
+      "dbFixtureId": "69399b7cd0b57a17517e5e96",
+      "dbFixtureDate": "2026-07-04T19:00:00.000Z",
+      "dbFixtureRound": "Round of 16",
+      "dbVenueName": "אצטדיון לינקולן פייננשל",
+      "confidence": "LOW",
+      "matchReason": "Multiple date matches (2), picked first",
+      "alternatives": [
+        {
+          "id": "69399b7cd0b57a17517e5e99",
+          "date": "2026-07-04T19:00:00.000Z",
+          "round": "Round of 16"
+        }
+      ]
+    },
+    {
+      "arenaGameId": 42188,
+      "arenaGameName": "מונדיאל 2026: משחק 91 שמינית גמר",
+      "arenaDate": "2026-07-05T15:00:00.000Z",
+      "arenaArena": "New Jersey Stadium |  East Rutherford  |  ארה\"ב",
+      "dbFixtureId": "69399b7dd0b57a17517e5e9c",
+      "dbFixtureDate": "2026-07-05T19:00:00.000Z",
+      "dbFixtureRound": "Round of 16",
+      "dbVenueName": "אצטדיון מטלייף",
+      "confidence": "LOW",
+      "matchReason": "Multiple date matches (2), picked first",
+      "alternatives": [
+        {
+          "id": "69399b7dd0b57a17517e5e9f",
+          "date": "2026-07-05T19:00:00.000Z",
+          "round": "Round of 16"
+        }
+      ]
+    },
+    {
+      "arenaGameId": 42183,
+      "arenaGameName": "מונדיאל 2026: משחק 92 שמינית גמר",
+      "arenaDate": "2026-07-05T18:00:00.000Z",
+      "arenaArena": "Estadio Azteca  |  מקסיקו סיטי  |  מקסיקו",
+      "dbFixtureId": "69399b7dd0b57a17517e5e9c",
+      "dbFixtureDate": "2026-07-05T19:00:00.000Z",
+      "dbFixtureRound": "Round of 16",
+      "dbVenueName": "אצטדיון מטלייף",
+      "confidence": "LOW",
+      "matchReason": "Multiple date matches (2), picked first",
+      "alternatives": [
+        {
+          "id": "69399b7dd0b57a17517e5e9f",
+          "date": "2026-07-05T19:00:00.000Z",
+          "round": "Round of 16"
+        }
+      ]
+    },
+    {
+      "arenaGameId": 42145,
+      "arenaGameName": "מונדיאל 2026: משחק 93 שמינית גמר",
+      "arenaDate": "2026-07-06T15:00:00.000Z",
+      "arenaArena": "AT&amp;T Stadium  |  Arlington  |  ארה\"ב",
+      "dbFixtureId": "69399b7dd0b57a17517e5ea2",
+      "dbFixtureDate": "2026-07-06T19:00:00.000Z",
+      "dbFixtureRound": "Round of 16",
+      "dbVenueName": "אצטדיון AT&T",
+      "confidence": "LOW",
+      "matchReason": "Multiple date matches (2), picked first",
+      "alternatives": [
+        {
+          "id": "69399b7dd0b57a17517e5ea5",
+          "date": "2026-07-06T19:00:00.000Z",
+          "round": "Round of 16"
+        }
+      ]
+    },
+    {
+      "arenaGameId": 42135,
+      "arenaGameName": "מונדיאל 2026: משחק 95 שמינית גמר",
+      "arenaDate": "2026-07-07T15:00:00.000Z",
+      "arenaArena": "Mercedes-Benz Stadium  |  Atlanta  |  ארה\"ב",
+      "dbFixtureId": "69399b7ed0b57a17517e5ea8",
+      "dbFixtureDate": "2026-07-07T19:00:00.000Z",
+      "dbFixtureRound": "Round of 16",
+      "dbVenueName": "אצטדיון מרצדס-בנץ",
+      "confidence": "LOW",
+      "matchReason": "Multiple date matches (2), picked first",
+      "alternatives": [
+        {
+          "id": "69399b7ed0b57a17517e5eab",
+          "date": "2026-07-07T19:00:00.000Z",
+          "round": "Round of 16"
+        }
+      ]
+    },
+    {
+      "arenaGameId": 42140,
+      "arenaGameName": "מונדיאל 2026: משחק 94 שמינית גמר",
+      "arenaDate": "2026-07-07T15:00:00.000Z",
+      "arenaArena": "Lumen Field  |  סיאטל  |  ארה\"ב",
+      "dbFixtureId": "69399b7ed0b57a17517e5ea8",
+      "dbFixtureDate": "2026-07-07T19:00:00.000Z",
+      "dbFixtureRound": "Round of 16",
+      "dbVenueName": "אצטדיון מרצדס-בנץ",
+      "confidence": "LOW",
+      "matchReason": "Multiple date matches (2), picked first",
+      "alternatives": [
+        {
+          "id": "69399b7ed0b57a17517e5eab",
+          "date": "2026-07-07T19:00:00.000Z",
+          "round": "Round of 16"
+        }
+      ]
+    },
+    {
+      "arenaGameId": 42130,
+      "arenaGameName": "מונדיאל 2026: משחק 96 שמינית גמר",
+      "arenaDate": "2026-07-07T18:00:00.000Z",
+      "arenaArena": "BC Place  |  ונקובר  |  קנדה",
+      "dbFixtureId": "69399b7ed0b57a17517e5ea8",
+      "dbFixtureDate": "2026-07-07T19:00:00.000Z",
+      "dbFixtureRound": "Round of 16",
+      "dbVenueName": "אצטדיון מרצדס-בנץ",
+      "confidence": "LOW",
+      "matchReason": "Multiple date matches (2), picked first",
+      "alternatives": [
+        {
+          "id": "69399b7ed0b57a17517e5eab",
+          "date": "2026-07-07T19:00:00.000Z",
+          "round": "Round of 16"
+        }
+      ]
+    },
+    {
+      "arenaGameId": 42120,
+      "arenaGameName": "מונדיאל 2026: משחק 98 רבע גמר",
+      "arenaDate": "2026-07-10T20:00:00.000Z",
+      "arenaArena": "SoFi Stadium  |  אינגלווד  |  ארה\"ב",
+      "dbFixtureId": "69399b7ed0b57a17517e5eb1",
+      "dbFixtureDate": "2026-07-10T19:00:00.000Z",
+      "dbFixtureRound": "Quarterfinals",
+      "dbVenueName": "אצטדיון SoFi",
+      "confidence": "HIGH",
+      "matchReason": "Unique date match within 6 hours"
+    },
+    {
+      "arenaGameId": 42123,
+      "arenaGameName": "מונדיאל 2026: משחק 97 רבע גמר",
+      "arenaDate": "2026-07-10T20:00:00.000Z",
+      "arenaArena": "Gillette Stadium  |  פוקסבורו  |  ארה\"ב",
+      "dbFixtureId": "69399b7ed0b57a17517e5eb1",
+      "dbFixtureDate": "2026-07-10T19:00:00.000Z",
+      "dbFixtureRound": "Quarterfinals",
+      "dbVenueName": "אצטדיון SoFi",
+      "confidence": "HIGH",
+      "matchReason": "Unique date match within 6 hours"
+    },
+    {
+      "arenaGameId": 42116,
+      "arenaGameName": "מונדיאל 2026: משחק 100 רבע גמר",
+      "arenaDate": "2026-07-11T20:00:00.000Z",
+      "arenaArena": "Arrowhead Stadium  |  קנזס סיטי  |  ארה\"ב",
+      "dbFixtureId": "69399b7fd0b57a17517e5eb4",
+      "dbFixtureDate": "2026-07-11T19:00:00.000Z",
+      "dbFixtureRound": "Quarterfinals",
+      "dbVenueName": "אצטדיון הארד רוק",
+      "confidence": "LOW",
+      "matchReason": "Multiple date matches (2), picked first",
+      "alternatives": [
+        {
+          "id": "69399b7fd0b57a17517e5eb7",
+          "date": "2026-07-11T19:00:00.000Z",
+          "round": "Quarterfinals"
+        }
+      ]
+    },
+    {
+      "arenaGameId": 42118,
+      "arenaGameName": "מונדיאל 2026: משחק 99 רבע גמר",
+      "arenaDate": "2026-07-11T20:00:00.000Z",
+      "arenaArena": "Hard Rock Stadium  |  Miami Gardens  |  ארה\"ב",
+      "dbFixtureId": "69399b7fd0b57a17517e5eb4",
+      "dbFixtureDate": "2026-07-11T19:00:00.000Z",
+      "dbFixtureRound": "Quarterfinals",
+      "dbVenueName": "אצטדיון הארד רוק",
+      "confidence": "LOW",
+      "matchReason": "Multiple date matches (2), picked first",
+      "alternatives": [
+        {
+          "id": "69399b7fd0b57a17517e5eb7",
+          "date": "2026-07-11T19:00:00.000Z",
+          "round": "Quarterfinals"
+        }
+      ]
+    },
+    {
+      "arenaGameId": 42114,
+      "arenaGameName": "מונדיאל 2026: משחק 101 חצי גמר",
+      "arenaDate": "2026-07-14T20:00:00.000Z",
+      "arenaArena": "AT&amp;T Stadium  |  Arlington  |  ארה\"ב",
+      "dbFixtureId": "69399b7fd0b57a17517e5eba",
+      "dbFixtureDate": "2026-07-14T19:00:00.000Z",
+      "dbFixtureRound": "Semifinals",
+      "dbVenueName": "אצטדיון AT&T",
+      "confidence": "HIGH",
+      "matchReason": "Unique date match within 6 hours"
+    },
+    {
+      "arenaGameId": 42112,
+      "arenaGameName": "מונדיאל 2026: משחק 102 חצי גמר",
+      "arenaDate": "2026-07-15T20:00:00.000Z",
+      "arenaArena": "Mercedes-Benz Stadium  |  Atlanta  |  ארה\"ב",
+      "dbFixtureId": "69399b7fd0b57a17517e5ebd",
+      "dbFixtureDate": "2026-07-15T19:00:00.000Z",
+      "dbFixtureRound": "Semifinals",
+      "dbVenueName": "אצטדיון מרצדס-בנץ",
+      "confidence": "HIGH",
+      "matchReason": "Unique date match within 6 hours"
+    },
+    {
+      "arenaGameId": 42110,
+      "arenaGameName": "מונדיאל 2026: משחק 103 המקום השלישי: מפסידה משחק 101 - מפסידה משחק 102",
+      "arenaDate": "2026-07-18T20:00:00.000Z",
+      "arenaArena": "Hard Rock Stadium  |  Miami Gardens  |  ארה\"ב",
+      "dbFixtureId": "69399b80d0b57a17517e5ec0",
+      "dbFixtureDate": "2026-07-18T19:00:00.000Z",
+      "dbFixtureRound": "Third Place Playoff",
+      "dbVenueName": "אצטדיון הארד רוק",
+      "confidence": "HIGH",
+      "matchReason": "Unique date match within 6 hours"
+    },
+    {
+      "arenaGameId": 42104,
+      "arenaGameName": "גמר מונדיאל 2026 משחק 104: מנצחת משחק 101 נגד מנצחת משחק 102",
+      "arenaDate": "2026-07-19T20:00:00.000Z",
+      "arenaArena": "MetLife Stadium  |  East Rutherford  |  ארה\"ב",
+      "dbFixtureId": "69399b80d0b57a17517e5ec3",
+      "dbFixtureDate": "2026-07-19T19:00:00.000Z",
+      "dbFixtureRound": "Final",
+      "dbVenueName": "אצטדיון מטלייף",
+      "confidence": "HIGH",
+      "matchReason": "Unique date match within 6 hours"
+    }
+  ]
+}

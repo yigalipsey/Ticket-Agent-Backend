@@ -7,6 +7,7 @@ import {
   requireAgent,
   rateLimit,
 } from "../../../middleware/agentAuth.js";
+import { validateObjectIdParam } from "../../../middleware/validateObjectId.js";
 import { createErrorResponse } from "../../../utils/errorCodes.js";
 
 const router = express.Router();
@@ -14,6 +15,7 @@ const router = express.Router();
 // DELETE /api/offers/:id - Delete offer
 router.delete(
   "/:id",
+  validateObjectIdParam("id"),
   authenticateAgentToken,
   requireAgent,
   rateLimit(10),
@@ -21,15 +23,6 @@ router.delete(
     try {
       const { id } = req.params;
       const agentId = req.agent.id;
-
-      if (!id.match(/^[0-9a-fA-F]{24}$/)) {
-        return res.status(400).json(
-          createErrorResponse("VALIDATION_INVALID_FORMAT", {
-            field: "id",
-            expected: "MongoDB ObjectId",
-          })
-        );
-      }
 
       // Check ownership
       const existingOffer = await Offer.findById(id);

@@ -3,6 +3,7 @@ import { logRequest } from "../../utils/logger.js";
 
 // Query routes
 import getOffersByFixtureIdRoute from "./queries/getOffersByFixtureId.js";
+import getOffersByFixtureIdStreamRoute from "./queries/getOffersByFixtureIdStream.js";
 import getOffersByAgentRoute from "./queries/getOffersByAgent.js";
 
 // Mutation routes
@@ -18,16 +19,16 @@ router.use((req, res, next) => {
 
   res.on("finish", () => {
     const responseTime = Date.now() - start;
-    logRequest(req, res, responseTime);
+    logRequest(req, res, responseTime, "ROUTE_MW");
   });
 
   next();
 });
-
 // ========================================
 // Query Routes (GET)
 // ========================================
 router.use(getOffersByFixtureIdRoute);
+router.use(getOffersByFixtureIdStreamRoute);
 router.use(getOffersByAgentRoute);
 
 // ========================================

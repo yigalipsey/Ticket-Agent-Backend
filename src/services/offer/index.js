@@ -1,5 +1,6 @@
 // Query functions
 import { getOffersByFixtureId } from "./queries/getOffersByFixtureId.js";
+import { streamOffersByFixture } from "./queries/getOffersByFixtureIdStream.js";
 
 // Mutation functions
 import { createOffer } from "./mutations/createOffer.js";
@@ -20,6 +21,7 @@ import { updateFixtureMinPrice } from "./utils/fixtureMinPriceService.js";
 export default {
   query: {
     getOffersByFixtureId,
+    streamOffersByFixture,
   },
   mutate: {
     createOffer,

@@ -57,16 +57,6 @@ router.post(
         );
       }
 
-      // Validate ObjectId format for fixtureId
-      if (!fixtureId.match(/^[0-9a-fA-F]{24}$/)) {
-        return res.status(400).json(
-          createErrorResponse("VALIDATION_INVALID_FORMAT", {
-            field: "fixtureId",
-            expected: "MongoDB ObjectId",
-          })
-        );
-      }
-
       // Get agentId from session
       const agentId = req.agent.id;
       if (!agentId) {

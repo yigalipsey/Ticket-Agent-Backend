@@ -1,0 +1,1533 @@
+{
+  "summary": {
+    "totalArenaFootballGames": 403,
+    "totalDbPremierLeagueFixtures": 308,
+    "matched": 117,
+    "alreadyMapped": 0,
+    "notInPremierLeague": 230
+  },
+  "matched": [
+    {
+      "arenaGameId": 12564,
+      "arenaGameName": "ווסטהאם – אברטון",
+      "arenaDate": "2026-04-25T15:00:00.000Z",
+      "dbFixtureId": "68e79a3fc8fcaf3b1d8a6d0d",
+      "dbFixtureDate": "2026-04-25T14:00:00.000Z",
+      "homeTeam": "וסט האם",
+      "awayTeam": "אברטון",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 12588,
+      "arenaGameName": "קריסטל פאלאס – פולהאם",
+      "arenaDate": "2026-01-01T17:30:00.000Z",
+      "dbFixtureId": "68e79a20c8fcaf3b1d8a6983",
+      "dbFixtureDate": "2026-01-01T17:30:00.000Z",
+      "homeTeam": "קריסטל פאלאס",
+      "awayTeam": "פולהאם",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 12602,
+      "arenaGameName": "ווסטהאם – לידס יונייטד",
+      "arenaDate": "2026-05-24T16:00:00.000Z",
+      "dbFixtureId": "68e79a47c8fcaf3b1d8a6deb",
+      "dbFixtureDate": "2026-05-24T15:00:00.000Z",
+      "homeTeam": "וסט האם",
+      "awayTeam": "לידס",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 12710,
+      "arenaGameName": "פולהאם – ווסטהאם",
+      "arenaDate": "2026-03-04T20:00:00.000Z",
+      "dbFixtureId": "68e79a34c8fcaf3b1d8a6bc3",
+      "dbFixtureDate": "2026-03-04T20:00:00.000Z",
+      "homeTeam": "פולהאם",
+      "awayTeam": "וסט האם",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 12905,
+      "arenaGameName": "מנצ׳סטר סיטי – וולבס",
+      "arenaDate": "2026-01-24T15:00:00.000Z",
+      "dbFixtureId": "68e79a28c8fcaf3b1d8a6a79",
+      "dbFixtureDate": "2026-01-24T15:00:00.000Z",
+      "homeTeam": "מנצ'סטר סיטי",
+      "awayTeam": "וולברהמפטון",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 13574,
+      "arenaGameName": "קריסטל פאלאס – וולבס",
+      "arenaDate": "2026-02-21T15:00:00.000Z",
+      "dbFixtureId": "68e79a30c8fcaf3b1d8a6b5d",
+      "dbFixtureDate": "2026-02-21T15:00:00.000Z",
+      "homeTeam": "קריסטל פאלאס",
+      "awayTeam": "וולברהמפטון",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 13768,
+      "arenaGameName": "ליברפול – פולהאם",
+      "arenaDate": "2026-04-11T15:00:00.000Z",
+      "dbFixtureId": "68e79a3ac8fcaf3b1d8a6c71",
+      "dbFixtureDate": "2026-04-11T14:00:00.000Z",
+      "homeTeam": "ליברפול",
+      "awayTeam": "פולהאם",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 13819,
+      "arenaGameName": "ווסטהאם – ליברפול",
+      "arenaDate": "2025-11-29T14:05:00.000Z",
+      "dbFixtureId": "68e79a13c8fcaf3b1d8a681b",
+      "dbFixtureDate": "2025-11-30T14:05:00.000Z",
+      "homeTeam": "וסט האם",
+      "awayTeam": "ליברפול",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 13912,
+      "arenaGameName": "ליברפול – וולבס",
+      "arenaDate": "2025-12-27T15:00:00.000Z",
+      "dbFixtureId": "68e79a1cc8fcaf3b1d8a6929",
+      "dbFixtureDate": "2025-12-27T15:00:00.000Z",
+      "homeTeam": "ליברפול",
+      "awayTeam": "וולברהמפטון",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 13979,
+      "arenaGameName": "מנצ’סטר סיטי – ליברפול",
+      "arenaDate": "2025-11-09T16:30:00.000Z",
+      "dbFixtureId": "68e79a0fc8fcaf3b1d8a67b5",
+      "dbFixtureDate": "2025-11-09T16:30:00.000Z",
+      "homeTeam": "מנצ'סטר סיטי",
+      "awayTeam": "ליברפול",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 14457,
+      "arenaGameName": "ליברפול – ניוקאסל",
+      "arenaDate": "2026-01-31T20:00:00.000Z",
+      "dbFixtureId": "68e79a29c8fcaf3b1d8a6a97",
+      "dbFixtureDate": "2026-01-31T20:00:00.000Z",
+      "homeTeam": "ליברפול",
+      "awayTeam": "ניוקאסל",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 14581,
+      "arenaGameName": "קריסטל פאלאס – מנצ’סטר יונייטד",
+      "arenaDate": "2025-11-30T12:00:00.000Z",
+      "dbFixtureId": "68e79a13c8fcaf3b1d8a6815",
+      "dbFixtureDate": "2025-11-30T12:00:00.000Z",
+      "homeTeam": "קריסטל פאלאס",
+      "awayTeam": "מנצ'סטר יונייטד",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 14593,
+      "arenaGameName": "קריסטל פאלאס – אסטון וילה",
+      "arenaDate": "2026-01-07T19:30:00.000Z",
+      "dbFixtureId": "68e79a24c8fcaf3b1d8a6a07",
+      "dbFixtureDate": "2026-01-07T19:30:00.000Z",
+      "homeTeam": "קריסטל פאלאס",
+      "awayTeam": "אסטון וילה",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 14597,
+      "arenaGameName": "פולהאם – נוטינגהאם פורסט",
+      "arenaDate": "2025-12-22T20:00:00.000Z",
+      "dbFixtureId": "68e79a1bc8fcaf3b1d8a68f3",
+      "dbFixtureDate": "2025-12-22T20:00:00.000Z",
+      "homeTeam": "פולהאם",
+      "awayTeam": "נוטינגהאם פורסט",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 14605,
+      "arenaGameName": "פולהאם – טוטנהאם",
+      "arenaDate": "2026-03-01T14:00:00.000Z",
+      "dbFixtureId": "68e79a32c8fcaf3b1d8a6b8d",
+      "dbFixtureDate": "2026-02-28T15:00:00.000Z",
+      "homeTeam": "פולהאם",
+      "awayTeam": "טוטנהאם",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 14639,
+      "arenaGameName": "פולהאם – אסטון וילה",
+      "arenaDate": "2026-04-25T15:00:00.000Z",
+      "dbFixtureId": "68e79a3ec8fcaf3b1d8a6cef",
+      "dbFixtureDate": "2026-04-25T14:00:00.000Z",
+      "homeTeam": "פולהאם",
+      "awayTeam": "אסטון וילה",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 14655,
+      "arenaGameName": "פולהאם – ניוקאסל",
+      "arenaDate": "2026-05-24T16:00:00.000Z",
+      "dbFixtureId": "68e79a46c8fcaf3b1d8a6dd3",
+      "dbFixtureDate": "2026-05-24T15:00:00.000Z",
+      "homeTeam": "פולהאם",
+      "awayTeam": "ניוקאסל",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 14663,
+      "arenaGameName": "פולהאם – צ’לסי",
+      "arenaDate": "2026-01-07T19:30:00.000Z",
+      "dbFixtureId": "68e79a23c8fcaf3b1d8a69e3",
+      "dbFixtureDate": "2026-01-07T19:30:00.000Z",
+      "homeTeam": "פולהאם",
+      "awayTeam": "צ'לסי",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 14669,
+      "arenaGameName": "פולהאם – ברייטון",
+      "arenaDate": "2026-01-24T15:00:00.000Z",
+      "dbFixtureId": "68e79a27c8fcaf3b1d8a6a5b",
+      "dbFixtureDate": "2026-01-24T15:00:00.000Z",
+      "homeTeam": "פולהאם",
+      "awayTeam": "ברייטון",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 14799,
+      "arenaGameName": "פולהאם – ליברפול",
+      "arenaDate": "2026-01-04T15:00:00.000Z",
+      "dbFixtureId": "68e79a21c8fcaf3b1d8a69a7",
+      "dbFixtureDate": "2026-01-04T15:00:00.000Z",
+      "homeTeam": "פולהאם",
+      "awayTeam": "ליברפול",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 14855,
+      "arenaGameName": "מנצ’סטר יונייטד – פולהאם",
+      "arenaDate": "2026-02-01T14:00:00.000Z",
+      "dbFixtureId": "68e79a29c8fcaf3b1d8a6a8b",
+      "dbFixtureDate": "2026-02-01T14:00:00.000Z",
+      "homeTeam": "מנצ'סטר יונייטד",
+      "awayTeam": "פולהאם",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 14881,
+      "arenaGameName": "מנצ’סטר יונייטד – וולבס",
+      "arenaDate": "2025-12-30T20:15:00.000Z",
+      "dbFixtureId": "68e79a1ec8fcaf3b1d8a695f",
+      "dbFixtureDate": "2025-12-30T20:15:00.000Z",
+      "homeTeam": "מנצ'סטר יונייטד",
+      "awayTeam": "וולברהמפטון",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 14907,
+      "arenaGameName": "מנצ’סטר יונייטד – קריסטל פאלאס",
+      "arenaDate": "2026-02-28T15:00:00.000Z",
+      "dbFixtureId": "68e79a31c8fcaf3b1d8a6b7b",
+      "dbFixtureDate": "2026-02-28T15:00:00.000Z",
+      "homeTeam": "מנצ'סטר יונייטד",
+      "awayTeam": "קריסטל פאלאס",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 14935,
+      "arenaGameName": "מנצ’סטר יונייטד – נוטינגהאם פורסט",
+      "arenaDate": "2026-05-17T17:30:00.000Z",
+      "dbFixtureId": "68e79a44c8fcaf3b1d8a6d97",
+      "dbFixtureDate": "2026-05-17T14:00:00.000Z",
+      "homeTeam": "מנצ'סטר יונייטד",
+      "awayTeam": "נוטינגהאם פורסט",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 15015,
+      "arenaGameName": "טוטנהאם – ברנטפורד",
+      "arenaDate": "2025-12-06T15:00:00.000Z",
+      "dbFixtureId": "68e79a17c8fcaf3b1d8a688d",
+      "dbFixtureDate": "2025-12-06T15:00:00.000Z",
+      "homeTeam": "טוטנהאם",
+      "awayTeam": "ברנטפורד",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 15060,
+      "arenaGameName": "טוטנהאם – מנצ’סטר סיטי",
+      "arenaDate": "2026-02-01T16:30:00.000Z",
+      "dbFixtureId": "68e79a29c8fcaf3b1d8a6a9d",
+      "dbFixtureDate": "2026-02-01T16:30:00.000Z",
+      "homeTeam": "טוטנהאם",
+      "awayTeam": "מנצ'סטר סיטי",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 15090,
+      "arenaGameName": "טוטנהאם – סנדרלנד",
+      "arenaDate": "2026-01-04T15:00:00.000Z",
+      "dbFixtureId": "68e79a21c8fcaf3b1d8a69b9",
+      "dbFixtureDate": "2026-01-04T15:00:00.000Z",
+      "homeTeam": "טוטנהאם",
+      "awayTeam": "סנדרלנד",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 15105,
+      "arenaGameName": "טוטנהאם – ליברפול",
+      "arenaDate": "2025-12-20T17:30:00.000Z",
+      "dbFixtureId": "68e79a1bc8fcaf3b1d8a6905",
+      "dbFixtureDate": "2025-12-20T17:30:00.000Z",
+      "homeTeam": "טוטנהאם",
+      "awayTeam": "ליברפול",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 15122,
+      "arenaGameName": "טוטנהאם – פולהאם",
+      "arenaDate": "2025-11-29T20:00:00.000Z",
+      "dbFixtureId": "68e79a13c8fcaf3b1d8a680f",
+      "dbFixtureDate": "2025-11-29T20:00:00.000Z",
+      "homeTeam": "טוטנהאם",
+      "awayTeam": "פולהאם",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 15331,
+      "arenaGameName": "ארסנל – צ’לסי",
+      "arenaDate": "2026-03-01T16:30:00.000Z",
+      "dbFixtureId": "68e79a33c8fcaf3b1d8a6b9f",
+      "dbFixtureDate": "2026-02-28T15:00:00.000Z",
+      "homeTeam": "ארסנל",
+      "awayTeam": "צ'לסי",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 15357,
+      "arenaGameName": "ארסנל – בורנמות’",
+      "arenaDate": "2026-04-11T17:30:00.000Z",
+      "dbFixtureId": "68e79a3ac8fcaf3b1d8a6c77",
+      "dbFixtureDate": "2026-04-11T14:00:00.000Z",
+      "homeTeam": "ארסנל",
+      "awayTeam": "בורנמות'",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 15413,
+      "arenaGameName": "ארסנל – ברנטפורד",
+      "arenaDate": "2025-12-03T20:00:00.000Z",
+      "dbFixtureId": "68e79a15c8fcaf3b1d8a6857",
+      "dbFixtureDate": "2025-12-03T19:30:00.000Z",
+      "homeTeam": "ארסנל",
+      "awayTeam": "ברנטפורד",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 15452,
+      "arenaGameName": "ארסנל – טוטנהאם",
+      "arenaDate": "2025-11-23T16:30:00.000Z",
+      "dbFixtureId": "68e79a11c8fcaf3b1d8a67eb",
+      "dbFixtureDate": "2025-11-23T16:30:00.000Z",
+      "homeTeam": "ארסנל",
+      "awayTeam": "טוטנהאם",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 15495,
+      "arenaGameName": "ארסנל – פולהאם",
+      "arenaDate": "2026-05-02T15:00:00.000Z",
+      "dbFixtureId": "68e79a41c8fcaf3b1d8a6d37",
+      "dbFixtureDate": "2026-05-02T14:00:00.000Z",
+      "homeTeam": "ארסנל",
+      "awayTeam": "פולהאם",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 15684,
+      "arenaGameName": "ליברפול – מנצ’סטר סיטי",
+      "arenaDate": "2026-02-08T16:30:00.000Z",
+      "dbFixtureId": "68e79a2cc8fcaf3b1d8a6ae5",
+      "dbFixtureDate": "2026-02-07T15:00:00.000Z",
+      "homeTeam": "ליברפול",
+      "awayTeam": "מנצ'סטר סיטי",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 15831,
+      "arenaGameName": "ליברפול – טוטנהאם",
+      "arenaDate": "2026-03-14T16:30:00.000Z",
+      "dbFixtureId": "68e79a36c8fcaf3b1d8a6bf9",
+      "dbFixtureDate": "2026-03-14T15:00:00.000Z",
+      "homeTeam": "ליברפול",
+      "awayTeam": "טוטנהאם",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 15848,
+      "arenaGameName": "ארסנל – ליברפול",
+      "arenaDate": "2026-01-08T20:00:00.000Z",
+      "dbFixtureId": "68e79a23c8fcaf3b1d8a69e9",
+      "dbFixtureDate": "2026-01-08T20:00:00.000Z",
+      "homeTeam": "ארסנל",
+      "awayTeam": "ליברפול",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 15863,
+      "arenaGameName": "ארסנל - וולבס",
+      "arenaDate": "2025-12-13T15:00:00.000Z",
+      "dbFixtureId": "68e79a18c8fcaf3b1d8a68b7",
+      "dbFixtureDate": "2025-12-13T20:00:00.000Z",
+      "homeTeam": "ארסנל",
+      "awayTeam": "וולברהמפטון",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 16892,
+      "arenaGameName": "ליברפול – צ’לסי",
+      "arenaDate": "2026-05-09T16:30:00.000Z",
+      "dbFixtureId": "68e79a42c8fcaf3b1d8a6d61",
+      "dbFixtureDate": "2026-05-09T14:00:00.000Z",
+      "homeTeam": "ליברפול",
+      "awayTeam": "צ'לסי",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18312,
+      "arenaGameName": "קריסטל פאלאס – ניוקאסל",
+      "arenaDate": "2026-04-11T15:00:00.000Z",
+      "dbFixtureId": "68e79a3bc8fcaf3b1d8a6c8f",
+      "dbFixtureDate": "2026-04-11T14:00:00.000Z",
+      "homeTeam": "קריסטל פאלאס",
+      "awayTeam": "ניוקאסל",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18323,
+      "arenaGameName": "קריסטל פאלאס – ווסטהאם",
+      "arenaDate": "2026-04-18T15:00:00.000Z",
+      "dbFixtureId": "68e79a3dc8fcaf3b1d8a6cc5",
+      "dbFixtureDate": "2026-04-18T14:00:00.000Z",
+      "homeTeam": "קריסטל פאלאס",
+      "awayTeam": "וסט האם",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18341,
+      "arenaGameName": "קריסטל פאלאס – מנצ’סטר סיטי",
+      "arenaDate": "2025-12-14T15:00:00.000Z",
+      "dbFixtureId": "68e79a19c8fcaf3b1d8a68cf",
+      "dbFixtureDate": "2025-12-14T14:00:00.000Z",
+      "homeTeam": "קריסטל פאלאס",
+      "awayTeam": "מנצ'סטר סיטי",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18357,
+      "arenaGameName": "ווסטהאם יונייטד – מנצ’סטר סיטי",
+      "arenaDate": "2026-03-14T17:30:00.000Z",
+      "dbFixtureId": "68e79a36c8fcaf3b1d8a6c0b",
+      "dbFixtureDate": "2026-03-14T15:00:00.000Z",
+      "homeTeam": "וסט האם",
+      "awayTeam": "מנצ'סטר סיטי",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18366,
+      "arenaGameName": "ווסטהאם יונייטד – ארסנל",
+      "arenaDate": "2026-05-09T15:00:00.000Z",
+      "dbFixtureId": "68e79a43c8fcaf3b1d8a6d73",
+      "dbFixtureDate": "2026-05-09T14:00:00.000Z",
+      "homeTeam": "וסט האם",
+      "awayTeam": "ארסנל",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18396,
+      "arenaGameName": "ווסטהאם יונייטד – וולבס",
+      "arenaDate": "2026-04-11T20:00:00.000Z",
+      "dbFixtureId": "68e79a3bc8fcaf3b1d8a6c83",
+      "dbFixtureDate": "2026-04-11T14:00:00.000Z",
+      "homeTeam": "וסט האם",
+      "awayTeam": "וולברהמפטון",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18409,
+      "arenaGameName": "ווסטהאם יונייטד – בורנמות’",
+      "arenaDate": "2026-02-21T15:00:00.000Z",
+      "dbFixtureId": "68e79a30c8fcaf3b1d8a6b4b",
+      "dbFixtureDate": "2026-02-21T15:00:00.000Z",
+      "homeTeam": "וסט האם",
+      "awayTeam": "בורנמות'",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18421,
+      "arenaGameName": "ווסטהאם יונייטד – נוטינגהאם",
+      "arenaDate": "2026-01-06T20:00:00.000Z",
+      "dbFixtureId": "68e79a24c8fcaf3b1d8a69fb",
+      "dbFixtureDate": "2026-01-06T20:00:00.000Z",
+      "homeTeam": "וסט האם",
+      "awayTeam": "נוטינגהאם פורסט",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18434,
+      "arenaGameName": "ווסטהאם יונייטד – פולהאם",
+      "arenaDate": "2025-12-27T15:00:00.000Z",
+      "dbFixtureId": "68e79a1dc8fcaf3b1d8a693b",
+      "dbFixtureDate": "2025-12-27T15:00:00.000Z",
+      "homeTeam": "וסט האם",
+      "awayTeam": "פולהאם",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18447,
+      "arenaGameName": "ווסטהאם יונייטד – ברייטון",
+      "arenaDate": "2025-12-30T19:30:00.000Z",
+      "dbFixtureId": "68e79a1fc8fcaf3b1d8a6977",
+      "dbFixtureDate": "2025-12-30T19:30:00.000Z",
+      "homeTeam": "וסט האם",
+      "awayTeam": "ברייטון",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18460,
+      "arenaGameName": "מנצ’סטר סיטי – אסטון וילה",
+      "arenaDate": "2026-05-24T16:00:00.000Z",
+      "dbFixtureId": "68e79a47c8fcaf3b1d8a6df1",
+      "dbFixtureDate": "2026-05-24T15:00:00.000Z",
+      "homeTeam": "מנצ'סטר סיטי",
+      "awayTeam": "אסטון וילה",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18475,
+      "arenaGameName": "מנצ’סטר סיטי – ניוקאסל",
+      "arenaDate": "2026-02-21T15:00:00.000Z",
+      "dbFixtureId": "68e79a30c8fcaf3b1d8a6b57",
+      "dbFixtureDate": "2026-02-21T15:00:00.000Z",
+      "homeTeam": "מנצ'סטר סיטי",
+      "awayTeam": "ניוקאסל",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18550,
+      "arenaGameName": "מנצ’סטר סיטי – ברנטפורד",
+      "arenaDate": "2026-05-09T15:00:00.000Z",
+      "dbFixtureId": "68e79a43c8fcaf3b1d8a6d79",
+      "dbFixtureDate": "2026-05-09T14:00:00.000Z",
+      "homeTeam": "מנצ'סטר סיטי",
+      "awayTeam": "ברנטפורד",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18595,
+      "arenaGameName": "טוטנהאם – ברייטון",
+      "arenaDate": "2026-04-18T16:00:00.000Z",
+      "dbFixtureId": "68e79a3cc8fcaf3b1d8a6cb3",
+      "dbFixtureDate": "2026-04-18T14:00:00.000Z",
+      "homeTeam": "טוטנהאם",
+      "awayTeam": "ברייטון",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18610,
+      "arenaGameName": "טוטנהאם – ניוקאסל יונייטד",
+      "arenaDate": "2026-02-10T19:30:00.000Z",
+      "dbFixtureId": "68e79a2dc8fcaf3b1d8a6b09",
+      "dbFixtureDate": "2026-02-11T20:00:00.000Z",
+      "homeTeam": "טוטנהאם",
+      "awayTeam": "ניוקאסל",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18625,
+      "arenaGameName": "טוטנהאם – ווסטהאם יונייטד",
+      "arenaDate": "2026-01-17T15:00:00.000Z",
+      "dbFixtureId": "68e79a25c8fcaf3b1d8a6a25",
+      "dbFixtureDate": "2026-01-17T15:00:00.000Z",
+      "homeTeam": "טוטנהאם",
+      "awayTeam": "וסט האם",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18638,
+      "arenaGameName": "טוטנהאם – אברטון",
+      "arenaDate": "2026-05-24T16:00:00.000Z",
+      "dbFixtureId": "68e79a47c8fcaf3b1d8a6de5",
+      "dbFixtureDate": "2026-05-24T15:00:00.000Z",
+      "homeTeam": "טוטנהאם",
+      "awayTeam": "אברטון",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18653,
+      "arenaGameName": "טוטנהאם – ארסנל",
+      "arenaDate": "2026-02-22T16:30:00.000Z",
+      "dbFixtureId": "68e79a2fc8fcaf3b1d8a6b45",
+      "dbFixtureDate": "2026-02-21T15:00:00.000Z",
+      "homeTeam": "טוטנהאם",
+      "awayTeam": "ארסנל",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18666,
+      "arenaGameName": "מנצ’סטר יונייטד – ברנטפורד",
+      "arenaDate": "2026-04-25T15:00:00.000Z",
+      "dbFixtureId": "68e79a3ec8fcaf3b1d8a6ce3",
+      "dbFixtureDate": "2026-04-25T14:00:00.000Z",
+      "homeTeam": "מנצ'סטר יונייטד",
+      "awayTeam": "ברנטפורד",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18767,
+      "arenaGameName": "מנצ’סטר יונייטד – ווסטהאם",
+      "arenaDate": "2025-12-03T20:00:00.000Z",
+      "dbFixtureId": "68e79a14c8fcaf3b1d8a6833",
+      "dbFixtureDate": "2025-12-04T20:00:00.000Z",
+      "homeTeam": "מנצ'סטר יונייטד",
+      "awayTeam": "וסט האם",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18795,
+      "arenaGameName": "ליברפול - ברייטון",
+      "arenaDate": "2025-12-13T15:00:00.000Z",
+      "dbFixtureId": "68e79a18c8fcaf3b1d8a68b1",
+      "dbFixtureDate": "2025-12-13T15:00:00.000Z",
+      "homeTeam": "ליברפול",
+      "awayTeam": "ברייטון",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18827,
+      "arenaGameName": "ליברפול – ווסטהאם",
+      "arenaDate": "2026-02-28T15:00:00.000Z",
+      "dbFixtureId": "68e79a32c8fcaf3b1d8a6b99",
+      "dbFixtureDate": "2026-02-28T15:00:00.000Z",
+      "homeTeam": "ליברפול",
+      "awayTeam": "וסט האם",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18844,
+      "arenaGameName": "ליברפול – קריסטל פאלאס",
+      "arenaDate": "2026-04-25T15:00:00.000Z",
+      "dbFixtureId": "68e79a3fc8fcaf3b1d8a6cfb",
+      "dbFixtureDate": "2026-04-25T14:00:00.000Z",
+      "homeTeam": "ליברפול",
+      "awayTeam": "קריסטל פאלאס",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18861,
+      "arenaGameName": "ליברפול – סנדרלנד",
+      "arenaDate": "2025-12-03T20:00:00.000Z",
+      "dbFixtureId": "68e79a15c8fcaf3b1d8a6851",
+      "dbFixtureDate": "2025-12-03T20:15:00.000Z",
+      "homeTeam": "ליברפול",
+      "awayTeam": "סנדרלנד",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18878,
+      "arenaGameName": "ליברפול – ברנטפורד",
+      "arenaDate": "2026-05-24T16:00:00.000Z",
+      "dbFixtureId": "68e79a46c8fcaf3b1d8a6dd9",
+      "dbFixtureDate": "2026-05-24T15:00:00.000Z",
+      "homeTeam": "ליברפול",
+      "awayTeam": "ברנטפורד",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 18986,
+      "arenaGameName": "קריסטל פאלאס – צ’לסי",
+      "arenaDate": "2026-01-25T14:00:00.000Z",
+      "dbFixtureId": "68e79a28c8fcaf3b1d8a6a7f",
+      "dbFixtureDate": "2026-01-25T14:00:00.000Z",
+      "homeTeam": "קריסטל פאלאס",
+      "awayTeam": "צ'לסי",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 19001,
+      "arenaGameName": "קריסטל פאלאס – ארסנל",
+      "arenaDate": "2026-05-24T16:00:00.000Z",
+      "dbFixtureId": "68e79a48c8fcaf3b1d8a6dfd",
+      "dbFixtureDate": "2026-05-24T15:00:00.000Z",
+      "homeTeam": "קריסטל פאלאס",
+      "awayTeam": "ארסנל",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 19029,
+      "arenaGameName": "ארסנל – ברייטון",
+      "arenaDate": "2025-12-27T15:00:00.000Z",
+      "dbFixtureId": "68e79a1dc8fcaf3b1d8a692f",
+      "dbFixtureDate": "2025-12-27T15:00:00.000Z",
+      "homeTeam": "ארסנל",
+      "awayTeam": "ברייטון",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 19063,
+      "arenaGameName": "ארסנל - ניוקאסל",
+      "arenaDate": "2026-04-25T15:00:00.000Z",
+      "dbFixtureId": "68e79a3fc8fcaf3b1d8a6d01",
+      "dbFixtureDate": "2026-04-25T14:00:00.000Z",
+      "homeTeam": "ארסנל",
+      "awayTeam": "ניוקאסל",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 19297,
+      "arenaGameName": "טוטנהאם - קריסטל פאלאס",
+      "arenaDate": "2026-03-04T20:00:00.000Z",
+      "dbFixtureId": "68e79a34c8fcaf3b1d8a6bd5",
+      "dbFixtureDate": "2026-03-04T20:00:00.000Z",
+      "homeTeam": "טוטנהאם",
+      "awayTeam": "קריסטל פאלאס",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 15482,
+      "arenaGameName": "ארסנל – אסטון וילה",
+      "arenaDate": "2025-12-30T20:00:00.000Z",
+      "dbFixtureId": "68e79a1fc8fcaf3b1d8a696b",
+      "dbFixtureDate": "2025-12-30T20:15:00.000Z",
+      "homeTeam": "ארסנל",
+      "awayTeam": "אסטון וילה",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 20029,
+      "arenaGameName": "ארסנל - אברטון",
+      "arenaDate": "2026-03-14T15:00:00.000Z",
+      "dbFixtureId": "68e79a36c8fcaf3b1d8a6bff",
+      "dbFixtureDate": "2026-03-14T15:00:00.000Z",
+      "homeTeam": "ארסנל",
+      "awayTeam": "אברטון",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 20038,
+      "arenaGameName": "צ'לסי - ארסנל",
+      "arenaDate": "2025-11-30T16:30:00.000Z",
+      "dbFixtureId": "68e79a14c8fcaf3b1d8a682d",
+      "dbFixtureDate": "2025-11-30T16:30:00.000Z",
+      "homeTeam": "צ'לסי",
+      "awayTeam": "ארסנל",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 20046,
+      "arenaGameName": "צ'לסי - מנצ'סטר יונייטד",
+      "arenaDate": "2026-04-18T20:00:00.000Z",
+      "dbFixtureId": "68e79a3cc8fcaf3b1d8a6cb9",
+      "dbFixtureDate": "2026-04-18T14:00:00.000Z",
+      "homeTeam": "צ'לסי",
+      "awayTeam": "מנצ'סטר יונייטד",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 20071,
+      "arenaGameName": "צ'לסי - מנצ'סטר סיטי",
+      "arenaDate": "2026-04-11T16:30:00.000Z",
+      "dbFixtureId": "68e79a3bc8fcaf3b1d8a6c89",
+      "dbFixtureDate": "2026-04-11T14:00:00.000Z",
+      "homeTeam": "צ'לסי",
+      "awayTeam": "מנצ'סטר סיטי",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 20079,
+      "arenaGameName": "צ'לסי - ניוקאסל",
+      "arenaDate": "2026-03-14T14:00:00.000Z",
+      "dbFixtureId": "68e79a37c8fcaf3b1d8a6c11",
+      "dbFixtureDate": "2026-03-14T15:00:00.000Z",
+      "homeTeam": "צ'לסי",
+      "awayTeam": "ניוקאסל",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 20096,
+      "arenaGameName": "צ'לסי - אסטון וילה",
+      "arenaDate": "2025-12-27T17:30:00.000Z",
+      "dbFixtureId": "68e79a1dc8fcaf3b1d8a6941",
+      "dbFixtureDate": "2025-12-27T17:30:00.000Z",
+      "homeTeam": "צ'לסי",
+      "awayTeam": "אסטון וילה",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 20104,
+      "arenaGameName": "צ'לסי - אברטון",
+      "arenaDate": "2025-12-13T15:00:00.000Z",
+      "dbFixtureId": "68e79a19c8fcaf3b1d8a68c9",
+      "dbFixtureDate": "2025-12-13T15:00:00.000Z",
+      "homeTeam": "צ'לסי",
+      "awayTeam": "אברטון",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 20122,
+      "arenaGameName": "צ'לסי - ברנטפורד",
+      "arenaDate": "2026-01-17T19:00:00.000Z",
+      "dbFixtureId": "68e79a25c8fcaf3b1d8a6a2b",
+      "dbFixtureDate": "2026-01-17T15:00:00.000Z",
+      "homeTeam": "צ'לסי",
+      "awayTeam": "ברנטפורד",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 20130,
+      "arenaGameName": "צ'לסי - בורנמות'",
+      "arenaDate": "2025-12-30T19:30:00.000Z",
+      "dbFixtureId": "68e79a1fc8fcaf3b1d8a697d",
+      "dbFixtureDate": "2025-12-30T19:30:00.000Z",
+      "homeTeam": "צ'לסי",
+      "awayTeam": "בורנמות'",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 20142,
+      "arenaGameName": "צ'לסי - נוטינגהאם פורסט",
+      "arenaDate": "2026-05-02T15:00:00.000Z",
+      "dbFixtureId": "68e79a41c8fcaf3b1d8a6d43",
+      "dbFixtureDate": "2026-05-02T14:00:00.000Z",
+      "homeTeam": "צ'לסי",
+      "awayTeam": "נוטינגהאם פורסט",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 20143,
+      "arenaGameName": "צ'לסי - ווסטהאם",
+      "arenaDate": "2026-01-31T17:30:00.000Z",
+      "dbFixtureId": "68e79a2ac8fcaf3b1d8a6aa3",
+      "dbFixtureDate": "2026-01-31T17:30:00.000Z",
+      "homeTeam": "צ'לסי",
+      "awayTeam": "וסט האם",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 20577,
+      "arenaGameName": "ליברפול - נוטינגהאם פורסט",
+      "arenaDate": "2025-11-22T15:00:00.000Z",
+      "dbFixtureId": "68e79a10c8fcaf3b1d8a67d3",
+      "dbFixtureDate": "2025-11-22T15:00:00.000Z",
+      "homeTeam": "ליברפול",
+      "awayTeam": "נוטינגהאם פורסט",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 20818,
+      "arenaGameName": "ווסטהאם - מנצ'סטר יונייטד",
+      "arenaDate": "2026-02-10T20:15:00.000Z",
+      "dbFixtureId": "68e79a2dc8fcaf3b1d8a6b0f",
+      "dbFixtureDate": "2026-02-11T20:00:00.000Z",
+      "homeTeam": "וסט האם",
+      "awayTeam": "מנצ'סטר יונייטד",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 20829,
+      "arenaGameName": "ווסטהאם - אסטון וילה",
+      "arenaDate": "2025-12-13T17:30:00.000Z",
+      "dbFixtureId": "68e79a19c8fcaf3b1d8a68c3",
+      "dbFixtureDate": "2025-12-14T14:00:00.000Z",
+      "homeTeam": "וסט האם",
+      "awayTeam": "אסטון וילה",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 20835,
+      "arenaGameName": "פולהאם - מנצ'סטר סיטי",
+      "arenaDate": "2025-12-03T20:00:00.000Z",
+      "dbFixtureId": "68e79a14c8fcaf3b1d8a6845",
+      "dbFixtureDate": "2025-12-02T19:30:00.000Z",
+      "homeTeam": "פולהאם",
+      "awayTeam": "מנצ'סטר סיטי",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 20842,
+      "arenaGameName": "פולהאם - קריסטל פאלאס",
+      "arenaDate": "2025-12-06T15:00:00.000Z",
+      "dbFixtureId": "68e79a16c8fcaf3b1d8a687b",
+      "dbFixtureDate": "2025-12-07T16:30:00.000Z",
+      "homeTeam": "פולהאם",
+      "awayTeam": "קריסטל פאלאס",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 20920,
+      "arenaGameName": "מנצ'סטר סיטי - ווסטהאם יונייטד",
+      "arenaDate": "2025-12-20T15:00:00.000Z",
+      "dbFixtureId": "68e79a1bc8fcaf3b1d8a690b",
+      "dbFixtureDate": "2025-12-20T15:00:00.000Z",
+      "homeTeam": "מנצ'סטר סיטי",
+      "awayTeam": "וסט האם",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 20975,
+      "arenaGameName": "מנצ'סטר סיטי - נוטינגהאם פורסט",
+      "arenaDate": "2026-03-04T19:30:00.000Z",
+      "dbFixtureId": "68e79a35c8fcaf3b1d8a6bdb",
+      "dbFixtureDate": "2026-03-04T20:00:00.000Z",
+      "homeTeam": "מנצ'סטר סיטי",
+      "awayTeam": "נוטינגהאם פורסט",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 20984,
+      "arenaGameName": "מנצ'סטר סיטי - קריסטל פאלאס",
+      "arenaDate": "2026-03-21T15:00:00.000Z",
+      "dbFixtureId": "68e79a39c8fcaf3b1d8a6c53",
+      "dbFixtureDate": "2026-03-21T15:00:00.000Z",
+      "homeTeam": "מנצ'סטר סיטי",
+      "awayTeam": "קריסטל פאלאס",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 21021,
+      "arenaGameName": "קריסטל פאלאס - אברטון",
+      "arenaDate": "2026-05-09T15:00:00.000Z",
+      "dbFixtureId": "68e79a44c8fcaf3b1d8a6d85",
+      "dbFixtureDate": "2026-05-09T14:00:00.000Z",
+      "homeTeam": "קריסטל פאלאס",
+      "awayTeam": "אברטון",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 26343,
+      "arenaGameName": "מנצ'סטר יונייטד - אסטון וילה",
+      "arenaDate": "2026-03-14T15:00:00.000Z",
+      "dbFixtureId": "68e79a36c8fcaf3b1d8a6bf3",
+      "dbFixtureDate": "2026-03-14T15:00:00.000Z",
+      "homeTeam": "מנצ'סטר יונייטד",
+      "awayTeam": "אסטון וילה",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 26358,
+      "arenaGameName": "קריסטל פאלאס - טוטנהאם",
+      "arenaDate": "2025-12-28T16:30:00.000Z",
+      "dbFixtureId": "68e79a1dc8fcaf3b1d8a6947",
+      "dbFixtureDate": "2025-12-28T16:30:00.000Z",
+      "homeTeam": "קריסטל פאלאס",
+      "awayTeam": "טוטנהאם",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 26860,
+      "arenaGameName": "מנצ'סטר סיטי - פולהאם",
+      "arenaDate": "2026-02-11T19:30:00.000Z",
+      "dbFixtureId": "68e79a2ec8fcaf3b1d8a6b1b",
+      "dbFixtureDate": "2026-02-11T20:00:00.000Z",
+      "homeTeam": "מנצ'סטר סיטי",
+      "awayTeam": "פולהאם",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 30672,
+      "arenaGameName": "מנצ'סטר יונייטד - ליברפול",
+      "arenaDate": "2026-05-02T16:00:00.000Z",
+      "dbFixtureId": "68e79a40c8fcaf3b1d8a6d1f",
+      "dbFixtureDate": "2026-05-02T14:00:00.000Z",
+      "homeTeam": "מנצ'סטר יונייטד",
+      "awayTeam": "ליברפול",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 31960,
+      "arenaGameName": "מנצ'סטר יונייטד - ניוקאסל",
+      "arenaDate": "2025-12-26T20:00:00.000Z",
+      "dbFixtureId": "68e79a1cc8fcaf3b1d8a6923",
+      "dbFixtureDate": "2025-12-26T20:00:00.000Z",
+      "homeTeam": "מנצ'סטר יונייטד",
+      "awayTeam": "ניוקאסל",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 32722,
+      "arenaGameName": "ארסנל - ברנלי",
+      "arenaDate": "2026-05-17T14:00:00.000Z",
+      "dbFixtureId": "68e79a45c8fcaf3b1d8a6daf",
+      "dbFixtureDate": "2026-05-17T14:00:00.000Z",
+      "homeTeam": "ארסנל",
+      "awayTeam": "ברנלי",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 32737,
+      "arenaGameName": "ארסנל - סנדרלנד",
+      "arenaDate": "2026-02-07T15:00:00.000Z",
+      "dbFixtureId": "68e79a2cc8fcaf3b1d8a6aeb",
+      "dbFixtureDate": "2026-02-07T15:00:00.000Z",
+      "homeTeam": "ארסנל",
+      "awayTeam": "סנדרלנד",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 32757,
+      "arenaGameName": "צ'לסי - ברנלי",
+      "arenaDate": "2026-02-21T15:00:00.000Z",
+      "dbFixtureId": "68e79a30c8fcaf3b1d8a6b51",
+      "dbFixtureDate": "2026-02-21T15:00:00.000Z",
+      "homeTeam": "צ'לסי",
+      "awayTeam": "ברנלי",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 32766,
+      "arenaGameName": "צ'לסי - לידס יונייטד",
+      "arenaDate": "2026-02-10T19:30:00.000Z",
+      "dbFixtureId": "68e79a2ec8fcaf3b1d8a6b15",
+      "dbFixtureDate": "2026-02-11T20:00:00.000Z",
+      "homeTeam": "צ'לסי",
+      "awayTeam": "לידס",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 32800,
+      "arenaGameName": "קריסטל פאלאס - לידס יונייטד",
+      "arenaDate": "2026-03-14T15:00:00.000Z",
+      "dbFixtureId": "68e79a37c8fcaf3b1d8a6c17",
+      "dbFixtureDate": "2026-03-14T15:00:00.000Z",
+      "homeTeam": "קריסטל פאלאס",
+      "awayTeam": "לידס",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 32814,
+      "arenaGameName": "מנצ'סטר סיטי - ארסנל",
+      "arenaDate": "2026-04-18T16:30:00.000Z",
+      "dbFixtureId": "68e79a3dc8fcaf3b1d8a6cbf",
+      "dbFixtureDate": "2026-04-18T14:00:00.000Z",
+      "homeTeam": "מנצ'סטר סיטי",
+      "awayTeam": "ארסנל",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 32835,
+      "arenaGameName": "מנצ'סטר יונייטד - טוטנהאם",
+      "arenaDate": "2026-02-07T12:30:00.000Z",
+      "dbFixtureId": "68e79a2bc8fcaf3b1d8a6ac7",
+      "dbFixtureDate": "2026-02-07T15:00:00.000Z",
+      "homeTeam": "מנצ'סטר יונייטד",
+      "awayTeam": "טוטנהאם",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 32923,
+      "arenaGameName": "ליברפול - ברנלי",
+      "arenaDate": "2026-01-17T20:00:00.000Z",
+      "dbFixtureId": "68e79a25c8fcaf3b1d8a6a1f",
+      "dbFixtureDate": "2026-01-17T15:00:00.000Z",
+      "homeTeam": "ליברפול",
+      "awayTeam": "ברנלי",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 33094,
+      "arenaGameName": "ליברפול - לידס יונייטד",
+      "arenaDate": "2026-01-01T17:30:00.000Z",
+      "dbFixtureId": "68e79a1fc8fcaf3b1d8a6965",
+      "dbFixtureDate": "2026-01-01T17:30:00.000Z",
+      "homeTeam": "ליברפול",
+      "awayTeam": "לידס",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 33105,
+      "arenaGameName": "מנצ'סטר סיטי - צ'לסי",
+      "arenaDate": "2026-01-04T17:30:00.000Z",
+      "dbFixtureId": "68e79a22c8fcaf3b1d8a69bf",
+      "dbFixtureDate": "2026-01-04T17:30:00.000Z",
+      "homeTeam": "מנצ'סטר סיטי",
+      "awayTeam": "צ'לסי",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 33106,
+      "arenaGameName": "מנצ'סטר סיטי - ברייטון",
+      "arenaDate": "2026-01-07T19:30:00.000Z",
+      "dbFixtureId": "68e79a24c8fcaf3b1d8a6a01",
+      "dbFixtureDate": "2026-01-07T19:30:00.000Z",
+      "homeTeam": "מנצ'סטר סיטי",
+      "awayTeam": "ברייטון",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 33124,
+      "arenaGameName": "פולהאם - ברנלי",
+      "arenaDate": "2026-03-21T15:00:00.000Z",
+      "dbFixtureId": "68e79a38c8fcaf3b1d8a6c3b",
+      "dbFixtureDate": "2026-03-21T15:00:00.000Z",
+      "homeTeam": "פולהאם",
+      "awayTeam": "ברנלי",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 33139,
+      "arenaGameName": "קריסטל פאלאס - ברנלי",
+      "arenaDate": "2026-02-11T19:30:00.000Z",
+      "dbFixtureId": "68e79a2ec8fcaf3b1d8a6b21",
+      "dbFixtureDate": "2026-02-11T20:00:00.000Z",
+      "homeTeam": "קריסטל פאלאס",
+      "awayTeam": "ברנלי",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 33145,
+      "arenaGameName": "פולהאם - סנדרלנד",
+      "arenaDate": "2025-11-22T14:00:00.000Z",
+      "dbFixtureId": "68e79a10c8fcaf3b1d8a67c7",
+      "dbFixtureDate": "2025-11-22T15:00:00.000Z",
+      "homeTeam": "פולהאם",
+      "awayTeam": "סנדרלנד",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 33167,
+      "arenaGameName": "מנצ'סטר יונייטד - לידס יונייטד",
+      "arenaDate": "2026-04-11T15:00:00.000Z",
+      "dbFixtureId": "68e79a3ac8fcaf3b1d8a6c6b",
+      "dbFixtureDate": "2026-04-11T14:00:00.000Z",
+      "homeTeam": "מנצ'סטר יונייטד",
+      "awayTeam": "לידס",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 33391,
+      "arenaGameName": "מנצ'סטר סיטי - לידס יונייטד",
+      "arenaDate": "2025-11-29T21:45:00.000Z",
+      "dbFixtureId": "68e79a12c8fcaf3b1d8a67f7",
+      "dbFixtureDate": "2025-11-29T15:00:00.000Z",
+      "homeTeam": "מנצ'סטר סיטי",
+      "awayTeam": "לידס",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 33429,
+      "arenaGameName": "מנצ'סטר יונייטד - מנצ'סטר סיטי",
+      "arenaDate": "2026-01-17T12:30:00.000Z",
+      "dbFixtureId": "68e79a25c8fcaf3b1d8a6a13",
+      "dbFixtureDate": "2026-01-17T12:30:00.000Z",
+      "homeTeam": "מנצ'סטר יונייטד",
+      "awayTeam": "מנצ'סטר סיטי",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 33448,
+      "arenaGameName": "ווסטהאם - סנדרלנד",
+      "arenaDate": "2026-01-24T17:00:00.000Z",
+      "dbFixtureId": "68e79a28c8fcaf3b1d8a6a73",
+      "dbFixtureDate": "2026-01-24T12:30:00.000Z",
+      "homeTeam": "וסט האם",
+      "awayTeam": "סנדרלנד",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 34682,
+      "arenaGameName": "מנצ'סטר סיטי - סנדרלנד",
+      "arenaDate": "2025-12-06T15:00:00.000Z",
+      "dbFixtureId": "68e79a17c8fcaf3b1d8a6893",
+      "dbFixtureDate": "2025-12-06T15:00:00.000Z",
+      "homeTeam": "מנצ'סטר סיטי",
+      "awayTeam": "סנדרלנד",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 36111,
+      "arenaGameName": "צ'לסי - טוטנהאם",
+      "arenaDate": "2026-05-17T19:45:00.000Z",
+      "dbFixtureId": "68e79a45c8fcaf3b1d8a6dbb",
+      "dbFixtureDate": "2026-05-17T14:00:00.000Z",
+      "homeTeam": "צ'לסי",
+      "awayTeam": "טוטנהאם",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 43055,
+      "arenaGameName": "ארסנל - מנצ'סטר יונייטד",
+      "arenaDate": "2026-01-25T16:30:00.000Z",
+      "dbFixtureId": "68e79a27c8fcaf3b1d8a6a61",
+      "dbFixtureDate": "2026-01-25T16:30:00.000Z",
+      "homeTeam": "ארסנל",
+      "awayTeam": "מנצ'סטר יונייטד",
+      "alreadyMapped": false
+    },
+    {
+      "arenaGameId": 47572,
+      "arenaGameName": "פולהאם – אברטון",
+      "arenaDate": "2026-02-07T15:00:00.000Z",
+      "dbFixtureId": "68e79a2bc8fcaf3b1d8a6ad9",
+      "dbFixtureDate": "2026-02-07T15:00:00.000Z",
+      "homeTeam": "פולהאם",
+      "awayTeam": "אברטון",
+      "alreadyMapped": false
+    }
+  ],
+  "notInPremierLeague": [
+    {
+      "arenaGameId": 12612,
+      "arenaGameName": "פריז סן ז’רמן - פריז FC",
+      "arenaDate": "2026-01-04T20:00:00.000Z",
+      "homeTeam": "פאריס סן ז'רמן",
+      "awayTeam": "פריז"
+    },
+    {
+      "arenaGameId": 12672,
+      "arenaGameName": "פריז סן ז'רמן - ליון",
+      "arenaDate": "2026-04-19T21:00:00.000Z",
+      "homeTeam": "פאריס סן ז'רמן",
+      "awayTeam": "ליון"
+    },
+    {
+      "arenaGameId": 12798,
+      "arenaGameName": "ריאל מדריד – אלאבס",
+      "arenaDate": "2026-04-22T21:00:00.000Z",
+      "homeTeam": "ריאל מדריד",
+      "awayTeam": "אלאבס"
+    },
+    {
+      "arenaGameId": 12859,
+      "arenaGameName": "ברצלונה – בטיס",
+      "arenaDate": "2026-05-17T21:00:00.000Z",
+      "homeTeam": "ברצלונה",
+      "awayTeam": "ריאל בטיס"
+    },
+    {
+      "arenaGameId": 12920,
+      "arenaGameName": "ריאל מדריד – ריאל אוביידו",
+      "arenaDate": "2026-05-13T21:00:00.000Z",
+      "homeTeam": "ריאל מדריד",
+      "awayTeam": "אוביידו"
+    },
+    {
+      "arenaGameId": 13642,
+      "arenaGameName": "ריאל מדריד – אתלטיק בילבאו",
+      "arenaDate": "2026-05-24T17:00:00.000Z",
+      "homeTeam": "ריאל מדריד",
+      "awayTeam": "אתלטיק בילבאו"
+    },
+    {
+      "arenaGameId": 13661,
+      "arenaGameName": "ריאל מדריד – ראיו ויאקאנו",
+      "arenaDate": "2026-02-01T16:15:00.000Z",
+      "homeTeam": "ריאל מדריד",
+      "awayTeam": "ראיו ואיקאנו"
+    },
+    {
+      "arenaGameId": 13745,
+      "arenaGameName": "ברצלונה - ריאל אוביידו",
+      "arenaDate": "2026-01-25T15:00:00.000Z",
+      "homeTeam": "ברצלונה",
+      "awayTeam": "אוביידו"
+    },
+    {
+      "arenaGameId": 14088,
+      "arenaGameName": "רומא – פיסה",
+      "arenaDate": "2026-04-12T12:30:00.000Z",
+      "homeTeam": "רומא",
+      "awayTeam": "פיזה"
+    },
+    {
+      "arenaGameId": 14120,
+      "arenaGameName": "מילאן – יובנטוס",
+      "arenaDate": "2026-04-26T18:00:00.000Z",
+      "homeTeam": "מילאן",
+      "awayTeam": "יובנטוס"
+    },
+    {
+      "arenaGameId": 14197,
+      "arenaGameName": "מילאן – פארמה",
+      "arenaDate": "2026-02-22T15:00:00.000Z",
+      "homeTeam": "מילאן",
+      "awayTeam": "פארמה"
+    },
+    {
+      "arenaGameId": 14212,
+      "arenaGameName": "מילאן – ורונה",
+      "arenaDate": "2025-12-28T20:45:00.000Z",
+      "homeTeam": "מילאן",
+      "awayTeam": "ורונה"
+    },
+    {
+      "arenaGameId": 14227,
+      "arenaGameName": "מילאן – טורינו",
+      "arenaDate": "2026-03-22T18:00:00.000Z",
+      "homeTeam": "מילאן",
+      "awayTeam": "טורינו"
+    },
+    {
+      "arenaGameId": 14242,
+      "arenaGameName": "מילאן – לאציו",
+      "arenaDate": "2025-11-29T20:45:00.000Z",
+      "homeTeam": "מילאן",
+      "awayTeam": "לאציו"
+    },
+    {
+      "arenaGameId": 14257,
+      "arenaGameName": "מילאן – לצ׳ה",
+      "arenaDate": "2026-01-18T20:45:00.000Z",
+      "homeTeam": "מילאן",
+      "awayTeam": "לצ'ה"
+    },
+    {
+      "arenaGameId": 14272,
+      "arenaGameName": "הדרבי של מדריד: ריאל מדריד – אתלטיקו מדריד",
+      "arenaDate": "2026-03-22T21:00:00.000Z",
+      "homeTeam": "ריאל מדריד",
+      "awayTeam": "אתלטיקו מדריד"
+    },
+    {
+      "arenaGameId": 14310,
+      "arenaGameName": "ריאל מדריד – ג’ירונה",
+      "arenaDate": "2026-04-12T16:15:00.000Z",
+      "homeTeam": "ריאל מדריד",
+      "awayTeam": "חירונה"
+    },
+    {
+      "arenaGameId": 14363,
+      "arenaGameName": "פריז סן ז’רמן – נאנט",
+      "arenaDate": "2026-03-15T20:45:00.000Z",
+      "homeTeam": "פאריס סן ז'רמן",
+      "awayTeam": "נאנט"
+    },
+    {
+      "arenaGameId": 14374,
+      "arenaGameName": "פריז סן ז’רמן – מונאקו",
+      "arenaDate": "2026-03-08T21:00:00.000Z",
+      "homeTeam": "פאריס סן ז'רמן",
+      "awayTeam": "מונאקו"
+    },
+    {
+      "arenaGameId": 14710,
+      "arenaGameName": "אייאקס – אוטרכט",
+      "arenaDate": "2026-05-10T20:00:00.000Z",
+      "homeTeam": "אייאקס",
+      "awayTeam": "אוטרכט"
+    },
+    {
+      "arenaGameId": 14719,
+      "arenaGameName": "אייאקס – ניימכן",
+      "arenaDate": "2026-02-21T15:00:00.000Z",
+      "homeTeam": "אייאקס",
+      "awayTeam": "ניימכן"
+    },
+    {
+      "arenaGameId": 14728,
+      "arenaGameName": "אייאקס – פורטונה סיטארד",
+      "arenaDate": "2026-02-14T15:00:00.000Z",
+      "homeTeam": "אייאקס",
+      "awayTeam": "פורטונה סיטארד"
+    },
+    {
+      "arenaGameId": 14764,
+      "arenaGameName": "אייאקס – פ.ס.וו איינדהובן",
+      "arenaDate": "2026-05-02T20:00:00.000Z",
+      "homeTeam": "אייאקס",
+      "awayTeam": "PSV Eindhoven"
+    },
+    {
+      "arenaGameId": 15701,
+      "arenaGameName": "ברצלונה – אלאבס",
+      "arenaDate": "2025-11-29T16:15:00.000Z",
+      "homeTeam": "ברצלונה",
+      "awayTeam": "אלאבס"
+    },
+    {
+      "arenaGameId": 15722,
+      "arenaGameName": "אתלטיקו מדריד – ריאל סוסיאדד",
+      "arenaDate": "2026-03-08T21:00:00.000Z",
+      "homeTeam": "אתלטיקו מדריד",
+      "awayTeam": "ריאל סוסיאדד"
+    },
+    {
+      "arenaGameId": 15808,
+      "arenaGameName": "ברצלונה – סלטה ויגו",
+      "arenaDate": "2026-04-22T16:15:00.000Z",
+      "homeTeam": "ברצלונה",
+      "awayTeam": "סלטה ויגו"
+    },
+    {
+      "arenaGameId": 15898,
+      "arenaGameName": "בורוסיה דורטמונד - סנט פאולי",
+      "arenaDate": "2026-01-17T15:30:00.000Z",
+      "homeTeam": "בורוסיה דורטמונד",
+      "awayTeam": "סנט פאולי"
+    },
+    {
+      "arenaGameId": 15907,
+      "arenaGameName": "ברצלונה – לבאנטה",
+      "arenaDate": "2026-02-22T17:00:00.000Z",
+      "homeTeam": "ברצלונה",
+      "awayTeam": "לבנטה"
+    },
+    {
+      "arenaGameId": 15967,
+      "arenaGameName": "באיירן מינכן – אוגסבורג",
+      "arenaDate": "2025-11-22T15:00:00.000Z",
+      "homeTeam": "באיירן מינכן",
+      "awayTeam": "אאוגסבורג"
+    },
+    {
+      "arenaGameId": 15996,
+      "arenaGameName": "באיירן מינכן – אוניון ברלין",
+      "arenaDate": "2026-03-22T15:00:00.000Z",
+      "homeTeam": "באיירן מינכן",
+      "awayTeam": "אוניון ברלין"
+    },
+    {
+      "arenaGameId": 16015,
+      "arenaGameName": "באיירן מינכן -פרייבורג",
+      "arenaDate": "2025-11-23T17:30:00.000Z",
+      "homeTeam": "באיירן מינכן",
+      "awayTeam": "פרייבורג"
+    },
+    {
+      "arenaGameId": 16120,
+      "arenaGameName": "אייאקס – ספרטה רוטרדם",
+      "arenaDate": "2026-03-14T15:00:00.000Z",
+      "homeTeam": "אייאקס",
+      "awayTeam": "ספרטה רוטרדם"
+    },
+    {
+      "arenaGameId": 16159,
+      "arenaGameName": "אייאקס – פיינורד",
+      "arenaDate": "2025-12-13T15:00:00.000Z",
+      "homeTeam": "אייאקס",
+      "awayTeam": "פיינורד"
+    },
+    {
+      "arenaGameId": 16192,
+      "arenaGameName": "אייאקס – אקסלסיור",
+      "arenaDate": "2025-11-22T15:00:00.000Z",
+      "homeTeam": "אייאקס",
+      "awayTeam": "אקסלסיור"
+    },
+    {
+      "arenaGameId": 16512,
+      "arenaGameName": "פריז סן ז’רמן – מרסיי",
+      "arenaDate": "2026-02-08T20:45:00.000Z",
+      "homeTeam": "פאריס סן ז'רמן",
+      "awayTeam": "מרסיי"
+    },
+    {
+      "arenaGameId": 16626,
+      "arenaGameName": "פריז סן ז’רמן – ברסט",
+      "arenaDate": "2026-05-09T15:00:00.000Z",
+      "homeTeam": "פאריס סן ז'רמן",
+      "awayTeam": "ברסט"
+    },
+    {
+      "arenaGameId": 16671,
+      "arenaGameName": "פריז סן ז’רמן – לוריין",
+      "arenaDate": "2026-05-03T15:00:00.000Z",
+      "homeTeam": "פאריס סן ז'רמן",
+      "awayTeam": "לוריאן"
+    },
+    {
+      "arenaGameId": 16706,
+      "arenaGameName": "פריז סן ז’רמן – סטאד רן",
+      "arenaDate": "2025-12-06T21:00:00.000Z",
+      "homeTeam": "פאריס סן ז'רמן",
+      "awayTeam": "רן"
+    },
+    {
+      "arenaGameId": 17182,
+      "arenaGameName": "אתלטיקו מדריד – ג’ירונה",
+      "arenaDate": "2026-05-17T15:00:00.000Z",
+      "homeTeam": "אתלטיקו מדריד",
+      "awayTeam": "חירונה"
+    },
+    {
+      "arenaGameId": 17431,
+      "arenaGameName": "אתלטיקו מדריד – אלאבס",
+      "arenaDate": "2026-01-18T21:00:00.000Z",
+      "homeTeam": "אתלטיקו מדריד",
+      "awayTeam": "אלאבס"
+    },
+    {
+      "arenaGameId": 17493,
+      "arenaGameName": "אתלטיקו מדריד – סלטה ויגו",
+      "arenaDate": "2026-05-10T21:00:00.000Z",
+      "homeTeam": "אתלטיקו מדריד",
+      "awayTeam": "סלטה ויגו"
+    },
+    {
+      "arenaGameId": 17544,
+      "arenaGameName": "אתלטיקו מדריד – ברצלונה",
+      "arenaDate": "2026-04-05T21:00:00.000Z",
+      "homeTeam": "אתלטיקו מדריד",
+      "awayTeam": "ברצלונה"
+    },
+    {
+      "arenaGameId": 17593,
+      "arenaGameName": "אתלטיקו מדריד – חטאפה",
+      "arenaDate": "2026-03-15T21:00:00.000Z",
+      "homeTeam": "אתלטיקו מדריד",
+      "awayTeam": "חתאפה"
+    },
+    {
+      "arenaGameId": 17647,
+      "arenaGameName": "ברצלונה – ויאריאל",
+      "arenaDate": "2026-03-01T21:00:00.000Z",
+      "homeTeam": "ברצלונה",
+      "awayTeam": "ויאריאל"
+    },
+    {
+      "arenaGameId": 17694,
+      "arenaGameName": "ברצלונה – מאיורקה",
+      "arenaDate": "2026-02-08T20:30:00.000Z",
+      "homeTeam": "ברצלונה",
+      "awayTeam": "מיורקה"
+    },
+    {
+      "arenaGameId": 17769,
+      "arenaGameName": "ברצלונה - אוסאסונה",
+      "arenaDate": "2025-12-13T19:30:00.000Z",
+      "homeTeam": "ברצלונה",
+      "awayTeam": "אוססונה"
+    },
+    {
+      "arenaGameId": 17794,
+      "arenaGameName": "ברצלונה – אתלטיק בילבאו",
+      "arenaDate": "2025-11-22T16:15:00.000Z",
+      "homeTeam": "ברצלונה",
+      "awayTeam": "אתלטיק בילבאו"
+    },
+    {
+      "arenaGameId": 17819,
+      "arenaGameName": "ברצלונה – אתלטיקו מדריד",
+      "arenaDate": "2025-12-02T21:00:00.000Z",
+      "homeTeam": "ברצלונה",
+      "awayTeam": "אתלטיקו מדריד"
+    },
+    {
+      "arenaGameId": 17840,
+      "arenaGameName": "ברצלונה – ראיו ויאקאנו",
+      "arenaDate": "2026-03-22T21:00:00.000Z",
+      "homeTeam": "ברצלונה",
+      "awayTeam": "ראיו ואיקאנו"
+    },
+    {
+      "arenaGameId": 17865,
+      "arenaGameName": "ריאל מדריד – ריאל בטיס",
+      "arenaDate": "2026-01-04T16:15:00.000Z",
+      "homeTeam": "ריאל מדריד",
+      "awayTeam": "ריאל בטיס"
+    }
+  ]
+}

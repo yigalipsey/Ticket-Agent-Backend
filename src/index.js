@@ -101,7 +101,7 @@ app.use((req, res, next) => {
 
   res.on("finish", () => {
     const responseTime = Date.now() - start;
-    logRequest(req, res, responseTime);
+    logRequest(req, res, responseTime, "GLOBAL_MW");
   });
 
   next();

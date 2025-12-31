@@ -2,6 +2,7 @@ import League from "../../../models/League.js";
 import Team from "../../../models/Team.js";
 import mongoose from "mongoose";
 import { logWithCheckpoint, logError } from "../../../utils/logger.js";
+import { isValidObjectId } from "../../../utils/validation.js";
 import {
   immutableLeagueCopy,
   normalizeMongoData,
@@ -24,7 +25,7 @@ export const getLeague = async (leagueId, withTeams = false) => {
     );
 
     // ולידציה של ID
-    if (!mongoose.Types.ObjectId.isValid(leagueId)) {
+    if (!isValidObjectId(leagueId)) {
       throw new Error(`Invalid league ID: ${leagueId}`);
     }
 

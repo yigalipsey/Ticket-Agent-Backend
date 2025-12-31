@@ -1,0 +1,791 @@
+{
+  "totalArenaGames": 105,
+  "totalDbFixtures": 104,
+  "matched": 16,
+  "unmatched": 89,
+  "mappings": [
+    {
+      "arenaGameId": 41212,
+      "arenaGameName": "מונדיאל 2026 משחק 1: מקסיקו - דרום אפריקה",
+      "arenaDate": "2026-06-11T18:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41214,
+      "arenaGameName": "מונדיאל 2026: משחק 2",
+      "arenaDate": "2026-06-11T18:30:00.000Z",
+      "dbFixtureId": "69399b58d0b57a17517e5d00",
+      "dbFixtureSlug": "mexico-vs-south-africa-2026-06-11-group-a",
+      "dbFixtureDate": "2026-06-11T19:00:00.000Z",
+      "dbVenueName": "אצטדיון אצטקה",
+      "matched": true
+    },
+    {
+      "arenaGameId": 41220,
+      "arenaGameName": "מונדיאל 2026: משחק 3: קנדה - טרם נקבע",
+      "arenaDate": "2026-06-12T18:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41222,
+      "arenaGameName": "מונדיאל 2026 משחק 4: ארצות הברית - פאראגוואי",
+      "arenaDate": "2026-06-12T18:30:00.000Z",
+      "dbFixtureId": "69399b5ad0b57a17517e5d37",
+      "dbFixtureSlug": "canada-vs--a-2026-06-12-group-b",
+      "dbFixtureDate": "2026-06-12T19:00:00.000Z",
+      "dbVenueName": "בימו פילד",
+      "matched": true
+    },
+    {
+      "arenaGameId": 41224,
+      "arenaGameName": "מונדיאל 2026 משחק 5: האיטי - סקוטלנד",
+      "arenaDate": "2026-06-13T12:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41229,
+      "arenaGameName": "מונדיאל 2026 משחק 6: אוסטרליה - טרם נקבע",
+      "arenaDate": "2026-06-13T16:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41234,
+      "arenaGameName": "מונדיאל 2026 משחק 7: ברזיל - מרוקו",
+      "arenaDate": "2026-06-13T18:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41241,
+      "arenaGameName": "מונדיאל 2026 משחק 8: קטאר - שוויץ",
+      "arenaDate": "2026-06-13T18:30:00.000Z",
+      "dbFixtureId": "69399b5bd0b57a17517e5d3f",
+      "dbFixtureSlug": "qatar-vs-switzerland-2026-06-13-group-b",
+      "dbFixtureDate": "2026-06-13T19:00:00.000Z",
+      "dbVenueName": "אצטדיון ליווייס",
+      "matched": true
+    },
+    {
+      "arenaGameId": 41253,
+      "arenaGameName": "מונדיאל 2026 משחק 10: גרמניה - קורסאו",
+      "arenaDate": "2026-06-14T12:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41246,
+      "arenaGameName": "מונדיאל 2026 משחק 9: חוף השנהב - אקוודור",
+      "arenaDate": "2026-06-14T12:30:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41259,
+      "arenaGameName": "מונדיאל 2026 משחק 11: הולנד - יפן",
+      "arenaDate": "2026-06-14T16:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41265,
+      "arenaGameName": "מונדיאל 2026 משחק 12: טרם נקבע - תוניסיה",
+      "arenaDate": "2026-06-14T18:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41271,
+      "arenaGameName": "מונדיאל 2026 משחק 13: ערב הסעודית - אוראגוואי",
+      "arenaDate": "2026-06-15T12:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41276,
+      "arenaGameName": "מונדיאל 2026 משחק 14: ספרד - כף ורדה",
+      "arenaDate": "2026-06-15T14:30:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41281,
+      "arenaGameName": "מונדיאל 2026 משחק 15: איראן - ניו זילנד",
+      "arenaDate": "2026-06-15T16:30:00.000Z",
+      "dbFixtureId": "69399b6ad0b57a17517e5dde",
+      "dbFixtureSlug": "spain-vs-cape-verde-2026-06-15-group-h",
+      "dbFixtureDate": "2026-06-15T16:00:00.000Z",
+      "dbVenueName": "אצטדיון מרצדס-בנץ",
+      "matched": true
+    },
+    {
+      "arenaGameId": 41287,
+      "arenaGameName": "מונדיאל 2026 משחק 16: בלגיה - מצרים",
+      "arenaDate": "2026-06-15T18:30:00.000Z",
+      "dbFixtureId": "69399b67d0b57a17517e5dc0",
+      "dbFixtureSlug": "belgium-vs-egypt-2026-06-15-group-g",
+      "dbFixtureDate": "2026-06-15T19:00:00.000Z",
+      "dbVenueName": "אצטדיון לומן",
+      "matched": true
+    },
+    {
+      "arenaGameId": 41292,
+      "arenaGameName": "מונדיאל 2026 משחק 17: צרפת - סנגל",
+      "arenaDate": "2026-06-16T12:30:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41298,
+      "arenaGameName": "מונדיאל 2026 משחק 18: טרם נקבע - נורבגיה",
+      "arenaDate": "2026-06-16T13:30:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41304,
+      "arenaGameName": "מונדיאל 2026 משחק 19: ארגנטינה - אלג'יריה",
+      "arenaDate": "2026-06-16T16:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41313,
+      "arenaGameName": "מונדיאל 2026 משחק 20: אוסטריה - ירדן",
+      "arenaDate": "2026-06-16T19:00:00.000Z",
+      "dbFixtureId": "69399b6dd0b57a17517e5dfc",
+      "dbFixtureSlug": "france-vs-senegal-2026-06-16-group-i",
+      "dbFixtureDate": "2026-06-16T19:00:00.000Z",
+      "dbVenueName": "אצטדיון מטלייף",
+      "matched": true
+    },
+    {
+      "arenaGameId": 41318,
+      "arenaGameName": "מונדיאל 2026 משחק 21: גאנה - פנמה",
+      "arenaDate": "2026-06-17T12:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41323,
+      "arenaGameName": "מונדיאל 2026 משחק 22: אנגליה - קרואטיה",
+      "arenaDate": "2026-06-17T14:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41328,
+      "arenaGameName": "מונדיאל 2026 משחק 23: פורטוגל - טרם נקבע",
+      "arenaDate": "2026-06-17T16:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41335,
+      "arenaGameName": "מונדיאל 2026 משחק 24: אוזבקיסטן - קולומביה",
+      "arenaDate": "2026-06-17T17:00:00.000Z",
+      "dbFixtureId": "69399b72d0b57a17517e5e30",
+      "dbFixtureSlug": "portugal-vs--1-2026-06-17-group-k",
+      "dbFixtureDate": "2026-06-17T17:00:00.000Z",
+      "dbVenueName": "אצטדיון NRG",
+      "matched": true
+    },
+    {
+      "arenaGameId": 41342,
+      "arenaGameName": "מונדיאל 2026 משחק 25: טרם נקבע - דרום אפריקה",
+      "arenaDate": "2026-06-18T14:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41350,
+      "arenaGameName": "מונדיאל 2026 משחק 26: שוויץ - טרם נקבע",
+      "arenaDate": "2026-06-18T16:00:00.000Z",
+      "dbFixtureId": "69399b59d0b57a17517e5d0c",
+      "dbFixtureSlug": "-d-vs-south-africa-2026-06-18-group-a",
+      "dbFixtureDate": "2026-06-18T16:00:00.000Z",
+      "dbVenueName": "אצטדיון מרצדס-בנץ",
+      "matched": true
+    },
+    {
+      "arenaGameId": 41360,
+      "arenaGameName": "מונדיאל 2026: משחק 27: קנדה - קטאר",
+      "arenaDate": "2026-06-18T16:30:00.000Z",
+      "dbFixtureId": "69399b59d0b57a17517e5d0c",
+      "dbFixtureSlug": "-d-vs-south-africa-2026-06-18-group-a",
+      "dbFixtureDate": "2026-06-18T16:00:00.000Z",
+      "dbVenueName": "אצטדיון מרצדס-בנץ",
+      "matched": true
+    },
+    {
+      "arenaGameId": 41362,
+      "arenaGameName": "מונדיאל 2026 משחק 28: מקסיקו - דרום קוריאה",
+      "arenaDate": "2026-06-18T18:30:00.000Z",
+      "dbFixtureId": "69399b5bd0b57a17517e5d42",
+      "dbFixtureSlug": "switzerland-vs--a-2026-06-18-group-b",
+      "dbFixtureDate": "2026-06-18T19:00:00.000Z",
+      "dbVenueName": "אצטדיון SoFi",
+      "matched": true
+    },
+    {
+      "arenaGameId": 41364,
+      "arenaGameName": "מונדיאל 2026 משחק 29: ברזיל - האיטי",
+      "arenaDate": "2026-06-19T12:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41369,
+      "arenaGameName": "מונדיאל 2026 משחק 30: סקוטלנד - מרוקו",
+      "arenaDate": "2026-06-19T12:30:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41374,
+      "arenaGameName": "מונדיאל 2026: משחק 31 טרם נקבע - פאראגוואי",
+      "arenaDate": "2026-06-19T15:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41379,
+      "arenaGameName": "מונדיאל 2026 משחק 32: ארצות הברית - אוסטרליה",
+      "arenaDate": "2026-06-19T18:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41381,
+      "arenaGameName": "מונדיאל 2026 משחק 33: גרמניה - חוף השנהב",
+      "arenaDate": "2026-06-20T12:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41386,
+      "arenaGameName": "מונדיאל 2026 משחק 34: אקוודור - קוראסאו",
+      "arenaDate": "2026-06-20T14:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41392,
+      "arenaGameName": "מונדיאל 2026 משחק 35: הולנד - טרם נקבע",
+      "arenaDate": "2026-06-20T16:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41397,
+      "arenaGameName": "מונדיאל 2026 משחק 36: תוניסיה - יפן",
+      "arenaDate": "2026-06-20T18:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41402,
+      "arenaGameName": "מונדיאל 2026 משחק 37: אורוגוואי - כף ורדה",
+      "arenaDate": "2026-06-21T12:30:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41407,
+      "arenaGameName": "מונדיאל 2026 משחק 38: ספרד - ערב הסעודית",
+      "arenaDate": "2026-06-21T15:30:00.000Z",
+      "dbFixtureId": "69399b6bd0b57a17517e5de8",
+      "dbFixtureSlug": "spain-vs-saudi-arabia-2026-06-21-group-h",
+      "dbFixtureDate": "2026-06-21T16:00:00.000Z",
+      "dbVenueName": "אצטדיון מרצדס-בנץ",
+      "matched": true
+    },
+    {
+      "arenaGameId": 41412,
+      "arenaGameName": "מונדיאל 2026 משחק 39: בלגיה - איראן",
+      "arenaDate": "2026-06-21T16:30:00.000Z",
+      "dbFixtureId": "69399b6bd0b57a17517e5de8",
+      "dbFixtureSlug": "spain-vs-saudi-arabia-2026-06-21-group-h",
+      "dbFixtureDate": "2026-06-21T16:00:00.000Z",
+      "dbVenueName": "אצטדיון מרצדס-בנץ",
+      "matched": true
+    },
+    {
+      "arenaGameId": 41417,
+      "arenaGameName": "מונדיאל 2026 משחק 40: ניו זילנד - מצרים",
+      "arenaDate": "2026-06-21T18:30:00.000Z",
+      "dbFixtureId": "69399b68d0b57a17517e5dca",
+      "dbFixtureSlug": "belgium-vs-iran-2026-06-21-group-g",
+      "dbFixtureDate": "2026-06-21T19:00:00.000Z",
+      "dbVenueName": "אצטדיון SoFi",
+      "matched": true
+    },
+    {
+      "arenaGameId": 41422,
+      "arenaGameName": "מונדיאל 2026 משחק 41: נורבגיה - סנגל",
+      "arenaDate": "2026-06-22T12:30:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41427,
+      "arenaGameName": "מונדיאל 2026 משחק 42: צרפת - טרם נקבע",
+      "arenaDate": "2026-06-22T13:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41432,
+      "arenaGameName": "מונדיאל 2026 משחק 43: ארגנטינה - אוסטריה",
+      "arenaDate": "2026-06-22T16:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41437,
+      "arenaGameName": "מונדיאל 2026 משחק 44: ירדן - אלג'יריה",
+      "arenaDate": "2026-06-22T18:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 41442,
+      "arenaGameName": "מונדיאל 2026 משחק 45: אנגליה - גאנה",
+      "arenaDate": "2026-06-23T12:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42204,
+      "arenaGameName": "מונדיאל 2026 משחק 46: פנמה - קרואטיה",
+      "arenaDate": "2026-06-23T13:30:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42209,
+      "arenaGameName": "מונדיאל 2026 משחק 47: פורטוגל - אוזבקיסטן",
+      "arenaDate": "2026-06-23T16:30:00.000Z",
+      "dbFixtureId": "69399b73d0b57a17517e5e3a",
+      "dbFixtureSlug": "portugal-vs-uzbekistan-2026-06-23-group-k",
+      "dbFixtureDate": "2026-06-23T17:00:00.000Z",
+      "dbVenueName": "אצטדיון NRG",
+      "matched": true
+    },
+    {
+      "arenaGameId": 42214,
+      "arenaGameName": "מונדיאל 2026 משחק 48: קולומביה - טרם נקבע",
+      "arenaDate": "2026-06-23T18:30:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42219,
+      "arenaGameName": "מונדיאל 2026 משחק 49: סקוטלנד - ברזיל",
+      "arenaDate": "2026-06-24T12:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42178,
+      "arenaGameName": "מונדיאל 2026 משחק 50: מרוקו - האיטי",
+      "arenaDate": "2026-06-24T14:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42225,
+      "arenaGameName": "מונדיאל 2026: משחק 50",
+      "arenaDate": "2026-06-24T14:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42173,
+      "arenaGameName": "מונדיאל 2026 משחק 51: שוויץ - קנדה",
+      "arenaDate": "2026-06-24T15:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42230,
+      "arenaGameName": "מונדיאל 2026 משחק 52: טרם נקבע - קטאר",
+      "arenaDate": "2026-06-24T18:30:00.000Z",
+      "dbFixtureId": "69399b5cd0b57a17517e5d4c",
+      "dbFixtureSlug": "switzerland-vs-canada-2026-06-24-group-b",
+      "dbFixtureDate": "2026-06-24T19:00:00.000Z",
+      "dbVenueName": "בי סי פלייס",
+      "matched": true
+    },
+    {
+      "arenaGameId": 42235,
+      "arenaGameName": "מונדיאל 2026 משחק 54: דרום אפריקה - דרום קוריאה",
+      "arenaDate": "2026-06-24T20:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 47098,
+      "arenaGameName": "מונדיאל 2026: משחק 53",
+      "arenaDate": "2026-06-24T20:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42240,
+      "arenaGameName": "מונדיאל 2026 משחק 55: קורסאו - חוף השנהב",
+      "arenaDate": "2026-06-25T15:40:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42245,
+      "arenaGameName": "מונדיאל 2026 משחק 56: אקוודור - גרמניה",
+      "arenaDate": "2026-06-25T16:30:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42250,
+      "arenaGameName": "מונדיאל 2026 משחק 57: יפן - טרם נקבע",
+      "arenaDate": "2026-06-25T17:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 45345,
+      "arenaGameName": "מונדיאל 2026: משחק 59: ארצות הברית - טרם נקבע",
+      "arenaDate": "2026-06-25T18:30:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42255,
+      "arenaGameName": "מונדיאל 2026 משחק 58: תוניסיה - הולנד",
+      "arenaDate": "2026-06-25T19:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42260,
+      "arenaGameName": "מונדיאל 2026 משחק 60: פרגוואי - אוסטרליה",
+      "arenaDate": "2026-06-25T19:30:00.000Z",
+      "dbFixtureId": "69399b64d0b57a17517e5d9e",
+      "dbFixtureSlug": "ecuador-vs-germany-2026-06-25-group-e",
+      "dbFixtureDate": "2026-06-25T20:00:00.000Z",
+      "dbVenueName": "אצטדיון מטלייף",
+      "matched": true
+    },
+    {
+      "arenaGameId": 42265,
+      "arenaGameName": "מונדיאל 2026 משחק 61: נורבגיה - צרפת",
+      "arenaDate": "2026-06-26T12:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42270,
+      "arenaGameName": "מונדיאל 2026 משחק 62: סנגל - טרם נקבע",
+      "arenaDate": "2026-06-26T14:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42275,
+      "arenaGameName": "מונדיאל 2026 משחק 63: מצרים - איראן",
+      "arenaDate": "2026-06-26T15:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42280,
+      "arenaGameName": "מונדיאל 2026 משחק 64: ניו זילנד - בלגיה",
+      "arenaDate": "2026-06-26T17:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42285,
+      "arenaGameName": "מונדיאל 2026 משחק 65: כף ורדה - ערב הסעודית",
+      "arenaDate": "2026-06-26T17:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42290,
+      "arenaGameName": "מונדיאל 2026 משחק 66: אורוגוואי - ספרד",
+      "arenaDate": "2026-06-26T17:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42295,
+      "arenaGameName": "מונדיאל 2026: משחק 67: פנמה - אנגליה",
+      "arenaDate": "2026-06-27T12:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42300,
+      "arenaGameName": "מונדיאל 2026 משחק 68: קרואטיה - גאנה",
+      "arenaDate": "2026-06-27T12:30:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42305,
+      "arenaGameName": "מונדיאל 2026 משחק 69: אלג'יריה - אוסטריה",
+      "arenaDate": "2026-06-27T16:30:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42310,
+      "arenaGameName": "מונדיאל 2026 משחק 70: ירדן - ארגנטינה",
+      "arenaDate": "2026-06-27T17:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42315,
+      "arenaGameName": "מונדיאל 2026 משחק 71: קולומביה- פורטוגל",
+      "arenaDate": "2026-06-27T17:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42320,
+      "arenaGameName": "מונדיאל 2026: משחק 72",
+      "arenaDate": "2026-06-27T18:30:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 43400,
+      "arenaGameName": "מונדיאל 2026: משחק 73 שלב 32 האחרונות",
+      "arenaDate": "2026-06-28T12:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42326,
+      "arenaGameName": "מונדיאל 2026: משחק 74 שלב 32 האחרונות",
+      "arenaDate": "2026-06-29T12:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42331,
+      "arenaGameName": "מונדיאל 2026: משחק 75 שלב 32 האחרונות",
+      "arenaDate": "2026-06-29T15:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42393,
+      "arenaGameName": "מונדיאל 2026: משחק 76 שלב 32 האחרונות",
+      "arenaDate": "2026-06-29T18:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42398,
+      "arenaGameName": "מונדיאל 2026: משחק 77 שלב 32 האחרונות",
+      "arenaDate": "2026-06-30T12:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42403,
+      "arenaGameName": "מונדיאל 2026: משחק 78 שלב 32 האחרונות",
+      "arenaDate": "2026-06-30T15:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42408,
+      "arenaGameName": "מונדיאל 2026: משחק 79 שלב 32 האחרונות",
+      "arenaDate": "2026-06-30T18:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42413,
+      "arenaGameName": "מונדיאל 2026: משחק 80 שלב 32 האחרונות",
+      "arenaDate": "2026-07-01T12:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42418,
+      "arenaGameName": "מונדיאל 2026: משחק 81 שלב 32 האחרונות",
+      "arenaDate": "2026-07-01T15:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42423,
+      "arenaGameName": "מונדיאל 2026: משחק 82 שלב 32 האחרונות",
+      "arenaDate": "2026-07-01T18:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42428,
+      "arenaGameName": "מונדיאל 2026: משחק 83 שלב 32 האחרונות",
+      "arenaDate": "2026-07-02T12:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42434,
+      "arenaGameName": "מונדיאל 2026: משחק 84 שלב 32 האחרונות",
+      "arenaDate": "2026-07-02T15:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42440,
+      "arenaGameName": "מונדיאל 2026: משחק 85 שלב 32 האחרונות",
+      "arenaDate": "2026-07-02T18:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42465,
+      "arenaGameName": "מונדיאל 2026: משחק 86 שלב 32 האחרונות",
+      "arenaDate": "2026-07-03T12:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42470,
+      "arenaGameName": "מונדיאל 2026: משחק 87 שלב 32 האחרונות",
+      "arenaDate": "2026-07-03T15:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42475,
+      "arenaGameName": "מונדיאל 2026: משחק 88 שלב 32 האחרונות",
+      "arenaDate": "2026-07-03T18:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42198,
+      "arenaGameName": "מונדיאל 2026: משחק 89 שמינית גמר",
+      "arenaDate": "2026-07-04T12:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42193,
+      "arenaGameName": "מונדיאל 2026: משחק 90 שמינית גמר",
+      "arenaDate": "2026-07-04T15:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42188,
+      "arenaGameName": "מונדיאל 2026: משחק 91 שמינית גמר",
+      "arenaDate": "2026-07-05T15:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42183,
+      "arenaGameName": "מונדיאל 2026: משחק 92 שמינית גמר",
+      "arenaDate": "2026-07-05T18:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42145,
+      "arenaGameName": "מונדיאל 2026: משחק 93 שמינית גמר",
+      "arenaDate": "2026-07-06T15:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42135,
+      "arenaGameName": "מונדיאל 2026: משחק 95 שמינית גמר",
+      "arenaDate": "2026-07-07T15:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42140,
+      "arenaGameName": "מונדיאל 2026: משחק 94 שמינית גמר",
+      "arenaDate": "2026-07-07T15:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42130,
+      "arenaGameName": "מונדיאל 2026: משחק 96 שמינית גמר",
+      "arenaDate": "2026-07-07T18:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42120,
+      "arenaGameName": "מונדיאל 2026: משחק 98 רבע גמר",
+      "arenaDate": "2026-07-10T20:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42123,
+      "arenaGameName": "מונדיאל 2026: משחק 97 רבע גמר",
+      "arenaDate": "2026-07-10T20:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42116,
+      "arenaGameName": "מונדיאל 2026: משחק 100 רבע גמר",
+      "arenaDate": "2026-07-11T20:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42118,
+      "arenaGameName": "מונדיאל 2026: משחק 99 רבע גמר",
+      "arenaDate": "2026-07-11T20:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42114,
+      "arenaGameName": "מונדיאל 2026: משחק 101 חצי גמר",
+      "arenaDate": "2026-07-14T20:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42112,
+      "arenaGameName": "מונדיאל 2026: משחק 102 חצי גמר",
+      "arenaDate": "2026-07-15T20:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42110,
+      "arenaGameName": "מונדיאל 2026: משחק 103 המקום השלישי: מפסידה משחק 101 - מפסידה משחק 102",
+      "arenaDate": "2026-07-18T20:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    },
+    {
+      "arenaGameId": 42104,
+      "arenaGameName": "גמר מונדיאל 2026 משחק 104: מנצחת משחק 101 נגד מנצחת משחק 102",
+      "arenaDate": "2026-07-19T20:00:00.000Z",
+      "dbFixtureId": null,
+      "matched": false
+    }
+  ]
+}

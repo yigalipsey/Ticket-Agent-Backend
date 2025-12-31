@@ -21,13 +21,37 @@ const footballEventSchema = new mongoose.Schema(
     homeTeam: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Team",
-      required: true,
+      required: function () {
+        // אם יש TBD team, homeTeam לא נדרש רק אם יש homeTeamName
+        return !this.hasTbdTeam || !this.homeTeamName;
+      },
     },
 
     awayTeam: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Team",
-      required: true,
+      required: function () {
+        // אם יש TBD team, awayTeam לא נדרש רק אם יש awayTeamName
+        return !this.hasTbdTeam || !this.awayTeamName;
+      },
+    },
+
+    // שדות טקסט חופשי לנבחרות שלא נקבעו (TBD - To Be Determined)
+    homeTeamName: {
+      type: String,
+      trim: true,
+    },
+
+    awayTeamName: {
+      type: String,
+      trim: true,
+    },
+
+    // האם יש נבחרת שלא נקבעה (פלייאוף וכו')
+    hasTbdTeam: {
+      type: Boolean,
+      default: false,
+      index: true,
     },
 
     venue: {
@@ -108,6 +132,20 @@ const footballEventSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
+
+// Validation: אם hasTbdTeam הוא true, לפחות אחד מהשדות homeTeamName או awayTeamName חייב להיות מוגדר
+footballEventSchema.pre("validate", function (next) {
+  if (this.hasTbdTeam) {
+    if (!this.homeTeamName && !this.awayTeamName) {
+      return next(
+        new Error(
+          "If hasTbdTeam is true, at least one of homeTeamName or awayTeamName must be provided"
+        )
+      );
+    }
+  }
+  next();
+});
 
 // אינדקסים חשובים
 footballEventSchema.index({ "externalIds.apiFootball": 1 }, { unique: true });

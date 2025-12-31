@@ -1,0 +1,1399 @@
+{
+  "timestamp": "2025-12-10T16:42:26.698Z",
+  "totalPerformances": 26,
+  "totalPerformers": 8,
+  "teams": [
+    {
+      "performerId": "29451",
+      "teamName": "Algeria",
+      "performerName": "Algeria",
+      "source": "known"
+    },
+    {
+      "performerId": "72",
+      "teamName": "Argentina",
+      "performerName": "Argentina",
+      "source": "known"
+    },
+    {
+      "performerId": "29460",
+      "teamName": "Australia",
+      "performerName": "Australia",
+      "source": "known"
+    },
+    {
+      "performerId": "16",
+      "teamName": "Austria",
+      "performerName": "Austria",
+      "source": "known"
+    },
+    {
+      "performerId": "17",
+      "teamName": "Belgium",
+      "performerName": "Belgium",
+      "source": "known"
+    },
+    {
+      "performerId": "120",
+      "teamName": "Bolivia",
+      "performerName": "Bolivia",
+      "source": "known"
+    },
+    {
+      "performerId": "128",
+      "teamName": "Brazil",
+      "performerName": "Brazil",
+      "source": "known"
+    },
+    {
+      "performerId": "145",
+      "teamName": "Canada",
+      "performerName": "Canada",
+      "source": "known"
+    }
+  ],
+  "performances": [
+    {
+      "id": 2389668,
+      "name": "Argentina vs. Spain Finalissima 2026",
+      "url": "https://www.hellotickets.com/en-en/qatar/doha/sports/-tickets/2026-03-27,2100/2389668/2",
+      "ticket_groups_count": 17,
+      "start_date": {
+        "local_date": "2026-03-27",
+        "local_time": "21:00",
+        "date_time": "2026-03-27T18:00:00Z",
+        "date_tba": true,
+        "time_tba": true
+      },
+      "price_range": {
+        "min_price": 203,
+        "max_price": 4307,
+        "currency": "EUR"
+      },
+      "event_id": 504601,
+      "venue": {
+        "id": 3864,
+        "name": "Lusail Stadium",
+        "address": "Al Khor Coastal Rd",
+        "country": "Qatar",
+        "state": "Doha",
+        "zip_code": "",
+        "city": "Doha"
+      },
+      "performers": [
+        {
+          "id": 30906,
+          "name": "Spain vs Argentina - Finalissima 2026",
+          "is_main": true
+        },
+        {
+          "id": 72,
+          "name": "Argentina World Cup 2026 ",
+          "is_main": false
+        },
+        {
+          "id": 1,
+          "name": "Spain World Cup 2026",
+          "is_main": false
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T16:24:44Z",
+      "created_at": "2025-11-18T14:55:24Z"
+    },
+    {
+      "id": 2194813,
+      "name": "Argentina vs Algeria - World Cup 2026",
+      "url": "https://www.hellotickets.com/en-en/us/kansas-city/sports/world-cup-2026-kansas-city-tickets/2026-06-16,2000/2194813/2",
+      "ticket_groups_count": 18,
+      "start_date": {
+        "local_date": "2026-06-16",
+        "local_time": "20:00",
+        "date_time": "2026-06-17T01:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 682,
+        "max_price": 33004,
+        "currency": "EUR"
+      },
+      "event_id": 434420,
+      "venue": {
+        "id": 1704,
+        "name": "Arrowhead Stadium",
+        "address": "1 Arrowhead Dr",
+        "country": "United States",
+        "state": "MO",
+        "zip_code": "64129",
+        "city": "Kansas City"
+      },
+      "performers": [
+        {
+          "id": 11983,
+          "name": "Fifa World Cup",
+          "is_main": false
+        },
+        {
+          "id": 72,
+          "name": "Argentina World Cup 2026 ",
+          "is_main": true
+        },
+        {
+          "id": 29451,
+          "name": "Algeria World Cup 2026",
+          "is_main": false
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T16:07:29Z",
+      "created_at": "2025-05-05T14:32:21Z"
+    },
+    {
+      "id": 2194807,
+      "name": "Argentina vs Austria - World Cup 2026",
+      "url": "https://www.hellotickets.com/en-en/us/arlington/sports/world-cup-2026-dallas-tickets/2026-06-22,1200/2194807/2",
+      "ticket_groups_count": 19,
+      "start_date": {
+        "local_date": "2026-06-22",
+        "local_time": "12:00",
+        "date_time": "2026-06-22T17:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 917,
+        "max_price": 67738,
+        "currency": "EUR"
+      },
+      "event_id": 434419,
+      "venue": {
+        "id": 2307,
+        "name": "AT&T Stadium",
+        "address": "1 AT&T Way",
+        "country": "United States",
+        "state": "TX",
+        "zip_code": "76011",
+        "city": "Arlington"
+      },
+      "performers": [
+        {
+          "id": 11983,
+          "name": "Fifa World Cup",
+          "is_main": false
+        },
+        {
+          "id": 72,
+          "name": "Argentina World Cup 2026 ",
+          "is_main": true
+        },
+        {
+          "id": 16,
+          "name": "Austria World Cup 2026",
+          "is_main": false
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T14:59:27Z",
+      "created_at": "2025-05-05T14:32:21Z"
+    },
+    {
+      "id": 2194805,
+      "name": "Argentina vs Jordan - World Cup 2026",
+      "url": "https://www.hellotickets.com/en-en/us/arlington/sports/world-cup-2026-dallas-tickets/2026-06-27,2100/2194805/2",
+      "ticket_groups_count": 12,
+      "start_date": {
+        "local_date": "2026-06-27",
+        "local_time": "21:00",
+        "date_time": "2026-06-28T02:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 845,
+        "max_price": 33004,
+        "currency": "EUR"
+      },
+      "event_id": 434419,
+      "venue": {
+        "id": 2307,
+        "name": "AT&T Stadium",
+        "address": "1 AT&T Way",
+        "country": "United States",
+        "state": "TX",
+        "zip_code": "76011",
+        "city": "Arlington"
+      },
+      "performers": [
+        {
+          "id": 11983,
+          "name": "Fifa World Cup",
+          "is_main": false
+        },
+        {
+          "id": 72,
+          "name": "Argentina World Cup 2026 ",
+          "is_main": false
+        },
+        {
+          "id": 29446,
+          "name": "Jordan World Cup 2026",
+          "is_main": true
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T16:05:50Z",
+      "created_at": "2025-05-05T14:32:21Z"
+    },
+    {
+      "id": 2190914,
+      "name": "Australia vs To Be Defined -  World Cup 2026",
+      "url": "https://www.hellotickets.com/en-en/ca/vancouver/sports/world-cup-2026-vancouver-tickets/2026-06-13,2100/2190914/2",
+      "ticket_groups_count": 29,
+      "start_date": {
+        "local_date": "2026-06-13",
+        "local_time": "21:00",
+        "date_time": "2026-06-14T04:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 280,
+        "max_price": 10960,
+        "currency": "EUR"
+      },
+      "event_id": 433164,
+      "venue": {
+        "id": 2670,
+        "name": "BC Place Stadium",
+        "address": "765 Pacific Blvd S",
+        "country": "Canada",
+        "state": "British Columbia",
+        "zip_code": "V6B 4Y9",
+        "city": "Vancouver"
+      },
+      "performers": [
+        {
+          "id": 11983,
+          "name": "Fifa World Cup",
+          "is_main": true
+        },
+        {
+          "id": 29460,
+          "name": "Australia World Cup 2026",
+          "is_main": false
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T14:13:05Z",
+      "created_at": "2025-04-30T19:33:19Z"
+    },
+    {
+      "id": 2194824,
+      "name": "USA vs. Australia - World Cup 2026",
+      "url": "https://www.hellotickets.com/en-en/us/seattle/sports/world-cup-2026-seattle-tickets/2026-06-19,1200/2194824/2",
+      "ticket_groups_count": 17,
+      "start_date": {
+        "local_date": "2026-06-19",
+        "local_time": "12:00",
+        "date_time": "2026-06-19T19:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 877,
+        "max_price": 33004,
+        "currency": "EUR"
+      },
+      "event_id": 434422,
+      "venue": {
+        "id": 1609,
+        "name": "Lumen Field",
+        "address": "800 Occidental Ave South",
+        "country": "United States",
+        "state": "WA",
+        "zip_code": "98134",
+        "city": "Seattle"
+      },
+      "performers": [
+        {
+          "id": 14052,
+          "name": "USA World Cup 2026",
+          "is_main": true
+        },
+        {
+          "id": 11983,
+          "name": "Fifa World Cup",
+          "is_main": false
+        },
+        {
+          "id": 29460,
+          "name": "Australia World Cup 2026",
+          "is_main": false
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T16:14:35Z",
+      "created_at": "2025-05-05T14:32:22Z"
+    },
+    {
+      "id": 2194816,
+      "name": "Paraguay vs Australia - World Cup 2026",
+      "url": "https://www.hellotickets.com/en-en/us/san-francisco/sports/world-cup-2026-san-francisco-tickets/2026-06-25,1900/2194816/2",
+      "ticket_groups_count": 29,
+      "start_date": {
+        "local_date": "2026-06-25",
+        "local_time": "19:00",
+        "date_time": "2026-06-26T02:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 258,
+        "max_price": 32996,
+        "currency": "EUR"
+      },
+      "event_id": 434421,
+      "venue": {
+        "id": 1044,
+        "name": "Levi's Stadium",
+        "address": "4900 Marie P DeBartolo Way",
+        "country": "United States",
+        "state": "CA",
+        "zip_code": "95054",
+        "city": "San Francisco"
+      },
+      "performers": [
+        {
+          "id": 11983,
+          "name": "Fifa World Cup",
+          "is_main": false
+        },
+        {
+          "id": 29460,
+          "name": "Australia World Cup 2026",
+          "is_main": false
+        },
+        {
+          "id": 554,
+          "name": "Paraguay World Cup 2026",
+          "is_main": true
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T14:02:06Z",
+      "created_at": "2025-05-05T14:32:22Z"
+    },
+    {
+      "id": 2194819,
+      "name": "Austria vs Jordan - World Cup 2026",
+      "url": "https://www.hellotickets.com/en-en/us/san-francisco/sports/world-cup-2026-san-francisco-tickets/2026-06-16,2100/2194819/2",
+      "ticket_groups_count": 21,
+      "start_date": {
+        "local_date": "2026-06-16",
+        "local_time": "21:00",
+        "date_time": "2026-06-17T04:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 222,
+        "max_price": 33004,
+        "currency": "EUR"
+      },
+      "event_id": 434421,
+      "venue": {
+        "id": 1044,
+        "name": "Levi's Stadium",
+        "address": "4900 Marie P DeBartolo Way",
+        "country": "United States",
+        "state": "CA",
+        "zip_code": "95054",
+        "city": "San Francisco"
+      },
+      "performers": [
+        {
+          "id": 11983,
+          "name": "Fifa World Cup",
+          "is_main": false
+        },
+        {
+          "id": 16,
+          "name": "Austria World Cup 2026",
+          "is_main": true
+        },
+        {
+          "id": 29446,
+          "name": "Jordan World Cup 2026",
+          "is_main": false
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T16:05:39Z",
+      "created_at": "2025-05-05T14:32:22Z"
+    },
+    {
+      "id": 2194807,
+      "name": "Argentina vs Austria - World Cup 2026",
+      "url": "https://www.hellotickets.com/en-en/us/arlington/sports/world-cup-2026-dallas-tickets/2026-06-22,1200/2194807/2",
+      "ticket_groups_count": 19,
+      "start_date": {
+        "local_date": "2026-06-22",
+        "local_time": "12:00",
+        "date_time": "2026-06-22T17:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 917,
+        "max_price": 67738,
+        "currency": "EUR"
+      },
+      "event_id": 434419,
+      "venue": {
+        "id": 2307,
+        "name": "AT&T Stadium",
+        "address": "1 AT&T Way",
+        "country": "United States",
+        "state": "TX",
+        "zip_code": "76011",
+        "city": "Arlington"
+      },
+      "performers": [
+        {
+          "id": 11983,
+          "name": "Fifa World Cup",
+          "is_main": false
+        },
+        {
+          "id": 72,
+          "name": "Argentina World Cup 2026 ",
+          "is_main": true
+        },
+        {
+          "id": 16,
+          "name": "Austria World Cup 2026",
+          "is_main": false
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T14:59:27Z",
+      "created_at": "2025-05-05T14:32:21Z"
+    },
+    {
+      "id": 2194810,
+      "name": "Austria vs Algeria - World Cup 2026",
+      "url": "https://www.hellotickets.com/en-en/us/kansas-city/sports/world-cup-2026-kansas-city-tickets/2026-06-27,2100/2194810/2",
+      "ticket_groups_count": 29,
+      "start_date": {
+        "local_date": "2026-06-27",
+        "local_time": "21:00",
+        "date_time": "2026-06-28T02:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 175,
+        "max_price": 33004,
+        "currency": "EUR"
+      },
+      "event_id": 434420,
+      "venue": {
+        "id": 1704,
+        "name": "Arrowhead Stadium",
+        "address": "1 Arrowhead Dr",
+        "country": "United States",
+        "state": "MO",
+        "zip_code": "64129",
+        "city": "Kansas City"
+      },
+      "performers": [
+        {
+          "id": 11983,
+          "name": "Fifa World Cup",
+          "is_main": false
+        },
+        {
+          "id": 29451,
+          "name": "Algeria World Cup 2026",
+          "is_main": true
+        },
+        {
+          "id": 16,
+          "name": "Austria World Cup 2026",
+          "is_main": false
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T16:17:43Z",
+      "created_at": "2025-05-05T14:32:21Z"
+    },
+    {
+      "id": 2404022,
+      "name": "Mexico v Belgium",
+      "url": "https://www.hellotickets.com/en-en/us/chicago/sports/mexico-tickets/2026-03-31,2000/2404022/2",
+      "ticket_groups_count": 1333,
+      "start_date": {
+        "local_date": "2026-03-31",
+        "local_time": "20:00",
+        "date_time": "2026-04-01T01:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 74,
+        "max_price": 2206,
+        "currency": "EUR"
+      },
+      "event_id": 510017,
+      "venue": {
+        "id": 636,
+        "name": "Soldier Field Stadium",
+        "address": "1410 S. Museum Campus Drive",
+        "country": "United States",
+        "state": "IL",
+        "zip_code": "60605",
+        "city": "Chicago"
+      },
+      "performers": [
+        {
+          "id": 465,
+          "name": "Mexico World Cup 2026",
+          "is_main": true
+        },
+        {
+          "id": 17,
+          "name": "Belgium World Cup 2026",
+          "is_main": false
+        },
+        {
+          "id": 24054,
+          "name": "International Friendly",
+          "is_main": false
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T16:04:27Z",
+      "created_at": "2025-12-05T03:10:26Z"
+    },
+    {
+      "id": 2194825,
+      "name": "Egypt vs Belgium - World Cup 2026",
+      "url": "https://www.hellotickets.com/en-en/us/seattle/sports/world-cup-2026-seattle-tickets/2026-06-15,1200/2194825/2",
+      "ticket_groups_count": 16,
+      "start_date": {
+        "local_date": "2026-06-15",
+        "local_time": "12:00",
+        "date_time": "2026-06-15T19:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 383,
+        "max_price": 33004,
+        "currency": "EUR"
+      },
+      "event_id": 434422,
+      "venue": {
+        "id": 1609,
+        "name": "Lumen Field",
+        "address": "800 Occidental Ave South",
+        "country": "United States",
+        "state": "WA",
+        "zip_code": "98134",
+        "city": "Seattle"
+      },
+      "performers": [
+        {
+          "id": 11983,
+          "name": "Fifa World Cup",
+          "is_main": false
+        },
+        {
+          "id": 17,
+          "name": "Belgium World Cup 2026",
+          "is_main": true
+        },
+        {
+          "id": 29452,
+          "name": "Egypt World Cup 2026",
+          "is_main": false
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T16:35:03Z",
+      "created_at": "2025-05-05T14:32:22Z"
+    },
+    {
+      "id": 2190904,
+      "name": "Iran vs Belgium - World Cup 2026",
+      "url": "https://www.hellotickets.com/en-en/us/los-angeles/sports/world-cup-2026-los-angeles-tickets/2026-06-21,1200/2190904/2",
+      "ticket_groups_count": 33,
+      "start_date": {
+        "local_date": "2026-06-21",
+        "local_time": "12:00",
+        "date_time": "2026-06-21T19:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 436,
+        "max_price": 32999,
+        "currency": "EUR"
+      },
+      "event_id": 433163,
+      "venue": {
+        "id": 2583,
+        "name": "SoFi Stadium",
+        "address": "South Prairie Avenue",
+        "country": "United States",
+        "state": "CA",
+        "zip_code": "90250",
+        "city": "Los Angeles"
+      },
+      "performers": [
+        {
+          "id": 11983,
+          "name": "Fifa World Cup",
+          "is_main": false
+        },
+        {
+          "id": 17,
+          "name": "Belgium World Cup 2026",
+          "is_main": true
+        },
+        {
+          "id": 29444,
+          "name": "Iran World Cup 2026",
+          "is_main": false
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T14:18:03Z",
+      "created_at": "2025-04-30T19:33:17Z"
+    },
+    {
+      "id": 2190909,
+      "name": "Belgium vs New Zealand - World Cup 2026",
+      "url": "https://www.hellotickets.com/en-en/ca/vancouver/sports/world-cup-2026-vancouver-tickets/2026-06-26,2000/2190909/2",
+      "ticket_groups_count": 32,
+      "start_date": {
+        "local_date": "2026-06-26",
+        "local_time": "20:00",
+        "date_time": "2026-06-27T03:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 256,
+        "max_price": 33004,
+        "currency": "EUR"
+      },
+      "event_id": 433164,
+      "venue": {
+        "id": 2670,
+        "name": "BC Place Stadium",
+        "address": "765 Pacific Blvd S",
+        "country": "Canada",
+        "state": "British Columbia",
+        "zip_code": "V6B 4Y9",
+        "city": "Vancouver"
+      },
+      "performers": [
+        {
+          "id": 11983,
+          "name": "Fifa World Cup",
+          "is_main": false
+        },
+        {
+          "id": 17,
+          "name": "Belgium World Cup 2026",
+          "is_main": false
+        },
+        {
+          "id": 29459,
+          "name": "New Zealand World Cup 2026",
+          "is_main": true
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T16:07:33Z",
+      "created_at": "2025-04-30T19:33:18Z"
+    },
+    {
+      "id": 2190454,
+      "name": "Canada vs To Be Defined -  World Cup 2026",
+      "url": "https://www.hellotickets.com/en-en/ca/toronto/sports/world-cup-2026-toronto-tickets/2026-06-12,1200/2190454/2",
+      "ticket_groups_count": 26,
+      "start_date": {
+        "local_date": "2026-06-12",
+        "local_time": "12:00",
+        "date_time": "2026-06-12T16:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 1323,
+        "max_price": 25930,
+        "currency": "EUR"
+      },
+      "event_id": 432968,
+      "venue": {
+        "id": 1237,
+        "name": "BMO Field",
+        "address": "170 Princes' Blvd",
+        "country": "Canada",
+        "state": "Ontario",
+        "zip_code": "M6K 3C3",
+        "city": "Toronto"
+      },
+      "performers": [
+        {
+          "id": 145,
+          "name": "Canada World Cup 2026",
+          "is_main": false
+        },
+        {
+          "id": 11983,
+          "name": "Fifa World Cup",
+          "is_main": true
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T16:37:46Z",
+      "created_at": "2025-04-30T18:02:57Z"
+    },
+    {
+      "id": 2190912,
+      "name": "Qatar vs Canada - World Cup 2026",
+      "url": "https://www.hellotickets.com/en-en/ca/vancouver/sports/world-cup-2026-vancouver-tickets/2026-06-18,1500/2190912/2",
+      "ticket_groups_count": 14,
+      "start_date": {
+        "local_date": "2026-06-18",
+        "local_time": "15:00",
+        "date_time": "2026-06-18T22:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 511,
+        "max_price": 33004,
+        "currency": "EUR"
+      },
+      "event_id": 433164,
+      "venue": {
+        "id": 2670,
+        "name": "BC Place Stadium",
+        "address": "765 Pacific Blvd S",
+        "country": "Canada",
+        "state": "British Columbia",
+        "zip_code": "V6B 4Y9",
+        "city": "Vancouver"
+      },
+      "performers": [
+        {
+          "id": 145,
+          "name": "Canada World Cup 2026",
+          "is_main": true
+        },
+        {
+          "id": 11983,
+          "name": "Fifa World Cup",
+          "is_main": false
+        },
+        {
+          "id": 29447,
+          "name": "Qatar World Cup 2026",
+          "is_main": false
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T16:26:54Z",
+      "created_at": "2025-04-30T19:33:18Z"
+    },
+    {
+      "id": 2190910,
+      "name": "Switzerland vs Canada - World Cup 2026",
+      "url": "https://www.hellotickets.com/en-en/ca/vancouver/sports/world-cup-2026-vancouver-tickets/2026-06-24,1200/2190910/2",
+      "ticket_groups_count": 10,
+      "start_date": {
+        "local_date": "2026-06-24",
+        "local_time": "12:00",
+        "date_time": "2026-06-24T19:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 433,
+        "max_price": 67738,
+        "currency": "EUR"
+      },
+      "event_id": 433164,
+      "venue": {
+        "id": 2670,
+        "name": "BC Place Stadium",
+        "address": "765 Pacific Blvd S",
+        "country": "Canada",
+        "state": "British Columbia",
+        "zip_code": "V6B 4Y9",
+        "city": "Vancouver"
+      },
+      "performers": [
+        {
+          "id": 145,
+          "name": "Canada World Cup 2026",
+          "is_main": false
+        },
+        {
+          "id": 11983,
+          "name": "Fifa World Cup",
+          "is_main": false
+        },
+        {
+          "id": 6,
+          "name": "Switzerland World Cup 2026",
+          "is_main": true
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T14:56:45Z",
+      "created_at": "2025-04-30T19:33:18Z"
+    },
+    {
+      "id": 2190453,
+      "name": "Brazil vs Morocco - World Cup 2026",
+      "url": "https://www.hellotickets.com/en-en/us/new-york/sports/world-cup-2026-new-york-tickets/2026-06-13,1800/2190453/2",
+      "ticket_groups_count": 14,
+      "start_date": {
+        "local_date": "2026-06-13",
+        "local_time": "18:00",
+        "date_time": "2026-06-13T22:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 731,
+        "max_price": 33004,
+        "currency": "EUR"
+      },
+      "event_id": 432964,
+      "venue": {
+        "id": 1020,
+        "name": "MetLife Stadium",
+        "address": "One MetLife Stadium Dr.",
+        "country": "United States",
+        "state": "New Jersey",
+        "zip_code": "07073",
+        "city": "New York"
+      },
+      "performers": [
+        {
+          "id": 11983,
+          "name": "Fifa World Cup",
+          "is_main": false
+        },
+        {
+          "id": 29461,
+          "name": "Morocco World Cup 2026",
+          "is_main": false
+        },
+        {
+          "id": 128,
+          "name": "Brazil World Cup 2026",
+          "is_main": true
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T16:08:59Z",
+      "created_at": "2025-04-30T18:02:57Z"
+    },
+    {
+      "id": 2190432,
+      "name": "Brazil vs. Haiti - World Cup 2026",
+      "url": "https://www.hellotickets.com/en-en/us/philadelphia/sports/world-cup-2026-philadelphia-tickets/2026-06-19,2100/2190432/2",
+      "ticket_groups_count": 12,
+      "start_date": {
+        "local_date": "2026-06-19",
+        "local_time": "21:00",
+        "date_time": "2026-06-20T01:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 736,
+        "max_price": 33004,
+        "currency": "EUR"
+      },
+      "event_id": 432965,
+      "venue": {
+        "id": 827,
+        "name": "Lincoln Financial Field",
+        "address": "1020 Pattison Avenue",
+        "country": "United States",
+        "state": "PA",
+        "zip_code": "19147",
+        "city": "Philadelphia"
+      },
+      "performers": [
+        {
+          "id": 11983,
+          "name": "Fifa World Cup",
+          "is_main": false
+        },
+        {
+          "id": 30907,
+          "name": "Haiti World Cup 2026",
+          "is_main": false
+        },
+        {
+          "id": 128,
+          "name": "Brazil World Cup 2026",
+          "is_main": true
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T16:27:09Z",
+      "created_at": "2025-04-30T18:02:55Z"
+    },
+    {
+      "id": 2190449,
+      "name": "Brazil vs Scotland - World Cup 2026",
+      "url": "https://www.hellotickets.com/en-en/us/miami/sports/world-cup-2026-miami-tickets/2026-06-24,1800/2190449/2",
+      "ticket_groups_count": 19,
+      "start_date": {
+        "local_date": "2026-06-24",
+        "local_time": "18:00",
+        "date_time": "2026-06-24T22:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 923,
+        "max_price": 33004,
+        "currency": "EUR"
+      },
+      "event_id": 432966,
+      "venue": {
+        "id": 971,
+        "name": "Hard Rock Stadium",
+        "address": "347 Don Shula Drive",
+        "country": "United States",
+        "state": "FL",
+        "zip_code": "33056",
+        "city": "Miami"
+      },
+      "performers": [
+        {
+          "id": 11983,
+          "name": "Fifa World Cup",
+          "is_main": false
+        },
+        {
+          "id": 128,
+          "name": "Brazil World Cup 2026",
+          "is_main": false
+        },
+        {
+          "id": 4,
+          "name": "Scotland World Cup 2026",
+          "is_main": true
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T16:09:41Z",
+      "created_at": "2025-04-30T18:02:56Z"
+    },
+    {
+      "id": 2392404,
+      "name": "Algeria vs. Sudan - Africa Cup of Nations",
+      "url": "https://www.hellotickets.com/en-en/morocco/rabat/sports/-tickets/2025-12-24,1100/2392404/2",
+      "ticket_groups_count": 12,
+      "start_date": {
+        "local_date": "2025-12-24",
+        "local_time": "11:00",
+        "date_time": "2025-12-24T10:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 74,
+        "max_price": 1361,
+        "currency": "EUR"
+      },
+      "event_id": 505865,
+      "venue": {
+        "id": 33650,
+        "name": "Stade Prince Moulay EL Hassan",
+        "address": "Hay Nahda ",
+        "country": "Morocco",
+        "state": "Rabat",
+        "zip_code": "",
+        "city": "Rabat"
+      },
+      "performers": [
+        {
+          "id": 31089,
+          "name": "Africa Cup of Nations",
+          "is_main": false
+        },
+        {
+          "id": 31059,
+          "name": "Mozambique National Football Team",
+          "is_main": false
+        },
+        {
+          "id": 29451,
+          "name": "Algeria World Cup 2026",
+          "is_main": true
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T16:23:32Z",
+      "created_at": "2025-11-20T17:25:31Z"
+    },
+    {
+      "id": 2392405,
+      "name": "Algeria vs. Burkina Faso - Africa Cup of Nations",
+      "url": "https://www.hellotickets.com/en-en/morocco/rabat/sports/-tickets/2025-12-28,1100/2392405/2",
+      "ticket_groups_count": 12,
+      "start_date": {
+        "local_date": "2025-12-28",
+        "local_time": "11:00",
+        "date_time": "2025-12-28T10:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 97,
+        "max_price": 1361,
+        "currency": "EUR"
+      },
+      "event_id": 505865,
+      "venue": {
+        "id": 33650,
+        "name": "Stade Prince Moulay EL Hassan",
+        "address": "Hay Nahda ",
+        "country": "Morocco",
+        "state": "Rabat",
+        "zip_code": "",
+        "city": "Rabat"
+      },
+      "performers": [
+        {
+          "id": 31089,
+          "name": "Africa Cup of Nations",
+          "is_main": false
+        },
+        {
+          "id": 31052,
+          "name": "Burkina Faso Nationall Football Team",
+          "is_main": false
+        },
+        {
+          "id": 29451,
+          "name": "Algeria World Cup 2026",
+          "is_main": true
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T16:05:04Z",
+      "created_at": "2025-11-20T17:25:31Z"
+    },
+    {
+      "id": 2392395,
+      "name": "Equatorial Guinea vs. Algeria - Africa Cup of Nations",
+      "url": "https://www.hellotickets.com/en-en/morocco/rabat/sports/-tickets/2025-12-31,1600/2392395/2",
+      "ticket_groups_count": 13,
+      "start_date": {
+        "local_date": "2025-12-31",
+        "local_time": "16:00",
+        "date_time": "2025-12-31T15:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 81,
+        "max_price": 1361,
+        "currency": "EUR"
+      },
+      "event_id": 505865,
+      "venue": {
+        "id": 33650,
+        "name": "Stade Prince Moulay EL Hassan",
+        "address": "Hay Nahda ",
+        "country": "Morocco",
+        "state": "Rabat",
+        "zip_code": "",
+        "city": "Rabat"
+      },
+      "performers": [
+        {
+          "id": 31089,
+          "name": "Africa Cup of Nations",
+          "is_main": false
+        },
+        {
+          "id": 31056,
+          "name": "Equatorial Guinea National Football Team",
+          "is_main": true
+        },
+        {
+          "id": 29451,
+          "name": "Algeria World Cup 2026",
+          "is_main": false
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T16:41:17Z",
+      "created_at": "2025-11-20T17:25:31Z"
+    },
+    {
+      "id": 2194813,
+      "name": "Argentina vs Algeria - World Cup 2026",
+      "url": "https://www.hellotickets.com/en-en/us/kansas-city/sports/world-cup-2026-kansas-city-tickets/2026-06-16,2000/2194813/2",
+      "ticket_groups_count": 18,
+      "start_date": {
+        "local_date": "2026-06-16",
+        "local_time": "20:00",
+        "date_time": "2026-06-17T01:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 682,
+        "max_price": 33004,
+        "currency": "EUR"
+      },
+      "event_id": 434420,
+      "venue": {
+        "id": 1704,
+        "name": "Arrowhead Stadium",
+        "address": "1 Arrowhead Dr",
+        "country": "United States",
+        "state": "MO",
+        "zip_code": "64129",
+        "city": "Kansas City"
+      },
+      "performers": [
+        {
+          "id": 11983,
+          "name": "Fifa World Cup",
+          "is_main": false
+        },
+        {
+          "id": 72,
+          "name": "Argentina World Cup 2026 ",
+          "is_main": true
+        },
+        {
+          "id": 29451,
+          "name": "Algeria World Cup 2026",
+          "is_main": false
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T16:07:29Z",
+      "created_at": "2025-05-05T14:32:21Z"
+    },
+    {
+      "id": 2194817,
+      "name": "Algeria vs Jordan - World Cup 2026",
+      "url": "https://www.hellotickets.com/en-en/us/san-francisco/sports/world-cup-2026-san-francisco-tickets/2026-06-22,2000/2194817/2",
+      "ticket_groups_count": 30,
+      "start_date": {
+        "local_date": "2026-06-22",
+        "local_time": "20:00",
+        "date_time": "2026-06-23T03:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 213,
+        "max_price": 67738,
+        "currency": "EUR"
+      },
+      "event_id": 434421,
+      "venue": {
+        "id": 1044,
+        "name": "Levi's Stadium",
+        "address": "4900 Marie P DeBartolo Way",
+        "country": "United States",
+        "state": "CA",
+        "zip_code": "95054",
+        "city": "San Francisco"
+      },
+      "performers": [
+        {
+          "id": 11983,
+          "name": "Fifa World Cup",
+          "is_main": false
+        },
+        {
+          "id": 29451,
+          "name": "Algeria World Cup 2026",
+          "is_main": false
+        },
+        {
+          "id": 29446,
+          "name": "Jordan World Cup 2026",
+          "is_main": true
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T15:22:42Z",
+      "created_at": "2025-05-05T14:32:22Z"
+    },
+    {
+      "id": 2194810,
+      "name": "Austria vs Algeria - World Cup 2026",
+      "url": "https://www.hellotickets.com/en-en/us/kansas-city/sports/world-cup-2026-kansas-city-tickets/2026-06-27,2100/2194810/2",
+      "ticket_groups_count": 29,
+      "start_date": {
+        "local_date": "2026-06-27",
+        "local_time": "21:00",
+        "date_time": "2026-06-28T02:00:00Z",
+        "date_tba": false,
+        "time_tba": false
+      },
+      "price_range": {
+        "min_price": 175,
+        "max_price": 33004,
+        "currency": "EUR"
+      },
+      "event_id": 434420,
+      "venue": {
+        "id": 1704,
+        "name": "Arrowhead Stadium",
+        "address": "1 Arrowhead Dr",
+        "country": "United States",
+        "state": "MO",
+        "zip_code": "64129",
+        "city": "Kansas City"
+      },
+      "performers": [
+        {
+          "id": 11983,
+          "name": "Fifa World Cup",
+          "is_main": false
+        },
+        {
+          "id": 29451,
+          "name": "Algeria World Cup 2026",
+          "is_main": true
+        },
+        {
+          "id": 16,
+          "name": "Austria World Cup 2026",
+          "is_main": false
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Sports"
+      },
+      "is_sellable": true,
+      "last_updated_at": "2025-12-10T16:17:43Z",
+      "created_at": "2025-05-05T14:32:21Z"
+    }
+  ]
+}

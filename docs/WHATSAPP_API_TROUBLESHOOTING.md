@@ -189,3 +189,5 @@ PORT=8080
 - [ ] קובץ `team_aliases.json` קיים
 - [ ] Environment variables מוגדרים
 - [ ] Health endpoint עובד
+
+

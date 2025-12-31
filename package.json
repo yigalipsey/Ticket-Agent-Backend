@@ -30,7 +30,11 @@
     "create-p1-supplier": "node scripts/createP1Supplier.js",
     "add-supplier-team-names": "node scripts/addSupplierTeamNames.js",
     "find-popular-venues": "node scripts/findPopularVenues.js",
-    "update-popular-venues": "node scripts/updatePopularVenues.js"
+    "update-popular-venues": "node scripts/updatePopularVenues.js",
+    "import-world-cup-2026-teams": "node scripts/importWorldCup2026Teams.js",
+    "import-world-cup-2026-fixtures": "node scripts/importWorldCup2026Fixtures.js",
+    "map-world-cup-2026-teams-hellotickets": "node scripts/mapWorldCup2026TeamsToHelloTickets.js",
+    "fetch-world-cup-2026-hellotickets-prices": "node scripts/fetchWorldCup2026HelloTicketsPrices.js"
   },
   "keywords": [
     "tickets",

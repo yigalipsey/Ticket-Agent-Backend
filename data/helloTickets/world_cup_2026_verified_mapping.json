@@ -1,0 +1,259 @@
+{
+    "timestamp": "2025-12-29T17:10:00.000Z",
+    "leagueId": "6926fa345910abf58d9c940b",
+    "leagueName": "World Cup",
+    "validationNote": "HelloTickets does not sell tickets for national football teams. Only club teams with exact matches are included.",
+    "summary": {
+        "totalTeams": 42,
+        "teamsWithValidHTId": 16,
+        "teamsWithoutHTId": 26,
+        "teamsExcluded": 26
+    },
+    "teams": [
+        {
+            "teamId": "693981eb5edc91e67602b561",
+            "teamName": "Canada",
+            "teamCode": "CAN",
+            "matchedHTId": "145",
+            "matchedHTName": "Canada",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693981eb5edc91e67602b570",
+            "teamName": "Mexico",
+            "teamCode": "MEX",
+            "matchedHTId": "465",
+            "matchedHTName": "Mexico",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693981ec5edc91e67602b57a",
+            "teamName": "Japan",
+            "teamCode": "JPN",
+            "matchedHTId": "29442",
+            "matchedHTName": "Japan",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693981ec5edc91e67602b581",
+            "teamName": "Iran",
+            "teamCode": "IRN",
+            "matchedHTId": "29444",
+            "matchedHTName": "Iran",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693981ed5edc91e67602b588",
+            "teamName": "Australia",
+            "teamCode": "AUS",
+            "matchedHTId": "29460",
+            "matchedHTName": "Australia",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693981ee5edc91e67602b596",
+            "teamName": "Qatar",
+            "teamCode": "QAT",
+            "matchedHTId": "29447",
+            "matchedHTName": "Qatar",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693981ef5edc91e67602b59d",
+            "teamName": "Saudi Arabia",
+            "teamCode": "KSA",
+            "matchedHTId": "29449",
+            "matchedHTName": "Saudi Arabia",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693981f05edc91e67602b5ab",
+            "teamName": "Jordan",
+            "teamCode": "JOR",
+            "matchedHTId": "29446",
+            "matchedHTName": "Jordan",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693981f05edc91e67602b5b7",
+            "teamName": "Tunisia",
+            "teamCode": "TUN",
+            "matchedHTId": "29450",
+            "matchedHTName": "Tunisia",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693981f15edc91e67602b5be",
+            "teamName": "Egypt",
+            "teamCode": "EGY",
+            "matchedHTId": "29452",
+            "matchedHTName": "Egypt",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693981f15edc91e67602b5c5",
+            "teamName": "Algeria",
+            "teamCode": "ALG",
+            "matchedHTId": "29451",
+            "matchedHTName": "Algeria",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693981f25edc91e67602b5d3",
+            "teamName": "Cape Verde",
+            "teamCode": "CPV",
+            "matchedHTId": "29455",
+            "matchedHTName": "Cape Verde",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693981f45edc91e67602b5ef",
+            "teamName": "Argentina",
+            "teamCode": "ARG",
+            "matchedHTId": "72",
+            "matchedHTName": "Argentina",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693981f55edc91e67602b5f6",
+            "teamName": "Brazil",
+            "teamCode": "BRA",
+            "matchedHTId": "128",
+            "matchedHTName": "Brazil",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693981f75edc91e67602b60b",
+            "teamName": "Paraguay",
+            "teamCode": "PRY",
+            "matchedHTId": "554",
+            "matchedHTName": "Paraguay",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693981f75edc91e67602b612",
+            "teamName": "Uruguay",
+            "teamCode": "URY",
+            "matchedHTId": "772",
+            "matchedHTName": "Uruguay",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693981f85edc91e67602b620",
+            "teamName": "Haiti",
+            "teamCode": "HTI",
+            "matchedHTId": "30907",
+            "matchedHTName": "Haiti",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693981f95edc91e67602b62e",
+            "teamName": "New Zealand",
+            "teamCode": "NZL",
+            "matchedHTId": "29459",
+            "matchedHTName": "New Zealand",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693981fb5edc91e67602b64f",
+            "teamName": "Netherlands",
+            "teamCode": "NED",
+            "matchedHTId": "15",
+            "matchedHTName": "Netherlands",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693981fc5edc91e67602b656",
+            "teamName": "Belgium",
+            "teamCode": "BEL",
+            "matchedHTId": "17",
+            "matchedHTName": "Belgium",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693981fe5edc91e67602b672",
+            "teamName": "Switzerland",
+            "teamCode": "SUI",
+            "matchedHTId": "6",
+            "matchedHTName": "Switzerland",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693981ff5edc91e67602b679",
+            "teamName": "Austria",
+            "teamCode": "AUT",
+            "matchedHTId": "16",
+            "matchedHTName": "Austria",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693981ff5edc91e67602b680",
+            "teamName": "Scotland",
+            "teamCode": "SCO",
+            "matchedHTId": "4",
+            "matchedHTName": "Scotland",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693997fea3cc97a6309c9f0c",
+            "teamName": "Spain",
+            "teamCode": "ESP",
+            "matchedHTId": "1",
+            "matchedHTName": "Spain",
+            "matchConfidence": "exact",
+            "status": "verified"
+        },
+        {
+            "teamId": "693997ffa3cc97a6309c9f26",
+            "teamName": "Morocco",
+            "teamCode": "MAR",
+            "matchedHTId": "29461",
+            "matchedHTName": "Morocco",
+            "matchConfidence": "exact",
+            "status": "verified"
+        }
+    ],
+    "excludedTeams": [
+        "United States",
+        "South Korea",
+        "Uzbekistan",
+        "Ghana",
+        "South Africa",
+        "Senegal",
+        "Ivory Coast",
+        "Colombia",
+        "Ecuador",
+        "Panama",
+        "Curaçao",
+        "England",
+        "France",
+        "Germany",
+        "Portugal",
+        "Croatia",
+        "Norway"
+    ],
+    "notes": "Teams excluded because HelloTickets API does not return valid performer IDs for these national teams. They may be available for World Cup events but not as individual performers."
+}

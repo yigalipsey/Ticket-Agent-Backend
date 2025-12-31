@@ -1,0 +1,548 @@
+[
+  {
+    "teamName": "United States",
+    "teamCode": "USA",
+    "performerId": "29451",
+    "originalConfidence": "partial",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "Equatorial Guinea vs. Algeria",
+      "Argentina vs Algeria - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Canada",
+    "teamCode": "CAN",
+    "performerId": "145",
+    "originalConfidence": "exact",
+    "totalPerformances": 3,
+    "samplePerformances": [
+      "Canada vs To Be Defined -  World Cup 2026",
+      "Qatar vs Canada - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Mexico",
+    "teamCode": "MEX",
+    "performerId": "465",
+    "originalConfidence": "exact",
+    "totalPerformances": 5,
+    "samplePerformances": [
+      "Mexico vs. Portugal",
+      "Mexico vs Belgium"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Japan",
+    "teamCode": "JPN",
+    "performerId": "29442",
+    "originalConfidence": "exact",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "England vs. Japan Mens National Football",
+      "Japan vs Netherlands - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Iran",
+    "teamCode": "IRN",
+    "performerId": "29444",
+    "originalConfidence": "exact",
+    "totalPerformances": 3,
+    "samplePerformances": [
+      "Iran vs New Zealand - World Cup 2026",
+      "Iran vs Belgium - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Australia",
+    "teamCode": "AUS",
+    "performerId": "29460",
+    "originalConfidence": "exact",
+    "totalPerformances": 3,
+    "samplePerformances": [
+      "Australia vs To Be Defined -  World Cup 2026",
+      "USA vs. Australia - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "South Korea",
+    "teamCode": "KOR",
+    "performerId": "29451",
+    "originalConfidence": "partial",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "Equatorial Guinea vs. Algeria",
+      "Argentina vs Algeria - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Qatar",
+    "teamCode": "QAT",
+    "performerId": "29447",
+    "originalConfidence": "exact",
+    "totalPerformances": 3,
+    "samplePerformances": [
+      "Switzerland vs Qatar - World Cup 2026",
+      "Qatar vs Canada - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Saudi Arabia",
+    "teamCode": "KSA",
+    "performerId": "29449",
+    "originalConfidence": "exact",
+    "totalPerformances": 3,
+    "samplePerformances": [
+      "Saudi Arabia vs Uruguay - World Cup 2026",
+      "Spain vs Saudi Arabia - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Uzbekistan",
+    "teamCode": "UZB",
+    "performerId": "29451",
+    "originalConfidence": "partial",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "Equatorial Guinea vs. Algeria",
+      "Argentina vs Algeria - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Jordan",
+    "teamCode": "JOR",
+    "performerId": "29446",
+    "originalConfidence": "exact",
+    "totalPerformances": 3,
+    "samplePerformances": [
+      "Austria vs Jordan - World Cup 2026",
+      "Algeria vs Jordan - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Tunisia",
+    "teamCode": "TUN",
+    "performerId": "29450",
+    "originalConfidence": "exact",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "Tanzania vs. Tunisia - Africa Cup of Nations",
+      "Tunisia vs To Be Defined -  World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Egypt",
+    "teamCode": "EGY",
+    "performerId": "29452",
+    "originalConfidence": "exact",
+    "totalPerformances": 3,
+    "samplePerformances": [
+      "Egypt vs Belgium - World Cup 2026",
+      "Egypt vs New Zealand - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Algeria",
+    "teamCode": "ALG",
+    "performerId": "29451",
+    "originalConfidence": "exact",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "Equatorial Guinea vs. Algeria",
+      "Argentina vs Algeria - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Ghana",
+    "teamCode": "GHA",
+    "performerId": "29451",
+    "originalConfidence": "partial",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "Equatorial Guinea vs. Algeria",
+      "Argentina vs Algeria - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Cape Verde",
+    "teamCode": "CPV",
+    "performerId": "29455",
+    "originalConfidence": "exact",
+    "totalPerformances": 3,
+    "samplePerformances": [
+      "Spain vs Cape Verde - World Cup 2026",
+      "Uruguay vs Cape Verde - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "South Africa",
+    "teamCode": "RSA",
+    "performerId": "29451",
+    "originalConfidence": "partial",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "Equatorial Guinea vs. Algeria",
+      "Argentina vs Algeria - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Senegal",
+    "teamCode": "SEN",
+    "performerId": "29451",
+    "originalConfidence": "partial",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "Equatorial Guinea vs. Algeria",
+      "Argentina vs Algeria - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Ivory Coast",
+    "teamCode": "CIV",
+    "performerId": "29451",
+    "originalConfidence": "partial",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "Equatorial Guinea vs. Algeria",
+      "Argentina vs Algeria - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Argentina",
+    "teamCode": "ARG",
+    "performerId": "72",
+    "originalConfidence": "exact",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "Argentina vs. Spain Finalissima 2026",
+      "Argentina vs Algeria - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Brazil",
+    "teamCode": "BRA",
+    "performerId": "128",
+    "originalConfidence": "exact",
+    "totalPerformances": 3,
+    "samplePerformances": [
+      "Brazil vs Morocco - World Cup 2026",
+      "Brazil vs. Haiti - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Colombia",
+    "teamCode": "COL",
+    "performerId": "29451",
+    "originalConfidence": "partial",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "Equatorial Guinea vs. Algeria",
+      "Argentina vs Algeria - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Ecuador",
+    "teamCode": "ECU",
+    "performerId": "29451",
+    "originalConfidence": "partial",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "Equatorial Guinea vs. Algeria",
+      "Argentina vs Algeria - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Paraguay",
+    "teamCode": "PRY",
+    "performerId": "554",
+    "originalConfidence": "exact",
+    "totalPerformances": 3,
+    "samplePerformances": [
+      "USA vs. Paraguay - World Cup 2026",
+      "Paraguay vs To Be Defined -  World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Uruguay",
+    "teamCode": "URY",
+    "performerId": "772",
+    "originalConfidence": "exact",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "England vs. Uruguay Mens National Football",
+      "Saudi Arabia vs Uruguay - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Panama",
+    "teamCode": "PAN",
+    "performerId": "29451",
+    "originalConfidence": "partial",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "Equatorial Guinea vs. Algeria",
+      "Argentina vs Algeria - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Haiti",
+    "teamCode": "HTI",
+    "performerId": "30907",
+    "originalConfidence": "exact",
+    "totalPerformances": 3,
+    "samplePerformances": [
+      "Scotland vs. Haiti - World Cup 2026",
+      "Brazil vs. Haiti - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Curaçao",
+    "teamCode": "CUW",
+    "performerId": "29451",
+    "originalConfidence": "partial",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "Equatorial Guinea vs. Algeria",
+      "Argentina vs Algeria - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "New Zealand",
+    "teamCode": "NZL",
+    "performerId": "29459",
+    "originalConfidence": "exact",
+    "totalPerformances": 3,
+    "samplePerformances": [
+      "Iran vs New Zealand - World Cup 2026",
+      "Egypt vs New Zealand - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "England",
+    "teamCode": "ENG",
+    "performerId": "29451",
+    "originalConfidence": "partial",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "Equatorial Guinea vs. Algeria",
+      "Argentina vs Algeria - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "France",
+    "teamCode": "FRA",
+    "performerId": "29451",
+    "originalConfidence": "partial",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "Equatorial Guinea vs. Algeria",
+      "Argentina vs Algeria - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Germany",
+    "teamCode": "GER",
+    "performerId": "29451",
+    "originalConfidence": "partial",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "Equatorial Guinea vs. Algeria",
+      "Argentina vs Algeria - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Netherlands",
+    "teamCode": "NED",
+    "performerId": "15",
+    "originalConfidence": "exact",
+    "totalPerformances": 3,
+    "samplePerformances": [
+      "Japan vs Netherlands - World Cup 2026",
+      "Netherlands vs To Be Defined -  World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Belgium",
+    "teamCode": "BEL",
+    "performerId": "17",
+    "originalConfidence": "exact",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "Mexico vs Belgium",
+      "Egypt vs Belgium - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Portugal",
+    "teamCode": "POR",
+    "performerId": "29451",
+    "originalConfidence": "partial",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "Equatorial Guinea vs. Algeria",
+      "Argentina vs Algeria - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Croatia",
+    "teamCode": "CRO",
+    "performerId": "29451",
+    "originalConfidence": "partial",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "Equatorial Guinea vs. Algeria",
+      "Argentina vs Algeria - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Norway",
+    "teamCode": "NOR",
+    "performerId": "29451",
+    "originalConfidence": "partial",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "Equatorial Guinea vs. Algeria",
+      "Argentina vs Algeria - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Switzerland",
+    "teamCode": "SUI",
+    "performerId": "6",
+    "originalConfidence": "exact",
+    "totalPerformances": 3,
+    "samplePerformances": [
+      "Switzerland vs Qatar - World Cup 2026",
+      "Switzerland vs To Be Defined -  World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Austria",
+    "teamCode": "AUT",
+    "performerId": "16",
+    "originalConfidence": "exact",
+    "totalPerformances": 3,
+    "samplePerformances": [
+      "Austria vs Jordan - World Cup 2026",
+      "Argentina vs Austria - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Scotland",
+    "teamCode": "SCO",
+    "performerId": "4",
+    "originalConfidence": "exact",
+    "totalPerformances": 3,
+    "samplePerformances": [
+      "Scotland vs. Haiti - World Cup 2026",
+      "Morocco vs Scotland - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Spain",
+    "teamCode": "ESP",
+    "performerId": "1",
+    "originalConfidence": "exact",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "Argentina vs. Spain Finalissima 2026",
+      "Spain vs Cape Verde - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  },
+  {
+    "teamName": "Morocco",
+    "teamCode": "MAR",
+    "performerId": "29461",
+    "originalConfidence": "exact",
+    "totalPerformances": 4,
+    "samplePerformances": [
+      "Zambia vs. Morocco - Africa Cup of Nations",
+      "Brazil vs Morocco - World Cup 2026"
+    ],
+    "isWorldCupRelated": true,
+    "status": "VALID"
+  }
+]

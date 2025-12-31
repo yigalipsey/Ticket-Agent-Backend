@@ -91,3 +91,6 @@ Thumbs.db
 tmp/
 temp/
 
+# Deployment/Temporary Scripts
+scripts/
+

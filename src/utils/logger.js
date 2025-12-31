@@ -2,6 +2,18 @@ import pino from "pino";
 
 const isDevelopment = process.env.NODE_ENV === "development";
 
+// ANSI colors for semantic logging
+const colors = {
+  reset: "\x1b[0m",
+  cyan: "\x1b[36m",
+  green: "\x1b[32m",
+  yellow: "\x1b[33m",
+  blue: "\x1b[34m",
+  magenta: "\x1b[35m",
+  red: "\x1b[31m",
+  gray: "\x1b[90m"
+};
+
 const logger = pino({
   level: process.env.LOG_LEVEL || "info",
   transport: {
@@ -14,35 +26,42 @@ const logger = pino({
       messageFormat: "{msg}",
     },
   },
-  formatters: {
-    level: (label) => {
-      return { level: label };
-    },
-  },
 });
 
 // Helper function for structured logging with checkpoint numbers
 export const logWithCheckpoint = (level, message, checkpoint, data = {}) => {
+  // Colorize checkpoint based on its type
+  let checkpointColor = colors.yellow;
+  if (checkpoint.includes('ERROR')) checkpointColor = colors.red;
+  if (checkpoint.includes('STREAM')) checkpointColor = colors.magenta;
+  if (checkpoint.includes('API')) checkpointColor = colors.cyan;
+  if (checkpoint.includes('CACHE')) checkpointColor = colors.green;
+
+  const coloredCheckpoint = `${checkpointColor}[${checkpoint}]${colors.reset}`;
+
   if (Object.keys(data).length > 0) {
     logger[level](
-      { checkpoint, message, ...data },
-      `[${checkpoint}] ${message}`
+      { checkpoint, ...data },
+      `${coloredCheckpoint} ${message}`
     );
   } else {
-    logger[level](`[${checkpoint}] ${message}`);
+    logger[level](`${coloredCheckpoint} ${message}`);
   }
 };
 
 // Helper function for API request logging
-export const logRequest = (req, res, responseTime) => {
+export const logRequest = (req, res, responseTime, source = "") => {
+  const sourceTag = source ? `${colors.cyan}[${source}]${colors.reset} ` : "";
+  const statusColor = res.statusCode >= 400 ? colors.red : colors.green;
+
   logger.info(
-    `${req.method} ${req.url} - ${res.statusCode} (${responseTime}ms)`
+    `${sourceTag}${colors.gray}${req.method}${colors.reset} ${req.url} - ${statusColor}${res.statusCode}${colors.reset} ${colors.gray}(${responseTime}ms)${colors.reset}`
   );
 };
 
 // Helper function for error logging
 export const logError = (error, context = {}) => {
-  logger.error(`ERROR: ${error.message}`);
+  logger.error(`${colors.red}❌ ERROR:${colors.reset} ${error.message}`);
 };
 
 export default logger;

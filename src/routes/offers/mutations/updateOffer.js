@@ -6,12 +6,14 @@ import {
   requireRole,
   rateLimit,
 } from "../../../middleware/userAuth.js";
+import { validateObjectIdParam } from "../../../middleware/validateObjectId.js";
 
 const router = express.Router();
 
 // PUT /api/offers/:id - Update offer
 router.put(
   "/:id",
+  validateObjectIdParam("id"),
   authenticateToken,
   requireRole("agent"),
   rateLimit(20),
@@ -19,13 +21,6 @@ router.put(
     try {
       const { id } = req.params;
       const updateData = req.body;
-
-      if (!id.match(/^[0-9a-fA-F]{24}$/)) {
-        return res.status(400).json({
-          success: false,
-          error: "Invalid offer ID format",
-        });
-      }
 
       // Validate price if provided
       if (updateData.price !== undefined && updateData.price <= 0) {

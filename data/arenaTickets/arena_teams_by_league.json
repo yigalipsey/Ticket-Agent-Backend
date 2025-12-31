@@ -1,0 +1,742 @@
+{
+  "אחר / ללא ליגה": [
+    {
+      "arenaId": "1120",
+      "nameInArena": "אברטון"
+    },
+    {
+      "arenaId": "940",
+      "nameInArena": "אוגסבורג"
+    },
+    {
+      "arenaId": "1054",
+      "nameInArena": "אודינזה"
+    },
+    {
+      "arenaId": "1430",
+      "nameInArena": "אוטרכט"
+    },
+    {
+      "arenaId": "956",
+      "nameInArena": "אוניון ברלין"
+    },
+    {
+      "arenaId": "1036",
+      "nameInArena": "אוסאסונה"
+    },
+    {
+      "arenaId": "1068",
+      "nameInArena": "אטאלנטה"
+    },
+    {
+      "arenaId": "938",
+      "nameInArena": "אייאקס"
+    },
+    {
+      "arenaId": "942",
+      "nameInArena": "איינטרכט פרנקפורט"
+    },
+    {
+      "arenaId": "1076",
+      "nameInArena": "אינטר"
+    },
+    {
+      "arenaId": "1016",
+      "nameInArena": "אלאבס"
+    },
+    {
+      "arenaId": "42098",
+      "nameInArena": "אלצ'ה"
+    },
+    {
+      "arenaId": "1084",
+      "nameInArena": "אסטון וילה"
+    },
+    {
+      "arenaId": "33285",
+      "nameInArena": "אספניול"
+    },
+    {
+      "arenaId": "1439",
+      "nameInArena": "אקסלסיור"
+    },
+    {
+      "arenaId": "364",
+      "nameInArena": "ארסנל"
+    },
+    {
+      "arenaId": "1040",
+      "nameInArena": "אתלטיק בילבאו"
+    },
+    {
+      "arenaId": "916",
+      "nameInArena": "אתלטיקו מדריד"
+    },
+    {
+      "arenaId": "962",
+      "nameInArena": "באייר לברקוזן"
+    },
+    {
+      "arenaId": "968",
+      "nameInArena": "באיירן מינכן"
+    },
+    {
+      "arenaId": "966",
+      "nameInArena": "בורוסיה דורטמונד"
+    },
+    {
+      "arenaId": "948",
+      "nameInArena": "בורוסיה מנשנגלדבך"
+    },
+    {
+      "arenaId": "1460",
+      "nameInArena": "בורנמות'"
+    },
+    {
+      "arenaId": "1108",
+      "nameInArena": "ברייטון"
+    },
+    {
+      "arenaId": "1090",
+      "nameInArena": "ברנטפורד"
+    },
+    {
+      "arenaId": "19742",
+      "nameInArena": "ברנלי"
+    },
+    {
+      "arenaId": "996",
+      "nameInArena": "ברסט"
+    },
+    {
+      "arenaId": "918",
+      "nameInArena": "ברצלונה"
+    },
+    {
+      "arenaId": "1421",
+      "nameInArena": "ג’ירונה"
+    },
+    {
+      "arenaId": "1446",
+      "nameInArena": "גו אהד איגלס"
+    },
+    {
+      "arenaId": "1062",
+      "nameInArena": "גנואה"
+    },
+    {
+      "arenaId": "1645",
+      "nameInArena": "הופנהיים 1899"
+    },
+    {
+      "arenaId": "19908",
+      "nameInArena": "היידנהיים"
+    },
+    {
+      "arenaId": "1048",
+      "nameInArena": "הלאס ורונה"
+    },
+    {
+      "arenaId": "1092",
+      "nameInArena": "וולבס"
+    },
+    {
+      "arenaId": "1448",
+      "nameInArena": "וולנדם"
+    },
+    {
+      "arenaId": "958",
+      "nameInArena": "וולפסבורג"
+    },
+    {
+      "arenaId": "1104",
+      "nameInArena": "ווסטהאם"
+    },
+    {
+      "arenaId": "1020",
+      "nameInArena": "ויאריאל"
+    },
+    {
+      "arenaId": "1030",
+      "nameInArena": "ולנסיה"
+    },
+    {
+      "arenaId": "1647",
+      "nameInArena": "ורדר ברמן"
+    },
+    {
+      "arenaId": "1026",
+      "nameInArena": "חטאפה"
+    },
+    {
+      "arenaId": "33415",
+      "nameInArena": "חרונינגן"
+    },
+    {
+      "arenaId": "366",
+      "nameInArena": "טוטנהאם"
+    },
+    {
+      "arenaId": "21648",
+      "nameInArena": "טולוז"
+    },
+    {
+      "arenaId": "1044",
+      "nameInArena": "טורינו"
+    },
+    {
+      "arenaId": "1078",
+      "nameInArena": "יובנטוס"
+    },
+    {
+      "arenaId": "1070",
+      "nameInArena": "לאציו"
+    },
+    {
+      "arenaId": "42095",
+      "nameInArena": "לבאנטה"
+    },
+    {
+      "arenaId": "21633",
+      "nameInArena": "לה האבר"
+    },
+    {
+      "arenaId": "978",
+      "nameInArena": "לוריין"
+    },
+    {
+      "arenaId": "1086",
+      "nameInArena": "ליברפול"
+    },
+    {
+      "arenaId": "1100",
+      "nameInArena": "לידס יונייטד"
+    },
+    {
+      "arenaId": "1004",
+      "nameInArena": "ליון"
+    },
+    {
+      "arenaId": "986",
+      "nameInArena": "ליל"
+    },
+    {
+      "arenaId": "22015",
+      "nameInArena": "לצ'ה"
+    },
+    {
+      "arenaId": "1002",
+      "nameInArena": "מונאקו"
+    },
+    {
+      "arenaId": "1008",
+      "nameInArena": "מיורקה"
+    },
+    {
+      "arenaId": "954",
+      "nameInArena": "מיינץ 05"
+    },
+    {
+      "arenaId": "1080",
+      "nameInArena": "מילאן"
+    },
+    {
+      "arenaId": "1088",
+      "nameInArena": "מנצ'סטר יונייטד"
+    },
+    {
+      "arenaId": "1114",
+      "nameInArena": "מנצ'סטר סיטי"
+    },
+    {
+      "arenaId": "1000",
+      "nameInArena": "מרסיי"
+    },
+    {
+      "arenaId": "992",
+      "nameInArena": "נאנט"
+    },
+    {
+      "arenaId": "1072",
+      "nameInArena": "נאפולי"
+    },
+    {
+      "arenaId": "1466",
+      "nameInArena": "נוטינגהאם פורסט"
+    },
+    {
+      "arenaId": "1098",
+      "nameInArena": "ניוקאסל"
+    },
+    {
+      "arenaId": "1444",
+      "nameInArena": "ניימכן"
+    },
+    {
+      "arenaId": "1046",
+      "nameInArena": "סאסולו"
+    },
+    {
+      "arenaId": "1032",
+      "nameInArena": "סביליה"
+    },
+    {
+      "arenaId": "21320",
+      "nameInArena": "סטאד רן"
+    },
+    {
+      "arenaId": "1022",
+      "nameInArena": "סלטה ויגו"
+    },
+    {
+      "arenaId": "41905",
+      "nameInArena": "סנדרלנד"
+    },
+    {
+      "arenaId": "33900",
+      "nameInArena": "סנט פאולי"
+    },
+    {
+      "arenaId": "928",
+      "nameInArena": "ספרטה רוטרדם"
+    },
+    {
+      "arenaId": "922",
+      "nameInArena": "פ.ס.וו איינדהובן"
+    },
+    {
+      "arenaId": "33822",
+      "nameInArena": "פארמה"
+    },
+    {
+      "arenaId": "1468",
+      "nameInArena": "פולהאם"
+    },
+    {
+      "arenaId": "1425",
+      "nameInArena": "פורטונה סיטארד"
+    },
+    {
+      "arenaId": "1042",
+      "nameInArena": "פיורנטינה"
+    },
+    {
+      "arenaId": "930",
+      "nameInArena": "פיינורד"
+    },
+    {
+      "arenaId": "41745",
+      "nameInArena": "פיסה"
+    },
+    {
+      "arenaId": "42459",
+      "nameInArena": "פריז FC"
+    },
+    {
+      "arenaId": "1006",
+      "nameInArena": "פריז סן ז'רמן"
+    },
+    {
+      "arenaId": "960",
+      "nameInArena": "פרייבורג"
+    },
+    {
+      "arenaId": "1116",
+      "nameInArena": "צ'לסי"
+    },
+    {
+      "arenaId": "32618",
+      "nameInArena": "קומו"
+    },
+    {
+      "arenaId": "1060",
+      "nameInArena": "קליארי"
+    },
+    {
+      "arenaId": "952",
+      "nameInArena": "קלן"
+    },
+    {
+      "arenaId": "1122",
+      "nameInArena": "קריסטל פאלאס"
+    },
+    {
+      "arenaId": "41774",
+      "nameInArena": "קרמונזה"
+    },
+    {
+      "arenaId": "1014",
+      "nameInArena": "ראיו ויאקאנו"
+    },
+    {
+      "arenaId": "1074",
+      "nameInArena": "רומא"
+    },
+    {
+      "arenaId": "1464",
+      "nameInArena": "ריאל אוביידו"
+    },
+    {
+      "arenaId": "1012",
+      "nameInArena": "ריאל בטיס"
+    },
+    {
+      "arenaId": "920",
+      "nameInArena": "ריאל מדריד"
+    },
+    {
+      "arenaId": "1028",
+      "nameInArena": "ריאל סוסיאדד"
+    },
+    {
+      "arenaId": "944",
+      "nameInArena": "שטוטגרט"
+    }
+  ],
+  "הדרבי של מדריד": [
+    {
+      "arenaId": "916",
+      "nameInArena": "אתלטיקו מדריד"
+    },
+    {
+      "arenaId": "920",
+      "nameInArena": "ריאל מדריד"
+    }
+  ],
+  "סופר קלאסיקו": [
+    {
+      "arenaId": "918",
+      "nameInArena": "ברצלונה"
+    },
+    {
+      "arenaId": "920",
+      "nameInArena": "ריאל מדריד"
+    }
+  ],
+  "ליגת האלופות": [
+    {
+      "arenaId": "27340",
+      "nameInArena": "אולימפיאקוס"
+    },
+    {
+      "arenaId": "938",
+      "nameInArena": "אייאקס"
+    },
+    {
+      "arenaId": "1076",
+      "nameInArena": "אינטר"
+    },
+    {
+      "arenaId": "364",
+      "nameInArena": "ארסנל"
+    },
+    {
+      "arenaId": "916",
+      "nameInArena": "אתלטיקו מדריד"
+    },
+    {
+      "arenaId": "968",
+      "nameInArena": "באיירן מינכן"
+    },
+    {
+      "arenaId": "35416",
+      "nameInArena": "בודו גלימט"
+    },
+    {
+      "arenaId": "912",
+      "nameInArena": "בנפיקה"
+    },
+    {
+      "arenaId": "918",
+      "nameInArena": "ברצלונה"
+    },
+    {
+      "arenaId": "906",
+      "nameInArena": "גלאטסראיי"
+    },
+    {
+      "arenaId": "966",
+      "nameInArena": "דורטמונד"
+    },
+    {
+      "arenaId": "1020",
+      "nameInArena": "ויאריאל"
+    },
+    {
+      "arenaId": "366",
+      "nameInArena": "טוטנהאם"
+    },
+    {
+      "arenaId": "1078",
+      "nameInArena": "יובנטוס"
+    },
+    {
+      "arenaId": "962",
+      "nameInArena": "לברקוזן"
+    },
+    {
+      "arenaId": "1086",
+      "nameInArena": "ליברפול"
+    },
+    {
+      "arenaId": "1002",
+      "nameInArena": "מונאקו"
+    },
+    {
+      "arenaId": "1114",
+      "nameInArena": "מנצ'סטר סיטי"
+    },
+    {
+      "arenaId": "1072",
+      "nameInArena": "נאפולי"
+    },
+    {
+      "arenaId": "1098",
+      "nameInArena": "ניוקאסל"
+    },
+    {
+      "arenaId": "27282",
+      "nameInArena": "סלביה פראג"
+    },
+    {
+      "arenaId": "914",
+      "nameInArena": "ספורטינג ליסבון"
+    },
+    {
+      "arenaId": "922",
+      "nameInArena": "פ.ס.וו איינדהובן"
+    },
+    {
+      "arenaId": "44118",
+      "nameInArena": "פאפוס"
+    },
+    {
+      "arenaId": "1006",
+      "nameInArena": "פריז סן ז'רמן"
+    },
+    {
+      "arenaId": "942",
+      "nameInArena": "פרנקפורט"
+    },
+    {
+      "arenaId": "1116",
+      "nameInArena": "צ'לסי"
+    },
+    {
+      "arenaId": "44074",
+      "nameInArena": "קאיראט אלמטי"
+    },
+    {
+      "arenaId": "2784",
+      "nameInArena": "קופנהגן"
+    },
+    {
+      "arenaId": "35391",
+      "nameInArena": "קרבאך"
+    },
+    {
+      "arenaId": "920",
+      "nameInArena": "ריאל מדריד"
+    }
+  ],
+  "ליגת אלופות": [
+    {
+      "arenaId": "912",
+      "nameInArena": "בנפיקה"
+    },
+    {
+      "arenaId": "1078",
+      "nameInArena": "יובנטוס"
+    }
+  ],
+  "מונדיאל 2026": [
+    {
+      "arenaId": "46966",
+      "nameInArena": "אוזבקיסטן"
+    },
+    {
+      "arenaId": "46956",
+      "nameInArena": "אוסטריה"
+    },
+    {
+      "arenaId": "46972",
+      "nameInArena": "אוסטרליה"
+    },
+    {
+      "arenaId": "46992",
+      "nameInArena": "אורוגוואי"
+    },
+    {
+      "arenaId": "46964",
+      "nameInArena": "איראן"
+    },
+    {
+      "arenaId": "47001",
+      "nameInArena": "אלג'יריה"
+    },
+    {
+      "arenaId": "46937",
+      "nameInArena": "אנגליה"
+    },
+    {
+      "arenaId": "46985",
+      "nameInArena": "אקוודור"
+    },
+    {
+      "arenaId": "46981",
+      "nameInArena": "ארגנטינה"
+    },
+    {
+      "arenaId": "46929",
+      "nameInArena": "ארצות הברית"
+    },
+    {
+      "arenaId": "46958",
+      "nameInArena": "בלגיה"
+    },
+    {
+      "arenaId": "46983",
+      "nameInArena": "ברזיל"
+    },
+    {
+      "arenaId": "47003",
+      "nameInArena": "גאנה"
+    },
+    {
+      "arenaId": "46949",
+      "nameInArena": "גרמניה"
+    },
+    {
+      "arenaId": "47007",
+      "nameInArena": "דרום אפריקה"
+    },
+    {
+      "arenaId": "46968",
+      "nameInArena": "דרום קוריאה"
+    },
+    {
+      "arenaId": "46933",
+      "nameInArena": "האיטי"
+    },
+    {
+      "arenaId": "46947",
+      "nameInArena": "הולנד"
+    },
+    {
+      "arenaId": "47011",
+      "nameInArena": "חוף השנהב"
+    },
+    {
+      "arenaId": "46962",
+      "nameInArena": "יפן"
+    },
+    {
+      "arenaId": "46970",
+      "nameInArena": "ירדן"
+    },
+    {
+      "arenaId": "47005",
+      "nameInArena": "כף ורדה"
+    },
+    {
+      "arenaId": "46994",
+      "nameInArena": "מצרים"
+    },
+    {
+      "arenaId": "46926",
+      "nameInArena": "מקסיקו"
+    },
+    {
+      "arenaId": "46999",
+      "nameInArena": "מרוקו"
+    },
+    {
+      "arenaId": "46945",
+      "nameInArena": "נורבגיה"
+    },
+    {
+      "arenaId": "46979",
+      "nameInArena": "ניו זילנד"
+    },
+    {
+      "arenaId": "47009",
+      "nameInArena": "סנגל"
+    },
+    {
+      "arenaId": "46939",
+      "nameInArena": "ספרד"
+    },
+    {
+      "arenaId": "46954",
+      "nameInArena": "סקוטלנד"
+    },
+    {
+      "arenaId": "46977",
+      "nameInArena": "ערב הסעודית"
+    },
+    {
+      "arenaId": "46943",
+      "nameInArena": "פורטוגל"
+    },
+    {
+      "arenaId": "46935",
+      "nameInArena": "פנמה"
+    },
+    {
+      "arenaId": "46990",
+      "nameInArena": "פרגוואי"
+    },
+    {
+      "arenaId": "46960",
+      "nameInArena": "צרפת"
+    },
+    {
+      "arenaId": "46988",
+      "nameInArena": "קולומביה"
+    },
+    {
+      "arenaId": "46931",
+      "nameInArena": "קורסאו"
+    },
+    {
+      "arenaId": "47175",
+      "nameInArena": "קטאר"
+    },
+    {
+      "arenaId": "46924",
+      "nameInArena": "קנדה"
+    },
+    {
+      "arenaId": "46941",
+      "nameInArena": "קרואטיה"
+    },
+    {
+      "arenaId": "1528",
+      "nameInArena": "שוויץ"
+    },
+    {
+      "arenaId": "46996",
+      "nameInArena": "תוניסיה"
+    }
+  ],
+  "חצי גמר גביע הליגה האנגלי": [
+    {
+      "arenaId": "364",
+      "nameInArena": "ארסנל"
+    },
+    {
+      "arenaId": "1116",
+      "nameInArena": "צ׳לסי"
+    }
+  ],
+  "חצי גמר גביע הליגה": [
+    {
+      "arenaId": "364",
+      "nameInArena": "ארסנל"
+    },
+    {
+      "arenaId": "1116",
+      "nameInArena": "צ׳לסי"
+    }
+  ]
+}

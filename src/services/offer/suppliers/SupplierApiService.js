@@ -1,12 +1,10 @@
 import { LRUCache } from "lru-cache";
 import Offer from "../../../models/Offer.js";
 import { logWithCheckpoint, logError } from "../../../utils/logger.js";
-import {
-  attachLegacyOwnerFields,
-  toObjectIdString,
-} from "../utils/offerMapper.js";
+import { attachLegacyOwnerFields, toObjectIdString } from "../utils/offerMapper.js";
 import { fetchHelloTicketsOffer } from "./providers/helloTicketsProvider.js";
 import { fetchSportsEvents365Offer } from "./providers/sportsEvents365Provider.js";
+import { fetchArenaTicketsOffer } from "./providers/arenaTicketsProvider.js";
 import { updateOfferPrice } from "../mutations/updateOffer.js";
 import { updateFixtureMinPrice } from "../utils/fixtureMinPriceService.js";
 
@@ -20,6 +18,11 @@ const LIVE_SUPPLIER_FETCHERS = {
     slug: "sportsevents365",
     name: "Sportsevents365",
     fetcher: fetchSportsEvents365Offer,
+  },
+  "69527c33352a6ab3197b5e21": {
+    slug: "arenatickets",
+    name: "Arena Tickets",
+    fetcher: fetchArenaTicketsOffer,
   },
 };
 

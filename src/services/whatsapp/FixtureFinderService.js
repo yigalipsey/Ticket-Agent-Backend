@@ -1,6 +1,7 @@
 import FootballEvent from "../../models/FootballEvent.js";
 import Team from "../../models/Team.js";
 import { logWithCheckpoint, logError } from "../../utils/logger.js";
+import { isValidObjectId } from "../../utils/validation.js";
 import mongoose from "mongoose";
 
 // ANSI color codes for colored console output
@@ -81,14 +82,14 @@ export const findFixtureBetweenTeams = async (
     );
 
     // Validate ObjectIds
-    if (!mongoose.Types.ObjectId.isValid(team1Id)) {
+    if (!isValidObjectId(team1Id)) {
       return {
         success: false,
         error: "Invalid team1 ID format",
       };
     }
 
-    if (!mongoose.Types.ObjectId.isValid(team2Id)) {
+    if (!isValidObjectId(team2Id)) {
       return {
         success: false,
         error: "Invalid team2 ID format",
@@ -199,9 +200,8 @@ export const findFixtureBetweenTeams = async (
     const slug = buildFixtureSlug(homeTeam.slug, awayTeam.slug, fixture.date);
     logColor(colors.green, "🔗 [SLUG]", "Generated fixture slug:", {
       slug,
-      formula: `${homeTeam.slug}-vs-${awayTeam.slug}-${
-        fixture.date.toISOString().split("T")[0]
-      }`,
+      formula: `${homeTeam.slug}-vs-${awayTeam.slug}-${fixture.date.toISOString().split("T")[0]
+        }`,
       homeTeamSlug: homeTeam.slug,
       awayTeamSlug: awayTeam.slug,
       date: fixture.date.toISOString().split("T")[0],
@@ -226,17 +226,17 @@ export const findFixtureBetweenTeams = async (
         },
         league: fixture.league
           ? {
-              _id: fixture.league._id,
-              name: fixture.league.nameHe || fixture.league.name,
-              slug: fixture.league.slug,
-            }
+            _id: fixture.league._id,
+            name: fixture.league.nameHe || fixture.league.name,
+            slug: fixture.league.slug,
+          }
           : null,
         venue: fixture.venue
           ? {
-              _id: fixture.venue._id,
-              name: fixture.venue.name,
-              city: fixture.venue.city_he || fixture.venue.city_en,
-            }
+            _id: fixture.venue._id,
+            name: fixture.venue.name,
+            city: fixture.venue.city_he || fixture.venue.city_en,
+          }
           : null,
         round: fixture.round,
         minPrice: fixture.minPrice,
@@ -300,17 +300,17 @@ export const findFixtureBySlug = async (slug) => {
         },
         league: fixture.league
           ? {
-              _id: fixture.league._id,
-              name: fixture.league.nameHe || fixture.league.name,
-              slug: fixture.league.slug,
-            }
+            _id: fixture.league._id,
+            name: fixture.league.nameHe || fixture.league.name,
+            slug: fixture.league.slug,
+          }
           : null,
         venue: fixture.venue
           ? {
-              _id: fixture.venue._id,
-              name: fixture.venue.name,
-              city: fixture.venue.city_he || fixture.venue.city_en,
-            }
+            _id: fixture.venue._id,
+            name: fixture.venue.name,
+            city: fixture.venue.city_he || fixture.venue.city_en,
+          }
           : null,
         round: fixture.round,
         minPrice: fixture.minPrice,

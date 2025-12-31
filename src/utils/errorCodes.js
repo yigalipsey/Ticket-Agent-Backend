@@ -203,6 +203,11 @@ export const ERROR_CODES = {
     message: "Invalid pagination parameters",
     statusCode: 400,
   },
+  TEAM_MATCH_FAILED: {
+    code: "TEAM_MATCH_FAILED",
+    message: "Could not identify teams from query",
+    statusCode: 400,
+  },
 };
 
 // Export error codes for direct access

@@ -1,0 +1,340 @@
+[
+  {
+    "teamName": "Norway",
+    "status": "multiple_matches",
+    "currentId": "29451",
+    "options": [
+      {
+        "id": 5250,
+        "name": "The Weeknd"
+      },
+      {
+        "id": 96,
+        "name": "Bad Bunny"
+      },
+      {
+        "id": 467,
+        "name": "Miami Heat"
+      },
+      {
+        "id": 29487,
+        "name": "Bon Jovi"
+      },
+      {
+        "id": 12608,
+        "name": "System of a Down"
+      },
+      {
+        "id": 31090,
+        "name": "Rosalía"
+      },
+      {
+        "id": 1851,
+        "name": "France Rugby"
+      },
+      {
+        "id": 12390,
+        "name": "Playboi Carti"
+      },
+      {
+        "id": 433,
+        "name": "Los Angeles Lakers"
+      },
+      {
+        "id": 444,
+        "name": "Manchester City FC"
+      }
+    ]
+  },
+  {
+    "teamName": "England",
+    "status": "multiple_matches",
+    "currentId": "29451",
+    "options": [
+      {
+        "id": 5250,
+        "name": "The Weeknd"
+      },
+      {
+        "id": 96,
+        "name": "Bad Bunny"
+      },
+      {
+        "id": 467,
+        "name": "Miami Heat"
+      },
+      {
+        "id": 29487,
+        "name": "Bon Jovi"
+      },
+      {
+        "id": 12608,
+        "name": "System of a Down"
+      },
+      {
+        "id": 31090,
+        "name": "Rosalía"
+      },
+      {
+        "id": 1851,
+        "name": "France Rugby"
+      },
+      {
+        "id": 12390,
+        "name": "Playboi Carti"
+      },
+      {
+        "id": 433,
+        "name": "Los Angeles Lakers"
+      },
+      {
+        "id": 444,
+        "name": "Manchester City FC"
+      }
+    ]
+  },
+  {
+    "teamName": "France",
+    "status": "found",
+    "currentId": "29451",
+    "correctId": "1851",
+    "performerName": "France Rugby",
+    "eventsCount": 5,
+    "needsUpdate": true
+  },
+  {
+    "teamName": "Germany",
+    "status": "multiple_matches",
+    "currentId": "29451",
+    "options": [
+      {
+        "id": 5250,
+        "name": "The Weeknd"
+      },
+      {
+        "id": 96,
+        "name": "Bad Bunny"
+      },
+      {
+        "id": 467,
+        "name": "Miami Heat"
+      },
+      {
+        "id": 29487,
+        "name": "Bon Jovi"
+      },
+      {
+        "id": 12608,
+        "name": "System of a Down"
+      },
+      {
+        "id": 31090,
+        "name": "Rosalía"
+      },
+      {
+        "id": 1851,
+        "name": "France Rugby"
+      },
+      {
+        "id": 12390,
+        "name": "Playboi Carti"
+      },
+      {
+        "id": 433,
+        "name": "Los Angeles Lakers"
+      },
+      {
+        "id": 444,
+        "name": "Manchester City FC"
+      }
+    ]
+  },
+  {
+    "teamName": "Portugal",
+    "status": "multiple_matches",
+    "currentId": "29451",
+    "options": [
+      {
+        "id": 5250,
+        "name": "The Weeknd"
+      },
+      {
+        "id": 96,
+        "name": "Bad Bunny"
+      },
+      {
+        "id": 467,
+        "name": "Miami Heat"
+      },
+      {
+        "id": 29487,
+        "name": "Bon Jovi"
+      },
+      {
+        "id": 12608,
+        "name": "System of a Down"
+      },
+      {
+        "id": 31090,
+        "name": "Rosalía"
+      },
+      {
+        "id": 1851,
+        "name": "France Rugby"
+      },
+      {
+        "id": 12390,
+        "name": "Playboi Carti"
+      },
+      {
+        "id": 433,
+        "name": "Los Angeles Lakers"
+      },
+      {
+        "id": 444,
+        "name": "Manchester City FC"
+      }
+    ]
+  },
+  {
+    "teamName": "United States",
+    "status": "multiple_matches",
+    "currentId": "29451",
+    "options": [
+      {
+        "id": 5250,
+        "name": "The Weeknd"
+      },
+      {
+        "id": 96,
+        "name": "Bad Bunny"
+      },
+      {
+        "id": 467,
+        "name": "Miami Heat"
+      },
+      {
+        "id": 29487,
+        "name": "Bon Jovi"
+      },
+      {
+        "id": 12608,
+        "name": "System of a Down"
+      },
+      {
+        "id": 31090,
+        "name": "Rosalía"
+      },
+      {
+        "id": 1851,
+        "name": "France Rugby"
+      },
+      {
+        "id": 12390,
+        "name": "Playboi Carti"
+      },
+      {
+        "id": 433,
+        "name": "Los Angeles Lakers"
+      },
+      {
+        "id": 444,
+        "name": "Manchester City FC"
+      }
+    ]
+  },
+  {
+    "teamName": "Colombia",
+    "status": "multiple_matches",
+    "currentId": "29451",
+    "options": [
+      {
+        "id": 5250,
+        "name": "The Weeknd"
+      },
+      {
+        "id": 96,
+        "name": "Bad Bunny"
+      },
+      {
+        "id": 467,
+        "name": "Miami Heat"
+      },
+      {
+        "id": 29487,
+        "name": "Bon Jovi"
+      },
+      {
+        "id": 12608,
+        "name": "System of a Down"
+      },
+      {
+        "id": 31090,
+        "name": "Rosalía"
+      },
+      {
+        "id": 1851,
+        "name": "France Rugby"
+      },
+      {
+        "id": 12390,
+        "name": "Playboi Carti"
+      },
+      {
+        "id": 433,
+        "name": "Los Angeles Lakers"
+      },
+      {
+        "id": 444,
+        "name": "Manchester City FC"
+      }
+    ]
+  },
+  {
+    "teamName": "Ecuador",
+    "status": "multiple_matches",
+    "currentId": "29451",
+    "options": [
+      {
+        "id": 5250,
+        "name": "The Weeknd"
+      },
+      {
+        "id": 96,
+        "name": "Bad Bunny"
+      },
+      {
+        "id": 467,
+        "name": "Miami Heat"
+      },
+      {
+        "id": 29487,
+        "name": "Bon Jovi"
+      },
+      {
+        "id": 12608,
+        "name": "System of a Down"
+      },
+      {
+        "id": 31090,
+        "name": "Rosalía"
+      },
+      {
+        "id": 1851,
+        "name": "France Rugby"
+      },
+      {
+        "id": 12390,
+        "name": "Playboi Carti"
+      },
+      {
+        "id": 433,
+        "name": "Los Angeles Lakers"
+      },
+      {
+        "id": 444,
+        "name": "Manchester City FC"
+      }
+    ]
+  }
+]
