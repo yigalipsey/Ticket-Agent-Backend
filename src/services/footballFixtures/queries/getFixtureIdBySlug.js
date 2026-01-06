@@ -68,15 +68,32 @@ export const getFixtureIdBySlug = async (slug) => {
       }
     );
 
-    // שליפה מינימלית רק של _id ו-slug
-    const fixture = await FootballEvent.findOne({ slug })
-      .select("_id slug")
+    // 1. Try exact match first
+    let fixture = await FootballEvent.findOne({ slug })
+      .select("_id slug date")
       .lean();
+
+    // 2. If no exact match, try partial match (slug starts with the input)
+    if (!fixture) {
+      logWithCheckpoint(
+        "info",
+        "Exact slug match failed, trying partial match",
+        "FIXTURE_SLUG_003b",
+        { slug }
+      );
+
+      // Search for slugs starting with the input (case-insensitive)
+      fixture = await FootballEvent.findOne({
+        slug: { $regex: new RegExp(`^${slug}`, "i") }
+      })
+        .select("_id slug date")
+        .lean();
+    }
 
     if (!fixture) {
       logWithCheckpoint(
         "warn",
-        "Fixture not found by slug",
+        "Fixture not found by slug (even with partial match)",
         "FIXTURE_SLUG_004",
         {
           slug,

@@ -3,7 +3,9 @@ import { logRequest } from "../../utils/logger.js";
 
 // Query routes
 import getOffersByFixtureIdRoute from "./queries/getOffersByFixtureId.js";
+import getOffersByFixtureSlugRoute from "./queries/getOffersByFixtureSlug.js";
 import getOffersByFixtureIdStreamRoute from "./queries/getOffersByFixtureIdStream.js";
+import getOffersByFixtureSlugStreamRoute from "./queries/getOffersByFixtureSlugStream.js";
 import getOffersByAgentRoute from "./queries/getOffersByAgent.js";
 
 // Mutation routes
@@ -27,8 +29,11 @@ router.use((req, res, next) => {
 // ========================================
 // Query Routes (GET)
 // ========================================
-router.use(getOffersByFixtureIdRoute);
+// IMPORTANT: Stream routes must come first to avoid being captured by slug parameters
+router.use(getOffersByFixtureSlugStreamRoute);
 router.use(getOffersByFixtureIdStreamRoute);
+router.use(getOffersByFixtureSlugRoute);
+router.use(getOffersByFixtureIdRoute);
 router.use(getOffersByAgentRoute);
 
 // ========================================
